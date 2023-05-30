@@ -1,6 +1,5 @@
 newCatApiClient	nimcatapi/client.html#newCatApiClient,string	client: newCatApiClient(token: string = &quot;&quot;): AnimalApi	
 newDogApiClient	nimcatapi/client.html#newDogApiClient,string	client: newDogApiClient(token: string = &quot;&quot;): AnimalApi	
-getResponse	nimcatapi/client.html#getResponse	client: getResponse(url): Future[string]	
 buildRequest	nimcatapi/client.html#buildRequest,,	client: buildRequest(api, request): string	
 sendRequest	nimcatapi/client.html#sendRequest,,	client: sendRequest(api, request): JsonNode	
 requestImageUrl	nimcatapi/client.html#requestImageUrl	client: requestImageUrl(api): string	

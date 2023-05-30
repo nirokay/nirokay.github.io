@@ -113,11 +113,6 @@ window.addEventListener('DOMContentLoaded', main);
     title="buildRequest(api, request): string">buildRequest(api, request): string</a></li>
 
   </ul>
-  <ul class="simple nested-toc-section">getResponse
-      <li><a class="reference" href="#getResponse"
-    title="getResponse(url): Future[string]">getResponse(url): Future[string]</a></li>
-
-  </ul>
   <ul class="simple nested-toc-section">newCatApiClient
       <li><a class="reference" href="#newCatApiClient%2Cstring"
     title="newCatApiClient(token: string = &quot;&quot;): AnimalApi">newCatApiClient(token: string = &quot;&quot;): AnimalApi</a></li>
@@ -182,15 +177,6 @@ window.addEventListener('DOMContentLoaded', main);
 <p>Builds an url string from request data, that can be sent to the API.</p>
 <p>Should not be called manually, used internally.</p>
 
-
-</dd>
-</div>
-<div id="getResponse">
-<dt><pre><span class="Keyword">proc</span> <a href="#getResponse"><span class="Identifier">getResponse</span></a><span class="Other">(</span><span class="Identifier">url</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">Future</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span>
-    <span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">]</span></span>.}</pre></dt>
-<dd>
-
-Local proc to send GET requests.
 
 </dd>
 </div>
@@ -294,7 +280,7 @@ Requests a single image from the API.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-05-30 20:23:30 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-05-30 20:27:03 UTC</small>
       </div>
     </div>
   </div>
