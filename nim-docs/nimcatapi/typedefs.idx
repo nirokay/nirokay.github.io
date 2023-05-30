@@ -1,0 +1,14 @@
+TheCatApi	nimcatapi/typedefs.html#TheCatApi	AnimalApiKind.TheCatApi	
+TheDogApi	nimcatapi/typedefs.html#TheDogApi	AnimalApiKind.TheDogApi	
+AnimalApiKind	nimcatapi/typedefs.html#AnimalApiKind	typedefs: AnimalApiKind	
+AnimalApi	nimcatapi/typedefs.html#AnimalApi	typedefs: AnimalApi	
+sizeNone	nimcatapi/typedefs.html#sizeNone	ImageSize.sizeNone	
+sizeFull	nimcatapi/typedefs.html#sizeFull	ImageSize.sizeFull	
+sizeMed	nimcatapi/typedefs.html#sizeMed	ImageSize.sizeMed	
+sizeSmall	nimcatapi/typedefs.html#sizeSmall	ImageSize.sizeSmall	
+ImageSize	nimcatapi/typedefs.html#ImageSize	typedefs: ImageSize	
+formatGif	nimcatapi/typedefs.html#formatGif	ImageFormat.formatGif	
+formatPng	nimcatapi/typedefs.html#formatPng	ImageFormat.formatPng	
+formatJpg	nimcatapi/typedefs.html#formatJpg	ImageFormat.formatJpg	
+ImageFormat	nimcatapi/typedefs.html#ImageFormat	typedefs: ImageFormat	
+Request	nimcatapi/typedefs.html#Request	typedefs: Request	
