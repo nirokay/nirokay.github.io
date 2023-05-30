@@ -8,3 +8,4 @@ requestImageUrls	nimcatapi/client.html#requestImageUrls,,	client: requestImageUr
 requestImageUrls	nimcatapi/client.html#requestImageUrls,,Positive	client: requestImageUrls(api; amount: Positive): seq[string]	
 requestImageUrls	nimcatapi/client.html#requestImageUrls,,ImageSize,seq[ImageFormat],Positive	client: requestImageUrls(api; size: ImageSize = sizeNone; formats: seq[ImageFormat];\n                 amount: Positive = 1): seq[string]	
 requestImageUrls	nimcatapi/client.html#requestImageUrls,,ImageSize,ImageFormat,Positive	client: requestImageUrls(api; size: ImageSize = sizeNone; format: ImageFormat;\n                 amount: Positive = 1): seq[string]	
+Client documentation	nimcatapi/client.html#client-documentation	 Client documentation	
