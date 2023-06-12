@@ -1,0 +1,7 @@
+errorLog	nimcatapi/internal.html#errorLog,string	internal: errorLog(msg: string)	
+buildRequest	nimcatapi/internal.html#buildRequest,,	internal: buildRequest(api, request): string	
+sendRequest	nimcatapi/internal.html#sendRequest,,	internal: sendRequest(api, request): JsonNode	
+getImagesFromResponseRawJsonNode	nimcatapi/internal.html#getImagesFromResponseRawJsonNode,JsonNode	internal: getImagesFromResponseRawJsonNode(response: JsonNode): seq[string]	
+getImagesFromResponse	nimcatapi/internal.html#getImagesFromResponse,seq[Response]	internal: getImagesFromResponse(response: seq[Re]): seq[string]	
+getImagesFromResponse	nimcatapi/internal.html#getImagesFromResponse,JsonNode	internal: getImagesFromResponse(response: JsonNode): seq[string]	
+Internal procs	nimcatapi/internal.html#internal-procs	 Internal procs	

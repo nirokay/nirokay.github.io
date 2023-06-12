@@ -1,7 +1,5 @@
 newCatApiClient	nimcatapi/client.html#newCatApiClient,string	client: newCatApiClient(token: string = &quot;&quot;): AnimalApi	
 newDogApiClient	nimcatapi/client.html#newDogApiClient,string	client: newDogApiClient(token: string = &quot;&quot;): AnimalApi	
-buildRequest	nimcatapi/client.html#buildRequest,,	client: buildRequest(api, request): string	
-sendRequest	nimcatapi/client.html#sendRequest,,	client: sendRequest(api, request): JsonNode	
 requestImageUrl	nimcatapi/client.html#requestImageUrl	client: requestImageUrl(api): string	
 requestImageUrls	nimcatapi/client.html#requestImageUrls,,	client: requestImageUrls(api, request): seq[string]	
 requestImageUrls	nimcatapi/client.html#requestImageUrls,,Positive	client: requestImageUrls(api; amount: Positive): seq[string]	

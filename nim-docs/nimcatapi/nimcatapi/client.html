@@ -108,12 +108,7 @@ window.addEventListener('DOMContentLoaded', main);
 <li>
   <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
   <ul class="simple simple-toc-section">
-      <ul class="simple nested-toc-section">buildRequest
-      <li><a class="reference" href="#buildRequest%2C%2C"
-    title="buildRequest(api, request): string">buildRequest(api, request): string</a></li>
-
-  </ul>
-  <ul class="simple nested-toc-section">newCatApiClient
+      <ul class="simple nested-toc-section">newCatApiClient
       <li><a class="reference" href="#newCatApiClient%2Cstring"
     title="newCatApiClient(token: string = &quot;&quot;): AnimalApi">newCatApiClient(token: string = &quot;&quot;): AnimalApi</a></li>
 
@@ -143,11 +138,6 @@ window.addEventListener('DOMContentLoaded', main);
                  amount: Positive = 1): seq[string]</a></li>
 
   </ul>
-  <ul class="simple nested-toc-section">sendRequest
-      <li><a class="reference" href="#sendRequest%2C%2C"
-    title="sendRequest(api, request): JsonNode">sendRequest(api, request): JsonNode</a></li>
-
-  </ul>
 
   </ul>
 </li>
@@ -165,26 +155,18 @@ window.addEventListener('DOMContentLoaded', main);
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
-<a class="reference external" href="typedefs.html">typedefs</a>
+<a class="reference external" href="typedefs.html">typedefs</a>, <a class="reference external" href="internal.html">internal</a>
 </dl></div>
 <div class="section" id="12">
 <h1><a class="toc-backref" href="#12">Procs</a></h1>
 <dl class="item">
-<div id="buildRequest,,">
-<dt><pre><span class="Keyword">proc</span> <a href="#buildRequest%2C%2C"><span class="Identifier">buildRequest</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">,</span> <span class="Identifier">request</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-<dd>
-
-<p>Builds an url string from request data, that can be sent to the API.</p>
-<p>Should not be called manually, used internally.</p>
-
-
-</dd>
-</div>
 <div id="newCatApiClient,string">
 <dt><pre><span class="Keyword">proc</span> <a href="#newCatApiClient%2Cstring"><span class="Identifier">newCatApiClient</span></a><span class="Other">(</span><span class="Identifier">token</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="typedefs.html#AnimalApi"><span class="Identifier">AnimalApi</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-Creates a new AnimalApi with thecatapi.com url. Token is optional, as you can request from the API without it as well.
+<p>Creates a new AnimalApi with thecatapi.com url.</p>
+<p>Token is optional, as you can request from the API without it as well.</p>
+
 
 </dd>
 </div>
@@ -192,14 +174,16 @@ Creates a new AnimalApi with thecatapi.com url. Token is optional, as you can re
 <dt><pre><span class="Keyword">proc</span> <a href="#newDogApiClient%2Cstring"><span class="Identifier">newDogApiClient</span></a><span class="Other">(</span><span class="Identifier">token</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="typedefs.html#AnimalApi"><span class="Identifier">AnimalApi</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-Creates a new AnimalApi with thedogapi.com url. Token is optional, as you can request from the API without it as well.
+<p>Creates a new AnimalApi with thedogapi.com url.</p>
+<p>Token is optional, as you can request from the API without it as well.</p>
+
 
 </dd>
 </div>
 <div id="requestImageUrl">
 <dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrl"><span class="Identifier">requestImageUrl</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span>
-    <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span>
-    <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
+    <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span>
+                                       <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 Requests a single image from the API.
@@ -207,8 +191,8 @@ Requests a single image from the API.
 </dd>
 </div>
 <div id="requestImageUrls,,">
-<dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrls%2C%2C"><span class="Identifier">requestImageUrls</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">,</span> <span class="Identifier">request</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span>
-    <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrls%2C%2C"><span class="Identifier">requestImageUrls</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">,</span> <span class="Identifier">request</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -219,8 +203,8 @@ Requests a single image from the API.
 </dd>
 </div>
 <div id="requestImageUrls,,Positive">
-<dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrls%2C%2CPositive"><span class="Identifier">requestImageUrls</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">;</span> <span class="Identifier">amount</span><span class="Other">:</span> <span class="Identifier">Positive</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span>
-    <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrls%2C%2CPositive"><span class="Identifier">requestImageUrls</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">;</span> <span class="Identifier">amount</span><span class="Other">:</span> <span class="Identifier">Positive</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -232,8 +216,8 @@ Requests a single image from the API.
 </div>
 <div id="requestImageUrls,,ImageSize,ImageFormat,Positive">
 <dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrls%2C%2CImageSize%2CImageFormat%2CPositive"><span class="Identifier">requestImageUrls</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">;</span> <span class="Identifier">size</span><span class="Other">:</span> <a href="typedefs.html#ImageSize"><span class="Identifier">ImageSize</span></a> <span class="Other">=</span> <span class="Identifier">sizeNone</span><span class="Other">;</span> <span class="Identifier">format</span><span class="Other">:</span> <a href="typedefs.html#ImageFormat"><span class="Identifier">ImageFormat</span></a><span class="Other">;</span>
-                      <span class="Identifier">amount</span><span class="Other">:</span> <span class="Identifier">Positive</span> <span class="Other">=</span> <span class="DecNumber">1</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span>
-    <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
+                      <span class="Identifier">amount</span><span class="Other">:</span> <span class="Identifier">Positive</span> <span class="Other">=</span> <span class="DecNumber">1</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -246,26 +230,12 @@ Requests a single image from the API.
 <div id="requestImageUrls,,ImageSize,seq[ImageFormat],Positive">
 <dt><pre><span class="Keyword">proc</span> <a href="#requestImageUrls%2C%2CImageSize%2Cseq%5BImageFormat%5D%2CPositive"><span class="Identifier">requestImageUrls</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">;</span> <span class="Identifier">size</span><span class="Other">:</span> <a href="typedefs.html#ImageSize"><span class="Identifier">ImageSize</span></a> <span class="Other">=</span> <span class="Identifier">sizeNone</span><span class="Other">;</span>
                       <span class="Identifier">formats</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="typedefs.html#ImageFormat"><span class="Identifier">ImageFormat</span></a><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">amount</span><span class="Other">:</span> <span class="Identifier">Positive</span> <span class="Other">=</span> <span class="DecNumber">1</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span>
-    <span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span>
-                       <span class="Identifier">JsonParsingError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">]</span><span class="Other">,</span>
               <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 <p>Requests images with custom parameters.</p>
 <p>Without a token you can request 1 or 10 images only, with a token you can request 1-100.</p>
-
-
-</dd>
-</div>
-<div id="sendRequest,,">
-<dt><pre><span class="Keyword">proc</span> <a href="#sendRequest%2C%2C"><span class="Identifier">sendRequest</span></a><span class="Other">(</span><span class="Identifier">api</span><span class="Other">,</span> <span class="Identifier">request</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">JsonNode</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span>
-    <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">OSError</span><span class="Other">,</span> <span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">JsonParsingError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">,</span> <span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
-<dd>
-
-<p>Get raw json result from the API.</p>
-<p>Should not be called manually just to get images. Use <tt class="docutils literal"><span class="pre"><span class="Identifier">requestImageUrl</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> and <tt class="docutils literal"><span class="pre"><span class="Identifier">requestImageUrls</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> instead!</p>
-<p>See <strong>https://developers.thecatapi.com/</strong> for information on how data is structured.</p>
 
 
 </dd>
@@ -280,7 +250,7 @@ Requests a single image from the API.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-05-30 20:27:03 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-06-12 23:56:20 UTC</small>
       </div>
     </div>
   </div>

@@ -12,3 +12,5 @@ formatPng	nimcatapi/typedefs.html#formatPng	ImageFormat.formatPng
 formatJpg	nimcatapi/typedefs.html#formatJpg	ImageFormat.formatJpg	
 ImageFormat	nimcatapi/typedefs.html#ImageFormat	typedefs: ImageFormat	
 Request	nimcatapi/typedefs.html#Request	typedefs: Request	
+Breed	nimcatapi/typedefs.html#Breed	typedefs: Breed	
+Response	nimcatapi/typedefs.html#Response	typedefs: Response	
