@@ -1,0 +1,16 @@
+Followed	nimegenerator/letters.html#Followed	letters: Followed	
+Letter	nimegenerator/letters.html#Letter	letters: Letter	
+doProbableLetter	nimegenerator/letters.html#doProbableLetter	Operation.doProbableLetter	
+doFormable	nimegenerator/letters.html#doFormable	Operation.doFormable	
+Operation	nimegenerator/letters.html#Operation	letters: Operation	
+dictionary	nimegenerator/letters.html#dictionary	letters: dictionary	
+cachedVowels	nimegenerator/letters.html#cachedVowels	letters: cachedVowels	
+getRandomLetter	nimegenerator/letters.html#getRandomLetter	letters: getRandomLetter(): Letter	
+getLetterFromChar	nimegenerator/letters.html#getLetterFromChar,char	letters: getLetterFromChar(c: char): Letter	
+getNextLetter	nimegenerator/letters.html#getNextLetter,Letter	letters: getNextLetter(curr: Letter): Letter	
+getNextLetter	nimegenerator/letters.html#getNextLetter,char	letters: getNextLetter(curr: char): Letter	
+getNextLetter	nimegenerator/letters.html#getNextLetter,string	letters: getNextLetter(word: string): Letter	
+getWordSubstringFromLetter	nimegenerator/letters.html#getWordSubstringFromLetter,Letter	letters: getWordSubstringFromLetter(letter: Letter): string	
+generateWordSubstringsWithCicles	nimegenerator/letters.html#generateWordSubstringsWithCicles,Positive	letters: generateWordSubstringsWithCicles(cicles: Positive): seq[string]	
+generateWordWithCicles	nimegenerator/letters.html#generateWordWithCicles,Positive	letters: generateWordWithCicles(cicles: Positive): string	
+addToDictionary	nimegenerator/letters.html#addToDictionary,seq[Letter]	letters: addToDictionary(letters: seq[Letter])	

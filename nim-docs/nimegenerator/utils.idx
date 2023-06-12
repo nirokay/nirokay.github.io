@@ -1,0 +1,2 @@
+randomFrom	nimegenerator/utils.html#randomFrom,seq[T]	utils: randomFrom[T](sequence: seq[T]): T	
+randomFrom	nimegenerator/utils.html#randomFrom,Table[T,Z]	utils: randomFrom[T, Z](table: Table[T, Z]): Z	

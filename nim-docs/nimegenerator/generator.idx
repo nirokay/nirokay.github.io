@@ -1,0 +1,7 @@
+setCustomGlobalRules	nimegenerator/generator.html#setCustomGlobalRules,GenerationRules	generator: setCustomGlobalRules(newRules: GenerationRules)	
+loadCustomConfigFromFile	nimegenerator/generator.html#loadCustomConfigFromFile,string	generator: loadCustomConfigFromFile(filepath: string)	
+generateWord	nimegenerator/generator.html#generateWord	generator: generateWord(): string	
+generateWords	nimegenerator/generator.html#generateWords,Positive	generator: generateWords(amount: Positive): seq[string]	
+generateWordCustomRule	nimegenerator/generator.html#generateWordCustomRule,GenerationRules	generator: generateWordCustomRule(tempRules: GenerationRules): string	
+generateWordsCustomRule	nimegenerator/generator.html#generateWordsCustomRule,Positive,GenerationRules	generator: generateWordsCustomRule(amount: Positive; tempRules: GenerationRules): seq[\n    string]	
+Main module to generate random words	nimegenerator/generator.html#main-module-to-generate-random-words	 Main module to generate random words	
