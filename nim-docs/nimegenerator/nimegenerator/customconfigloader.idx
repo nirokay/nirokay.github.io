@@ -1,0 +1,5 @@
+JsonFollowed	nimegenerator/customconfigloader.html#JsonFollowed	customconfigloader: JsonFollowed	
+JsonLetter	nimegenerator/customconfigloader.html#JsonLetter	customconfigloader: JsonLetter	
+ConfigFile	nimegenerator/customconfigloader.html#ConfigFile	customconfigloader: ConfigFile	
+loadCustomConfigFromFile	nimegenerator/customconfigloader.html#loadCustomConfigFromFile,string	customconfigloader: loadCustomConfigFromFile(filepath: string)	
+Module for loading custom config files in form of json	nimegenerator/customconfigloader.html#module-for-loading-custom-config-files-in-form-of-json	 Module for loading custom config files in form of json	

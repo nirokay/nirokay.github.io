@@ -256,7 +256,9 @@ window.addEventListener('DOMContentLoaded', main);
 <dt><pre><span class="Keyword">proc</span> <a href="#addToDictionary%2Cseq%5BLetter%5D"><span class="Identifier">addToDictionary</span></a><span class="Other">(</span><span class="Identifier">letters</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="letters.html#Letter"><span class="Identifier">Letter</span></a><span class="Other">]</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-Adds new letters to the dictionary.
+<p>Adds new letters to the dictionary.</p>
+<p>If a letter already exists, it will be overridden (a warning is printed to stdout). </p>
+
 
 </dd>
 </div>
@@ -265,7 +267,7 @@ Adds new letters to the dictionary.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Generates substrings for a word with a set amount of cicles.
 
 </dd>
 </div>
@@ -274,7 +276,7 @@ Adds new letters to the dictionary.
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Shortcut to <tt class="docutils literal"><span class="pre"><span class="Identifier">generateWordSubstringsWithCicles</span><span class="Punctuation">(</span><span class="Punctuation">)</span><span class="Operator">.</span><span class="Identifier">join</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt>.
 
 </dd>
 </div>
@@ -322,6 +324,11 @@ Returns a random letter.
 <dt><pre><span class="Keyword">proc</span> <a href="#getWordSubstringFromLetter%2CLetter"><span class="Identifier">getWordSubstringFromLetter</span></a><span class="Other">(</span><span class="Identifier">letter</span><span class="Other">:</span> <a href="letters.html#Letter"><span class="Identifier">Letter</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
+<p>Generates a substring from a letter object.</p>
+<p>Substrings can be:</p>
+<ul class="simple"><li>formables (e.g. 'e': <em>&quot;er&quot;, &quot;el&quot;</em>)</li>
+<li>the actual letter#</li>
+</ul>
 
 
 </dd>
@@ -336,7 +343,7 @@ Returns a random letter.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-06-12 23:57:26 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-06-14 18:06:09 UTC</small>
       </div>
     </div>
   </div>
