@@ -143,7 +143,7 @@ window.addEventListener('DOMContentLoaded', main);
   weight*: Option[ImperialMetricValues]">Breed</a></li>
   <li><a class="reference" href="#CatBreed"
     title="CatBreed = object of Breed
-  id: string
+  id*: string
   description*: string
   informationUrls*: Option[seq[string]] ## Links to websites with information about breed
   originCountry*: tuple[name, code: string]
@@ -158,7 +158,7 @@ window.addEventListener('DOMContentLoaded', main);
     title="Category = tuple[id: int, name: string]">Category</a></li>
   <li><a class="reference" href="#DogBreed"
     title="DogBreed = object of Breed
-  id: int
+  id*: int
   description*: Option[string]
   height*: Option[ImperialMetricValues]
   referenceImage*: Option[ReferenceImage]
@@ -306,7 +306,7 @@ window.addEventListener('DOMContentLoaded', main);
 </div>
 <div id="CatBreed">
 <dt><pre><a href="typedefs.html#CatBreed"><span class="Identifier">CatBreed</span></a> <span class="Other">=</span> <span class="Keyword">object</span> <span class="Keyword">of</span> <a href="typedefs.html#Breed"><span class="Identifier">Breed</span></a>
-  <span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span>
+  <span class="Identifier">id</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>
   <span class="Identifier">description</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>
   <span class="Identifier">informationUrls</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Links to websites with information about breed</span>
   <span class="Identifier">originCountry</span><span class="Operator">*</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">name</span><span class="Other">,</span> <span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span>
@@ -334,7 +334,7 @@ window.addEventListener('DOMContentLoaded', main);
 </div>
 <div id="DogBreed">
 <dt><pre><a href="typedefs.html#DogBreed"><span class="Identifier">DogBreed</span></a> <span class="Other">=</span> <span class="Keyword">object</span> <span class="Keyword">of</span> <a href="typedefs.html#Breed"><span class="Identifier">Breed</span></a>
-  <span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">int</span>
+  <span class="Identifier">id</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">int</span>
   <span class="Identifier">description</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>
   <span class="Identifier">height</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#ImperialMetricValues"><span class="Identifier">ImperialMetricValues</span></a><span class="Other">]</span>
   <span class="Identifier">referenceImage</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#ReferenceImage"><span class="Identifier">ReferenceImage</span></a><span class="Other">]</span>
@@ -471,7 +471,7 @@ Converts breed information from the api into easy-to-use object.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-06-19 13:23:53 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-06-19 13:34:39 UTC</small>
       </div>
     </div>
   </div>
