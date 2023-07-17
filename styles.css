@@ -4,35 +4,81 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+/* Headings: */
+
 h1 {
     text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 
+/* Link colours: */
+
 a:link {
     color: pink;
+    text-decoration: none;
     background-color: transparent;
 }
 
 a:visited {
     color: hotpink;
+    text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
     color: deeppink;
+    text-decoration: none;
     background-color: transparent;
 }
 
 a:active {
-    color: maroon;
+    color: darkmagenta;
+    text-decoration: none;
     background-color: transparent;
 }
 
+
+/* Centering: */
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+
+/* Blobs: */
+
+.blob {
+    text-align: center;
+
+    margin: 50px;
+    padding: 5px;
+    border: 20px ridge rgba(69, 69, 69, 0.5);
+}
+
+
+/* Images: */
+
+.container {
+    text-align: center;
+}
+
+.containerimage {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px;
+    image-rendering: crisp-edges;
+    width: 10%;
 }
