@@ -1,0 +1,10 @@
+CardColour	cardgeneratorpkg/globals.html#CardColour	globals: CardColour	
+CardColourData	cardgeneratorpkg/globals.html#CardColourData	globals: CardColourData	
+resourcesDirectoryPath	cardgeneratorpkg/globals.html#resourcesDirectoryPath	globals: resourcesDirectoryPath	
+resources	cardgeneratorpkg/globals.html#resources	globals: resources	
+imageOutputDirectory	cardgeneratorpkg/globals.html#imageOutputDirectory	globals: imageOutputDirectory	
+globalFontSize	cardgeneratorpkg/globals.html#globalFontSize	globals: globalFontSize	
+globalSafezone	cardgeneratorpkg/globals.html#globalSafezone	globals: globalSafezone	
+drawShadowOnTextLayer	cardgeneratorpkg/globals.html#drawShadowOnTextLayer	globals: drawShadowOnTextLayer	
+shadowColours	cardgeneratorpkg/globals.html#shadowColours	globals: shadowColours	
+getResourcePath	cardgeneratorpkg/globals.html#getResourcePath	globals: getResourcePath(): string	
