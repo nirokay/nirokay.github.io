@@ -68,6 +68,15 @@ a:active {
     border: 20px ridge rgba(69, 69, 69, 0.5);
 }
 
+.smallblob {
+    display: inline-table;
+    text-align: center;
+
+    margin: 25px;
+    padding: 5px;
+    border: 10px ridge rgba(69, 69, 69, 0.5);
+}
+
 
 /* Images: */
 

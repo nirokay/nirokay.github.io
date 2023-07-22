@@ -1,3 +1,0 @@
-parseResourceDirectory	cardgeneratorpkg/resourceparser.html#parseResourceDirectory	resourceparser: parseResourceDirectory()	
-parseColourDirectories	cardgeneratorpkg/resourceparser.html#parseColourDirectories	resourceparser: parseColourDirectories(): Table[string, CardColourData]	
-Resource parser	cardgeneratorpkg/resourceparser.html#resource-parser	 Resource parser	

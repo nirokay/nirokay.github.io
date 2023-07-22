@@ -1,4 +1,0 @@
-DataForCardColour	cardgeneratorpkg/imagegenerator.html#DataForCardColour	imagegenerator: DataForCardColour	
-getDataForColour	cardgeneratorpkg/imagegenerator.html#getDataForColour,CardColourData	imagegenerator: getDataForColour(colourData: CardColourData): DataForCardColour	
-generateImagesWith	cardgeneratorpkg/imagegenerator.html#generateImagesWith,Table[string,CardColourData]	imagegenerator: generateImagesWith(cardData: Table[string, CardColourData])	
-Image generator	cardgeneratorpkg/imagegenerator.html#image-generator	 Image generator	
