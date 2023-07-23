@@ -63,8 +63,8 @@ a:active {
 .blob {
     text-align: center;
 
-    margin: 50px;
-    padding: 5px;
+    margin: 25px;
+    padding: 10px;
     border: 20px ridge rgba(69, 69, 69, 0.5);
 }
 
@@ -72,7 +72,7 @@ a:active {
     display: inline-table;
     text-align: center;
 
-    margin: 25px;
+    margin: 5px;
     padding: 5px;
     border: 10px ridge rgba(69, 69, 69, 0.5);
 }
@@ -88,6 +88,5 @@ a:active {
     display: inline-block;
     margin: 5px 5px;
     padding: 5px;
-    image-rendering: crisp-edges;
-    width: 10%;
+    width: 5rem;
 }
