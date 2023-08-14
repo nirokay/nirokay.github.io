@@ -71,7 +71,7 @@ html.addToBody(
 
     blob(
         h2("Very important random cat picture!!"),
-        image(
+        img(
             "https://api.thecatapi.com/v1/images/search?format=src&size=full",
             "you are missing out on a really cool cat picture... :("
         ).setClass("center")
