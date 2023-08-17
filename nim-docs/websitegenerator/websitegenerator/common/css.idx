@@ -1,0 +1,5 @@
+nimTitle	css	websitegenerator/common/css.html	module websitegenerator/common/css		0
+nim	cssDarkmode	websitegenerator/common/css.html#cssDarkmode	var cssDarkmode		11
+nim	cssLightmode	websitegenerator/common/css.html#cssLightmode	var cssLightmode		15
+nim	cssCenter	websitegenerator/common/css.html#cssCenter	var cssCenter		20
+heading	Common css snippets	websitegenerator/common/css.html#common-css-snippets	 Common css snippets		0
