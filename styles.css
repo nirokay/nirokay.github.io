@@ -1,15 +1,12 @@
 body {
-    background-color: rgb(23, 25, 33);
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(23, 25, 33);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-/* Headings: */
-
 h1 {
-    text-align: center;
     text-decoration: underline;
+    text-align: center;
 }
 
 h2 {
@@ -20,73 +17,75 @@ h3 {
     text-decoration: underline;
 }
 
-
-/* Link colours: */
-
 a:link {
     color: pink;
-    text-decoration: none;
     background-color: transparent;
+    text-decoration: none;
 }
 
 a:visited {
     color: hotpink;
-    text-decoration: none;
     background-color: transparent;
+    text-decoration: none;
 }
 
 a:hover {
     color: deeppink;
-    text-decoration: none;
     background-color: transparent;
+    text-decoration: none;
 }
 
 a:active {
     color: darkmagenta;
-    text-decoration: none;
     background-color: transparent;
+    text-decoration: none;
 }
-
-
-/* Centering: */
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-
-/* Blobs: */
+.center {
+    width: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
 
 .blob {
-    text-align: center;
-
     margin: 25px;
-    padding: 10px;
     border: 20px ridge rgba(69, 69, 69, 0.5);
+    padding: 10px;
+    text-align: center;
 }
 
 .smallblob {
-    display: inline-table;
-    text-align: center;
-
     margin: 5px;
-    padding: 5px;
+    display: inline-table;
     border: 10px ridge rgba(69, 69, 69, 0.5);
+    padding: 5px;
+    text-align: center;
 }
-
-
-/* Images: */
 
 .container {
     text-align: center;
 }
 
 .containerimage {
-    display: inline-block;
     margin: 5px 5px;
-    padding: 5px;
     width: 5rem;
+    display: inline-block;
+    padding: 5px;
+}
+
+.center {
+    width: 25rem;
+    display: block;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
