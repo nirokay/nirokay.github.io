@@ -1,0 +1,7 @@
+nimTitle	gitcommands	operations/gitcommands.html	module src/operations/gitcommands		0
+nim	GIT_CLONE	operations/gitcommands.html#GIT_CLONE	GitCommand.GIT_CLONE		13
+nim	GIT_PULL	operations/gitcommands.html#GIT_PULL	GitCommand.GIT_PULL		13
+nim	GIT_CHECK_UPDATES	operations/gitcommands.html#GIT_CHECK_UPDATES	GitCommand.GIT_CHECK_UPDATES		13
+nim	GitCommand	operations/gitcommands.html#GitCommand	enum GitCommand		13
+nim	execute	operations/gitcommands.html#execute,GitCommand,string	proc execute(command: GitCommand; args: string = ""): int		18
+heading	Git commands module	operations/gitcommands.html#git-commands-module	 Git commands module		0

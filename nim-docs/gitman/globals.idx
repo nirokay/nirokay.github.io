@@ -1,0 +1,8 @@
+nimTitle	globals	globals.html	module src/globals		0
+nim	PROJECT_NAME	globals.html#PROJECT_NAME	const PROJECT_NAME		11
+nim	PROJECT_VERSION	globals.html#PROJECT_VERSION	const PROJECT_VERSION		12
+nim	PROJECT_WEBSITE	globals.html#PROJECT_WEBSITE	const PROJECT_WEBSITE		13
+nim	PROJECT_DESCRIPTION	globals.html#PROJECT_DESCRIPTION	const PROJECT_DESCRIPTION		14
+nim	PROJECT_AUTHORS	globals.html#PROJECT_AUTHORS	const PROJECT_AUTHORS		15
+nim	args	globals.html#args	let args		18
+heading	Globals	globals.html#globals	 Globals		0

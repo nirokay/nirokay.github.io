@@ -1,0 +1,19 @@
+nimTitle	error	error.html	module src/error		0
+nim	IO_FAILURE	error.html#IO_FAILURE	ErrorType.IO_FAILURE		14
+nim	READ_ERROR	error.html#READ_ERROR	ErrorType.READ_ERROR		14
+nim	WRITE_ERROR	error.html#WRITE_ERROR	ErrorType.WRITE_ERROR		14
+nim	UNAVAILABLE_TEMP_FILENAMES	error.html#UNAVAILABLE_TEMP_FILENAMES	ErrorType.UNAVAILABLE_TEMP_FILENAMES		14
+nim	TEMP_DIR_UNAVAILABLE	error.html#TEMP_DIR_UNAVAILABLE	ErrorType.TEMP_DIR_UNAVAILABLE		14
+nim	EDITOR_NOT_EXISTS	error.html#EDITOR_NOT_EXISTS	ErrorType.EDITOR_NOT_EXISTS		14
+nim	OPERATION_NONE	error.html#OPERATION_NONE	ErrorType.OPERATION_NONE		14
+nim	OPERATION_UNKNOWN	error.html#OPERATION_UNKNOWN	ErrorType.OPERATION_UNKNOWN		14
+nim	INVALID_ARGUMENTS_AMOUNT	error.html#INVALID_ARGUMENTS_AMOUNT	ErrorType.INVALID_ARGUMENTS_AMOUNT		14
+nim	ErrorType	error.html#ErrorType	enum ErrorType		14
+nim	ErrorStatus	error.html#ErrorStatus	object ErrorStatus		27
+nim	add	error.html#add,ErrorStatus,string,int	proc add(status: var ErrorStatus; dir: string; exit_code: int)		32
+nim	handle	error.html#handle,ErrorType,string	proc handle(error: ErrorType; msg: string = "(none provided)")		37
+nim	print_after_clone	error.html#print_after_clone,ErrorStatus	proc print_after_clone(error: ErrorStatus)		51
+nim	print_after_pull	error.html#print_after_pull,ErrorStatus	proc print_after_pull(error: ErrorStatus)		54
+nim	print_after_remove	error.html#print_after_remove,ErrorStatus	proc print_after_remove(error: ErrorStatus)		57
+nim	print_after_install	error.html#print_after_install,ErrorStatus	proc print_after_install(error: ErrorStatus)		60
+heading	Error module	error.html#error-module	 Error module		0

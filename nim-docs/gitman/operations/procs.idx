@@ -1,0 +1,9 @@
+nimTitle	procs	operations/procs.html	module src/operations/procs		0
+nim	helpCommand	operations/procs.html#helpCommand	proc helpCommand(__1912602639)		14
+nim	listCommand	operations/procs.html#listCommand	proc listCommand(__1912602707)		36
+nim	cloneCommand	operations/procs.html#cloneCommand	proc cloneCommand(op_args)		41
+nim	removeCommand	operations/procs.html#removeCommand	proc removeCommand(op_args)		56
+nim	pullCommand	operations/procs.html#pullCommand	proc pullCommand(op_args)		140
+nim	installCommand	operations/procs.html#installCommand	proc installCommand(op_args)		164
+nim	editInstallCommand	operations/procs.html#editInstallCommand	proc editInstallCommand(__1912603197)		187
+heading	Operation procs module	operations/procs.html#operation-procs-module	 Operation procs module		0

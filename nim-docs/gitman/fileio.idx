@@ -1,0 +1,9 @@
+nimTitle	fileio	fileio.html	module src/fileio		0
+nim	git_repo_path	fileio.html#git_repo_path	let git_repo_path		20
+nim	install_json_file	fileio.html#install_json_file	let install_json_file		26
+nim	confirm_repo_dir	fileio.html#confirm_repo_dir	proc confirm_repo_dir()		34
+nim	get_valid_git_dirs_paths	fileio.html#get_valid_git_dirs_paths	proc get_valid_git_dirs_paths(): seq[string]		42
+nim	get_valid_git_dirs_names	fileio.html#get_valid_git_dirs_names	proc get_valid_git_dirs_names(): seq[string]		49
+nim	remove_git_dirs	fileio.html#remove_git_dirs,seq[string]	proc remove_git_dirs(dirs: seq[string]): ErrorStatus		54
+nim	read_install_config_file	fileio.html#read_install_config_file	proc read_install_config_file(): Table[string, string]		68
+heading	FileIO module	fileio.html#fileio-module	 FileIO module		0

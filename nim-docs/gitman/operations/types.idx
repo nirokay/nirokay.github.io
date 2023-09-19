@@ -1,0 +1,6 @@
+nimTitle	types	operations/types.html	module src/operations/types		0
+nim	Operation	operations/types.html#Operation	object Operation		9
+nim	operations	operations/types.html#operations	var operations		15
+nim	operation_from_string	operations/types.html#operation_from_string,string	proc operation_from_string(str: string): Option[Operation]		17
+nim	check_valid_range	operations/types.html#check_valid_range,Operation,seq[string]	proc check_valid_range(op: Operation; operation_args: seq[string])		31
+heading	Operation types module	operations/types.html#operation-types-module	 Operation types module		0
