@@ -1,0 +1,5 @@
+nimTitle	jsonimport	docchangerpkg/jsonimport.html	module docchangerpkg/jsonimport		0
+nim	jsonFile	docchangerpkg/jsonimport.html#jsonFile	const jsonFile		10
+nim	jsonExampleFileContent	docchangerpkg/jsonimport.html#jsonExampleFileContent	const jsonExampleFileContent		11
+nim	parseJsonToReplacement	docchangerpkg/jsonimport.html#parseJsonToReplacement	proc parseJsonToReplacement()		13
+heading	JSON import module	docchangerpkg/jsonimport.html#json-import-module	 JSON import module		0

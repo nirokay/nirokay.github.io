@@ -1,0 +1,7 @@
+nimTitle	package	package.html	module package		0
+nim	projectName	package.html#projectName	const projectName		7
+nim	projectDescription	package.html#projectDescription	const projectDescription		8
+nim	projectVersion	package.html#projectVersion	const projectVersion		9
+nim	projectAuthors	package.html#projectAuthors	const projectAuthors		10
+nim	projectLicence	package.html#projectLicence	const projectLicence		11
+nim	projectSource	package.html#projectSource	const projectSource		12

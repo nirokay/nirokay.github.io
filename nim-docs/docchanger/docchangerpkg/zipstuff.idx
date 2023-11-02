@@ -1,0 +1,6 @@
+nimTitle	zipstuff	docchangerpkg/zipstuff.html	module docchangerpkg/zipstuff		0
+nim	createTempDir	docchangerpkg/zipstuff.html#createTempDir	proc createTempDir()		12
+nim	deleteTempDir	docchangerpkg/zipstuff.html#deleteTempDir	proc deleteTempDir()		23
+nim	unzipToTempDir	docchangerpkg/zipstuff.html#unzipToTempDir,string	proc unzipToTempDir(filepath: string)		35
+nim	assembleDocumentFile	docchangerpkg/zipstuff.html#assembleDocumentFile,string	proc assembleDocumentFile(outputDocument: string = "document.out.docx")		51
+heading	ZipStuff	docchangerpkg/zipstuff.html#zipstuff	 ZipStuff		0

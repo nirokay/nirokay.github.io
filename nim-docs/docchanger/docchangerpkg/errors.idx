@@ -1,0 +1,12 @@
+nimTitle	errors	docchangerpkg/errors.html	module docchangerpkg/errors		0
+nim	DocumentChangerError	docchangerpkg/errors.html#DocumentChangerError	object DocumentChangerError		5
+nim	TempDirError	docchangerpkg/errors.html#TempDirError	object TempDirError		7
+nim	TempDirCreationError	docchangerpkg/errors.html#TempDirCreationError	object TempDirCreationError		8
+nim	TempDirAccessError	docchangerpkg/errors.html#TempDirAccessError	object TempDirAccessError		9
+nim	ZipError	docchangerpkg/errors.html#ZipError	object ZipError		11
+nim	ZipWriteError	docchangerpkg/errors.html#ZipWriteError	object ZipWriteError		12
+nim	ZipUnzipError	docchangerpkg/errors.html#ZipUnzipError	object ZipUnzipError		13
+nim	JsonFileNotFoundError	docchangerpkg/errors.html#JsonFileNotFoundError	object JsonFileNotFoundError		15
+nim	JsonFormatError	docchangerpkg/errors.html#JsonFormatError	object JsonFormatError		16
+nim	TimeTravelError	docchangerpkg/errors.html#TimeTravelError	object TimeTravelError		18
+heading	Custom error objects	docchangerpkg/errors.html#custom-error-objects	 Custom error objects		0

@@ -1,0 +1,5 @@
+nimTitle	datachanger	docchangerpkg/datachanger.html	module docchangerpkg/datachanger		0
+nim	getDateForDocument	docchangerpkg/datachanger.html#getDateForDocument.i	iterator getDateForDocument(): DateTime		52
+nim	namesFormatted	docchangerpkg/datachanger.html#namesFormatted,seq[string]	proc namesFormatted(names: seq[string]): string		73
+nim	writeDocumentForEveryDate	docchangerpkg/datachanger.html#writeDocumentForEveryDate	proc writeDocumentForEveryDate()		106
+heading	Data changer	docchangerpkg/datachanger.html#data-changer	 Data changer		0

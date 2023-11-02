@@ -1,0 +1,15 @@
+nimTitle	constants	docchangerpkg/constants.html	module docchangerpkg/constants		0
+nim	dateFormat	docchangerpkg/constants.html#dateFormat	const dateFormat		6
+nim	tempWorkingDir	docchangerpkg/constants.html#tempWorkingDir	let tempWorkingDir		12
+nim	tempWorkingUnzipped	docchangerpkg/constants.html#tempWorkingUnzipped	let tempWorkingUnzipped		13
+nim	tempUnzippedDocumentXml	docchangerpkg/constants.html#tempUnzippedDocumentXml	let tempUnzippedDocumentXml		14
+nim	sourceDocxFile	docchangerpkg/constants.html#sourceDocxFile	var sourceDocxFile		17
+nim	outputDirectory	docchangerpkg/constants.html#outputDirectory	var outputDirectory		18
+nim	outputFileName	docchangerpkg/constants.html#outputFileName	var outputFileName		19
+nim	dateFromRaw	docchangerpkg/constants.html#dateFromRaw	var dateFromRaw		21
+nim	dateTillRaw	docchangerpkg/constants.html#dateTillRaw	var dateTillRaw		22
+nim	dateFrom	docchangerpkg/constants.html#dateFrom	var dateFrom		24
+nim	dateTill	docchangerpkg/constants.html#dateTill	var dateTill		25
+nim	setSourceDocument	docchangerpkg/constants.html#setSourceDocument,string	proc setSourceDocument(filepath: string)		27
+nim	convertDates	docchangerpkg/constants.html#convertDates	proc convertDates()		33
+heading	Globals and constants	docchangerpkg/constants.html#globals-and-constants	 Globals and constants		0
