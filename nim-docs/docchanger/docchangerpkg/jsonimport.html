@@ -56,7 +56,7 @@
     <summary><a class="reference reference-toplevel" href="#10" id="60">Consts</a></summary>
     <ul class="simple simple-toc-section">
       <li><a class="reference" href="#jsonExampleFileContent" title="jsonExampleFileContent: string = &quot;{\n    \&quot;document_output_directory\&quot;: \&quot;./path/to/output/directory/\&quot;,\n    \&quot;document_source_filename\&quot;: \&quot;example-document.docx\&quot;,\n\n    \&quot;document_date_range\&quot;: {\n        \&quot;starting\&quot;: \&quot;yyyy-MM-dd\&quot;,\n        \&quot;ending\&quot;: \&quot;yyyy-MM-dd\&quot;,\n        \&quot;starting_weekday\&quot;: 0,\n        \&quot;day_interval\&quot;: 7\n    },\n\n    \&quot;participants\&quot;: {\n        \&quot;FEMALE\&quot;: [\n            \&quot;insert\&quot;, \&quot;names\&quot;\n        ],\n        \&quot;MALE\&quot;: [\n            \&quot;in\&quot;\n        ],\n        \&quot;DIVERSE\&quot;: [\n            \&quot;these\&quot;\n        ],\n        \&quot;INTERN\&quot;: [\n            \&quot;quotes\&quot;\n        ]\n    },\n\n    \&quot;name_separator\&quot;: \&quot;, \&quot;,\n\n    \&quot;search_strings\&quot;: {\n        \&quot;starting\&quot;: \&quot;${\&quot;,\n        \&quot;participants_prefix\&quot;: \&quot;PARTICIPANTS_\&quot;,\n        \&quot;date\&quot;: \&quot;INSERT_DATE\&quot;,\n        \&quot;ending\&quot;: \&quot;}\&quot;\n    }\n}\n&quot;">jsonExampleFileContent</a></li>
-<li><a class="reference" href="#jsonFile" title="jsonFile: string = &quot;document_data.json&quot;">jsonFile</a></li>
+<li><a class="reference" href="#jsonFile" title="jsonFile {.strdefine.}: string = &quot;document_data.json&quot;">jsonFile</a></li>
 
     </ul>
   </details>
@@ -97,15 +97,15 @@
   <dt><pre><a href="jsonimport.html#jsonExampleFileContent"><span class="Identifier">jsonExampleFileContent</span></a><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;{\n    \&quot;document_output_directory\&quot;: \&quot;./path/to/output/directory/\&quot;,\n    \&quot;document_source_filename\&quot;: \&quot;example-document.docx\&quot;,\n\n    \&quot;document_date_range\&quot;: {\n        \&quot;starting\&quot;: \&quot;yyyy-MM-dd\&quot;,\n        \&quot;ending\&quot;: \&quot;yyyy-MM-dd\&quot;,\n        \&quot;starting_weekday\&quot;: 0,\n        \&quot;day_interval\&quot;: 7\n    },\n\n    \&quot;participants\&quot;: {\n        \&quot;FEMALE\&quot;: [\n            \&quot;insert\&quot;, \&quot;names\&quot;\n        ],\n        \&quot;MALE\&quot;: [\n            \&quot;in\&quot;\n        ],\n        \&quot;DIVERSE\&quot;: [\n            \&quot;these\&quot;\n        ],\n        \&quot;INTERN\&quot;: [\n            \&quot;quotes\&quot;\n        ]\n    },\n\n    \&quot;name_separator\&quot;: \&quot;, \&quot;,\n\n    \&quot;search_strings\&quot;: {\n        \&quot;starting\&quot;: \&quot;${\&quot;,\n        \&quot;participants_prefix\&quot;: \&quot;PARTICIPANTS_\&quot;,\n        \&quot;date\&quot;: \&quot;INSERT_DATE\&quot;,\n        \&quot;ending\&quot;: \&quot;}\&quot;\n    }\n}\n&quot;</span></pre></dt>
   <dd>
     
-    
+    Compile-time json template reading (used for making a template, if no json was found, so the user does not have to painstakingly copy paste it from github)
     
   </dd>
 </div>
 <div id="jsonFile">
-  <dt><pre><a href="jsonimport.html#jsonFile"><span class="Identifier">jsonFile</span></a><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;document_data.json&quot;</span></pre></dt>
+  <dt><pre><a href="jsonimport.html#jsonFile"><span class="Identifier">jsonFile</span></a> {.<span class="Identifier">strdefine</span>.}<span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;document_data.json&quot;</span></pre></dt>
   <dd>
     
-    
+    Semi-hardcoded json filename
     
   </dd>
 </div>
@@ -123,7 +123,7 @@
                                 <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    
+    Parses the json file and writes to the global replacement object
     
   </dd>
 </div>
@@ -139,7 +139,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-11-02 09:52:31 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-11-02 10:19:04 UTC</small>
       </div>
     </div>
   </div>

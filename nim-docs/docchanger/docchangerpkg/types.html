@@ -53,26 +53,26 @@
     <summary><a class="reference reference-toplevel" href="#7" id="57">Types</a></summary>
     <ul class="simple simple-toc-section">
       <li><a class="reference" href="#DateRange" title="DateRange = object
-  starting*, ending*: string = &quot;yyyy-MM-dd&quot;
+  starting*, ending*: string = &quot;yyyy-MM-dd&quot; ## Starting and ending dates in, obviously, `yyyy-MM-dd` format
   starting_weekday*: int = 0 ## Week starts at Monday, 0 means not specified - pick the fist-valid day
-  day_interval*: int = 7">DateRange</a></li>
+  day_interval*: int = 7     ## Repeat generation every `x` days">DateRange</a></li>
 <li><a class="reference" href="#Replacement" title="Replacement = object
-  document_output_directory*: Option[string] = (val: &quot;./output/&quot;, has: true)
+  document_output_directory*: Option[string] = (val: &quot;./output/&quot;, has: true) ## Output directory for generated files
   document_source_filename*: Option[string] = (val: &quot;input_document.docx&quot;,
-      has: true)
+      has: true)             ## Template .docx file, that will be used to generate documents
   document_date_range*: Option[DateRange] = (val: (starting: &quot;yyyy-MM-dd&quot;,
       ending: &quot;yyyy-MM-dd&quot;, starting_weekday: 0, day_interval: 7), has: true)
-  participants*: Option[Table[string, seq[string]]]
-  name_separator*: Option[string] = (val: &quot;, &quot;, has: true)
+  participants*: Option[Table[string, seq[string]]] ## Values to replace -&gt; &quot;${`participant_prefix` &amp; `index`} will become `value`&quot;
+  name_separator*: Option[string] = (val: &quot;, &quot;, has: true) ## Separators for participant names
   search_strings*: Option[SearchStrings] = (val: (
       starting: (val: &quot;${&quot;, has: true), ending: (val: &quot;}&quot;, has: true),
       participant_prefix: (val: &quot;PARTICIPANTS_&quot;, has: true),
       date: (val: &quot;INSERT_DATE&quot;, has: true)), has: true)">Replacement</a></li>
 <li><a class="reference" href="#SearchStrings" title="SearchStrings = object
-  starting*: Option[string] = (val: &quot;${&quot;, has: true)
-  ending*: Option[string] = (val: &quot;}&quot;, has: true)
-  participant_prefix*: Option[string] = (val: &quot;PARTICIPANTS_&quot;, has: true)
-  date*: Option[string] = (val: &quot;INSERT_DATE&quot;, has: true)">SearchStrings</a></li>
+  starting*: Option[string] = (val: &quot;${&quot;, has: true) ## Start of the replacement string identifier
+  ending*: Option[string] = (val: &quot;}&quot;, has: true) ## End of the replacement string identifier
+  participant_prefix*: Option[string] = (val: &quot;PARTICIPANTS_&quot;, has: true) ## Replacement identifier
+  date*: Option[string] = (val: &quot;INSERT_DATE&quot;, has: true) ## Replacement identifier for the date">SearchStrings</a></li>
 
     </ul>
   </details>
@@ -102,32 +102,32 @@
     <div id="tocRoot"></div>
     
     <p class="module-desc">
-<h1><a class="toc-backref" id="types" href="#types">Types</a></h1><p>Includes all global types (basically only the <tt class="docutils literal"><span class="pre"><span class="Identifier">Replacement</span></span></tt> object)</p>
+<h1><a class="toc-backref" id="types" href="#types">Types</a></h1><p>Includes all global types (basically only the <tt class="docutils literal"><span class="pre"><span class="Identifier">Replacement</span></span></tt> object). Objects have default values, which means the json does not <em>require</em> all fields, but they should still be in there for maximal customization.</p>
 </p>
     <div class="section" id="7">
   <h1><a class="toc-backref" href="#7">Types</a></h1>
   <dl class="item">
     <div id="DateRange">
   <dt><pre><a href="types.html#DateRange"><span class="Identifier">DateRange</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
-  <span class="Identifier">starting</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">ending</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;yyyy-MM-dd&quot;</span>
+  <span class="Identifier">starting</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">ending</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;yyyy-MM-dd&quot;</span> <span class="Comment">## Starting and ending dates in, obviously, `yyyy-MM-dd` format</span>
   <span class="Identifier">starting_weekday</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span> <span class="DecNumber">0</span> <span class="Comment">## Week starts at Monday, 0 means not specified - pick the fist-valid day</span>
-  <span class="Identifier">day_interval</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span> <span class="DecNumber">7</span>
-</pre></dt>
+  <span class="Identifier">day_interval</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span> <span class="DecNumber">7</span>     <span class="Comment">## Repeat generation every `x` days</span>
+  </pre></dt>
   <dd>
     
-    
+    <tt class="docutils literal"><span class="pre"><span class="Identifier">document_date_range</span></span></tt> json field
     
   </dd>
 </div>
 <div id="Replacement">
   <dt><pre><a href="types.html#Replacement"><span class="Identifier">Replacement</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
-  <span class="Identifier">document_output_directory</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;./output/&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
+  <span class="Identifier">document_output_directory</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;./output/&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span> <span class="Comment">## Output directory for generated files</span>
   <span class="Identifier">document_source_filename</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;input_document.docx&quot;</span><span class="Other">,</span>
-      <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
+      <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>             <span class="Comment">## Template .docx file, that will be used to generate documents</span>
   <span class="Identifier">document_date_range</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="types.html#DateRange"><span class="Identifier">DateRange</span></a><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="Other">(</span><span class="Identifier">starting</span><span class="Other">:</span> <span class="StringLit">&quot;yyyy-MM-dd&quot;</span><span class="Other">,</span>
       <span class="Identifier">ending</span><span class="Other">:</span> <span class="StringLit">&quot;yyyy-MM-dd&quot;</span><span class="Other">,</span> <span class="Identifier">starting_weekday</span><span class="Other">:</span> <span class="DecNumber">0</span><span class="Other">,</span> <span class="Identifier">day_interval</span><span class="Other">:</span> <span class="DecNumber">7</span><span class="Other">)</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
-  <span class="Identifier">participants</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">Table</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span><span class="Other">]</span>
-  <span class="Identifier">name_separator</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;, &quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
+  <span class="Identifier">participants</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">Table</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Values to replace -&gt; &quot;${`participant_prefix` &amp; `index`} will become `value`&quot;</span>
+  <span class="Identifier">name_separator</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;, &quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span> <span class="Comment">## Separators for participant names</span>
   <span class="Identifier">search_strings</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="types.html#SearchStrings"><span class="Identifier">SearchStrings</span></a><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="Other">(</span>
       <span class="Identifier">starting</span><span class="Other">:</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;${&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span><span class="Other">,</span> <span class="Identifier">ending</span><span class="Other">:</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;}&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span><span class="Other">,</span>
       <span class="Identifier">participant_prefix</span><span class="Other">:</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;PARTICIPANTS_&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span><span class="Other">,</span>
@@ -135,20 +135,20 @@
 </pre></dt>
   <dd>
     
-    
+    Entire replacement object - parsed from json at runtime
     
   </dd>
 </div>
 <div id="SearchStrings">
   <dt><pre><a href="types.html#SearchStrings"><span class="Identifier">SearchStrings</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
-  <span class="Identifier">starting</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;${&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
-  <span class="Identifier">ending</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;}&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
-  <span class="Identifier">participant_prefix</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;PARTICIPANTS_&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
-  <span class="Identifier">date</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;INSERT_DATE&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span>
-</pre></dt>
+  <span class="Identifier">starting</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;${&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span> <span class="Comment">## Start of the replacement string identifier</span>
+  <span class="Identifier">ending</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;}&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span> <span class="Comment">## End of the replacement string identifier</span>
+  <span class="Identifier">participant_prefix</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;PARTICIPANTS_&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span> <span class="Comment">## Replacement identifier</span>
+  <span class="Identifier">date</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;INSERT_DATE&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span> <span class="Comment">## Replacement identifier for the date</span>
+  </pre></dt>
   <dd>
     
-    
+    <tt class="docutils literal"><span class="pre"><span class="Identifier">search_strings</span></span></tt> json object
     
   </dd>
 </div>
@@ -169,7 +169,7 @@
     <span class="Identifier">date</span><span class="Other">:</span> <span class="Other">(</span><span class="Identifier">val</span><span class="Other">:</span> <span class="StringLit">&quot;INSERT_DATE&quot;</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span><span class="Other">)</span><span class="Other">,</span> <span class="Identifier">has</span><span class="Other">:</span> <span class="DecNumber">true</span><span class="Other">)</span><span class="Other">)</span></pre></dt>
   <dd>
     
-    
+    Global replacement object
     
   </dd>
 </div>
@@ -183,7 +183,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-11-02 09:52:31 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-11-02 10:19:04 UTC</small>
       </div>
     </div>
   </div>

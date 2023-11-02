@@ -1,6 +1,6 @@
 nimTitle	types	docchangerpkg/types.html	module docchangerpkg/types		0
-nim	SearchStrings	docchangerpkg/types.html#SearchStrings	object SearchStrings		9
-nim	DateRange	docchangerpkg/types.html#DateRange	object DateRange		16
-nim	Replacement	docchangerpkg/types.html#Replacement	object Replacement		21
-nim	replacement	docchangerpkg/types.html#replacement_2	var replacement		32
+nim	SearchStrings	docchangerpkg/types.html#SearchStrings	object SearchStrings		10
+nim	DateRange	docchangerpkg/types.html#DateRange	object DateRange		17
+nim	Replacement	docchangerpkg/types.html#Replacement	object Replacement		22
+nim	replacement	docchangerpkg/types.html#replacement_2	var replacement		33
 heading	Types	docchangerpkg/types.html#types	 Types		0

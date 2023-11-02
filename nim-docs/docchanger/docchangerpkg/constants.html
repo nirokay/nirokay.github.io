@@ -148,7 +148,7 @@
   <dt><pre><a href="constants.html#outputDirectory"><span class="Identifier">outputDirectory</span></a><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
   <dd>
     
-    
+    Output path, where all generated files will go
     
   </dd>
 </div>
@@ -156,7 +156,7 @@
   <dt><pre><a href="constants.html#outputFileName"><span class="Identifier">outputFileName</span></a><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
   <dd>
     
-    
+    Output name (will be: <tt class="docutils literal"><span class="pre"><span class="Identifier">sourceDocxFile</span> <span class="Operator">&amp;</span> <span class="StringLit">&quot;_&quot;</span> <span class="Operator">&amp;</span> <span class="Identifier">DATE</span> <span class="Operator">&amp;</span> <span class="StringLit">&quot;.docx&quot;</span></span></tt>)
     
   </dd>
 </div>
@@ -164,7 +164,7 @@
   <dt><pre><a href="constants.html#sourceDocxFile"><span class="Identifier">sourceDocxFile</span></a><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
   <dd>
     
-    
+    Source .docx file
     
   </dd>
 </div>
@@ -178,7 +178,7 @@
   <dt><pre><a href="constants.html#tempUnzippedDocumentXml"><span class="Identifier">tempUnzippedDocumentXml</span></a><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <a href="constants.html#tempWorkingUnzipped"><span class="Identifier">tempWorkingUnzipped</span></a> <span class="Operator">&amp;</span> <span class="StringLit">&quot;word/document.xml&quot;</span></pre></dt>
   <dd>
     
-    
+    Path to <tt class="docutils literal"><span class="pre"><span class="Identifier">document</span><span class="Operator">.</span><span class="Identifier">xml</span></span></tt> file in the temporary directory
     
   </dd>
 </div>
@@ -186,7 +186,7 @@
   <dt><pre><a href="constants.html#tempWorkingDir"><span class="Identifier">tempWorkingDir</span></a><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="Identifier">tempDir</span> <span class="Operator">&amp;</span> <span class="StringLit">&quot;temp-topicdocchanger-files/&quot;</span></pre></dt>
   <dd>
     
-    
+    Temporary directory used by this program
     
   </dd>
 </div>
@@ -194,7 +194,7 @@
   <dt><pre><a href="constants.html#tempWorkingUnzipped"><span class="Identifier">tempWorkingUnzipped</span></a><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <a href="constants.html#tempWorkingDir"><span class="Identifier">tempWorkingDir</span></a> <span class="Operator">&amp;</span> <span class="StringLit">&quot;unzipped/&quot;</span></pre></dt>
   <dd>
     
-    
+    Temporary directory with unzipped template .docx file
     
   </dd>
 </div>
@@ -208,7 +208,7 @@
   <dt><pre><a href="constants.html#dateFormat"><span class="Identifier">dateFormat</span></a><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;yyyy-MM-dd&quot;</span></pre></dt>
   <dd>
     
-    
+    Date format used by the json file
     
   </dd>
 </div>
@@ -223,7 +223,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#convertDates"><span class="Identifier">convertDates</span></a><span class="Other">(</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">TimeParseError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">TimeEffect</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    
+    Converts <tt class="docutils literal"><span class="pre"><span class="Identifier">dateFromRaw</span></span></tt> to <tt class="docutils literal"><span class="pre"><span class="Identifier">dateFrom</span></span></tt> and <tt class="docutils literal"><span class="pre"><span class="Identifier">dateTillRaw</span></span></tt> to <tt class="docutils literal"><span class="pre"><span class="Identifier">dateTill</span></span></tt>
     
   </dd>
 </div>
@@ -235,7 +235,7 @@
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ReadDirEffect</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Sets the source document
+    Sets the source document, errors when it is not found
     
   </dd>
 </div>
@@ -251,7 +251,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-11-02 09:52:31 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2023-11-02 10:19:04 UTC</small>
       </div>
     </div>
   </div>

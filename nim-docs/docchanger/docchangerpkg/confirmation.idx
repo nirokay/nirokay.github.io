@@ -4,6 +4,6 @@ nim	confirmNo	docchangerpkg/confirmation.html#confirmNo	Confirmation.confirmNo		
 nim	confirmQuestionable	docchangerpkg/confirmation.html#confirmQuestionable	Confirmation.confirmQuestionable		8
 nim	Confirmation	docchangerpkg/confirmation.html#Confirmation	enum Confirmation		8
 nim	exit	docchangerpkg/confirmation.html#exit,int	proc exit(code: int)		11
-nim	consentOrDie	docchangerpkg/confirmation.html#consentOrDie,string,string,string	proc consentOrDie(question, consentResponse: string;\n             dissentResponse: string = "Quitting...")		42
-nim	dissentOrContinue	docchangerpkg/confirmation.html#dissentOrContinue,string,string,string	proc dissentOrContinue(question, consentResponse: string;\n                  dissentResponse: string = "Quitting...")		51
+nim	consentOrDie	docchangerpkg/confirmation.html#consentOrDie,string,string,string	proc consentOrDie(question, consentResponse: string;\n             dissentResponse: string = "Quitting...")		43
+nim	dissentOrContinue	docchangerpkg/confirmation.html#dissentOrContinue,string,string,string	proc dissentOrContinue(question, consentResponse: string;\n                  dissentResponse: string = "Quitting...")		53
 heading	Confirmations	docchangerpkg/confirmation.html#confirmations	 Confirmations		0
