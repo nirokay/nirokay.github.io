@@ -81,7 +81,8 @@ html.addToBody(
         Nim.codeDoc("nimcatapi", "is a library with which you can easily request images from thecatapi and/or thedogapi."),
         Nim.codeDoc("nimegenerator", "is a library-binary hybrid, which lets you create randomly generated names/words."),
         Nim.codeDoc("cardgenerator", "is a cli tool which lets you create playing-cards from minimal resources."),
-        Nim.codeDoc("websitegenerator", "is a library that allows you to generate static html/css. This site is actually generated using it!!")
+        Nim.codeDoc("websitegenerator", "is a library that allows you to generate static html/css. This site is actually generated using it!!"),
+        Nim.codeDoc("docchanger", "is an application that automates generating repetitive documents. Useful for meetings and meeting-summaries.")
     ),
 
     blob(
