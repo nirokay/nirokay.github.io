@@ -1,0 +1,11 @@
+nimTitle	client	website/client.html	module website/client		0
+nim	ConnectionError	website/client.html#ConnectionError	object ConnectionError		11
+nim	FetchError	website/client.html#FetchError	object FetchError		12
+nim	http	website/client.html#http	var http		18
+nim	requestRawText	website/client.html#requestRawText,string,string	proc requestRawText(url: string; backupPath: string = ""): string		55
+nim	requestJson	website/client.html#requestJson,string,string	proc requestJson(url: string; backupPath: string = ""): JsonNode		61
+nim	getLocationJson	website/client.html#getLocationJson	proc getLocationJson(): JsonNode		73
+nim	getTourJson	website/client.html#getTourJson	proc getTourJson(): JsonNode		74
+nim	getArticlesJson	website/client.html#getArticlesJson	proc getArticlesJson(): JsonNode		75
+nim	getMapSvg	website/client.html#getMapSvg	proc getMapSvg(): string		76
+heading	Http Client module	website/client.html#http-client-module	 Http Client module		0

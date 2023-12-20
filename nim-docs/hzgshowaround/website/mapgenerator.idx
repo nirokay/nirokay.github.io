@@ -1,0 +1,9 @@
+nimTitle	mapgenerator	website/mapgenerator.html	module website/mapgenerator		0
+nim	svgExportPath	website/mapgenerator.html#svgExportPath	const svgExportPath		16
+nim	Rect	website/mapgenerator.html#Rect	object Rect		21
+nim	Layer	website/mapgenerator.html#Layer	object Layer		28
+nim	`$`	website/mapgenerator.html#$,Rect	proc `$`(rect: Rect): string		36
+nim	`$`	website/mapgenerator.html#$,Layer	proc `$`(layer: Layer): string		55
+nim	generateSvg	website/mapgenerator.html#generateSvg	proc generateSvg()		176
+nimgrp	$	website/mapgenerator.html#$-procs-all	proc		36
+heading	Map generator module	website/mapgenerator.html#map-generator-module	 Map generator module		0
