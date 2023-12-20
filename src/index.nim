@@ -32,7 +32,9 @@ proc container(elements: varargs[HtmlElement]): HtmlElement =
 proc codeDoc(language: ProgrammingLanguage, name, desc: string): HtmlElement =
     let
         link = &"./nim-docs/{name}/{name}.html"
-        image: HtmlElement = img($language, "Language").attr(attr("width", "50rem"))
+        image: HtmlElement = img($language, "Language").add(
+            attr("width", "50rem")
+        )
         header: HtmlElement = h3($a(link, name) & " " & $image)
         description: HtmlElement = p(
             $b(name) & " " & desc & $br() &
@@ -42,7 +44,10 @@ proc codeDoc(language: ProgrammingLanguage, name, desc: string): HtmlElement =
 
 proc codeShowcase(language: ProgrammingLanguage, name, desc: string): HtmlElement =
     let
-        image: HtmlElement = img($language, "Language").attr(attr("width", "50rem")).attr(attr("max-width", "2px"))
+        image: HtmlElement = img($language, "Language").add(
+            attr("width", "50rem"),
+            attr("max-width", "2px")
+        )
         header: HtmlElement = h3(name & " " & $image)
         description: HtmlElement = p(
             $b(name) & " " & desc & $br() &
@@ -82,7 +87,8 @@ html.addToBody(
         Nim.codeDoc("nimegenerator", "is a library-binary hybrid, which lets you create randomly generated names/words."),
         Nim.codeDoc("cardgenerator", "is a cli tool which lets you create playing-cards from minimal resources."),
         Nim.codeDoc("websitegenerator", "is a library that allows you to generate static html/css. This site is actually generated using it!!"),
-        Nim.codeDoc("docchanger", "is an application that automates generating repetitive documents. Useful for meetings and meeting-summaries.")
+        Nim.codeDoc("docchanger", "is an application that automates generating repetitive documents. Useful for meetings and meeting-summaries."),
+        Nim.codeDoc("hzgshowaround", "is a builder for the <a href='https://nirokay.github.io/HzgShowAround'>HzgShowAround</a> website.")
     ),
 
     blob(
