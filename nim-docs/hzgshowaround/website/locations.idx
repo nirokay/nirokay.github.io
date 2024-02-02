@@ -1,16 +1,7 @@
 nimTitle	locations	website/locations.html	module website/locations		0
-nim	locationHtmlPath	website/locations.html#locationHtmlPath	const locationHtmlPath		11
-nim	Pictures	website/locations.html#Pictures	object Pictures		14
-nim	Coords	website/locations.html#Coords	type Coords		17
-nim	Paragraph	website/locations.html#Paragraph	type Paragraph		19
-nim	Description	website/locations.html#Description	type Description		21
-nim	OpeningTimes	website/locations.html#OpeningTimes	type OpeningTimes		23
-nim	Location	website/locations.html#Location	object Location		25
-nim	withCoords	website/locations.html#withCoords.i,seq[Location]	iterator withCoords(locations: seq[Location]): Location		35
-nim	convert	website/locations.html#convert,Description	proc convert(desc: Description): seq[HtmlElement]		42
-nim	getLocationPath	website/locations.html#getLocationPath,string	proc getLocationPath(name: string): string		49
-nim	getLocationPath	website/locations.html#getLocationPath,Location	proc getLocationPath(location: Location): string		52
-nim	getLocations	website/locations.html#getLocations	proc getLocations(): seq[Location]		56
-nim	generateLocationsHtmlPages	website/locations.html#generateLocationsHtmlPages,seq[Location]	proc generateLocationsHtmlPages(locations: seq[Location])		95
-nimgrp	getlocationpath	website/locations.html#getLocationPath-procs-all	proc		49
+nim	convert	website/locations.html#convert,Description	proc convert(desc: Description): seq[HtmlElement]		10
+nim	generateLocationMap	website/locations.html#generateLocationMap,Location	proc generateLocationMap(location: Location)		39
+nim	getLocationMapPath	website/locations.html#getLocationMapPath,Location	proc getLocationMapPath(location: Location): string		43
+nim	generateLocationHtml	website/locations.html#generateLocationHtml,Location	proc generateLocationHtml(location: Location)		47
+nim	generateLocations	website/locations.html#generateLocations,seq[Location]	proc generateLocations(locations: seq[Location])		128
 heading	Locations module	website/locations.html#locations-module	 Locations module		0

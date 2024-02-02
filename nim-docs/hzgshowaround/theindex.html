@@ -21,7 +21,7 @@
   <div class="document" id="documentId">
     <div class="container">
       <h1 class="title">Index</h1>
-      Modules: <a href="hzgshowaround.html">hzgshowaround</a>, <a href="webbuilder.html">webbuilder</a>, <a href="website/articles.html">website/articles</a>, <a href="website/client.html">website/client</a>, <a href="website/generator.html">website/generator</a>, <a href="website/globals.html">website/globals</a>, <a href="website/index.html">website/index</a>, <a href="website/locations.html">website/locations</a>, <a href="website/map.html">website/map</a>, <a href="website/mapgenerator.html">website/mapgenerator</a>, <a href="website/newsfeed.html">website/newsfeed</a>, <a href="website/notFound404.html">website/notFound404</a>, <a href="website/styles.html">website/styles</a>, <a href="website/tos.html">website/tos</a>, <a href="website/tour.html">website/tour</a>.<br/><p /><h2>API symbols</h2>
+      Modules: <a href="hzgshowaround.html">hzgshowaround</a>, <a href="webbuilder.html">webbuilder</a>, <a href="website/articles.html">website/articles</a>, <a href="website/client.html">website/client</a>, <a href="website/generator.html">website/generator</a>, <a href="website/globals.html">website/globals</a>, <a href="website/index.html">website/index</a>, <a href="website/locations.html">website/locations</a>, <a href="website/map.html">website/map</a>, <a href="website/mapgenerator.html">website/mapgenerator</a>, <a href="website/newsfeed.html">website/newsfeed</a>, <a href="website/notFound404.html">website/notFound404</a>, <a href="website/styles.html">website/styles</a>, <a href="website/tos.html">website/tos</a>, <a href="website/tour.html">website/tour</a>, <a href="website/typedefs.html">website/typedefs</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%24%60" href="#%60%24%60"><span>`$`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="mapgenerator: proc `$`(layer: Layer): string" href="website/mapgenerator.html#%24%2CLayer">mapgenerator: proc `$`(layer: Layer): string</a></li>
@@ -108,7 +108,7 @@
           </ul></dd>
 <dt><a name="Coords" href="#Coords"><span>Coords:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: type Coords" href="website/locations.html#Coords">locations: type Coords</a></li>
+          data-doc-search-tag="typedefs: type Coords" href="website/typedefs.html#Coords">typedefs: type Coords</a></li>
           </ul></dd>
 <dt><a name="css" href="#css"><span>css:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -120,7 +120,7 @@
           </ul></dd>
 <dt><a name="Description" href="#Description"><span>Description:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: type Description" href="website/locations.html#Description">locations: type Description</a></li>
+          data-doc-search-tag="typedefs: type Description" href="website/typedefs.html#Description">typedefs: type Description</a></li>
           </ul></dd>
 <dt><a name="FetchError" href="#FetchError"><span>FetchError:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -134,13 +134,25 @@
 <li><a class="reference external"
           data-doc-search-tag="generator: proc generate(html: var HtmlDocument)" href="website/generator.html#generate%2CHtmlDocument">generator: proc generate(html: var HtmlDocument)</a></li>
           </ul></dd>
-<dt><a name="generateLocationsHtmlPages" href="#generateLocationsHtmlPages"><span>generateLocationsHtmlPages:</span></a></dt><dd><ul class="simple">
+<dt><a name="generateFullSvgMap" href="#generateFullSvgMap"><span>generateFullSvgMap:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: proc generateLocationsHtmlPages(locations: seq[Location])" href="website/locations.html#generateLocationsHtmlPages%2Cseq%5BLocation%5D">locations: proc generateLocationsHtmlPages(locations: seq[Location])</a></li>
+          data-doc-search-tag="mapgenerator: proc generateFullSvgMap()" href="website/mapgenerator.html#generateFullSvgMap">mapgenerator: proc generateFullSvgMap()</a></li>
           </ul></dd>
-<dt><a name="generateSvg" href="#generateSvg"><span>generateSvg:</span></a></dt><dd><ul class="simple">
+<dt><a name="generateLocationHtml" href="#generateLocationHtml"><span>generateLocationHtml:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="mapgenerator: proc generateSvg()" href="website/mapgenerator.html#generateSvg">mapgenerator: proc generateSvg()</a></li>
+          data-doc-search-tag="locations: proc generateLocationHtml(location: Location)" href="website/locations.html#generateLocationHtml%2CLocation">locations: proc generateLocationHtml(location: Location)</a></li>
+          </ul></dd>
+<dt><a name="generateLocationMap" href="#generateLocationMap"><span>generateLocationMap:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="locations: proc generateLocationMap(location: Location)" href="website/locations.html#generateLocationMap%2CLocation">locations: proc generateLocationMap(location: Location)</a></li>
+          </ul></dd>
+<dt><a name="generateLocations" href="#generateLocations"><span>generateLocations:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="locations: proc generateLocations(locations: seq[Location])" href="website/locations.html#generateLocations%2Cseq%5BLocation%5D">locations: proc generateLocations(locations: seq[Location])</a></li>
+          </ul></dd>
+<dt><a name="generateLocationSvgMap" href="#generateLocationSvgMap"><span>generateLocationSvgMap:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="mapgenerator: proc generateLocationSvgMap(location: Location)" href="website/mapgenerator.html#generateLocationSvgMap%2CLocation">mapgenerator: proc generateLocationSvgMap(location: Location)</a></li>
           </ul></dd>
 <dt><a name="getArticlesJson" href="#getArticlesJson"><span>getArticlesJson:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -150,15 +162,23 @@
 <li><a class="reference external"
           data-doc-search-tag="client: proc getLocationJson(): JsonNode" href="website/client.html#getLocationJson">client: proc getLocationJson(): JsonNode</a></li>
           </ul></dd>
+<dt><a name="getLocationMapPath" href="#getLocationMapPath"><span>getLocationMapPath:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="locations: proc getLocationMapPath(location: Location): string" href="website/locations.html#getLocationMapPath%2CLocation">locations: proc getLocationMapPath(location: Location): string</a></li>
+          </ul></dd>
 <dt><a name="getLocationPath" href="#getLocationPath"><span>getLocationPath:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: proc getLocationPath(location: Location): string" href="website/locations.html#getLocationPath%2CLocation">locations: proc getLocationPath(location: Location): string</a></li>
+          data-doc-search-tag="typedefs: proc getLocationPath(location: Location): string" href="website/typedefs.html#getLocationPath%2CLocation">typedefs: proc getLocationPath(location: Location): string</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="locations: proc getLocationPath(name: string): string" href="website/locations.html#getLocationPath%2Cstring">locations: proc getLocationPath(name: string): string</a></li>
+          data-doc-search-tag="typedefs: proc getLocationPath(name: string): string" href="website/typedefs.html#getLocationPath%2Cstring">typedefs: proc getLocationPath(name: string): string</a></li>
           </ul></dd>
 <dt><a name="getLocations" href="#getLocations"><span>getLocations:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: proc getLocations(): seq[Location]" href="website/locations.html#getLocations">locations: proc getLocations(): seq[Location]</a></li>
+          data-doc-search-tag="typedefs: proc getLocations(): seq[Location]" href="website/typedefs.html#getLocations">typedefs: proc getLocations(): seq[Location]</a></li>
+          </ul></dd>
+<dt><a name="getLocationSvgMapPath" href="#getLocationSvgMapPath"><span>getLocationSvgMapPath:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="mapgenerator: proc getLocationSvgMapPath(location: Location): string" href="website/mapgenerator.html#getLocationSvgMapPath%2CLocation">mapgenerator: proc getLocationSvgMapPath(location: Location): string</a></li>
           </ul></dd>
 <dt><a name="getMapSvg" href="#getMapSvg"><span>getMapSvg:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -196,21 +216,33 @@
 <li><a class="reference external"
           data-doc-search-tag="articles: const imageTags" href="website/articles.html#imageTags">articles: const imageTags</a></li>
           </ul></dd>
+<dt><a name="imgFooter" href="#imgFooter"><span>imgFooter:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="typedefs: LocationImageType.imgFooter" href="website/typedefs.html#imgFooter">typedefs: LocationImageType.imgFooter</a></li>
+          </ul></dd>
+<dt><a name="imgHeader" href="#imgHeader"><span>imgHeader:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="typedefs: LocationImageType.imgHeader" href="website/typedefs.html#imgHeader">typedefs: LocationImageType.imgHeader</a></li>
+          </ul></dd>
+<dt><a name="indexLocationDropDownId" href="#indexLocationDropDownId"><span>indexLocationDropDownId:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="globals: const indexLocationDropDownId" href="website/globals.html#indexLocationDropDownId">globals: const indexLocationDropDownId</a></li>
+          </ul></dd>
 <dt><a name="isSet" href="#isSet"><span>isSet:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="globals: proc isSet[T](item: Option[T]): bool" href="website/globals.html#isSet%2COption%5BT%5D">globals: proc isSet[T](item: Option[T]): bool</a></li>
           </ul></dd>
 <dt><a name="Layer" href="#Layer"><span>Layer:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="mapgenerator: object Layer" href="website/mapgenerator.html#Layer">mapgenerator: object Layer</a></li>
+          data-doc-search-tag="typedefs: object Layer" href="website/typedefs.html#Layer">typedefs: object Layer</a></li>
           </ul></dd>
 <dt><a name="Location" href="#Location"><span>Location:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: object Location" href="website/locations.html#Location">locations: object Location</a></li>
+          data-doc-search-tag="typedefs: object Location" href="website/typedefs.html#Location">typedefs: object Location</a></li>
           </ul></dd>
 <dt><a name="locationHtmlPath" href="#locationHtmlPath"><span>locationHtmlPath:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: const locationHtmlPath" href="website/locations.html#locationHtmlPath">locations: const locationHtmlPath</a></li>
+          data-doc-search-tag="typedefs: const locationHtmlPath" href="website/typedefs.html#locationHtmlPath">typedefs: const locationHtmlPath</a></li>
           </ul></dd>
 <dt><a name="locationImageFooter" href="#locationImageFooter"><span>locationImageFooter:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -219,6 +251,18 @@
 <dt><a name="locationImageHeader" href="#locationImageHeader"><span>locationImageHeader:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="globals: const locationImageHeader" href="website/globals.html#locationImageHeader">globals: const locationImageHeader</a></li>
+          </ul></dd>
+<dt><a name="LocationImageType" href="#LocationImageType"><span>LocationImageType:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="typedefs: enum LocationImageType" href="website/typedefs.html#LocationImageType">typedefs: enum LocationImageType</a></li>
+          </ul></dd>
+<dt><a name="locationMapImagePath" href="#locationMapImagePath"><span>locationMapImagePath:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="typedefs: const locationMapImagePath" href="website/typedefs.html#locationMapImagePath">typedefs: const locationMapImagePath</a></li>
+          </ul></dd>
+<dt><a name="mapAreaFillColour" href="#mapAreaFillColour"><span>mapAreaFillColour:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="typedefs: const mapAreaFillColour" href="website/typedefs.html#mapAreaFillColour">typedefs: const mapAreaFillColour</a></li>
           </ul></dd>
 <dt><a name="mapElement" href="#mapElement"><span>mapElement:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -248,6 +292,10 @@
 <li><a class="reference external"
           data-doc-search-tag="globals: const newsElementGeneric" href="website/globals.html#newsElementGeneric">globals: const newsElementGeneric</a></li>
           </ul></dd>
+<dt><a name="newsElementHappened" href="#newsElementHappened"><span>newsElementHappened:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="globals: const newsElementHappened" href="website/globals.html#newsElementHappened">globals: const newsElementHappened</a></li>
+          </ul></dd>
 <dt><a name="newsElementWarning" href="#newsElementWarning"><span>newsElementWarning:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="globals: const newsElementWarning" href="website/globals.html#newsElementWarning">globals: const newsElementWarning</a></li>
@@ -256,23 +304,29 @@
 <li><a class="reference external"
           data-doc-search-tag="newsfeed: const newsfeedDivId" href="website/newsfeed.html#newsfeedDivId">newsfeed: const newsfeedDivId</a></li>
           </ul></dd>
+<dt><a name="newSvgFile" href="#newSvgFile"><span>newSvgFile:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="mapgenerator: proc newSvgFile(): SvgFile" href="website/mapgenerator.html#newSvgFile">mapgenerator: proc newSvgFile(): SvgFile</a></li>
+          </ul></dd>
 <dt><a name="OpeningTimes" href="#OpeningTimes"><span>OpeningTimes:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: type OpeningTimes" href="website/locations.html#OpeningTimes">locations: type OpeningTimes</a></li>
+          data-doc-search-tag="typedefs: type OpeningTimes" href="website/typedefs.html#OpeningTimes">typedefs: type OpeningTimes</a></li>
           </ul></dd>
 <dt><a name="Paragraph" href="#Paragraph"><span>Paragraph:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: type Paragraph" href="website/locations.html#Paragraph">locations: type Paragraph</a></li>
+          data-doc-search-tag="typedefs: type Paragraph" href="website/typedefs.html#Paragraph">typedefs: type Paragraph</a></li>
           </ul></dd>
 <dt><a name="pc" href="#pc"><span>pc:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="globals: proc pc(lines: seq[string]): HtmlElement" href="website/globals.html#pc%2Cseq%5Bstring%5D">globals: proc pc(lines: seq[string]): HtmlElement</a></li>
           <li><a class="reference external"
+          data-doc-search-tag="globals: proc pc(elements: varargs[HtmlElement]): HtmlElement" href="website/globals.html#pc%2Cvarargs%5BHtmlElement%5D">globals: proc pc(elements: varargs[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="globals: proc pc(lines: varargs[string]): HtmlElement" href="website/globals.html#pc%2Cvarargs%5Bstring%5D">globals: proc pc(lines: varargs[string]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="Pictures" href="#Pictures"><span>Pictures:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: object Pictures" href="website/locations.html#Pictures">locations: object Pictures</a></li>
+          data-doc-search-tag="typedefs: object Pictures" href="website/typedefs.html#Pictures">typedefs: object Pictures</a></li>
           </ul></dd>
 <dt><a name="rawTourJson" href="#rawTourJson"><span>rawTourJson:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -280,7 +334,7 @@
           </ul></dd>
 <dt><a name="Rect" href="#Rect"><span>Rect:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="mapgenerator: object Rect" href="website/mapgenerator.html#Rect">mapgenerator: object Rect</a></li>
+          data-doc-search-tag="typedefs: object Rect" href="website/typedefs.html#Rect">typedefs: object Rect</a></li>
           </ul></dd>
 <dt><a name="requestJson" href="#requestJson"><span>requestJson:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -298,6 +352,10 @@
 <li><a class="reference external"
           data-doc-search-tag="mapgenerator: const svgExportPath" href="website/mapgenerator.html#svgExportPath">mapgenerator: const svgExportPath</a></li>
           </ul></dd>
+<dt><a name="SvgFile" href="#SvgFile"><span>SvgFile:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="mapgenerator: tuple SvgFile" href="website/mapgenerator.html#SvgFile">mapgenerator: tuple SvgFile</a></li>
+          </ul></dd>
 <dt><a name="textCenter" href="#textCenter"><span>textCenter:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="globals: const textCenter" href="website/globals.html#textCenter">globals: const textCenter</a></li>
@@ -313,6 +371,10 @@
 <dt><a name="textUnderline" href="#textUnderline"><span>textUnderline:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="globals: const textUnderline" href="website/globals.html#textUnderline">globals: const textUnderline</a></li>
+          </ul></dd>
+<dt><a name="toRects" href="#toRects"><span>toRects:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="mapgenerator: proc toRects(locations: seq[Location]): seq[Rect]" href="website/mapgenerator.html#toRects%2Cseq%5BLocation%5D">mapgenerator: proc toRects(locations: seq[Location]): seq[Rect]</a></li>
           </ul></dd>
 <dt><a name="tourIds" href="#tourIds"><span>tourIds:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -360,13 +422,13 @@
           </ul></dd>
 <dt><a name="withCoords" href="#withCoords"><span>withCoords:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="locations: iterator withCoords(locations: seq[Location]): Location" href="website/locations.html#withCoords.i%2Cseq%5BLocation%5D">locations: iterator withCoords(locations: seq[Location]): Location</a></li>
+          data-doc-search-tag="typedefs: iterator withCoords(locations: seq[Location]): Location" href="website/typedefs.html#withCoords.i%2Cseq%5BLocation%5D">typedefs: iterator withCoords(locations: seq[Location]): Location</a></li>
           </ul></dd>
 </dl>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-12-20 08:18:51 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-02 12:43:45 UTC</small>
       </div>
     </div>
   </div>
