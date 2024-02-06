@@ -2,11 +2,11 @@ nimTitle	procs	bttrwttrin/procs.html	module src/bttrwttrin/procs		0
 nim	Metric	bttrwttrin/procs.html#Metric	Unit.Metric		9
 nim	Imperial	bttrwttrin/procs.html#Imperial	Unit.Imperial		9
 nim	Unit	bttrwttrin/procs.html#Unit	enum Unit		9
-nim	getWeather	bttrwttrin/procs.html#getWeather,string	proc getWeather(city: string): WeatherRequest		20
-nim	getWeather	bttrwttrin/procs.html#getWeather,seq[string]	proc getWeather(cities: seq[string]): OrderedTable[string, WeatherRequest]		24
-nim	getToday	bttrwttrin/procs.html#getToday,WeatherRequest	proc getToday(weather: WeatherRequest): Option[WeatherForecast]		43
-nim	getTomorrow	bttrwttrin/procs.html#getTomorrow,WeatherRequest	proc getTomorrow(weather: WeatherRequest): Option[WeatherForecast]		47
-nim	getOvermorrow	bttrwttrin/procs.html#getOvermorrow,WeatherRequest	proc getOvermorrow(weather: WeatherRequest): Option[WeatherForecast]		51
-nim	getDayAfterTomorrow	bttrwttrin/procs.html#getDayAfterTomorrow,WeatherRequest	proc getDayAfterTomorrow(weather: WeatherRequest): Option[WeatherForecast]		55
-nim	getTemperatureFluctuation	bttrwttrin/procs.html#getTemperatureFluctuation,WeatherForecast,Unit	proc getTemperatureFluctuation(weather: WeatherForecast; unit: Unit = Metric): int		61
-nimgrp	getweather	bttrwttrin/procs.html#getWeather-procs-all	proc		20
+nim	getWeather	bttrwttrin/procs.html#getWeather,string	proc getWeather(city: string): WeatherRequest		21
+nim	getWeather	bttrwttrin/procs.html#getWeather,seq[string]	proc getWeather(cities: seq[string]): OrderedTable[string, WeatherRequest]		25
+nim	getToday	bttrwttrin/procs.html#getToday,WeatherRequest	proc getToday(weather: WeatherRequest): Option[WeatherForecast]		44
+nim	getTomorrow	bttrwttrin/procs.html#getTomorrow,WeatherRequest	proc getTomorrow(weather: WeatherRequest): Option[WeatherForecast]		48
+nim	getOvermorrow	bttrwttrin/procs.html#getOvermorrow,WeatherRequest	proc getOvermorrow(weather: WeatherRequest): Option[WeatherForecast]		52
+nim	getDayAfterTomorrow	bttrwttrin/procs.html#getDayAfterTomorrow,WeatherRequest	proc getDayAfterTomorrow(weather: WeatherRequest): Option[WeatherForecast]		56
+nim	getTemperatureFluctuation	bttrwttrin/procs.html#getTemperatureFluctuation,WeatherForecast,Unit	proc getTemperatureFluctuation(weather: WeatherForecast; unit: Unit = Metric): int		62
+nimgrp	getweather	bttrwttrin/procs.html#getWeather-procs-all	proc		21
