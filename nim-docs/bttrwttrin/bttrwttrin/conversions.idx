@@ -1,0 +1,16 @@
+nimTitle	conversions	bttrwttrin/conversions.html	module src/bttrwttrin/conversions		0
+nim	getWind	bttrwttrin/conversions.html#getWind,Option[string],Option[string],Option[string],Option[string]	proc getWind(deg, p16, speedM, speedI: Option[string]): Wind		46
+nim	jsonToCurrent	bttrwttrin/conversions.html#jsonToCurrent,JsonCurrentLocation	proc jsonToCurrent(json: JsonCurrentLocation): CurrentWeather		53
+nim	jsonToNearestArea	bttrwttrin/conversions.html#jsonToNearestArea,JsonNearestArea	proc jsonToNearestArea(json: JsonNearestArea): Option[NearestArea]		71
+nim	jsonToNearestArea	bttrwttrin/conversions.html#jsonToNearestArea,seq[JsonNearestArea]	proc jsonToNearestArea(json: seq[JsonNearestArea]): Option[NearestArea]		85
+nim	getAstronomy	bttrwttrin/conversions.html#getAstronomy,seq[JsonAstronomy]	proc getAstronomy(json: seq[JsonAstronomy]): Astronomy		94
+nim	getHourly	bttrwttrin/conversions.html#getHourly,JsonHourlyForecast	proc getHourly(json: JsonHourlyForecast): WeatherHourlyForecast		110
+nim	getHourly	bttrwttrin/conversions.html#getHourly,seq[JsonHourlyForecast]	proc getHourly(json: seq[JsonHourlyForecast]): seq[WeatherHourlyForecast]		142
+nim	getForecast	bttrwttrin/conversions.html#getForecast,JsonWeatherForecast	proc getForecast(json: JsonWeatherForecast): WeatherForecast		147
+nim	getForecasts	bttrwttrin/conversions.html#getForecasts,seq[JsonWeatherForecast]	proc getForecasts(json: seq[JsonWeatherForecast]): seq[WeatherForecast]		161
+nim	jsonToObject	bttrwttrin/conversions.html#jsonToObject,JsonWeather	proc jsonToObject(json: JsonWeather): WeatherRequest		167
+nim	parseWeather	bttrwttrin/conversions.html#parseWeather,JsonNode	proc parseWeather(json: JsonNode): WeatherRequest		176
+nim	parseWeather	bttrwttrin/conversions.html#parseWeather,string	proc parseWeather(json: string): WeatherRequest		181
+nimgrp	parseweather	bttrwttrin/conversions.html#parseWeather-procs-all	proc		176
+nimgrp	jsontonearestarea	bttrwttrin/conversions.html#jsonToNearestArea-procs-all	proc		71
+nimgrp	gethourly	bttrwttrin/conversions.html#getHourly-procs-all	proc		110

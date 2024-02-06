@@ -1,0 +1,9 @@
+nimTitle	typedefsjson	bttrwttrin/typedefsjson.html	module src/bttrwttrin/typedefsjson		0
+nim	JsonSeqValue	bttrwttrin/typedefsjson.html#JsonSeqValue	type JsonSeqValue		4
+nim	JsonCurrentLocation	bttrwttrin/typedefsjson.html#JsonCurrentLocation	object JsonCurrentLocation		6
+nim	JsonNearestArea	bttrwttrin/typedefsjson.html#JsonNearestArea	object JsonNearestArea		17
+nim	JsonWttrInRequest	bttrwttrin/typedefsjson.html#JsonWttrInRequest	type JsonWttrInRequest		24
+nim	JsonAstronomy	bttrwttrin/typedefsjson.html#JsonAstronomy	object JsonAstronomy		27
+nim	JsonHourlyForecast	bttrwttrin/typedefsjson.html#JsonHourlyForecast	object JsonHourlyForecast		31
+nim	JsonWeatherForecast	bttrwttrin/typedefsjson.html#JsonWeatherForecast	object JsonWeatherForecast		42
+nim	JsonWeather	bttrwttrin/typedefsjson.html#JsonWeather	object JsonWeather		49

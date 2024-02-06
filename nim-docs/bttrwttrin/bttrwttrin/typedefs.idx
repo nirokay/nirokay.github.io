@@ -1,0 +1,14 @@
+nimTitle	typedefs	bttrwttrin/typedefs.html	module src/bttrwttrin/typedefs		0
+nim	UnitData	bttrwttrin/typedefs.html#UnitData	tuple UnitData		4
+nim	AstronomyEvent	bttrwttrin/typedefs.html#AstronomyEvent	object AstronomyEvent		6
+nim	AstronomySun	bttrwttrin/typedefs.html#AstronomySun	object AstronomySun		9
+nim	AstronomyMoon	bttrwttrin/typedefs.html#AstronomyMoon	object AstronomyMoon		10
+nim	Astronomy	bttrwttrin/typedefs.html#Astronomy	object Astronomy		14
+nim	Wind	bttrwttrin/typedefs.html#Wind	object Wind		18
+nim	LocationLatLong	bttrwttrin/typedefs.html#LocationLatLong	tuple LocationLatLong		22
+nim	CurrentWeather	bttrwttrin/typedefs.html#CurrentWeather	object CurrentWeather		24
+nim	NearestArea	bttrwttrin/typedefs.html#NearestArea	object NearestArea		40
+nim	ChanceOf	bttrwttrin/typedefs.html#ChanceOf	object ChanceOf		49
+nim	WeatherHourlyForecast	bttrwttrin/typedefs.html#WeatherHourlyForecast	object WeatherHourlyForecast		54
+nim	WeatherForecast	bttrwttrin/typedefs.html#WeatherForecast	object WeatherForecast		75
+nim	WeatherRequest	bttrwttrin/typedefs.html#WeatherRequest	object WeatherRequest		87
