@@ -1,7 +1,7 @@
 nimTitle	locations	website/locations.html	module website/locations		0
 nim	convert	website/locations.html#convert,Description	proc convert(desc: Description): seq[HtmlElement]		10
-nim	generateLocationMap	website/locations.html#generateLocationMap,Location	proc generateLocationMap(location: Location)		39
-nim	getLocationMapPath	website/locations.html#getLocationMapPath,Location	proc getLocationMapPath(location: Location): string		43
-nim	generateLocationHtml	website/locations.html#generateLocationHtml,Location	proc generateLocationHtml(location: Location)		47
-nim	generateLocations	website/locations.html#generateLocations,seq[Location]	proc generateLocations(locations: seq[Location])		128
+nim	generateLocationMap	website/locations.html#generateLocationMap,Location	proc generateLocationMap(location: Location)		47
+nim	getLocationMapPath	website/locations.html#getLocationMapPath,Location	proc getLocationMapPath(location: Location): string		51
+nim	generateLocationHtml	website/locations.html#generateLocationHtml,Location	proc generateLocationHtml(location: Location)		55
+nim	generateLocations	website/locations.html#generateLocations,seq[Location]	proc generateLocations(locations: seq[Location])		136
 heading	Locations module	website/locations.html#locations-module	 Locations module		0

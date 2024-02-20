@@ -19,33 +19,40 @@ nim	urlJsonTourData	website/globals.html#urlJsonTourData	const urlJsonTourData		
 nim	urlJsonNewsFeed	website/globals.html#urlJsonNewsFeed	const urlJsonNewsFeed		64
 nim	articlesLocation	website/globals.html#articlesLocation	const articlesLocation		68
 nim	articleCssFile	website/globals.html#articleCssFile	const articleCssFile		69
-nim	textCenter	website/globals.html#textCenter	const textCenter		96
-nim	textCenterClass	website/globals.html#textCenterClass	const textCenterClass		97
-nim	centerWidth100Class	website/globals.html#centerWidth100Class	const centerWidth100Class		101
-nim	centerClass	website/globals.html#centerClass	const centerClass		109
-nim	centerTableClass	website/globals.html#centerTableClass	const centerTableClass		117
-nim	buttonClass	website/globals.html#buttonClass	const buttonClass		122
-nim	buttonClassHover	website/globals.html#buttonClassHover	const buttonClassHover		137
-nim	mapElement	website/globals.html#mapElement	const mapElement		142
-nim	newsDivClass	website/globals.html#newsDivClass	const newsDivClass		149
-nim	newsElementGeneric	website/globals.html#newsElementGeneric	const newsElementGeneric		158
-nim	newsElementWarning	website/globals.html#newsElementWarning	const newsElementWarning		159
-nim	newsElementAlert	website/globals.html#newsElementAlert	const newsElementAlert		160
-nim	newsElementHappened	website/globals.html#newsElementHappened	const newsElementHappened		161
-nim	articlePreviewItem	website/globals.html#articlePreviewItem	const articlePreviewItem		163
-nim	articlePreviewBox	website/globals.html#articlePreviewBox	const articlePreviewBox		171
-nim	locationImageHeader	website/globals.html#locationImageHeader	const locationImageHeader		181
-nim	locationImageFooter	website/globals.html#locationImageFooter	const locationImageFooter		189
-nim	pc	website/globals.html#pc,seq[string]	proc pc(lines: seq[string]): HtmlElement		201
-nim	pc	website/globals.html#pc,varargs[string]	proc pc(lines: varargs[string]): HtmlElement		205
-nim	pc	website/globals.html#pc,varargs[HtmlElement]	proc pc(elements: varargs[HtmlElement]): HtmlElement		212
-nim	scriptButton	website/globals.html#scriptButton,string,string	proc scriptButton(text, onclick: string): HtmlElement		220
-nim	button	website/globals.html#button,string,string	proc button(content, href: string): HtmlElement		226
-nim	buttonList	website/globals.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		228
-nim	backToHomeButton	website/globals.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		233
-nim	getRelativeUrlId	website/globals.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		238
-nim	getRelativeUrlPath	website/globals.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		243
-nim	isSet	website/globals.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		250
-nim	getOrDefault	website/globals.html#getOrDefault,Option[T],T	proc getOrDefault[T](value: Option[T]; default: T): T		257
-nimgrp	pc	website/globals.html#pc-procs-all	proc		201
+nim	textCenter	website/globals.html#textCenter	const textCenter		108
+nim	textCenterClass	website/globals.html#textCenterClass	const textCenterClass		109
+nim	centerWidth100Class	website/globals.html#centerWidth100Class	const centerWidth100Class		113
+nim	centerClass	website/globals.html#centerClass	const centerClass		121
+nim	centerTableClass	website/globals.html#centerTableClass	const centerTableClass		129
+nim	buttonClass	website/globals.html#buttonClass	const buttonClass		134
+nim	buttonClassHover	website/globals.html#buttonClassHover	const buttonClassHover		149
+nim	mapElement	website/globals.html#mapElement	const mapElement		154
+nim	divCenterOuter	website/globals.html#divCenterOuter	const divCenterOuter		161
+nim	divCenterMiddle	website/globals.html#divCenterMiddle	const divCenterMiddle		169
+nim	divCenterInner	website/globals.html#divCenterInner	const divCenterInner		173
+nim	newsDivClass	website/globals.html#newsDivClass	const newsDivClass		179
+nim	newsElementGeneric	website/globals.html#newsElementGeneric	const newsElementGeneric		188
+nim	newsElementWarning	website/globals.html#newsElementWarning	const newsElementWarning		189
+nim	newsElementAlert	website/globals.html#newsElementAlert	const newsElementAlert		190
+nim	newsElementHappened	website/globals.html#newsElementHappened	const newsElementHappened		191
+nim	articlePreviewItem	website/globals.html#articlePreviewItem	const articlePreviewItem		193
+nim	articlePreviewBox	website/globals.html#articlePreviewBox	const articlePreviewBox		201
+nim	locationImageHeader	website/globals.html#locationImageHeader	const locationImageHeader		211
+nim	locationImageFooter	website/globals.html#locationImageFooter	const locationImageFooter		212
+nim	locationImageMapPreview	website/globals.html#locationImageMapPreview	const locationImageMapPreview		213
+nim	locationImageFooterDiv	website/globals.html#locationImageFooterDiv	const locationImageFooterDiv		215
+nim	pc	website/globals.html#pc,seq[string]	proc pc(lines: seq[string]): HtmlElement		228
+nim	pc	website/globals.html#pc,varargs[string]	proc pc(lines: varargs[string]): HtmlElement		232
+nim	pc	website/globals.html#pc,varargs[HtmlElement]	proc pc(elements: varargs[HtmlElement]): HtmlElement		239
+nim	scriptButton	website/globals.html#scriptButton,string,string	proc scriptButton(text, onclick: string): HtmlElement		247
+nim	button	website/globals.html#button,string,string	proc button(content, href: string): HtmlElement		253
+nim	buttonList	website/globals.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		255
+nim	backToHomeButton	website/globals.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		260
+nim	fullyCenter	website/globals.html#fullyCenter,seq[HtmlElement]	proc fullyCenter(html: seq[HtmlElement]): HtmlElement		262
+nim	fullyCenter	website/globals.html#fullyCenter,varargs[HtmlElement]	proc fullyCenter(html: varargs[HtmlElement]): HtmlElement		271
+nim	getRelativeUrlId	website/globals.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		281
+nim	getRelativeUrlPath	website/globals.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		286
+nim	isSet	website/globals.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		293
+nimgrp	fullycenter	website/globals.html#fullyCenter-procs-all	proc		262
+nimgrp	pc	website/globals.html#pc-procs-all	proc		228
 heading	Globals module	website/globals.html#globals-module	 Globals module		0

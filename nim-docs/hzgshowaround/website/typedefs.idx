@@ -1,20 +1,20 @@
 nimTitle	typedefs	website/typedefs.html	module website/typedefs		0
 nim	locationHtmlPath	website/typedefs.html#locationHtmlPath	const locationHtmlPath		7
 nim	Pictures	website/typedefs.html#Pictures	object Pictures		10
-nim	Coords	website/typedefs.html#Coords	type Coords		13
-nim	Paragraph	website/typedefs.html#Paragraph	type Paragraph		15
-nim	Description	website/typedefs.html#Description	type Description		17
-nim	OpeningTimes	website/typedefs.html#OpeningTimes	type OpeningTimes		19
-nim	Location	website/typedefs.html#Location	object Location		21
-nim	imgHeader	website/typedefs.html#imgHeader	LocationImageType.imgHeader		31
-nim	imgFooter	website/typedefs.html#imgFooter	LocationImageType.imgFooter		31
-nim	LocationImageType	website/typedefs.html#LocationImageType	enum LocationImageType		31
-nim	withCoords	website/typedefs.html#withCoords.i,seq[Location]	iterator withCoords(locations: seq[Location]): Location		35
-nim	getLocationPath	website/typedefs.html#getLocationPath,string	proc getLocationPath(name: string): string		42
-nim	getLocationPath	website/typedefs.html#getLocationPath,Location	proc getLocationPath(location: Location): string		46
-nim	getLocations	website/typedefs.html#getLocations	proc getLocations(): seq[Location]		51
-nim	mapAreaFillColour	website/typedefs.html#mapAreaFillColour	const mapAreaFillColour		73
-nim	locationMapImagePath	website/typedefs.html#locationMapImagePath	const locationMapImagePath		74
-nim	Rect	website/typedefs.html#Rect	object Rect		77
-nim	Layer	website/typedefs.html#Layer	object Layer		84
-nimgrp	getlocationpath	website/typedefs.html#getLocationPath-procs-all	proc		42
+nim	Coords	website/typedefs.html#Coords	type Coords		14
+nim	Paragraph	website/typedefs.html#Paragraph	type Paragraph		16
+nim	Description	website/typedefs.html#Description	type Description		18
+nim	OpeningTimes	website/typedefs.html#OpeningTimes	type OpeningTimes		20
+nim	Location	website/typedefs.html#Location	object Location		22
+nim	imgHeader	website/typedefs.html#imgHeader	LocationImageType.imgHeader		32
+nim	imgFooter	website/typedefs.html#imgFooter	LocationImageType.imgFooter		32
+nim	LocationImageType	website/typedefs.html#LocationImageType	enum LocationImageType		32
+nim	withCoords	website/typedefs.html#withCoords.i,seq[Location]	iterator withCoords(locations: seq[Location]): Location		36
+nim	getLocationPath	website/typedefs.html#getLocationPath,string	proc getLocationPath(name: string): string		43
+nim	getLocationPath	website/typedefs.html#getLocationPath,Location	proc getLocationPath(location: Location): string		47
+nim	getLocations	website/typedefs.html#getLocations	proc getLocations(): seq[Location]		52
+nim	mapAreaFillColour	website/typedefs.html#mapAreaFillColour	const mapAreaFillColour		74
+nim	locationMapImagePath	website/typedefs.html#locationMapImagePath	const locationMapImagePath		75
+nim	Rect	website/typedefs.html#Rect	object Rect		78
+nim	Layer	website/typedefs.html#Layer	object Layer		85
+nimgrp	getlocationpath	website/typedefs.html#getLocationPath-procs-all	proc		43
