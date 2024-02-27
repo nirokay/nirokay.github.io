@@ -97,8 +97,16 @@
   <li><a class="reference" href="#newCssStyleSheet%2Cstring" title="newCssStyleSheet(fileName: string): CssStyleSheet">newCssStyleSheet(fileName: string): CssStyleSheet</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">setAttribute
+  <li><a class="reference" href="#setAttribute%2CCssElement%2Cstring%2Cstring_2" title="setAttribute(element: CssElement; attribute, value: string): CssElement">setAttribute(element: CssElement; attribute, value: string): CssElement</a></li>
+<li><a class="reference" href="#setAttribute%2CCssElement%2Cstring%2Cstring" title="setAttribute(element: var CssElement; attribute, value: string)">setAttribute(element: var CssElement; attribute, value: string)</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">setClass
-  <li><a class="reference" href="#setClass%2CHtmlElement%2CCssElement_2" title="setClass(element: HtmlElement; class: CssElement): HtmlElement">setClass(element: HtmlElement; class: CssElement): HtmlElement</a></li>
+  <li><a class="reference" href="#setClass%2CCssElement%2Cstring" title="setClass(elem: CssElement; class: string): CssElement">setClass(elem: CssElement; class: string): CssElement</a></li>
+<li><a class="reference" href="#setClass%2CCssElement%2Cseq%5Bstring%5D" title="setClass(elem: CssElement; classes: seq[string]): CssElement">setClass(elem: CssElement; classes: seq[string]): CssElement</a></li>
+<li><a class="reference" href="#setClass%2CCssElement%2Cvarargs%5Bstring%5D" title="setClass(elem: CssElement; classes: varargs[string]): CssElement">setClass(elem: CssElement; classes: varargs[string]): CssElement</a></li>
+<li><a class="reference" href="#setClass%2CHtmlElement%2CCssElement_2" title="setClass(element: HtmlElement; class: CssElement): HtmlElement">setClass(element: HtmlElement; class: CssElement): HtmlElement</a></li>
 <li><a class="reference" href="#setClass%2CHtmlElement%2Cstring_2" title="setClass(element: HtmlElement; class: string): HtmlElement">setClass(element: HtmlElement; class: string): HtmlElement</a></li>
 <li><a class="reference" href="#setClass%2CHtmlElement%2CCssElement" title="setClass(element: var HtmlElement; class: CssElement)">setClass(element: var HtmlElement; class: CssElement)</a></li>
 <li><a class="reference" href="#setClass%2CHtmlElement%2Cstring" title="setClass(element: var HtmlElement; class: string)">setClass(element: var HtmlElement; class: string)</a></li>
@@ -233,7 +241,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Generic builder for a css class (same as <tt class="docutils literal"><span class="pre"><span class="Identifier">newCssElement</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> but adds a '.' infront of the name automatically)
+    Generic builder for a css class (same as <tt class="docutils literal"><span class="pre"><span class="Identifier">newCssElement</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> but adds a '.' in-front of the name automatically)
     
   </dd>
 </div>
@@ -242,7 +250,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Generic builder for a css class (same as <tt class="docutils literal"><span class="pre"><span class="Identifier">newCssElement</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> but adds a '.' infront of the name automatically)
+    Generic builder for a css class (same as <tt class="docutils literal"><span class="pre"><span class="Identifier">newCssElement</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> but adds a '.' in-front of the name automatically)
     
   </dd>
 </div>
@@ -251,7 +259,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Generic builder for a css class (same as <tt class="docutils literal"><span class="pre"><span class="Identifier">newCssElement</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> but adds a '.' infront of the name automatically)
+    Generic builder for a css class (same as <tt class="docutils literal"><span class="pre"><span class="Identifier">newCssElement</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> but adds a '.' in-front of the name automatically)
     
   </dd>
 </div>
@@ -299,8 +307,56 @@
 </div>
 
 </div>
+<div id="setAttribute-procs-all">
+  <div id="setAttribute,CssElement,string,string_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setAttribute%2CCssElement%2Cstring%2Cstring_2"><span class="Identifier">setAttribute</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">attribute</span><span class="Other">,</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Sets/Creates a css attribute with a value.
+    
+  </dd>
+</div>
+<div id="setAttribute,CssElement,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setAttribute%2CCssElement%2Cstring%2Cstring"><span class="Identifier">setAttribute</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">attribute</span><span class="Other">,</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Sets/Creates a css attribute with a value.
+    
+  </dd>
+</div>
+
+</div>
 <div id="setClass-procs-all">
-  <div id="setClass,HtmlElement,CssElement_2">
+  <div id="setClass,CssElement,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setClass%2CCssElement%2Cstring"><span class="Identifier">setClass</span></a><span class="Other">(</span><span class="Identifier">elem</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">class</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Applies a class to an element or another class
+    
+  </dd>
+</div>
+<div id="setClass,CssElement,seq[string]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setClass%2CCssElement%2Cseq%5Bstring%5D"><span class="Identifier">setClass</span></a><span class="Other">(</span><span class="Identifier">elem</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">classes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Applies multiple classes to an element or another class
+    
+  </dd>
+</div>
+<div id="setClass,CssElement,varargs[string]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setClass%2CCssElement%2Cvarargs%5Bstring%5D"><span class="Identifier">setClass</span></a><span class="Other">(</span><span class="Identifier">elem</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">classes</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Applies multiple classes to an element or another class
+    
+  </dd>
+</div>
+<div id="setClass,HtmlElement,CssElement_2">
   <dt><pre><span class="Keyword">proc</span> <a href="#setClass%2CHtmlElement%2CCssElement_2"><span class="Identifier">setClass</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">class</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
@@ -381,7 +437,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-08-18 18:23:32 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-27 09:52:56 UTC</small>
       </div>
     </div>
   </div>

@@ -235,6 +235,10 @@
   <li><a class="reference" href="#img%2Cstring%2Cstring" title="img(src: string; alt: string): HtmlElement">img(src: string; alt: string): HtmlElement</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">importScript
+  <li><a class="reference" href="#importScript%2Cstring" title="importScript(src: string): HtmlElement">importScript(src: string): HtmlElement</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">input
   <li><a class="reference" href="#input%2Cstring%2Cstring%2Cstring" title="input(type, id, name: string): HtmlElement">input(type, id, name: string): HtmlElement</a></li>
 <li><a class="reference" href="#input%2Cstring%2Cstring" title="input(type, idAndName: string): HtmlElement">input(type, idAndName: string): HtmlElement</a></li>
@@ -306,7 +310,8 @@
 
 </ul>
 <ul class="simple nested-toc-section">p
-  <li><a class="reference" href="#p%2Cstring" title="p(text: string): HtmlElement">p(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#p%2Cseq%5Bstring%5D" title="p(text: seq[string]): HtmlElement">p(text: seq[string]): HtmlElement</a></li>
+<li><a class="reference" href="#p%2Cstring" title="p(text: string): HtmlElement">p(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">pre
@@ -546,7 +551,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#bdi%2Cstring"><span class="Identifier">bdi</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Bothdirectional algorithm element
+    Both-directional algorithm element
     
   </dd>
 </div>
@@ -624,7 +629,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#comment%2Cstring"><span class="Identifier">comment</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    
+    Adds an HTML comment
     
   </dd>
 </div>
@@ -737,7 +742,7 @@
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Constructer for div
+    Constructor for div
     
   </dd>
 </div>
@@ -746,7 +751,7 @@
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Constructer for div
+    Constructor for div
     
   </dd>
 </div>
@@ -800,7 +805,7 @@
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Field feld element
+    Field field element
     
   </dd>
 </div>
@@ -842,8 +847,8 @@
 </div>
 <div id="form-procs-all">
   <div id="form,seq[HtmlElement],string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#form%2Cseq%5BHtmlElement%5D%2Cstring"><span class="Identifier">form</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">action</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#form%2Cseq%5BHtmlElement%5D%2Cstring"><span class="Identifier">form</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">action</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Form element
@@ -1004,6 +1009,17 @@
   <dd>
     
     Image element
+    
+  </dd>
+</div>
+
+</div>
+<div id="importScript-procs-all">
+  <div id="importScript,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#importScript%2Cstring"><span class="Identifier">importScript</span></a><span class="Other">(</span><span class="Identifier">src</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Script element (used for external scripts)
     
   </dd>
 </div>
@@ -1242,8 +1258,17 @@
 
 </div>
 <div id="p-procs-all">
-  <div id="p,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cstring"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <div id="p,seq[string]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cseq%5Bstring%5D"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="p,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cstring"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Paragraph element
@@ -1268,7 +1293,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#progress%2Cstring%2C%2Cstring"><span class="Identifier">progress</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">max</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot; &quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
-    Emtpy progress bar element
+    Empty progress bar element
     
   </dd>
 </div>
@@ -1678,7 +1703,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-08-18 18:23:32 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-27 09:52:56 UTC</small>
       </div>
     </div>
   </div>

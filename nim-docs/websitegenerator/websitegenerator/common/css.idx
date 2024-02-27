@@ -1,278 +1,358 @@
 nimTitle	css	websitegenerator/common/css.html	module websitegenerator/common/css		0
-nim	normal	websitegenerator/common/css.html#normal	CssFontStlye.normal		12
-nim	italic	websitegenerator/common/css.html#italic	CssFontStlye.italic		12
-nim	oblique	websitegenerator/common/css.html#oblique	CssFontStlye.oblique		12
-nim	CssFontStlye	websitegenerator/common/css.html#CssFontStlye	enum CssFontStlye		12
-nim	normal	websitegenerator/common/css.html#normal_2	CssFontStretch.normal		17
-nim	ultraCondensed	websitegenerator/common/css.html#ultraCondensed	CssFontStretch.ultraCondensed		17
-nim	extraCondensed	websitegenerator/common/css.html#extraCondensed	CssFontStretch.extraCondensed		17
-nim	condensed	websitegenerator/common/css.html#condensed	CssFontStretch.condensed		17
-nim	semiCondensed	websitegenerator/common/css.html#semiCondensed	CssFontStretch.semiCondensed		17
-nim	semiExpanded	websitegenerator/common/css.html#semiExpanded	CssFontStretch.semiExpanded		17
-nim	expanded	websitegenerator/common/css.html#expanded	CssFontStretch.expanded		17
-nim	extraExpanded	websitegenerator/common/css.html#extraExpanded	CssFontStretch.extraExpanded		17
-nim	ultraExpanded	websitegenerator/common/css.html#ultraExpanded	CssFontStretch.ultraExpanded		17
-nim	CssFontStretch	websitegenerator/common/css.html#CssFontStretch	enum CssFontStretch		17
-nim	normal	websitegenerator/common/css.html#normal_3	CssFontVariant.normal		28
-nim	smallCaps	websitegenerator/common/css.html#smallCaps	CssFontVariant.smallCaps		28
-nim	CssFontVariant	websitegenerator/common/css.html#CssFontVariant	enum CssFontVariant		28
-nim	normal	websitegenerator/common/css.html#normal_4	CssFontWeight.normal		32
-nim	bold	websitegenerator/common/css.html#bold	CssFontWeight.bold		32
-nim	bolder	websitegenerator/common/css.html#bolder	CssFontWeight.bolder		32
-nim	lighter	websitegenerator/common/css.html#lighter	CssFontWeight.lighter		32
-nim	weight100	websitegenerator/common/css.html#weight100	CssFontWeight.weight100		32
-nim	weight200	websitegenerator/common/css.html#weight200	CssFontWeight.weight200		32
-nim	weight300	websitegenerator/common/css.html#weight300	CssFontWeight.weight300		32
-nim	weight400	websitegenerator/common/css.html#weight400	CssFontWeight.weight400		32
-nim	weight500	websitegenerator/common/css.html#weight500	CssFontWeight.weight500		32
-nim	weight600	websitegenerator/common/css.html#weight600	CssFontWeight.weight600		32
-nim	weight700	websitegenerator/common/css.html#weight700	CssFontWeight.weight700		32
-nim	weight800	websitegenerator/common/css.html#weight800	CssFontWeight.weight800		32
-nim	weight900	websitegenerator/common/css.html#weight900	CssFontWeight.weight900		32
-nim	CssFontWeight	websitegenerator/common/css.html#CssFontWeight	enum CssFontWeight		32
-nim	xxSmall	websitegenerator/common/css.html#xxSmall	CssSize.xxSmall		47
-nim	xSmall	websitegenerator/common/css.html#xSmall	CssSize.xSmall		47
-nim	small	websitegenerator/common/css.html#small	CssSize.small		47
-nim	medium	websitegenerator/common/css.html#medium	CssSize.medium		47
-nim	large	websitegenerator/common/css.html#large	CssSize.large		47
-nim	xLarge	websitegenerator/common/css.html#xLarge	CssSize.xLarge		47
-nim	xxLarge	websitegenerator/common/css.html#xxLarge	CssSize.xxLarge		47
-nim	larger	websitegenerator/common/css.html#larger	CssSize.larger		47
-nim	smaller	websitegenerator/common/css.html#smaller	CssSize.smaller		47
-nim	CssSize	websitegenerator/common/css.html#CssSize	enum CssSize		47
-nim	sansSerif	websitegenerator/common/css.html#sansSerif	CssFontFamily.sansSerif		58
-nim	serif	websitegenerator/common/css.html#serif	CssFontFamily.serif		58
-nim	monospace	websitegenerator/common/css.html#monospace	CssFontFamily.monospace		58
-nim	cursive	websitegenerator/common/css.html#cursive	CssFontFamily.cursive		58
-nim	fantasy	websitegenerator/common/css.html#fantasy	CssFontFamily.fantasy		58
-nim	caption	websitegenerator/common/css.html#caption	CssFontFamily.caption		58
-nim	icon	websitegenerator/common/css.html#icon	CssFontFamily.icon		58
-nim	menu	websitegenerator/common/css.html#menu	CssFontFamily.menu		58
-nim	messageBox	websitegenerator/common/css.html#messageBox	CssFontFamily.messageBox		58
-nim	smallCaption	websitegenerator/common/css.html#smallCaption	CssFontFamily.smallCaption		58
-nim	statusBar	websitegenerator/common/css.html#statusBar	CssFontFamily.statusBar		58
-nim	CssFontFamily	websitegenerator/common/css.html#CssFontFamily	enum CssFontFamily		58
-nim	cm	websitegenerator/common/css.html#cm,SomeNumber	proc cm(size: SomeNumber): string		75
-nim	mm	websitegenerator/common/css.html#mm,SomeNumber	proc mm(size: SomeNumber): string		76
-nim	`in`	websitegenerator/common/css.html#in,SomeNumber	proc `in`(size: SomeNumber): string		77
-nim	inch	websitegenerator/common/css.html#inch,SomeNumber	proc inch(size: SomeNumber): string		78
-nim	px	websitegenerator/common/css.html#px,SomeNumber	proc px(size: SomeNumber): string		79
-nim	pt	websitegenerator/common/css.html#pt,SomeNumber	proc pt(size: SomeNumber): string		80
-nim	pc	websitegenerator/common/css.html#pc,SomeNumber	proc pc(size: SomeNumber): string		81
-nim	em	websitegenerator/common/css.html#em,SomeNumber	proc em(size: SomeNumber): string		83
-nim	ex	websitegenerator/common/css.html#ex,SomeNumber	proc ex(size: SomeNumber): string		84
-nim	ch	websitegenerator/common/css.html#ch,SomeNumber	proc ch(size: SomeNumber): string		85
-nim	rem	websitegenerator/common/css.html#rem,SomeNumber	proc rem(size: SomeNumber): string		86
-nim	vw	websitegenerator/common/css.html#vw,SomeNumber	proc vw(size: SomeNumber): string		87
-nim	width	websitegenerator/common/css.html#width	proc width(number: string | SomeNumber): array[2, string]		89
-nim	height	websitegenerator/common/css.html#height	proc height(number: string | SomeNumber): array[2, string]		90
-nim	maxWidth	websitegenerator/common/css.html#maxWidth	proc maxWidth(number: string | SomeNumber): array[2, string]		91
-nim	maxHeight	websitegenerator/common/css.html#maxHeight	proc maxHeight(number: string | SomeNumber): array[2, string]		92
-nim	fontStyle	websitegenerator/common/css.html#fontStyle	proc fontStyle(style: string | CssFontStlye): array[2, string]		94
-nim	fontStretch	websitegenerator/common/css.html#fontStretch	proc fontStretch(stretch: string | CssFontStretch): array[2, string]		95
-nim	fontVariant	websitegenerator/common/css.html#fontVariant	proc fontVariant(variant: string | CssFontVariant): array[2, string]		96
-nim	fontWeight	websitegenerator/common/css.html#fontWeight	proc fontWeight(weight: string | CssFontWeight): array[2, string]		97
-nim	fontSize	websitegenerator/common/css.html#fontSize	proc fontSize(size: string | CssSize): array[2, string]		98
-nim	fontFamily	websitegenerator/common/css.html#fontFamily	proc fontFamily(family: string | CssFontFamily): array[2, string]		99
-nim	setWidth	websitegenerator/common/css.html#setWidth,CssElement,	proc setWidth(element: CssElement; number: string | SomeNumber): CssElement		110
-nim	setHeight	websitegenerator/common/css.html#setHeight,CssElement,	proc setHeight(element: CssElement; number: string | SomeNumber): CssElement		111
-nim	setMaxWidth	websitegenerator/common/css.html#setMaxWidth,CssElement,	proc setMaxWidth(element: CssElement; number: string | SomeNumber): CssElement		112
-nim	setMaxHeight	websitegenerator/common/css.html#setMaxHeight,CssElement,	proc setMaxHeight(element: CssElement; number: string | SomeNumber): CssElement		113
-nim	setFontStyle	websitegenerator/common/css.html#setFontStyle,CssElement,	proc setFontStyle(element: CssElement; style: string | CssFontStlye): CssElement		115
-nim	setFontStretch	websitegenerator/common/css.html#setFontStretch,CssElement,	proc setFontStretch(element: CssElement; stretch: string | CssFontStretch): CssElement		116
-nim	setFontVariant	websitegenerator/common/css.html#setFontVariant,CssElement,	proc setFontVariant(element: CssElement; variant: string | CssFontVariant): CssElement		117
-nim	setFontWeigth	websitegenerator/common/css.html#setFontWeigth,CssElement,	proc setFontWeigth(element: CssElement; weigth: string | CssFontWeight): CssElement		118
-nim	setFontSize	websitegenerator/common/css.html#setFontSize,CssElement,	proc setFontSize(element: CssElement; size: string | CssSize): CssElement		119
-nim	setFontFamily	websitegenerator/common/css.html#setFontFamily,CssElement,	proc setFontFamily(element: CssElement; family: string | CssFontFamily): CssElement		120
-nim	setFont	websitegenerator/common/css.html#setFont,CssElement,varargs[string]	proc setFont(element: CssElement; fontValues: varargs[string]): CssElement		132
-nim	AliceBlue	websitegenerator/common/css.html#AliceBlue	CssColour.AliceBlue		149
-nim	AntiqueWhite	websitegenerator/common/css.html#AntiqueWhite	CssColour.AntiqueWhite		149
-nim	Aqua	websitegenerator/common/css.html#Aqua	CssColour.Aqua		149
-nim	Aquamarine	websitegenerator/common/css.html#Aquamarine	CssColour.Aquamarine		149
-nim	Azure	websitegenerator/common/css.html#Azure	CssColour.Azure		149
-nim	Beige	websitegenerator/common/css.html#Beige	CssColour.Beige		149
-nim	Bisque	websitegenerator/common/css.html#Bisque	CssColour.Bisque		149
-nim	Black	websitegenerator/common/css.html#Black	CssColour.Black		149
-nim	BlanchedAlmond	websitegenerator/common/css.html#BlanchedAlmond	CssColour.BlanchedAlmond		149
-nim	Blue	websitegenerator/common/css.html#Blue	CssColour.Blue		149
-nim	BlueViolet	websitegenerator/common/css.html#BlueViolet	CssColour.BlueViolet		149
-nim	Brown	websitegenerator/common/css.html#Brown	CssColour.Brown		149
-nim	BurlyWood	websitegenerator/common/css.html#BurlyWood	CssColour.BurlyWood		149
-nim	CadetBlue	websitegenerator/common/css.html#CadetBlue	CssColour.CadetBlue		149
-nim	Chartreuse	websitegenerator/common/css.html#Chartreuse	CssColour.Chartreuse		149
-nim	Chocolate	websitegenerator/common/css.html#Chocolate	CssColour.Chocolate		149
-nim	Coral	websitegenerator/common/css.html#Coral	CssColour.Coral		149
-nim	CornflowerBlue	websitegenerator/common/css.html#CornflowerBlue	CssColour.CornflowerBlue		149
-nim	Cornsilk	websitegenerator/common/css.html#Cornsilk	CssColour.Cornsilk		149
-nim	Crimson	websitegenerator/common/css.html#Crimson	CssColour.Crimson		149
-nim	Cyan	websitegenerator/common/css.html#Cyan	CssColour.Cyan		149
-nim	DarkBlue	websitegenerator/common/css.html#DarkBlue	CssColour.DarkBlue		149
-nim	DarkCyan	websitegenerator/common/css.html#DarkCyan	CssColour.DarkCyan		149
-nim	DarkGoldenrod	websitegenerator/common/css.html#DarkGoldenrod	CssColour.DarkGoldenrod		149
-nim	DarkGray	websitegenerator/common/css.html#DarkGray	CssColour.DarkGray		149
-nim	DarkGreen	websitegenerator/common/css.html#DarkGreen	CssColour.DarkGreen		149
-nim	DarkGrey	websitegenerator/common/css.html#DarkGrey	CssColour.DarkGrey		149
-nim	DarkKhaki	websitegenerator/common/css.html#DarkKhaki	CssColour.DarkKhaki		149
-nim	DarkMagenta	websitegenerator/common/css.html#DarkMagenta	CssColour.DarkMagenta		149
-nim	DarkOliveGreen	websitegenerator/common/css.html#DarkOliveGreen	CssColour.DarkOliveGreen		149
-nim	DarkOrange	websitegenerator/common/css.html#DarkOrange	CssColour.DarkOrange		149
-nim	DarkOrchid	websitegenerator/common/css.html#DarkOrchid	CssColour.DarkOrchid		149
-nim	DarkRed	websitegenerator/common/css.html#DarkRed	CssColour.DarkRed		149
-nim	DarkSalmon	websitegenerator/common/css.html#DarkSalmon	CssColour.DarkSalmon		149
-nim	DarkSeaGreen	websitegenerator/common/css.html#DarkSeaGreen	CssColour.DarkSeaGreen		149
-nim	DarkSlateBlue	websitegenerator/common/css.html#DarkSlateBlue	CssColour.DarkSlateBlue		149
-nim	DarkSlateGray	websitegenerator/common/css.html#DarkSlateGray	CssColour.DarkSlateGray		149
-nim	DarkSlateGrey	websitegenerator/common/css.html#DarkSlateGrey	CssColour.DarkSlateGrey		149
-nim	DarkTurquoise	websitegenerator/common/css.html#DarkTurquoise	CssColour.DarkTurquoise		149
-nim	DarkViolet	websitegenerator/common/css.html#DarkViolet	CssColour.DarkViolet		149
-nim	DeepPink	websitegenerator/common/css.html#DeepPink	CssColour.DeepPink		149
-nim	DeepSkyBlue	websitegenerator/common/css.html#DeepSkyBlue	CssColour.DeepSkyBlue		149
-nim	DimGray	websitegenerator/common/css.html#DimGray	CssColour.DimGray		149
-nim	DodgerBlue	websitegenerator/common/css.html#DodgerBlue	CssColour.DodgerBlue		149
-nim	FireBrick	websitegenerator/common/css.html#FireBrick	CssColour.FireBrick		149
-nim	FloralWhite	websitegenerator/common/css.html#FloralWhite	CssColour.FloralWhite		149
-nim	ForestGreen	websitegenerator/common/css.html#ForestGreen	CssColour.ForestGreen		149
-nim	Fuchsia	websitegenerator/common/css.html#Fuchsia	CssColour.Fuchsia		149
-nim	Gainsboro	websitegenerator/common/css.html#Gainsboro	CssColour.Gainsboro		149
-nim	GhostWhite	websitegenerator/common/css.html#GhostWhite	CssColour.GhostWhite		149
-nim	Gold	websitegenerator/common/css.html#Gold	CssColour.Gold		149
-nim	Goldenrod	websitegenerator/common/css.html#Goldenrod	CssColour.Goldenrod		149
-nim	Gray	websitegenerator/common/css.html#Gray	CssColour.Gray		149
-nim	Green	websitegenerator/common/css.html#Green	CssColour.Green		149
-nim	GreenYellow	websitegenerator/common/css.html#GreenYellow	CssColour.GreenYellow		149
-nim	Grey	websitegenerator/common/css.html#Grey	CssColour.Grey		149
-nim	Honeydew	websitegenerator/common/css.html#Honeydew	CssColour.Honeydew		149
-nim	HotPink	websitegenerator/common/css.html#HotPink	CssColour.HotPink		149
-nim	IndianRed	websitegenerator/common/css.html#IndianRed	CssColour.IndianRed		149
-nim	Indigo	websitegenerator/common/css.html#Indigo	CssColour.Indigo		149
-nim	Ivory	websitegenerator/common/css.html#Ivory	CssColour.Ivory		149
-nim	Khaki	websitegenerator/common/css.html#Khaki	CssColour.Khaki		149
-nim	Lavender	websitegenerator/common/css.html#Lavender	CssColour.Lavender		149
-nim	LavenderBlush	websitegenerator/common/css.html#LavenderBlush	CssColour.LavenderBlush		149
-nim	LawnGreen	websitegenerator/common/css.html#LawnGreen	CssColour.LawnGreen		149
-nim	LemonChiffon	websitegenerator/common/css.html#LemonChiffon	CssColour.LemonChiffon		149
-nim	LightBlue	websitegenerator/common/css.html#LightBlue	CssColour.LightBlue		149
-nim	LightCoral	websitegenerator/common/css.html#LightCoral	CssColour.LightCoral		149
-nim	LightCyan	websitegenerator/common/css.html#LightCyan	CssColour.LightCyan		149
-nim	LightGoldenrodYellow	websitegenerator/common/css.html#LightGoldenrodYellow	CssColour.LightGoldenrodYellow		149
-nim	LightGray	websitegenerator/common/css.html#LightGray	CssColour.LightGray		149
-nim	LightGreen	websitegenerator/common/css.html#LightGreen	CssColour.LightGreen		149
-nim	LightGrey	websitegenerator/common/css.html#LightGrey	CssColour.LightGrey		149
-nim	LightPink	websitegenerator/common/css.html#LightPink	CssColour.LightPink		149
-nim	LightSalmon	websitegenerator/common/css.html#LightSalmon	CssColour.LightSalmon		149
-nim	LightSeaGreen	websitegenerator/common/css.html#LightSeaGreen	CssColour.LightSeaGreen		149
-nim	LightSkyBlue	websitegenerator/common/css.html#LightSkyBlue	CssColour.LightSkyBlue		149
-nim	LightSlateGray	websitegenerator/common/css.html#LightSlateGray	CssColour.LightSlateGray		149
-nim	LightSlateGrey	websitegenerator/common/css.html#LightSlateGrey	CssColour.LightSlateGrey		149
-nim	LightSteelBlue	websitegenerator/common/css.html#LightSteelBlue	CssColour.LightSteelBlue		149
-nim	LightYellow	websitegenerator/common/css.html#LightYellow	CssColour.LightYellow		149
-nim	Lime	websitegenerator/common/css.html#Lime	CssColour.Lime		149
-nim	LimeGreen	websitegenerator/common/css.html#LimeGreen	CssColour.LimeGreen		149
-nim	Linen	websitegenerator/common/css.html#Linen	CssColour.Linen		149
-nim	Magenta	websitegenerator/common/css.html#Magenta	CssColour.Magenta		149
-nim	Maroon	websitegenerator/common/css.html#Maroon	CssColour.Maroon		149
-nim	MediumAquamarine	websitegenerator/common/css.html#MediumAquamarine	CssColour.MediumAquamarine		149
-nim	MediumBlue	websitegenerator/common/css.html#MediumBlue	CssColour.MediumBlue		149
-nim	MediumOrchid	websitegenerator/common/css.html#MediumOrchid	CssColour.MediumOrchid		149
-nim	MediumPurple	websitegenerator/common/css.html#MediumPurple	CssColour.MediumPurple		149
-nim	MediumSeaGreen	websitegenerator/common/css.html#MediumSeaGreen	CssColour.MediumSeaGreen		149
-nim	MediumSlateBlue	websitegenerator/common/css.html#MediumSlateBlue	CssColour.MediumSlateBlue		149
-nim	MediumSpringGreen	websitegenerator/common/css.html#MediumSpringGreen	CssColour.MediumSpringGreen		149
-nim	MediumTurquoise	websitegenerator/common/css.html#MediumTurquoise	CssColour.MediumTurquoise		149
-nim	MediumVioletRed	websitegenerator/common/css.html#MediumVioletRed	CssColour.MediumVioletRed		149
-nim	MidnightBlue	websitegenerator/common/css.html#MidnightBlue	CssColour.MidnightBlue		149
-nim	MintCream	websitegenerator/common/css.html#MintCream	CssColour.MintCream		149
-nim	MistyRose	websitegenerator/common/css.html#MistyRose	CssColour.MistyRose		149
-nim	Moccasin	websitegenerator/common/css.html#Moccasin	CssColour.Moccasin		149
-nim	NavajoWhite	websitegenerator/common/css.html#NavajoWhite	CssColour.NavajoWhite		149
-nim	Navy	websitegenerator/common/css.html#Navy	CssColour.Navy		149
-nim	OldLace	websitegenerator/common/css.html#OldLace	CssColour.OldLace		149
-nim	Olive	websitegenerator/common/css.html#Olive	CssColour.Olive		149
-nim	OliveDrab	websitegenerator/common/css.html#OliveDrab	CssColour.OliveDrab		149
-nim	Orange	websitegenerator/common/css.html#Orange	CssColour.Orange		149
-nim	OrangeRed	websitegenerator/common/css.html#OrangeRed	CssColour.OrangeRed		149
-nim	Orchid	websitegenerator/common/css.html#Orchid	CssColour.Orchid		149
-nim	PaleGoldenrod	websitegenerator/common/css.html#PaleGoldenrod	CssColour.PaleGoldenrod		149
-nim	PaleGreen	websitegenerator/common/css.html#PaleGreen	CssColour.PaleGreen		149
-nim	PaleTurquoise	websitegenerator/common/css.html#PaleTurquoise	CssColour.PaleTurquoise		149
-nim	PaleVioletRed	websitegenerator/common/css.html#PaleVioletRed	CssColour.PaleVioletRed		149
-nim	PapayaWhip	websitegenerator/common/css.html#PapayaWhip	CssColour.PapayaWhip		149
-nim	PeachPuff	websitegenerator/common/css.html#PeachPuff	CssColour.PeachPuff		149
-nim	Peru	websitegenerator/common/css.html#Peru	CssColour.Peru		149
-nim	Pink	websitegenerator/common/css.html#Pink	CssColour.Pink		149
-nim	Plum	websitegenerator/common/css.html#Plum	CssColour.Plum		149
-nim	PowderBlue	websitegenerator/common/css.html#PowderBlue	CssColour.PowderBlue		149
-nim	Purple	websitegenerator/common/css.html#Purple	CssColour.Purple		149
-nim	Rebeccapurple	websitegenerator/common/css.html#Rebeccapurple	CssColour.Rebeccapurple		149
-nim	Red	websitegenerator/common/css.html#Red	CssColour.Red		149
-nim	RosyBrown	websitegenerator/common/css.html#RosyBrown	CssColour.RosyBrown		149
-nim	RoyalBlue	websitegenerator/common/css.html#RoyalBlue	CssColour.RoyalBlue		149
-nim	SaddleBrown	websitegenerator/common/css.html#SaddleBrown	CssColour.SaddleBrown		149
-nim	Salmon	websitegenerator/common/css.html#Salmon	CssColour.Salmon		149
-nim	SandyBrown	websitegenerator/common/css.html#SandyBrown	CssColour.SandyBrown		149
-nim	SeaGreen	websitegenerator/common/css.html#SeaGreen	CssColour.SeaGreen		149
-nim	Seashell	websitegenerator/common/css.html#Seashell	CssColour.Seashell		149
-nim	Sienna	websitegenerator/common/css.html#Sienna	CssColour.Sienna		149
-nim	Silver	websitegenerator/common/css.html#Silver	CssColour.Silver		149
-nim	SkyBlue	websitegenerator/common/css.html#SkyBlue	CssColour.SkyBlue		149
-nim	SlateBlue	websitegenerator/common/css.html#SlateBlue	CssColour.SlateBlue		149
-nim	SlateGray	websitegenerator/common/css.html#SlateGray	CssColour.SlateGray		149
-nim	SlateGrey	websitegenerator/common/css.html#SlateGrey	CssColour.SlateGrey		149
-nim	Snow	websitegenerator/common/css.html#Snow	CssColour.Snow		149
-nim	SpringGreen	websitegenerator/common/css.html#SpringGreen	CssColour.SpringGreen		149
-nim	SteelBlue	websitegenerator/common/css.html#SteelBlue	CssColour.SteelBlue		149
-nim	Tan	websitegenerator/common/css.html#Tan	CssColour.Tan		149
-nim	Teal	websitegenerator/common/css.html#Teal	CssColour.Teal		149
-nim	Thistle	websitegenerator/common/css.html#Thistle	CssColour.Thistle		149
-nim	Tomato	websitegenerator/common/css.html#Tomato	CssColour.Tomato		149
-nim	Turquoise	websitegenerator/common/css.html#Turquoise	CssColour.Turquoise		149
-nim	Violet	websitegenerator/common/css.html#Violet	CssColour.Violet		149
-nim	Wheat	websitegenerator/common/css.html#Wheat	CssColour.Wheat		149
-nim	White	websitegenerator/common/css.html#White	CssColour.White		149
-nim	WhiteSmoke	websitegenerator/common/css.html#WhiteSmoke	CssColour.WhiteSmoke		149
-nim	Yellow	websitegenerator/common/css.html#Yellow	CssColour.Yellow		149
-nim	YellowGreen	websitegenerator/common/css.html#YellowGreen	CssColour.YellowGreen		149
-nim	CssColour	websitegenerator/common/css.html#CssColour	enum CssColour		149
-nim	rgb	websitegenerator/common/css.html#rgb,SomeInteger,SomeInteger,SomeInteger	proc rgb(red, green, blue: SomeInteger): string		202
-nim	rgb	websitegenerator/common/css.html#rgb,SomeFloat,SomeFloat,SomeFloat	proc rgb(red, green, blue: SomeFloat): string		208
-nim	accentColour	websitegenerator/common/css.html#accentColour	proc accentColour(colour: string | CssColour): array[2, string]		219
-nim	setAccentColour	websitegenerator/common/css.html#setAccentColour,CssElement,	proc setAccentColour(element: CssElement; colour: string | CssColour): CssElement		220
-nim	backgroundColour	websitegenerator/common/css.html#backgroundColour	proc backgroundColour(value: string | CssColour): array[2, string]		225
-nim	setBackgroundColour	websitegenerator/common/css.html#setBackgroundColour,CssElement,	proc setBackgroundColour(element: CssElement; colour: string | CssColour): CssElement		226
-nim	borderBlockColour	websitegenerator/common/css.html#borderBlockColour	proc borderBlockColour(colour: string | CssColour): array[2, string]		231
-nim	setBorderBlockColour	websitegenerator/common/css.html#setBorderBlockColour,CssElement,	proc setBorderBlockColour(element: CssElement; colour: string | CssColour): CssElement		232
-nim	borderBlockEndColour	websitegenerator/common/css.html#borderBlockEndColour	proc borderBlockEndColour(colour: string | CssColour): array[2, string]		237
-nim	setBorderBlockEndColour	websitegenerator/common/css.html#setBorderBlockEndColour,CssElement,	proc setBorderBlockEndColour(element: CssElement; colour: string | CssColour): CssElement		238
-nim	borderBlockStartColour	websitegenerator/common/css.html#borderBlockStartColour	proc borderBlockStartColour(colour: string | CssColour): array[2, string]		243
-nim	setBorderBlockStartColour	websitegenerator/common/css.html#setBorderBlockStartColour,CssElement,	proc setBorderBlockStartColour(element: CssElement; colour: string | CssColour): CssElement		244
-nim	borderColour	websitegenerator/common/css.html#borderColour	proc borderColour(colour: string | CssColour): array[2, string]		249
-nim	setBorderColour	websitegenerator/common/css.html#setBorderColour,CssElement,	proc setBorderColour(element: CssElement; colour: string | CssColour): CssElement		250
-nim	borderInlineColour	websitegenerator/common/css.html#borderInlineColour	proc borderInlineColour(colour: string | CssColour): array[2, string]		255
-nim	setBorderInlineColour	websitegenerator/common/css.html#setBorderInlineColour,CssElement,	proc setBorderInlineColour(element: CssElement; colour: string | CssColour): CssElement		256
-nim	borderInlineEndColour	websitegenerator/common/css.html#borderInlineEndColour	proc borderInlineEndColour(colour: string | CssColour): array[2, string]		261
-nim	setBorderInlineEndColour	websitegenerator/common/css.html#setBorderInlineEndColour,CssElement,	proc setBorderInlineEndColour(element: CssElement; colour: string | CssColour): CssElement		262
-nim	borderInlineStartColour	websitegenerator/common/css.html#borderInlineStartColour	proc borderInlineStartColour(colour: string | CssColour): array[2, string]		267
-nim	setBorderInlineStartColour	websitegenerator/common/css.html#setBorderInlineStartColour,CssElement,	proc setBorderInlineStartColour(element: CssElement; colour: string | CssColour): CssElement		268
-nim	borderLeftColour	websitegenerator/common/css.html#borderLeftColour	proc borderLeftColour(colour: string | CssColour): array[2, string]		273
-nim	setBorderLeftColour	websitegenerator/common/css.html#setBorderLeftColour,CssElement,	proc setBorderLeftColour(element: CssElement; colour: string | CssColour): CssElement		274
-nim	borderRightColour	websitegenerator/common/css.html#borderRightColour	proc borderRightColour(colour: string | CssColour): array[2, string]		279
-nim	setBorderRightColour	websitegenerator/common/css.html#setBorderRightColour,CssElement,	proc setBorderRightColour(element: CssElement; colour: string | CssColour): CssElement		280
-nim	borderTopColour	websitegenerator/common/css.html#borderTopColour	proc borderTopColour(colour: string | CssColour): array[2, string]		285
-nim	setBorderTopColour	websitegenerator/common/css.html#setBorderTopColour,CssElement,	proc setBorderTopColour(element: CssElement; colour: string | CssColour): CssElement		286
-nim	borderBottomColour	websitegenerator/common/css.html#borderBottomColour	proc borderBottomColour(colour: string | CssColour): array[2, string]		291
-nim	setBorderBottomColour	websitegenerator/common/css.html#setBorderBottomColour,CssElement,	proc setBorderBottomColour(element: CssElement; colour: string | CssColour): CssElement		292
-nim	caretColour	websitegenerator/common/css.html#caretColour	proc caretColour(colour: string | CssColour): array[2, string]		297
-nim	setCaretColour	websitegenerator/common/css.html#setCaretColour,CssElement,	proc setCaretColour(element: CssElement; colour: string | CssColour): CssElement		298
-nim	colour	websitegenerator/common/css.html#colour	proc colour(value: string | CssColour): array[2, string]		303
-nim	setColour	websitegenerator/common/css.html#setColour,CssElement,	proc setColour(element: CssElement; colour: string | CssColour): CssElement		304
-nim	columnRuleColour	websitegenerator/common/css.html#columnRuleColour	proc columnRuleColour(colour: string | CssColour): array[2, string]		309
-nim	setColumnRuleColour	websitegenerator/common/css.html#setColumnRuleColour,CssElement,	proc setColumnRuleColour(element: CssElement; colour: string | CssColour): CssElement		310
-nim	outlineColour	websitegenerator/common/css.html#outlineColour	proc outlineColour(colour: string | CssColour): array[2, string]		315
-nim	setOutlineColour	websitegenerator/common/css.html#setOutlineColour,CssElement,	proc setOutlineColour(element: CssElement; colour: string | CssColour): CssElement		316
-nim	scrollbarColour	websitegenerator/common/css.html#scrollbarColour	proc scrollbarColour(colour: string | CssColour): array[2, string]		321
-nim	setScrollbarColour	websitegenerator/common/css.html#setScrollbarColour,CssElement,	proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement		322
-nim	textDecorationColour	websitegenerator/common/css.html#textDecorationColour	proc textDecorationColour(colour: string | CssColour): array[2, string]		327
-nim	setTextDecorationColour	websitegenerator/common/css.html#setTextDecorationColour,CssElement,	proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement		328
-nim	CssTypes	websitegenerator/common/css.html#CssTypes	type CssTypes		337
-nimgrp	rgb	websitegenerator/common/css.html#rgb-procs-all	proc		202
+nim	normal	websitegenerator/common/css.html#normal	CssFontStyle.normal		17
+nim	italic	websitegenerator/common/css.html#italic	CssFontStyle.italic		17
+nim	oblique	websitegenerator/common/css.html#oblique	CssFontStyle.oblique		17
+nim	CssFontStyle	websitegenerator/common/css.html#CssFontStyle	enum CssFontStyle		17
+nim	normal	websitegenerator/common/css.html#normal_2	CssFontStretch.normal		22
+nim	ultraCondensed	websitegenerator/common/css.html#ultraCondensed	CssFontStretch.ultraCondensed		22
+nim	extraCondensed	websitegenerator/common/css.html#extraCondensed	CssFontStretch.extraCondensed		22
+nim	condensed	websitegenerator/common/css.html#condensed	CssFontStretch.condensed		22
+nim	semiCondensed	websitegenerator/common/css.html#semiCondensed	CssFontStretch.semiCondensed		22
+nim	semiExpanded	websitegenerator/common/css.html#semiExpanded	CssFontStretch.semiExpanded		22
+nim	expanded	websitegenerator/common/css.html#expanded	CssFontStretch.expanded		22
+nim	extraExpanded	websitegenerator/common/css.html#extraExpanded	CssFontStretch.extraExpanded		22
+nim	ultraExpanded	websitegenerator/common/css.html#ultraExpanded	CssFontStretch.ultraExpanded		22
+nim	CssFontStretch	websitegenerator/common/css.html#CssFontStretch	enum CssFontStretch		22
+nim	normal	websitegenerator/common/css.html#normal_3	CssFontVariant.normal		33
+nim	smallCaps	websitegenerator/common/css.html#smallCaps	CssFontVariant.smallCaps		33
+nim	CssFontVariant	websitegenerator/common/css.html#CssFontVariant	enum CssFontVariant		33
+nim	normal	websitegenerator/common/css.html#normal_4	CssFontWeight.normal		37
+nim	bold	websitegenerator/common/css.html#bold	CssFontWeight.bold		37
+nim	bolder	websitegenerator/common/css.html#bolder	CssFontWeight.bolder		37
+nim	lighter	websitegenerator/common/css.html#lighter	CssFontWeight.lighter		37
+nim	weight100	websitegenerator/common/css.html#weight100	CssFontWeight.weight100		37
+nim	weight200	websitegenerator/common/css.html#weight200	CssFontWeight.weight200		37
+nim	weight300	websitegenerator/common/css.html#weight300	CssFontWeight.weight300		37
+nim	weight400	websitegenerator/common/css.html#weight400	CssFontWeight.weight400		37
+nim	weight500	websitegenerator/common/css.html#weight500	CssFontWeight.weight500		37
+nim	weight600	websitegenerator/common/css.html#weight600	CssFontWeight.weight600		37
+nim	weight700	websitegenerator/common/css.html#weight700	CssFontWeight.weight700		37
+nim	weight800	websitegenerator/common/css.html#weight800	CssFontWeight.weight800		37
+nim	weight900	websitegenerator/common/css.html#weight900	CssFontWeight.weight900		37
+nim	CssFontWeight	websitegenerator/common/css.html#CssFontWeight	enum CssFontWeight		37
+nim	xxSmall	websitegenerator/common/css.html#xxSmall	CssSize.xxSmall		52
+nim	xSmall	websitegenerator/common/css.html#xSmall	CssSize.xSmall		52
+nim	small	websitegenerator/common/css.html#small	CssSize.small		52
+nim	medium	websitegenerator/common/css.html#medium	CssSize.medium		52
+nim	large	websitegenerator/common/css.html#large	CssSize.large		52
+nim	xLarge	websitegenerator/common/css.html#xLarge	CssSize.xLarge		52
+nim	xxLarge	websitegenerator/common/css.html#xxLarge	CssSize.xxLarge		52
+nim	larger	websitegenerator/common/css.html#larger	CssSize.larger		52
+nim	smaller	websitegenerator/common/css.html#smaller	CssSize.smaller		52
+nim	CssSize	websitegenerator/common/css.html#CssSize	enum CssSize		52
+nim	sansSerif	websitegenerator/common/css.html#sansSerif	CssFontFamily.sansSerif		63
+nim	serif	websitegenerator/common/css.html#serif	CssFontFamily.serif		63
+nim	monospace	websitegenerator/common/css.html#monospace	CssFontFamily.monospace		63
+nim	cursive	websitegenerator/common/css.html#cursive	CssFontFamily.cursive		63
+nim	fantasy	websitegenerator/common/css.html#fantasy	CssFontFamily.fantasy		63
+nim	caption	websitegenerator/common/css.html#caption	CssFontFamily.caption		63
+nim	icon	websitegenerator/common/css.html#icon	CssFontFamily.icon		63
+nim	menu	websitegenerator/common/css.html#menu	CssFontFamily.menu		63
+nim	messageBox	websitegenerator/common/css.html#messageBox	CssFontFamily.messageBox		63
+nim	smallCaption	websitegenerator/common/css.html#smallCaption	CssFontFamily.smallCaption		63
+nim	statusBar	websitegenerator/common/css.html#statusBar	CssFontFamily.statusBar		63
+nim	CssFontFamily	websitegenerator/common/css.html#CssFontFamily	enum CssFontFamily		63
+nim	static	websitegenerator/common/css.html#static	CssPosition.static		76
+nim	relative	websitegenerator/common/css.html#relative	CssPosition.relative		76
+nim	fixed	websitegenerator/common/css.html#fixed	CssPosition.fixed		76
+nim	absolute	websitegenerator/common/css.html#absolute	CssPosition.absolute		76
+nim	sticky	websitegenerator/common/css.html#sticky	CssPosition.sticky		76
+nim	CssPosition	websitegenerator/common/css.html#CssPosition	enum CssPosition		76
+nim	bottom	websitegenerator/common/css.html#bottom	CssPositioning.bottom		83
+nim	clip	websitegenerator/common/css.html#clip	CssPositioning.clip		83
+nim	left	websitegenerator/common/css.html#left	CssPositioning.left		83
+nim	position	websitegenerator/common/css.html#position	CssPositioning.position		83
+nim	right	websitegenerator/common/css.html#right	CssPositioning.right		83
+nim	top	websitegenerator/common/css.html#top	CssPositioning.top		83
+nim	CssPositioning	websitegenerator/common/css.html#CssPositioning	enum CssPositioning		83
+nim	cm	websitegenerator/common/css.html#cm,SomeNumber	proc cm(size: SomeNumber): string		93
+nim	mm	websitegenerator/common/css.html#mm,SomeNumber	proc mm(size: SomeNumber): string		94
+nim	`in`	websitegenerator/common/css.html#in,SomeNumber	proc `in`(size: SomeNumber): string		95
+nim	inch	websitegenerator/common/css.html#inch,SomeNumber	proc inch(size: SomeNumber): string		96
+nim	px	websitegenerator/common/css.html#px,SomeNumber	proc px(size: SomeNumber): string		97
+nim	pt	websitegenerator/common/css.html#pt,SomeNumber	proc pt(size: SomeNumber): string		98
+nim	pc	websitegenerator/common/css.html#pc,SomeNumber	proc pc(size: SomeNumber): string		99
+nim	em	websitegenerator/common/css.html#em,SomeNumber	proc em(size: SomeNumber): string		101
+nim	ex	websitegenerator/common/css.html#ex,SomeNumber	proc ex(size: SomeNumber): string		102
+nim	ch	websitegenerator/common/css.html#ch,SomeNumber	proc ch(size: SomeNumber): string		103
+nim	rem	websitegenerator/common/css.html#rem,SomeNumber	proc rem(size: SomeNumber): string		104
+nim	vw	websitegenerator/common/css.html#vw,SomeNumber	proc vw(size: SomeNumber): string		105
+nim	bottom	websitegenerator/common/css.html#bottom_2	proc bottom(value: string | SomeNumber): array[2, string]		107
+nim	top	websitegenerator/common/css.html#top_2	proc top(value: string | SomeNumber): array[2, string]		108
+nim	right	websitegenerator/common/css.html#right_2	proc right(value: string | SomeNumber): array[2, string]		109
+nim	left	websitegenerator/common/css.html#left_2	proc left(value: string | SomeNumber): array[2, string]		110
+nim	width	websitegenerator/common/css.html#width	proc width(number: string | SomeNumber): array[2, string]		112
+nim	height	websitegenerator/common/css.html#height	proc height(number: string | SomeNumber): array[2, string]		113
+nim	maxWidth	websitegenerator/common/css.html#maxWidth	proc maxWidth(number: string | SomeNumber): array[2, string]		114
+nim	maxHeight	websitegenerator/common/css.html#maxHeight	proc maxHeight(number: string | SomeNumber): array[2, string]		115
+nim	fontStyle	websitegenerator/common/css.html#fontStyle	proc fontStyle(style: string | CssFontStyle): array[2, string]		117
+nim	fontStretch	websitegenerator/common/css.html#fontStretch	proc fontStretch(stretch: string | CssFontStretch): array[2, string]		118
+nim	fontVariant	websitegenerator/common/css.html#fontVariant	proc fontVariant(variant: string | CssFontVariant): array[2, string]		119
+nim	fontWeight	websitegenerator/common/css.html#fontWeight	proc fontWeight(weight: string | CssFontWeight): array[2, string]		120
+nim	fontSize	websitegenerator/common/css.html#fontSize	proc fontSize(size: string | CssSize): array[2, string]		121
+nim	fontFamily	websitegenerator/common/css.html#fontFamily	proc fontFamily(family: string | CssFontFamily): array[2, string]		122
+nim	setWidth	websitegenerator/common/css.html#setWidth,CssElement,	proc setWidth(element: CssElement; number: string | SomeNumber): CssElement		133
+nim	setHeight	websitegenerator/common/css.html#setHeight,CssElement,	proc setHeight(element: CssElement; number: string | SomeNumber): CssElement		134
+nim	setMaxWidth	websitegenerator/common/css.html#setMaxWidth,CssElement,	proc setMaxWidth(element: CssElement; number: string | SomeNumber): CssElement		135
+nim	setMaxHeight	websitegenerator/common/css.html#setMaxHeight,CssElement,	proc setMaxHeight(element: CssElement; number: string | SomeNumber): CssElement		136
+nim	setFontStyle	websitegenerator/common/css.html#setFontStyle,CssElement,	proc setFontStyle(element: CssElement; style: string | CssFontStyle): CssElement		138
+nim	setFontStretch	websitegenerator/common/css.html#setFontStretch,CssElement,	proc setFontStretch(element: CssElement; stretch: string | CssFontStretch): CssElement		139
+nim	setFontVariant	websitegenerator/common/css.html#setFontVariant,CssElement,	proc setFontVariant(element: CssElement; variant: string | CssFontVariant): CssElement		140
+nim	setFontWeight	websitegenerator/common/css.html#setFontWeight,CssElement,	proc setFontWeight(element: CssElement; weight: string | CssFontWeight): CssElement		141
+nim	setFontSize	websitegenerator/common/css.html#setFontSize,CssElement,	proc setFontSize(element: CssElement; size: string | CssSize): CssElement		142
+nim	setFontFamily	websitegenerator/common/css.html#setFontFamily,CssElement,	proc setFontFamily(element: CssElement; family: string | CssFontFamily): CssElement		143
+nim	setFont	websitegenerator/common/css.html#setFont,CssElement,varargs[string]	proc setFont(element: CssElement; fontValues: varargs[string]): CssElement		145
+nim	inline	websitegenerator/common/css.html#inline	CssDisplay.inline		161
+nim	block	websitegenerator/common/css.html#block	CssDisplay.block		161
+nim	contents	websitegenerator/common/css.html#contents	CssDisplay.contents		161
+nim	flex	websitegenerator/common/css.html#flex	CssDisplay.flex		161
+nim	gird	websitegenerator/common/css.html#gird	CssDisplay.gird		161
+nim	inlineBlock	websitegenerator/common/css.html#inlineBlock	CssDisplay.inlineBlock		161
+nim	inlineFlex	websitegenerator/common/css.html#inlineFlex	CssDisplay.inlineFlex		161
+nim	inlineGrid	websitegenerator/common/css.html#inlineGrid	CssDisplay.inlineGrid		161
+nim	inlineTable	websitegenerator/common/css.html#inlineTable	CssDisplay.inlineTable		161
+nim	listItem	websitegenerator/common/css.html#listItem	CssDisplay.listItem		161
+nim	runIn	websitegenerator/common/css.html#runIn	CssDisplay.runIn		161
+nim	table	websitegenerator/common/css.html#table	CssDisplay.table		161
+nim	tableCaption	websitegenerator/common/css.html#tableCaption	CssDisplay.tableCaption		161
+nim	tableColumnGroup	websitegenerator/common/css.html#tableColumnGroup	CssDisplay.tableColumnGroup		161
+nim	tableHeaderGroup	websitegenerator/common/css.html#tableHeaderGroup	CssDisplay.tableHeaderGroup		161
+nim	tableFooterGroup	websitegenerator/common/css.html#tableFooterGroup	CssDisplay.tableFooterGroup		161
+nim	tableRowGroup	websitegenerator/common/css.html#tableRowGroup	CssDisplay.tableRowGroup		161
+nim	tableCell	websitegenerator/common/css.html#tableCell	CssDisplay.tableCell		161
+nim	tableColumn	websitegenerator/common/css.html#tableColumn	CssDisplay.tableColumn		161
+nim	tableRow	websitegenerator/common/css.html#tableRow	CssDisplay.tableRow		161
+nim	none	websitegenerator/common/css.html#none	CssDisplay.none		161
+nim	CssDisplay	websitegenerator/common/css.html#CssDisplay	enum CssDisplay		161
+nim	visible	websitegenerator/common/css.html#visible	CssVisibility.visible		184
+nim	hidden	websitegenerator/common/css.html#hidden	CssVisibility.hidden		184
+nim	collapse	websitegenerator/common/css.html#collapse	CssVisibility.collapse		184
+nim	CssVisibility	websitegenerator/common/css.html#CssVisibility	enum CssVisibility		184
+nim	stretch	websitegenerator/common/css.html#stretch	CssContentAlignment.stretch		189
+nim	center	websitegenerator/common/css.html#center	CssContentAlignment.center		189
+nim	flexStart	websitegenerator/common/css.html#flexStart	CssContentAlignment.flexStart		189
+nim	flexEnd	websitegenerator/common/css.html#flexEnd	CssContentAlignment.flexEnd		189
+nim	spaceBetween	websitegenerator/common/css.html#spaceBetween	CssContentAlignment.spaceBetween		189
+nim	spaceAround	websitegenerator/common/css.html#spaceAround	CssContentAlignment.spaceAround		189
+nim	spaceEvenly	websitegenerator/common/css.html#spaceEvenly	CssContentAlignment.spaceEvenly		189
+nim	CssContentAlignment	websitegenerator/common/css.html#CssContentAlignment	enum CssContentAlignment		189
+nim	normal	websitegenerator/common/css.html#normal_5	CssItemsAlignment.normal		198
+nim	stretch	websitegenerator/common/css.html#stretch_2	CssItemsAlignment.stretch		198
+nim	center	websitegenerator/common/css.html#center_2	CssItemsAlignment.center		198
+nim	flexStart	websitegenerator/common/css.html#flexStart_2	CssItemsAlignment.flexStart		198
+nim	flexEnd	websitegenerator/common/css.html#flexEnd_2	CssItemsAlignment.flexEnd		198
+nim	start	websitegenerator/common/css.html#start	CssItemsAlignment.start		198
+nim	end	websitegenerator/common/css.html#end	CssItemsAlignment.end		198
+nim	baseline	websitegenerator/common/css.html#baseline	CssItemsAlignment.baseline		198
+nim	CssItemsAlignment	websitegenerator/common/css.html#CssItemsAlignment	enum CssItemsAlignment		198
+nim	initial	websitegenerator/common/css.html#initial	CssAll.initial		208
+nim	inherit	websitegenerator/common/css.html#inherit	CssAll.inherit		208
+nim	unset	websitegenerator/common/css.html#unset	CssAll.unset		208
+nim	CssAll	websitegenerator/common/css.html#CssAll	enum CssAll		208
+nim	display	websitegenerator/common/css.html#display	proc display(value: string | CssDisplay): array[2, string]		215
+nim	padding	websitegenerator/common/css.html#padding	proc padding(size: string | SomeInteger): array[2, string]		216
+nim	position	websitegenerator/common/css.html#position_2	proc position(position: string | CssPosition | CssPositioning): array[2, string]		217
+nim	visibility	websitegenerator/common/css.html#visibility	proc visibility(value: string | CssVisibility): array[2, string]		218
+nim	textAlign	websitegenerator/common/css.html#textAlign,string	proc textAlign(direction: string): array[2, string]		219
+nim	alignContent	websitegenerator/common/css.html#alignContent	proc alignContent(value: string | CssContentAlignment): array[2, string]		220
+nim	alignItems	websitegenerator/common/css.html#alignItems	proc alignItems(value: string | CssItemsAlignment): array[2, string]		221
+nim	alignSelf	websitegenerator/common/css.html#alignSelf	proc alignSelf(value: string | CssItemsAlignment): array[2, string]		222
+nim	all	websitegenerator/common/css.html#all	proc all(value: string | CssAll): array[2, string]		223
+nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,string	proc aspectRatio(value: string): array[2, string]		224
+nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,,	proc aspectRatio(x, y: string | SomeInteger): array[2, string]		225
+nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,Rational	proc aspectRatio(value: Rational): array[2, string]		226
+nim	border	websitegenerator/common/css.html#border,string	proc border(values: string): array[2, string]		228
+nim	setDisplay	websitegenerator/common/css.html#setDisplay,CssElement,	proc setDisplay(element: CssElement; value: string | CssDisplay): CssDisplay		233
+nim	setPadding	websitegenerator/common/css.html#setPadding,CssElement,	proc setPadding(element: CssElement; value: string | SomeInteger): CssDisplay		234
+nim	setVisibility	websitegenerator/common/css.html#setVisibility,CssElement,	proc setVisibility(element: CssElement; value: string | CssVisibility): CssDisplay		235
+nim	AliceBlue	websitegenerator/common/css.html#AliceBlue	CssColour.AliceBlue		247
+nim	AntiqueWhite	websitegenerator/common/css.html#AntiqueWhite	CssColour.AntiqueWhite		247
+nim	Aqua	websitegenerator/common/css.html#Aqua	CssColour.Aqua		247
+nim	Aquamarine	websitegenerator/common/css.html#Aquamarine	CssColour.Aquamarine		247
+nim	Azure	websitegenerator/common/css.html#Azure	CssColour.Azure		247
+nim	Beige	websitegenerator/common/css.html#Beige	CssColour.Beige		247
+nim	Bisque	websitegenerator/common/css.html#Bisque	CssColour.Bisque		247
+nim	Black	websitegenerator/common/css.html#Black	CssColour.Black		247
+nim	BlanchedAlmond	websitegenerator/common/css.html#BlanchedAlmond	CssColour.BlanchedAlmond		247
+nim	Blue	websitegenerator/common/css.html#Blue	CssColour.Blue		247
+nim	BlueViolet	websitegenerator/common/css.html#BlueViolet	CssColour.BlueViolet		247
+nim	Brown	websitegenerator/common/css.html#Brown	CssColour.Brown		247
+nim	BurlyWood	websitegenerator/common/css.html#BurlyWood	CssColour.BurlyWood		247
+nim	CadetBlue	websitegenerator/common/css.html#CadetBlue	CssColour.CadetBlue		247
+nim	Chartreuse	websitegenerator/common/css.html#Chartreuse	CssColour.Chartreuse		247
+nim	Chocolate	websitegenerator/common/css.html#Chocolate	CssColour.Chocolate		247
+nim	Coral	websitegenerator/common/css.html#Coral	CssColour.Coral		247
+nim	CornflowerBlue	websitegenerator/common/css.html#CornflowerBlue	CssColour.CornflowerBlue		247
+nim	Cornsilk	websitegenerator/common/css.html#Cornsilk	CssColour.Cornsilk		247
+nim	Crimson	websitegenerator/common/css.html#Crimson	CssColour.Crimson		247
+nim	Cyan	websitegenerator/common/css.html#Cyan	CssColour.Cyan		247
+nim	DarkBlue	websitegenerator/common/css.html#DarkBlue	CssColour.DarkBlue		247
+nim	DarkCyan	websitegenerator/common/css.html#DarkCyan	CssColour.DarkCyan		247
+nim	DarkGoldenrod	websitegenerator/common/css.html#DarkGoldenrod	CssColour.DarkGoldenrod		247
+nim	DarkGray	websitegenerator/common/css.html#DarkGray	CssColour.DarkGray		247
+nim	DarkGreen	websitegenerator/common/css.html#DarkGreen	CssColour.DarkGreen		247
+nim	DarkGrey	websitegenerator/common/css.html#DarkGrey	CssColour.DarkGrey		247
+nim	DarkKhaki	websitegenerator/common/css.html#DarkKhaki	CssColour.DarkKhaki		247
+nim	DarkMagenta	websitegenerator/common/css.html#DarkMagenta	CssColour.DarkMagenta		247
+nim	DarkOliveGreen	websitegenerator/common/css.html#DarkOliveGreen	CssColour.DarkOliveGreen		247
+nim	DarkOrange	websitegenerator/common/css.html#DarkOrange	CssColour.DarkOrange		247
+nim	DarkOrchid	websitegenerator/common/css.html#DarkOrchid	CssColour.DarkOrchid		247
+nim	DarkRed	websitegenerator/common/css.html#DarkRed	CssColour.DarkRed		247
+nim	DarkSalmon	websitegenerator/common/css.html#DarkSalmon	CssColour.DarkSalmon		247
+nim	DarkSeaGreen	websitegenerator/common/css.html#DarkSeaGreen	CssColour.DarkSeaGreen		247
+nim	DarkSlateBlue	websitegenerator/common/css.html#DarkSlateBlue	CssColour.DarkSlateBlue		247
+nim	DarkSlateGray	websitegenerator/common/css.html#DarkSlateGray	CssColour.DarkSlateGray		247
+nim	DarkSlateGrey	websitegenerator/common/css.html#DarkSlateGrey	CssColour.DarkSlateGrey		247
+nim	DarkTurquoise	websitegenerator/common/css.html#DarkTurquoise	CssColour.DarkTurquoise		247
+nim	DarkViolet	websitegenerator/common/css.html#DarkViolet	CssColour.DarkViolet		247
+nim	DeepPink	websitegenerator/common/css.html#DeepPink	CssColour.DeepPink		247
+nim	DeepSkyBlue	websitegenerator/common/css.html#DeepSkyBlue	CssColour.DeepSkyBlue		247
+nim	DimGray	websitegenerator/common/css.html#DimGray	CssColour.DimGray		247
+nim	DodgerBlue	websitegenerator/common/css.html#DodgerBlue	CssColour.DodgerBlue		247
+nim	FireBrick	websitegenerator/common/css.html#FireBrick	CssColour.FireBrick		247
+nim	FloralWhite	websitegenerator/common/css.html#FloralWhite	CssColour.FloralWhite		247
+nim	ForestGreen	websitegenerator/common/css.html#ForestGreen	CssColour.ForestGreen		247
+nim	Fuchsia	websitegenerator/common/css.html#Fuchsia	CssColour.Fuchsia		247
+nim	Gainsboro	websitegenerator/common/css.html#Gainsboro	CssColour.Gainsboro		247
+nim	GhostWhite	websitegenerator/common/css.html#GhostWhite	CssColour.GhostWhite		247
+nim	Gold	websitegenerator/common/css.html#Gold	CssColour.Gold		247
+nim	Goldenrod	websitegenerator/common/css.html#Goldenrod	CssColour.Goldenrod		247
+nim	Gray	websitegenerator/common/css.html#Gray	CssColour.Gray		247
+nim	Green	websitegenerator/common/css.html#Green	CssColour.Green		247
+nim	GreenYellow	websitegenerator/common/css.html#GreenYellow	CssColour.GreenYellow		247
+nim	Grey	websitegenerator/common/css.html#Grey	CssColour.Grey		247
+nim	Honeydew	websitegenerator/common/css.html#Honeydew	CssColour.Honeydew		247
+nim	HotPink	websitegenerator/common/css.html#HotPink	CssColour.HotPink		247
+nim	IndianRed	websitegenerator/common/css.html#IndianRed	CssColour.IndianRed		247
+nim	Indigo	websitegenerator/common/css.html#Indigo	CssColour.Indigo		247
+nim	Ivory	websitegenerator/common/css.html#Ivory	CssColour.Ivory		247
+nim	Khaki	websitegenerator/common/css.html#Khaki	CssColour.Khaki		247
+nim	Lavender	websitegenerator/common/css.html#Lavender	CssColour.Lavender		247
+nim	LavenderBlush	websitegenerator/common/css.html#LavenderBlush	CssColour.LavenderBlush		247
+nim	LawnGreen	websitegenerator/common/css.html#LawnGreen	CssColour.LawnGreen		247
+nim	LemonChiffon	websitegenerator/common/css.html#LemonChiffon	CssColour.LemonChiffon		247
+nim	LightBlue	websitegenerator/common/css.html#LightBlue	CssColour.LightBlue		247
+nim	LightCoral	websitegenerator/common/css.html#LightCoral	CssColour.LightCoral		247
+nim	LightCyan	websitegenerator/common/css.html#LightCyan	CssColour.LightCyan		247
+nim	LightGoldenrodYellow	websitegenerator/common/css.html#LightGoldenrodYellow	CssColour.LightGoldenrodYellow		247
+nim	LightGray	websitegenerator/common/css.html#LightGray	CssColour.LightGray		247
+nim	LightGreen	websitegenerator/common/css.html#LightGreen	CssColour.LightGreen		247
+nim	LightGrey	websitegenerator/common/css.html#LightGrey	CssColour.LightGrey		247
+nim	LightPink	websitegenerator/common/css.html#LightPink	CssColour.LightPink		247
+nim	LightSalmon	websitegenerator/common/css.html#LightSalmon	CssColour.LightSalmon		247
+nim	LightSeaGreen	websitegenerator/common/css.html#LightSeaGreen	CssColour.LightSeaGreen		247
+nim	LightSkyBlue	websitegenerator/common/css.html#LightSkyBlue	CssColour.LightSkyBlue		247
+nim	LightSlateGray	websitegenerator/common/css.html#LightSlateGray	CssColour.LightSlateGray		247
+nim	LightSlateGrey	websitegenerator/common/css.html#LightSlateGrey	CssColour.LightSlateGrey		247
+nim	LightSteelBlue	websitegenerator/common/css.html#LightSteelBlue	CssColour.LightSteelBlue		247
+nim	LightYellow	websitegenerator/common/css.html#LightYellow	CssColour.LightYellow		247
+nim	Lime	websitegenerator/common/css.html#Lime	CssColour.Lime		247
+nim	LimeGreen	websitegenerator/common/css.html#LimeGreen	CssColour.LimeGreen		247
+nim	Linen	websitegenerator/common/css.html#Linen	CssColour.Linen		247
+nim	Magenta	websitegenerator/common/css.html#Magenta	CssColour.Magenta		247
+nim	Maroon	websitegenerator/common/css.html#Maroon	CssColour.Maroon		247
+nim	MediumAquamarine	websitegenerator/common/css.html#MediumAquamarine	CssColour.MediumAquamarine		247
+nim	MediumBlue	websitegenerator/common/css.html#MediumBlue	CssColour.MediumBlue		247
+nim	MediumOrchid	websitegenerator/common/css.html#MediumOrchid	CssColour.MediumOrchid		247
+nim	MediumPurple	websitegenerator/common/css.html#MediumPurple	CssColour.MediumPurple		247
+nim	MediumSeaGreen	websitegenerator/common/css.html#MediumSeaGreen	CssColour.MediumSeaGreen		247
+nim	MediumSlateBlue	websitegenerator/common/css.html#MediumSlateBlue	CssColour.MediumSlateBlue		247
+nim	MediumSpringGreen	websitegenerator/common/css.html#MediumSpringGreen	CssColour.MediumSpringGreen		247
+nim	MediumTurquoise	websitegenerator/common/css.html#MediumTurquoise	CssColour.MediumTurquoise		247
+nim	MediumVioletRed	websitegenerator/common/css.html#MediumVioletRed	CssColour.MediumVioletRed		247
+nim	MidnightBlue	websitegenerator/common/css.html#MidnightBlue	CssColour.MidnightBlue		247
+nim	MintCream	websitegenerator/common/css.html#MintCream	CssColour.MintCream		247
+nim	MistyRose	websitegenerator/common/css.html#MistyRose	CssColour.MistyRose		247
+nim	Moccasin	websitegenerator/common/css.html#Moccasin	CssColour.Moccasin		247
+nim	NavajoWhite	websitegenerator/common/css.html#NavajoWhite	CssColour.NavajoWhite		247
+nim	Navy	websitegenerator/common/css.html#Navy	CssColour.Navy		247
+nim	OldLace	websitegenerator/common/css.html#OldLace	CssColour.OldLace		247
+nim	Olive	websitegenerator/common/css.html#Olive	CssColour.Olive		247
+nim	OliveDrab	websitegenerator/common/css.html#OliveDrab	CssColour.OliveDrab		247
+nim	Orange	websitegenerator/common/css.html#Orange	CssColour.Orange		247
+nim	OrangeRed	websitegenerator/common/css.html#OrangeRed	CssColour.OrangeRed		247
+nim	Orchid	websitegenerator/common/css.html#Orchid	CssColour.Orchid		247
+nim	PaleGoldenrod	websitegenerator/common/css.html#PaleGoldenrod	CssColour.PaleGoldenrod		247
+nim	PaleGreen	websitegenerator/common/css.html#PaleGreen	CssColour.PaleGreen		247
+nim	PaleTurquoise	websitegenerator/common/css.html#PaleTurquoise	CssColour.PaleTurquoise		247
+nim	PaleVioletRed	websitegenerator/common/css.html#PaleVioletRed	CssColour.PaleVioletRed		247
+nim	PapayaWhip	websitegenerator/common/css.html#PapayaWhip	CssColour.PapayaWhip		247
+nim	PeachPuff	websitegenerator/common/css.html#PeachPuff	CssColour.PeachPuff		247
+nim	Peru	websitegenerator/common/css.html#Peru	CssColour.Peru		247
+nim	Pink	websitegenerator/common/css.html#Pink	CssColour.Pink		247
+nim	Plum	websitegenerator/common/css.html#Plum	CssColour.Plum		247
+nim	PowderBlue	websitegenerator/common/css.html#PowderBlue	CssColour.PowderBlue		247
+nim	Purple	websitegenerator/common/css.html#Purple	CssColour.Purple		247
+nim	RebeccaPurple	websitegenerator/common/css.html#RebeccaPurple	CssColour.RebeccaPurple		247
+nim	Red	websitegenerator/common/css.html#Red	CssColour.Red		247
+nim	RosyBrown	websitegenerator/common/css.html#RosyBrown	CssColour.RosyBrown		247
+nim	RoyalBlue	websitegenerator/common/css.html#RoyalBlue	CssColour.RoyalBlue		247
+nim	SaddleBrown	websitegenerator/common/css.html#SaddleBrown	CssColour.SaddleBrown		247
+nim	Salmon	websitegenerator/common/css.html#Salmon	CssColour.Salmon		247
+nim	SandyBrown	websitegenerator/common/css.html#SandyBrown	CssColour.SandyBrown		247
+nim	SeaGreen	websitegenerator/common/css.html#SeaGreen	CssColour.SeaGreen		247
+nim	Seashell	websitegenerator/common/css.html#Seashell	CssColour.Seashell		247
+nim	Sienna	websitegenerator/common/css.html#Sienna	CssColour.Sienna		247
+nim	Silver	websitegenerator/common/css.html#Silver	CssColour.Silver		247
+nim	SkyBlue	websitegenerator/common/css.html#SkyBlue	CssColour.SkyBlue		247
+nim	SlateBlue	websitegenerator/common/css.html#SlateBlue	CssColour.SlateBlue		247
+nim	SlateGray	websitegenerator/common/css.html#SlateGray	CssColour.SlateGray		247
+nim	SlateGrey	websitegenerator/common/css.html#SlateGrey	CssColour.SlateGrey		247
+nim	Snow	websitegenerator/common/css.html#Snow	CssColour.Snow		247
+nim	SpringGreen	websitegenerator/common/css.html#SpringGreen	CssColour.SpringGreen		247
+nim	SteelBlue	websitegenerator/common/css.html#SteelBlue	CssColour.SteelBlue		247
+nim	Tan	websitegenerator/common/css.html#Tan	CssColour.Tan		247
+nim	Teal	websitegenerator/common/css.html#Teal	CssColour.Teal		247
+nim	Thistle	websitegenerator/common/css.html#Thistle	CssColour.Thistle		247
+nim	Tomato	websitegenerator/common/css.html#Tomato	CssColour.Tomato		247
+nim	Turquoise	websitegenerator/common/css.html#Turquoise	CssColour.Turquoise		247
+nim	Violet	websitegenerator/common/css.html#Violet	CssColour.Violet		247
+nim	Wheat	websitegenerator/common/css.html#Wheat	CssColour.Wheat		247
+nim	White	websitegenerator/common/css.html#White	CssColour.White		247
+nim	WhiteSmoke	websitegenerator/common/css.html#WhiteSmoke	CssColour.WhiteSmoke		247
+nim	Yellow	websitegenerator/common/css.html#Yellow	CssColour.Yellow		247
+nim	YellowGreen	websitegenerator/common/css.html#YellowGreen	CssColour.YellowGreen		247
+nim	CssColour	websitegenerator/common/css.html#CssColour	enum CssColour		247
+nim	rgb	websitegenerator/common/css.html#rgb,SomeInteger,SomeInteger,SomeInteger	proc rgb(red, green, blue: SomeInteger): string		300
+nim	rgb	websitegenerator/common/css.html#rgb,SomeFloat,SomeFloat,SomeFloat	proc rgb(red, green, blue: SomeFloat): string		306
+nim	accentColour	websitegenerator/common/css.html#accentColour	proc accentColour(colour: string | CssColour): array[2, string]		321
+nim	setAccentColour	websitegenerator/common/css.html#setAccentColour,CssElement,	proc setAccentColour(element: CssElement; colour: string | CssColour): CssElement		322
+nim	backgroundColour	websitegenerator/common/css.html#backgroundColour	proc backgroundColour(value: string | CssColour): array[2, string]		327
+nim	setBackgroundColour	websitegenerator/common/css.html#setBackgroundColour,CssElement,	proc setBackgroundColour(element: CssElement; colour: string | CssColour): CssElement		328
+nim	borderBlockColour	websitegenerator/common/css.html#borderBlockColour	proc borderBlockColour(colour: string | CssColour): array[2, string]		333
+nim	setBorderBlockColour	websitegenerator/common/css.html#setBorderBlockColour,CssElement,	proc setBorderBlockColour(element: CssElement; colour: string | CssColour): CssElement		334
+nim	borderBlockEndColour	websitegenerator/common/css.html#borderBlockEndColour	proc borderBlockEndColour(colour: string | CssColour): array[2, string]		339
+nim	setBorderBlockEndColour	websitegenerator/common/css.html#setBorderBlockEndColour,CssElement,	proc setBorderBlockEndColour(element: CssElement; colour: string | CssColour): CssElement		340
+nim	borderBlockStartColour	websitegenerator/common/css.html#borderBlockStartColour	proc borderBlockStartColour(colour: string | CssColour): array[2, string]		345
+nim	setBorderBlockStartColour	websitegenerator/common/css.html#setBorderBlockStartColour,CssElement,	proc setBorderBlockStartColour(element: CssElement; colour: string | CssColour): CssElement		346
+nim	borderColour	websitegenerator/common/css.html#borderColour	proc borderColour(colour: string | CssColour): array[2, string]		351
+nim	setBorderColour	websitegenerator/common/css.html#setBorderColour,CssElement,	proc setBorderColour(element: CssElement; colour: string | CssColour): CssElement		352
+nim	borderInlineColour	websitegenerator/common/css.html#borderInlineColour	proc borderInlineColour(colour: string | CssColour): array[2, string]		357
+nim	setBorderInlineColour	websitegenerator/common/css.html#setBorderInlineColour,CssElement,	proc setBorderInlineColour(element: CssElement; colour: string | CssColour): CssElement		358
+nim	borderInlineEndColour	websitegenerator/common/css.html#borderInlineEndColour	proc borderInlineEndColour(colour: string | CssColour): array[2, string]		363
+nim	setBorderInlineEndColour	websitegenerator/common/css.html#setBorderInlineEndColour,CssElement,	proc setBorderInlineEndColour(element: CssElement; colour: string | CssColour): CssElement		364
+nim	borderInlineStartColour	websitegenerator/common/css.html#borderInlineStartColour	proc borderInlineStartColour(colour: string | CssColour): array[2, string]		369
+nim	setBorderInlineStartColour	websitegenerator/common/css.html#setBorderInlineStartColour,CssElement,	proc setBorderInlineStartColour(element: CssElement; colour: string | CssColour): CssElement		370
+nim	borderLeftColour	websitegenerator/common/css.html#borderLeftColour	proc borderLeftColour(colour: string | CssColour): array[2, string]		375
+nim	setBorderLeftColour	websitegenerator/common/css.html#setBorderLeftColour,CssElement,	proc setBorderLeftColour(element: CssElement; colour: string | CssColour): CssElement		376
+nim	borderRightColour	websitegenerator/common/css.html#borderRightColour	proc borderRightColour(colour: string | CssColour): array[2, string]		381
+nim	setBorderRightColour	websitegenerator/common/css.html#setBorderRightColour,CssElement,	proc setBorderRightColour(element: CssElement; colour: string | CssColour): CssElement		382
+nim	borderTopColour	websitegenerator/common/css.html#borderTopColour	proc borderTopColour(colour: string | CssColour): array[2, string]		387
+nim	setBorderTopColour	websitegenerator/common/css.html#setBorderTopColour,CssElement,	proc setBorderTopColour(element: CssElement; colour: string | CssColour): CssElement		388
+nim	borderBottomColour	websitegenerator/common/css.html#borderBottomColour	proc borderBottomColour(colour: string | CssColour): array[2, string]		393
+nim	setBorderBottomColour	websitegenerator/common/css.html#setBorderBottomColour,CssElement,	proc setBorderBottomColour(element: CssElement; colour: string | CssColour): CssElement		394
+nim	caretColour	websitegenerator/common/css.html#caretColour	proc caretColour(colour: string | CssColour): array[2, string]		399
+nim	setCaretColour	websitegenerator/common/css.html#setCaretColour,CssElement,	proc setCaretColour(element: CssElement; colour: string | CssColour): CssElement		400
+nim	colour	websitegenerator/common/css.html#colour	proc colour(value: string | CssColour): array[2, string]		405
+nim	setColour	websitegenerator/common/css.html#setColour,CssElement,	proc setColour(element: CssElement; colour: string | CssColour): CssElement		406
+nim	columnRuleColour	websitegenerator/common/css.html#columnRuleColour	proc columnRuleColour(colour: string | CssColour): array[2, string]		411
+nim	setColumnRuleColour	websitegenerator/common/css.html#setColumnRuleColour,CssElement,	proc setColumnRuleColour(element: CssElement; colour: string | CssColour): CssElement		412
+nim	outlineColour	websitegenerator/common/css.html#outlineColour	proc outlineColour(colour: string | CssColour): array[2, string]		417
+nim	setOutlineColour	websitegenerator/common/css.html#setOutlineColour,CssElement,	proc setOutlineColour(element: CssElement; colour: string | CssColour): CssElement		418
+nim	scrollbarColour	websitegenerator/common/css.html#scrollbarColour	proc scrollbarColour(colour: string | CssColour): array[2, string]		423
+nim	setScrollbarColour	websitegenerator/common/css.html#setScrollbarColour,CssElement,	proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement		424
+nim	textDecorationColour	websitegenerator/common/css.html#textDecorationColour	proc textDecorationColour(colour: string | CssColour): array[2, string]		429
+nim	setTextDecorationColour	websitegenerator/common/css.html#setTextDecorationColour,CssElement,	proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement		430
+nimgrp	rgb	websitegenerator/common/css.html#rgb-procs-all	proc		300
+nimgrp	aspectratio	websitegenerator/common/css.html#aspectRatio-procs-all	proc		224
 heading	Common css snippets	websitegenerator/common/css.html#common-css-snippets	 Common css snippets		0

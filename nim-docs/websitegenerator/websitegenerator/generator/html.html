@@ -54,7 +54,7 @@
     <ul class="simple simple-toc-section">
       <li><a class="reference" href="#HtmlDocument" title="HtmlDocument = object
   file*: string
-  head*, body*: seq[HtmlElement]">HtmlDocument</a></li>
+  head*, body*, bodyEnd*: seq[HtmlElement]">HtmlDocument</a></li>
 <li><a class="reference" href="#HtmlElement" title="HtmlElement = object
   tag*, class*, content*: string
   tagAttributes*: seq[HtmlElementAttribute] = []">HtmlElement</a></li>
@@ -76,10 +76,24 @@
 <li><a class="reference" href="#%24%2Cseq%5BHtmlElement%5D" title="`$`(elements: seq[HtmlElement]): string">`$`(elements: seq[HtmlElement]): string</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">add
+  <li><a class="reference" href="#add%2CHtmlDocument%2CHtmlElement" title="add(document: var HtmlDocument; element: HtmlElement)">add(document: var HtmlDocument; element: HtmlElement)</a></li>
+<li><a class="reference" href="#add%2CHtmlDocument%2Cseq%5BHtmlElement%5D" title="add(document: var HtmlDocument; elements: seq[HtmlElement])">add(document: var HtmlDocument; elements: seq[HtmlElement])</a></li>
+<li><a class="reference" href="#add%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D" title="add(document: var HtmlDocument; elements: varargs[HtmlElement])">add(document: var HtmlDocument; elements: varargs[HtmlElement])</a></li>
+<li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D" title="add(element: HtmlElement; attribute: varargs[HtmlElementAttribute]): HtmlElement">add(element: HtmlElement; attribute: varargs[HtmlElementAttribute]): HtmlElement</a></li>
+<li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2" title="add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])">add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">addToBody
   <li><a class="reference" href="#addToBody%2CHtmlDocument%2CHtmlElement" title="addToBody(document: var HtmlDocument; element: HtmlElement)">addToBody(document: var HtmlDocument; element: HtmlElement)</a></li>
 <li><a class="reference" href="#addToBody%2CHtmlDocument%2Cseq%5BHtmlElement%5D" title="addToBody(document: var HtmlDocument; elements: seq[HtmlElement])">addToBody(document: var HtmlDocument; elements: seq[HtmlElement])</a></li>
 <li><a class="reference" href="#addToBody%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D" title="addToBody(document: var HtmlDocument; elements: varargs[HtmlElement])">addToBody(document: var HtmlDocument; elements: varargs[HtmlElement])</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">addToBodyEnd
+  <li><a class="reference" href="#addToBodyEnd%2CHtmlDocument%2CHtmlElement" title="addToBodyEnd(document: var HtmlDocument; element: HtmlElement)">addToBodyEnd(document: var HtmlDocument; element: HtmlElement)</a></li>
+<li><a class="reference" href="#addToBodyEnd%2CHtmlDocument%2Cseq%5BHtmlElement%5D" title="addToBodyEnd(document: var HtmlDocument; elements: seq[HtmlElement])">addToBodyEnd(document: var HtmlDocument; elements: seq[HtmlElement])</a></li>
+<li><a class="reference" href="#addToBodyEnd%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D" title="addToBodyEnd(document: var HtmlDocument; elements: varargs[HtmlElement])">addToBodyEnd(document: var HtmlDocument; elements: varargs[HtmlElement])</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">addToHead
@@ -89,9 +103,7 @@
 
 </ul>
 <ul class="simple nested-toc-section">attr
-  <li><a class="reference" href="#attr%2CHtmlElement%2CHtmlElementAttribute" title="attr(element: HtmlElement; attribute: HtmlElementAttribute): HtmlElement">attr(element: HtmlElement; attribute: HtmlElementAttribute): HtmlElement</a></li>
-<li><a class="reference" href="#attr%2CHtmlElement%2CHtmlElementAttribute_2" title="attr(element: var HtmlElement; attribute: HtmlElementAttribute)">attr(element: var HtmlElement; attribute: HtmlElementAttribute)</a></li>
-<li><a class="reference" href="#attr%2Cstring%2Cstring" title="attr(name, value: string): HtmlElementAttribute">attr(name, value: string): HtmlElementAttribute</a></li>
+  <li><a class="reference" href="#attr%2Cstring%2Cstring" title="attr(name, value: string): HtmlElementAttribute">attr(name, value: string): HtmlElementAttribute</a></li>
 <li><a class="reference" href="#attr%2Cstring" title="attr(name: string): HtmlElementAttribute">attr(name: string): HtmlElementAttribute</a></li>
 
 </ul>
@@ -138,11 +150,11 @@
     <div id="HtmlDocument">
   <dt><pre><a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
   <span class="Identifier">file</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>
-  <span class="Identifier">head</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">body</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span>
+  <span class="Identifier">head</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">body</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">bodyEnd</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span>
 </pre></dt>
   <dd>
     
-    
+    HTML document object
     
   </dd>
 </div>
@@ -153,7 +165,7 @@
 </pre></dt>
   <dd>
     
-    
+    Object for HTML elements (Example: <tt class="docutils literal"><span class="pre"><span class="Operator">&lt;</span><span class="Identifier">p</span><span class="Operator">&gt;</span> <span class="Operator">...</span> <span class="Operator">&lt;/</span><span class="Identifier">p</span><span class="Operator">&gt;</span></span></tt>)
     
   </dd>
 </div>
@@ -163,7 +175,7 @@
 </pre></dt>
   <dd>
     
-    
+    Attribute for an <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
     
   </dd>
 </div>
@@ -221,6 +233,54 @@
 </div>
 
 </div>
+<div id="add-procs-all">
+  <div id="add,HtmlDocument,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlDocument%2CHtmlElement"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Shortcut for <tt class="docutils literal"><span class="pre"><span class="Identifier">addToBody</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> proc
+    
+  </dd>
+</div>
+<div id="add,HtmlDocument,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlDocument%2Cseq%5BHtmlElement%5D"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Shortcut for <tt class="docutils literal"><span class="pre"><span class="Identifier">addToBody</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> proc
+    
+  </dd>
+</div>
+<div id="add,HtmlDocument,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Shortcut for <tt class="docutils literal"><span class="pre"><span class="Identifier">addToBody</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> proc
+    
+  </dd>
+</div>
+<div id="add,HtmlElement,varargs[HtmlElementAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">attribute</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds attribute(s) to an element
+    
+  </dd>
+</div>
+<div id="add,HtmlElement,varargs[HtmlElementAttribute]_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">attribute</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds attribute(s) to an element
+    
+  </dd>
+</div>
+
+</div>
 <div id="addToBody-procs-all">
   <div id="addToBody,HtmlDocument,HtmlElement">
   <dt><pre><span class="Keyword">proc</span> <a href="#addToBody%2CHtmlDocument%2CHtmlElement"><span class="Identifier">addToBody</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
@@ -246,6 +306,36 @@
   <dd>
     
     Adds multiple html elements to the body of the document.
+    
+  </dd>
+</div>
+
+</div>
+<div id="addToBodyEnd-procs-all">
+  <div id="addToBodyEnd,HtmlDocument,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addToBodyEnd%2CHtmlDocument%2CHtmlElement"><span class="Identifier">addToBodyEnd</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds a single html element to the end of the body of the document.
+    
+  </dd>
+</div>
+<div id="addToBodyEnd,HtmlDocument,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addToBodyEnd%2CHtmlDocument%2Cseq%5BHtmlElement%5D"><span class="Identifier">addToBodyEnd</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds a sequence of html elements to the end of the body of the document.
+    
+  </dd>
+</div>
+<div id="addToBodyEnd,HtmlDocument,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addToBodyEnd%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">addToBodyEnd</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds multiple html elements to the end of the body of the document.
     
   </dd>
 </div>
@@ -282,25 +372,7 @@
 
 </div>
 <div id="attr-procs-all">
-  <div id="attr,HtmlElement,HtmlElementAttribute">
-  <dt><pre><span class="Keyword">proc</span> <a href="#attr%2CHtmlElement%2CHtmlElementAttribute"><span class="Identifier">attr</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">attribute</span><span class="Other">:</span> <a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Adds attribute to an element
-    
-  </dd>
-</div>
-<div id="attr,HtmlElement,HtmlElementAttribute_2">
-  <dt><pre><span class="Keyword">proc</span> <a href="#attr%2CHtmlElement%2CHtmlElementAttribute_2"><span class="Identifier">attr</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">attribute</span><span class="Other">:</span> <a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">)</span> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Adds attribute to an element
-    
-  </dd>
-</div>
-<div id="attr,string,string">
+  <div id="attr,string,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#attr%2Cstring%2Cstring"><span class="Identifier">attr</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">,</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
@@ -347,7 +419,7 @@
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    
+    New html document with a filename (used in <tt class="docutils literal"><span class="pre"><span class="Identifier">writeFile</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> proc to write to disk)
     
   </dd>
 </div>
@@ -415,7 +487,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2023-08-18 18:23:32 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-27 09:52:56 UTC</small>
       </div>
     </div>
   </div>
