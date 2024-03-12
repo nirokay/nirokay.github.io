@@ -12,10 +12,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QQQEwksSS9ZWwAAAk1JREFUWMPtll2ITVEUx39nn/O7Y5qR8f05wtCUUr6ZIS++8pEnkZInPImneaCQ5METNdOkeFBKUhMPRIkHKfEuUZSUlGlKPN2TrgfncpvmnntnmlEyq1Z7t89/rf9a6+y99oZxGZf/XeIq61EdtgKXgdXA0xrYAvBjOIF1AI9zvjcC74BSpndrJPkBWDScTF8Aa4E3wDlgHbASaANmVqlcCnwHvgDvgVfAJ+AikAAvgfVZwLnSVZHZaOuKoQi3ZOMi4NkYkpe1p4J7A8BpYAD49hfIy/oqG0+hLomiKP2L5L+1ubn5115S+3OAn4EnwBlgMzCjyt6ZAnQCJ4A7wOs88iRJHvw50HoujuPBoCKwHWiosy8MdfZnAdcHk8dxXFJ3VQbQlCTJvRBCGdRbD4M6uc5glpY3eAihpN5S5w12diSEcCCEcKUO4ljdr15T76ur1FDDLIQQ3qv71EdDOe3Kxj3leRXyk+pxdWnFWod6Wt2bY3de3aSuUHcPBVimHs7mK9WrmeOF6lR1o9qnzskh2ar2qm1qizpfXaPeVGdlmGN5pb09qMxz1Xb1kLqgzn1RyH7JUXW52lr5e/Kqi9qpto7V1atuUzfnARrV7jEib1T76gG2qxdGmXyiekkt1GswPTtek0aBfJp6YySGBfWg2tPQ0FAYgf1stUfdmdcjarbYJEniKIq6gY/Aw+zWHAC+p2labGpqiorFYgGYCEzN7oQdQClN07O1/EfDyGgC0ALMBdYAi4FyK+4H3gLPsxfR1zRNi+NP7nH5J+QntnXe5B5mpfQAAAAASUVORK5CYII=">
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../nimdoc.out.css">
+<link rel="stylesheet" type="text/css" href="../nimdoc.out.css?v=2.0.2">
 
 <!-- JS -->
-<script type="text/javascript" src="../dochack.js"></script>
+<script type="text/javascript" src="../dochack.js?v=2.0.2"></script>
 </head>
 <body>
   <div class="document" id="documentId">
@@ -52,7 +52,19 @@
   <details open>
     <summary><a class="reference reference-toplevel" href="#12" id="62">Procs</a></summary>
     <ul class="simple simple-toc-section">
-      <ul class="simple nested-toc-section">generate
+      <ul class="simple nested-toc-section">addOgImage
+  <li><a class="reference" href="#addOgImage%2CHtmlDocument%2Cstring" title="addOgImage(html: var HtmlDocument; source: string)">addOgImage(html: var HtmlDocument; source: string)</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">addOgTag
+  <li><a class="reference" href="#addOgTag%2CHtmlDocument%2Cstring%2Cstring" title="addOgTag(html: var HtmlDocument; property, content: string)">addOgTag(html: var HtmlDocument; property, content: string)</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">addOgTags
+  <li><a class="reference" href="#addOgTags%2CHtmlDocument" title="addOgTags(html: var HtmlDocument)">addOgTags(html: var HtmlDocument)</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">generate
   <li><a class="reference" href="#generate%2CHtmlDocument" title="generate(html: var HtmlDocument)">generate(html: var HtmlDocument)</a></li>
 
 </ul>
@@ -78,7 +90,43 @@
     <div class="section" id="12">
   <h1><a class="toc-backref" href="#12">Procs</a></h1>
   <dl class="item">
-    <div id="generate-procs-all">
+    <div id="addOgImage-procs-all">
+  <div id="addOgImage,HtmlDocument,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addOgImage%2CHtmlDocument%2Cstring"><span class="Identifier">addOgImage</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">HtmlDocument</span><span class="Other">;</span> <span class="Identifier">source</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+
+</div>
+<div id="addOgTag-procs-all">
+  <div id="addOgTag,HtmlDocument,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addOgTag%2CHtmlDocument%2Cstring%2Cstring"><span class="Identifier">addOgTag</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">HtmlDocument</span><span class="Other">;</span> <span class="Identifier">property</span><span class="Other">,</span> <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds a single og tag
+    
+  </dd>
+</div>
+
+</div>
+<div id="addOgTags-procs-all">
+  <div id="addOgTags,HtmlDocument">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addOgTags%2CHtmlDocument"><span class="Identifier">addOgTags</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">HtmlDocument</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds <tt class="docutils literal"><span class="pre"><span class="Identifier">og</span><span class="Punctuation">:</span><span class="Operator">...</span></span></tt> tags to the head of an Html document, that shows when sharing a link
+    
+  </dd>
+</div>
+
+</div>
+<div id="generate-procs-all">
   <div id="generate,HtmlDocument">
   <dt><pre><span class="Keyword">proc</span> <a href="#generate%2CHtmlDocument"><span class="Identifier">generate</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">HtmlDocument</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span>
                                         <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">WriteIOEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">]</span><span class="Other">,</span>
@@ -93,8 +141,8 @@
 </div>
 <div id="newPage-procs-all">
   <div id="newPage,string,string,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newPage%2Cstring%2Cstring%2Cstring"><span class="Identifier">newPage</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">,</span> <span class="Identifier">path</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">desc</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlDocument</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newPage%2Cstring%2Cstring%2Cstring"><span class="Identifier">newPage</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">,</span> <span class="Identifier">path</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">desc</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlDocument</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Shortcut to create standardized html pages
@@ -113,7 +161,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-20 10:54:12 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-03-12 10:41:24 UTC</small>
       </div>
     </div>
   </div>

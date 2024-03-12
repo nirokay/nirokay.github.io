@@ -1,3 +1,2 @@
 nimTitle	newsfeed	website/newsfeed.html	module website/newsfeed		0
-nim	newsfeedDivId	website/newsfeed.html#newsfeedDivId	const newsfeedDivId		12
 heading	Newsfeed module	website/newsfeed.html#newsfeed-module	 Newsfeed module		0

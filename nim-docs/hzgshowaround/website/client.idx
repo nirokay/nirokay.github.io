@@ -7,5 +7,7 @@ nim	requestJson	website/client.html#requestJson,string,string	proc requestJson(u
 nim	getLocationJson	website/client.html#getLocationJson	proc getLocationJson(): JsonNode		73
 nim	getTourJson	website/client.html#getTourJson	proc getTourJson(): JsonNode		74
 nim	getArticlesJson	website/client.html#getArticlesJson	proc getArticlesJson(): JsonNode		75
-nim	getMapSvg	website/client.html#getMapSvg	proc getMapSvg(): string		76
+nim	getArticleAuthorsJson	website/client.html#getArticleAuthorsJson	proc getArticleAuthorsJson(): JsonNode		76
+nim	getContributorsJson	website/client.html#getContributorsJson	proc getContributorsJson(): JsonNode		77
+nim	getMapSvg	website/client.html#getMapSvg	proc getMapSvg(): string		78
 heading	Http Client module	website/client.html#http-client-module	 Http Client module		0

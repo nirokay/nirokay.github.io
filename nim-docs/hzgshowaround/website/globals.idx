@@ -1,58 +1,56 @@
 nimTitle	globals	website/globals.html	module website/globals		0
-nim	indexLocationDropDownId	website/globals.html#indexLocationDropDownId	const indexLocationDropDownId		22
-nim	colBackground	website/globals.html#colBackground	const colBackground		30
-nim	colButton	website/globals.html#colButton	const colButton		32
-nim	colButtonHover	website/globals.html#colButtonHover	const colButtonHover		33
-nim	mapResolution	website/globals.html#mapResolution	const mapResolution		41
-nim	mapScaleTo	website/globals.html#mapScaleTo	const mapScaleTo		42
-nim	textUnderline	website/globals.html#textUnderline	const textUnderline		45
-nim	textNoDecoration	website/globals.html#textNoDecoration	const textNoDecoration		46
-nim	urlRemoteRepo	website/globals.html#urlRemoteRepo	const urlRemoteRepo		51
-nim	urlResources	website/globals.html#urlResources	const urlResources		53
-nim	urlImages	website/globals.html#urlImages	const urlImages		54
-nim	urlArticleImages	website/globals.html#urlArticleImages	const urlArticleImages		56
-nim	urlArticles	website/globals.html#urlArticles	const urlArticles		57
-nim	urlCustomHtmlArticles	website/globals.html#urlCustomHtmlArticles	const urlCustomHtmlArticles		58
-nim	urlLocationImages	website/globals.html#urlLocationImages	const urlLocationImages		60
-nim	urlJsonLocationData	website/globals.html#urlJsonLocationData	const urlJsonLocationData		61
-nim	urlJsonTourData	website/globals.html#urlJsonTourData	const urlJsonTourData		62
-nim	urlJsonNewsFeed	website/globals.html#urlJsonNewsFeed	const urlJsonNewsFeed		64
-nim	articlesLocation	website/globals.html#articlesLocation	const articlesLocation		68
-nim	articleCssFile	website/globals.html#articleCssFile	const articleCssFile		69
-nim	textCenter	website/globals.html#textCenter	const textCenter		108
-nim	textCenterClass	website/globals.html#textCenterClass	const textCenterClass		109
-nim	centerWidth100Class	website/globals.html#centerWidth100Class	const centerWidth100Class		113
-nim	centerClass	website/globals.html#centerClass	const centerClass		121
-nim	centerTableClass	website/globals.html#centerTableClass	const centerTableClass		129
-nim	buttonClass	website/globals.html#buttonClass	const buttonClass		134
-nim	buttonClassHover	website/globals.html#buttonClassHover	const buttonClassHover		149
-nim	mapElement	website/globals.html#mapElement	const mapElement		154
-nim	divCenterOuter	website/globals.html#divCenterOuter	const divCenterOuter		161
-nim	divCenterMiddle	website/globals.html#divCenterMiddle	const divCenterMiddle		169
-nim	divCenterInner	website/globals.html#divCenterInner	const divCenterInner		173
-nim	newsDivClass	website/globals.html#newsDivClass	const newsDivClass		179
-nim	newsElementGeneric	website/globals.html#newsElementGeneric	const newsElementGeneric		188
-nim	newsElementWarning	website/globals.html#newsElementWarning	const newsElementWarning		189
-nim	newsElementAlert	website/globals.html#newsElementAlert	const newsElementAlert		190
-nim	newsElementHappened	website/globals.html#newsElementHappened	const newsElementHappened		191
-nim	articlePreviewItem	website/globals.html#articlePreviewItem	const articlePreviewItem		193
-nim	articlePreviewBox	website/globals.html#articlePreviewBox	const articlePreviewBox		201
-nim	locationImageHeader	website/globals.html#locationImageHeader	const locationImageHeader		211
-nim	locationImageFooter	website/globals.html#locationImageFooter	const locationImageFooter		212
-nim	locationImageMapPreview	website/globals.html#locationImageMapPreview	const locationImageMapPreview		213
-nim	locationImageFooterDiv	website/globals.html#locationImageFooterDiv	const locationImageFooterDiv		215
-nim	pc	website/globals.html#pc,seq[string]	proc pc(lines: seq[string]): HtmlElement		228
-nim	pc	website/globals.html#pc,varargs[string]	proc pc(lines: varargs[string]): HtmlElement		232
-nim	pc	website/globals.html#pc,varargs[HtmlElement]	proc pc(elements: varargs[HtmlElement]): HtmlElement		239
-nim	scriptButton	website/globals.html#scriptButton,string,string	proc scriptButton(text, onclick: string): HtmlElement		247
-nim	button	website/globals.html#button,string,string	proc button(content, href: string): HtmlElement		253
-nim	buttonList	website/globals.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		255
-nim	backToHomeButton	website/globals.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		260
-nim	fullyCenter	website/globals.html#fullyCenter,seq[HtmlElement]	proc fullyCenter(html: seq[HtmlElement]): HtmlElement		262
-nim	fullyCenter	website/globals.html#fullyCenter,varargs[HtmlElement]	proc fullyCenter(html: varargs[HtmlElement]): HtmlElement		271
-nim	getRelativeUrlId	website/globals.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		281
-nim	getRelativeUrlPath	website/globals.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		286
-nim	isSet	website/globals.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		293
-nimgrp	fullycenter	website/globals.html#fullyCenter-procs-all	proc		262
-nimgrp	pc	website/globals.html#pc-procs-all	proc		228
+nim	indexLocationDropDownId	website/globals.html#indexLocationDropDownId	const indexLocationDropDownId		15
+nim	newsfeedDivId	website/globals.html#newsfeedDivId	const newsfeedDivId		16
+nim	urlConvertChars	website/globals.html#urlConvertChars	const urlConvertChars		23
+nim	urlDeploymentSite	website/globals.html#urlDeploymentSite	const urlDeploymentSite		32
+nim	urlDeploymentResources	website/globals.html#urlDeploymentResources	const urlDeploymentResources		33
+nim	urlDeploymentImages	website/globals.html#urlDeploymentImages	const urlDeploymentImages		34
+nim	urlDeploymentLocationMaps	website/globals.html#urlDeploymentLocationMaps	const urlDeploymentLocationMaps		35
+nim	urlRemoteRepo	website/globals.html#urlRemoteRepo	const urlRemoteRepo		37
+nim	urlResources	website/globals.html#urlResources	const urlResources		39
+nim	urlImages	website/globals.html#urlImages	const urlImages		40
+nim	urlContributors	website/globals.html#urlContributors	const urlContributors		42
+nim	urlAuthors	website/globals.html#urlAuthors	const urlAuthors		43
+nim	urlAuthorImages	website/globals.html#urlAuthorImages	const urlAuthorImages		44
+nim	urlArticleImages	website/globals.html#urlArticleImages	const urlArticleImages		46
+nim	urlArticles	website/globals.html#urlArticles	const urlArticles		47
+nim	urlCustomHtmlArticles	website/globals.html#urlCustomHtmlArticles	const urlCustomHtmlArticles		48
+nim	urlLocationImages	website/globals.html#urlLocationImages	const urlLocationImages		50
+nim	urlJsonLocationData	website/globals.html#urlJsonLocationData	const urlJsonLocationData		51
+nim	urlJsonTourData	website/globals.html#urlJsonTourData	const urlJsonTourData		52
+nim	urlJsonNewsFeed	website/globals.html#urlJsonNewsFeed	const urlJsonNewsFeed		54
+nim	articlesLocation	website/globals.html#articlesLocation	const articlesLocation		62
+nim	articleCssFile	website/globals.html#articleCssFile	const articleCssFile		63
+nim	colBackground	website/globals.html#colBackground	const colBackground		71
+nim	colButton	website/globals.html#colButton	const colButton		73
+nim	colButtonHover	website/globals.html#colButtonHover	const colButtonHover		74
+nim	mapResolution	website/globals.html#mapResolution	const mapResolution		82
+nim	mapScaleTo	website/globals.html#mapScaleTo	const mapScaleTo		83
+nim	textUnderline	website/globals.html#textUnderline	const textUnderline		124
+nim	textNoDecoration	website/globals.html#textNoDecoration	const textNoDecoration		125
+nim	textCenter	website/globals.html#textCenter	const textCenter		126
+nim	textCenterClass	website/globals.html#textCenterClass	const textCenterClass		130
+nim	centerWidth100Class	website/globals.html#centerWidth100Class	const centerWidth100Class		134
+nim	centerClass	website/globals.html#centerClass	const centerClass		142
+nim	centerTableClass	website/globals.html#centerTableClass	const centerTableClass		150
+nim	buttonClass	website/globals.html#buttonClass	const buttonClass		155
+nim	buttonClassHover	website/globals.html#buttonClassHover	const buttonClassHover		170
+nim	mapElement	website/globals.html#mapElement	const mapElement		175
+nim	divCenterOuter	website/globals.html#divCenterOuter	const divCenterOuter		182
+nim	divCenterMiddle	website/globals.html#divCenterMiddle	const divCenterMiddle		190
+nim	divCenterInner	website/globals.html#divCenterInner	const divCenterInner		194
+nim	newsDivClass	website/globals.html#newsDivClass	const newsDivClass		200
+nim	newsElementGeneric	website/globals.html#newsElementGeneric	const newsElementGeneric		209
+nim	newsElementWarning	website/globals.html#newsElementWarning	const newsElementWarning		210
+nim	newsElementAlert	website/globals.html#newsElementAlert	const newsElementAlert		211
+nim	newsElementHappened	website/globals.html#newsElementHappened	const newsElementHappened		212
+nim	articlePreviewItem	website/globals.html#articlePreviewItem	const articlePreviewItem		214
+nim	articlePreviewBox	website/globals.html#articlePreviewBox	const articlePreviewBox		222
+nim	authorDivClass	website/globals.html#authorDivClass	const authorDivClass		232
+nim	authorPictureClass	website/globals.html#authorPictureClass	const authorPictureClass		248
+nim	authorNameClass	website/globals.html#authorNameClass	const authorNameClass		259
+nim	locationImageHeader	website/globals.html#locationImageHeader	const locationImageHeader		270
+nim	locationImageFooter	website/globals.html#locationImageFooter	const locationImageFooter		271
+nim	locationImageMapPreview	website/globals.html#locationImageMapPreview	const locationImageMapPreview		272
+nim	locationImageFooterDiv	website/globals.html#locationImageFooterDiv	const locationImageFooterDiv		274
 heading	Globals module	website/globals.html#globals-module	 Globals module		0

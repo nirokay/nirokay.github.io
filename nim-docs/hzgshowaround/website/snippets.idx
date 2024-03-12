@@ -1,0 +1,21 @@
+nimTitle	snippets	website/snippets.html	module website/snippets		0
+nim	fullyCenter	website/snippets.html#fullyCenter,seq[HtmlElement]	proc fullyCenter(html: seq[HtmlElement]): HtmlElement		14
+nim	fullyCenter	website/snippets.html#fullyCenter,varargs[HtmlElement]	proc fullyCenter(html: varargs[HtmlElement]): HtmlElement		23
+nim	divCenter	website/snippets.html#divCenter,seq[HtmlElement]	proc divCenter(elements: seq[HtmlElement]): HtmlElement		30
+nim	divCenter	website/snippets.html#divCenter,varargs[HtmlElement]	proc divCenter(elements: varargs[HtmlElement]): HtmlElement		31
+nim	pc	website/snippets.html#pc,seq[string]	proc pc(lines: seq[string]): HtmlElement		42
+nim	pc	website/snippets.html#pc,varargs[string]	proc pc(lines: varargs[string]): HtmlElement		47
+nim	pc	website/snippets.html#pc,varargs[HtmlElement]	proc pc(elements: varargs[HtmlElement]): HtmlElement		54
+nim	scriptButton	website/snippets.html#scriptButton,string,string	proc scriptButton(text, onclick: string): HtmlElement		67
+nim	button	website/snippets.html#button,string,string	proc button(content, href: string): HtmlElement		73
+nim	buttonList	website/snippets.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		75
+nim	backToHomeButton	website/snippets.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		80
+nim	defaultAuthor	website/snippets.html#defaultAuthor	const defaultAuthor		87
+nim	authorBubble	website/snippets.html#authorBubble,string,array[,string],string	proc authorBubble(authorName: string; beforeAfterText: array[2, string] = ["", ""];\n             authorDisplayName: string = ""): HtmlElement		93
+nim	getRelativeUrlId	website/snippets.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		123
+nim	getRelativeUrlPath	website/snippets.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		128
+nim	isSet	website/snippets.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		138
+nimgrp	divcenter	website/snippets.html#divCenter-procs-all	proc		30
+nimgrp	fullycenter	website/snippets.html#fullyCenter-procs-all	proc		14
+nimgrp	pc	website/snippets.html#pc-procs-all	proc		42
+heading	HTML Snippets module	website/snippets.html#html-snippets-module	 HTML Snippets module		0
