@@ -1,0 +1,6 @@
+nimTitle	parser	parser.html	module src/parser		0
+nim	ParsedSubmitField	parser.html#ParsedSubmitField	tuple ParsedSubmitField		13
+nim	parseHtmlBody	parser.html#parseHtmlBody,string	proc parseHtmlBody(body: string): Table[string, string]		15
+nim	parseHtmlBodySubmit	parser.html#parseHtmlBodySubmit,string	proc parseHtmlBodySubmit(body: string): ParsedSubmitField		25
+nim	decode	parser.html#decode,string	proc decode(encoded: string): string		34
+heading	Parser module	parser.html#parser-module	 Parser module		0

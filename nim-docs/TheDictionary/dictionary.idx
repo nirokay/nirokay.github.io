@@ -1,0 +1,9 @@
+nimTitle	dictionary	dictionary.html	module src/dictionary		0
+nim	ValidationResponse	dictionary.html#ValidationResponse	tuple ValidationResponse		12
+nim	SubmitRequest	dictionary.html#SubmitRequest	object SubmitRequest		13
+nim	replaceCharacters	dictionary.html#replaceCharacters	const replaceCharacters		18
+nim	replaceAllSussyCharacters	dictionary.html#replaceAllSussyCharacters,string	proc replaceAllSussyCharacters(decoded: string): string		23
+nim	replaceAllSussyCharactersDecodeEncode	dictionary.html#replaceAllSussyCharactersDecodeEncode,string	proc replaceAllSussyCharactersDecodeEncode(encoded: string): string		32
+nim	constructHash	dictionary.html#constructHash,string,string	proc constructHash(word, definition: string): string		40
+nim	validateNewEntryAndCommit	dictionary.html#validateNewEntryAndCommit,string,string,string	proc validateNewEntryAndCommit(word, definition, author: string): Future[\n    ValidationResponse]		48
+heading	Dictionary module	dictionary.html#dictionary-module	 Dictionary module		0

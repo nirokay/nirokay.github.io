@@ -1,0 +1,12 @@
+nimTitle	dictionaryserver	dictionaryserver.html	module src/dictionaryserver		0
+nim	port	dictionaryserver.html#port	const port		14
+nim	responseHeaders	dictionaryserver.html#responseHeaders	proc responseHeaders(): HttpHeaders		16
+nim	serveErrorPage	dictionaryserver.html#serveErrorPage,,seq[string],string,HttpCode	proc serveErrorPage(request: Request; path: seq[string]; description: string;\n               httpCode: HttpCode = Http400): owned(Future[void])		22
+nim	serveIndex	dictionaryserver.html#serveIndex,,seq[string]	proc serveIndex(request: Request; path: seq[string]): owned(Future[void])		31
+nim	serveNewEntryConstruct	dictionaryserver.html#serveNewEntryConstruct,,seq[string]	proc serveNewEntryConstruct(request: Request; path: seq[string]): owned(\n    Future[void])		39
+nim	handleNewDefinition	dictionaryserver.html#handleNewDefinition,,seq[string]	proc handleNewDefinition(request: Request; path: seq[string]): owned(Future[void])		47
+nim	serveDefinitions	dictionaryserver.html#serveDefinitions,,seq[string]	proc serveDefinitions(request: Request; path: seq[string]): owned(Future[void])		68
+nim	serveDefinitionById	dictionaryserver.html#serveDefinitionById,,seq[string]	proc serveDefinitionById(request: Request; path: seq[string]): owned(Future[void])		81
+nim	handleRequest	dictionaryserver.html#handleRequest	proc handleRequest(request: Request): owned(Future[void])		95
+nim	runServer	dictionaryserver.html#runServer	proc runServer(): owned(Future[void])		138
+heading	dictionaryserver	dictionaryserver.html#dictionaryserver	 dictionaryserver		0

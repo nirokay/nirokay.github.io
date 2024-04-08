@@ -1,0 +1,10 @@
+nimTitle	queries	sql/queries.html	module src/sql/queries		0
+nim	sqlInitTableDefinitions	sql/queries.html#sqlInitTableDefinitions	const sqlInitTableDefinitions		10
+nim	sqlInitTables	sql/queries.html#sqlInitTables	const sqlInitTables		12
+nim	sqlNewEntryHash	sql/queries.html#sqlNewEntryHash	const sqlNewEntryHash		16
+nim	sqlNewEntry	sql/queries.html#sqlNewEntry	const sqlNewEntry		17
+nim	sqlNewEntryAnonymous	sql/queries.html#sqlNewEntryAnonymous	const sqlNewEntryAnonymous		18
+nim	sqlGetDefinitionById	sql/queries.html#sqlGetDefinitionById	const sqlGetDefinitionById		20
+nim	sqlGetDefinitionsByName	sql/queries.html#sqlGetDefinitionsByName	const sqlGetDefinitionsByName		21
+nim	sqlGetAllDefinitions	sql/queries.html#sqlGetAllDefinitions	const sqlGetAllDefinitions		22
+nim	sqlGetEntriesByHash	sql/queries.html#sqlGetEntriesByHash	const sqlGetEntriesByHash		24

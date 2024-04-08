@@ -1,0 +1,19 @@
+nimTitle	sequel	sequel.html	module src/sequel		0
+nim	Definition	sequel.html#Definition	tuple Definition		13
+nim	DatabaseError	sequel.html#DatabaseError	object DatabaseError		15
+nim	InvalidData	sequel.html#InvalidData	object InvalidData		16
+nim	DuplicateHash	sequel.html#DuplicateHash	object DuplicateHash		17
+nim	databaseSwitch	sequel.html#databaseSwitch	const databaseSwitch		20
+nim	databaseName	sequel.html#databaseName	const databaseName		24
+nim	withDatabase	sequel.html#withDatabase.t,untyped,untyped	template withDatabase(db: untyped; body: untyped)		30
+nim	toDefinition	sequel.html#toDefinition,Row	proc toDefinition(row: Row): Definition		58
+nim	toDefinitions	sequel.html#toDefinitions,seq[Row]	proc toDefinitions(rows: seq[Row]): seq[Definition]		70
+nim	initDatabaseTables	sequel.html#initDatabaseTables	proc initDatabaseTables()		76
+nim	newDefinition	sequel.html#newDefinition,string,string,string,string	proc newDefinition(word, description: string; author: string = ""; hash: string)		83
+nim	newDefinition	sequel.html#newDefinition,Definition,string	proc newDefinition(definition: Definition; hash: string)		110
+nim	getDefinitionsBySqlStatement	sequel.html#getDefinitionsBySqlStatement,SqlQuery,varargs[string]	proc getDefinitionsBySqlStatement(statement: SqlQuery; args: varargs[string]): seq[\n    Definition]		114
+nim	getAllDefinitions	sequel.html#getAllDefinitions	proc getAllDefinitions(): seq[Definition]		127
+nim	getDefinitionsByName	sequel.html#getDefinitionsByName,string	proc getDefinitionsByName(name: string): seq[Definition]		131
+nim	getDefinitionById	sequel.html#getDefinitionById	proc getDefinitionById(id: string | int): Option[Definition]		135
+nimgrp	newdefinition	sequel.html#newDefinition-procs-all	proc		83
+heading	SEQUEL module	sequel.html#sequel-module	 SEQUEL module		0

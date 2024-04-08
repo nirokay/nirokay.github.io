@@ -1,0 +1,20 @@
+nimTitle	website	website.html	module src/website		0
+nim	contentBoxId	website.html#contentBoxId	const contentBoxId		19
+nim	searchBarId	website.html#searchBarId	const searchBarId		20
+nim	javascriptLocation	website.html#javascriptLocation	const javascriptLocation		25
+nim	defaultJavascriptNotAvailable	website.html#defaultJavascriptNotAvailable	const defaultJavascriptNotAvailable		26
+nim	javascriptScripts	website.html#javascriptScripts	const javascriptScripts		27
+nim	css	website.html#css	const css		195
+nim	toIndex	website.html#toIndex	Buttons.toIndex		259
+nim	toDefinitions	website.html#toDefinitions	Buttons.toDefinitions		259
+nim	toSubmitDefinitions	website.html#toSubmitDefinitions	Buttons.toSubmitDefinitions		259
+nim	Buttons	website.html#Buttons	enum Buttons		259
+nim	newPage	website.html#newPage,string,string,bool,string	proc newPage(name, description: string; generateContentBox: bool = true;\n        scriptPath: string = ""): HtmlDocument		274
+nim	getHtmlDefinition	website.html#getHtmlDefinition,Definition	proc getHtmlDefinition(definition: Definition): HtmlElement		340
+nim	htmlIndex	website.html#htmlIndex	proc htmlIndex(): Future[HtmlDocument]		367
+nim	htmlSubmitDefinition	website.html#htmlSubmitDefinition	proc htmlSubmitDefinition(): Future[HtmlDocument]		392
+nim	htmlSubmitSuccess	website.html#htmlSubmitSuccess,string	proc htmlSubmitSuccess(word: string): Future[HtmlDocument]		431
+nim	htmlDisplaySingleDefinition	website.html#htmlDisplaySingleDefinition,int	proc htmlDisplaySingleDefinition(id: int): Future[HtmlDocument]		441
+nim	htmlDisplayMultipleDefinitions	website.html#htmlDisplayMultipleDefinitions,string	proc htmlDisplayMultipleDefinitions(query: string = ""): Future[HtmlDocument]		455
+nim	httpErrorPage	website.html#httpErrorPage,string	proc httpErrorPage(details: string): Future[HtmlDocument]		506
+heading	Website module	website.html#website-module	 Website module		0
