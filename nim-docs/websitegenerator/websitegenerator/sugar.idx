@@ -6,6 +6,8 @@ nim	`:=`	websitegenerator/sugar.html#:=,string,string	proc `:=`(property, value:
 nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,string	proc `=>`(element: var HtmlElement; content: string)		44
 nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string	proc `->`(element: var HtmlElement; class: string)		48
 nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement	proc `->`(element: var HtmlElement; class: CssElement)		51
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string_2	proc `->`(element: HtmlElement; class: string): HtmlElement		57
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement_2	proc `->`(element: HtmlElement; class: CssElement): HtmlElement		61
 nimgrp	->	websitegenerator/sugar.html#->-procs-all	proc		48
 nimgrp	=>	websitegenerator/sugar.html#=>-procs-all	proc		27
 heading	Sugar module	websitegenerator/sugar.html#sugar-module	 Sugar module		0

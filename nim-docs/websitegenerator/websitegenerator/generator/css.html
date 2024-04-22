@@ -84,15 +84,15 @@
 
 </ul>
 <ul class="simple nested-toc-section">newCssClass
-  <li><a class="reference" href="#newCssClass%2Cstring%2Cseq%5Barray%5B%2Cstring%5D%5D" title="newCssClass(name: string; properties: seq[array[2, string]]): CssElement">newCssClass(name: string; properties: seq[array[2, string]]): CssElement</a></li>
+  <li><a class="reference" href="#newCssClass%2Cstring%2Cseq%5BCssAttribute%5D" title="newCssClass(name: string; properties: seq[CssAttribute]): CssElement">newCssClass(name: string; properties: seq[CssAttribute]): CssElement</a></li>
 <li><a class="reference" href="#newCssClass%2Cstring%2CTable%5Bstring%2Cstring%5D" title="newCssClass(name: string; properties: Table[string, string]): CssElement">newCssClass(name: string; properties: Table[string, string]): CssElement</a></li>
-<li><a class="reference" href="#newCssClass%2Cstring%2Cvarargs%5Barray%5B%2Cstring%5D%5D" title="newCssClass(name: string; properties: varargs[array[2, string]]): CssElement">newCssClass(name: string; properties: varargs[array[2, string]]): CssElement</a></li>
+<li><a class="reference" href="#newCssClass%2Cstring%2Cvarargs%5BCssAttribute%5D" title="newCssClass(name: string; properties: varargs[CssAttribute]): CssElement">newCssClass(name: string; properties: varargs[CssAttribute]): CssElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">newCssElement
-  <li><a class="reference" href="#newCssElement%2Cstring%2Cseq%5Barray%5B%2Cstring%5D%5D" title="newCssElement(name: string; properties: seq[array[2, string]]): CssElement">newCssElement(name: string; properties: seq[array[2, string]]): CssElement</a></li>
+  <li><a class="reference" href="#newCssElement%2Cstring%2Cseq%5BCssAttribute%5D" title="newCssElement(name: string; properties: seq[CssAttribute]): CssElement">newCssElement(name: string; properties: seq[CssAttribute]): CssElement</a></li>
 <li><a class="reference" href="#newCssElement%2Cstring%2CTable%5Bstring%2Cstring%5D" title="newCssElement(name: string; properties: Table[string, string]): CssElement">newCssElement(name: string; properties: Table[string, string]): CssElement</a></li>
-<li><a class="reference" href="#newCssElement%2Cstring%2Cvarargs%5Barray%5B%2Cstring%5D%5D" title="newCssElement(name: string; properties: varargs[array[2, string]]): CssElement">newCssElement(name: string; properties: varargs[array[2, string]]): CssElement</a></li>
+<li><a class="reference" href="#newCssElement%2Cstring%2Cvarargs%5BCssAttribute%5D" title="newCssElement(name: string; properties: varargs[CssAttribute]): CssElement">newCssElement(name: string; properties: varargs[CssAttribute]): CssElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">newCssStyleSheet
@@ -244,8 +244,8 @@
 
 </div>
 <div id="newCssClass-procs-all">
-  <div id="newCssClass,string,seq[array[,string]]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newCssClass%2Cstring%2Cseq%5Barray%5B%2Cstring%5D%5D"><span class="Identifier">newCssClass</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">array</span><span class="Other">[</span><span class="DecNumber">2</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+  <div id="newCssClass,string,seq[CssAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newCssClass%2Cstring%2Cseq%5BCssAttribute%5D"><span class="Identifier">newCssClass</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -262,8 +262,8 @@
     
   </dd>
 </div>
-<div id="newCssClass,string,varargs[array[,string]]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newCssClass%2Cstring%2Cvarargs%5Barray%5B%2Cstring%5D%5D"><span class="Identifier">newCssClass</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">array</span><span class="Other">[</span><span class="DecNumber">2</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+<div id="newCssClass,string,varargs[CssAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newCssClass%2Cstring%2Cvarargs%5BCssAttribute%5D"><span class="Identifier">newCssClass</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -274,8 +274,8 @@
 
 </div>
 <div id="newCssElement-procs-all">
-  <div id="newCssElement,string,seq[array[,string]]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newCssElement%2Cstring%2Cseq%5Barray%5B%2Cstring%5D%5D"><span class="Identifier">newCssElement</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">array</span><span class="Other">[</span><span class="DecNumber">2</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+  <div id="newCssElement,string,seq[CssAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newCssElement%2Cstring%2Cseq%5BCssAttribute%5D"><span class="Identifier">newCssElement</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -292,8 +292,8 @@
     
   </dd>
 </div>
-<div id="newCssElement,string,varargs[array[,string]]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newCssElement%2Cstring%2Cvarargs%5Barray%5B%2Cstring%5D%5D"><span class="Identifier">newCssElement</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">array</span><span class="Other">[</span><span class="DecNumber">2</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+<div id="newCssElement,string,varargs[CssAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newCssElement%2Cstring%2Cvarargs%5BCssAttribute%5D"><span class="Identifier">newCssElement</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -418,7 +418,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 07:05:33 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 09:09:36 UTC</small>
       </div>
     </div>
   </div>

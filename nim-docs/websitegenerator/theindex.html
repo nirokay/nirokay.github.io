@@ -44,7 +44,11 @@
 <li><a class="reference external"
           data-doc-search-tag="sugar: proc `-&gt;`(element: var HtmlElement; class: CssElement)" href="websitegenerator/sugar.html#-%3E%2CHtmlElement%2CCssElement">sugar: proc `-&gt;`(element: var HtmlElement; class: CssElement)</a></li>
           <li><a class="reference external"
+          data-doc-search-tag="sugar: proc `-&gt;`(element: HtmlElement; class: CssElement): HtmlElement" href="websitegenerator/sugar.html#-%3E%2CHtmlElement%2CCssElement_2">sugar: proc `-&gt;`(element: HtmlElement; class: CssElement): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="sugar: proc `-&gt;`(element: var HtmlElement; class: string)" href="websitegenerator/sugar.html#-%3E%2CHtmlElement%2Cstring">sugar: proc `-&gt;`(element: var HtmlElement; class: string)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc `-&gt;`(element: HtmlElement; class: string): HtmlElement" href="websitegenerator/sugar.html#-%3E%2CHtmlElement%2Cstring_2">sugar: proc `-&gt;`(element: HtmlElement; class: string): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="%60%3A%3D%60" href="#%60%3A%3D%60"><span>`:=`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -69,6 +73,20 @@
 <dt><a name="%60in%60" href="#%60in%60"><span>`in`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc `in`(size: SomeNumber): string" href="websitegenerator/common/css.html#in%2CSomeNumber">css: proc `in`(size: SomeNumber): string</a></li>
+          </ul></dd>
+<dt><a name="%60object%60" href="#%60object%60"><span>`object`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc `object`(type: MimeType | string; src: string): HtmlElement" href="websitegenerator/common/html.html#object%2C%2Cstring">html: proc `object`(type: MimeType | string; src: string): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `object`(type: MimeType | string; src: string;
+         width, height: SomeInteger | string)" href="websitegenerator/common/html.html#object%2C%2Cstring%2C%2C">html: proc `object`(type: MimeType | string; src: string;
+         width, height: SomeInteger | string)</a></li>
+          </ul></dd>
+<dt><a name="%60template%60" href="#%60template%60"><span>`template`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc `template`(id: string; elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#template%2Cstring%2Cseq%5BHtmlElement%5D">html: proc `template`(id: string; elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `template`(id: string; elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#template%2Cstring%2Cvarargs%5BHtmlElement%5D">html: proc `template`(id: string; elements: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="%60var%60" href="#%60var%60"><span>`var`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -7660,9 +7678,15 @@
 <li><a class="reference external"
           data-doc-search-tag="html: proc figcaption(text: string): HtmlElement" href="websitegenerator/common/html.html#figcaption%2Cstring">html: proc figcaption(text: string): HtmlElement</a></li>
           </ul></dd>
+<dt><a name="figimage" href="#figimage"><span>figimage:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc figimage(imgSrc, imgAlt, caption: string): HtmlElement" href="websitegenerator/common/html.html#figimage%2Cstring%2Cstring%2Cstring">html: proc figimage(imgSrc, imgAlt, caption: string): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="figure" href="#figure"><span>figure:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc figure(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#figure%2Cseq%5BHtmlElement%5D">html: proc figure(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc figure(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#figure%2Cvarargs%5BHtmlElement%5D">html: proc figure(elements: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="FireBrick" href="#FireBrick"><span>FireBrick:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -7760,7 +7784,13 @@
           </ul></dd>
 <dt><a name="form" href="#form"><span>form:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: proc form(elements: seq[HtmlElement]; action: string): HtmlElement" href="websitegenerator/common/html.html#form%2Cseq%5BHtmlElement%5D%2Cstring">html: proc form(elements: seq[HtmlElement]; action: string): HtmlElement</a></li>
+          data-doc-search-tag="html: proc form(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#form%2Cseq%5BHtmlElement%5D">html: proc form(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc form(action: string; method: HttpMethod | string; elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#form%2Cstring%2C%2Cseq%5BHtmlElement%5D">html: proc form(action: string; method: HttpMethod | string; elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc form(action: string; method: HttpMethod | string; elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#form%2Cstring%2C%2Cvarargs%5BHtmlElement%5D">html: proc form(action: string; method: HttpMethod | string; elements: varargs[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc form(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#form%2Cvarargs%5BHtmlElement%5D">html: proc form(elements: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="Fuchsia" href="#Fuchsia"><span>Fuchsia:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -7837,6 +7867,12 @@
 <dt><a name="height" href="#height"><span>height:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc height(number: string | SomeNumber): CssAttribute" href="websitegenerator/common/css.html#height">css: proc height(number: string | SomeNumber): CssAttribute</a></li>
+          </ul></dd>
+<dt><a name="hgroup" href="#hgroup"><span>hgroup:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc hgroup(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#hgroup%2Cseq%5BHtmlElement%5D">html: proc hgroup(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc hgroup(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#hgroup%2Cvarargs%5BHtmlElement%5D">html: proc hgroup(elements: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="hidden" href="#hidden"><span>hidden:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -8420,6 +8456,12 @@
           <li><a class="reference external"
           data-doc-search-tag="html: proc main(content: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#main%2Cvarargs%5BHtmlElement%5D">html: proc main(content: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
+<dt><a name="map" href="#map"><span>map:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc map(name: string; elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#map%2Cstring%2Cseq%5BHtmlElement%5D">html: proc map(name: string; elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc map(name: string; elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#map%2Cstring%2Cvarargs%5BHtmlElement%5D">html: proc map(name: string; elements: varargs[HtmlElement]): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="mark" href="#mark"><span>mark:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc mark(text: string): HtmlElement" href="websitegenerator/common/html.html#mark%2Cstring">html: proc mark(text: string): HtmlElement</a></li>
@@ -8479,6 +8521,10 @@
 <dt><a name="menu" href="#menu"><span>menu:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssFontFamily.menu" href="websitegenerator/common/css.html#menu">css: CssFontFamily.menu</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc menu(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#menu%2Cseq%5BHtmlElement%5D">html: proc menu(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc menu(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#menu%2Cvarargs%5BHtmlElement%5D">html: proc menu(elements: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="messageBhttp" href="#messageBhttp"><span>messageBhttp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -8868,19 +8914,19 @@
           </ul></dd>
 <dt><a name="newCssClass" href="#newCssClass"><span>newCssClass:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="css: proc newCssClass(name: string; properties: seq[array[2, string]]): CssElement" href="websitegenerator/generator/css.html#newCssClass%2Cstring%2Cseq%5Barray%5B%2Cstring%5D%5D">css: proc newCssClass(name: string; properties: seq[array[2, string]]): CssElement</a></li>
+          data-doc-search-tag="css: proc newCssClass(name: string; properties: seq[CssAttribute]): CssElement" href="websitegenerator/generator/css.html#newCssClass%2Cstring%2Cseq%5BCssAttribute%5D">css: proc newCssClass(name: string; properties: seq[CssAttribute]): CssElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="css: proc newCssClass(name: string; properties: Table[string, string]): CssElement" href="websitegenerator/generator/css.html#newCssClass%2Cstring%2CTable%5Bstring%2Cstring%5D">css: proc newCssClass(name: string; properties: Table[string, string]): CssElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="css: proc newCssClass(name: string; properties: varargs[array[2, string]]): CssElement" href="websitegenerator/generator/css.html#newCssClass%2Cstring%2Cvarargs%5Barray%5B%2Cstring%5D%5D">css: proc newCssClass(name: string; properties: varargs[array[2, string]]): CssElement</a></li>
+          data-doc-search-tag="css: proc newCssClass(name: string; properties: varargs[CssAttribute]): CssElement" href="websitegenerator/generator/css.html#newCssClass%2Cstring%2Cvarargs%5BCssAttribute%5D">css: proc newCssClass(name: string; properties: varargs[CssAttribute]): CssElement</a></li>
           </ul></dd>
 <dt><a name="newCssElement" href="#newCssElement"><span>newCssElement:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="css: proc newCssElement(name: string; properties: seq[array[2, string]]): CssElement" href="websitegenerator/generator/css.html#newCssElement%2Cstring%2Cseq%5Barray%5B%2Cstring%5D%5D">css: proc newCssElement(name: string; properties: seq[array[2, string]]): CssElement</a></li>
+          data-doc-search-tag="css: proc newCssElement(name: string; properties: seq[CssAttribute]): CssElement" href="websitegenerator/generator/css.html#newCssElement%2Cstring%2Cseq%5BCssAttribute%5D">css: proc newCssElement(name: string; properties: seq[CssAttribute]): CssElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="css: proc newCssElement(name: string; properties: Table[string, string]): CssElement" href="websitegenerator/generator/css.html#newCssElement%2Cstring%2CTable%5Bstring%2Cstring%5D">css: proc newCssElement(name: string; properties: Table[string, string]): CssElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="css: proc newCssElement(name: string; properties: varargs[array[2, string]]): CssElement" href="websitegenerator/generator/css.html#newCssElement%2Cstring%2Cvarargs%5Barray%5B%2Cstring%5D%5D">css: proc newCssElement(name: string; properties: varargs[array[2, string]]): CssElement</a></li>
+          data-doc-search-tag="css: proc newCssElement(name: string; properties: varargs[CssAttribute]): CssElement" href="websitegenerator/generator/css.html#newCssElement%2Cstring%2Cvarargs%5BCssAttribute%5D">css: proc newCssElement(name: string; properties: varargs[CssAttribute]): CssElement</a></li>
           </ul></dd>
 <dt><a name="newCssStyleSheet" href="#newCssStyleSheet"><span>newCssStyleSheet:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9030,6 +9076,12 @@
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.Peru" href="websitegenerator/common/css.html#Peru">css: CssColour.Peru</a></li>
           </ul></dd>
+<dt><a name="picture" href="#picture"><span>picture:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc picture(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#picture%2Cseq%5BHtmlElement%5D">html: proc picture(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc picture(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#picture%2Cvarargs%5BHtmlElement%5D">html: proc picture(elements: varargs[HtmlElement]): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="Pink" href="#Pink"><span>Pink:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.Pink" href="websitegenerator/common/css.html#Pink">css: CssColour.Pink</a></li>
@@ -9122,6 +9174,28 @@
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.RoyalBlue" href="websitegenerator/common/css.html#RoyalBlue">css: CssColour.RoyalBlue</a></li>
           </ul></dd>
+<dt><a name="rp" href="#rp"><span>rp:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc rp(text: string): HtmlElement" href="websitegenerator/common/html.html#rp%2Cstring">html: proc rp(text: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="rt" href="#rt"><span>rt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc rt(text: string): HtmlElement" href="websitegenerator/common/html.html#rt%2Cstring">html: proc rt(text: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="rtWithFallback" href="#rtWithFallback"><span>rtWithFallback:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc rtWithFallback(text, alt: string): HtmlElement" href="websitegenerator/common/html.html#rtWithFallback%2Cstring%2Cstring">html: proc rtWithFallback(text, alt: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ruby" href="#ruby"><span>ruby:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ruby(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ruby%2Cseq%5BHtmlElement%5D">html: proc ruby(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc ruby(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ruby%2Cvarargs%5BHtmlElement%5D">html: proc ruby(elements: varargs[HtmlElement]): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="rubyWithFallback" href="#rubyWithFallback"><span>rubyWithFallback:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc rubyWithFallback(stringWithFallback: varargs[array[2, string]]): HtmlElement" href="websitegenerator/common/html.html#rubyWithFallback%2Cvarargs%5Barray%5B%2Cstring%5D%5D">html: proc rubyWithFallback(stringWithFallback: varargs[array[2, string]]): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="runIn" href="#runIn"><span>runIn:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssDisplay.runIn" href="websitegenerator/common/css.html#runIn">css: CssDisplay.runIn</a></li>
@@ -9161,6 +9235,12 @@
 <dt><a name="SeaGreen" href="#SeaGreen"><span>SeaGreen:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.SeaGreen" href="websitegenerator/common/css.html#SeaGreen">css: CssColour.SeaGreen</a></li>
+          </ul></dd>
+<dt><a name="search" href="#search"><span>search:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc search(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#search%2Cseq%5BHtmlElement%5D">html: proc search(elements: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc search(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#search%2Cvarargs%5BHtmlElement%5D">html: proc search(elements: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="Seashell" href="#Seashell"><span>Seashell:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9368,6 +9448,10 @@
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.SlateGrey" href="websitegenerator/common/css.html#SlateGrey">css: CssColour.SlateGrey</a></li>
           </ul></dd>
+<dt><a name="slot" href="#slot"><span>slot:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc slot(name, content: string): HtmlElement" href="websitegenerator/common/html.html#slot%2Cstring%2Cstring">html: proc slot(name, content: string): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="small" href="#small"><span>small:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssSize.small" href="websitegenerator/common/css.html#small">css: CssSize.small</a></li>
@@ -9405,6 +9489,14 @@
 <dt><a name="spaceEvenly" href="#spaceEvenly"><span>spaceEvenly:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssContentAlignment.spaceEvenly" href="websitegenerator/common/css.html#spaceEvenly">css: CssContentAlignment.spaceEvenly</a></li>
+          </ul></dd>
+<dt><a name="span" href="#span"><span>span:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc span(text: string): HtmlElement" href="websitegenerator/common/html.html#span%2Cstring">html: proc span(text: string): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc span(text: string; class: CssElement): HtmlElement" href="websitegenerator/common/html.html#span%2Cstring%2CCssElement">html: proc span(text: string; class: CssElement): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc span(text, class: string): HtmlElement" href="websitegenerator/common/html.html#span%2Cstring%2Cstring">html: proc span(text, class: string): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="SpringGreen" href="#SpringGreen"><span>SpringGreen:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10460,7 +10552,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 07:05:34 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 09:09:38 UTC</small>
       </div>
     </div>
   </div>
