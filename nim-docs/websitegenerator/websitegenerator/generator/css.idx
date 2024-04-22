@@ -1,36 +1,34 @@
 nimTitle	css	websitegenerator/generator/css.html	module websitegenerator/generator/css		0
 nim	CssElement	websitegenerator/generator/css.html#CssElement	object CssElement		11
-nim	CssStyleSheet	websitegenerator/generator/css.html#CssStyleSheet	object CssStyleSheet		15
-nim	newCssElement	websitegenerator/generator/css.html#newCssElement,string,Table[string,string]	proc newCssElement(name: string; properties: Table[string, string]): CssElement		20
-nim	newCssElement	websitegenerator/generator/css.html#newCssElement,string,seq[array[,string]]	proc newCssElement(name: string; properties: seq[array[2, string]]): CssElement		24
-nim	newCssElement	websitegenerator/generator/css.html#newCssElement,string,varargs[array[,string]]	proc newCssElement(name: string; properties: varargs[array[2, string]]): CssElement		29
-nim	newCssClass	websitegenerator/generator/css.html#newCssClass,string,Table[string,string]	proc newCssClass(name: string; properties: Table[string, string]): CssElement		35
-nim	newCssClass	websitegenerator/generator/css.html#newCssClass,string,seq[array[,string]]	proc newCssClass(name: string; properties: seq[array[2, string]]): CssElement		39
-nim	newCssClass	websitegenerator/generator/css.html#newCssClass,string,varargs[array[,string]]	proc newCssClass(name: string; properties: varargs[array[2, string]]): CssElement		44
-nim	newCssStyleSheet	websitegenerator/generator/css.html#newCssStyleSheet,string	proc newCssStyleSheet(fileName: string): CssStyleSheet		50
-nim	add	websitegenerator/generator/css.html#add,CssStyleSheet,CssElement	proc add(stylesheet: var CssStyleSheet; element: CssElement)		55
-nim	add	websitegenerator/generator/css.html#add,CssStyleSheet,seq[CssElement]	proc add(stylesheet: var CssStyleSheet; elements: seq[CssElement])		58
-nim	add	websitegenerator/generator/css.html#add,CssStyleSheet,varargs[CssElement]	proc add(stylesheet: var CssStyleSheet; elements: varargs[CssElement])		62
-nim	setClass	websitegenerator/generator/css.html#setClass,CssElement,string	proc setClass(elem: CssElement; class: string): CssElement		67
-nim	setClass	websitegenerator/generator/css.html#setClass,CssElement,seq[string]	proc setClass(elem: CssElement; classes: seq[string]): CssElement		71
-nim	setClass	websitegenerator/generator/css.html#setClass,CssElement,varargs[string]	proc setClass(elem: CssElement; classes: varargs[string]): CssElement		74
+nim	CssStyleSheet	websitegenerator/generator/css.html#CssStyleSheet	object CssStyleSheet		16
+nim	CssAttribute	websitegenerator/generator/css.html#CssAttribute	type CssAttribute		20
+nim	newCssElement	websitegenerator/generator/css.html#newCssElement,string,Table[string,string]	proc newCssElement(name: string; properties: Table[string, string]): CssElement		23
+nim	newCssElement	websitegenerator/generator/css.html#newCssElement,string,seq[array[,string]]	proc newCssElement(name: string; properties: seq[array[2, string]]): CssElement		27
+nim	newCssElement	websitegenerator/generator/css.html#newCssElement,string,varargs[array[,string]]	proc newCssElement(name: string; properties: varargs[array[2, string]]): CssElement		32
+nim	newCssClass	websitegenerator/generator/css.html#newCssClass,string,Table[string,string]	proc newCssClass(name: string; properties: Table[string, string]): CssElement		48
+nim	newCssClass	websitegenerator/generator/css.html#newCssClass,string,seq[array[,string]]	proc newCssClass(name: string; properties: seq[array[2, string]]): CssElement		54
+nim	newCssClass	websitegenerator/generator/css.html#newCssClass,string,varargs[array[,string]]	proc newCssClass(name: string; properties: varargs[array[2, string]]): CssElement		59
+nim	newCssStyleSheet	websitegenerator/generator/css.html#newCssStyleSheet,string	proc newCssStyleSheet(fileName: string): CssStyleSheet		65
+nim	add	websitegenerator/generator/css.html#add,CssStyleSheet,CssElement	proc add(stylesheet: var CssStyleSheet; element: CssElement)		69
+nim	add	websitegenerator/generator/css.html#add,CssStyleSheet,seq[CssElement]	proc add(stylesheet: var CssStyleSheet; elements: seq[CssElement])		72
+nim	add	websitegenerator/generator/css.html#add,CssStyleSheet,varargs[CssElement]	proc add(stylesheet: var CssStyleSheet; elements: varargs[CssElement])		76
 nim	setStyle	websitegenerator/generator/css.html#setStyle,HtmlDocument,CssStyleSheet	proc setStyle(document: var HtmlDocument; stylesheet: CssStyleSheet)		81
-nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,string	proc setClass(element: var HtmlElement; class: string)		99
-nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,CssElement	proc setClass(element: var HtmlElement; class: CssElement)		102
-nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,string_2	proc setClass(element: HtmlElement; class: string): HtmlElement		105
-nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,CssElement_2	proc setClass(element: HtmlElement; class: CssElement): HtmlElement		109
-nim	setAttribute	websitegenerator/generator/css.html#setAttribute,CssElement,string,string	proc setAttribute(element: var CssElement; attribute, value: string)		113
-nim	setAttribute	websitegenerator/generator/css.html#setAttribute,CssElement,string,string_2	proc setAttribute(element: CssElement; attribute, value: string): CssElement		116
-nim	`$`	websitegenerator/generator/css.html#$,CssElement	proc `$`(element: CssElement): string		121
-nim	`$`	websitegenerator/generator/css.html#$,seq[CssElement]	proc `$`(elements: seq[CssElement]): string		138
-nim	`$`	websitegenerator/generator/css.html#$,CssStyleSheet	proc `$`(stylesheet: CssStyleSheet): string		145
-nim	writeFile	websitegenerator/generator/css.html#writeFile,CssStyleSheet	proc writeFile(stylesheet: CssStyleSheet)		150
-nim	writeFile	websitegenerator/generator/css.html#writeFile,CssStyleSheet,string	proc writeFile(stylesheet: CssStyleSheet; fileName: string)		156
-nimgrp	$	websitegenerator/generator/css.html#$-procs-all	proc		121
-nimgrp	newcsselement	websitegenerator/generator/css.html#newCssElement-procs-all	proc		20
-nimgrp	setclass	websitegenerator/generator/css.html#setClass-procs-all	proc		67
-nimgrp	add	websitegenerator/generator/css.html#add-procs-all	proc		55
-nimgrp	setattribute	websitegenerator/generator/css.html#setAttribute-procs-all	proc		113
-nimgrp	writefile	websitegenerator/generator/css.html#writeFile-procs-all	proc		150
-nimgrp	newcssclass	websitegenerator/generator/css.html#newCssClass-procs-all	proc		35
+nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,string	proc setClass(element: var HtmlElement; class: string)		93
+nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,CssElement	proc setClass(element: var HtmlElement; class: CssElement)		96
+nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,string_2	proc setClass(element: HtmlElement; class: string): HtmlElement		101
+nim	setClass	websitegenerator/generator/css.html#setClass,HtmlElement,CssElement_2	proc setClass(element: HtmlElement; class: CssElement): HtmlElement		105
+nim	setAttribute	websitegenerator/generator/css.html#setAttribute,CssElement,string,string	proc setAttribute(element: var CssElement; attribute, value: string)		109
+nim	setAttribute	websitegenerator/generator/css.html#setAttribute,CssElement,string,string_2	proc setAttribute(element: CssElement; attribute, value: string): CssElement		112
+nim	`$`	websitegenerator/generator/css.html#$,CssElement	proc `$`(element: CssElement): string		117
+nim	`$`	websitegenerator/generator/css.html#$,seq[CssElement]	proc `$`(elements: seq[CssElement]): string		137
+nim	`$`	websitegenerator/generator/css.html#$,CssStyleSheet	proc `$`(stylesheet: CssStyleSheet): string		144
+nim	writeFile	websitegenerator/generator/css.html#writeFile,CssStyleSheet	proc writeFile(stylesheet: CssStyleSheet)		149
+nim	writeFile	websitegenerator/generator/css.html#writeFile,CssStyleSheet,string	proc writeFile(stylesheet: CssStyleSheet; fileName: string)		155
+nimgrp	$	websitegenerator/generator/css.html#$-procs-all	proc		117
+nimgrp	newcsselement	websitegenerator/generator/css.html#newCssElement-procs-all	proc		23
+nimgrp	setclass	websitegenerator/generator/css.html#setClass-procs-all	proc		93
+nimgrp	add	websitegenerator/generator/css.html#add-procs-all	proc		69
+nimgrp	setattribute	websitegenerator/generator/css.html#setAttribute-procs-all	proc		109
+nimgrp	writefile	websitegenerator/generator/css.html#writeFile-procs-all	proc		149
+nimgrp	newcssclass	websitegenerator/generator/css.html#newCssClass-procs-all	proc		48
 heading	Css Generator	websitegenerator/generator/css.html#css-generator	 Css Generator		0

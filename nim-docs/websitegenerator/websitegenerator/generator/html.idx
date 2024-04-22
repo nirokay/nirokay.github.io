@@ -1,43 +1,56 @@
 nimTitle	html	websitegenerator/generator/html.html	module websitegenerator/generator/html		0
 nim	HtmlElementAttribute	websitegenerator/generator/html.html#HtmlElementAttribute	object HtmlElementAttribute		10
 nim	HtmlElement	websitegenerator/generator/html.html#HtmlElement	object HtmlElement		14
-nim	HtmlDocument	websitegenerator/generator/html.html#HtmlDocument	object HtmlDocument		19
-nim	newElement	websitegenerator/generator/html.html#newElement,string,string	proc newElement(tag, content: string): HtmlElement		25
-nim	newElement	websitegenerator/generator/html.html#newElement,string,seq[HtmlElementAttribute],string	proc newElement(tag: string; tagAttributes: seq[HtmlElementAttribute];\n           content: string = ""): HtmlElement		29
-nim	newElement	websitegenerator/generator/html.html#newElement,string,varargs[HtmlElementAttribute]	proc newElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement		34
-nim	newAttribute	websitegenerator/generator/html.html#newAttribute,string,string	proc newAttribute(name, value: string): HtmlElementAttribute		41
-nim	newAttribute	websitegenerator/generator/html.html#newAttribute,string	proc newAttribute(name: string): HtmlElementAttribute		45
-nim	attr	websitegenerator/generator/html.html#attr,string,string	proc attr(name, value: string): HtmlElementAttribute		49
-nim	attr	websitegenerator/generator/html.html#attr,string	proc attr(name: string): HtmlElementAttribute		50
-nim	add	websitegenerator/generator/html.html#add,HtmlElement,varargs[HtmlElementAttribute]	proc add(element: HtmlElement; attribute: varargs[HtmlElementAttribute]): HtmlElement		52
-nim	add	websitegenerator/generator/html.html#add,HtmlElement,varargs[HtmlElementAttribute]_2	proc add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])		57
-nim	newDocument	websitegenerator/generator/html.html#newDocument,string	proc newDocument(fileName: string): HtmlDocument		62
-nim	addToBody	websitegenerator/generator/html.html#addToBody,HtmlDocument,HtmlElement	proc addToBody(document: var HtmlDocument; element: HtmlElement)		67
-nim	addToBody	websitegenerator/generator/html.html#addToBody,HtmlDocument,seq[HtmlElement]	proc addToBody(document: var HtmlDocument; elements: seq[HtmlElement])		70
-nim	addToBody	websitegenerator/generator/html.html#addToBody,HtmlDocument,varargs[HtmlElement]	proc addToBody(document: var HtmlDocument; elements: varargs[HtmlElement])		74
-nim	add	websitegenerator/generator/html.html#add,HtmlDocument,HtmlElement	proc add(document: var HtmlDocument; element: HtmlElement)		79
-nim	add	websitegenerator/generator/html.html#add,HtmlDocument,seq[HtmlElement]	proc add(document: var HtmlDocument; elements: seq[HtmlElement])		80
-nim	add	websitegenerator/generator/html.html#add,HtmlDocument,varargs[HtmlElement]	proc add(document: var HtmlDocument; elements: varargs[HtmlElement])		81
-nim	addToBodyEnd	websitegenerator/generator/html.html#addToBodyEnd,HtmlDocument,HtmlElement	proc addToBodyEnd(document: var HtmlDocument; element: HtmlElement)		84
-nim	addToBodyEnd	websitegenerator/generator/html.html#addToBodyEnd,HtmlDocument,seq[HtmlElement]	proc addToBodyEnd(document: var HtmlDocument; elements: seq[HtmlElement])		87
-nim	addToBodyEnd	websitegenerator/generator/html.html#addToBodyEnd,HtmlDocument,varargs[HtmlElement]	proc addToBodyEnd(document: var HtmlDocument; elements: varargs[HtmlElement])		91
-nim	addToHead	websitegenerator/generator/html.html#addToHead,HtmlDocument,HtmlElement	proc addToHead(document: var HtmlDocument; element: HtmlElement)		97
-nim	addToHead	websitegenerator/generator/html.html#addToHead,HtmlDocument,seq[HtmlElement]	proc addToHead(document: var HtmlDocument; elements: seq[HtmlElement])		100
-nim	addToHead	websitegenerator/generator/html.html#addToHead,HtmlDocument,varargs[HtmlElement]	proc addToHead(document: var HtmlDocument; elements: varargs[HtmlElement])		104
-nim	`$`	websitegenerator/generator/html.html#$,HtmlElementAttribute	proc `$`(attribute: HtmlElementAttribute): string		110
-nim	`$`	websitegenerator/generator/html.html#$,seq[HtmlElementAttribute]	proc `$`(attributes: seq[HtmlElementAttribute]): string		116
-nim	`$`	websitegenerator/generator/html.html#$,HtmlElement	proc `$`(element: HtmlElement): string		121
-nim	`$`	websitegenerator/generator/html.html#$,seq[HtmlElement]	proc `$`(elements: seq[HtmlElement]): string		154
-nim	`$`	websitegenerator/generator/html.html#$,HtmlDocument	proc `$`(document: HtmlDocument): string		161
-nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument	proc writeFile(document: HtmlDocument)		185
-nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument,string	proc writeFile(document: HtmlDocument; fileName: string)		191
-nimgrp	$	websitegenerator/generator/html.html#$-procs-all	proc		110
-nimgrp	newelement	websitegenerator/generator/html.html#newElement-procs-all	proc		25
-nimgrp	add	websitegenerator/generator/html.html#add-procs-all	proc		52
-nimgrp	writefile	websitegenerator/generator/html.html#writeFile-procs-all	proc		185
-nimgrp	attr	websitegenerator/generator/html.html#attr-procs-all	proc		49
-nimgrp	addtohead	websitegenerator/generator/html.html#addToHead-procs-all	proc		97
-nimgrp	newattribute	websitegenerator/generator/html.html#newAttribute-procs-all	proc		41
-nimgrp	addtobody	websitegenerator/generator/html.html#addToBody-procs-all	proc		67
-nimgrp	addtobodyend	websitegenerator/generator/html.html#addToBodyEnd-procs-all	proc		84
+nim	HtmlDocument	websitegenerator/generator/html.html#HtmlDocument	object HtmlDocument		20
+nim	newHtmlElement	websitegenerator/generator/html.html#newHtmlElement,string,string	proc newHtmlElement(tag, content: string): HtmlElement		26
+nim	newHtmlElement	websitegenerator/generator/html.html#newHtmlElement,string,seq[HtmlElementAttribute],string	proc newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];\n               content: string = ""): HtmlElement		30
+nim	newHtmlElement	websitegenerator/generator/html.html#newHtmlElement,string,varargs[HtmlElementAttribute]	proc newHtmlElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement		35
+nim	newElement	websitegenerator/generator/html.html#newElement,string,string	proc newElement(tag, content: string): HtmlElement		42
+nim	newElement	websitegenerator/generator/html.html#newElement,string,seq[HtmlElementAttribute],string	proc newElement(tag: string; tagAttributes: seq[HtmlElementAttribute];\n           content: string = ""): HtmlElement		45
+nim	newElement	websitegenerator/generator/html.html#newElement,string,varargs[HtmlElementAttribute]	proc newElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement		48
+nim	newAttribute	websitegenerator/generator/html.html#newAttribute,string,string	proc newAttribute(name, value: string): HtmlElementAttribute		52
+nim	newAttribute	websitegenerator/generator/html.html#newAttribute,string	proc newAttribute(name: string): HtmlElementAttribute		56
+nim	attr	websitegenerator/generator/html.html#attr,string,string	proc attr(name, value: string): HtmlElementAttribute		60
+nim	attr	websitegenerator/generator/html.html#attr,string	proc attr(name: string): HtmlElementAttribute		61
+nim	add	websitegenerator/generator/html.html#add,HtmlElement,varargs[HtmlElementAttribute]	proc add(element: HtmlElement; attribute: varargs[HtmlElementAttribute]): HtmlElement		63
+nim	add	websitegenerator/generator/html.html#add,HtmlElement,varargs[HtmlElementAttribute]_2	proc add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])		68
+nim	addattr	websitegenerator/generator/html.html#addattr,HtmlElement,string	proc addattr(element: HtmlElement; property: string): HtmlElement		73
+nim	addattr	websitegenerator/generator/html.html#addattr,HtmlElement,string,string	proc addattr(element: HtmlElement; property, value: string): HtmlElement		76
+nim	addattr	websitegenerator/generator/html.html#addattr,HtmlElement,string_2	proc addattr(element: var HtmlElement; property: string)		79
+nim	addattr	websitegenerator/generator/html.html#addattr,HtmlElement,string,string_2	proc addattr(element: var HtmlElement; property, value: string)		82
+nim	newHtmlDocument	websitegenerator/generator/html.html#newHtmlDocument,string	proc newHtmlDocument(fileName: string): HtmlDocument		86
+nim	newDocument	websitegenerator/generator/html.html#newDocument,string	proc newDocument(fileName: string): HtmlDocument		89
+nim	addToBody	websitegenerator/generator/html.html#addToBody,HtmlDocument,HtmlElement	proc addToBody(document: var HtmlDocument; element: HtmlElement)		93
+nim	addToBody	websitegenerator/generator/html.html#addToBody,HtmlDocument,seq[HtmlElement]	proc addToBody(document: var HtmlDocument; elements: seq[HtmlElement])		96
+nim	addToBody	websitegenerator/generator/html.html#addToBody,HtmlDocument,varargs[HtmlElement]	proc addToBody(document: var HtmlDocument; elements: varargs[HtmlElement])		100
+nim	add	websitegenerator/generator/html.html#add,HtmlDocument,HtmlElement	proc add(document: var HtmlDocument; element: HtmlElement)		105
+nim	add	websitegenerator/generator/html.html#add,HtmlDocument,seq[HtmlElement]	proc add(document: var HtmlDocument; elements: seq[HtmlElement])		106
+nim	add	websitegenerator/generator/html.html#add,HtmlDocument,varargs[HtmlElement]	proc add(document: var HtmlDocument; elements: varargs[HtmlElement])		107
+nim	addToBodyEnd	websitegenerator/generator/html.html#addToBodyEnd,HtmlDocument,HtmlElement	proc addToBodyEnd(document: var HtmlDocument; element: HtmlElement)		110
+nim	addToBodyEnd	websitegenerator/generator/html.html#addToBodyEnd,HtmlDocument,seq[HtmlElement]	proc addToBodyEnd(document: var HtmlDocument; elements: seq[HtmlElement])		113
+nim	addToBodyEnd	websitegenerator/generator/html.html#addToBodyEnd,HtmlDocument,varargs[HtmlElement]	proc addToBodyEnd(document: var HtmlDocument; elements: varargs[HtmlElement])		117
+nim	addToHead	websitegenerator/generator/html.html#addToHead,HtmlDocument,HtmlElement	proc addToHead(document: var HtmlDocument; element: HtmlElement)		123
+nim	addToHead	websitegenerator/generator/html.html#addToHead,HtmlDocument,seq[HtmlElement]	proc addToHead(document: var HtmlDocument; elements: seq[HtmlElement])		126
+nim	addToHead	websitegenerator/generator/html.html#addToHead,HtmlDocument,varargs[HtmlElement]	proc addToHead(document: var HtmlDocument; elements: varargs[HtmlElement])		130
+nim	forceClosingTag	websitegenerator/generator/html.html#forceClosingTag,HtmlElement	proc forceClosingTag(element: var HtmlElement)		135
+nim	forceClosingTag	websitegenerator/generator/html.html#forceClosingTag,HtmlElement_2	proc forceClosingTag(element: HtmlElement): HtmlElement		138
+nim	`$`	websitegenerator/generator/html.html#$,HtmlElementAttribute	proc `$`(attribute: HtmlElementAttribute): string		143
+nim	`$`	websitegenerator/generator/html.html#$,seq[HtmlElementAttribute]	proc `$`(attributes: seq[HtmlElementAttribute]): string		149
+nim	`$`	websitegenerator/generator/html.html#$,HtmlElement	proc `$`(element: HtmlElement): string		154
+nim	`$`	websitegenerator/generator/html.html#$,seq[HtmlElement]	proc `$`(elements: seq[HtmlElement]): string		187
+nim	`$`	websitegenerator/generator/html.html#$,HtmlDocument	proc `$`(document: HtmlDocument): string		194
+nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument	proc writeFile(document: HtmlDocument)		218
+nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument,string	proc writeFile(document: HtmlDocument; fileName: string)		224
+nimgrp	$	websitegenerator/generator/html.html#$-procs-all	proc		143
+nimgrp	newhtmlelement	websitegenerator/generator/html.html#newHtmlElement-procs-all	proc		26
+nimgrp	forceclosingtag	websitegenerator/generator/html.html#forceClosingTag-procs-all	proc		135
+nimgrp	newelement	websitegenerator/generator/html.html#newElement-procs-all	proc		42
+nimgrp	add	websitegenerator/generator/html.html#add-procs-all	proc		63
+nimgrp	writefile	websitegenerator/generator/html.html#writeFile-procs-all	proc		218
+nimgrp	attr	websitegenerator/generator/html.html#attr-procs-all	proc		60
+nimgrp	addattr	websitegenerator/generator/html.html#addattr-procs-all	proc		73
+nimgrp	addtohead	websitegenerator/generator/html.html#addToHead-procs-all	proc		123
+nimgrp	newattribute	websitegenerator/generator/html.html#newAttribute-procs-all	proc		52
+nimgrp	addtobody	websitegenerator/generator/html.html#addToBody-procs-all	proc		93
+nimgrp	addtobodyend	websitegenerator/generator/html.html#addToBodyEnd-procs-all	proc		110
 heading	Html Generator	websitegenerator/generator/html.html#html-generator	 Html Generator		0

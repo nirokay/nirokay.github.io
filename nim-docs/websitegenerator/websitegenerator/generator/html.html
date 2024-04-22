@@ -12,10 +12,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QQQEwksSS9ZWwAAAk1JREFUWMPtll2ITVEUx39nn/O7Y5qR8f05wtCUUr6ZIS++8pEnkZInPImneaCQ5METNdOkeFBKUhMPRIkHKfEuUZSUlGlKPN2TrgfncpvmnntnmlEyq1Z7t89/rf9a6+y99oZxGZf/XeIq61EdtgKXgdXA0xrYAvBjOIF1AI9zvjcC74BSpndrJPkBWDScTF8Aa4E3wDlgHbASaANmVqlcCnwHvgDvgVfAJ+AikAAvgfVZwLnSVZHZaOuKoQi3ZOMi4NkYkpe1p4J7A8BpYAD49hfIy/oqG0+hLomiKP2L5L+1ubn5115S+3OAn4EnwBlgMzCjyt6ZAnQCJ4A7wOs88iRJHvw50HoujuPBoCKwHWiosy8MdfZnAdcHk8dxXFJ3VQbQlCTJvRBCGdRbD4M6uc5glpY3eAihpN5S5w12diSEcCCEcKUO4ljdr15T76ur1FDDLIQQ3qv71EdDOe3Kxj3leRXyk+pxdWnFWod6Wt2bY3de3aSuUHcPBVimHs7mK9WrmeOF6lR1o9qnzskh2ar2qm1qizpfXaPeVGdlmGN5pb09qMxz1Xb1kLqgzn1RyH7JUXW52lr5e/Kqi9qpto7V1atuUzfnARrV7jEib1T76gG2qxdGmXyiekkt1GswPTtek0aBfJp6YySGBfWg2tPQ0FAYgf1stUfdmdcjarbYJEniKIq6gY/Aw+zWHAC+p2labGpqiorFYgGYCEzN7oQdQClN07O1/EfDyGgC0ALMBdYAi4FyK+4H3gLPsxfR1zRNi+NP7nH5J+QntnXe5B5mpfQAAAAASUVORK5CYII=">
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../../nimdoc.out.css">
+<link rel="stylesheet" type="text/css" href="../../nimdoc.out.css?v=2.0.2">
 
 <!-- JS -->
-<script type="text/javascript" src="../../dochack.js"></script>
+<script type="text/javascript" src="../../dochack.js?v=2.0.2"></script>
 </head>
 <body>
   <div class="document" id="documentId">
@@ -57,7 +57,8 @@
   head*, body*, bodyEnd*: seq[HtmlElement]">HtmlDocument</a></li>
 <li><a class="reference" href="#HtmlElement" title="HtmlElement = object
   tag*, class*, content*: string
-  tagAttributes*: seq[HtmlElementAttribute] = []">HtmlElement</a></li>
+  tagAttributes*: seq[HtmlElementAttribute] = []
+  forceTwoTags*: bool        ## Forces to generate an opening and closing tag (does not generate normally, when content is empty)">HtmlElement</a></li>
 <li><a class="reference" href="#HtmlElementAttribute" title="HtmlElementAttribute = object
   name*, value*: string">HtmlElementAttribute</a></li>
 
@@ -84,6 +85,13 @@
 <li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2" title="add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])">add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">addattr
+  <li><a class="reference" href="#addattr%2CHtmlElement%2Cstring%2Cstring" title="addattr(element: HtmlElement; property, value: string): HtmlElement">addattr(element: HtmlElement; property, value: string): HtmlElement</a></li>
+<li><a class="reference" href="#addattr%2CHtmlElement%2Cstring" title="addattr(element: HtmlElement; property: string): HtmlElement">addattr(element: HtmlElement; property: string): HtmlElement</a></li>
+<li><a class="reference" href="#addattr%2CHtmlElement%2Cstring%2Cstring_2" title="addattr(element: var HtmlElement; property, value: string)">addattr(element: var HtmlElement; property, value: string)</a></li>
+<li><a class="reference" href="#addattr%2CHtmlElement%2Cstring_2" title="addattr(element: var HtmlElement; property: string)">addattr(element: var HtmlElement; property: string)</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">addToBody
   <li><a class="reference" href="#addToBody%2CHtmlDocument%2CHtmlElement" title="addToBody(document: var HtmlDocument; element: HtmlElement)">addToBody(document: var HtmlDocument; element: HtmlElement)</a></li>
 <li><a class="reference" href="#addToBody%2CHtmlDocument%2Cseq%5BHtmlElement%5D" title="addToBody(document: var HtmlDocument; elements: seq[HtmlElement])">addToBody(document: var HtmlDocument; elements: seq[HtmlElement])</a></li>
@@ -107,6 +115,11 @@
 <li><a class="reference" href="#attr%2Cstring" title="attr(name: string): HtmlElementAttribute">attr(name: string): HtmlElementAttribute</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">forceClosingTag
+  <li><a class="reference" href="#forceClosingTag%2CHtmlElement_2" title="forceClosingTag(element: HtmlElement): HtmlElement">forceClosingTag(element: HtmlElement): HtmlElement</a></li>
+<li><a class="reference" href="#forceClosingTag%2CHtmlElement" title="forceClosingTag(element: var HtmlElement)">forceClosingTag(element: var HtmlElement)</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">newAttribute
   <li><a class="reference" href="#newAttribute%2Cstring%2Cstring" title="newAttribute(name, value: string): HtmlElementAttribute">newAttribute(name, value: string): HtmlElementAttribute</a></li>
 <li><a class="reference" href="#newAttribute%2Cstring" title="newAttribute(name: string): HtmlElementAttribute">newAttribute(name: string): HtmlElementAttribute</a></li>
@@ -122,6 +135,18 @@
            content: string = &quot;&quot;): HtmlElement">newElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
            content: string = &quot;&quot;): HtmlElement</a></li>
 <li><a class="reference" href="#newElement%2Cstring%2Cvarargs%5BHtmlElementAttribute%5D" title="newElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement">newElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">newHtmlDocument
+  <li><a class="reference" href="#newHtmlDocument%2Cstring" title="newHtmlDocument(fileName: string): HtmlDocument">newHtmlDocument(fileName: string): HtmlDocument</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">newHtmlElement
+  <li><a class="reference" href="#newHtmlElement%2Cstring%2Cstring" title="newHtmlElement(tag, content: string): HtmlElement">newHtmlElement(tag, content: string): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2Cstring" title="newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
+               content: string = &quot;&quot;): HtmlElement">newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
+               content: string = &quot;&quot;): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2Cvarargs%5BHtmlElementAttribute%5D" title="newHtmlElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement">newHtmlElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">writeFile
@@ -162,7 +187,8 @@
   <dt><pre><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
   <span class="Identifier">tag</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">class</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">content</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>
   <span class="Identifier">tagAttributes</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span> <span class="Other">=</span> <span class="Other">[</span><span class="Other">]</span>
-</pre></dt>
+  <span class="Identifier">forceTwoTags</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">bool</span>        <span class="Comment">## Forces to generate an opening and closing tag (does not generate normally, when content is empty)</span>
+  </pre></dt>
   <dd>
     
     Object for HTML elements (Example: <tt class="docutils literal"><span class="pre"><span class="Operator">&lt;</span><span class="Identifier">p</span><span class="Operator">&gt;</span> <span class="Operator">...</span> <span class="Operator">&lt;/</span><span class="Identifier">p</span><span class="Operator">&gt;</span></span></tt>)
@@ -281,6 +307,45 @@
 </div>
 
 </div>
+<div id="addattr-procs-all">
+  <div id="addattr,HtmlElement,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addattr%2CHtmlElement%2Cstring%2Cstring"><span class="Identifier">addattr</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">property</span><span class="Other">,</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds an attribute to an element
+    
+  </dd>
+</div>
+<div id="addattr,HtmlElement,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addattr%2CHtmlElement%2Cstring"><span class="Identifier">addattr</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">property</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds an attribute to an element
+    
+  </dd>
+</div>
+<div id="addattr,HtmlElement,string,string_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addattr%2CHtmlElement%2Cstring%2Cstring_2"><span class="Identifier">addattr</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">property</span><span class="Other">,</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds an attribute to an element
+    
+  </dd>
+</div>
+<div id="addattr,HtmlElement,string_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addattr%2CHtmlElement%2Cstring_2"><span class="Identifier">addattr</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">property</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Adds an attribute to an element
+    
+  </dd>
+</div>
+
+</div>
 <div id="addToBody-procs-all">
   <div id="addToBody,HtmlDocument,HtmlElement">
   <dt><pre><span class="Keyword">proc</span> <a href="#addToBody%2CHtmlDocument%2CHtmlElement"><span class="Identifier">addToBody</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
@@ -296,7 +361,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds a sequence of html elements to the body of the document.
+    Adds multiple <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s to the body of the document.
     
   </dd>
 </div>
@@ -305,7 +370,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds multiple html elements to the body of the document.
+    Adds multiple <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s to the body of the document.
     
   </dd>
 </div>
@@ -317,7 +382,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds a single html element to the end of the body of the document.
+    Adds a single <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt> to the end of the body of the document.
     
   </dd>
 </div>
@@ -326,7 +391,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds a sequence of html elements to the end of the body of the document.
+    Adds multiple <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s to the end of the body of the document.
     
   </dd>
 </div>
@@ -335,7 +400,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds multiple html elements to the end of the body of the document.
+    Adds multiple <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s to the end of the body of the document.
     
   </dd>
 </div>
@@ -347,7 +412,7 @@
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds a single html element to the head of the document.
+    Adds a single <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt> to the head of the document.
     
   </dd>
 </div>
@@ -356,7 +421,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds a sequence of html elements to the head of the document.
+    Adds multiple <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s to the head of the document.
     
   </dd>
 </div>
@@ -365,7 +430,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Adds multiple html elements to the head of the document.
+    Adds multiple <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s to the head of the document.
     
   </dd>
 </div>
@@ -387,6 +452,27 @@
   <dd>
     
     Shortcut for <tt class="docutils literal"><span class="pre"><span class="Identifier">newAttribute</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt>
+    
+  </dd>
+</div>
+
+</div>
+<div id="forceClosingTag-procs-all">
+  <div id="forceClosingTag,HtmlElement_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#forceClosingTag%2CHtmlElement_2"><span class="Identifier">forceClosingTag</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Forces to generate a closing tag
+    
+  </dd>
+</div>
+<div id="forceClosingTag,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#forceClosingTag%2CHtmlElement"><span class="Identifier">forceClosingTag</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Forces to generate a closing tag
     
   </dd>
 </div>
@@ -415,7 +501,66 @@
 </div>
 <div id="newDocument-procs-all">
   <div id="newDocument,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newDocument%2Cstring"><span class="Identifier">newDocument</span></a><span class="Other">(</span><span class="Identifier">fileName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newDocument%2Cstring"><span class="Identifier">newDocument</span></a><span class="Other">(</span><span class="Identifier">fileName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">deprecated</span><span class="Other">:</span> <span class="StringLit">&quot;use newHtmlDocument() instead&quot;</span><span class="Other">,</span> <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    <div class="deprecation-message">
+  <b>Deprecated:</b> use newHtmlDocument() instead
+</div>
+
+    New html document with a filename (used in <tt class="docutils literal"><span class="pre"><span class="Identifier">writeFile</span><span class="Punctuation">(</span><span class="Punctuation">)</span></span></tt> proc to write to disk)
+    
+  </dd>
+</div>
+
+</div>
+<div id="newElement-procs-all">
+  <div id="newElement,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newElement%2Cstring%2Cstring"><span class="Identifier">newElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">,</span> <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">deprecated</span><span class="Other">:</span> <span class="StringLit">&quot;Use newHtmlElement() instead&quot;</span><span class="Other">,</span> <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    <div class="deprecation-message">
+  <b>Deprecated:</b> Use newHtmlElement() instead
+</div>
+
+    Generic builder for html elements without tag attributes
+    
+  </dd>
+</div>
+<div id="newElement,string,seq[HtmlElementAttribute],string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2Cstring"><span class="Identifier">newElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">tagAttributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">deprecated</span><span class="Other">:</span> <span class="StringLit">&quot;Use newHtmlElement() instead&quot;</span><span class="Other">,</span> <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    <div class="deprecation-message">
+  <b>Deprecated:</b> Use newHtmlElement() instead
+</div>
+
+    Generic builder for html elements with tag attributes and maybe content
+    
+  </dd>
+</div>
+<div id="newElement,string,varargs[HtmlElementAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newElement%2Cstring%2Cvarargs%5BHtmlElementAttribute%5D"><span class="Identifier">newElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">tagAttributes</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">deprecated</span><span class="Other">:</span> <span class="StringLit">&quot;Use newHtmlElement() instead&quot;</span><span class="Other">,</span> <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    <div class="deprecation-message">
+  <b>Deprecated:</b> Use newHtmlElement() instead
+</div>
+
+    Generic builder for html elements with no content and multiple tag attributes
+    
+  </dd>
+</div>
+
+</div>
+<div id="newHtmlDocument-procs-all">
+  <div id="newHtmlDocument,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlDocument%2Cstring"><span class="Identifier">newHtmlDocument</span></a><span class="Other">(</span><span class="Identifier">fileName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -425,9 +570,9 @@
 </div>
 
 </div>
-<div id="newElement-procs-all">
-  <div id="newElement,string,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newElement%2Cstring%2Cstring"><span class="Identifier">newElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">,</span> <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<div id="newHtmlElement-procs-all">
+  <div id="newHtmlElement,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2Cstring"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">,</span> <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -435,9 +580,9 @@
     
   </dd>
 </div>
-<div id="newElement,string,seq[HtmlElementAttribute],string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2Cstring"><span class="Identifier">newElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">tagAttributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<div id="newHtmlElement,string,seq[HtmlElementAttribute],string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2Cstring"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">tagAttributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -445,8 +590,8 @@
     
   </dd>
 </div>
-<div id="newElement,string,varargs[HtmlElementAttribute]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newElement%2Cstring%2Cvarargs%5BHtmlElementAttribute%5D"><span class="Identifier">newElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">tagAttributes</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+<div id="newHtmlElement,string,varargs[HtmlElementAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2Cvarargs%5BHtmlElementAttribute%5D"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">tagAttributes</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -487,7 +632,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-27 09:52:56 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 07:05:33 UTC</small>
       </div>
     </div>
   </div>

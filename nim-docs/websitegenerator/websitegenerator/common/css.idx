@@ -77,20 +77,20 @@ nim	ex	websitegenerator/common/css.html#ex,SomeNumber	proc ex(size: SomeNumber):
 nim	ch	websitegenerator/common/css.html#ch,SomeNumber	proc ch(size: SomeNumber): string		103
 nim	rem	websitegenerator/common/css.html#rem,SomeNumber	proc rem(size: SomeNumber): string		104
 nim	vw	websitegenerator/common/css.html#vw,SomeNumber	proc vw(size: SomeNumber): string		105
-nim	bottom	websitegenerator/common/css.html#bottom_2	proc bottom(value: string | SomeNumber): array[2, string]		107
-nim	top	websitegenerator/common/css.html#top_2	proc top(value: string | SomeNumber): array[2, string]		108
-nim	right	websitegenerator/common/css.html#right_2	proc right(value: string | SomeNumber): array[2, string]		109
-nim	left	websitegenerator/common/css.html#left_2	proc left(value: string | SomeNumber): array[2, string]		110
-nim	width	websitegenerator/common/css.html#width	proc width(number: string | SomeNumber): array[2, string]		112
-nim	height	websitegenerator/common/css.html#height	proc height(number: string | SomeNumber): array[2, string]		113
-nim	maxWidth	websitegenerator/common/css.html#maxWidth	proc maxWidth(number: string | SomeNumber): array[2, string]		114
-nim	maxHeight	websitegenerator/common/css.html#maxHeight	proc maxHeight(number: string | SomeNumber): array[2, string]		115
-nim	fontStyle	websitegenerator/common/css.html#fontStyle	proc fontStyle(style: string | CssFontStyle): array[2, string]		117
-nim	fontStretch	websitegenerator/common/css.html#fontStretch	proc fontStretch(stretch: string | CssFontStretch): array[2, string]		118
-nim	fontVariant	websitegenerator/common/css.html#fontVariant	proc fontVariant(variant: string | CssFontVariant): array[2, string]		119
-nim	fontWeight	websitegenerator/common/css.html#fontWeight	proc fontWeight(weight: string | CssFontWeight): array[2, string]		120
-nim	fontSize	websitegenerator/common/css.html#fontSize	proc fontSize(size: string | CssSize): array[2, string]		121
-nim	fontFamily	websitegenerator/common/css.html#fontFamily	proc fontFamily(family: string | CssFontFamily): array[2, string]		122
+nim	bottom	websitegenerator/common/css.html#bottom_2	proc bottom(value: string | SomeNumber): CssAttribute		107
+nim	top	websitegenerator/common/css.html#top_2	proc top(value: string | SomeNumber): CssAttribute		108
+nim	right	websitegenerator/common/css.html#right_2	proc right(value: string | SomeNumber): CssAttribute		109
+nim	left	websitegenerator/common/css.html#left_2	proc left(value: string | SomeNumber): CssAttribute		110
+nim	width	websitegenerator/common/css.html#width	proc width(number: string | SomeNumber): CssAttribute		112
+nim	height	websitegenerator/common/css.html#height	proc height(number: string | SomeNumber): CssAttribute		113
+nim	maxWidth	websitegenerator/common/css.html#maxWidth	proc maxWidth(number: string | SomeNumber): CssAttribute		114
+nim	maxHeight	websitegenerator/common/css.html#maxHeight	proc maxHeight(number: string | SomeNumber): CssAttribute		115
+nim	fontStyle	websitegenerator/common/css.html#fontStyle	proc fontStyle(style: string | CssFontStyle): CssAttribute		117
+nim	fontStretch	websitegenerator/common/css.html#fontStretch	proc fontStretch(stretch: string | CssFontStretch): CssAttribute		118
+nim	fontVariant	websitegenerator/common/css.html#fontVariant	proc fontVariant(variant: string | CssFontVariant): CssAttribute		119
+nim	fontWeight	websitegenerator/common/css.html#fontWeight	proc fontWeight(weight: string | CssFontWeight): CssAttribute		120
+nim	fontSize	websitegenerator/common/css.html#fontSize	proc fontSize(size: string | CssSize): CssAttribute		121
+nim	fontFamily	websitegenerator/common/css.html#fontFamily	proc fontFamily(family: string | CssFontFamily): CssAttribute		122
 nim	setWidth	websitegenerator/common/css.html#setWidth,CssElement,	proc setWidth(element: CssElement; number: string | SomeNumber): CssElement		133
 nim	setHeight	websitegenerator/common/css.html#setHeight,CssElement,	proc setHeight(element: CssElement; number: string | SomeNumber): CssElement		134
 nim	setMaxWidth	websitegenerator/common/css.html#setMaxWidth,CssElement,	proc setMaxWidth(element: CssElement; number: string | SomeNumber): CssElement		135
@@ -149,19 +149,19 @@ nim	initial	websitegenerator/common/css.html#initial	CssAll.initial		208
 nim	inherit	websitegenerator/common/css.html#inherit	CssAll.inherit		208
 nim	unset	websitegenerator/common/css.html#unset	CssAll.unset		208
 nim	CssAll	websitegenerator/common/css.html#CssAll	enum CssAll		208
-nim	display	websitegenerator/common/css.html#display	proc display(value: string | CssDisplay): array[2, string]		215
-nim	padding	websitegenerator/common/css.html#padding	proc padding(size: string | SomeInteger): array[2, string]		216
-nim	position	websitegenerator/common/css.html#position_2	proc position(position: string | CssPosition | CssPositioning): array[2, string]		217
-nim	visibility	websitegenerator/common/css.html#visibility	proc visibility(value: string | CssVisibility): array[2, string]		218
-nim	textAlign	websitegenerator/common/css.html#textAlign,string	proc textAlign(direction: string): array[2, string]		219
-nim	alignContent	websitegenerator/common/css.html#alignContent	proc alignContent(value: string | CssContentAlignment): array[2, string]		220
-nim	alignItems	websitegenerator/common/css.html#alignItems	proc alignItems(value: string | CssItemsAlignment): array[2, string]		221
-nim	alignSelf	websitegenerator/common/css.html#alignSelf	proc alignSelf(value: string | CssItemsAlignment): array[2, string]		222
-nim	all	websitegenerator/common/css.html#all	proc all(value: string | CssAll): array[2, string]		223
-nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,string	proc aspectRatio(value: string): array[2, string]		224
-nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,,	proc aspectRatio(x, y: string | SomeInteger): array[2, string]		225
-nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,Rational	proc aspectRatio(value: Rational): array[2, string]		226
-nim	border	websitegenerator/common/css.html#border,string	proc border(values: string): array[2, string]		228
+nim	display	websitegenerator/common/css.html#display	proc display(value: string | CssDisplay): CssAttribute		215
+nim	padding	websitegenerator/common/css.html#padding	proc padding(size: string | SomeInteger): CssAttribute		216
+nim	position	websitegenerator/common/css.html#position_2	proc position(position: string | CssPosition | CssPositioning): CssAttribute		217
+nim	visibility	websitegenerator/common/css.html#visibility	proc visibility(value: string | CssVisibility): CssAttribute		218
+nim	textAlign	websitegenerator/common/css.html#textAlign,string	proc textAlign(direction: string): CssAttribute		219
+nim	alignContent	websitegenerator/common/css.html#alignContent	proc alignContent(value: string | CssContentAlignment): CssAttribute		220
+nim	alignItems	websitegenerator/common/css.html#alignItems	proc alignItems(value: string | CssItemsAlignment): CssAttribute		221
+nim	alignSelf	websitegenerator/common/css.html#alignSelf	proc alignSelf(value: string | CssItemsAlignment): CssAttribute		222
+nim	all	websitegenerator/common/css.html#all	proc all(value: string | CssAll): CssAttribute		223
+nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,string	proc aspectRatio(value: string): CssAttribute		224
+nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,,	proc aspectRatio(x, y: string | SomeInteger): CssAttribute		225
+nim	aspectRatio	websitegenerator/common/css.html#aspectRatio,Rational	proc aspectRatio(value: Rational): CssAttribute		226
+nim	border	websitegenerator/common/css.html#border,string	proc border(values: string): CssAttribute		228
 nim	setDisplay	websitegenerator/common/css.html#setDisplay,CssElement,	proc setDisplay(element: CssElement; value: string | CssDisplay): CssDisplay		233
 nim	setPadding	websitegenerator/common/css.html#setPadding,CssElement,	proc setPadding(element: CssElement; value: string | SomeInteger): CssDisplay		234
 nim	setVisibility	websitegenerator/common/css.html#setVisibility,CssElement,	proc setVisibility(element: CssElement; value: string | CssVisibility): CssDisplay		235
@@ -315,44 +315,47 @@ nim	YellowGreen	websitegenerator/common/css.html#YellowGreen	CssColour.YellowGre
 nim	CssColour	websitegenerator/common/css.html#CssColour	enum CssColour		247
 nim	rgb	websitegenerator/common/css.html#rgb,SomeInteger,SomeInteger,SomeInteger	proc rgb(red, green, blue: SomeInteger): string		300
 nim	rgb	websitegenerator/common/css.html#rgb,SomeFloat,SomeFloat,SomeFloat	proc rgb(red, green, blue: SomeFloat): string		306
-nim	accentColour	websitegenerator/common/css.html#accentColour	proc accentColour(colour: string | CssColour): array[2, string]		321
-nim	setAccentColour	websitegenerator/common/css.html#setAccentColour,CssElement,	proc setAccentColour(element: CssElement; colour: string | CssColour): CssElement		322
-nim	backgroundColour	websitegenerator/common/css.html#backgroundColour	proc backgroundColour(value: string | CssColour): array[2, string]		327
-nim	setBackgroundColour	websitegenerator/common/css.html#setBackgroundColour,CssElement,	proc setBackgroundColour(element: CssElement; colour: string | CssColour): CssElement		328
-nim	borderBlockColour	websitegenerator/common/css.html#borderBlockColour	proc borderBlockColour(colour: string | CssColour): array[2, string]		333
-nim	setBorderBlockColour	websitegenerator/common/css.html#setBorderBlockColour,CssElement,	proc setBorderBlockColour(element: CssElement; colour: string | CssColour): CssElement		334
-nim	borderBlockEndColour	websitegenerator/common/css.html#borderBlockEndColour	proc borderBlockEndColour(colour: string | CssColour): array[2, string]		339
-nim	setBorderBlockEndColour	websitegenerator/common/css.html#setBorderBlockEndColour,CssElement,	proc setBorderBlockEndColour(element: CssElement; colour: string | CssColour): CssElement		340
-nim	borderBlockStartColour	websitegenerator/common/css.html#borderBlockStartColour	proc borderBlockStartColour(colour: string | CssColour): array[2, string]		345
-nim	setBorderBlockStartColour	websitegenerator/common/css.html#setBorderBlockStartColour,CssElement,	proc setBorderBlockStartColour(element: CssElement; colour: string | CssColour): CssElement		346
-nim	borderColour	websitegenerator/common/css.html#borderColour	proc borderColour(colour: string | CssColour): array[2, string]		351
-nim	setBorderColour	websitegenerator/common/css.html#setBorderColour,CssElement,	proc setBorderColour(element: CssElement; colour: string | CssColour): CssElement		352
-nim	borderInlineColour	websitegenerator/common/css.html#borderInlineColour	proc borderInlineColour(colour: string | CssColour): array[2, string]		357
-nim	setBorderInlineColour	websitegenerator/common/css.html#setBorderInlineColour,CssElement,	proc setBorderInlineColour(element: CssElement; colour: string | CssColour): CssElement		358
-nim	borderInlineEndColour	websitegenerator/common/css.html#borderInlineEndColour	proc borderInlineEndColour(colour: string | CssColour): array[2, string]		363
-nim	setBorderInlineEndColour	websitegenerator/common/css.html#setBorderInlineEndColour,CssElement,	proc setBorderInlineEndColour(element: CssElement; colour: string | CssColour): CssElement		364
-nim	borderInlineStartColour	websitegenerator/common/css.html#borderInlineStartColour	proc borderInlineStartColour(colour: string | CssColour): array[2, string]		369
-nim	setBorderInlineStartColour	websitegenerator/common/css.html#setBorderInlineStartColour,CssElement,	proc setBorderInlineStartColour(element: CssElement; colour: string | CssColour): CssElement		370
-nim	borderLeftColour	websitegenerator/common/css.html#borderLeftColour	proc borderLeftColour(colour: string | CssColour): array[2, string]		375
-nim	setBorderLeftColour	websitegenerator/common/css.html#setBorderLeftColour,CssElement,	proc setBorderLeftColour(element: CssElement; colour: string | CssColour): CssElement		376
-nim	borderRightColour	websitegenerator/common/css.html#borderRightColour	proc borderRightColour(colour: string | CssColour): array[2, string]		381
-nim	setBorderRightColour	websitegenerator/common/css.html#setBorderRightColour,CssElement,	proc setBorderRightColour(element: CssElement; colour: string | CssColour): CssElement		382
-nim	borderTopColour	websitegenerator/common/css.html#borderTopColour	proc borderTopColour(colour: string | CssColour): array[2, string]		387
-nim	setBorderTopColour	websitegenerator/common/css.html#setBorderTopColour,CssElement,	proc setBorderTopColour(element: CssElement; colour: string | CssColour): CssElement		388
-nim	borderBottomColour	websitegenerator/common/css.html#borderBottomColour	proc borderBottomColour(colour: string | CssColour): array[2, string]		393
-nim	setBorderBottomColour	websitegenerator/common/css.html#setBorderBottomColour,CssElement,	proc setBorderBottomColour(element: CssElement; colour: string | CssColour): CssElement		394
-nim	caretColour	websitegenerator/common/css.html#caretColour	proc caretColour(colour: string | CssColour): array[2, string]		399
-nim	setCaretColour	websitegenerator/common/css.html#setCaretColour,CssElement,	proc setCaretColour(element: CssElement; colour: string | CssColour): CssElement		400
-nim	colour	websitegenerator/common/css.html#colour	proc colour(value: string | CssColour): array[2, string]		405
-nim	setColour	websitegenerator/common/css.html#setColour,CssElement,	proc setColour(element: CssElement; colour: string | CssColour): CssElement		406
-nim	columnRuleColour	websitegenerator/common/css.html#columnRuleColour	proc columnRuleColour(colour: string | CssColour): array[2, string]		411
-nim	setColumnRuleColour	websitegenerator/common/css.html#setColumnRuleColour,CssElement,	proc setColumnRuleColour(element: CssElement; colour: string | CssColour): CssElement		412
-nim	outlineColour	websitegenerator/common/css.html#outlineColour	proc outlineColour(colour: string | CssColour): array[2, string]		417
-nim	setOutlineColour	websitegenerator/common/css.html#setOutlineColour,CssElement,	proc setOutlineColour(element: CssElement; colour: string | CssColour): CssElement		418
-nim	scrollbarColour	websitegenerator/common/css.html#scrollbarColour	proc scrollbarColour(colour: string | CssColour): array[2, string]		423
-nim	setScrollbarColour	websitegenerator/common/css.html#setScrollbarColour,CssElement,	proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement		424
-nim	textDecorationColour	websitegenerator/common/css.html#textDecorationColour	proc textDecorationColour(colour: string | CssColour): array[2, string]		429
-nim	setTextDecorationColour	websitegenerator/common/css.html#setTextDecorationColour,CssElement,	proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement		430
+nim	rgba	websitegenerator/common/css.html#rgba,SomeInteger,SomeInteger,SomeInteger,SomeFloat	proc rgba(red, green, blue: SomeInteger; alpha: SomeFloat): string		320
+nim	rgba	websitegenerator/common/css.html#rgba,SomeFloat,SomeFloat,SomeFloat,SomeFloat	proc rgba(red, green, blue, alpha: SomeFloat): string		328
+nim	accentColour	websitegenerator/common/css.html#accentColour	proc accentColour(colour: string | CssColour): CssAttribute		334
+nim	setAccentColour	websitegenerator/common/css.html#setAccentColour,CssElement,	proc setAccentColour(element: CssElement; colour: string | CssColour): CssElement		335
+nim	backgroundColour	websitegenerator/common/css.html#backgroundColour	proc backgroundColour(value: string | CssColour): CssAttribute		339
+nim	setBackgroundColour	websitegenerator/common/css.html#setBackgroundColour,CssElement,	proc setBackgroundColour(element: CssElement; colour: string | CssColour): CssElement		340
+nim	borderBlockColour	websitegenerator/common/css.html#borderBlockColour	proc borderBlockColour(colour: string | CssColour): CssAttribute		345
+nim	setBorderBlockColour	websitegenerator/common/css.html#setBorderBlockColour,CssElement,	proc setBorderBlockColour(element: CssElement; colour: string | CssColour): CssElement		346
+nim	borderBlockEndColour	websitegenerator/common/css.html#borderBlockEndColour	proc borderBlockEndColour(colour: string | CssColour): CssAttribute		351
+nim	setBorderBlockEndColour	websitegenerator/common/css.html#setBorderBlockEndColour,CssElement,	proc setBorderBlockEndColour(element: CssElement; colour: string | CssColour): CssElement		352
+nim	borderBlockStartColour	websitegenerator/common/css.html#borderBlockStartColour	proc borderBlockStartColour(colour: string | CssColour): CssAttribute		357
+nim	setBorderBlockStartColour	websitegenerator/common/css.html#setBorderBlockStartColour,CssElement,	proc setBorderBlockStartColour(element: CssElement; colour: string | CssColour): CssElement		358
+nim	borderColour	websitegenerator/common/css.html#borderColour	proc borderColour(colour: string | CssColour): CssAttribute		363
+nim	setBorderColour	websitegenerator/common/css.html#setBorderColour,CssElement,	proc setBorderColour(element: CssElement; colour: string | CssColour): CssElement		364
+nim	borderInlineColour	websitegenerator/common/css.html#borderInlineColour	proc borderInlineColour(colour: string | CssColour): CssAttribute		369
+nim	setBorderInlineColour	websitegenerator/common/css.html#setBorderInlineColour,CssElement,	proc setBorderInlineColour(element: CssElement; colour: string | CssColour): CssElement		370
+nim	borderInlineEndColour	websitegenerator/common/css.html#borderInlineEndColour	proc borderInlineEndColour(colour: string | CssColour): CssAttribute		375
+nim	setBorderInlineEndColour	websitegenerator/common/css.html#setBorderInlineEndColour,CssElement,	proc setBorderInlineEndColour(element: CssElement; colour: string | CssColour): CssElement		376
+nim	borderInlineStartColour	websitegenerator/common/css.html#borderInlineStartColour	proc borderInlineStartColour(colour: string | CssColour): CssAttribute		381
+nim	setBorderInlineStartColour	websitegenerator/common/css.html#setBorderInlineStartColour,CssElement,	proc setBorderInlineStartColour(element: CssElement; colour: string | CssColour): CssElement		382
+nim	borderLeftColour	websitegenerator/common/css.html#borderLeftColour	proc borderLeftColour(colour: string | CssColour): CssAttribute		387
+nim	setBorderLeftColour	websitegenerator/common/css.html#setBorderLeftColour,CssElement,	proc setBorderLeftColour(element: CssElement; colour: string | CssColour): CssElement		388
+nim	borderRightColour	websitegenerator/common/css.html#borderRightColour	proc borderRightColour(colour: string | CssColour): CssAttribute		393
+nim	setBorderRightColour	websitegenerator/common/css.html#setBorderRightColour,CssElement,	proc setBorderRightColour(element: CssElement; colour: string | CssColour): CssElement		394
+nim	borderTopColour	websitegenerator/common/css.html#borderTopColour	proc borderTopColour(colour: string | CssColour): CssAttribute		399
+nim	setBorderTopColour	websitegenerator/common/css.html#setBorderTopColour,CssElement,	proc setBorderTopColour(element: CssElement; colour: string | CssColour): CssElement		400
+nim	borderBottomColour	websitegenerator/common/css.html#borderBottomColour	proc borderBottomColour(colour: string | CssColour): CssAttribute		405
+nim	setBorderBottomColour	websitegenerator/common/css.html#setBorderBottomColour,CssElement,	proc setBorderBottomColour(element: CssElement; colour: string | CssColour): CssElement		406
+nim	caretColour	websitegenerator/common/css.html#caretColour	proc caretColour(colour: string | CssColour): CssAttribute		411
+nim	setCaretColour	websitegenerator/common/css.html#setCaretColour,CssElement,	proc setCaretColour(element: CssElement; colour: string | CssColour): CssElement		412
+nim	colour	websitegenerator/common/css.html#colour	proc colour(value: string | CssColour): CssAttribute		417
+nim	setColour	websitegenerator/common/css.html#setColour,CssElement,	proc setColour(element: CssElement; colour: string | CssColour): CssElement		418
+nim	columnRuleColour	websitegenerator/common/css.html#columnRuleColour	proc columnRuleColour(colour: string | CssColour): CssAttribute		423
+nim	setColumnRuleColour	websitegenerator/common/css.html#setColumnRuleColour,CssElement,	proc setColumnRuleColour(element: CssElement; colour: string | CssColour): CssElement		424
+nim	outlineColour	websitegenerator/common/css.html#outlineColour	proc outlineColour(colour: string | CssColour): CssAttribute		429
+nim	setOutlineColour	websitegenerator/common/css.html#setOutlineColour,CssElement,	proc setOutlineColour(element: CssElement; colour: string | CssColour): CssElement		430
+nim	scrollbarColour	websitegenerator/common/css.html#scrollbarColour	proc scrollbarColour(colour: string | CssColour): CssAttribute		435
+nim	setScrollbarColour	websitegenerator/common/css.html#setScrollbarColour,CssElement,	proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement		436
+nim	textDecorationColour	websitegenerator/common/css.html#textDecorationColour	proc textDecorationColour(colour: string | CssColour): CssAttribute		441
+nim	setTextDecorationColour	websitegenerator/common/css.html#setTextDecorationColour,CssElement,	proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement		442
 nimgrp	rgb	websitegenerator/common/css.html#rgb-procs-all	proc		300
 nimgrp	aspectratio	websitegenerator/common/css.html#aspectRatio-procs-all	proc		224
+nimgrp	rgba	websitegenerator/common/css.html#rgba-procs-all	proc		320
 heading	Common css snippets	websitegenerator/common/css.html#common-css-snippets	 Common css snippets		0

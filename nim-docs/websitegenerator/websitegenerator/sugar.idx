@@ -1,0 +1,11 @@
+nimTitle	sugar	websitegenerator/sugar.html	module websitegenerator/sugar		0
+nim	`[]`	websitegenerator/sugar.html#[],string,varargs[HtmlElementAttribute]	proc `[]`(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement		10
+nim	`=>`	websitegenerator/sugar.html#=>,string,string	proc `=>`(attribute, value: string): HtmlElementAttribute		27
+nim	`{}`	websitegenerator/sugar.html#{},string,varargs[CssAttribute]	proc `{}`(element: string; properties: varargs[CssAttribute]): CssElement		30
+nim	`:=`	websitegenerator/sugar.html#:=,string,string	proc `:=`(property, value: string): CssAttribute		40
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,string	proc `=>`(element: var HtmlElement; content: string)		44
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string	proc `->`(element: var HtmlElement; class: string)		48
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement	proc `->`(element: var HtmlElement; class: CssElement)		51
+nimgrp	->	websitegenerator/sugar.html#->-procs-all	proc		48
+nimgrp	=>	websitegenerator/sugar.html#=>-procs-all	proc		27
+heading	Sugar module	websitegenerator/sugar.html#sugar-module	 Sugar module		0
