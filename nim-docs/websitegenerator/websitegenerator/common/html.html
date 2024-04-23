@@ -292,10 +292,6 @@
   <li><a class="reference" href="#iframe%2Cstring" title="iframe(src: string): HtmlElement">iframe(src: string): HtmlElement</a></li>
 
 </ul>
-<ul class="simple nested-toc-section">image
-  <li><a class="reference" href="#image%2Cstring%2Cstring" title="image(source: string; alt: string): HtmlElement">image(source: string; alt: string): HtmlElement</a></li>
-
-</ul>
 <ul class="simple nested-toc-section">img
   <li><a class="reference" href="#img%2Cstring%2Cstring" title="img(src: string; alt: string): HtmlElement">img(src: string; alt: string): HtmlElement</a></li>
 
@@ -403,6 +399,7 @@
 <ul class="simple nested-toc-section">p
   <li><a class="reference" href="#p%2Cseq%5Bstring%5D" title="p(text: seq[string]): HtmlElement">p(text: seq[string]): HtmlElement</a></li>
 <li><a class="reference" href="#p%2Cstring" title="p(text: string): HtmlElement">p(text: string): HtmlElement</a></li>
+<li><a class="reference" href="#p%2Cvarargs%5Bstring%5D" title="p(text: varargs[string]): HtmlElement">p(text: varargs[string]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">picture
@@ -535,8 +532,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">textarea
-  <li><a class="reference" href="#textarea%2Cstring%2Cstring%2C%2C%2Cstring" title="textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement">textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
-<li><a class="reference" href="#textarea%2Cstring%2C%2C%2Cstring" title="textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement">textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
+  <li><a class="reference" href="#textarea%2Cstring%2Cstring%2C%2C%2Cstring" title="textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement">textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement</a></li>
+<li><a class="reference" href="#textarea%2Cstring%2C%2C%2Cstring" title="textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement">textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement</a></li>
+<li><a class="reference" href="#textarea%2Cstring" title="textarea(text: string = &quot;&quot;): HtmlElement">textarea(text: string = &quot;&quot;): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">tfoot
@@ -1448,21 +1446,6 @@
 </div>
 
 </div>
-<div id="image-procs-all">
-  <div id="image,string,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#image%2Cstring%2Cstring"><span class="Identifier">image</span></a><span class="Other">(</span><span class="Identifier">source</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">alt</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">deprecated</span><span class="Other">:</span> <span class="StringLit">&quot;Use `img` instead.&quot;</span><span class="Other">,</span> <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    <div class="deprecation-message">
-  <b>Deprecated:</b> Use `img` instead.
-</div>
-
-    Image element
-    
-  </dd>
-</div>
-
-</div>
 <div id="img-procs-all">
   <div id="img,string,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#img%2Cstring%2Cstring"><span class="Identifier">img</span></a><span class="Other">(</span><span class="Identifier">src</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">alt</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
@@ -1783,7 +1766,7 @@
 <div id="optgroup-procs-all">
   <div id="optgroup,string,seq[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#optgroup%2Cstring%2Cseq%5BHtmlElement%5D"><span class="Identifier">optgroup</span></a><span class="Other">(</span><span class="Identifier">label</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Option group element
@@ -1792,7 +1775,7 @@
 </div>
 <div id="optgroup,string,varargs[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#optgroup%2Cstring%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">optgroup</span></a><span class="Other">(</span><span class="Identifier">label</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Option group element
@@ -1846,6 +1829,15 @@
 </div>
 <div id="p,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cstring"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Paragraph element
+    
+  </dd>
+</div>
+<div id="p,varargs[string]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cvarargs%5Bstring%5D"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Paragraph element
@@ -2302,7 +2294,7 @@
 <div id="textarea-procs-all">
   <div id="textarea,string,string,,,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#textarea%2Cstring%2Cstring%2C%2C%2Cstring"><span class="Identifier">textarea</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">rows</span><span class="Other">,</span> <span class="Identifier">cols</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">;</span>
-              <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot; &quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+              <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
     Text area element
@@ -2310,7 +2302,16 @@
   </dd>
 </div>
 <div id="textarea,string,,,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#textarea%2Cstring%2C%2C%2Cstring"><span class="Identifier">textarea</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">rows</span><span class="Other">,</span> <span class="Identifier">cols</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot; &quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#textarea%2Cstring%2C%2C%2Cstring"><span class="Identifier">textarea</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">rows</span><span class="Other">,</span> <span class="Identifier">cols</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dd>
+    
+    Text area element
+    
+  </dd>
+</div>
+<div id="textarea,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#textarea%2Cstring"><span class="Identifier">textarea</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Text area element
@@ -2532,7 +2533,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 09:09:36 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-23 09:10:53 UTC</small>
       </div>
     </div>
   </div>

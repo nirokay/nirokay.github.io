@@ -38,15 +38,16 @@ nim	`$`	websitegenerator/generator/html.html#$,HtmlElementAttribute	proc `$`(att
 nim	`$`	websitegenerator/generator/html.html#$,seq[HtmlElementAttribute]	proc `$`(attributes: seq[HtmlElementAttribute]): string		149
 nim	`$`	websitegenerator/generator/html.html#$,HtmlElement	proc `$`(element: HtmlElement): string		154
 nim	`$`	websitegenerator/generator/html.html#$,seq[HtmlElement]	proc `$`(elements: seq[HtmlElement]): string		187
-nim	`$`	websitegenerator/generator/html.html#$,HtmlDocument	proc `$`(document: HtmlDocument): string		194
-nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument	proc writeFile(document: HtmlDocument)		218
-nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument,string	proc writeFile(document: HtmlDocument; fileName: string)		224
+nim	`$`	websitegenerator/generator/html.html#$,varargs[HtmlElement]	proc `$`(elements: varargs[HtmlElement]): string		193
+nim	`$`	websitegenerator/generator/html.html#$,HtmlDocument	proc `$`(document: HtmlDocument): string		197
+nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument	proc writeFile(document: HtmlDocument)		221
+nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument,string	proc writeFile(document: HtmlDocument; fileName: string)		227
 nimgrp	$	websitegenerator/generator/html.html#$-procs-all	proc		143
 nimgrp	newhtmlelement	websitegenerator/generator/html.html#newHtmlElement-procs-all	proc		26
 nimgrp	forceclosingtag	websitegenerator/generator/html.html#forceClosingTag-procs-all	proc		135
 nimgrp	newelement	websitegenerator/generator/html.html#newElement-procs-all	proc		42
 nimgrp	add	websitegenerator/generator/html.html#add-procs-all	proc		63
-nimgrp	writefile	websitegenerator/generator/html.html#writeFile-procs-all	proc		218
+nimgrp	writefile	websitegenerator/generator/html.html#writeFile-procs-all	proc		221
 nimgrp	attr	websitegenerator/generator/html.html#attr-procs-all	proc		60
 nimgrp	addattr	websitegenerator/generator/html.html#addattr-procs-all	proc		73
 nimgrp	addtohead	websitegenerator/generator/html.html#addToHead-procs-all	proc		123

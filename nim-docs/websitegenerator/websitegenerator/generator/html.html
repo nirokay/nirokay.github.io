@@ -75,6 +75,7 @@
 <li><a class="reference" href="#%24%2CHtmlDocument" title="`$`(document: HtmlDocument): string">`$`(document: HtmlDocument): string</a></li>
 <li><a class="reference" href="#%24%2CHtmlElement" title="`$`(element: HtmlElement): string">`$`(element: HtmlElement): string</a></li>
 <li><a class="reference" href="#%24%2Cseq%5BHtmlElement%5D" title="`$`(elements: seq[HtmlElement]): string">`$`(elements: seq[HtmlElement]): string</a></li>
+<li><a class="reference" href="#%24%2Cvarargs%5BHtmlElement%5D" title="`$`(elements: varargs[HtmlElement]): string">`$`(elements: varargs[HtmlElement]): string</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">add
@@ -251,6 +252,15 @@
 <div id="$,seq[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#%24%2Cseq%5BHtmlElement%5D"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Converts a sequence of HtmlElement to raw html string
+    
+  </dd>
+</div>
+<div id="$,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#%24%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Converts a sequence of HtmlElement to raw html string
@@ -632,7 +642,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 09:09:36 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-23 09:10:53 UTC</small>
       </div>
     </div>
   </div>
