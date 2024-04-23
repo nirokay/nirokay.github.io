@@ -39,6 +39,8 @@
           data-doc-search-tag="html: proc `$`(elements: seq[HtmlElement]): string" href="websitegenerator/generator/html.html#%24%2Cseq%5BHtmlElement%5D">html: proc `$`(elements: seq[HtmlElement]): string</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc `$`(attributes: seq[HtmlElementAttribute]): string" href="websitegenerator/generator/html.html#%24%2Cseq%5BHtmlElementAttribute%5D">html: proc `$`(attributes: seq[HtmlElementAttribute]): string</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `$`(elements: varargs[HtmlElement]): string" href="websitegenerator/generator/html.html#%24%2Cvarargs%5BHtmlElement%5D">html: proc `$`(elements: varargs[HtmlElement]): string</a></li>
           </ul></dd>
 <dt><a name="%60-%26gt%3B%60" href="#%60-%26gt%3B%60"><span>`-&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -7918,10 +7920,6 @@
 <li><a class="reference external"
           data-doc-search-tag="html: proc iframe(src: string): HtmlElement" href="websitegenerator/common/html.html#iframe%2Cstring">html: proc iframe(src: string): HtmlElement</a></li>
           </ul></dd>
-<dt><a name="image" href="#image"><span>image:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="html: proc image(source: string; alt: string): HtmlElement" href="websitegenerator/common/html.html#image%2Cstring%2Cstring">html: proc image(source: string; alt: string): HtmlElement</a></li>
-          </ul></dd>
 <dt><a name="imageAces" href="#imageAces"><span>imageAces:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="mimetypes: MimeType.imageAces" href="websitegenerator/mimetypes.html#imageAces">mimetypes: MimeType.imageAces</a></li>
@@ -9039,6 +9037,8 @@
           data-doc-search-tag="html: proc p(text: seq[string]): HtmlElement" href="websitegenerator/common/html.html#p%2Cseq%5Bstring%5D">html: proc p(text: seq[string]): HtmlElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc p(text: string): HtmlElement" href="websitegenerator/common/html.html#p%2Cstring">html: proc p(text: string): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc p(text: varargs[string]): HtmlElement" href="websitegenerator/common/html.html#p%2Cvarargs%5Bstring%5D">html: proc p(text: varargs[string]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="padding" href="#padding"><span>padding:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9616,9 +9616,11 @@
           </ul></dd>
 <dt><a name="textarea" href="#textarea"><span>textarea:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: proc textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement" href="websitegenerator/common/html.html#textarea%2Cstring%2C%2C%2Cstring">html: proc textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
+          data-doc-search-tag="html: proc textarea(text: string = &quot;&quot;): HtmlElement" href="websitegenerator/common/html.html#textarea%2Cstring">html: proc textarea(text: string = &quot;&quot;): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement" href="websitegenerator/common/html.html#textarea%2Cstring%2Cstring%2C%2C%2Cstring">html: proc textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
+          data-doc-search-tag="html: proc textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement" href="websitegenerator/common/html.html#textarea%2Cstring%2C%2C%2Cstring">html: proc textarea(name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement" href="websitegenerator/common/html.html#textarea%2Cstring%2Cstring%2C%2C%2Cstring">html: proc textarea(id, name: string; rows, cols: SomeInteger | string; text: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="textCacheManifest" href="#textCacheManifest"><span>textCacheManifest:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10552,7 +10554,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-22 09:09:38 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-04-23 09:13:41 UTC</small>
       </div>
     </div>
   </div>
