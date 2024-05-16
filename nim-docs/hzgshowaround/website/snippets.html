@@ -74,14 +74,18 @@
   <li><a class="reference" href="#backToHomeButton%2Cstring" title="backToHomeButton(text: string): HtmlElement">backToHomeButton(text: string): HtmlElement</a></li>
 
 </ul>
-<ul class="simple nested-toc-section">button
-  <li><a class="reference" href="#button%2Cstring%2Cstring" title="button(content, href: string): HtmlElement">button(content, href: string): HtmlElement</a></li>
+<ul class="simple nested-toc-section">buttonLink
+  <li><a class="reference" href="#buttonLink%2Cstring%2Cstring" title="buttonLink(content, href: string): HtmlElement">buttonLink(content, href: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">buttonList
   <li><a class="reference" href="#buttonList" title="buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[
     HtmlElement]">buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[
     HtmlElement]</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">buttonScript
+  <li><a class="reference" href="#buttonScript%2Cstring%2Cstring" title="buttonScript(text, onclick: string): HtmlElement">buttonScript(text, onclick: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">divCenter
@@ -110,10 +114,6 @@
   <li><a class="reference" href="#pc%2Cvarargs%5BHtmlElement%5D" title="pc(elements: varargs[HtmlElement]): HtmlElement">pc(elements: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#pc%2Cseq%5Bstring%5D" title="pc(lines: seq[string]): HtmlElement">pc(lines: seq[string]): HtmlElement</a></li>
 <li><a class="reference" href="#pc%2Cvarargs%5Bstring%5D" title="pc(lines: varargs[string]): HtmlElement">pc(lines: varargs[string]): HtmlElement</a></li>
-
-</ul>
-<ul class="simple nested-toc-section">scriptButton
-  <li><a class="reference" href="#scriptButton%2Cstring%2Cstring" title="scriptButton(text, onclick: string): HtmlElement">scriptButton(text, onclick: string): HtmlElement</a></li>
 
 </ul>
 
@@ -182,9 +182,9 @@
 </div>
 
 </div>
-<div id="button-procs-all">
-  <div id="button,string,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#button%2Cstring%2Cstring"><span class="Identifier">button</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">,</span> <span class="Identifier">href</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<div id="buttonLink-procs-all">
+  <div id="buttonLink,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#buttonLink%2Cstring%2Cstring"><span class="Identifier">buttonLink</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">,</span> <span class="Identifier">href</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -201,6 +201,18 @@
   <dd>
     
     List of buttons
+    
+  </dd>
+</div>
+
+</div>
+<div id="buttonScript-procs-all">
+  <div id="buttonScript,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#buttonScript%2Cstring%2Cstring"><span class="Identifier">buttonScript</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">,</span> <span class="Identifier">onclick</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Button with script attached to it
     
   </dd>
 </div>
@@ -314,18 +326,6 @@
 </div>
 
 </div>
-<div id="scriptButton-procs-all">
-  <div id="scriptButton,string,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#scriptButton%2Cstring%2Cstring"><span class="Identifier">scriptButton</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">,</span> <span class="Identifier">onclick</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Button with script attached to it
-    
-  </dd>
-</div>
-
-</div>
 
   </dl>
 </div>
@@ -336,7 +336,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-03-12 10:41:24 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-16 09:58:34 UTC</small>
       </div>
     </div>
   </div>

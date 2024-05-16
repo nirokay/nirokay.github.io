@@ -3,7 +3,7 @@ nim	imageTags	website/articles.html#imageTags	const imageTags		12
 nim	headerTags	website/articles.html#headerTags	const headerTags		22
 nim	ArticleBody	website/articles.html#ArticleBody	type ArticleBody		27
 nim	Article	website/articles.html#Article	object Article		29
-nim	displayDateTime	website/articles.html#displayDateTime,string	proc displayDateTime(rawDate: string): string		47
-nim	formatLine	website/articles.html#formatLine,string	proc formatLine(line: string): HtmlElement		59
+nim	displayDateTime	website/articles.html#displayDateTime,string	proc displayDateTime(rawDate: string): string		48
+nim	formatLine	website/articles.html#formatLine,string	proc formatLine(line: string): HtmlElement		60
 heading	JSON articles:	website/articles.html#hzgshowaround-minus-articles-json-articlescolon	   JSON articles:		0
 heading	HzgShowAround - Articles	website/articles.html#hzgshowaround-minus-articles	 HzgShowAround - Articles		0

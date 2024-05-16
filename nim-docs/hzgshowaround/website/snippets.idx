@@ -6,15 +6,15 @@ nim	divCenter	website/snippets.html#divCenter,varargs[HtmlElement]	proc divCente
 nim	pc	website/snippets.html#pc,seq[string]	proc pc(lines: seq[string]): HtmlElement		42
 nim	pc	website/snippets.html#pc,varargs[string]	proc pc(lines: varargs[string]): HtmlElement		47
 nim	pc	website/snippets.html#pc,varargs[HtmlElement]	proc pc(elements: varargs[HtmlElement]): HtmlElement		54
-nim	scriptButton	website/snippets.html#scriptButton,string,string	proc scriptButton(text, onclick: string): HtmlElement		67
-nim	button	website/snippets.html#button,string,string	proc button(content, href: string): HtmlElement		73
-nim	buttonList	website/snippets.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		75
-nim	backToHomeButton	website/snippets.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		80
-nim	defaultAuthor	website/snippets.html#defaultAuthor	const defaultAuthor		87
-nim	authorBubble	website/snippets.html#authorBubble,string,array[,string],string	proc authorBubble(authorName: string; beforeAfterText: array[2, string] = ["", ""];\n             authorDisplayName: string = ""): HtmlElement		93
-nim	getRelativeUrlId	website/snippets.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		123
-nim	getRelativeUrlPath	website/snippets.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		128
-nim	isSet	website/snippets.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		138
+nim	buttonScript	website/snippets.html#buttonScript,string,string	proc buttonScript(text, onclick: string): HtmlElement		67
+nim	buttonLink	website/snippets.html#buttonLink,string,string	proc buttonLink(content, href: string): HtmlElement		71
+nim	buttonList	website/snippets.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		73
+nim	backToHomeButton	website/snippets.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		78
+nim	defaultAuthor	website/snippets.html#defaultAuthor	const defaultAuthor		85
+nim	authorBubble	website/snippets.html#authorBubble,string,array[,string],string	proc authorBubble(authorName: string; beforeAfterText: array[2, string] = ["", ""];\n             authorDisplayName: string = ""): HtmlElement		91
+nim	getRelativeUrlId	website/snippets.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		121
+nim	getRelativeUrlPath	website/snippets.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		126
+nim	isSet	website/snippets.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		136
 nimgrp	divcenter	website/snippets.html#divCenter-procs-all	proc		30
 nimgrp	fullycenter	website/snippets.html#fullyCenter-procs-all	proc		14
 nimgrp	pc	website/snippets.html#pc-procs-all	proc		42

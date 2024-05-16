@@ -1,4 +1,5 @@
 nimTitle	styles	website/styles.html	module website/styles		0
 nim	css	website/styles.html#css	var css		29
 nim	cssArticles	website/styles.html#cssArticles	var cssArticles		30
+nim	contentBox	website/styles.html#contentBox,T	proc contentBox[T: varargs[HtmlElement] | seq[HtmlElement]](elements: T): HtmlElement		194
 heading	Styles module	website/styles.html#styles-module	 Styles module		0

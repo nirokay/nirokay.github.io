@@ -5,8 +5,8 @@ nim	`$`	website/mapgenerator.html#$,Layer	proc `$`(layer: Layer): string		40
 nim	SvgFile	website/mapgenerator.html#SvgFile	tuple SvgFile		65
 nim	newSvgFile	website/mapgenerator.html#newSvgFile	proc newSvgFile(): SvgFile		66
 nim	toRects	website/mapgenerator.html#toRects,seq[Location]	proc toRects(locations: seq[Location]): seq[Rect]		143
-nim	generateFullSvgMap	website/mapgenerator.html#generateFullSvgMap	proc generateFullSvgMap()		176
-nim	getLocationSvgMapPath	website/mapgenerator.html#getLocationSvgMapPath,Location	proc getLocationSvgMapPath(location: Location): string		182
-nim	generateLocationSvgMap	website/mapgenerator.html#generateLocationSvgMap,Location	proc generateLocationSvgMap(location: Location)		184
+nim	generateFullSvgMap	website/mapgenerator.html#generateFullSvgMap	proc generateFullSvgMap()		179
+nim	getLocationSvgMapPath	website/mapgenerator.html#getLocationSvgMapPath,Location	proc getLocationSvgMapPath(location: Location): string		185
+nim	generateLocationSvgMap	website/mapgenerator.html#generateLocationSvgMap,Location	proc generateLocationSvgMap(location: Location)		187
 nimgrp	$	website/mapgenerator.html#$-procs-all	proc		21
 heading	Map generator module	website/mapgenerator.html#map-generator-module	 Map generator module		0
