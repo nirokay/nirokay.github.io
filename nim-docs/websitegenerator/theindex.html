@@ -12,10 +12,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QQQEwksSS9ZWwAAAk1JREFUWMPtll2ITVEUx39nn/O7Y5qR8f05wtCUUr6ZIS++8pEnkZInPImneaCQ5METNdOkeFBKUhMPRIkHKfEuUZSUlGlKPN2TrgfncpvmnntnmlEyq1Z7t89/rf9a6+y99oZxGZf/XeIq61EdtgKXgdXA0xrYAvBjOIF1AI9zvjcC74BSpndrJPkBWDScTF8Aa4E3wDlgHbASaANmVqlcCnwHvgDvgVfAJ+AikAAvgfVZwLnSVZHZaOuKoQi3ZOMi4NkYkpe1p4J7A8BpYAD49hfIy/oqG0+hLomiKP2L5L+1ubn5115S+3OAn4EnwBlgMzCjyt6ZAnQCJ4A7wOs88iRJHvw50HoujuPBoCKwHWiosy8MdfZnAdcHk8dxXFJ3VQbQlCTJvRBCGdRbD4M6uc5glpY3eAihpN5S5w12diSEcCCEcKUO4ljdr15T76ur1FDDLIQQ3qv71EdDOe3Kxj3leRXyk+pxdWnFWod6Wt2bY3de3aSuUHcPBVimHs7mK9WrmeOF6lR1o9qnzskh2ar2qm1qizpfXaPeVGdlmGN5pb09qMxz1Xb1kLqgzn1RyH7JUXW52lr5e/Kqi9qpto7V1atuUzfnARrV7jEib1T76gG2qxdGmXyiekkt1GswPTtek0aBfJp6YySGBfWg2tPQ0FAYgf1stUfdmdcjarbYJEniKIq6gY/Aw+zWHAC+p2labGpqiorFYgGYCEzN7oQdQClN07O1/EfDyGgC0ALMBdYAi4FyK+4H3gLPsxfR1zRNi+NP7nH5J+QntnXe5B5mpfQAAAAASUVORK5CYII=">
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="nimdoc.out.css?v=2.0.2">
+<link rel="stylesheet" type="text/css" href="nimdoc.out.css?v=2.0.8">
 
 <!-- JS -->
-<script type="text/javascript" src="dochack.js?v=2.0.2"></script>
+<script type="text/javascript" src="dochack.js?v=2.0.8"></script>
 </head>
 <body>
   <div class="document" id="documentId">
@@ -6522,6 +6522,12 @@
           <li><a class="reference external"
           data-doc-search-tag="html: proc attr(name, value: string): HtmlElementAttribute" href="websitegenerator/generator/html.html#attr%2Cstring%2Cstring">html: proc attr(name, value: string): HtmlElementAttribute</a></li>
           </ul></dd>
+<dt><a name="attrStyle" href="#attrStyle"><span>attrStyle:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="sugar: proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement" href="websitegenerator/sugar.html#attrStyle%2CHtmlElement%2Cseq%5BCssAttribute%5D">sugar: proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement" href="websitegenerator/sugar.html#attrStyle%2CHtmlElement%2Cvarargs%5BCssAttribute%5D">sugar: proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="audio" href="#audio"><span>audio:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc audio(src: string; controls: bool = true): HtmlElement" href="websitegenerator/common/html.html#audio%2Cstring%2Cbool">html: proc audio(src: string; controls: bool = true): HtmlElement</a></li>
@@ -7426,6 +7432,12 @@
 <li><a class="reference external"
           data-doc-search-tag="css: enum CssColour" href="websitegenerator/common/css.html#CssColour">css: enum CssColour</a></li>
           </ul></dd>
+<dt><a name="cssComment" href="#cssComment"><span>cssComment:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="css: proc cssComment(text: seq[string]): CssElement" href="websitegenerator/common/css.html#cssComment%2Cseq%5Bstring%5D">css: proc cssComment(text: seq[string]): CssElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="css: proc cssComment(text: string): CssElement" href="websitegenerator/common/css.html#cssComment%2Cstring">css: proc cssComment(text: string): CssElement</a></li>
+          </ul></dd>
 <dt><a name="CssContentAlignment" href="#CssContentAlignment"><span>CssContentAlignment:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: enum CssContentAlignment" href="websitegenerator/common/css.html#CssContentAlignment">css: enum CssContentAlignment</a></li>
@@ -7603,6 +7615,26 @@
           data-doc-search-tag="html: proc details(header, content: string): HtmlElement" href="websitegenerator/common/html.html#details%2Cstring%2Cstring">html: proc details(header, content: string): HtmlElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc details(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#details%2Cvarargs%5BHtmlElement%5D">html: proc details(elements: varargs[HtmlElement]): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="determinerA" href="#determinerA"><span>determinerA:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: OgDeterminer.determinerA" href="websitegenerator/common/html.html#determinerA">html: OgDeterminer.determinerA</a></li>
+          </ul></dd>
+<dt><a name="determinerAn" href="#determinerAn"><span>determinerAn:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: OgDeterminer.determinerAn" href="websitegenerator/common/html.html#determinerAn">html: OgDeterminer.determinerAn</a></li>
+          </ul></dd>
+<dt><a name="determinerAuto" href="#determinerAuto"><span>determinerAuto:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: OgDeterminer.determinerAuto" href="websitegenerator/common/html.html#determinerAuto">html: OgDeterminer.determinerAuto</a></li>
+          </ul></dd>
+<dt><a name="determinerEmpty" href="#determinerEmpty"><span>determinerEmpty:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: OgDeterminer.determinerEmpty" href="websitegenerator/common/html.html#determinerEmpty">html: OgDeterminer.determinerEmpty</a></li>
+          </ul></dd>
+<dt><a name="deterninerThe" href="#deterninerThe"><span>deterninerThe:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: OgDeterminer.deterninerThe" href="websitegenerator/common/html.html#deterninerThe">html: OgDeterminer.deterninerThe</a></li>
           </ul></dd>
 <dt><a name="dfn" href="#dfn"><span>dfn:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -7891,6 +7923,10 @@
 <dt><a name="hr" href="#hr"><span>hr:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc hr(): HtmlElement" href="websitegenerator/common/html.html#hr">html: proc hr(): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="htmlComment" href="#htmlComment"><span>htmlComment:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc htmlComment(text: string): HtmlElement" href="websitegenerator/common/html.html#htmlComment%2Cstring">html: proc htmlComment(text: string): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="HtmlDocument" href="#HtmlDocument"><span>HtmlDocument:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -8982,6 +9018,126 @@
 <li><a class="reference external"
           data-doc-search-tag="css: CssFontStyle.oblique" href="websitegenerator/common/css.html#oblique">css: CssFontStyle.oblique</a></li>
           </ul></dd>
+<dt><a name="og" href="#og"><span>og:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc og(property, content: string): HtmlElement" href="websitegenerator/common/html.html#og%2Cstring%2Cstring">html: proc og(property, content: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogArray" href="#ogArray"><span>ogArray:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogArray(property: string; contents: seq[string]): seq[HtmlElement]" href="websitegenerator/common/html.html#ogArray%2Cstring%2Cseq%5Bstring%5D">html: proc ogArray(property: string; contents: seq[string]): seq[HtmlElement]</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc ogArray(property: string; contents: varargs[string]): seq[HtmlElement]" href="websitegenerator/common/html.html#ogArray%2Cstring%2Cvarargs%5Bstring%5D">html: proc ogArray(property: string; contents: varargs[string]): seq[HtmlElement]</a></li>
+          </ul></dd>
+<dt><a name="ogAudio" href="#ogAudio"><span>ogAudio:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogAudio(href: string): HtmlElement" href="websitegenerator/common/html.html#ogAudio%2Cstring">html: proc ogAudio(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogAudioSecureUrl" href="#ogAudioSecureUrl"><span>ogAudioSecureUrl:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogAudioSecureUrl(href: string): HtmlElement" href="websitegenerator/common/html.html#ogAudioSecureUrl%2Cstring">html: proc ogAudioSecureUrl(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogAudioType" href="#ogAudioType"><span>ogAudioType:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogAudioType(type: string | MimeType): HtmlElement" href="websitegenerator/common/html.html#ogAudioType">html: proc ogAudioType(type: string | MimeType): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogDescription" href="#ogDescription"><span>ogDescription:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogDescription(text: string): HtmlElement" href="websitegenerator/common/html.html#ogDescription%2Cstring">html: proc ogDescription(text: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="OgDeterminer" href="#OgDeterminer"><span>OgDeterminer:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: enum OgDeterminer" href="websitegenerator/common/html.html#OgDeterminer">html: enum OgDeterminer</a></li>
+          </ul></dd>
+<dt><a name="ogDeterminer" href="#ogDeterminer"><span>ogDeterminer:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogDeterminer(determiner: string | OgDeterminer): HtmlElement" href="websitegenerator/common/html.html#ogDeterminer_2">html: proc ogDeterminer(determiner: string | OgDeterminer): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImage" href="#ogImage"><span>ogImage:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImage(href: string): HtmlElement" href="websitegenerator/common/html.html#ogImage%2Cstring">html: proc ogImage(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImageAlt" href="#ogImageAlt"><span>ogImageAlt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImageAlt(text: string): HtmlElement" href="websitegenerator/common/html.html#ogImageAlt%2Cstring">html: proc ogImageAlt(text: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImageHeight" href="#ogImageHeight"><span>ogImageHeight:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImageHeight(height: string | int): HtmlElement" href="websitegenerator/common/html.html#ogImageHeight">html: proc ogImageHeight(height: string | int): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImageSecureUrl" href="#ogImageSecureUrl"><span>ogImageSecureUrl:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImageSecureUrl(href: string): HtmlElement" href="websitegenerator/common/html.html#ogImageSecureUrl%2Cstring">html: proc ogImageSecureUrl(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImageType" href="#ogImageType"><span>ogImageType:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImageType(type: string | MimeType): HtmlElement" href="websitegenerator/common/html.html#ogImageType">html: proc ogImageType(type: string | MimeType): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImageUrl" href="#ogImageUrl"><span>ogImageUrl:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImageUrl(href: string): HtmlElement" href="websitegenerator/common/html.html#ogImageUrl%2Cstring">html: proc ogImageUrl(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogImageWidth" href="#ogImageWidth"><span>ogImageWidth:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogImageWidth(width: string | int): HtmlElement" href="websitegenerator/common/html.html#ogImageWidth">html: proc ogImageWidth(width: string | int): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogLocale" href="#ogLocale"><span>ogLocale:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogLocale(locale: string): HtmlElement" href="websitegenerator/common/html.html#ogLocale%2Cstring">html: proc ogLocale(locale: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogLocaleAlternate" href="#ogLocaleAlternate"><span>ogLocaleAlternate:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogLocaleAlternate(locales: seq[string]): seq[HtmlElement]" href="websitegenerator/common/html.html#ogLocaleAlternate%2Cseq%5Bstring%5D">html: proc ogLocaleAlternate(locales: seq[string]): seq[HtmlElement]</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc ogLocaleAlternate(locales: varargs[string]): seq[HtmlElement]" href="websitegenerator/common/html.html#ogLocaleAlternate%2Cvarargs%5Bstring%5D">html: proc ogLocaleAlternate(locales: varargs[string]): seq[HtmlElement]</a></li>
+          </ul></dd>
+<dt><a name="ogNamespacePrefix" href="#ogNamespacePrefix"><span>ogNamespacePrefix:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogNamespacePrefix(namespace, href: string): HtmlElement" href="websitegenerator/common/html.html#ogNamespacePrefix%2Cstring%2Cstring">html: proc ogNamespacePrefix(namespace, href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogSiteName" href="#ogSiteName"><span>ogSiteName:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogSiteName(name: string): HtmlElement" href="websitegenerator/common/html.html#ogSiteName%2Cstring">html: proc ogSiteName(name: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogTitle" href="#ogTitle"><span>ogTitle:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogTitle(text: string): HtmlElement" href="websitegenerator/common/html.html#ogTitle%2Cstring">html: proc ogTitle(text: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogType" href="#ogType"><span>ogType:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogType(type: string): HtmlElement" href="websitegenerator/common/html.html#ogType%2Cstring">html: proc ogType(type: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogUrl" href="#ogUrl"><span>ogUrl:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogUrl(href: string): HtmlElement" href="websitegenerator/common/html.html#ogUrl%2Cstring">html: proc ogUrl(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideo" href="#ogVideo"><span>ogVideo:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideo(href: string): HtmlElement" href="websitegenerator/common/html.html#ogVideo%2Cstring">html: proc ogVideo(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideoAlt" href="#ogVideoAlt"><span>ogVideoAlt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideoAlt(text: string): HtmlElement" href="websitegenerator/common/html.html#ogVideoAlt%2Cstring">html: proc ogVideoAlt(text: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideoHeight" href="#ogVideoHeight"><span>ogVideoHeight:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideoHeight(height: string | int): HtmlElement" href="websitegenerator/common/html.html#ogVideoHeight">html: proc ogVideoHeight(height: string | int): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideoSecureUrl" href="#ogVideoSecureUrl"><span>ogVideoSecureUrl:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideoSecureUrl(href: string): HtmlElement" href="websitegenerator/common/html.html#ogVideoSecureUrl%2Cstring">html: proc ogVideoSecureUrl(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideoType" href="#ogVideoType"><span>ogVideoType:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideoType(type: string | MimeType): HtmlElement" href="websitegenerator/common/html.html#ogVideoType">html: proc ogVideoType(type: string | MimeType): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideoUrl" href="#ogVideoUrl"><span>ogVideoUrl:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideoUrl(href: string): HtmlElement" href="websitegenerator/common/html.html#ogVideoUrl%2Cstring">html: proc ogVideoUrl(href: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="ogVideoWidth" href="#ogVideoWidth"><span>ogVideoWidth:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc ogVideoWidth(width: string | int): HtmlElement" href="websitegenerator/common/html.html#ogVideoWidth">html: proc ogVideoWidth(width: string | int): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="ol" href="#ol"><span>ol:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc ol(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ol%2Cseq%5BHtmlElement%5D">html: proc ol(elements: seq[HtmlElement]): HtmlElement</a></li>
@@ -9021,6 +9177,12 @@
 <dt><a name="Orchid" href="#Orchid"><span>Orchid:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.Orchid" href="websitegenerator/common/css.html#Orchid">css: CssColour.Orchid</a></li>
+          </ul></dd>
+<dt><a name="orderedList" href="#orderedList"><span>orderedList:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc orderedList[T](items: seq[T]): HtmlElement" href="websitegenerator/common/html.html#orderedList%2Cseq%5BT%5D">html: proc orderedList[T](items: seq[T]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc orderedList[T](items: varargs[T]): HtmlElement" href="websitegenerator/common/html.html#orderedList%2Cvarargs%5BT%5D">html: proc orderedList[T](items: varargs[T]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="outlineColour" href="#outlineColour"><span>outlineColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10066,6 +10228,12 @@
 <li><a class="reference external"
           data-doc-search-tag="css: CssFontStretch.ultraExpanded" href="websitegenerator/common/css.html#ultraExpanded">css: CssFontStretch.ultraExpanded</a></li>
           </ul></dd>
+<dt><a name="unorderedList" href="#unorderedList"><span>unorderedList:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc unorderedList[T](items: seq[T]): HtmlElement" href="websitegenerator/common/html.html#unorderedList%2Cseq%5BT%5D">html: proc unorderedList[T](items: seq[T]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc unorderedList[T](items: varargs[T]): HtmlElement" href="websitegenerator/common/html.html#unorderedList%2Cvarargs%5BT%5D">html: proc unorderedList[T](items: varargs[T]): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="unset" href="#unset"><span>unset:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssAll.unset" href="websitegenerator/common/css.html#unset">css: CssAll.unset</a></li>
@@ -10562,7 +10730,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-16 09:03:55 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-08-09 09:01:19 UTC</small>
       </div>
     </div>
   </div>
