@@ -142,6 +142,20 @@
   <li><a class="reference" href="#accentColour" title="accentColour(colour: string | CssColour): CssAttribute">accentColour(colour: string | CssColour): CssAttribute</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">addLinkColour
+  <li><a class="reference" href="#addLinkColour%2CCssStyleSheet%2Cstring%2C%2Cseq%5BCssAttribute%5D" title="addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;
+              additionalCssAttributes: seq[CssAttribute])">addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;
+              additionalCssAttributes: seq[CssAttribute])</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">addLinkColours
+  <li><a class="reference" href="#addLinkColours%2CCssStyleSheet%2C%2C%2C%2C%2Cseq%5BCssAttribute%5D" title="addLinkColours(css: var CssStyleSheet;
+               link, visited, hover, active: string | CssColour;
+               additionalCssAttributes: seq[CssAttribute] = @[])">addLinkColours(css: var CssStyleSheet;
+               link, visited, hover, active: string | CssColour;
+               additionalCssAttributes: seq[CssAttribute] = @[])</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">alignContent
   <li><a class="reference" href="#alignContent" title="alignContent(value: string | CssContentAlignment): CssAttribute">alignContent(value: string | CssContentAlignment): CssAttribute</a></li>
 
@@ -720,6 +734,32 @@
   <dd>
     
     Specifies an accent color for user-interface controls
+    
+  </dd>
+</div>
+
+</div>
+<div id="addLinkColour-procs-all">
+  <div id="addLinkColour,CssStyleSheet,string,,seq[CssAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addLinkColour%2CCssStyleSheet%2Cstring%2C%2Cseq%5BCssAttribute%5D"><span class="Identifier">addLinkColour</span></a><span class="Other">(</span><span class="Identifier">css</span><span class="Other">:</span> <a href="../generator/css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a><span class="Other">;</span> <span class="Identifier">which</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">colour</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Operator">|</span> <a href="css.html#CssColour"><span class="Identifier">CssColour</span></a><span class="Other">;</span>
+                   <span class="Identifier">additionalCssAttributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    Adds a colour and additional attributes to rule for links
+    
+  </dd>
+</div>
+
+</div>
+<div id="addLinkColours-procs-all">
+  <div id="addLinkColours,CssStyleSheet,,,,,seq[CssAttribute]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#addLinkColours%2CCssStyleSheet%2C%2C%2C%2C%2Cseq%5BCssAttribute%5D"><span class="Identifier">addLinkColours</span></a><span class="Other">(</span><span class="Identifier">css</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="../generator/css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a><span class="Other">;</span>
+                    <span class="Identifier">link</span><span class="Other">,</span> <span class="Identifier">visited</span><span class="Other">,</span> <span class="Identifier">hover</span><span class="Other">,</span> <span class="Identifier">active</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Operator">|</span> <a href="css.html#CssColour"><span class="Identifier">CssColour</span></a><span class="Other">;</span>
+                    <span class="Identifier">additionalCssAttributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span> <span class="Other">=</span> <span class="Operator">@</span><span class="Other">[</span><span class="Other">]</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    Adds colours and additional attributes to all links in the correct order
     
   </dd>
 </div>
@@ -1790,7 +1830,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-08-09 09:01:17 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-02 09:11:50 UTC</small>
       </div>
     </div>
   </div>

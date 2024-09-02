@@ -42,6 +42,12 @@
           <li><a class="reference external"
           data-doc-search-tag="html: proc `$`(elements: varargs[HtmlElement]): string" href="websitegenerator/generator/html.html#%24%2Cvarargs%5BHtmlElement%5D">html: proc `$`(elements: varargs[HtmlElement]): string</a></li>
           </ul></dd>
+<dt><a name="%60%26amp%3B%3D%26gt%3B%60" href="#%60%26amp%3B%3D%26gt%3B%60"><span>`&amp;=&gt;`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; content: string | HtmlElement)" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2C">sugar: proc `&amp;=&gt;`(element: var HtmlElement; content: string | HtmlElement)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: HtmlElement; content: string | HtmlElement): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2C_2">sugar: proc `&amp;=&gt;`(element: HtmlElement; content: string | HtmlElement): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="%60-%26gt%3B%60" href="#%60-%26gt%3B%60"><span>`-&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="sugar: proc `-&gt;`(element: var HtmlElement; class: CssElement)" href="websitegenerator/sugar.html#-%3E%2CHtmlElement%2CCssElement">sugar: proc `-&gt;`(element: var HtmlElement; class: CssElement)</a></li>
@@ -58,7 +64,9 @@
           </ul></dd>
 <dt><a name="%60%3D%26gt%3B%60" href="#%60%3D%26gt%3B%60"><span>`=&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; content: string)" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2Cstring">sugar: proc `=&gt;`(element: var HtmlElement; content: string)</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; content: string | HtmlElement)" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2C">sugar: proc `=&gt;`(element: var HtmlElement; content: string | HtmlElement)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc `=&gt;`(element: HtmlElement; content: string | HtmlElement): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2C_2">sugar: proc `=&gt;`(element: HtmlElement; content: string | HtmlElement): HtmlElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="sugar: proc `=&gt;`(attribute, value: string): HtmlElementAttribute" href="websitegenerator/sugar.html#%3D%3E%2Cstring%2Cstring">sugar: proc `=&gt;`(attribute, value: string): HtmlElementAttribute</a></li>
           </ul></dd>
@@ -128,25 +136,85 @@
           <li><a class="reference external"
           data-doc-search-tag="html: proc add(document: var HtmlDocument; elements: varargs[HtmlElement])" href="websitegenerator/generator/html.html#add%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D">html: proc add(document: var HtmlDocument; elements: varargs[HtmlElement])</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc add(element: HtmlElement; attribute: varargs[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/html.html#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D">html: proc add(element: HtmlElement; attribute: varargs[HtmlElementAttribute]): HtmlElement</a></li>
+          data-doc-search-tag="html: proc add(element: var HtmlElement; attributes: varargs[HtmlElementAttribute])" href="websitegenerator/generator/html.html#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D">html: proc add(element: var HtmlElement; attributes: varargs[HtmlElementAttribute])</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])" href="websitegenerator/generator/html.html#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2">html: proc add(element: var HtmlElement; attribute: varargs[HtmlElementAttribute])</a></li>
+          data-doc-search-tag="html: proc add(element: HtmlElement; attributes: varargs[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/html.html#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2">html: proc add(element: HtmlElement; attributes: varargs[HtmlElementAttribute]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="addattr" href="#addattr"><span>addattr:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: proc addattr(element: HtmlElement; property: string): HtmlElement" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring">html: proc addattr(element: HtmlElement; property: string): HtmlElement</a></li>
+          data-doc-search-tag="html: proc addattr(element: var HtmlElement; property: string)" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring">html: proc addattr(element: var HtmlElement; property: string)</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc addattr(element: HtmlElement; property, value: string): HtmlElement" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring%2Cstring">html: proc addattr(element: HtmlElement; property, value: string): HtmlElement</a></li>
+          data-doc-search-tag="html: proc addattr(element: var HtmlElement; property, value: string)" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring%2Cstring">html: proc addattr(element: var HtmlElement; property, value: string)</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc addattr(element: var HtmlElement; property, value: string)" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring%2Cstring_2">html: proc addattr(element: var HtmlElement; property, value: string)</a></li>
+          data-doc-search-tag="html: proc addattr(element: HtmlElement; property, value: string): HtmlElement" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring%2Cstring_2">html: proc addattr(element: HtmlElement; property, value: string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc addattr(element: var HtmlElement; property: string)" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring_2">html: proc addattr(element: var HtmlElement; property: string)</a></li>
+          data-doc-search-tag="html: proc addattr(element: HtmlElement; property: string): HtmlElement" href="websitegenerator/generator/html.html#addattr%2CHtmlElement%2Cstring_2">html: proc addattr(element: HtmlElement; property: string): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="addAttributesToBody" href="#addAttributesToBody"><span>addAttributesToBody:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributesToBody(document: var HtmlDocument;
+                    attributes: seq[HtmlElementAttribute])" href="websitegenerator/generator/html.html#addAttributesToBody%2CHtmlDocument%2Cseq%5BHtmlElementAttribute%5D">html: proc addAttributesToBody(document: var HtmlDocument;
+                    attributes: seq[HtmlElementAttribute])</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributesToBody(document: var HtmlDocument;
+                    attributes: varargs[HtmlElementAttribute])" href="websitegenerator/generator/html.html#addAttributesToBody%2CHtmlDocument%2Cvarargs%5BHtmlElementAttribute%5D">html: proc addAttributesToBody(document: var HtmlDocument;
+                    attributes: varargs[HtmlElementAttribute])</a></li>
+          </ul></dd>
+<dt><a name="addAttributesToHtml" href="#addAttributesToHtml"><span>addAttributesToHtml:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributesToHtml(document: var HtmlDocument;
+                    attributes: seq[HtmlElementAttribute])" href="websitegenerator/generator/html.html#addAttributesToHtml%2CHtmlDocument%2Cseq%5BHtmlElementAttribute%5D">html: proc addAttributesToHtml(document: var HtmlDocument;
+                    attributes: seq[HtmlElementAttribute])</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributesToHtml(document: var HtmlDocument;
+                    attributes: varargs[HtmlElementAttribute])" href="websitegenerator/generator/html.html#addAttributesToHtml%2CHtmlDocument%2Cvarargs%5BHtmlElementAttribute%5D">html: proc addAttributesToHtml(document: var HtmlDocument;
+                    attributes: varargs[HtmlElementAttribute])</a></li>
+          </ul></dd>
+<dt><a name="addAttributeToBody" href="#addAttributeToBody"><span>addAttributeToBody:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributeToBody(document: var HtmlDocument; attribute: HtmlElementAttribute)" href="websitegenerator/generator/html.html#addAttributeToBody%2CHtmlDocument%2CHtmlElementAttribute">html: proc addAttributeToBody(document: var HtmlDocument; attribute: HtmlElementAttribute)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributeToBody(document: var HtmlDocument; name: string)" href="websitegenerator/generator/html.html#addAttributeToBody%2CHtmlDocument%2Cstring">html: proc addAttributeToBody(document: var HtmlDocument; name: string)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributeToBody(document: var HtmlDocument; name, value: string)" href="websitegenerator/generator/html.html#addAttributeToBody%2CHtmlDocument%2Cstring%2Cstring">html: proc addAttributeToBody(document: var HtmlDocument; name, value: string)</a></li>
+          </ul></dd>
+<dt><a name="addAttributeToHtml" href="#addAttributeToHtml"><span>addAttributeToHtml:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributeToHtml(document: var HtmlDocument; attribute: HtmlElementAttribute)" href="websitegenerator/generator/html.html#addAttributeToHtml%2CHtmlDocument%2CHtmlElementAttribute">html: proc addAttributeToHtml(document: var HtmlDocument; attribute: HtmlElementAttribute)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributeToHtml(document: var HtmlDocument; name: string)" href="websitegenerator/generator/html.html#addAttributeToHtml%2CHtmlDocument%2Cstring">html: proc addAttributeToHtml(document: var HtmlDocument; name: string)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc addAttributeToHtml(document: var HtmlDocument; name, value: string)" href="websitegenerator/generator/html.html#addAttributeToHtml%2CHtmlDocument%2Cstring%2Cstring">html: proc addAttributeToHtml(document: var HtmlDocument; name, value: string)</a></li>
+          </ul></dd>
+<dt><a name="addLinkColour" href="#addLinkColour"><span>addLinkColour:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="css: proc addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;
+              additionalCssAttributes: seq[CssAttribute])" href="websitegenerator/common/css.html#addLinkColour%2CCssStyleSheet%2Cstring%2C%2Cseq%5BCssAttribute%5D">css: proc addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;
+              additionalCssAttributes: seq[CssAttribute])</a></li>
+          </ul></dd>
+<dt><a name="addLinkColours" href="#addLinkColours"><span>addLinkColours:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="css: proc addLinkColours(css: var CssStyleSheet;
+               link, visited, hover, active: string | CssColour;
+               additionalCssAttributes: seq[CssAttribute] = @[])" href="websitegenerator/common/css.html#addLinkColours%2CCssStyleSheet%2C%2C%2C%2C%2Cseq%5BCssAttribute%5D">css: proc addLinkColours(css: var CssStyleSheet;
+               link, visited, hover, active: string | CssColour;
+               additionalCssAttributes: seq[CssAttribute] = @[])</a></li>
           </ul></dd>
 <dt><a name="address" href="#address"><span>address:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc address(elements: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#address%2Cseq%5BHtmlElement%5D">html: proc address(elements: seq[HtmlElement]): HtmlElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc address(elements: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#address%2Cvarargs%5BHtmlElement%5D">html: proc address(elements: varargs[HtmlElement]): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="addStyle" href="#addStyle"><span>addStyle:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="sugar: proc addStyle(element: var HtmlElement; attributes: seq[CssAttribute])" href="websitegenerator/sugar.html#addStyle%2CHtmlElement%2Cseq%5BCssAttribute%5D">sugar: proc addStyle(element: var HtmlElement; attributes: seq[CssAttribute])</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc addStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement" href="websitegenerator/sugar.html#addStyle%2CHtmlElement%2Cseq%5BCssAttribute%5D_2">sugar: proc addStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc addStyle(element: var HtmlElement; attributes: varargs[CssAttribute])" href="websitegenerator/sugar.html#addStyle%2CHtmlElement%2Cvarargs%5BCssAttribute%5D">sugar: proc addStyle(element: var HtmlElement; attributes: varargs[CssAttribute])</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc addStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement" href="websitegenerator/sugar.html#addStyle%2CHtmlElement%2Cvarargs%5BCssAttribute%5D_2">sugar: proc addStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="addToBody" href="#addToBody"><span>addToBody:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10640,6 +10708,10 @@
 <li><a class="reference external"
           data-doc-search-tag="html: proc wbr(): HtmlElement" href="websitegenerator/common/html.html#wbr">html: proc wbr(): HtmlElement</a></li>
           </ul></dd>
+<dt><a name="websitegeneratorGenerateSelfClosingTags" href="#websitegeneratorGenerateSelfClosingTags"><span>websitegeneratorGenerateSelfClosingTags:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: var websitegeneratorGenerateSelfClosingTags" href="websitegenerator/generator/html.html#websitegeneratorGenerateSelfClosingTags">html: var websitegeneratorGenerateSelfClosingTags</a></li>
+          </ul></dd>
 <dt><a name="weight100" href="#weight100"><span>weight100:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssFontWeight.weight100" href="websitegenerator/common/css.html#weight100">css: CssFontWeight.weight100</a></li>
@@ -10730,7 +10802,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-08-09 09:01:19 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-02 09:11:52 UTC</small>
       </div>
     </div>
   </div>
