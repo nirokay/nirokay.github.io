@@ -357,7 +357,7 @@ nim	scrollbarColour	websitegenerator/common/css.html#scrollbarColour	proc scroll
 nim	setScrollbarColour	websitegenerator/common/css.html#setScrollbarColour,CssElement,	proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement		442
 nim	textDecorationColour	websitegenerator/common/css.html#textDecorationColour	proc textDecorationColour(colour: string | CssColour): CssAttribute		447
 nim	setTextDecorationColour	websitegenerator/common/css.html#setTextDecorationColour,CssElement,	proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement		448
-nim	addLinkColour	websitegenerator/common/css.html#addLinkColour,CssStyleSheet,string,,seq[CssAttribute]	proc addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;\n              additionalCssAttributes: seq[CssAttribute])		454
+nim	addLinkColour	websitegenerator/common/css.html#addLinkColour,CssStyleSheet,string,,seq[CssAttribute]	proc addLinkColour(css: var CssStyleSheet; which: string; colour: string | CssColour;\n              additionalCssAttributes: seq[CssAttribute])		454
 nim	addLinkColours	websitegenerator/common/css.html#addLinkColours,CssStyleSheet,,,,,seq[CssAttribute]	proc addLinkColours(css: var CssStyleSheet;\n               link, visited, hover, active: string | CssColour;\n               additionalCssAttributes: seq[CssAttribute] = @[])		462
 nimgrp	rgb	websitegenerator/common/css.html#rgb-procs-all	proc		306
 nimgrp	aspectratio	websitegenerator/common/css.html#aspectRatio-procs-all	proc		230

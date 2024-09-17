@@ -21,7 +21,7 @@
   <div class="document" id="documentId">
     <div class="container">
       <h1 class="title">Index</h1>
-      Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
+      Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/attributes.html">websitegenerator/attributes</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%24%60" href="#%60%24%60"><span>`$`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc `$`(element: CssElement): string" href="websitegenerator/generator/css.html#%24%2CCssElement">css: proc `$`(element: CssElement): string</a></li>
@@ -188,8 +188,8 @@
           </ul></dd>
 <dt><a name="addLinkColour" href="#addLinkColour"><span>addLinkColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="css: proc addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;
-              additionalCssAttributes: seq[CssAttribute])" href="websitegenerator/common/css.html#addLinkColour%2CCssStyleSheet%2Cstring%2C%2Cseq%5BCssAttribute%5D">css: proc addLinkColour(css: CssStyleSheet; which: string; colour: string | CssColour;
+          data-doc-search-tag="css: proc addLinkColour(css: var CssStyleSheet; which: string; colour: string | CssColour;
+              additionalCssAttributes: seq[CssAttribute])" href="websitegenerator/common/css.html#addLinkColour%2CCssStyleSheet%2Cstring%2C%2Cseq%5BCssAttribute%5D">css: proc addLinkColour(css: var CssStyleSheet; which: string; colour: string | CssColour;
               additionalCssAttributes: seq[CssAttribute])</a></li>
           </ul></dd>
 <dt><a name="addLinkColours" href="#addLinkColours"><span>addLinkColours:</span></a></dt><dd><ul class="simple">
@@ -8394,9 +8394,9 @@
           </ul></dd>
 <dt><a name="input" href="#input"><span>input:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: proc input[T](type: MimeType | string; id, name: string; value: T = new T): HtmlElement" href="websitegenerator/common/html.html#input%2C%2Cstring%2Cstring%2CT">html: proc input[T](type: MimeType | string; id, name: string; value: T = new T): HtmlElement</a></li>
+          data-doc-search-tag="html: proc input(type: MimeType | string; id: string): HtmlElement" href="websitegenerator/common/html.html#input%2C%2Cstring">html: proc input(type: MimeType | string; id: string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc input[T](type: MimeType | string; idAndName: string; value: T = new T): HtmlElement" href="websitegenerator/common/html.html#input%2C%2Cstring%2CT">html: proc input[T](type: MimeType | string; idAndName: string; value: T = new T): HtmlElement</a></li>
+          data-doc-search-tag="html: proc input[T](type: MimeType | string; id: string; value: T): HtmlElement" href="websitegenerator/common/html.html#input%2C%2Cstring%2CT">html: proc input[T](type: MimeType | string; id: string; value: T): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="ins" href="#ins"><span>ins:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9506,15 +9506,87 @@
 <li><a class="reference external"
           data-doc-search-tag="css: proc setAccentColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setAccentColour%2CCssElement%2C">css: proc setAccentColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
           </ul></dd>
+<dt><a name="setAccept" href="#setAccept"><span>setAccept:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAccept(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAccept%2CHtmlElement%2Cstring">attributes: proc setAccept(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAccept(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAccept%2CHtmlElement%2Cstring_2">attributes: proc setAccept(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAcceptCharset" href="#setAcceptCharset"><span>setAcceptCharset:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAcceptCharset(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAcceptCharset%2CHtmlElement%2Cstring">attributes: proc setAcceptCharset(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAcceptCharset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAcceptCharset%2CHtmlElement%2Cstring_2">attributes: proc setAcceptCharset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAccesskey" href="#setAccesskey"><span>setAccesskey:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAccesskey(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAccesskey%2CHtmlElement%2Cstring">attributes: proc setAccesskey(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAccesskey(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAccesskey%2CHtmlElement%2Cstring_2">attributes: proc setAccesskey(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAction" href="#setAction"><span>setAction:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAction(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAction%2CHtmlElement%2Cstring">attributes: proc setAction(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAction(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAction%2CHtmlElement%2Cstring_2">attributes: proc setAction(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAlign" href="#setAlign"><span>setAlign:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAlign(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAlign%2CHtmlElement%2Cstring">attributes: proc setAlign(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAlign(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAlign%2CHtmlElement%2Cstring_2">attributes: proc setAlign(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAlt" href="#setAlt"><span>setAlt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAlt(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAlt%2CHtmlElement%2Cstring">attributes: proc setAlt(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAlt(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAlt%2CHtmlElement%2Cstring_2">attributes: proc setAlt(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAsync" href="#setAsync"><span>setAsync:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAsync(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAsync%2CHtmlElement%2Cstring">attributes: proc setAsync(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAsync(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAsync%2CHtmlElement%2Cstring_2">attributes: proc setAsync(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setAttribute" href="#setAttribute"><span>setAttribute:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setAttribute(element: var CssElement; attribute, value: string)" href="websitegenerator/generator/css.html#setAttribute%2CCssElement%2Cstring%2Cstring">css: proc setAttribute(element: var CssElement; attribute, value: string)</a></li>
           <li><a class="reference external"
           data-doc-search-tag="css: proc setAttribute(element: CssElement; attribute, value: string): CssElement" href="websitegenerator/generator/css.html#setAttribute%2CCssElement%2Cstring%2Cstring_2">css: proc setAttribute(element: CssElement; attribute, value: string): CssElement</a></li>
           </ul></dd>
+<dt><a name="setAutocomplete" href="#setAutocomplete"><span>setAutocomplete:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAutocomplete(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAutocomplete%2CHtmlElement%2Cstring">attributes: proc setAutocomplete(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAutocomplete(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAutocomplete%2CHtmlElement%2Cstring_2">attributes: proc setAutocomplete(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAutofocus" href="#setAutofocus"><span>setAutofocus:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAutofocus(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAutofocus%2CHtmlElement%2Cstring">attributes: proc setAutofocus(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAutofocus(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAutofocus%2CHtmlElement%2Cstring_2">attributes: proc setAutofocus(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setAutoplay" href="#setAutoplay"><span>setAutoplay:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAutoplay(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setAutoplay%2CHtmlElement%2Cstring">attributes: proc setAutoplay(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setAutoplay(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setAutoplay%2CHtmlElement%2Cstring_2">attributes: proc setAutoplay(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setBackgroundColour" href="#setBackgroundColour"><span>setBackgroundColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setBackgroundColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setBackgroundColour%2CCssElement%2C">css: proc setBackgroundColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
+          </ul></dd>
+<dt><a name="setBgcolor" href="#setBgcolor"><span>setBgcolor:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setBgcolor(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setBgcolor%2CHtmlElement%2Cstring">attributes: proc setBgcolor(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setBgcolor(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setBgcolor%2CHtmlElement%2Cstring_2">attributes: proc setBgcolor(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setBorder" href="#setBorder"><span>setBorder:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setBorder(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setBorder%2CHtmlElement%2Cstring">attributes: proc setBorder(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setBorder(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setBorder%2CHtmlElement%2Cstring_2">attributes: proc setBorder(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="setBorderBlockColour" href="#setBorderBlockColour"><span>setBorderBlockColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9564,6 +9636,24 @@
 <li><a class="reference external"
           data-doc-search-tag="css: proc setCaretColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setCaretColour%2CCssElement%2C">css: proc setCaretColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
           </ul></dd>
+<dt><a name="setCharset" href="#setCharset"><span>setCharset:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCharset(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setCharset%2CHtmlElement%2Cstring">attributes: proc setCharset(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCharset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setCharset%2CHtmlElement%2Cstring_2">attributes: proc setCharset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setChecked" href="#setChecked"><span>setChecked:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setChecked(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setChecked%2CHtmlElement%2Cstring">attributes: proc setChecked(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setChecked(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setChecked%2CHtmlElement%2Cstring_2">attributes: proc setChecked(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setCite" href="#setCite"><span>setCite:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCite(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setCite%2CHtmlElement%2Cstring">attributes: proc setCite(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCite(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setCite%2CHtmlElement%2Cstring_2">attributes: proc setCite(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setClass" href="#setClass"><span>setClass:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setClass(element: var HtmlElement; class: CssElement)" href="websitegenerator/generator/css.html#setClass%2CHtmlElement%2CCssElement">css: proc setClass(element: var HtmlElement; class: CssElement)</a></li>
@@ -9574,17 +9664,125 @@
           <li><a class="reference external"
           data-doc-search-tag="css: proc setClass(element: HtmlElement; class: string): HtmlElement" href="websitegenerator/generator/css.html#setClass%2CHtmlElement%2Cstring_2">css: proc setClass(element: HtmlElement; class: string): HtmlElement</a></li>
           </ul></dd>
+<dt><a name="setColor" href="#setColor"><span>setColor:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setColor(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setColor%2CHtmlElement%2Cstring">attributes: proc setColor(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setColor(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setColor%2CHtmlElement%2Cstring_2">attributes: proc setColor(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setColour" href="#setColour"><span>setColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setColour%2CCssElement%2C">css: proc setColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
+          </ul></dd>
+<dt><a name="setCols" href="#setCols"><span>setCols:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCols(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setCols%2CHtmlElement%2Cstring">attributes: proc setCols(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCols(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setCols%2CHtmlElement%2Cstring_2">attributes: proc setCols(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setColspan" href="#setColspan"><span>setColspan:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setColspan(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setColspan%2CHtmlElement%2Cstring">attributes: proc setColspan(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setColspan(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setColspan%2CHtmlElement%2Cstring_2">attributes: proc setColspan(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="setColumnRuleColour" href="#setColumnRuleColour"><span>setColumnRuleColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setColumnRuleColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setColumnRuleColour%2CCssElement%2C">css: proc setColumnRuleColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
           </ul></dd>
+<dt><a name="setContent" href="#setContent"><span>setContent:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setContent(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setContent%2CHtmlElement%2Cstring">attributes: proc setContent(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setContent(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setContent%2CHtmlElement%2Cstring_2">attributes: proc setContent(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setContenteditable" href="#setContenteditable"><span>setContenteditable:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setContenteditable(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setContenteditable%2CHtmlElement%2Cstring">attributes: proc setContenteditable(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setContenteditable(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setContenteditable%2CHtmlElement%2Cstring_2">attributes: proc setContenteditable(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setControls" href="#setControls"><span>setControls:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setControls(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setControls%2CHtmlElement%2Cstring">attributes: proc setControls(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setControls(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setControls%2CHtmlElement%2Cstring_2">attributes: proc setControls(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setCoords" href="#setCoords"><span>setCoords:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCoords(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setCoords%2CHtmlElement%2Cstring">attributes: proc setCoords(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setCoords(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setCoords%2CHtmlElement%2Cstring_2">attributes: proc setCoords(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setData" href="#setData"><span>setData:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setData(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setData%2CHtmlElement%2Cstring">attributes: proc setData(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setData(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setData%2CHtmlElement%2Cstring_2">attributes: proc setData(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDatetime" href="#setDatetime"><span>setDatetime:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDatetime(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDatetime%2CHtmlElement%2Cstring">attributes: proc setDatetime(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDatetime(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDatetime%2CHtmlElement%2Cstring_2">attributes: proc setDatetime(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDefault" href="#setDefault"><span>setDefault:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDefault(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDefault%2CHtmlElement%2Cstring">attributes: proc setDefault(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDefault(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDefault%2CHtmlElement%2Cstring_2">attributes: proc setDefault(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDefer" href="#setDefer"><span>setDefer:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDefer(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDefer%2CHtmlElement%2Cstring">attributes: proc setDefer(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDefer(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDefer%2CHtmlElement%2Cstring_2">attributes: proc setDefer(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDir" href="#setDir"><span>setDir:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDir(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDir%2CHtmlElement%2Cstring">attributes: proc setDir(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDir(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDir%2CHtmlElement%2Cstring_2">attributes: proc setDir(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDirname" href="#setDirname"><span>setDirname:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDirname(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDirname%2CHtmlElement%2Cstring">attributes: proc setDirname(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDirname(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDirname%2CHtmlElement%2Cstring_2">attributes: proc setDirname(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDisabled" href="#setDisabled"><span>setDisabled:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDisabled(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDisabled%2CHtmlElement%2Cstring">attributes: proc setDisabled(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDisabled(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDisabled%2CHtmlElement%2Cstring_2">attributes: proc setDisabled(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setDisplay" href="#setDisplay"><span>setDisplay:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setDisplay(element: CssElement; value: string | CssDisplay): CssDisplay" href="websitegenerator/common/css.html#setDisplay%2CCssElement%2C">css: proc setDisplay(element: CssElement; value: string | CssDisplay): CssDisplay</a></li>
+          </ul></dd>
+<dt><a name="setDownload" href="#setDownload"><span>setDownload:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDownload(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDownload%2CHtmlElement%2Cstring">attributes: proc setDownload(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDownload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDownload%2CHtmlElement%2Cstring_2">attributes: proc setDownload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setDraggable" href="#setDraggable"><span>setDraggable:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDraggable(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setDraggable%2CHtmlElement%2Cstring">attributes: proc setDraggable(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setDraggable(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setDraggable%2CHtmlElement%2Cstring_2">attributes: proc setDraggable(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setEnctype" href="#setEnctype"><span>setEnctype:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setEnctype(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setEnctype%2CHtmlElement%2Cstring">attributes: proc setEnctype(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setEnctype(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setEnctype%2CHtmlElement%2Cstring_2">attributes: proc setEnctype(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setEnterkeyhint" href="#setEnterkeyhint"><span>setEnterkeyhint:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setEnterkeyhint(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setEnterkeyhint%2CHtmlElement%2Cstring">attributes: proc setEnterkeyhint(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setEnterkeyhint(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setEnterkeyhint%2CHtmlElement%2Cstring_2">attributes: proc setEnterkeyhint(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="setFont" href="#setFont"><span>setFont:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9614,17 +9812,621 @@
 <li><a class="reference external"
           data-doc-search-tag="css: proc setFontWeight(element: CssElement; weight: string | CssFontWeight): CssElement" href="websitegenerator/common/css.html#setFontWeight%2CCssElement%2C">css: proc setFontWeight(element: CssElement; weight: string | CssFontWeight): CssElement</a></li>
           </ul></dd>
+<dt><a name="setFor" href="#setFor"><span>setFor:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setFor(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setFor%2CHtmlElement%2Cstring">attributes: proc setFor(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setFor(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setFor%2CHtmlElement%2Cstring_2">attributes: proc setFor(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setForm" href="#setForm"><span>setForm:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setForm(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setForm%2CHtmlElement%2Cstring">attributes: proc setForm(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setForm(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setForm%2CHtmlElement%2Cstring_2">attributes: proc setForm(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setFormaction" href="#setFormaction"><span>setFormaction:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setFormaction(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setFormaction%2CHtmlElement%2Cstring">attributes: proc setFormaction(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setFormaction(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setFormaction%2CHtmlElement%2Cstring_2">attributes: proc setFormaction(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setHeaders" href="#setHeaders"><span>setHeaders:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHeaders(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHeaders%2CHtmlElement%2Cstring">attributes: proc setHeaders(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHeaders(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHeaders%2CHtmlElement%2Cstring_2">attributes: proc setHeaders(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setHeight" href="#setHeight"><span>setHeight:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHeight(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHeight%2CHtmlElement%2Cstring">attributes: proc setHeight(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHeight(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHeight%2CHtmlElement%2Cstring_2">attributes: proc setHeight(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="css: proc setHeight(element: CssElement; number: string | SomeNumber): CssElement" href="websitegenerator/common/css.html#setHeight%2CCssElement%2C">css: proc setHeight(element: CssElement; number: string | SomeNumber): CssElement</a></li>
+          </ul></dd>
+<dt><a name="setHidden" href="#setHidden"><span>setHidden:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHidden(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHidden%2CHtmlElement%2Cstring">attributes: proc setHidden(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHidden(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHidden%2CHtmlElement%2Cstring_2">attributes: proc setHidden(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setHigh" href="#setHigh"><span>setHigh:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHigh(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHigh%2CHtmlElement%2Cstring">attributes: proc setHigh(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHigh(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHigh%2CHtmlElement%2Cstring_2">attributes: proc setHigh(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setHref" href="#setHref"><span>setHref:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHref(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHref%2CHtmlElement%2Cstring">attributes: proc setHref(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHref(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHref%2CHtmlElement%2Cstring_2">attributes: proc setHref(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setHreflang" href="#setHreflang"><span>setHreflang:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHreflang(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHreflang%2CHtmlElement%2Cstring">attributes: proc setHreflang(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHreflang(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHreflang%2CHtmlElement%2Cstring_2">attributes: proc setHreflang(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setHttpEquiv" href="#setHttpEquiv"><span>setHttpEquiv:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHttpEquiv(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setHttpEquiv%2CHtmlElement%2Cstring">attributes: proc setHttpEquiv(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setHttpEquiv(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setHttpEquiv%2CHtmlElement%2Cstring_2">attributes: proc setHttpEquiv(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setId" href="#setId"><span>setId:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setId(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setId%2CHtmlElement%2Cstring">attributes: proc setId(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setId(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setId%2CHtmlElement%2Cstring_2">attributes: proc setId(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setInert" href="#setInert"><span>setInert:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setInert(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setInert%2CHtmlElement%2Cstring">attributes: proc setInert(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setInert(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setInert%2CHtmlElement%2Cstring_2">attributes: proc setInert(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setInputmode" href="#setInputmode"><span>setInputmode:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setInputmode(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setInputmode%2CHtmlElement%2Cstring">attributes: proc setInputmode(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setInputmode(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setInputmode%2CHtmlElement%2Cstring_2">attributes: proc setInputmode(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setIsmap" href="#setIsmap"><span>setIsmap:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setIsmap(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setIsmap%2CHtmlElement%2Cstring">attributes: proc setIsmap(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setIsmap(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setIsmap%2CHtmlElement%2Cstring_2">attributes: proc setIsmap(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setKind" href="#setKind"><span>setKind:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setKind(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setKind%2CHtmlElement%2Cstring">attributes: proc setKind(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setKind(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setKind%2CHtmlElement%2Cstring_2">attributes: proc setKind(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setLabel" href="#setLabel"><span>setLabel:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLabel(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setLabel%2CHtmlElement%2Cstring">attributes: proc setLabel(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLabel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setLabel%2CHtmlElement%2Cstring_2">attributes: proc setLabel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setLang" href="#setLang"><span>setLang:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLang(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setLang%2CHtmlElement%2Cstring">attributes: proc setLang(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLang(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setLang%2CHtmlElement%2Cstring_2">attributes: proc setLang(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setList" href="#setList"><span>setList:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setList(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setList%2CHtmlElement%2Cstring">attributes: proc setList(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setList(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setList%2CHtmlElement%2Cstring_2">attributes: proc setList(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setLoop" href="#setLoop"><span>setLoop:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLoop(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setLoop%2CHtmlElement%2Cstring">attributes: proc setLoop(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLoop(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setLoop%2CHtmlElement%2Cstring_2">attributes: proc setLoop(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setLow" href="#setLow"><span>setLow:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLow(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setLow%2CHtmlElement%2Cstring">attributes: proc setLow(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setLow(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setLow%2CHtmlElement%2Cstring_2">attributes: proc setLow(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setMax" href="#setMax"><span>setMax:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMax(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMax%2CHtmlElement%2Cstring">attributes: proc setMax(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMax(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMax%2CHtmlElement%2Cstring_2">attributes: proc setMax(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="setMaxHeight" href="#setMaxHeight"><span>setMaxHeight:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setMaxHeight(element: CssElement; number: string | SomeNumber): CssElement" href="websitegenerator/common/css.html#setMaxHeight%2CCssElement%2C">css: proc setMaxHeight(element: CssElement; number: string | SomeNumber): CssElement</a></li>
           </ul></dd>
+<dt><a name="setMaxlength" href="#setMaxlength"><span>setMaxlength:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMaxlength(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMaxlength%2CHtmlElement%2Cstring">attributes: proc setMaxlength(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMaxlength(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMaxlength%2CHtmlElement%2Cstring_2">attributes: proc setMaxlength(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setMaxWidth" href="#setMaxWidth"><span>setMaxWidth:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setMaxWidth(element: CssElement; number: string | SomeNumber): CssElement" href="websitegenerator/common/css.html#setMaxWidth%2CCssElement%2C">css: proc setMaxWidth(element: CssElement; number: string | SomeNumber): CssElement</a></li>
+          </ul></dd>
+<dt><a name="setMedia" href="#setMedia"><span>setMedia:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMedia(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMedia%2CHtmlElement%2Cstring">attributes: proc setMedia(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMedia(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMedia%2CHtmlElement%2Cstring_2">attributes: proc setMedia(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setMethod" href="#setMethod"><span>setMethod:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMethod(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMethod%2CHtmlElement%2Cstring">attributes: proc setMethod(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMethod(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMethod%2CHtmlElement%2Cstring_2">attributes: proc setMethod(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setMin" href="#setMin"><span>setMin:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMin(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMin%2CHtmlElement%2Cstring">attributes: proc setMin(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMin(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMin%2CHtmlElement%2Cstring_2">attributes: proc setMin(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setMultiple" href="#setMultiple"><span>setMultiple:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMultiple(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMultiple%2CHtmlElement%2Cstring">attributes: proc setMultiple(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMultiple(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMultiple%2CHtmlElement%2Cstring_2">attributes: proc setMultiple(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setMuted" href="#setMuted"><span>setMuted:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMuted(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setMuted%2CHtmlElement%2Cstring">attributes: proc setMuted(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setMuted(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setMuted%2CHtmlElement%2Cstring_2">attributes: proc setMuted(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setName" href="#setName"><span>setName:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setName(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setName%2CHtmlElement%2Cstring">attributes: proc setName(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setName(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setName%2CHtmlElement%2Cstring_2">attributes: proc setName(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setNovalidate" href="#setNovalidate"><span>setNovalidate:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setNovalidate(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setNovalidate%2CHtmlElement%2Cstring">attributes: proc setNovalidate(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setNovalidate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setNovalidate%2CHtmlElement%2Cstring_2">attributes: proc setNovalidate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnabort" href="#setOnabort"><span>setOnabort:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnabort(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnabort%2CHtmlElement%2Cstring">attributes: proc setOnabort(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnabort(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnabort%2CHtmlElement%2Cstring_2">attributes: proc setOnabort(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnafterprint" href="#setOnafterprint"><span>setOnafterprint:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnafterprint(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnafterprint%2CHtmlElement%2Cstring">attributes: proc setOnafterprint(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnafterprint(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnafterprint%2CHtmlElement%2Cstring_2">attributes: proc setOnafterprint(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnbeforeprint" href="#setOnbeforeprint"><span>setOnbeforeprint:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnbeforeprint(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnbeforeprint%2CHtmlElement%2Cstring">attributes: proc setOnbeforeprint(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnbeforeprint(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnbeforeprint%2CHtmlElement%2Cstring_2">attributes: proc setOnbeforeprint(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnbeforeunload" href="#setOnbeforeunload"><span>setOnbeforeunload:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnbeforeunload(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnbeforeunload%2CHtmlElement%2Cstring">attributes: proc setOnbeforeunload(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnbeforeunload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnbeforeunload%2CHtmlElement%2Cstring_2">attributes: proc setOnbeforeunload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnblur" href="#setOnblur"><span>setOnblur:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnblur(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnblur%2CHtmlElement%2Cstring">attributes: proc setOnblur(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnblur(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnblur%2CHtmlElement%2Cstring_2">attributes: proc setOnblur(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOncanplay" href="#setOncanplay"><span>setOncanplay:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncanplay(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOncanplay%2CHtmlElement%2Cstring">attributes: proc setOncanplay(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncanplay(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOncanplay%2CHtmlElement%2Cstring_2">attributes: proc setOncanplay(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOncanplaythrough" href="#setOncanplaythrough"><span>setOncanplaythrough:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncanplaythrough(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOncanplaythrough%2CHtmlElement%2Cstring">attributes: proc setOncanplaythrough(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncanplaythrough(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOncanplaythrough%2CHtmlElement%2Cstring_2">attributes: proc setOncanplaythrough(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnchange" href="#setOnchange"><span>setOnchange:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnchange(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnchange%2CHtmlElement%2Cstring">attributes: proc setOnchange(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnchange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnchange%2CHtmlElement%2Cstring_2">attributes: proc setOnchange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnclick" href="#setOnclick"><span>setOnclick:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnclick(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnclick%2CHtmlElement%2Cstring">attributes: proc setOnclick(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnclick(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnclick%2CHtmlElement%2Cstring_2">attributes: proc setOnclick(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOncontextmenu" href="#setOncontextmenu"><span>setOncontextmenu:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncontextmenu(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOncontextmenu%2CHtmlElement%2Cstring">attributes: proc setOncontextmenu(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncontextmenu(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOncontextmenu%2CHtmlElement%2Cstring_2">attributes: proc setOncontextmenu(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOncopy" href="#setOncopy"><span>setOncopy:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncopy(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOncopy%2CHtmlElement%2Cstring">attributes: proc setOncopy(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncopy(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOncopy%2CHtmlElement%2Cstring_2">attributes: proc setOncopy(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOncuechange" href="#setOncuechange"><span>setOncuechange:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncuechange(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOncuechange%2CHtmlElement%2Cstring">attributes: proc setOncuechange(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncuechange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOncuechange%2CHtmlElement%2Cstring_2">attributes: proc setOncuechange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOncut" href="#setOncut"><span>setOncut:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncut(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOncut%2CHtmlElement%2Cstring">attributes: proc setOncut(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOncut(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOncut%2CHtmlElement%2Cstring_2">attributes: proc setOncut(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndblclick" href="#setOndblclick"><span>setOndblclick:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndblclick(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndblclick%2CHtmlElement%2Cstring">attributes: proc setOndblclick(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndblclick(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndblclick%2CHtmlElement%2Cstring_2">attributes: proc setOndblclick(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndrag" href="#setOndrag"><span>setOndrag:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndrag(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndrag%2CHtmlElement%2Cstring">attributes: proc setOndrag(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndrag(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndrag%2CHtmlElement%2Cstring_2">attributes: proc setOndrag(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndragend" href="#setOndragend"><span>setOndragend:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragend(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndragend%2CHtmlElement%2Cstring">attributes: proc setOndragend(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragend(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndragend%2CHtmlElement%2Cstring_2">attributes: proc setOndragend(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndragenter" href="#setOndragenter"><span>setOndragenter:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragenter(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndragenter%2CHtmlElement%2Cstring">attributes: proc setOndragenter(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragenter(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndragenter%2CHtmlElement%2Cstring_2">attributes: proc setOndragenter(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndragleave" href="#setOndragleave"><span>setOndragleave:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragleave(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndragleave%2CHtmlElement%2Cstring">attributes: proc setOndragleave(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragleave(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndragleave%2CHtmlElement%2Cstring_2">attributes: proc setOndragleave(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndragover" href="#setOndragover"><span>setOndragover:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragover(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndragover%2CHtmlElement%2Cstring">attributes: proc setOndragover(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragover(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndragover%2CHtmlElement%2Cstring_2">attributes: proc setOndragover(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndragstart" href="#setOndragstart"><span>setOndragstart:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragstart(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndragstart%2CHtmlElement%2Cstring">attributes: proc setOndragstart(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndragstart(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndragstart%2CHtmlElement%2Cstring_2">attributes: proc setOndragstart(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndrop" href="#setOndrop"><span>setOndrop:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndrop(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndrop%2CHtmlElement%2Cstring">attributes: proc setOndrop(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndrop(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndrop%2CHtmlElement%2Cstring_2">attributes: proc setOndrop(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOndurationchange" href="#setOndurationchange"><span>setOndurationchange:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndurationchange(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOndurationchange%2CHtmlElement%2Cstring">attributes: proc setOndurationchange(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOndurationchange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOndurationchange%2CHtmlElement%2Cstring_2">attributes: proc setOndurationchange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnemptied" href="#setOnemptied"><span>setOnemptied:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnemptied(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnemptied%2CHtmlElement%2Cstring">attributes: proc setOnemptied(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnemptied(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnemptied%2CHtmlElement%2Cstring_2">attributes: proc setOnemptied(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnended" href="#setOnended"><span>setOnended:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnended(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnended%2CHtmlElement%2Cstring">attributes: proc setOnended(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnended(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnended%2CHtmlElement%2Cstring_2">attributes: proc setOnended(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnerror" href="#setOnerror"><span>setOnerror:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnerror(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnerror%2CHtmlElement%2Cstring">attributes: proc setOnerror(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnerror(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnerror%2CHtmlElement%2Cstring_2">attributes: proc setOnerror(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnfocus" href="#setOnfocus"><span>setOnfocus:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnfocus(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnfocus%2CHtmlElement%2Cstring">attributes: proc setOnfocus(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnfocus(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnfocus%2CHtmlElement%2Cstring_2">attributes: proc setOnfocus(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnhashchange" href="#setOnhashchange"><span>setOnhashchange:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnhashchange(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnhashchange%2CHtmlElement%2Cstring">attributes: proc setOnhashchange(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnhashchange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnhashchange%2CHtmlElement%2Cstring_2">attributes: proc setOnhashchange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOninput" href="#setOninput"><span>setOninput:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOninput(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOninput%2CHtmlElement%2Cstring">attributes: proc setOninput(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOninput(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOninput%2CHtmlElement%2Cstring_2">attributes: proc setOninput(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOninvalid" href="#setOninvalid"><span>setOninvalid:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOninvalid(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOninvalid%2CHtmlElement%2Cstring">attributes: proc setOninvalid(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOninvalid(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOninvalid%2CHtmlElement%2Cstring_2">attributes: proc setOninvalid(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnkeydown" href="#setOnkeydown"><span>setOnkeydown:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnkeydown(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnkeydown%2CHtmlElement%2Cstring">attributes: proc setOnkeydown(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnkeydown(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnkeydown%2CHtmlElement%2Cstring_2">attributes: proc setOnkeydown(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnkeypress" href="#setOnkeypress"><span>setOnkeypress:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnkeypress(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnkeypress%2CHtmlElement%2Cstring">attributes: proc setOnkeypress(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnkeypress(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnkeypress%2CHtmlElement%2Cstring_2">attributes: proc setOnkeypress(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnkeyup" href="#setOnkeyup"><span>setOnkeyup:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnkeyup(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnkeyup%2CHtmlElement%2Cstring">attributes: proc setOnkeyup(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnkeyup(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnkeyup%2CHtmlElement%2Cstring_2">attributes: proc setOnkeyup(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnload" href="#setOnload"><span>setOnload:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnload(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnload%2CHtmlElement%2Cstring">attributes: proc setOnload(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnload%2CHtmlElement%2Cstring_2">attributes: proc setOnload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnloadeddata" href="#setOnloadeddata"><span>setOnloadeddata:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnloadeddata(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnloadeddata%2CHtmlElement%2Cstring">attributes: proc setOnloadeddata(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnloadeddata(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnloadeddata%2CHtmlElement%2Cstring_2">attributes: proc setOnloadeddata(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnloadedmetadata" href="#setOnloadedmetadata"><span>setOnloadedmetadata:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnloadedmetadata(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnloadedmetadata%2CHtmlElement%2Cstring">attributes: proc setOnloadedmetadata(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnloadedmetadata(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnloadedmetadata%2CHtmlElement%2Cstring_2">attributes: proc setOnloadedmetadata(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnloadstart" href="#setOnloadstart"><span>setOnloadstart:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnloadstart(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnloadstart%2CHtmlElement%2Cstring">attributes: proc setOnloadstart(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnloadstart(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnloadstart%2CHtmlElement%2Cstring_2">attributes: proc setOnloadstart(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnmousedown" href="#setOnmousedown"><span>setOnmousedown:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmousedown(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnmousedown%2CHtmlElement%2Cstring">attributes: proc setOnmousedown(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmousedown(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnmousedown%2CHtmlElement%2Cstring_2">attributes: proc setOnmousedown(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnmousemove" href="#setOnmousemove"><span>setOnmousemove:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmousemove(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnmousemove%2CHtmlElement%2Cstring">attributes: proc setOnmousemove(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmousemove(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnmousemove%2CHtmlElement%2Cstring_2">attributes: proc setOnmousemove(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnmouseout" href="#setOnmouseout"><span>setOnmouseout:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmouseout(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnmouseout%2CHtmlElement%2Cstring">attributes: proc setOnmouseout(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmouseout(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnmouseout%2CHtmlElement%2Cstring_2">attributes: proc setOnmouseout(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnmouseover" href="#setOnmouseover"><span>setOnmouseover:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmouseover(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnmouseover%2CHtmlElement%2Cstring">attributes: proc setOnmouseover(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmouseover(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnmouseover%2CHtmlElement%2Cstring_2">attributes: proc setOnmouseover(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnmouseup" href="#setOnmouseup"><span>setOnmouseup:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmouseup(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnmouseup%2CHtmlElement%2Cstring">attributes: proc setOnmouseup(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmouseup(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnmouseup%2CHtmlElement%2Cstring_2">attributes: proc setOnmouseup(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnmousewheel" href="#setOnmousewheel"><span>setOnmousewheel:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmousewheel(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnmousewheel%2CHtmlElement%2Cstring">attributes: proc setOnmousewheel(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnmousewheel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnmousewheel%2CHtmlElement%2Cstring_2">attributes: proc setOnmousewheel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnoffline" href="#setOnoffline"><span>setOnoffline:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnoffline(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnoffline%2CHtmlElement%2Cstring">attributes: proc setOnoffline(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnoffline(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnoffline%2CHtmlElement%2Cstring_2">attributes: proc setOnoffline(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnonline" href="#setOnonline"><span>setOnonline:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnonline(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnonline%2CHtmlElement%2Cstring">attributes: proc setOnonline(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnonline(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnonline%2CHtmlElement%2Cstring_2">attributes: proc setOnonline(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnpagehide" href="#setOnpagehide"><span>setOnpagehide:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpagehide(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnpagehide%2CHtmlElement%2Cstring">attributes: proc setOnpagehide(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpagehide(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnpagehide%2CHtmlElement%2Cstring_2">attributes: proc setOnpagehide(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnpageshow" href="#setOnpageshow"><span>setOnpageshow:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpageshow(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnpageshow%2CHtmlElement%2Cstring">attributes: proc setOnpageshow(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpageshow(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnpageshow%2CHtmlElement%2Cstring_2">attributes: proc setOnpageshow(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnpaste" href="#setOnpaste"><span>setOnpaste:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpaste(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnpaste%2CHtmlElement%2Cstring">attributes: proc setOnpaste(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpaste(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnpaste%2CHtmlElement%2Cstring_2">attributes: proc setOnpaste(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnpause" href="#setOnpause"><span>setOnpause:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpause(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnpause%2CHtmlElement%2Cstring">attributes: proc setOnpause(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpause(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnpause%2CHtmlElement%2Cstring_2">attributes: proc setOnpause(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnplay" href="#setOnplay"><span>setOnplay:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnplay(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnplay%2CHtmlElement%2Cstring">attributes: proc setOnplay(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnplay(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnplay%2CHtmlElement%2Cstring_2">attributes: proc setOnplay(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnplaying" href="#setOnplaying"><span>setOnplaying:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnplaying(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnplaying%2CHtmlElement%2Cstring">attributes: proc setOnplaying(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnplaying(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnplaying%2CHtmlElement%2Cstring_2">attributes: proc setOnplaying(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnpopstate" href="#setOnpopstate"><span>setOnpopstate:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpopstate(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnpopstate%2CHtmlElement%2Cstring">attributes: proc setOnpopstate(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnpopstate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnpopstate%2CHtmlElement%2Cstring_2">attributes: proc setOnpopstate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnprogress" href="#setOnprogress"><span>setOnprogress:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnprogress(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnprogress%2CHtmlElement%2Cstring">attributes: proc setOnprogress(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnprogress(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnprogress%2CHtmlElement%2Cstring_2">attributes: proc setOnprogress(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnratechange" href="#setOnratechange"><span>setOnratechange:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnratechange(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnratechange%2CHtmlElement%2Cstring">attributes: proc setOnratechange(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnratechange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnratechange%2CHtmlElement%2Cstring_2">attributes: proc setOnratechange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnreset" href="#setOnreset"><span>setOnreset:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnreset(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnreset%2CHtmlElement%2Cstring">attributes: proc setOnreset(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnreset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnreset%2CHtmlElement%2Cstring_2">attributes: proc setOnreset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnresize" href="#setOnresize"><span>setOnresize:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnresize(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnresize%2CHtmlElement%2Cstring">attributes: proc setOnresize(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnresize(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnresize%2CHtmlElement%2Cstring_2">attributes: proc setOnresize(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnscroll" href="#setOnscroll"><span>setOnscroll:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnscroll(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnscroll%2CHtmlElement%2Cstring">attributes: proc setOnscroll(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnscroll(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnscroll%2CHtmlElement%2Cstring_2">attributes: proc setOnscroll(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnsearch" href="#setOnsearch"><span>setOnsearch:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnsearch(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnsearch%2CHtmlElement%2Cstring">attributes: proc setOnsearch(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnsearch(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnsearch%2CHtmlElement%2Cstring_2">attributes: proc setOnsearch(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnseeked" href="#setOnseeked"><span>setOnseeked:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnseeked(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnseeked%2CHtmlElement%2Cstring">attributes: proc setOnseeked(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnseeked(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnseeked%2CHtmlElement%2Cstring_2">attributes: proc setOnseeked(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnseeking" href="#setOnseeking"><span>setOnseeking:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnseeking(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnseeking%2CHtmlElement%2Cstring">attributes: proc setOnseeking(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnseeking(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnseeking%2CHtmlElement%2Cstring_2">attributes: proc setOnseeking(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnselect" href="#setOnselect"><span>setOnselect:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnselect(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnselect%2CHtmlElement%2Cstring">attributes: proc setOnselect(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnselect(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnselect%2CHtmlElement%2Cstring_2">attributes: proc setOnselect(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnstalled" href="#setOnstalled"><span>setOnstalled:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnstalled(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnstalled%2CHtmlElement%2Cstring">attributes: proc setOnstalled(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnstalled(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnstalled%2CHtmlElement%2Cstring_2">attributes: proc setOnstalled(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnstorage" href="#setOnstorage"><span>setOnstorage:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnstorage(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnstorage%2CHtmlElement%2Cstring">attributes: proc setOnstorage(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnstorage(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnstorage%2CHtmlElement%2Cstring_2">attributes: proc setOnstorage(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnsubmit" href="#setOnsubmit"><span>setOnsubmit:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnsubmit(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnsubmit%2CHtmlElement%2Cstring">attributes: proc setOnsubmit(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnsubmit(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnsubmit%2CHtmlElement%2Cstring_2">attributes: proc setOnsubmit(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnsuspend" href="#setOnsuspend"><span>setOnsuspend:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnsuspend(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnsuspend%2CHtmlElement%2Cstring">attributes: proc setOnsuspend(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnsuspend(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnsuspend%2CHtmlElement%2Cstring_2">attributes: proc setOnsuspend(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOntimeupdate" href="#setOntimeupdate"><span>setOntimeupdate:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOntimeupdate(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOntimeupdate%2CHtmlElement%2Cstring">attributes: proc setOntimeupdate(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOntimeupdate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOntimeupdate%2CHtmlElement%2Cstring_2">attributes: proc setOntimeupdate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOntoggle" href="#setOntoggle"><span>setOntoggle:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOntoggle(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOntoggle%2CHtmlElement%2Cstring">attributes: proc setOntoggle(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOntoggle(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOntoggle%2CHtmlElement%2Cstring_2">attributes: proc setOntoggle(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnunload" href="#setOnunload"><span>setOnunload:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnunload(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnunload%2CHtmlElement%2Cstring">attributes: proc setOnunload(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnunload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnunload%2CHtmlElement%2Cstring_2">attributes: proc setOnunload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnvolumechange" href="#setOnvolumechange"><span>setOnvolumechange:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnvolumechange(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnvolumechange%2CHtmlElement%2Cstring">attributes: proc setOnvolumechange(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnvolumechange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnvolumechange%2CHtmlElement%2Cstring_2">attributes: proc setOnvolumechange(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnwaiting" href="#setOnwaiting"><span>setOnwaiting:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnwaiting(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnwaiting%2CHtmlElement%2Cstring">attributes: proc setOnwaiting(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnwaiting(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnwaiting%2CHtmlElement%2Cstring_2">attributes: proc setOnwaiting(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOnwheel" href="#setOnwheel"><span>setOnwheel:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnwheel(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOnwheel%2CHtmlElement%2Cstring">attributes: proc setOnwheel(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOnwheel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOnwheel%2CHtmlElement%2Cstring_2">attributes: proc setOnwheel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOpen" href="#setOpen"><span>setOpen:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOpen(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOpen%2CHtmlElement%2Cstring">attributes: proc setOpen(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOpen(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOpen%2CHtmlElement%2Cstring_2">attributes: proc setOpen(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setOptimum" href="#setOptimum"><span>setOptimum:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOptimum(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setOptimum%2CHtmlElement%2Cstring">attributes: proc setOptimum(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setOptimum(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setOptimum%2CHtmlElement%2Cstring_2">attributes: proc setOptimum(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="setOutlineColour" href="#setOutlineColour"><span>setOutlineColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9634,13 +10436,191 @@
 <li><a class="reference external"
           data-doc-search-tag="css: proc setPadding(element: CssElement; value: string | SomeInteger): CssDisplay" href="websitegenerator/common/css.html#setPadding%2CCssElement%2C">css: proc setPadding(element: CssElement; value: string | SomeInteger): CssDisplay</a></li>
           </ul></dd>
+<dt><a name="setPattern" href="#setPattern"><span>setPattern:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPattern(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPattern%2CHtmlElement%2Cstring">attributes: proc setPattern(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPattern(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPattern%2CHtmlElement%2Cstring_2">attributes: proc setPattern(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setPlaceholder" href="#setPlaceholder"><span>setPlaceholder:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPlaceholder(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPlaceholder%2CHtmlElement%2Cstring">attributes: proc setPlaceholder(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPlaceholder(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPlaceholder%2CHtmlElement%2Cstring_2">attributes: proc setPlaceholder(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setPopover" href="#setPopover"><span>setPopover:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPopover(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPopover%2CHtmlElement%2Cstring">attributes: proc setPopover(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPopover(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPopover%2CHtmlElement%2Cstring_2">attributes: proc setPopover(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setPopovertarget" href="#setPopovertarget"><span>setPopovertarget:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPopovertarget(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPopovertarget%2CHtmlElement%2Cstring">attributes: proc setPopovertarget(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPopovertarget(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPopovertarget%2CHtmlElement%2Cstring_2">attributes: proc setPopovertarget(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setPopovertargetaction" href="#setPopovertargetaction"><span>setPopovertargetaction:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPopovertargetaction(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPopovertargetaction%2CHtmlElement%2Cstring">attributes: proc setPopovertargetaction(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPopovertargetaction(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPopovertargetaction%2CHtmlElement%2Cstring_2">attributes: proc setPopovertargetaction(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setPoster" href="#setPoster"><span>setPoster:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPoster(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPoster%2CHtmlElement%2Cstring">attributes: proc setPoster(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPoster(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPoster%2CHtmlElement%2Cstring_2">attributes: proc setPoster(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setPreload" href="#setPreload"><span>setPreload:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPreload(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setPreload%2CHtmlElement%2Cstring">attributes: proc setPreload(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setPreload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setPreload%2CHtmlElement%2Cstring_2">attributes: proc setPreload(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setReadonly" href="#setReadonly"><span>setReadonly:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setReadonly(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setReadonly%2CHtmlElement%2Cstring">attributes: proc setReadonly(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setReadonly(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setReadonly%2CHtmlElement%2Cstring_2">attributes: proc setReadonly(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setRel" href="#setRel"><span>setRel:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRel(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setRel%2CHtmlElement%2Cstring">attributes: proc setRel(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setRel%2CHtmlElement%2Cstring_2">attributes: proc setRel(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setRequired" href="#setRequired"><span>setRequired:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRequired(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setRequired%2CHtmlElement%2Cstring">attributes: proc setRequired(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRequired(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setRequired%2CHtmlElement%2Cstring_2">attributes: proc setRequired(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setReversed" href="#setReversed"><span>setReversed:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setReversed(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setReversed%2CHtmlElement%2Cstring">attributes: proc setReversed(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setReversed(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setReversed%2CHtmlElement%2Cstring_2">attributes: proc setReversed(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setRows" href="#setRows"><span>setRows:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRows(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setRows%2CHtmlElement%2Cstring">attributes: proc setRows(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRows(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setRows%2CHtmlElement%2Cstring_2">attributes: proc setRows(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setRowspan" href="#setRowspan"><span>setRowspan:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRowspan(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setRowspan%2CHtmlElement%2Cstring">attributes: proc setRowspan(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setRowspan(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setRowspan%2CHtmlElement%2Cstring_2">attributes: proc setRowspan(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSandbox" href="#setSandbox"><span>setSandbox:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSandbox(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSandbox%2CHtmlElement%2Cstring">attributes: proc setSandbox(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSandbox(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSandbox%2CHtmlElement%2Cstring_2">attributes: proc setSandbox(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setScope" href="#setScope"><span>setScope:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setScope(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setScope%2CHtmlElement%2Cstring">attributes: proc setScope(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setScope(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setScope%2CHtmlElement%2Cstring_2">attributes: proc setScope(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setScrollbarColour" href="#setScrollbarColour"><span>setScrollbarColour:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setScrollbarColour%2CCssElement%2C">css: proc setScrollbarColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
           </ul></dd>
+<dt><a name="setSelected" href="#setSelected"><span>setSelected:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSelected(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSelected%2CHtmlElement%2Cstring">attributes: proc setSelected(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSelected(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSelected%2CHtmlElement%2Cstring_2">attributes: proc setSelected(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setShape" href="#setShape"><span>setShape:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setShape(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setShape%2CHtmlElement%2Cstring">attributes: proc setShape(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setShape(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setShape%2CHtmlElement%2Cstring_2">attributes: proc setShape(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSize" href="#setSize"><span>setSize:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSize(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSize%2CHtmlElement%2Cstring">attributes: proc setSize(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSize(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSize%2CHtmlElement%2Cstring_2">attributes: proc setSize(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSizes" href="#setSizes"><span>setSizes:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSizes(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSizes%2CHtmlElement%2Cstring">attributes: proc setSizes(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSizes(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSizes%2CHtmlElement%2Cstring_2">attributes: proc setSizes(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSpan" href="#setSpan"><span>setSpan:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSpan(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSpan%2CHtmlElement%2Cstring">attributes: proc setSpan(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSpan(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSpan%2CHtmlElement%2Cstring_2">attributes: proc setSpan(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSpellcheck" href="#setSpellcheck"><span>setSpellcheck:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSpellcheck(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSpellcheck%2CHtmlElement%2Cstring">attributes: proc setSpellcheck(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSpellcheck(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSpellcheck%2CHtmlElement%2Cstring_2">attributes: proc setSpellcheck(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSrc" href="#setSrc"><span>setSrc:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrc(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSrc%2CHtmlElement%2Cstring">attributes: proc setSrc(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrc(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSrc%2CHtmlElement%2Cstring_2">attributes: proc setSrc(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSrcdoc" href="#setSrcdoc"><span>setSrcdoc:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrcdoc(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSrcdoc%2CHtmlElement%2Cstring">attributes: proc setSrcdoc(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrcdoc(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSrcdoc%2CHtmlElement%2Cstring_2">attributes: proc setSrcdoc(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSrclang" href="#setSrclang"><span>setSrclang:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrclang(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSrclang%2CHtmlElement%2Cstring">attributes: proc setSrclang(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrclang(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSrclang%2CHtmlElement%2Cstring_2">attributes: proc setSrclang(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setSrcset" href="#setSrcset"><span>setSrcset:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrcset(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setSrcset%2CHtmlElement%2Cstring">attributes: proc setSrcset(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setSrcset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setSrcset%2CHtmlElement%2Cstring_2">attributes: proc setSrcset(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setStart" href="#setStart"><span>setStart:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setStart(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setStart%2CHtmlElement%2Cstring">attributes: proc setStart(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setStart(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setStart%2CHtmlElement%2Cstring_2">attributes: proc setStart(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setStep" href="#setStep"><span>setStep:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setStep(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setStep%2CHtmlElement%2Cstring">attributes: proc setStep(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setStep(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setStep%2CHtmlElement%2Cstring_2">attributes: proc setStep(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setStyle" href="#setStyle"><span>setStyle:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setStyle(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setStyle%2CHtmlElement%2Cstring">attributes: proc setStyle(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setStyle(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setStyle%2CHtmlElement%2Cstring_2">attributes: proc setStyle(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="css: proc setStyle(document: var HtmlDocument; stylesheet: CssStyleSheet)" href="websitegenerator/generator/css.html#setStyle%2CHtmlDocument%2CCssStyleSheet">css: proc setStyle(document: var HtmlDocument; stylesheet: CssStyleSheet)</a></li>
+          </ul></dd>
+<dt><a name="setTabindex" href="#setTabindex"><span>setTabindex:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTabindex(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setTabindex%2CHtmlElement%2Cstring">attributes: proc setTabindex(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTabindex(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setTabindex%2CHtmlElement%2Cstring_2">attributes: proc setTabindex(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setTarget" href="#setTarget"><span>setTarget:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTarget(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setTarget%2CHtmlElement%2Cstring">attributes: proc setTarget(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTarget(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setTarget%2CHtmlElement%2Cstring_2">attributes: proc setTarget(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="setTargetDirectory" href="#setTargetDirectory"><span>setTargetDirectory:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9650,13 +10630,53 @@
 <li><a class="reference external"
           data-doc-search-tag="css: proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement" href="websitegenerator/common/css.html#setTextDecorationColour%2CCssElement%2C">css: proc setTextDecorationColour(element: CssElement; colour: string | CssColour): CssElement</a></li>
           </ul></dd>
+<dt><a name="setTitle" href="#setTitle"><span>setTitle:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTitle(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setTitle%2CHtmlElement%2Cstring">attributes: proc setTitle(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTitle(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setTitle%2CHtmlElement%2Cstring_2">attributes: proc setTitle(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setTranslate" href="#setTranslate"><span>setTranslate:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTranslate(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setTranslate%2CHtmlElement%2Cstring">attributes: proc setTranslate(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setTranslate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setTranslate%2CHtmlElement%2Cstring_2">attributes: proc setTranslate(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setType" href="#setType"><span>setType:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setType(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setType%2CHtmlElement%2Cstring">attributes: proc setType(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setType(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setType%2CHtmlElement%2Cstring_2">attributes: proc setType(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setUsemap" href="#setUsemap"><span>setUsemap:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setUsemap(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setUsemap%2CHtmlElement%2Cstring">attributes: proc setUsemap(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setUsemap(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setUsemap%2CHtmlElement%2Cstring_2">attributes: proc setUsemap(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="setValue" href="#setValue"><span>setValue:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setValue(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setValue%2CHtmlElement%2Cstring">attributes: proc setValue(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setValue(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setValue%2CHtmlElement%2Cstring_2">attributes: proc setValue(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          </ul></dd>
 <dt><a name="setVisibility" href="#setVisibility"><span>setVisibility:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc setVisibility(element: CssElement; value: string | CssVisibility): CssDisplay" href="websitegenerator/common/css.html#setVisibility%2CCssElement%2C">css: proc setVisibility(element: CssElement; value: string | CssVisibility): CssDisplay</a></li>
           </ul></dd>
 <dt><a name="setWidth" href="#setWidth"><span>setWidth:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setWidth(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setWidth%2CHtmlElement%2Cstring">attributes: proc setWidth(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setWidth(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setWidth%2CHtmlElement%2Cstring_2">attributes: proc setWidth(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="css: proc setWidth(element: CssElement; number: string | SomeNumber): CssElement" href="websitegenerator/common/css.html#setWidth%2CCssElement%2C">css: proc setWidth(element: CssElement; number: string | SomeNumber): CssElement</a></li>
+          </ul></dd>
+<dt><a name="setWrap" href="#setWrap"><span>setWrap:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="attributes: proc setWrap(element: var HtmlElement; value: string = &quot;&quot;)" href="websitegenerator/attributes.html#setWrap%2CHtmlElement%2Cstring">attributes: proc setWrap(element: var HtmlElement; value: string = &quot;&quot;)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="attributes: proc setWrap(element: HtmlElement; value: string = &quot;&quot;): HtmlElement" href="websitegenerator/attributes.html#setWrap%2CHtmlElement%2Cstring_2">attributes: proc setWrap(element: HtmlElement; value: string = &quot;&quot;): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="Sienna" href="#Sienna"><span>Sienna:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10802,7 +11822,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-02 09:11:52 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-17 07:17:20 UTC</small>
       </div>
     </div>
   </div>
