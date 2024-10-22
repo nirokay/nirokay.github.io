@@ -631,6 +631,10 @@
   <li><a class="reference" href="#cssAtProperty%2Cvarargs%5Bstring%5D" title="cssAtProperty(values: varargs[string]): CssAttribute">cssAtProperty(values: varargs[string]): CssAttribute</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">cssFloat
+  <li><a class="reference" href="#cssFloat%2Cvarargs%5Bstring%5D" title="cssFloat(values: varargs[string]): CssAttribute">cssFloat(values: varargs[string]): CssAttribute</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">cursor
   <li><a class="reference" href="#cursor%2Cvarargs%5Bstring%5D" title="cursor(values: varargs[string]): CssAttribute">cursor(values: varargs[string]): CssAttribute</a></li>
 
@@ -677,10 +681,6 @@
 </ul>
 <ul class="simple nested-toc-section">flexWrap
   <li><a class="reference" href="#flexWrap%2Cvarargs%5Bstring%5D" title="flexWrap(values: varargs[string]): CssAttribute">flexWrap(values: varargs[string]): CssAttribute</a></li>
-
-</ul>
-<ul class="simple nested-toc-section">float
-  <li><a class="reference" href="#float%2Cvarargs%5Bstring%5D" title="float(values: varargs[string]): CssAttribute">float(values: varargs[string]): CssAttribute</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">font
@@ -2111,6 +2111,11 @@
 <li><a class="reference" href="#setCssAtProperty%2CCssElement%2Cvarargs%5Bstring%5D" title="setCssAtProperty(element: var CssElement; values: varargs[string])">setCssAtProperty(element: var CssElement; values: varargs[string])</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">setCssFloat
+  <li><a class="reference" href="#setCssFloat%2CCssElement%2Cvarargs%5Bstring%5D_2" title="setCssFloat(element: CssElement; values: varargs[string]): CssElement">setCssFloat(element: CssElement; values: varargs[string]): CssElement</a></li>
+<li><a class="reference" href="#setCssFloat%2CCssElement%2Cvarargs%5Bstring%5D" title="setCssFloat(element: var CssElement; values: varargs[string])">setCssFloat(element: var CssElement; values: varargs[string])</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">setCursor
   <li><a class="reference" href="#setCursor%2CCssElement%2Cvarargs%5Bstring%5D_2" title="setCursor(element: CssElement; values: varargs[string]): CssElement">setCursor(element: CssElement; values: varargs[string]): CssElement</a></li>
 <li><a class="reference" href="#setCursor%2CCssElement%2Cvarargs%5Bstring%5D" title="setCursor(element: var CssElement; values: varargs[string])">setCursor(element: var CssElement; values: varargs[string])</a></li>
@@ -2169,11 +2174,6 @@
 <ul class="simple nested-toc-section">setFlexWrap
   <li><a class="reference" href="#setFlexWrap%2CCssElement%2Cvarargs%5Bstring%5D_2" title="setFlexWrap(element: CssElement; values: varargs[string]): CssElement">setFlexWrap(element: CssElement; values: varargs[string]): CssElement</a></li>
 <li><a class="reference" href="#setFlexWrap%2CCssElement%2Cvarargs%5Bstring%5D" title="setFlexWrap(element: var CssElement; values: varargs[string])">setFlexWrap(element: var CssElement; values: varargs[string])</a></li>
-
-</ul>
-<ul class="simple nested-toc-section">setFloat
-  <li><a class="reference" href="#setFloat%2CCssElement%2Cvarargs%5Bstring%5D_2" title="setFloat(element: CssElement; values: varargs[string]): CssElement">setFloat(element: CssElement; values: varargs[string]): CssElement</a></li>
-<li><a class="reference" href="#setFloat%2CCssElement%2Cvarargs%5Bstring%5D" title="setFloat(element: var CssElement; values: varargs[string])">setFloat(element: var CssElement; values: varargs[string])</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">setFont
@@ -5529,6 +5529,20 @@
 </div>
 
 </div>
+<div id="cssFloat-procs-all">
+  <div id="cssFloat,varargs[string]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#cssFloat%2Cvarargs%5Bstring%5D"><span class="Identifier">cssFloat</span></a><span class="Other">(</span><span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    <p>Constructs the <tt class="docutils literal"><span class="pre"><span class="Identifier">float</span></span></tt> CSS property</p>
+<p>Specifies whether an element should float to the left, right, or not at all</p>
+
+    
+  </dd>
+</div>
+
+</div>
 <div id="cursor-procs-all">
   <div id="cursor,varargs[string]">
   <dt><pre><span class="Keyword">proc</span> <a href="#cursor%2Cvarargs%5Bstring%5D"><span class="Identifier">cursor</span></a><span class="Other">(</span><span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
@@ -5691,20 +5705,6 @@
     
     <p>Constructs the <tt class="docutils literal"><span class="pre"><span class="Identifier">flex</span><span class="Operator">-</span><span class="Identifier">wrap</span></span></tt> CSS property</p>
 <p>Specifies whether the flexible items should wrap or not</p>
-
-    
-  </dd>
-</div>
-
-</div>
-<div id="float-procs-all">
-  <div id="float,varargs[string]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#float%2Cvarargs%5Bstring%5D"><span class="Identifier">float</span></a><span class="Other">(</span><span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    <p>Constructs the <tt class="docutils literal"><span class="pre"><span class="Identifier">float</span></span></tt> CSS property</p>
-<p>Specifies whether an element should float to the left, right, or not at all</p>
 
     
   </dd>
@@ -11795,6 +11795,31 @@
 </div>
 
 </div>
+<div id="setCssFloat-procs-all">
+  <div id="setCssFloat,CssElement,varargs[string]_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setCssFloat%2CCssElement%2Cvarargs%5Bstring%5D_2"><span class="Identifier">setCssFloat</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    <p>Sets the <tt class="docutils literal"><span class="pre"><span class="Identifier">float</span></span></tt> CSS property</p>
+<p>Specifies whether an element should float to the left, right, or not at all</p>
+
+    
+  </dd>
+</div>
+<div id="setCssFloat,CssElement,varargs[string]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setCssFloat%2CCssElement%2Cvarargs%5Bstring%5D"><span class="Identifier">setCssFloat</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    <p>Sets the <tt class="docutils literal"><span class="pre"><span class="Identifier">float</span></span></tt> CSS property</p>
+<p>Specifies whether an element should float to the left, right, or not at all</p>
+
+    
+  </dd>
+</div>
+
+</div>
 <div id="setCursor-procs-all">
   <div id="setCursor,CssElement,varargs[string]_2">
   <dt><pre><span class="Keyword">proc</span> <a href="#setCursor%2CCssElement%2Cvarargs%5Bstring%5D_2"><span class="Identifier">setCursor</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
@@ -12089,31 +12114,6 @@
     
     <p>Sets the <tt class="docutils literal"><span class="pre"><span class="Identifier">flex</span><span class="Operator">-</span><span class="Identifier">wrap</span></span></tt> CSS property</p>
 <p>Specifies whether the flexible items should wrap or not</p>
-
-    
-  </dd>
-</div>
-
-</div>
-<div id="setFloat-procs-all">
-  <div id="setFloat,CssElement,varargs[string]_2">
-  <dt><pre><span class="Keyword">proc</span> <a href="#setFloat%2CCssElement%2Cvarargs%5Bstring%5D_2"><span class="Identifier">setFloat</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    <p>Sets the <tt class="docutils literal"><span class="pre"><span class="Identifier">float</span></span></tt> CSS property</p>
-<p>Specifies whether an element should float to the left, right, or not at all</p>
-
-    
-  </dd>
-</div>
-<div id="setFloat,CssElement,varargs[string]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#setFloat%2CCssElement%2Cvarargs%5Bstring%5D"><span class="Identifier">setFloat</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">;</span> <span class="Identifier">values</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    <p>Sets the <tt class="docutils literal"><span class="pre"><span class="Identifier">float</span></span></tt> CSS property</p>
-<p>Specifies whether an element should float to the left, right, or not at all</p>
 
     
   </dd>
@@ -18391,7 +18391,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-26 08:47:24 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-22 08:51:52 UTC</small>
       </div>
     </div>
   </div>

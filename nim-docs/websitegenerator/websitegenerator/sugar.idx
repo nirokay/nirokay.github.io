@@ -1,34 +1,40 @@
 nimTitle	sugar	websitegenerator/sugar.html	module websitegenerator/sugar		0
-nim	`[]`	websitegenerator/sugar.html#[],string,varargs[HtmlElementAttribute]	proc `[]`(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement		10
-nim	`=>`	websitegenerator/sugar.html#=>,string,string	proc `=>`(attribute, value: string): HtmlElementAttribute		14
-nim	`{}`	websitegenerator/sugar.html#{},string,varargs[CssAttribute]	proc `{}`(element: string; properties: varargs[CssAttribute]): CssElement		18
-nim	`:=`	websitegenerator/sugar.html#:=,string,string	proc `:=`(property, value: string): CssAttribute		23
-nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,	proc `=>`(element: var HtmlElement; content: string | HtmlElement)		27
-nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,	proc `&=>`(element: var HtmlElement; content: string | HtmlElement)		30
-nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,_2	proc `=>`(element: HtmlElement; content: string | HtmlElement): HtmlElement		34
-nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,_2	proc `&=>`(element: HtmlElement; content: string | HtmlElement): HtmlElement		38
-nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string	proc `->`(element: var HtmlElement; class: string)		43
-nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string_2	proc `->`(element: HtmlElement; class: string): HtmlElement		46
-nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement	proc `->`(element: var HtmlElement; class: CssElement)		51
-nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement_2	proc `->`(element: HtmlElement; class: CssElement): HtmlElement		56
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,string	proc `&->`(element: var HtmlElement; class: string)		61
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,string_2	proc `&->`(element: HtmlElement; class: string): HtmlElement		64
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,CssElement	proc `&->`(element: var HtmlElement; class: CssElement)		69
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,CssElement_2	proc `&->`(element: HtmlElement; class: CssElement): HtmlElement		74
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,seq[string]	proc `&->`(element: var HtmlElement; classes: seq[string])		79
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,seq[string]_2	proc `&->`(element: HtmlElement; classes: seq[string]): HtmlElement		83
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,seq[CssElement]	proc `&->`(element: var HtmlElement; classes: seq[CssElement])		88
-nim	`&->`	websitegenerator/sugar.html#&->,HtmlElement,seq[CssElement]_2	proc `&->`(element: HtmlElement; classes: seq[CssElement]): HtmlElement		92
-nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,seq[CssAttribute]	proc addStyle(element: var HtmlElement; attributes: seq[CssAttribute])		98
-nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,varargs[CssAttribute]	proc addStyle(element: var HtmlElement; attributes: varargs[CssAttribute])		104
-nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,seq[CssAttribute]_2	proc addStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement		108
-nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,varargs[CssAttribute]_2	proc addStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		112
-nim	attrStyle	websitegenerator/sugar.html#attrStyle,HtmlElement,seq[CssAttribute]	proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement		117
-nim	attrStyle	websitegenerator/sugar.html#attrStyle,HtmlElement,varargs[CssAttribute]	proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		118
-nimgrp	->	websitegenerator/sugar.html#->-procs-all	proc		43
-nimgrp	&=>	websitegenerator/sugar.html#&=>-procs-all	proc		30
-nimgrp	=>	websitegenerator/sugar.html#=>-procs-all	proc		14
-nimgrp	attrstyle	websitegenerator/sugar.html#attrStyle-procs-all	proc		117
-nimgrp	addstyle	websitegenerator/sugar.html#addStyle-procs-all	proc		98
-nimgrp	&->	websitegenerator/sugar.html#&->-procs-all	proc		61
+nim	websitegeneratorSugarAppendingRawTextSeperator	websitegenerator/sugar.html#websitegeneratorSugarAppendingRawTextSeperator	var websitegeneratorSugarAppendingRawTextSeperator		10
+nim	`[]`	websitegenerator/sugar.html#[],string,varargs[HtmlElementAttribute]	proc `[]`(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement		12
+nim	`=>`	websitegenerator/sugar.html#=>,string,string	proc `=>`(attribute, value: string): HtmlElementAttribute		16
+nim	`{}`	websitegenerator/sugar.html#{},string,varargs[CssAttribute]	proc `{}`(element: string; properties: varargs[CssAttribute]): CssElement		20
+nim	`:=`	websitegenerator/sugar.html#:=,string,string	proc `:=`(property, value: string): CssAttribute		25
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,HtmlElement	proc `=>`(element: var HtmlElement; child: HtmlElement)		30
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,HtmlElement_2	proc `=>`(element: HtmlElement; child: HtmlElement): HtmlElement		33
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,string	proc `=>`(element: var HtmlElement; content: string)		37
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,string_2	proc `=>`(element: HtmlElement; content: string): HtmlElement		40
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,seq[string]	proc `=>`(element: var HtmlElement; content: seq[string])		44
+nim	`=>`	websitegenerator/sugar.html#=>,HtmlElement,seq[string]_2	proc `=>`(element: HtmlElement; content: seq[string]): HtmlElement		47
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,HtmlElement	proc `&=>`(element: var HtmlElement; child: HtmlElement)		52
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,HtmlElement_2	proc `&=>`(element: HtmlElement; child: HtmlElement): HtmlElement		55
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,string	proc `&=>`(element: var HtmlElement; content: string)		59
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,string_2	proc `&=>`(element: HtmlElement; content: string): HtmlElement		62
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,seq[HtmlElement]	proc `&=>`(element: var HtmlElement; children: seq[HtmlElement]): HtmlElement		67
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,seq[HtmlElement]_2	proc `&=>`(element: var HtmlElement; children: seq[HtmlElement])		71
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,seq[string]	proc `&=>`(element: var HtmlElement; content: seq[string])		74
+nim	`&=>`	websitegenerator/sugar.html#&=>,HtmlElement,seq[string]_2	proc `&=>`(element: HtmlElement; content: seq[string]): HtmlElement		77
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string	proc `->`(element: var HtmlElement; class: string)		82
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,string_2	proc `->`(element: HtmlElement; class: string): HtmlElement		85
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement	proc `->`(element: var HtmlElement; class: CssElement)		90
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,CssElement_2	proc `->`(element: HtmlElement; class: CssElement): HtmlElement		95
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,seq[string]	proc `->`(element: var HtmlElement; classes: seq[string])		101
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,seq[string]_2	proc `->`(element: HtmlElement; classes: seq[string]): HtmlElement		105
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,seq[CssElement]	proc `->`(element: var HtmlElement; classes: seq[CssElement])		110
+nim	`->`	websitegenerator/sugar.html#->,HtmlElement,seq[CssElement]_2	proc `->`(element: HtmlElement; classes: seq[CssElement]): HtmlElement		114
+nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,seq[CssAttribute]	proc addStyle(element: var HtmlElement; attributes: seq[CssAttribute])		120
+nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,varargs[CssAttribute]	proc addStyle(element: var HtmlElement; attributes: varargs[CssAttribute])		126
+nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,seq[CssAttribute]_2	proc addStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement		130
+nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,varargs[CssAttribute]_2	proc addStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		134
+nim	attrStyle	websitegenerator/sugar.html#attrStyle,HtmlElement,seq[CssAttribute]	proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement		139
+nim	attrStyle	websitegenerator/sugar.html#attrStyle,HtmlElement,varargs[CssAttribute]	proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		140
+nimgrp	->	websitegenerator/sugar.html#->-procs-all	proc		82
+nimgrp	&=>	websitegenerator/sugar.html#&=>-procs-all	proc		52
+nimgrp	=>	websitegenerator/sugar.html#=>-procs-all	proc		16
+nimgrp	attrstyle	websitegenerator/sugar.html#attrStyle-procs-all	proc		139
+nimgrp	addstyle	websitegenerator/sugar.html#addStyle-procs-all	proc		120
 heading	Sugar module	websitegenerator/sugar.html#sugar-module	 Sugar module		0

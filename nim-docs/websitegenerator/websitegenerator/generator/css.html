@@ -84,6 +84,11 @@
 <li><a class="reference" href="#add%2CCssStyleSheet%2Cvarargs%5BCssElement%5D" title="add(stylesheet: var CssStyleSheet; elements: varargs[CssElement])">add(stylesheet: var CssStyleSheet; elements: varargs[CssElement])</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">embedStylesheet
+  <li><a class="reference" href="#embedStylesheet%2CHtmlDocument%2CCssStyleSheet_2" title="embedStylesheet(document: HtmlDocument; stylesheet: CssStyleSheet): HtmlDocument">embedStylesheet(document: HtmlDocument; stylesheet: CssStyleSheet): HtmlDocument</a></li>
+<li><a class="reference" href="#embedStylesheet%2CHtmlDocument%2CCssStyleSheet" title="embedStylesheet(document: var HtmlDocument; stylesheet: CssStyleSheet)">embedStylesheet(document: var HtmlDocument; stylesheet: CssStyleSheet)</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">newCssClass
   <li><a class="reference" href="#newCssClass%2Cstring%2Cseq%5BCssAttribute%5D" title="newCssClass(name: string; properties: seq[CssAttribute]): CssElement">newCssClass(name: string; properties: seq[CssAttribute]): CssElement</a></li>
 <li><a class="reference" href="#newCssClass%2Cstring%2CTable%5Bstring%2Cstring%5D" title="newCssClass(name: string; properties: Table[string, string]): CssElement">newCssClass(name: string; properties: Table[string, string]): CssElement</a></li>
@@ -97,7 +102,7 @@
 
 </ul>
 <ul class="simple nested-toc-section">newCssStyleSheet
-  <li><a class="reference" href="#newCssStyleSheet%2Cstring" title="newCssStyleSheet(fileName: string): CssStyleSheet">newCssStyleSheet(fileName: string): CssStyleSheet</a></li>
+  <li><a class="reference" href="#newCssStyleSheet%2Cstring%2Cvarargs%5BCssElement%5D" title="newCssStyleSheet(fileName: string; rules: varargs[CssElement]): CssStyleSheet">newCssStyleSheet(fileName: string; rules: varargs[CssElement]): CssStyleSheet</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">setAttribute
@@ -114,6 +119,10 @@
 </ul>
 <ul class="simple nested-toc-section">setStyle
   <li><a class="reference" href="#setStyle%2CHtmlDocument%2CCssStyleSheet" title="setStyle(document: var HtmlDocument; stylesheet: CssStyleSheet)">setStyle(document: var HtmlDocument; stylesheet: CssStyleSheet)</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">setStylesheet
+  <li><a class="reference" href="#setStylesheet%2CHtmlDocument%2CCssStyleSheet" title="setStylesheet(document: var HtmlDocument; stylesheet: CssStyleSheet)">setStylesheet(document: var HtmlDocument; stylesheet: CssStyleSheet)</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">writeFile
@@ -240,6 +249,27 @@
 </div>
 
 </div>
+<div id="embedStylesheet-procs-all">
+  <div id="embedStylesheet,HtmlDocument,CssStyleSheet_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#embedStylesheet%2CHtmlDocument%2CCssStyleSheet_2"><span class="Identifier">embedStylesheet</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">stylesheet</span><span class="Other">:</span> <a href="css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Embeds the stylesheet into the document <tt class="docutils literal"><span class="pre"><span class="Identifier">head</span></span></tt>
+    
+  </dd>
+</div>
+<div id="embedStylesheet,HtmlDocument,CssStyleSheet">
+  <dt><pre><span class="Keyword">proc</span> <a href="#embedStylesheet%2CHtmlDocument%2CCssStyleSheet"><span class="Identifier">embedStylesheet</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">stylesheet</span><span class="Other">:</span> <a href="css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Embeds the stylesheet into the document <tt class="docutils literal"><span class="pre"><span class="Identifier">head</span></span></tt>
+    
+  </dd>
+</div>
+
+</div>
 <div id="newCssClass-procs-all">
   <div id="newCssClass,string,seq[CssAttribute]">
   <dt><pre><span class="Keyword">proc</span> <a href="#newCssClass%2Cstring%2Cseq%5BCssAttribute%5D"><span class="Identifier">newCssClass</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
@@ -301,12 +331,12 @@
 
 </div>
 <div id="newCssStyleSheet-procs-all">
-  <div id="newCssStyleSheet,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newCssStyleSheet%2Cstring"><span class="Identifier">newCssStyleSheet</span></a><span class="Other">(</span><span class="Identifier">fileName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <div id="newCssStyleSheet,string,varargs[CssElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newCssStyleSheet%2Cstring%2Cvarargs%5BCssElement%5D"><span class="Identifier">newCssStyleSheet</span></a><span class="Other">(</span><span class="Identifier">fileName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">rules</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    
+    Creates a new <tt class="docutils literal"><span class="pre"><span class="Identifier">CssStylesheet</span></span></tt>
     
   </dd>
 </div>
@@ -375,6 +405,21 @@
 <div id="setStyle-procs-all">
   <div id="setStyle,HtmlDocument,CssStyleSheet">
   <dt><pre><span class="Keyword">proc</span> <a href="#setStyle%2CHtmlDocument%2CCssStyleSheet"><span class="Identifier">setStyle</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">stylesheet</span><span class="Other">:</span> <a href="css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a><span class="Other">)</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">deprecated</span><span class="Other">:</span> <span class="StringLit">&quot;use `setStylesheet` instead&quot;</span><span class="Other">,</span> <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    <div class="deprecation-message">
+  <b>Deprecated:</b> use `setStylesheet` instead
+</div>
+
+    Adds a link to the css stylesheet
+    
+  </dd>
+</div>
+
+</div>
+<div id="setStylesheet-procs-all">
+  <div id="setStylesheet,HtmlDocument,CssStyleSheet">
+  <dt><pre><span class="Keyword">proc</span> <a href="#setStylesheet%2CHtmlDocument%2CCssStyleSheet"><span class="Identifier">setStylesheet</span></a><span class="Other">(</span><span class="Identifier">document</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlDocument"><span class="Identifier">HtmlDocument</span></a><span class="Other">;</span> <span class="Identifier">stylesheet</span><span class="Other">:</span> <a href="css.html#CssStyleSheet"><span class="Identifier">CssStyleSheet</span></a><span class="Other">)</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -415,7 +460,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-26 08:47:23 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-22 08:51:51 UTC</small>
       </div>
     </div>
   </div>

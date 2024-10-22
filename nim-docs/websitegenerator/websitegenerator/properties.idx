@@ -449,9 +449,9 @@ nim	setFlexShrink	websitegenerator/properties.html#setFlexShrink,CssElement,vara
 nim	flexWrap	websitegenerator/properties.html#flexWrap,varargs[string]	proc flexWrap(values: varargs[string]): CssAttribute		2552
 nim	setFlexWrap	websitegenerator/properties.html#setFlexWrap,CssElement,varargs[string]	proc setFlexWrap(element: var CssElement; values: varargs[string])		2557
 nim	setFlexWrap	websitegenerator/properties.html#setFlexWrap,CssElement,varargs[string]_2	proc setFlexWrap(element: CssElement; values: varargs[string]): CssElement		2562
-nim	float	websitegenerator/properties.html#float,varargs[string]	proc float(values: varargs[string]): CssAttribute		2569
-nim	setFloat	websitegenerator/properties.html#setFloat,CssElement,varargs[string]	proc setFloat(element: var CssElement; values: varargs[string])		2574
-nim	setFloat	websitegenerator/properties.html#setFloat,CssElement,varargs[string]_2	proc setFloat(element: CssElement; values: varargs[string]): CssElement		2579
+nim	cssFloat	websitegenerator/properties.html#cssFloat,varargs[string]	proc cssFloat(values: varargs[string]): CssAttribute		2569
+nim	setCssFloat	websitegenerator/properties.html#setCssFloat,CssElement,varargs[string]	proc setCssFloat(element: var CssElement; values: varargs[string])		2574
+nim	setCssFloat	websitegenerator/properties.html#setCssFloat,CssElement,varargs[string]_2	proc setCssFloat(element: CssElement; values: varargs[string]): CssElement		2579
 nim	font	websitegenerator/properties.html#font,varargs[string]	proc font(values: varargs[string]): CssAttribute		2586
 nim	setFont	websitegenerator/properties.html#setFont,CssElement,varargs[string]	proc setFont(element: var CssElement; values: varargs[string])		2591
 nim	setFont	websitegenerator/properties.html#setFont,CssElement,varargs[string]_2	proc setFont(element: CssElement; values: varargs[string]): CssElement		2596
@@ -1150,7 +1150,6 @@ nimgrp	setscrollmargininline	websitegenerator/properties.html#setScrollMarginInl
 nimgrp	setgridcolumnend	websitegenerator/properties.html#setGridColumnEnd-procs-all	proc		3050
 nimgrp	setbackgroundpositionx	websitegenerator/properties.html#setBackgroundPositionX-procs-all	proc		483
 nimgrp	setbackgroundimage	websitegenerator/properties.html#setBackgroundImage-procs-all	proc		432
-nimgrp	setfloat	websitegenerator/properties.html#setFloat-procs-all	proc		2574
 nimgrp	setborderimageoutset	websitegenerator/properties.html#setBorderImageOutset-procs-all	proc		1061
 nimgrp	setcssatcharset	websitegenerator/properties.html#setCssAtCharset-procs-all	proc		1979
 nimgrp	setmarkerstart	websitegenerator/properties.html#setMarkerStart-procs-all	proc		3917
@@ -1380,6 +1379,7 @@ nimgrp	setscrollpaddingblockend	websitegenerator/properties.html#setScrollPaddin
 nimgrp	setborderinlinestart	websitegenerator/properties.html#setBorderInlineStart-procs-all	proc		1282
 nimgrp	setborderwidth	websitegenerator/properties.html#setBorderWidth-procs-all	proc		1775
 nimgrp	setbackgroundorigin	websitegenerator/properties.html#setBackgroundOrigin-procs-all	proc		449
+nimgrp	setcssfloat	websitegenerator/properties.html#setCssFloat-procs-all	proc		2574
 nimgrp	setgridrow	websitegenerator/properties.html#setGridRow-procs-all	proc		3084
 nimgrp	setmaskrepeat	websitegenerator/properties.html#setMaskRepeat-procs-all	proc		4053
 nimgrp	setinsetinline	websitegenerator/properties.html#setInsetInline-procs-all	proc		3407
