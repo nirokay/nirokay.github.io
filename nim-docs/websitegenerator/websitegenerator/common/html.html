@@ -85,9 +85,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">article
-  <li><a class="reference" href="#article%2Cseq%5BHtmlElement%5D" title="article(content: seq[HtmlElement]): HtmlElement">article(content: seq[HtmlElement]): HtmlElement</a></li>
+  <li><a class="reference" href="#article%2Cseq%5BHtmlElement%5D" title="article(children: seq[HtmlElement]): HtmlElement">article(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#article%2Cvarargs%5BHtmlElement%5D" title="article(children: varargs[HtmlElement]): HtmlElement">article(children: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#article%2Cstring" title="article(content: string): HtmlElement">article(content: string): HtmlElement</a></li>
-<li><a class="reference" href="#article%2Cvarargs%5BHtmlElement%5D" title="article(content: varargs[HtmlElement]): HtmlElement">article(content: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">aside
@@ -116,7 +116,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">blockquote
-  <li><a class="reference" href="#blockquote%2Cstring%2Cstring" title="blockquote(text: string; cite: string = &quot;&quot;): HtmlElement">blockquote(text: string; cite: string = &quot;&quot;): HtmlElement</a></li>
+  <li><a class="reference" href="#blockquote%2Cseq%5BHtmlElement%5D" title="blockquote(children: seq[HtmlElement]): HtmlElement">blockquote(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#blockquote%2Cvarargs%5BHtmlElement%5D" title="blockquote(children: varargs[HtmlElement]): HtmlElement">blockquote(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#blockquote%2Cstring%2Cstring" title="blockquote(text: string; cite: string = &quot;&quot;): HtmlElement">blockquote(text: string; cite: string = &quot;&quot;): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">br
@@ -156,6 +158,7 @@
 </ul>
 <ul class="simple nested-toc-section">colgroup
   <li><a class="reference" href="#colgroup%2Cseq%5BHtmlElement%5D" title="colgroup(children: seq[HtmlElement]): HtmlElement">colgroup(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#colgroup%2Cvarargs%5BHtmlElement%5D" title="colgroup(children: varargs[HtmlElement]): HtmlElement">colgroup(children: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">comment
@@ -163,7 +166,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">data
-  <li><a class="reference" href="#data%2Cstring%2Cstring" title="data(value, text: string): HtmlElement">data(value, text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#data%2Cseq%5BHtmlElement%5D" title="data(children: seq[HtmlElement]): HtmlElement">data(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#data%2Cvarargs%5BHtmlElement%5D" title="data(children: varargs[HtmlElement]): HtmlElement">data(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#data%2Cstring%2Cstring" title="data(value, text: string): HtmlElement">data(value, text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">datalist
@@ -176,7 +181,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">del
-  <li><a class="reference" href="#del%2Cstring" title="del(text: string): HtmlElement">del(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#del%2Cseq%5BHtmlElement%5D" title="del(children: seq[HtmlElement]): HtmlElement">del(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#del%2Cvarargs%5BHtmlElement%5D" title="del(children: varargs[HtmlElement]): HtmlElement">del(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#del%2Cstring" title="del(text: string): HtmlElement">del(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">description
@@ -239,9 +246,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">footer
-  <li><a class="reference" href="#footer%2Cseq%5BHtmlElement%5D" title="footer(content: seq[HtmlElement]): HtmlElement">footer(content: seq[HtmlElement]): HtmlElement</a></li>
+  <li><a class="reference" href="#footer%2Cseq%5BHtmlElement%5D" title="footer(children: seq[HtmlElement]): HtmlElement">footer(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#footer%2Cvarargs%5BHtmlElement%5D" title="footer(children: varargs[HtmlElement]): HtmlElement">footer(children: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#footer%2Cstring" title="footer(content: string): HtmlElement">footer(content: string): HtmlElement</a></li>
-<li><a class="reference" href="#footer%2Cvarargs%5BHtmlElement%5D" title="footer(content: varargs[HtmlElement]): HtmlElement">footer(content: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">form
@@ -252,33 +259,45 @@
 
 </ul>
 <ul class="simple nested-toc-section">h1
-  <li><a class="reference" href="#h1%2Cstring" title="h1(text: string): HtmlElement">h1(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#h1%2Cseq%5BHtmlElement%5D" title="h1(children: seq[HtmlElement]): HtmlElement">h1(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h1%2Cvarargs%5BHtmlElement%5D" title="h1(children: varargs[HtmlElement]): HtmlElement">h1(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h1%2Cstring" title="h1(text: string): HtmlElement">h1(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">h2
-  <li><a class="reference" href="#h2%2Cstring" title="h2(text: string): HtmlElement">h2(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#h2%2Cseq%5BHtmlElement%5D" title="h2(children: seq[HtmlElement]): HtmlElement">h2(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h2%2Cvarargs%5BHtmlElement%5D" title="h2(children: varargs[HtmlElement]): HtmlElement">h2(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h2%2Cstring" title="h2(text: string): HtmlElement">h2(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">h3
-  <li><a class="reference" href="#h3%2Cstring" title="h3(text: string): HtmlElement">h3(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#h3%2Cseq%5BHtmlElement%5D" title="h3(children: seq[HtmlElement]): HtmlElement">h3(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h3%2Cvarargs%5BHtmlElement%5D" title="h3(children: varargs[HtmlElement]): HtmlElement">h3(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h3%2Cstring" title="h3(text: string): HtmlElement">h3(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">h4
-  <li><a class="reference" href="#h4%2Cstring" title="h4(text: string): HtmlElement">h4(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#h4%2Cseq%5BHtmlElement%5D" title="h4(children: seq[HtmlElement]): HtmlElement">h4(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h4%2Cvarargs%5BHtmlElement%5D" title="h4(children: varargs[HtmlElement]): HtmlElement">h4(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h4%2Cstring" title="h4(text: string): HtmlElement">h4(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">h5
-  <li><a class="reference" href="#h5%2Cstring" title="h5(text: string): HtmlElement">h5(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#h5%2Cseq%5BHtmlElement%5D" title="h5(children: seq[HtmlElement]): HtmlElement">h5(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h5%2Cvarargs%5BHtmlElement%5D" title="h5(children: varargs[HtmlElement]): HtmlElement">h5(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h5%2Cstring" title="h5(text: string): HtmlElement">h5(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">h6
-  <li><a class="reference" href="#h6%2Cstring" title="h6(text: string): HtmlElement">h6(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#h6%2Cseq%5BHtmlElement%5D" title="h6(children: seq[HtmlElement]): HtmlElement">h6(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h6%2Cvarargs%5BHtmlElement%5D" title="h6(children: varargs[HtmlElement]): HtmlElement">h6(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#h6%2Cstring" title="h6(text: string): HtmlElement">h6(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">header
-  <li><a class="reference" href="#header%2Cseq%5BHtmlElement%5D" title="header(content: seq[HtmlElement]): HtmlElement">header(content: seq[HtmlElement]): HtmlElement</a></li>
+  <li><a class="reference" href="#header%2Cseq%5BHtmlElement%5D" title="header(children: seq[HtmlElement]): HtmlElement">header(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#header%2Cvarargs%5BHtmlElement%5D" title="header(children: varargs[HtmlElement]): HtmlElement">header(children: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#header%2Cstring" title="header(content: string): HtmlElement">header(content: string): HtmlElement</a></li>
-<li><a class="reference" href="#header%2Cvarargs%5BHtmlElement%5D" title="header(content: varargs[HtmlElement]): HtmlElement">header(content: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">hgroup
@@ -321,7 +340,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">ins
-  <li><a class="reference" href="#ins%2Cstring" title="ins(text: string): HtmlElement">ins(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#ins%2Cseq%5BHtmlElement%5D" title="ins(children: seq[HtmlElement]): HtmlElement">ins(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#ins%2Cvarargs%5BHtmlElement%5D" title="ins(children: varargs[HtmlElement]): HtmlElement">ins(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#ins%2Cstring" title="ins(text: string): HtmlElement">ins(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">kbd
@@ -337,7 +358,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">li
-  <li><a class="reference" href="#li%2Cstring" title="li(text: string): HtmlElement">li(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#li%2Cseq%5BHtmlElement%5D" title="li(children: seq[HtmlElement]): HtmlElement">li(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#li%2Cvarargs%5BHtmlElement%5D" title="li(children: varargs[HtmlElement]): HtmlElement">li(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#li%2Cstring" title="li(text: string): HtmlElement">li(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">link
@@ -346,9 +369,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">main
-  <li><a class="reference" href="#main%2Cseq%5BHtmlElement%5D" title="main(content: seq[HtmlElement]): HtmlElement">main(content: seq[HtmlElement]): HtmlElement</a></li>
+  <li><a class="reference" href="#main%2Cseq%5BHtmlElement%5D" title="main(children: seq[HtmlElement]): HtmlElement">main(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#main%2Cvarargs%5BHtmlElement%5D" title="main(children: varargs[HtmlElement]): HtmlElement">main(children: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#main%2Cstring" title="main(content: string): HtmlElement">main(content: string): HtmlElement</a></li>
-<li><a class="reference" href="#main%2Cvarargs%5BHtmlElement%5D" title="main(content: varargs[HtmlElement]): HtmlElement">main(content: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">map
@@ -379,6 +402,7 @@
 </ul>
 <ul class="simple nested-toc-section">nav
   <li><a class="reference" href="#nav%2Cseq%5BHtmlElement%5D" title="nav(children: seq[HtmlElement]): HtmlElement">nav(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#nav%2Cvarargs%5BHtmlElement%5D" title="nav(children: varargs[HtmlElement]): HtmlElement">nav(children: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">noscript
@@ -512,7 +536,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">optgroup
-  <li><a class="reference" href="#optgroup%2Cstring%2Cseq%5BHtmlElement%5D" title="optgroup(label: string; children: seq[HtmlElement]): HtmlElement">optgroup(label: string; children: seq[HtmlElement]): HtmlElement</a></li>
+  <li><a class="reference" href="#optgroup%2Cseq%5BHtmlElement%5D" title="optgroup(children: seq[HtmlElement]): HtmlElement">optgroup(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#optgroup%2Cvarargs%5BHtmlElement%5D" title="optgroup(children: varargs[HtmlElement]): HtmlElement">optgroup(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#optgroup%2Cstring%2Cseq%5BHtmlElement%5D" title="optgroup(label: string; children: seq[HtmlElement]): HtmlElement">optgroup(label: string; children: seq[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#optgroup%2Cstring%2Cvarargs%5BHtmlElement%5D" title="optgroup(label: string; children: varargs[HtmlElement]): HtmlElement">optgroup(label: string; children: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
@@ -526,12 +552,16 @@
 
 </ul>
 <ul class="simple nested-toc-section">output
-  <li><a class="reference" href="#output%2Cstring%2Cstring%2Cstring" title="output(name, for: string; content: string = &quot;&quot;): HtmlElement">output(name, for: string; content: string = &quot;&quot;): HtmlElement</a></li>
+  <li><a class="reference" href="#output%2Cseq%5BHtmlElement%5D" title="output(children: seq[HtmlElement]): HtmlElement">output(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#output%2Cvarargs%5BHtmlElement%5D" title="output(children: varargs[HtmlElement]): HtmlElement">output(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#output%2Cstring%2Cstring%2Cstring" title="output(name, for: string; content: string = &quot;&quot;): HtmlElement">output(name, for: string; content: string = &quot;&quot;): HtmlElement</a></li>
 <li><a class="reference" href="#output%2Cstring%2Cseq%5Bstring%5D%2Cstring" title="output(name: string; forIds: seq[string]; content: string = &quot;&quot;): HtmlElement">output(name: string; forIds: seq[string]; content: string = &quot;&quot;): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">p
-  <li><a class="reference" href="#p%2Cseq%5Bstring%5D" title="p(text: seq[string]): HtmlElement">p(text: seq[string]): HtmlElement</a></li>
+  <li><a class="reference" href="#p%2Cseq%5BHtmlElement%5D" title="p(children: seq[HtmlElement]): HtmlElement">p(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#p%2Cvarargs%5BHtmlElement%5D" title="p(children: varargs[HtmlElement]): HtmlElement">p(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#p%2Cseq%5Bstring%5D" title="p(text: seq[string]): HtmlElement">p(text: seq[string]): HtmlElement</a></li>
 <li><a class="reference" href="#p%2Cstring" title="p(text: string): HtmlElement">p(text: string): HtmlElement</a></li>
 <li><a class="reference" href="#p%2Cvarargs%5Bstring%5D" title="p(text: varargs[string]): HtmlElement">p(text: varargs[string]): HtmlElement</a></li>
 
@@ -600,7 +630,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">select
-  <li><a class="reference" href="#select%2Cstring%2Cstring%2Cseq%5BHtmlElement%5D" title="select(name, id: string; children: seq[HtmlElement]): HtmlElement">select(name, id: string; children: seq[HtmlElement]): HtmlElement</a></li>
+  <li><a class="reference" href="#select%2Cseq%5BHtmlElement%5D" title="select(children: seq[HtmlElement]): HtmlElement">select(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#select%2Cvarargs%5BHtmlElement%5D" title="select(children: varargs[HtmlElement]): HtmlElement">select(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#select%2Cstring%2Cstring%2Cseq%5BHtmlElement%5D" title="select(name, id: string; children: seq[HtmlElement]): HtmlElement">select(name, id: string; children: seq[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#select%2Cstring%2Cstring%2Cvarargs%5BHtmlElement%5D" title="select(name, id: string; children: varargs[HtmlElement]): HtmlElement">select(name, id: string; children: varargs[HtmlElement]): HtmlElement</a></li>
 
 </ul>
@@ -617,9 +649,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">span
-  <li><a class="reference" href="#span%2Cstring%2Cstring" title="span(text, class: string): HtmlElement">span(text, class: string): HtmlElement</a></li>
+  <li><a class="reference" href="#span%2Cseq%5BHtmlElement%5D" title="span(children: seq[HtmlElement]): HtmlElement">span(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#span%2Cvarargs%5BHtmlElement%5D" title="span(children: varargs[HtmlElement]): HtmlElement">span(children: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#span%2Cstring" title="span(text: string): HtmlElement">span(text: string): HtmlElement</a></li>
-<li><a class="reference" href="#span%2Cstring%2CCssElement" title="span(text: string; class: CssElement): HtmlElement">span(text: string; class: CssElement): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">strong
@@ -635,7 +667,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">summary
-  <li><a class="reference" href="#summary%2Cstring" title="summary(text: string): HtmlElement">summary(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#summary%2Cseq%5BHtmlElement%5D" title="summary(children: seq[HtmlElement]): HtmlElement">summary(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#summary%2Cvarargs%5BHtmlElement%5D" title="summary(children: varargs[HtmlElement]): HtmlElement">summary(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#summary%2Cstring" title="summary(text: string): HtmlElement">summary(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">sup
@@ -653,7 +687,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">td
-  <li><a class="reference" href="#td%2Cstring" title="td(text: string): HtmlElement">td(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#td%2Cseq%5BHtmlElement%5D" title="td(children: seq[HtmlElement]): HtmlElement">td(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#td%2Cvarargs%5BHtmlElement%5D" title="td(children: varargs[HtmlElement]): HtmlElement">td(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#td%2Cstring" title="td(text: string): HtmlElement">td(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">template
@@ -673,7 +709,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">th
-  <li><a class="reference" href="#th%2Cstring" title="th(text: string): HtmlElement">th(text: string): HtmlElement</a></li>
+  <li><a class="reference" href="#th%2Cseq%5BHtmlElement%5D" title="th(children: seq[HtmlElement]): HtmlElement">th(children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#th%2Cvarargs%5BHtmlElement%5D" title="th(children: varargs[HtmlElement]): HtmlElement">th(children: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#th%2Cstring" title="th(text: string): HtmlElement">th(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">thead
@@ -840,7 +878,16 @@
 </div>
 <div id="article-procs-all">
   <div id="article,seq[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#article%2Cseq%5BHtmlElement%5D"><span class="Identifier">article</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
+  <dt><pre><span class="Keyword">proc</span> <a href="#article%2Cseq%5BHtmlElement%5D"><span class="Identifier">article</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Article element
+    
+  </dd>
+</div>
+<div id="article,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#article%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">article</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -850,15 +897,6 @@
 </div>
 <div id="article,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#article%2Cstring"><span class="Identifier">article</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Article element
-    
-  </dd>
-</div>
-<div id="article,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#article%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">article</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Article element
@@ -945,7 +983,25 @@
 
 </div>
 <div id="blockquote-procs-all">
-  <div id="blockquote,string,string">
+  <div id="blockquote,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#blockquote%2Cseq%5BHtmlElement%5D"><span class="Identifier">blockquote</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    blockquote element
+    
+  </dd>
+</div>
+<div id="blockquote,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#blockquote%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">blockquote</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    blockquote element
+    
+  </dd>
+</div>
+<div id="blockquote,string,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#blockquote%2Cstring%2Cstring"><span class="Identifier">blockquote</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">cite</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
@@ -1079,6 +1135,15 @@
     
   </dd>
 </div>
+<div id="colgroup,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#colgroup%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">colgroup</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Table Column Group element
+    
+  </dd>
+</div>
 
 </div>
 <div id="comment-procs-all">
@@ -1097,7 +1162,25 @@
 
 </div>
 <div id="data-procs-all">
-  <div id="data,string,string">
+  <div id="data,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#data%2Cseq%5BHtmlElement%5D"><span class="Identifier">data</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    data element
+    
+  </dd>
+</div>
+<div id="data,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#data%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">data</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    data element
+    
+  </dd>
+</div>
+<div id="data,string,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#data%2Cstring%2Cstring"><span class="Identifier">data</span></a><span class="Other">(</span><span class="Identifier">value</span><span class="Other">,</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1140,7 +1223,25 @@
 
 </div>
 <div id="del-procs-all">
-  <div id="del,string">
+  <div id="del,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#del%2Cseq%5BHtmlElement%5D"><span class="Identifier">del</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    del element
+    
+  </dd>
+</div>
+<div id="del,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#del%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">del</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    del element
+    
+  </dd>
+</div>
+<div id="del,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#del%2Cstring"><span class="Identifier">del</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1367,8 +1468,17 @@
 </div>
 <div id="footer-procs-all">
   <div id="footer,seq[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#footer%2Cseq%5BHtmlElement%5D"><span class="Identifier">footer</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#footer%2Cseq%5BHtmlElement%5D"><span class="Identifier">footer</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Footer element
+    
+  </dd>
+</div>
+<div id="footer,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#footer%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">footer</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Footer element
@@ -1377,15 +1487,6 @@
 </div>
 <div id="footer,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#footer%2Cstring"><span class="Identifier">footer</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Footer element
-    
-  </dd>
-</div>
-<div id="footer,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#footer%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">footer</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Footer element
@@ -1434,7 +1535,25 @@
 
 </div>
 <div id="h1-procs-all">
-  <div id="h1,string">
+  <div id="h1,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h1%2Cseq%5BHtmlElement%5D"><span class="Identifier">h1</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 1 element
+    
+  </dd>
+</div>
+<div id="h1,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h1%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">h1</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 1 element
+    
+  </dd>
+</div>
+<div id="h1,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#h1%2Cstring"><span class="Identifier">h1</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1445,7 +1564,25 @@
 
 </div>
 <div id="h2-procs-all">
-  <div id="h2,string">
+  <div id="h2,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h2%2Cseq%5BHtmlElement%5D"><span class="Identifier">h2</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 2 element
+    
+  </dd>
+</div>
+<div id="h2,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h2%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">h2</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 2 element
+    
+  </dd>
+</div>
+<div id="h2,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#h2%2Cstring"><span class="Identifier">h2</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1456,7 +1593,25 @@
 
 </div>
 <div id="h3-procs-all">
-  <div id="h3,string">
+  <div id="h3,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h3%2Cseq%5BHtmlElement%5D"><span class="Identifier">h3</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 3 element
+    
+  </dd>
+</div>
+<div id="h3,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h3%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">h3</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 3 element
+    
+  </dd>
+</div>
+<div id="h3,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#h3%2Cstring"><span class="Identifier">h3</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1467,7 +1622,25 @@
 
 </div>
 <div id="h4-procs-all">
-  <div id="h4,string">
+  <div id="h4,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h4%2Cseq%5BHtmlElement%5D"><span class="Identifier">h4</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 4 element
+    
+  </dd>
+</div>
+<div id="h4,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h4%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">h4</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 4 element
+    
+  </dd>
+</div>
+<div id="h4,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#h4%2Cstring"><span class="Identifier">h4</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1478,7 +1651,25 @@
 
 </div>
 <div id="h5-procs-all">
-  <div id="h5,string">
+  <div id="h5,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h5%2Cseq%5BHtmlElement%5D"><span class="Identifier">h5</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 5 element
+    
+  </dd>
+</div>
+<div id="h5,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h5%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">h5</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 5 element
+    
+  </dd>
+</div>
+<div id="h5,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#h5%2Cstring"><span class="Identifier">h5</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1489,7 +1680,25 @@
 
 </div>
 <div id="h6-procs-all">
-  <div id="h6,string">
+  <div id="h6,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h6%2Cseq%5BHtmlElement%5D"><span class="Identifier">h6</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 6 element
+    
+  </dd>
+</div>
+<div id="h6,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#h6%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">h6</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Html header 6 element
+    
+  </dd>
+</div>
+<div id="h6,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#h6%2Cstring"><span class="Identifier">h6</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1501,8 +1710,17 @@
 </div>
 <div id="header-procs-all">
   <div id="header,seq[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#header%2Cseq%5BHtmlElement%5D"><span class="Identifier">header</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#header%2Cseq%5BHtmlElement%5D"><span class="Identifier">header</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element
+    
+  </dd>
+</div>
+<div id="header,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#header%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">header</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Header element
@@ -1511,15 +1729,6 @@
 </div>
 <div id="header,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#header%2Cstring"><span class="Identifier">header</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Header element
-    
-  </dd>
-</div>
-<div id="header,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#header%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">header</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Header element
@@ -1655,7 +1864,25 @@
 
 </div>
 <div id="ins-procs-all">
-  <div id="ins,string">
+  <div id="ins,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ins%2Cseq%5BHtmlElement%5D"><span class="Identifier">ins</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    ins element
+    
+  </dd>
+</div>
+<div id="ins,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ins%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">ins</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    ins element
+    
+  </dd>
+</div>
+<div id="ins,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#ins%2Cstring"><span class="Identifier">ins</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1699,7 +1926,25 @@
 
 </div>
 <div id="li-procs-all">
-  <div id="li,string">
+  <div id="li,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#li%2Cseq%5BHtmlElement%5D"><span class="Identifier">li</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    li element
+    
+  </dd>
+</div>
+<div id="li,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#li%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">li</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    li element
+    
+  </dd>
+</div>
+<div id="li,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#li%2Cstring"><span class="Identifier">li</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -1730,8 +1975,17 @@
 </div>
 <div id="main-procs-all">
   <div id="main,seq[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#main%2Cseq%5BHtmlElement%5D"><span class="Identifier">main</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#main%2Cseq%5BHtmlElement%5D"><span class="Identifier">main</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Main element
+    
+  </dd>
+</div>
+<div id="main,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#main%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">main</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Main element
@@ -1740,15 +1994,6 @@
 </div>
 <div id="main,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#main%2Cstring"><span class="Identifier">main</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Main element
-    
-  </dd>
-</div>
-<div id="main,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#main%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">main</span></a><span class="Other">(</span><span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Main element
@@ -1868,6 +2113,15 @@
 <div id="nav-procs-all">
   <div id="nav,seq[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#nav%2Cseq%5BHtmlElement%5D"><span class="Identifier">nav</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Nav element
+    
+  </dd>
+</div>
+<div id="nav,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#nav%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">nav</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -2270,12 +2524,30 @@
 
 </div>
 <div id="optgroup-procs-all">
-  <div id="optgroup,string,seq[HtmlElement]">
+  <div id="optgroup,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#optgroup%2Cseq%5BHtmlElement%5D"><span class="Identifier">optgroup</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    optgroup element
+    
+  </dd>
+</div>
+<div id="optgroup,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#optgroup%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">optgroup</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    optgroup element
+    
+  </dd>
+</div>
+<div id="optgroup,string,seq[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#optgroup%2Cstring%2Cseq%5BHtmlElement%5D"><span class="Identifier">optgroup</span></a><span class="Other">(</span><span class="Identifier">label</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Option group element
+    optgroup element
     
   </dd>
 </div>
@@ -2284,7 +2556,7 @@
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Option group element
+    optgroup element
     
   </dd>
 </div>
@@ -2307,7 +2579,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#orderedList%2Cseq%5BT%5D"><span class="Identifier">orderedList</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">items</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
-    Ordered list element
+    Ordered list elements
     
   </dd>
 </div>
@@ -2315,14 +2587,32 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#orderedList%2Cvarargs%5BT%5D"><span class="Identifier">orderedList</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">items</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
-    Ordered list element
+    Ordered list elements
     
   </dd>
 </div>
 
 </div>
 <div id="output-procs-all">
-  <div id="output,string,string,string">
+  <div id="output,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#output%2Cseq%5BHtmlElement%5D"><span class="Identifier">output</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    output element
+    
+  </dd>
+</div>
+<div id="output,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#output%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">output</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    output element
+    
+  </dd>
+</div>
+<div id="output,string,string,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#output%2Cstring%2Cstring%2Cstring"><span class="Identifier">output</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">,</span> <span class="Identifier">for</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">content</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
@@ -2343,7 +2633,25 @@
 
 </div>
 <div id="p-procs-all">
-  <div id="p,seq[string]">
+  <div id="p,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cseq%5BHtmlElement%5D"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Paragraph element
+    
+  </dd>
+</div>
+<div id="p,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Paragraph element
+    
+  </dd>
+</div>
+<div id="p,seq[string]">
   <dt><pre><span class="Keyword">proc</span> <a href="#p%2Cseq%5Bstring%5D"><span class="Identifier">p</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
@@ -2594,7 +2902,25 @@
 
 </div>
 <div id="select-procs-all">
-  <div id="select,string,string,seq[HtmlElement]">
+  <div id="select,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#select%2Cseq%5BHtmlElement%5D"><span class="Identifier">select</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    select element
+    
+  </dd>
+</div>
+<div id="select,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#select%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">select</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    select element
+    
+  </dd>
+</div>
+<div id="select,string,string,seq[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#select%2Cstring%2Cstring%2Cseq%5BHtmlElement%5D"><span class="Identifier">select</span></a><span class="Other">(</span><span class="Identifier">name</span><span class="Other">,</span> <span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
@@ -2649,25 +2975,26 @@
 
 </div>
 <div id="span-procs-all">
-  <div id="span,string,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#span%2Cstring%2Cstring"><span class="Identifier">span</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">,</span> <span class="Identifier">class</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <div id="span,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#span%2Cseq%5BHtmlElement%5D"><span class="Identifier">span</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Content Span element
+    span element
+    
+  </dd>
+</div>
+<div id="span,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#span%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">span</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    span element
     
   </dd>
 </div>
 <div id="span,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#span%2Cstring"><span class="Identifier">span</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Content Span element
-    
-  </dd>
-</div>
-<div id="span,string,CssElement">
-  <dt><pre><span class="Keyword">proc</span> <a href="#span%2Cstring%2CCssElement"><span class="Identifier">span</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">class</span><span class="Other">:</span> <a href="../generator/css.html#CssElement"><span class="Identifier">CssElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Content Span element
@@ -2710,7 +3037,25 @@
 
 </div>
 <div id="summary-procs-all">
-  <div id="summary,string">
+  <div id="summary,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#summary%2Cseq%5BHtmlElement%5D"><span class="Identifier">summary</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    summary element
+    
+  </dd>
+</div>
+<div id="summary,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#summary%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">summary</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    summary element
+    
+  </dd>
+</div>
+<div id="summary,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#summary%2Cstring"><span class="Identifier">summary</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -2774,7 +3119,25 @@
 
 </div>
 <div id="td-procs-all">
-  <div id="td,string">
+  <div id="td,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#td%2Cseq%5BHtmlElement%5D"><span class="Identifier">td</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    td element
+    
+  </dd>
+</div>
+<div id="td,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#td%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">td</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    td element
+    
+  </dd>
+</div>
+<div id="td,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#td%2Cstring"><span class="Identifier">td</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -2856,7 +3219,25 @@
 
 </div>
 <div id="th-procs-all">
-  <div id="th,string">
+  <div id="th,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#th%2Cseq%5BHtmlElement%5D"><span class="Identifier">th</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    th element
+    
+  </dd>
+</div>
+<div id="th,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#th%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">th</span></a><span class="Other">(</span><span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    th element
+    
+  </dd>
+</div>
+<div id="th,string">
   <dt><pre><span class="Keyword">proc</span> <a href="#th%2Cstring"><span class="Identifier">th</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -2988,7 +3369,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#unorderedList%2Cseq%5BT%5D"><span class="Identifier">unorderedList</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">items</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
-    Unordered list element
+    Unordered list elements
     
   </dd>
 </div>
@@ -2996,7 +3377,7 @@
   <dt><pre><span class="Keyword">proc</span> <a href="#unorderedList%2Cvarargs%5BT%5D"><span class="Identifier">unorderedList</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">items</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
-    Unordered list element
+    Unordered list elements
     
   </dd>
 </div>
@@ -3066,7 +3447,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-22 08:51:51 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-24 07:55:11 UTC</small>
       </div>
     </div>
   </div>

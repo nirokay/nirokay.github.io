@@ -98,7 +98,11 @@
 <li><a class="reference" href="#add%2CHtmlDocument%2Cseq%5BHtmlElement%5D" title="add(document: var HtmlDocument; elements: seq[HtmlElement])">add(document: var HtmlDocument; elements: seq[HtmlElement])</a></li>
 <li><a class="reference" href="#add%2CHtmlDocument%2Cvarargs%5BHtmlElement%5D" title="add(document: var HtmlDocument; elements: varargs[HtmlElement])">add(document: var HtmlDocument; elements: varargs[HtmlElement])</a></li>
 <li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2" title="add(element: HtmlElement; attributes: varargs[HtmlElementAttribute]): HtmlElement">add(element: HtmlElement; attributes: varargs[HtmlElementAttribute]): HtmlElement</a></li>
+<li><a class="reference" href="#add%2CHtmlElement%2Cseq%5BHtmlElement%5D_2" title="add(element: HtmlElement; children: seq[HtmlElement]): HtmlElement">add(element: HtmlElement; children: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElement%5D_2" title="add(element: HtmlElement; children: varargs[HtmlElement]): HtmlElement">add(element: HtmlElement; children: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D" title="add(element: var HtmlElement; attributes: varargs[HtmlElementAttribute])">add(element: var HtmlElement; attributes: varargs[HtmlElementAttribute])</a></li>
+<li><a class="reference" href="#add%2CHtmlElement%2Cseq%5BHtmlElement%5D" title="add(element: var HtmlElement; children: seq[HtmlElement])">add(element: var HtmlElement; children: seq[HtmlElement])</a></li>
+<li><a class="reference" href="#add%2CHtmlElement%2Cvarargs%5BHtmlElement%5D" title="add(element: var HtmlElement; children: varargs[HtmlElement])">add(element: var HtmlElement; children: varargs[HtmlElement])</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">addattr
@@ -420,12 +424,48 @@
     
   </dd>
 </div>
+<div id="add,HtmlElement,seq[HtmlElement]_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cseq%5BHtmlElement%5D_2"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Appends <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s children to an element
+    
+  </dd>
+</div>
+<div id="add,HtmlElement,varargs[HtmlElement]_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cvarargs%5BHtmlElement%5D_2"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Appends <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s children to an element
+    
+  </dd>
+</div>
 <div id="add,HtmlElement,varargs[HtmlElementAttribute]">
   <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Adds attribute(s) to an element
+    
+  </dd>
+</div>
+<div id="add,HtmlElement,seq[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cseq%5BHtmlElement%5D"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Appends <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s children to an element
+    
+  </dd>
+</div>
+<div id="add,HtmlElement,varargs[HtmlElement]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#add%2CHtmlElement%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">add</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Appends <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s children to an element
     
   </dd>
 </div>
@@ -1003,7 +1043,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-22 08:51:51 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-24 07:55:11 UTC</small>
       </div>
     </div>
   </div>

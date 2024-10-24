@@ -1,275 +1,329 @@
 nimTitle	html	websitegenerator/common/html.html	module websitegenerator/common/html		0
 nim	htmlComment	websitegenerator/common/html.html#htmlComment,string	proc htmlComment(text: string): HtmlElement		16
 nim	comment	websitegenerator/common/html.html#comment,string	proc comment(text: string): HtmlElement		17
-nim	source	websitegenerator/common/html.html#source,string,	proc source(src: string; type: MimeType | string): HtmlElement		27
-nim	video	websitegenerator/common/html.html#video,,,seq[HtmlElement],string,bool	proc video(width, height: string | SomeInteger; sources: seq[HtmlElement];\n      alt: string; controls: bool = true): HtmlElement		32
-nim	video	websitegenerator/common/html.html#video,,,HtmlElement,string,bool	proc video(width, height: string | SomeInteger; source: HtmlElement; alt: string;\n      controls: bool = true): HtmlElement		37
-nim	track	websitegenerator/common/html.html#track,string,string,string,string	proc track(src, kind, srclang, label: string): HtmlElement		40
-nim	audio	websitegenerator/common/html.html#audio,string,bool	proc audio(src: string; controls: bool = true): HtmlElement		44
-nim	img	websitegenerator/common/html.html#img,string,string	proc img(src: string; alt: string): HtmlElement		50
-nim	embed	websitegenerator/common/html.html#embed,,string,,	proc embed(type: MimeType | string; src: string; width, height: string | SomeInteger): HtmlElement		55
-nim	picture	websitegenerator/common/html.html#picture,seq[HtmlElement]	proc picture(children: seq[HtmlElement]): HtmlElement		63
-nim	picture	websitegenerator/common/html.html#picture,varargs[HtmlElement]	proc picture(children: varargs[HtmlElement]): HtmlElement		64
-nim	map	websitegenerator/common/html.html#map,string,seq[HtmlElement]	proc map(name: string; children: seq[HtmlElement]): HtmlElement		66
-nim	map	websitegenerator/common/html.html#map,string,varargs[HtmlElement]	proc map(name: string; children: varargs[HtmlElement]): HtmlElement		71
-nim	hgroup	websitegenerator/common/html.html#hgroup,seq[HtmlElement]	proc hgroup(children: seq[HtmlElement]): HtmlElement		73
-nim	hgroup	websitegenerator/common/html.html#hgroup,varargs[HtmlElement]	proc hgroup(children: varargs[HtmlElement]): HtmlElement		74
-nim	header	websitegenerator/common/html.html#header,string	proc header(content: string): HtmlElement		76
-nim	header	websitegenerator/common/html.html#header,seq[HtmlElement]	proc header(content: seq[HtmlElement]): HtmlElement		77
-nim	header	websitegenerator/common/html.html#header,varargs[HtmlElement]	proc header(content: varargs[HtmlElement]): HtmlElement		78
-nim	article	websitegenerator/common/html.html#article,string	proc article(content: string): HtmlElement		79
-nim	article	websitegenerator/common/html.html#article,seq[HtmlElement]	proc article(content: seq[HtmlElement]): HtmlElement		80
-nim	article	websitegenerator/common/html.html#article,varargs[HtmlElement]	proc article(content: varargs[HtmlElement]): HtmlElement		81
-nim	main	websitegenerator/common/html.html#main,string	proc main(content: string): HtmlElement		82
-nim	main	websitegenerator/common/html.html#main,seq[HtmlElement]	proc main(content: seq[HtmlElement]): HtmlElement		83
-nim	main	websitegenerator/common/html.html#main,varargs[HtmlElement]	proc main(content: varargs[HtmlElement]): HtmlElement		84
-nim	footer	websitegenerator/common/html.html#footer,string	proc footer(content: string): HtmlElement		85
-nim	footer	websitegenerator/common/html.html#footer,seq[HtmlElement]	proc footer(content: seq[HtmlElement]): HtmlElement		86
-nim	footer	websitegenerator/common/html.html#footer,varargs[HtmlElement]	proc footer(content: varargs[HtmlElement]): HtmlElement		87
-nim	h1	websitegenerator/common/html.html#h1,string	proc h1(text: string): HtmlElement		89
-nim	h2	websitegenerator/common/html.html#h2,string	proc h2(text: string): HtmlElement		90
-nim	h3	websitegenerator/common/html.html#h3,string	proc h3(text: string): HtmlElement		91
-nim	h4	websitegenerator/common/html.html#h4,string	proc h4(text: string): HtmlElement		92
-nim	h5	websitegenerator/common/html.html#h5,string	proc h5(text: string): HtmlElement		93
-nim	h6	websitegenerator/common/html.html#h6,string	proc h6(text: string): HtmlElement		94
-nim	br	websitegenerator/common/html.html#br	proc br(): HtmlElement		96
-nim	p	websitegenerator/common/html.html#p,string	proc p(text: string): HtmlElement		97
-nim	p	websitegenerator/common/html.html#p,seq[string]	proc p(text: seq[string]): HtmlElement		98
-nim	p	websitegenerator/common/html.html#p,varargs[string]	proc p(text: varargs[string]): HtmlElement		99
-nim	span	websitegenerator/common/html.html#span,string	proc span(text: string): HtmlElement		100
-nim	span	websitegenerator/common/html.html#span,string,string	proc span(text, class: string): HtmlElement		101
-nim	span	websitegenerator/common/html.html#span,string,CssElement	proc span(text: string; class: CssElement): HtmlElement		102
-nim	q	websitegenerator/common/html.html#q,string	proc q(text: string): HtmlElement		103
-nim	q	websitegenerator/common/html.html#q,string,string	proc q(href, text: string): HtmlElement		104
-nim	a	websitegenerator/common/html.html#a,string,string	proc a(href, content: string): HtmlElement		105
-nim	b	websitegenerator/common/html.html#b,string	proc b(text: string): HtmlElement		106
-nim	i	websitegenerator/common/html.html#i,string	proc i(text: string): HtmlElement		107
-nim	s	websitegenerator/common/html.html#s,string	proc s(text: string): HtmlElement		108
-nim	u	websitegenerator/common/html.html#u,string	proc u(text: string): HtmlElement		109
-nim	em	websitegenerator/common/html.html#em,string	proc em(text: string): HtmlElement		110
-nim	`var`	websitegenerator/common/html.html#var,string	proc `var`(text: string): HtmlElement		111
-nim	small	websitegenerator/common/html.html#small,string	proc small(text: string): HtmlElement		112
-nim	strong	websitegenerator/common/html.html#strong,string	proc strong(text: string): HtmlElement		113
-nim	mark	websitegenerator/common/html.html#mark,string	proc mark(text: string): HtmlElement		114
-nim	pre	websitegenerator/common/html.html#pre,string	proc pre(text: string): HtmlElement		115
-nim	sub	websitegenerator/common/html.html#sub,string	proc sub(text: string): HtmlElement		116
-nim	sup	websitegenerator/common/html.html#sup,string	proc sup(text: string): HtmlElement		117
-nim	hr	websitegenerator/common/html.html#hr	proc hr(): HtmlElement		118
-nim	wbr	websitegenerator/common/html.html#wbr	proc wbr(): HtmlElement		119
-nim	address	websitegenerator/common/html.html#address,seq[HtmlElement]	proc address(children: seq[HtmlElement]): HtmlElement		122
-nim	address	websitegenerator/common/html.html#address,varargs[HtmlElement]	proc address(children: varargs[HtmlElement]): HtmlElement		123
-nim	meter	websitegenerator/common/html.html#meter,,,string	proc meter(min, max: SomeInteger | string; text: string = " "): HtmlElement		125
-nim	meter	websitegenerator/common/html.html#meter,,,,string	proc meter(min, max, value: SomeInteger | string; text: string = " "): HtmlElement		128
-nim	meter	websitegenerator/common/html.html#meter,string,,,,string	proc meter(id: string; min, max, value: SomeInteger | string; text: string): HtmlElement		131
-nim	meter	websitegenerator/common/html.html#meter,,string	proc meter(value: SomeFloat | string; text: string = " "): HtmlElement		134
-nim	meter	websitegenerator/common/html.html#meter,string,,string	proc meter(id: string; value: SomeFloat | string; text: string = " "): HtmlElement		137
-nim	ruby	websitegenerator/common/html.html#ruby,seq[HtmlElement]	proc ruby(children: seq[HtmlElement]): HtmlElement		141
-nim	ruby	websitegenerator/common/html.html#ruby,varargs[HtmlElement]	proc ruby(children: varargs[HtmlElement]): HtmlElement		142
-nim	rp	websitegenerator/common/html.html#rp,string	proc rp(text: string): HtmlElement		144
-nim	rt	websitegenerator/common/html.html#rt,string	proc rt(text: string): HtmlElement		145
-nim	rtWithFallback	websitegenerator/common/html.html#rtWithFallback,string,string	proc rtWithFallback(text, alt: string): HtmlElement		147
-nim	rubyWithFallback	websitegenerator/common/html.html#rubyWithFallback,varargs[array[,string]]	proc rubyWithFallback(stringWithFallback: varargs[array[2, string]]): HtmlElement		148
-nim	section	websitegenerator/common/html.html#section,string	proc section(text: string): HtmlElement		160
-nim	section	websitegenerator/common/html.html#section,seq[HtmlElement]	proc section(children: seq[HtmlElement]): HtmlElement		161
-nim	section	websitegenerator/common/html.html#section,varargs[HtmlElement]	proc section(children: varargs[HtmlElement]): HtmlElement		162
-nim	summary	websitegenerator/common/html.html#summary,string	proc summary(text: string): HtmlElement		163
-nim	code	websitegenerator/common/html.html#code,string	proc code(text: string): HtmlElement		164
-nim	abbr	websitegenerator/common/html.html#abbr,string	proc abbr(text: string): HtmlElement		165
-nim	samp	websitegenerator/common/html.html#samp,string	proc samp(text: string): HtmlElement		166
-nim	aside	websitegenerator/common/html.html#aside,seq[HtmlElement]	proc aside(children: seq[HtmlElement]): HtmlElement		167
-nim	aside	websitegenerator/common/html.html#aside,varargs[HtmlElement]	proc aside(children: varargs[HtmlElement]): HtmlElement		168
-nim	del	websitegenerator/common/html.html#del,string	proc del(text: string): HtmlElement		171
-nim	ins	websitegenerator/common/html.html#ins,string	proc ins(text: string): HtmlElement		172
-nim	dfn	websitegenerator/common/html.html#dfn,string	proc dfn(text: string): HtmlElement		173
-nim	kbd	websitegenerator/common/html.html#kbd,string	proc kbd(text: string): HtmlElement		174
-nim	bdi	websitegenerator/common/html.html#bdi,string	proc bdi(text: string): HtmlElement		175
-nim	bdo	websitegenerator/common/html.html#bdo,string,string	proc bdo(text, dir: string): HtmlElement		176
-nim	time	websitegenerator/common/html.html#time,string	proc time(text: string): HtmlElement		177
-nim	time	websitegenerator/common/html.html#time,string,string	proc time(datetime, text: string): HtmlElement		178
-nim	data	websitegenerator/common/html.html#data,string,string	proc data(value, text: string): HtmlElement		179
-nim	textarea	websitegenerator/common/html.html#textarea,string	proc textarea(text: string = ""): HtmlElement		181
-nim	textarea	websitegenerator/common/html.html#textarea,string,,,string	proc textarea(name: string; rows, cols: SomeInteger | string; text: string = ""): HtmlElement		182
-nim	textarea	websitegenerator/common/html.html#textarea,string,string,,,string	proc textarea(id, name: string; rows, cols: SomeInteger | string; text: string = ""): HtmlElement		188
-nim	area	websitegenerator/common/html.html#area,string,string,string	proc area(shape, coords, href: string): HtmlElement		192
-nim	area	websitegenerator/common/html.html#area,string,seq[T],string	proc area[T: string | SomeNumber](shape: string; coords: seq[T]; href: string): HtmlElement		197
-nim	canvas	websitegenerator/common/html.html#canvas,string	proc canvas(alt: string): HtmlElement		203
-nim	canvas	websitegenerator/common/html.html#canvas,string,string	proc canvas(id, alt: string): HtmlElement		204
-nim	form	websitegenerator/common/html.html#form,seq[HtmlElement]	proc form(children: seq[HtmlElement]): HtmlElement		206
-nim	form	websitegenerator/common/html.html#form,varargs[HtmlElement]	proc form(children: varargs[HtmlElement]): HtmlElement		207
-nim	form	websitegenerator/common/html.html#form,string,,seq[HtmlElement]	proc form(action: string; method: HttpMethod | string; children: seq[HtmlElement]): HtmlElement		209
-nim	form	websitegenerator/common/html.html#form,string,,varargs[HtmlElement]	proc form(action: string; method: HttpMethod | string; children: varargs[HtmlElement]): HtmlElement		215
-nim	search	websitegenerator/common/html.html#search,seq[HtmlElement]	proc search(children: seq[HtmlElement]): HtmlElement		217
-nim	search	websitegenerator/common/html.html#search,varargs[HtmlElement]	proc search(children: varargs[HtmlElement]): HtmlElement		218
-nim	button	websitegenerator/common/html.html#button,string	proc button(content: string): HtmlElement		220
-nim	button	websitegenerator/common/html.html#button,string,string	proc button(content, onclick: string): HtmlElement		221
-nim	fieldset	websitegenerator/common/html.html#fieldset,seq[HtmlElement]	proc fieldset(children: seq[HtmlElement]): HtmlElement		223
-nim	fieldset	websitegenerator/common/html.html#fieldset,varargs[HtmlElement]	proc fieldset(children: varargs[HtmlElement]): HtmlElement		224
-nim	datalist	websitegenerator/common/html.html#datalist,string,seq[HtmlElement]	proc datalist(id: string; children: seq[HtmlElement]): HtmlElement		225
-nim	datalist	websitegenerator/common/html.html#datalist,string,varargs[HtmlElement]	proc datalist(id: string; children: varargs[HtmlElement]): HtmlElement		226
-nim	legend	websitegenerator/common/html.html#legend,string	proc legend(text: string): HtmlElement		227
-nim	label	websitegenerator/common/html.html#label,string,string	proc label(for, text: string): HtmlElement		228
-nim	input	websitegenerator/common/html.html#input,,string,T	proc input[T](type: MimeType | string; id: string; value: T): HtmlElement		230
-nim	input	websitegenerator/common/html.html#input,,string	proc input(type: MimeType | string; id: string): HtmlElement		237
-nim	output	websitegenerator/common/html.html#output,string,string,string	proc output(name, for: string; content: string = ""): HtmlElement		239
-nim	output	websitegenerator/common/html.html#output,string,seq[string],string	proc output(name: string; forIds: seq[string]; content: string = ""): HtmlElement		243
-nim	slot	websitegenerator/common/html.html#slot,string,string	proc slot(name, content: string): HtmlElement		245
-nim	caption	websitegenerator/common/html.html#caption,string	proc caption(text: string): HtmlElement		247
-nim	table	websitegenerator/common/html.html#table,seq[HtmlElement]	proc table(children: seq[HtmlElement]): HtmlElement		248
-nim	table	websitegenerator/common/html.html#table,varargs[HtmlElement]	proc table(children: varargs[HtmlElement]): HtmlElement		249
-nim	thead	websitegenerator/common/html.html#thead,seq[HtmlElement]	proc thead(children: seq[HtmlElement]): HtmlElement		250
-nim	thead	websitegenerator/common/html.html#thead,varargs[HtmlElement]	proc thead(children: varargs[HtmlElement]): HtmlElement		251
-nim	tbody	websitegenerator/common/html.html#tbody,seq[HtmlElement]	proc tbody(children: seq[HtmlElement]): HtmlElement		252
-nim	tbody	websitegenerator/common/html.html#tbody,varargs[HtmlElement]	proc tbody(children: varargs[HtmlElement]): HtmlElement		253
-nim	tfoot	websitegenerator/common/html.html#tfoot,seq[HtmlElement]	proc tfoot(children: seq[HtmlElement]): HtmlElement		254
-nim	tfoot	websitegenerator/common/html.html#tfoot,varargs[HtmlElement]	proc tfoot(children: varargs[HtmlElement]): HtmlElement		255
-nim	tr	websitegenerator/common/html.html#tr,seq[HtmlElement]	proc tr(children: seq[HtmlElement]): HtmlElement		256
-nim	tr	websitegenerator/common/html.html#tr,varargs[HtmlElement]	proc tr(children: varargs[HtmlElement]): HtmlElement		257
-nim	th	websitegenerator/common/html.html#th,string	proc th(text: string): HtmlElement		258
-nim	td	websitegenerator/common/html.html#td,string	proc td(text: string): HtmlElement		259
-nim	colgroup	websitegenerator/common/html.html#colgroup,seq[HtmlElement]	proc colgroup(children: seq[HtmlElement]): HtmlElement		261
-nim	col	websitegenerator/common/html.html#col	proc col(): HtmlElement		262
-nim	col	websitegenerator/common/html.html#col_2	proc col(span: string | SomeInteger): HtmlElement		263
-nim	progress	websitegenerator/common/html.html#progress,string,,string	proc progress(id: string; max: SomeInteger | string; text: string = ""): HtmlElement		265
-nim	progress	websitegenerator/common/html.html#progress,string,,,string	proc progress(id: string; value, max: SomeInteger | string; text: string = ""): HtmlElement		268
-nim	select	websitegenerator/common/html.html#select,string,string,seq[HtmlElement]	proc select(name, id: string; children: seq[HtmlElement]): HtmlElement		272
-nim	select	websitegenerator/common/html.html#select,string,string,varargs[HtmlElement]	proc select(name, id: string; children: varargs[HtmlElement]): HtmlElement		275
-nim	optgroup	websitegenerator/common/html.html#optgroup,string,seq[HtmlElement]	proc optgroup(label: string; children: seq[HtmlElement]): HtmlElement		277
-nim	optgroup	websitegenerator/common/html.html#optgroup,string,varargs[HtmlElement]	proc optgroup(label: string; children: varargs[HtmlElement]): HtmlElement		282
-nim	option	websitegenerator/common/html.html#option,string,string	proc option(value, text: string): HtmlElement		283
-nim	ol	websitegenerator/common/html.html#ol,seq[HtmlElement]	proc ol(children: seq[HtmlElement]): HtmlElement		287
-nim	ol	websitegenerator/common/html.html#ol,varargs[HtmlElement]	proc ol(children: varargs[HtmlElement]): HtmlElement		288
-nim	ul	websitegenerator/common/html.html#ul,seq[HtmlElement]	proc ul(children: seq[HtmlElement]): HtmlElement		289
-nim	ul	websitegenerator/common/html.html#ul,varargs[HtmlElement]	proc ul(children: varargs[HtmlElement]): HtmlElement		290
-nim	li	websitegenerator/common/html.html#li,string	proc li(text: string): HtmlElement		292
-nim	unorderedList	websitegenerator/common/html.html#unorderedList,seq[T]	proc unorderedList[T](items: seq[T]): HtmlElement		299
-nim	unorderedList	websitegenerator/common/html.html#unorderedList,varargs[T]	proc unorderedList[T](items: varargs[T]): HtmlElement		300
-nim	orderedList	websitegenerator/common/html.html#orderedList,seq[T]	proc orderedList[T](items: seq[T]): HtmlElement		301
-nim	orderedList	websitegenerator/common/html.html#orderedList,varargs[T]	proc orderedList[T](items: varargs[T]): HtmlElement		302
-nim	dl	websitegenerator/common/html.html#dl,seq[HtmlElement]	proc dl(children: seq[HtmlElement]): HtmlElement		304
-nim	dl	websitegenerator/common/html.html#dl,varargs[HtmlElement]	proc dl(children: varargs[HtmlElement]): HtmlElement		305
-nim	dt	websitegenerator/common/html.html#dt,string	proc dt(text: string): HtmlElement		306
-nim	dd	websitegenerator/common/html.html#dd,string	proc dd(text: string): HtmlElement		307
-nim	menu	websitegenerator/common/html.html#menu,seq[HtmlElement]	proc menu(children: seq[HtmlElement]): HtmlElement		309
-nim	menu	websitegenerator/common/html.html#menu,varargs[HtmlElement]	proc menu(children: varargs[HtmlElement]): HtmlElement		310
-nim	nav	websitegenerator/common/html.html#nav,seq[HtmlElement]	proc nav(children: seq[HtmlElement]): HtmlElement		312
-nim	dialog	websitegenerator/common/html.html#dialog,bool,seq[HtmlElement]	proc dialog(open: bool; children: seq[HtmlElement]): HtmlElement		314
-nim	dialog	websitegenerator/common/html.html#dialog,bool,varargs[HtmlElement]	proc dialog(open: bool; children: varargs[HtmlElement]): HtmlElement		318
-nim	script	websitegenerator/common/html.html#script,string	proc script(code: string): HtmlElement		320
-nim	importScript	websitegenerator/common/html.html#importScript,string	proc importScript(src: string): HtmlElement		321
-nim	noscript	websitegenerator/common/html.html#noscript,string	proc noscript(text: string): HtmlElement		322
-nim	figure	websitegenerator/common/html.html#figure,seq[HtmlElement]	proc figure(children: seq[HtmlElement]): HtmlElement		324
-nim	figure	websitegenerator/common/html.html#figure,varargs[HtmlElement]	proc figure(children: varargs[HtmlElement]): HtmlElement		325
-nim	figcaption	websitegenerator/common/html.html#figcaption,string	proc figcaption(text: string): HtmlElement		326
-nim	figimage	websitegenerator/common/html.html#figimage,string,string,string	proc figimage(imgSrc, imgAlt, caption: string): HtmlElement		328
-nim	iframe	websitegenerator/common/html.html#iframe,string	proc iframe(src: string): HtmlElement		335
-nim	details	websitegenerator/common/html.html#details,seq[HtmlElement]	proc details(children: seq[HtmlElement]): HtmlElement		337
-nim	details	websitegenerator/common/html.html#details,varargs[HtmlElement]	proc details(children: varargs[HtmlElement]): HtmlElement		338
-nim	details	websitegenerator/common/html.html#details,string,string	proc details(header, content: string): HtmlElement		339
-nim	blockquote	websitegenerator/common/html.html#blockquote,string,string	proc blockquote(text: string; cite: string = ""): HtmlElement		344
-nim	cite	websitegenerator/common/html.html#cite,string	proc cite(content: string): HtmlElement		350
-nim	`div`	websitegenerator/common/html.html#div,seq[HtmlElement]	proc `div`(children: seq[HtmlElement]): HtmlElement		352
-nim	`div`	websitegenerator/common/html.html#div,varargs[HtmlElement]	proc `div`(children: varargs[HtmlElement]): HtmlElement		353
-nim	`object`	websitegenerator/common/html.html#object,,string	proc `object`(type: MimeType | string; src: string): HtmlElement		355
-nim	`object`	websitegenerator/common/html.html#object,,string,,	proc `object`(type: MimeType | string; src: string;\n         width, height: SomeInteger | string)		359
-nim	`template`	websitegenerator/common/html.html#template,string,seq[HtmlElement]	proc `template`(id: string; children: seq[HtmlElement]): HtmlElement		364
-nim	`template`	websitegenerator/common/html.html#template,string,varargs[HtmlElement]	proc `template`(id: string; children: varargs[HtmlElement]): HtmlElement		365
-nim	link	websitegenerator/common/html.html#link,string,string	proc link(rel, href: string): HtmlElement		367
-nim	link	websitegenerator/common/html.html#link,string,,string	proc link(rel: string; type: MimeType | string; href: string): HtmlElement		370
-nim	base	websitegenerator/common/html.html#base,string,string	proc base(href, target: string): HtmlElement		374
-nim	stylesheet	websitegenerator/common/html.html#stylesheet,string	proc stylesheet(href: string): HtmlElement		378
-nim	icon	websitegenerator/common/html.html#icon,string,	proc icon(href: string; type: MimeType | string): HtmlElement		380
-nim	icon	websitegenerator/common/html.html#icon,string,,string	proc icon(href: string; type: MimeType | string; sizes: string): HtmlElement		381
-nim	meta	websitegenerator/common/html.html#meta,seq[array[,string]]	proc meta(data: seq[array[2, string]]): HtmlElement		385
-nim	title	websitegenerator/common/html.html#title,string	proc title(text: string): HtmlElement		392
-nim	description	websitegenerator/common/html.html#description,string	proc description(content: string): HtmlElement		393
-nim	viewport	websitegenerator/common/html.html#viewport,string	proc viewport(content: string): HtmlElement		396
-nim	charset	websitegenerator/common/html.html#charset,string	proc charset(charset: string): HtmlElement		399
-nim	og	websitegenerator/common/html.html#og,string,string	proc og(property, content: string): HtmlElement		406
-nim	ogArray	websitegenerator/common/html.html#ogArray,string,seq[string]	proc ogArray(property: string; contents: seq[string]): seq[HtmlElement]		414
-nim	ogArray	websitegenerator/common/html.html#ogArray,string,varargs[string]	proc ogArray(property: string; contents: varargs[string]): seq[HtmlElement]		420
-nim	ogTitle	websitegenerator/common/html.html#ogTitle,string	proc ogTitle(text: string): HtmlElement		426
-nim	ogDescription	websitegenerator/common/html.html#ogDescription,string	proc ogDescription(text: string): HtmlElement		427
-nim	ogImage	websitegenerator/common/html.html#ogImage,string	proc ogImage(href: string): HtmlElement		429
-nim	ogImageUrl	websitegenerator/common/html.html#ogImageUrl,string	proc ogImageUrl(href: string): HtmlElement		430
-nim	ogImageSecureUrl	websitegenerator/common/html.html#ogImageSecureUrl,string	proc ogImageSecureUrl(href: string): HtmlElement		431
-nim	ogImageType	websitegenerator/common/html.html#ogImageType	proc ogImageType(type: string | MimeType): HtmlElement		432
-nim	ogImageWidth	websitegenerator/common/html.html#ogImageWidth	proc ogImageWidth(width: string | int): HtmlElement		433
-nim	ogImageHeight	websitegenerator/common/html.html#ogImageHeight	proc ogImageHeight(height: string | int): HtmlElement		434
-nim	ogImageAlt	websitegenerator/common/html.html#ogImageAlt,string	proc ogImageAlt(text: string): HtmlElement		435
-nim	ogVideo	websitegenerator/common/html.html#ogVideo,string	proc ogVideo(href: string): HtmlElement		437
-nim	ogVideoUrl	websitegenerator/common/html.html#ogVideoUrl,string	proc ogVideoUrl(href: string): HtmlElement		438
-nim	ogVideoSecureUrl	websitegenerator/common/html.html#ogVideoSecureUrl,string	proc ogVideoSecureUrl(href: string): HtmlElement		439
-nim	ogVideoType	websitegenerator/common/html.html#ogVideoType	proc ogVideoType(type: string | MimeType): HtmlElement		440
-nim	ogVideoWidth	websitegenerator/common/html.html#ogVideoWidth	proc ogVideoWidth(width: string | int): HtmlElement		441
-nim	ogVideoHeight	websitegenerator/common/html.html#ogVideoHeight	proc ogVideoHeight(height: string | int): HtmlElement		442
-nim	ogVideoAlt	websitegenerator/common/html.html#ogVideoAlt,string	proc ogVideoAlt(text: string): HtmlElement		443
-nim	ogAudio	websitegenerator/common/html.html#ogAudio,string	proc ogAudio(href: string): HtmlElement		445
-nim	ogAudioSecureUrl	websitegenerator/common/html.html#ogAudioSecureUrl,string	proc ogAudioSecureUrl(href: string): HtmlElement		446
-nim	ogAudioType	websitegenerator/common/html.html#ogAudioType	proc ogAudioType(type: string | MimeType): HtmlElement		447
-nim	ogType	websitegenerator/common/html.html#ogType,string	proc ogType(type: string): HtmlElement		449
-nim	ogNamespacePrefix	websitegenerator/common/html.html#ogNamespacePrefix,string,string	proc ogNamespacePrefix(namespace, href: string): HtmlElement		450
-nim	ogUrl	websitegenerator/common/html.html#ogUrl,string	proc ogUrl(href: string): HtmlElement		455
-nim	ogSiteName	websitegenerator/common/html.html#ogSiteName,string	proc ogSiteName(name: string): HtmlElement		457
-nim	determinerA	websitegenerator/common/html.html#determinerA	OgDeterminer.determinerA		459
-nim	determinerAn	websitegenerator/common/html.html#determinerAn	OgDeterminer.determinerAn		459
-nim	deterninerThe	websitegenerator/common/html.html#deterninerThe	OgDeterminer.deterninerThe		459
-nim	determinerEmpty	websitegenerator/common/html.html#determinerEmpty	OgDeterminer.determinerEmpty		459
-nim	determinerAuto	websitegenerator/common/html.html#determinerAuto	OgDeterminer.determinerAuto		459
-nim	OgDeterminer	websitegenerator/common/html.html#OgDeterminer	enum OgDeterminer		459
-nim	ogDeterminer	websitegenerator/common/html.html#ogDeterminer_2	proc ogDeterminer(determiner: string | OgDeterminer): HtmlElement		465
-nim	ogLocale	websitegenerator/common/html.html#ogLocale,string	proc ogLocale(locale: string): HtmlElement		467
-nim	ogLocaleAlternate	websitegenerator/common/html.html#ogLocaleAlternate,seq[string]	proc ogLocaleAlternate(locales: seq[string]): seq[HtmlElement]		468
-nim	ogLocaleAlternate	websitegenerator/common/html.html#ogLocaleAlternate,varargs[string]	proc ogLocaleAlternate(locales: varargs[string]): seq[HtmlElement]		469
-nimgrp	meter	websitegenerator/common/html.html#meter-procs-all	proc		125
-nimgrp	main	websitegenerator/common/html.html#main-procs-all	proc		82
-nimgrp	form	websitegenerator/common/html.html#form-procs-all	proc		206
-nimgrp	fieldset	websitegenerator/common/html.html#fieldset-procs-all	proc		223
-nimgrp	picture	websitegenerator/common/html.html#picture-procs-all	proc		63
-nimgrp	unorderedlist	websitegenerator/common/html.html#unorderedList-procs-all	proc		299
-nimgrp	thead	websitegenerator/common/html.html#thead-procs-all	proc		250
-nimgrp	textarea	websitegenerator/common/html.html#textarea-procs-all	proc		181
-nimgrp	link	websitegenerator/common/html.html#link-procs-all	proc		367
-nimgrp	select	websitegenerator/common/html.html#select-procs-all	proc		272
-nimgrp	oglocalealternate	websitegenerator/common/html.html#ogLocaleAlternate-procs-all	proc		468
-nimgrp	menu	websitegenerator/common/html.html#menu-procs-all	proc		309
-nimgrp	tbody	websitegenerator/common/html.html#tbody-procs-all	proc		252
-nimgrp	col	websitegenerator/common/html.html#col-procs-all	proc		262
-nimgrp	object	websitegenerator/common/html.html#object-procs-all	proc		355
-nimgrp	icon	websitegenerator/common/html.html#icon-procs-all	proc		380
-nimgrp	div	websitegenerator/common/html.html#div-procs-all	proc		352
-nimgrp	datalist	websitegenerator/common/html.html#datalist-procs-all	proc		225
-nimgrp	search	websitegenerator/common/html.html#search-procs-all	proc		217
-nimgrp	figure	websitegenerator/common/html.html#figure-procs-all	proc		324
-nimgrp	table	websitegenerator/common/html.html#table-procs-all	proc		248
-nimgrp	address	websitegenerator/common/html.html#address-procs-all	proc		122
-nimgrp	area	websitegenerator/common/html.html#area-procs-all	proc		192
-nimgrp	article	websitegenerator/common/html.html#article-procs-all	proc		79
-nimgrp	orderedlist	websitegenerator/common/html.html#orderedList-procs-all	proc		301
-nimgrp	span	websitegenerator/common/html.html#span-procs-all	proc		100
-nimgrp	dialog	websitegenerator/common/html.html#dialog-procs-all	proc		314
-nimgrp	input	websitegenerator/common/html.html#input-procs-all	proc		230
-nimgrp	optgroup	websitegenerator/common/html.html#optgroup-procs-all	proc		277
-nimgrp	aside	websitegenerator/common/html.html#aside-procs-all	proc		167
-nimgrp	canvas	websitegenerator/common/html.html#canvas-procs-all	proc		203
-nimgrp	button	websitegenerator/common/html.html#button-procs-all	proc		220
-nimgrp	ul	websitegenerator/common/html.html#ul-procs-all	proc		289
-nimgrp	ruby	websitegenerator/common/html.html#ruby-procs-all	proc		141
-nimgrp	output	websitegenerator/common/html.html#output-procs-all	proc		239
-nimgrp	video	websitegenerator/common/html.html#video-procs-all	proc		32
-nimgrp	p	websitegenerator/common/html.html#p-procs-all	proc		97
-nimgrp	tr	websitegenerator/common/html.html#tr-procs-all	proc		256
-nimgrp	template	websitegenerator/common/html.html#template-procs-all	proc		364
-nimgrp	header	websitegenerator/common/html.html#header-procs-all	proc		76
-nimgrp	time	websitegenerator/common/html.html#time-procs-all	proc		177
-nimgrp	ol	websitegenerator/common/html.html#ol-procs-all	proc		287
-nimgrp	hgroup	websitegenerator/common/html.html#hgroup-procs-all	proc		73
-nimgrp	map	websitegenerator/common/html.html#map-procs-all	proc		66
-nimgrp	section	websitegenerator/common/html.html#section-procs-all	proc		160
-nimgrp	progress	websitegenerator/common/html.html#progress-procs-all	proc		265
-nimgrp	details	websitegenerator/common/html.html#details-procs-all	proc		337
-nimgrp	ogarray	websitegenerator/common/html.html#ogArray-procs-all	proc		414
-nimgrp	footer	websitegenerator/common/html.html#footer-procs-all	proc		85
-nimgrp	q	websitegenerator/common/html.html#q-procs-all	proc		103
-nimgrp	dl	websitegenerator/common/html.html#dl-procs-all	proc		304
-nimgrp	tfoot	websitegenerator/common/html.html#tfoot-procs-all	proc		254
+nim	source	websitegenerator/common/html.html#source,string,	proc source(src: string; type: MimeType | string): HtmlElement		31
+nim	video	websitegenerator/common/html.html#video,,,seq[HtmlElement],string,bool	proc video(width, height: string | SomeInteger; sources: seq[HtmlElement];\n      alt: string; controls: bool = true): HtmlElement		36
+nim	video	websitegenerator/common/html.html#video,,,HtmlElement,string,bool	proc video(width, height: string | SomeInteger; source: HtmlElement; alt: string;\n      controls: bool = true): HtmlElement		41
+nim	track	websitegenerator/common/html.html#track,string,string,string,string	proc track(src, kind, srclang, label: string): HtmlElement		44
+nim	audio	websitegenerator/common/html.html#audio,string,bool	proc audio(src: string; controls: bool = true): HtmlElement		48
+nim	img	websitegenerator/common/html.html#img,string,string	proc img(src: string; alt: string): HtmlElement		54
+nim	embed	websitegenerator/common/html.html#embed,,string,,	proc embed(type: MimeType | string; src: string; width, height: string | SomeInteger): HtmlElement		59
+nim	picture	websitegenerator/common/html.html#picture,seq[HtmlElement]	proc picture(children: seq[HtmlElement]): HtmlElement		67
+nim	picture	websitegenerator/common/html.html#picture,varargs[HtmlElement]	proc picture(children: varargs[HtmlElement]): HtmlElement		68
+nim	map	websitegenerator/common/html.html#map,string,seq[HtmlElement]	proc map(name: string; children: seq[HtmlElement]): HtmlElement		70
+nim	map	websitegenerator/common/html.html#map,string,varargs[HtmlElement]	proc map(name: string; children: varargs[HtmlElement]): HtmlElement		75
+nim	hgroup	websitegenerator/common/html.html#hgroup,seq[HtmlElement]	proc hgroup(children: seq[HtmlElement]): HtmlElement		77
+nim	hgroup	websitegenerator/common/html.html#hgroup,varargs[HtmlElement]	proc hgroup(children: varargs[HtmlElement]): HtmlElement		78
+nim	header	websitegenerator/common/html.html#header,string	proc header(content: string): HtmlElement		80
+nim	header	websitegenerator/common/html.html#header,seq[HtmlElement]	proc header(children: seq[HtmlElement]): HtmlElement		81
+nim	header	websitegenerator/common/html.html#header,varargs[HtmlElement]	proc header(children: varargs[HtmlElement]): HtmlElement		82
+nim	article	websitegenerator/common/html.html#article,string	proc article(content: string): HtmlElement		83
+nim	article	websitegenerator/common/html.html#article,seq[HtmlElement]	proc article(children: seq[HtmlElement]): HtmlElement		84
+nim	article	websitegenerator/common/html.html#article,varargs[HtmlElement]	proc article(children: varargs[HtmlElement]): HtmlElement		85
+nim	main	websitegenerator/common/html.html#main,string	proc main(content: string): HtmlElement		86
+nim	main	websitegenerator/common/html.html#main,seq[HtmlElement]	proc main(children: seq[HtmlElement]): HtmlElement		87
+nim	main	websitegenerator/common/html.html#main,varargs[HtmlElement]	proc main(children: varargs[HtmlElement]): HtmlElement		88
+nim	footer	websitegenerator/common/html.html#footer,string	proc footer(content: string): HtmlElement		89
+nim	footer	websitegenerator/common/html.html#footer,seq[HtmlElement]	proc footer(children: seq[HtmlElement]): HtmlElement		90
+nim	footer	websitegenerator/common/html.html#footer,varargs[HtmlElement]	proc footer(children: varargs[HtmlElement]): HtmlElement		91
+nim	h1	websitegenerator/common/html.html#h1,string	proc h1(text: string): HtmlElement		93
+nim	h1	websitegenerator/common/html.html#h1,seq[HtmlElement]	proc h1(children: seq[HtmlElement]): HtmlElement		94
+nim	h1	websitegenerator/common/html.html#h1,varargs[HtmlElement]	proc h1(children: varargs[HtmlElement]): HtmlElement		95
+nim	h2	websitegenerator/common/html.html#h2,string	proc h2(text: string): HtmlElement		96
+nim	h2	websitegenerator/common/html.html#h2,seq[HtmlElement]	proc h2(children: seq[HtmlElement]): HtmlElement		97
+nim	h2	websitegenerator/common/html.html#h2,varargs[HtmlElement]	proc h2(children: varargs[HtmlElement]): HtmlElement		98
+nim	h3	websitegenerator/common/html.html#h3,string	proc h3(text: string): HtmlElement		99
+nim	h3	websitegenerator/common/html.html#h3,seq[HtmlElement]	proc h3(children: seq[HtmlElement]): HtmlElement		100
+nim	h3	websitegenerator/common/html.html#h3,varargs[HtmlElement]	proc h3(children: varargs[HtmlElement]): HtmlElement		101
+nim	h4	websitegenerator/common/html.html#h4,string	proc h4(text: string): HtmlElement		102
+nim	h4	websitegenerator/common/html.html#h4,seq[HtmlElement]	proc h4(children: seq[HtmlElement]): HtmlElement		103
+nim	h4	websitegenerator/common/html.html#h4,varargs[HtmlElement]	proc h4(children: varargs[HtmlElement]): HtmlElement		104
+nim	h5	websitegenerator/common/html.html#h5,string	proc h5(text: string): HtmlElement		105
+nim	h5	websitegenerator/common/html.html#h5,seq[HtmlElement]	proc h5(children: seq[HtmlElement]): HtmlElement		106
+nim	h5	websitegenerator/common/html.html#h5,varargs[HtmlElement]	proc h5(children: varargs[HtmlElement]): HtmlElement		107
+nim	h6	websitegenerator/common/html.html#h6,string	proc h6(text: string): HtmlElement		108
+nim	h6	websitegenerator/common/html.html#h6,seq[HtmlElement]	proc h6(children: seq[HtmlElement]): HtmlElement		109
+nim	h6	websitegenerator/common/html.html#h6,varargs[HtmlElement]	proc h6(children: varargs[HtmlElement]): HtmlElement		110
+nim	br	websitegenerator/common/html.html#br	proc br(): HtmlElement		112
+nim	p	websitegenerator/common/html.html#p,string	proc p(text: string): HtmlElement		113
+nim	p	websitegenerator/common/html.html#p,seq[string]	proc p(text: seq[string]): HtmlElement		114
+nim	p	websitegenerator/common/html.html#p,varargs[string]	proc p(text: varargs[string]): HtmlElement		115
+nim	p	websitegenerator/common/html.html#p,seq[HtmlElement]	proc p(children: seq[HtmlElement]): HtmlElement		116
+nim	p	websitegenerator/common/html.html#p,varargs[HtmlElement]	proc p(children: varargs[HtmlElement]): HtmlElement		117
+nim	span	websitegenerator/common/html.html#span,string	proc span(text: string): HtmlElement		118
+nim	span	websitegenerator/common/html.html#span,seq[HtmlElement]	proc span(children: seq[HtmlElement]): HtmlElement		119
+nim	span	websitegenerator/common/html.html#span,varargs[HtmlElement]	proc span(children: varargs[HtmlElement]): HtmlElement		120
+nim	q	websitegenerator/common/html.html#q,string	proc q(text: string): HtmlElement		121
+nim	q	websitegenerator/common/html.html#q,string,string	proc q(href, text: string): HtmlElement		122
+nim	a	websitegenerator/common/html.html#a,string,string	proc a(href, content: string): HtmlElement		123
+nim	b	websitegenerator/common/html.html#b,string	proc b(text: string): HtmlElement		124
+nim	i	websitegenerator/common/html.html#i,string	proc i(text: string): HtmlElement		125
+nim	s	websitegenerator/common/html.html#s,string	proc s(text: string): HtmlElement		126
+nim	u	websitegenerator/common/html.html#u,string	proc u(text: string): HtmlElement		127
+nim	em	websitegenerator/common/html.html#em,string	proc em(text: string): HtmlElement		128
+nim	`var`	websitegenerator/common/html.html#var,string	proc `var`(text: string): HtmlElement		129
+nim	small	websitegenerator/common/html.html#small,string	proc small(text: string): HtmlElement		130
+nim	strong	websitegenerator/common/html.html#strong,string	proc strong(text: string): HtmlElement		131
+nim	mark	websitegenerator/common/html.html#mark,string	proc mark(text: string): HtmlElement		132
+nim	pre	websitegenerator/common/html.html#pre,string	proc pre(text: string): HtmlElement		133
+nim	sub	websitegenerator/common/html.html#sub,string	proc sub(text: string): HtmlElement		134
+nim	sup	websitegenerator/common/html.html#sup,string	proc sup(text: string): HtmlElement		135
+nim	hr	websitegenerator/common/html.html#hr	proc hr(): HtmlElement		136
+nim	wbr	websitegenerator/common/html.html#wbr	proc wbr(): HtmlElement		137
+nim	address	websitegenerator/common/html.html#address,seq[HtmlElement]	proc address(children: seq[HtmlElement]): HtmlElement		140
+nim	address	websitegenerator/common/html.html#address,varargs[HtmlElement]	proc address(children: varargs[HtmlElement]): HtmlElement		141
+nim	meter	websitegenerator/common/html.html#meter,,,string	proc meter(min, max: SomeInteger | string; text: string = " "): HtmlElement		143
+nim	meter	websitegenerator/common/html.html#meter,,,,string	proc meter(min, max, value: SomeInteger | string; text: string = " "): HtmlElement		146
+nim	meter	websitegenerator/common/html.html#meter,string,,,,string	proc meter(id: string; min, max, value: SomeInteger | string; text: string): HtmlElement		149
+nim	meter	websitegenerator/common/html.html#meter,,string	proc meter(value: SomeFloat | string; text: string = " "): HtmlElement		152
+nim	meter	websitegenerator/common/html.html#meter,string,,string	proc meter(id: string; value: SomeFloat | string; text: string = " "): HtmlElement		155
+nim	ruby	websitegenerator/common/html.html#ruby,seq[HtmlElement]	proc ruby(children: seq[HtmlElement]): HtmlElement		159
+nim	ruby	websitegenerator/common/html.html#ruby,varargs[HtmlElement]	proc ruby(children: varargs[HtmlElement]): HtmlElement		160
+nim	rp	websitegenerator/common/html.html#rp,string	proc rp(text: string): HtmlElement		162
+nim	rt	websitegenerator/common/html.html#rt,string	proc rt(text: string): HtmlElement		163
+nim	rtWithFallback	websitegenerator/common/html.html#rtWithFallback,string,string	proc rtWithFallback(text, alt: string): HtmlElement		165
+nim	rubyWithFallback	websitegenerator/common/html.html#rubyWithFallback,varargs[array[,string]]	proc rubyWithFallback(stringWithFallback: varargs[array[2, string]]): HtmlElement		166
+nim	section	websitegenerator/common/html.html#section,string	proc section(text: string): HtmlElement		178
+nim	section	websitegenerator/common/html.html#section,seq[HtmlElement]	proc section(children: seq[HtmlElement]): HtmlElement		179
+nim	section	websitegenerator/common/html.html#section,varargs[HtmlElement]	proc section(children: varargs[HtmlElement]): HtmlElement		180
+nim	summary	websitegenerator/common/html.html#summary,string	proc summary(text: string): HtmlElement		181
+nim	summary	websitegenerator/common/html.html#summary,seq[HtmlElement]	proc summary(children: seq[HtmlElement]): HtmlElement		182
+nim	summary	websitegenerator/common/html.html#summary,varargs[HtmlElement]	proc summary(children: varargs[HtmlElement]): HtmlElement		183
+nim	code	websitegenerator/common/html.html#code,string	proc code(text: string): HtmlElement		184
+nim	abbr	websitegenerator/common/html.html#abbr,string	proc abbr(text: string): HtmlElement		185
+nim	samp	websitegenerator/common/html.html#samp,string	proc samp(text: string): HtmlElement		186
+nim	aside	websitegenerator/common/html.html#aside,seq[HtmlElement]	proc aside(children: seq[HtmlElement]): HtmlElement		187
+nim	aside	websitegenerator/common/html.html#aside,varargs[HtmlElement]	proc aside(children: varargs[HtmlElement]): HtmlElement		188
+nim	del	websitegenerator/common/html.html#del,string	proc del(text: string): HtmlElement		191
+nim	del	websitegenerator/common/html.html#del,seq[HtmlElement]	proc del(children: seq[HtmlElement]): HtmlElement		192
+nim	del	websitegenerator/common/html.html#del,varargs[HtmlElement]	proc del(children: varargs[HtmlElement]): HtmlElement		193
+nim	ins	websitegenerator/common/html.html#ins,string	proc ins(text: string): HtmlElement		194
+nim	ins	websitegenerator/common/html.html#ins,seq[HtmlElement]	proc ins(children: seq[HtmlElement]): HtmlElement		195
+nim	ins	websitegenerator/common/html.html#ins,varargs[HtmlElement]	proc ins(children: varargs[HtmlElement]): HtmlElement		196
+nim	dfn	websitegenerator/common/html.html#dfn,string	proc dfn(text: string): HtmlElement		197
+nim	kbd	websitegenerator/common/html.html#kbd,string	proc kbd(text: string): HtmlElement		198
+nim	bdi	websitegenerator/common/html.html#bdi,string	proc bdi(text: string): HtmlElement		199
+nim	bdo	websitegenerator/common/html.html#bdo,string,string	proc bdo(text, dir: string): HtmlElement		200
+nim	time	websitegenerator/common/html.html#time,string	proc time(text: string): HtmlElement		201
+nim	time	websitegenerator/common/html.html#time,string,string	proc time(datetime, text: string): HtmlElement		202
+nim	data	websitegenerator/common/html.html#data,string,string	proc data(value, text: string): HtmlElement		203
+nim	data	websitegenerator/common/html.html#data,seq[HtmlElement]	proc data(children: seq[HtmlElement]): HtmlElement		204
+nim	data	websitegenerator/common/html.html#data,varargs[HtmlElement]	proc data(children: varargs[HtmlElement]): HtmlElement		205
+nim	textarea	websitegenerator/common/html.html#textarea,string	proc textarea(text: string = ""): HtmlElement		207
+nim	textarea	websitegenerator/common/html.html#textarea,string,,,string	proc textarea(name: string; rows, cols: SomeInteger | string; text: string = ""): HtmlElement		208
+nim	textarea	websitegenerator/common/html.html#textarea,string,string,,,string	proc textarea(id, name: string; rows, cols: SomeInteger | string; text: string = ""): HtmlElement		214
+nim	area	websitegenerator/common/html.html#area,string,string,string	proc area(shape, coords, href: string): HtmlElement		218
+nim	area	websitegenerator/common/html.html#area,string,seq[T],string	proc area[T: string | SomeNumber](shape: string; coords: seq[T]; href: string): HtmlElement		223
+nim	canvas	websitegenerator/common/html.html#canvas,string	proc canvas(alt: string): HtmlElement		229
+nim	canvas	websitegenerator/common/html.html#canvas,string,string	proc canvas(id, alt: string): HtmlElement		230
+nim	form	websitegenerator/common/html.html#form,seq[HtmlElement]	proc form(children: seq[HtmlElement]): HtmlElement		232
+nim	form	websitegenerator/common/html.html#form,varargs[HtmlElement]	proc form(children: varargs[HtmlElement]): HtmlElement		233
+nim	form	websitegenerator/common/html.html#form,string,,seq[HtmlElement]	proc form(action: string; method: HttpMethod | string; children: seq[HtmlElement]): HtmlElement		235
+nim	form	websitegenerator/common/html.html#form,string,,varargs[HtmlElement]	proc form(action: string; method: HttpMethod | string; children: varargs[HtmlElement]): HtmlElement		241
+nim	search	websitegenerator/common/html.html#search,seq[HtmlElement]	proc search(children: seq[HtmlElement]): HtmlElement		243
+nim	search	websitegenerator/common/html.html#search,varargs[HtmlElement]	proc search(children: varargs[HtmlElement]): HtmlElement		244
+nim	button	websitegenerator/common/html.html#button,string	proc button(content: string): HtmlElement		246
+nim	button	websitegenerator/common/html.html#button,string,string	proc button(content, onclick: string): HtmlElement		247
+nim	fieldset	websitegenerator/common/html.html#fieldset,seq[HtmlElement]	proc fieldset(children: seq[HtmlElement]): HtmlElement		249
+nim	fieldset	websitegenerator/common/html.html#fieldset,varargs[HtmlElement]	proc fieldset(children: varargs[HtmlElement]): HtmlElement		250
+nim	datalist	websitegenerator/common/html.html#datalist,string,seq[HtmlElement]	proc datalist(id: string; children: seq[HtmlElement]): HtmlElement		251
+nim	datalist	websitegenerator/common/html.html#datalist,string,varargs[HtmlElement]	proc datalist(id: string; children: varargs[HtmlElement]): HtmlElement		252
+nim	legend	websitegenerator/common/html.html#legend,string	proc legend(text: string): HtmlElement		253
+nim	label	websitegenerator/common/html.html#label,string,string	proc label(for, text: string): HtmlElement		254
+nim	input	websitegenerator/common/html.html#input,,string,T	proc input[T](type: MimeType | string; id: string; value: T): HtmlElement		256
+nim	input	websitegenerator/common/html.html#input,,string	proc input(type: MimeType | string; id: string): HtmlElement		263
+nim	output	websitegenerator/common/html.html#output,string,string,string	proc output(name, for: string; content: string = ""): HtmlElement		265
+nim	output	websitegenerator/common/html.html#output,string,seq[string],string	proc output(name: string; forIds: seq[string]; content: string = ""): HtmlElement		269
+nim	output	websitegenerator/common/html.html#output,seq[HtmlElement]	proc output(children: seq[HtmlElement]): HtmlElement		270
+nim	output	websitegenerator/common/html.html#output,varargs[HtmlElement]	proc output(children: varargs[HtmlElement]): HtmlElement		271
+nim	slot	websitegenerator/common/html.html#slot,string,string	proc slot(name, content: string): HtmlElement		273
+nim	caption	websitegenerator/common/html.html#caption,string	proc caption(text: string): HtmlElement		275
+nim	table	websitegenerator/common/html.html#table,seq[HtmlElement]	proc table(children: seq[HtmlElement]): HtmlElement		276
+nim	table	websitegenerator/common/html.html#table,varargs[HtmlElement]	proc table(children: varargs[HtmlElement]): HtmlElement		277
+nim	thead	websitegenerator/common/html.html#thead,seq[HtmlElement]	proc thead(children: seq[HtmlElement]): HtmlElement		278
+nim	thead	websitegenerator/common/html.html#thead,varargs[HtmlElement]	proc thead(children: varargs[HtmlElement]): HtmlElement		279
+nim	tbody	websitegenerator/common/html.html#tbody,seq[HtmlElement]	proc tbody(children: seq[HtmlElement]): HtmlElement		280
+nim	tbody	websitegenerator/common/html.html#tbody,varargs[HtmlElement]	proc tbody(children: varargs[HtmlElement]): HtmlElement		281
+nim	tfoot	websitegenerator/common/html.html#tfoot,seq[HtmlElement]	proc tfoot(children: seq[HtmlElement]): HtmlElement		282
+nim	tfoot	websitegenerator/common/html.html#tfoot,varargs[HtmlElement]	proc tfoot(children: varargs[HtmlElement]): HtmlElement		283
+nim	tr	websitegenerator/common/html.html#tr,seq[HtmlElement]	proc tr(children: seq[HtmlElement]): HtmlElement		284
+nim	tr	websitegenerator/common/html.html#tr,varargs[HtmlElement]	proc tr(children: varargs[HtmlElement]): HtmlElement		285
+nim	th	websitegenerator/common/html.html#th,string	proc th(text: string): HtmlElement		287
+nim	th	websitegenerator/common/html.html#th,seq[HtmlElement]	proc th(children: seq[HtmlElement]): HtmlElement		288
+nim	th	websitegenerator/common/html.html#th,varargs[HtmlElement]	proc th(children: varargs[HtmlElement]): HtmlElement		289
+nim	td	websitegenerator/common/html.html#td,string	proc td(text: string): HtmlElement		291
+nim	td	websitegenerator/common/html.html#td,seq[HtmlElement]	proc td(children: seq[HtmlElement]): HtmlElement		292
+nim	td	websitegenerator/common/html.html#td,varargs[HtmlElement]	proc td(children: varargs[HtmlElement]): HtmlElement		293
+nim	colgroup	websitegenerator/common/html.html#colgroup,seq[HtmlElement]	proc colgroup(children: seq[HtmlElement]): HtmlElement		295
+nim	colgroup	websitegenerator/common/html.html#colgroup,varargs[HtmlElement]	proc colgroup(children: varargs[HtmlElement]): HtmlElement		296
+nim	col	websitegenerator/common/html.html#col	proc col(): HtmlElement		297
+nim	col	websitegenerator/common/html.html#col_2	proc col(span: string | SomeInteger): HtmlElement		298
+nim	progress	websitegenerator/common/html.html#progress,string,,string	proc progress(id: string; max: SomeInteger | string; text: string = ""): HtmlElement		300
+nim	progress	websitegenerator/common/html.html#progress,string,,,string	proc progress(id: string; value, max: SomeInteger | string; text: string = ""): HtmlElement		303
+nim	select	websitegenerator/common/html.html#select,string,string,seq[HtmlElement]	proc select(name, id: string; children: seq[HtmlElement]): HtmlElement		307
+nim	select	websitegenerator/common/html.html#select,string,string,varargs[HtmlElement]	proc select(name, id: string; children: varargs[HtmlElement]): HtmlElement		310
+nim	select	websitegenerator/common/html.html#select,seq[HtmlElement]	proc select(children: seq[HtmlElement]): HtmlElement		311
+nim	select	websitegenerator/common/html.html#select,varargs[HtmlElement]	proc select(children: varargs[HtmlElement]): HtmlElement		312
+nim	optgroup	websitegenerator/common/html.html#optgroup,string,seq[HtmlElement]	proc optgroup(label: string; children: seq[HtmlElement]): HtmlElement		314
+nim	optgroup	websitegenerator/common/html.html#optgroup,string,varargs[HtmlElement]	proc optgroup(label: string; children: varargs[HtmlElement]): HtmlElement		315
+nim	optgroup	websitegenerator/common/html.html#optgroup,seq[HtmlElement]	proc optgroup(children: seq[HtmlElement]): HtmlElement		316
+nim	optgroup	websitegenerator/common/html.html#optgroup,varargs[HtmlElement]	proc optgroup(children: varargs[HtmlElement]): HtmlElement		317
+nim	option	websitegenerator/common/html.html#option,string,string	proc option(value, text: string): HtmlElement		318
+nim	ol	websitegenerator/common/html.html#ol,seq[HtmlElement]	proc ol(children: seq[HtmlElement]): HtmlElement		322
+nim	ol	websitegenerator/common/html.html#ol,varargs[HtmlElement]	proc ol(children: varargs[HtmlElement]): HtmlElement		323
+nim	ul	websitegenerator/common/html.html#ul,seq[HtmlElement]	proc ul(children: seq[HtmlElement]): HtmlElement		324
+nim	ul	websitegenerator/common/html.html#ul,varargs[HtmlElement]	proc ul(children: varargs[HtmlElement]): HtmlElement		325
+nim	li	websitegenerator/common/html.html#li,string	proc li(text: string): HtmlElement		327
+nim	li	websitegenerator/common/html.html#li,seq[HtmlElement]	proc li(children: seq[HtmlElement]): HtmlElement		328
+nim	li	websitegenerator/common/html.html#li,varargs[HtmlElement]	proc li(children: varargs[HtmlElement]): HtmlElement		329
+nim	unorderedList	websitegenerator/common/html.html#unorderedList,seq[T]	proc unorderedList[T](items: seq[T]): HtmlElement		336
+nim	unorderedList	websitegenerator/common/html.html#unorderedList,varargs[T]	proc unorderedList[T](items: varargs[T]): HtmlElement		337
+nim	orderedList	websitegenerator/common/html.html#orderedList,seq[T]	proc orderedList[T](items: seq[T]): HtmlElement		338
+nim	orderedList	websitegenerator/common/html.html#orderedList,varargs[T]	proc orderedList[T](items: varargs[T]): HtmlElement		339
+nim	dl	websitegenerator/common/html.html#dl,seq[HtmlElement]	proc dl(children: seq[HtmlElement]): HtmlElement		341
+nim	dl	websitegenerator/common/html.html#dl,varargs[HtmlElement]	proc dl(children: varargs[HtmlElement]): HtmlElement		342
+nim	dt	websitegenerator/common/html.html#dt,string	proc dt(text: string): HtmlElement		343
+nim	dd	websitegenerator/common/html.html#dd,string	proc dd(text: string): HtmlElement		344
+nim	menu	websitegenerator/common/html.html#menu,seq[HtmlElement]	proc menu(children: seq[HtmlElement]): HtmlElement		346
+nim	menu	websitegenerator/common/html.html#menu,varargs[HtmlElement]	proc menu(children: varargs[HtmlElement]): HtmlElement		347
+nim	nav	websitegenerator/common/html.html#nav,seq[HtmlElement]	proc nav(children: seq[HtmlElement]): HtmlElement		349
+nim	nav	websitegenerator/common/html.html#nav,varargs[HtmlElement]	proc nav(children: varargs[HtmlElement]): HtmlElement		350
+nim	dialog	websitegenerator/common/html.html#dialog,bool,seq[HtmlElement]	proc dialog(open: bool; children: seq[HtmlElement]): HtmlElement		353
+nim	dialog	websitegenerator/common/html.html#dialog,bool,varargs[HtmlElement]	proc dialog(open: bool; children: varargs[HtmlElement]): HtmlElement		357
+nim	script	websitegenerator/common/html.html#script,string	proc script(code: string): HtmlElement		359
+nim	importScript	websitegenerator/common/html.html#importScript,string	proc importScript(src: string): HtmlElement		360
+nim	noscript	websitegenerator/common/html.html#noscript,string	proc noscript(text: string): HtmlElement		361
+nim	figure	websitegenerator/common/html.html#figure,seq[HtmlElement]	proc figure(children: seq[HtmlElement]): HtmlElement		363
+nim	figure	websitegenerator/common/html.html#figure,varargs[HtmlElement]	proc figure(children: varargs[HtmlElement]): HtmlElement		364
+nim	figcaption	websitegenerator/common/html.html#figcaption,string	proc figcaption(text: string): HtmlElement		365
+nim	figimage	websitegenerator/common/html.html#figimage,string,string,string	proc figimage(imgSrc, imgAlt, caption: string): HtmlElement		367
+nim	iframe	websitegenerator/common/html.html#iframe,string	proc iframe(src: string): HtmlElement		374
+nim	details	websitegenerator/common/html.html#details,seq[HtmlElement]	proc details(children: seq[HtmlElement]): HtmlElement		376
+nim	details	websitegenerator/common/html.html#details,varargs[HtmlElement]	proc details(children: varargs[HtmlElement]): HtmlElement		377
+nim	details	websitegenerator/common/html.html#details,string,string	proc details(header, content: string): HtmlElement		378
+nim	blockquote	websitegenerator/common/html.html#blockquote,string,string	proc blockquote(text: string; cite: string = ""): HtmlElement		383
+nim	blockquote	websitegenerator/common/html.html#blockquote,seq[HtmlElement]	proc blockquote(children: seq[HtmlElement]): HtmlElement		387
+nim	blockquote	websitegenerator/common/html.html#blockquote,varargs[HtmlElement]	proc blockquote(children: varargs[HtmlElement]): HtmlElement		388
+nim	cite	websitegenerator/common/html.html#cite,string	proc cite(content: string): HtmlElement		390
+nim	`div`	websitegenerator/common/html.html#div,seq[HtmlElement]	proc `div`(children: seq[HtmlElement]): HtmlElement		392
+nim	`div`	websitegenerator/common/html.html#div,varargs[HtmlElement]	proc `div`(children: varargs[HtmlElement]): HtmlElement		393
+nim	`object`	websitegenerator/common/html.html#object,,string	proc `object`(type: MimeType | string; src: string): HtmlElement		395
+nim	`object`	websitegenerator/common/html.html#object,,string,,	proc `object`(type: MimeType | string; src: string;\n         width, height: SomeInteger | string)		399
+nim	`template`	websitegenerator/common/html.html#template,string,seq[HtmlElement]	proc `template`(id: string; children: seq[HtmlElement]): HtmlElement		404
+nim	`template`	websitegenerator/common/html.html#template,string,varargs[HtmlElement]	proc `template`(id: string; children: varargs[HtmlElement]): HtmlElement		405
+nim	link	websitegenerator/common/html.html#link,string,string	proc link(rel, href: string): HtmlElement		407
+nim	link	websitegenerator/common/html.html#link,string,,string	proc link(rel: string; type: MimeType | string; href: string): HtmlElement		410
+nim	base	websitegenerator/common/html.html#base,string,string	proc base(href, target: string): HtmlElement		414
+nim	stylesheet	websitegenerator/common/html.html#stylesheet,string	proc stylesheet(href: string): HtmlElement		418
+nim	icon	websitegenerator/common/html.html#icon,string,	proc icon(href: string; type: MimeType | string): HtmlElement		420
+nim	icon	websitegenerator/common/html.html#icon,string,,string	proc icon(href: string; type: MimeType | string; sizes: string): HtmlElement		421
+nim	meta	websitegenerator/common/html.html#meta,seq[array[,string]]	proc meta(data: seq[array[2, string]]): HtmlElement		425
+nim	title	websitegenerator/common/html.html#title,string	proc title(text: string): HtmlElement		432
+nim	description	websitegenerator/common/html.html#description,string	proc description(content: string): HtmlElement		433
+nim	viewport	websitegenerator/common/html.html#viewport,string	proc viewport(content: string): HtmlElement		436
+nim	charset	websitegenerator/common/html.html#charset,string	proc charset(charset: string): HtmlElement		439
+nim	og	websitegenerator/common/html.html#og,string,string	proc og(property, content: string): HtmlElement		446
+nim	ogArray	websitegenerator/common/html.html#ogArray,string,seq[string]	proc ogArray(property: string; contents: seq[string]): seq[HtmlElement]		454
+nim	ogArray	websitegenerator/common/html.html#ogArray,string,varargs[string]	proc ogArray(property: string; contents: varargs[string]): seq[HtmlElement]		460
+nim	ogTitle	websitegenerator/common/html.html#ogTitle,string	proc ogTitle(text: string): HtmlElement		466
+nim	ogDescription	websitegenerator/common/html.html#ogDescription,string	proc ogDescription(text: string): HtmlElement		467
+nim	ogImage	websitegenerator/common/html.html#ogImage,string	proc ogImage(href: string): HtmlElement		469
+nim	ogImageUrl	websitegenerator/common/html.html#ogImageUrl,string	proc ogImageUrl(href: string): HtmlElement		470
+nim	ogImageSecureUrl	websitegenerator/common/html.html#ogImageSecureUrl,string	proc ogImageSecureUrl(href: string): HtmlElement		471
+nim	ogImageType	websitegenerator/common/html.html#ogImageType	proc ogImageType(type: string | MimeType): HtmlElement		472
+nim	ogImageWidth	websitegenerator/common/html.html#ogImageWidth	proc ogImageWidth(width: string | int): HtmlElement		473
+nim	ogImageHeight	websitegenerator/common/html.html#ogImageHeight	proc ogImageHeight(height: string | int): HtmlElement		474
+nim	ogImageAlt	websitegenerator/common/html.html#ogImageAlt,string	proc ogImageAlt(text: string): HtmlElement		475
+nim	ogVideo	websitegenerator/common/html.html#ogVideo,string	proc ogVideo(href: string): HtmlElement		477
+nim	ogVideoUrl	websitegenerator/common/html.html#ogVideoUrl,string	proc ogVideoUrl(href: string): HtmlElement		478
+nim	ogVideoSecureUrl	websitegenerator/common/html.html#ogVideoSecureUrl,string	proc ogVideoSecureUrl(href: string): HtmlElement		479
+nim	ogVideoType	websitegenerator/common/html.html#ogVideoType	proc ogVideoType(type: string | MimeType): HtmlElement		480
+nim	ogVideoWidth	websitegenerator/common/html.html#ogVideoWidth	proc ogVideoWidth(width: string | int): HtmlElement		481
+nim	ogVideoHeight	websitegenerator/common/html.html#ogVideoHeight	proc ogVideoHeight(height: string | int): HtmlElement		482
+nim	ogVideoAlt	websitegenerator/common/html.html#ogVideoAlt,string	proc ogVideoAlt(text: string): HtmlElement		483
+nim	ogAudio	websitegenerator/common/html.html#ogAudio,string	proc ogAudio(href: string): HtmlElement		485
+nim	ogAudioSecureUrl	websitegenerator/common/html.html#ogAudioSecureUrl,string	proc ogAudioSecureUrl(href: string): HtmlElement		486
+nim	ogAudioType	websitegenerator/common/html.html#ogAudioType	proc ogAudioType(type: string | MimeType): HtmlElement		487
+nim	ogType	websitegenerator/common/html.html#ogType,string	proc ogType(type: string): HtmlElement		489
+nim	ogNamespacePrefix	websitegenerator/common/html.html#ogNamespacePrefix,string,string	proc ogNamespacePrefix(namespace, href: string): HtmlElement		490
+nim	ogUrl	websitegenerator/common/html.html#ogUrl,string	proc ogUrl(href: string): HtmlElement		495
+nim	ogSiteName	websitegenerator/common/html.html#ogSiteName,string	proc ogSiteName(name: string): HtmlElement		497
+nim	determinerA	websitegenerator/common/html.html#determinerA	OgDeterminer.determinerA		499
+nim	determinerAn	websitegenerator/common/html.html#determinerAn	OgDeterminer.determinerAn		499
+nim	deterninerThe	websitegenerator/common/html.html#deterninerThe	OgDeterminer.deterninerThe		499
+nim	determinerEmpty	websitegenerator/common/html.html#determinerEmpty	OgDeterminer.determinerEmpty		499
+nim	determinerAuto	websitegenerator/common/html.html#determinerAuto	OgDeterminer.determinerAuto		499
+nim	OgDeterminer	websitegenerator/common/html.html#OgDeterminer	enum OgDeterminer		499
+nim	ogDeterminer	websitegenerator/common/html.html#ogDeterminer_2	proc ogDeterminer(determiner: string | OgDeterminer): HtmlElement		505
+nim	ogLocale	websitegenerator/common/html.html#ogLocale,string	proc ogLocale(locale: string): HtmlElement		507
+nim	ogLocaleAlternate	websitegenerator/common/html.html#ogLocaleAlternate,seq[string]	proc ogLocaleAlternate(locales: seq[string]): seq[HtmlElement]		508
+nim	ogLocaleAlternate	websitegenerator/common/html.html#ogLocaleAlternate,varargs[string]	proc ogLocaleAlternate(locales: varargs[string]): seq[HtmlElement]		509
+nimgrp	h4	websitegenerator/common/html.html#h4-procs-all	proc		102
+nimgrp	del	websitegenerator/common/html.html#del-procs-all	proc		191
+nimgrp	nav	websitegenerator/common/html.html#nav-procs-all	proc		349
+nimgrp	meter	websitegenerator/common/html.html#meter-procs-all	proc		143
+nimgrp	main	websitegenerator/common/html.html#main-procs-all	proc		86
+nimgrp	h1	websitegenerator/common/html.html#h1-procs-all	proc		93
+nimgrp	form	websitegenerator/common/html.html#form-procs-all	proc		232
+nimgrp	fieldset	websitegenerator/common/html.html#fieldset-procs-all	proc		249
+nimgrp	picture	websitegenerator/common/html.html#picture-procs-all	proc		67
+nimgrp	unorderedlist	websitegenerator/common/html.html#unorderedList-procs-all	proc		336
+nimgrp	thead	websitegenerator/common/html.html#thead-procs-all	proc		278
+nimgrp	textarea	websitegenerator/common/html.html#textarea-procs-all	proc		207
+nimgrp	link	websitegenerator/common/html.html#link-procs-all	proc		407
+nimgrp	select	websitegenerator/common/html.html#select-procs-all	proc		307
+nimgrp	oglocalealternate	websitegenerator/common/html.html#ogLocaleAlternate-procs-all	proc		508
+nimgrp	menu	websitegenerator/common/html.html#menu-procs-all	proc		346
+nimgrp	tbody	websitegenerator/common/html.html#tbody-procs-all	proc		280
+nimgrp	col	websitegenerator/common/html.html#col-procs-all	proc		297
+nimgrp	object	websitegenerator/common/html.html#object-procs-all	proc		395
+nimgrp	blockquote	websitegenerator/common/html.html#blockquote-procs-all	proc		383
+nimgrp	icon	websitegenerator/common/html.html#icon-procs-all	proc		420
+nimgrp	h6	websitegenerator/common/html.html#h6-procs-all	proc		108
+nimgrp	li	websitegenerator/common/html.html#li-procs-all	proc		327
+nimgrp	div	websitegenerator/common/html.html#div-procs-all	proc		392
+nimgrp	datalist	websitegenerator/common/html.html#datalist-procs-all	proc		251
+nimgrp	search	websitegenerator/common/html.html#search-procs-all	proc		243
+nimgrp	colgroup	websitegenerator/common/html.html#colgroup-procs-all	proc		295
+nimgrp	figure	websitegenerator/common/html.html#figure-procs-all	proc		363
+nimgrp	table	websitegenerator/common/html.html#table-procs-all	proc		276
+nimgrp	address	websitegenerator/common/html.html#address-procs-all	proc		140
+nimgrp	area	websitegenerator/common/html.html#area-procs-all	proc		218
+nimgrp	article	websitegenerator/common/html.html#article-procs-all	proc		83
+nimgrp	orderedlist	websitegenerator/common/html.html#orderedList-procs-all	proc		338
+nimgrp	span	websitegenerator/common/html.html#span-procs-all	proc		118
+nimgrp	dialog	websitegenerator/common/html.html#dialog-procs-all	proc		353
+nimgrp	input	websitegenerator/common/html.html#input-procs-all	proc		256
+nimgrp	optgroup	websitegenerator/common/html.html#optgroup-procs-all	proc		314
+nimgrp	aside	websitegenerator/common/html.html#aside-procs-all	proc		187
+nimgrp	canvas	websitegenerator/common/html.html#canvas-procs-all	proc		229
+nimgrp	button	websitegenerator/common/html.html#button-procs-all	proc		246
+nimgrp	ul	websitegenerator/common/html.html#ul-procs-all	proc		324
+nimgrp	ruby	websitegenerator/common/html.html#ruby-procs-all	proc		159
+nimgrp	output	websitegenerator/common/html.html#output-procs-all	proc		265
+nimgrp	video	websitegenerator/common/html.html#video-procs-all	proc		36
+nimgrp	ins	websitegenerator/common/html.html#ins-procs-all	proc		194
+nimgrp	p	websitegenerator/common/html.html#p-procs-all	proc		113
+nimgrp	tr	websitegenerator/common/html.html#tr-procs-all	proc		284
+nimgrp	template	websitegenerator/common/html.html#template-procs-all	proc		404
+nimgrp	td	websitegenerator/common/html.html#td-procs-all	proc		291
+nimgrp	header	websitegenerator/common/html.html#header-procs-all	proc		80
+nimgrp	time	websitegenerator/common/html.html#time-procs-all	proc		201
+nimgrp	ol	websitegenerator/common/html.html#ol-procs-all	proc		322
+nimgrp	hgroup	websitegenerator/common/html.html#hgroup-procs-all	proc		77
+nimgrp	map	websitegenerator/common/html.html#map-procs-all	proc		70
+nimgrp	section	websitegenerator/common/html.html#section-procs-all	proc		178
+nimgrp	h2	websitegenerator/common/html.html#h2-procs-all	proc		96
+nimgrp	data	websitegenerator/common/html.html#data-procs-all	proc		203
+nimgrp	progress	websitegenerator/common/html.html#progress-procs-all	proc		300
+nimgrp	summary	websitegenerator/common/html.html#summary-procs-all	proc		181
+nimgrp	h3	websitegenerator/common/html.html#h3-procs-all	proc		99
+nimgrp	details	websitegenerator/common/html.html#details-procs-all	proc		376
+nimgrp	ogarray	websitegenerator/common/html.html#ogArray-procs-all	proc		454
+nimgrp	footer	websitegenerator/common/html.html#footer-procs-all	proc		89
+nimgrp	th	websitegenerator/common/html.html#th-procs-all	proc		287
+nimgrp	q	websitegenerator/common/html.html#q-procs-all	proc		121
+nimgrp	dl	websitegenerator/common/html.html#dl-procs-all	proc		341
+nimgrp	tfoot	websitegenerator/common/html.html#tfoot-procs-all	proc		282
+nimgrp	h5	websitegenerator/common/html.html#h5-procs-all	proc		105
 heading	Common html snippets	websitegenerator/common/html.html#common-html-snippets	 Common html snippets		0
