@@ -12,10 +12,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QQQEwksSS9ZWwAAAk1JREFUWMPtll2ITVEUx39nn/O7Y5qR8f05wtCUUr6ZIS++8pEnkZInPImneaCQ5METNdOkeFBKUhMPRIkHKfEuUZSUlGlKPN2TrgfncpvmnntnmlEyq1Z7t89/rf9a6+y99oZxGZf/XeIq61EdtgKXgdXA0xrYAvBjOIF1AI9zvjcC74BSpndrJPkBWDScTF8Aa4E3wDlgHbASaANmVqlcCnwHvgDvgVfAJ+AikAAvgfVZwLnSVZHZaOuKoQi3ZOMi4NkYkpe1p4J7A8BpYAD49hfIy/oqG0+hLomiKP2L5L+1ubn5115S+3OAn4EnwBlgMzCjyt6ZAnQCJ4A7wOs88iRJHvw50HoujuPBoCKwHWiosy8MdfZnAdcHk8dxXFJ3VQbQlCTJvRBCGdRbD4M6uc5glpY3eAihpN5S5w12diSEcCCEcKUO4ljdr15T76ur1FDDLIQQ3qv71EdDOe3Kxj3leRXyk+pxdWnFWod6Wt2bY3de3aSuUHcPBVimHs7mK9WrmeOF6lR1o9qnzskh2ar2qm1qizpfXaPeVGdlmGN5pb09qMxz1Xb1kLqgzn1RyH7JUXW52lr5e/Kqi9qpto7V1atuUzfnARrV7jEib1T76gG2qxdGmXyiekkt1GswPTtek0aBfJp6YySGBfWg2tPQ0FAYgf1stUfdmdcjarbYJEniKIq6gY/Aw+zWHAC+p2labGpqiorFYgGYCEzN7oQdQClN07O1/EfDyGgC0ALMBdYAi4FyK+4H3gLPsxfR1zRNi+NP7nH5J+QntnXe5B5mpfQAAAAASUVORK5CYII=">
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../nimdoc.out.css?v=2.0.2">
+<link rel="stylesheet" type="text/css" href="../nimdoc.out.css?v=2.0.8">
 
 <!-- JS -->
-<script type="text/javascript" src="../dochack.js?v=2.0.2"></script>
+<script type="text/javascript" src="../dochack.js?v=2.0.8"></script>
 </head>
 <body>
   <div class="document" id="documentId">
@@ -54,10 +54,13 @@
   <details open>
     <summary><a class="reference reference-toplevel" href="#7" id="57">Types</a></summary>
     <ul class="simple simple-toc-section">
-      <li><a class="reference" href="#Contributor" title="Contributor = object
-  name*: string
-  link*: Option[string]
-  tasks*: Option[seq[string]]">Contributor</a></li>
+      <li><a class="reference" href="#Changelog" title="Changelog = object
+  date*: string              ## Date in `yyyy-MM-dd` format
+  text*: OrderedTable[string, seq[string]] ## Heading -&gt; list">Changelog</a></li>
+<li><a class="reference" href="#Contributor" title="Contributor = object
+  name*: string              ## Contributor name
+  link*: Option[string]      ## Optional link to social media
+  tasks*: Option[seq[string]] ## List of tasks (displayed using unordered list)">Contributor</a></li>
 <li><a class="reference" href="#Coords" title="Coords = seq[int]">Coords</a></li>
 <li><a class="reference" href="#Description" title="Description = OrderedTable[string, Paragraph]">Description</a></li>
 <li><a class="reference" href="#Layer" title="Layer[T] = object
@@ -66,6 +69,7 @@
   shapes*: seq[T]">Layer</a></li>
 <li><a class="reference" href="#Location" title="Location = object
   name*: string              ## Location name
+  alias*: Option[seq[string]] ## Alias names for location (used for newsfeed substring replacements)
   link*: Option[string]      ## Link to a webpage (if there is one)
   desc*: Description         ## Description about a location
   open*: Option[OpeningTimes] ## Optional opening times
@@ -75,6 +79,20 @@
   same*: Option[seq[string]] ## Optional similar locations">Location</a></li>
 <li><a class="reference" href="#LocationImageType" title="LocationImageType = enum
   imgHeader = &quot;header image&quot;, imgFooter = &quot;footer image&quot;">LocationImageType</a></li>
+<li><a class="reference" href="#LocationLookup" title="LocationLookup = object
+  names*: seq[string]        ## List of aliases
+  path*: string              ## Path to location page: `location/location_name.html`">LocationLookup</a></li>
+<li><a class="reference" href="#Offering" title="Offering = object
+  name*: string              ## Activity name
+  desc*: Option[seq[string]] ## Description of the activity (joined by `&lt;br /&gt;`s)
+  time*: Option[string]      ## EITHER: single time
+  times*: Option[seq[string]] ## OR: multiple times
+  place*: Option[OfferingPlace] ## Activity place
+  contact*: Option[OfferingContact] ## Contacts">Offering</a></li>
+<li><a class="reference" href="#OfferingContact" title="OfferingContact = object
+  email*, telephone*: Option[string]">OfferingContact</a></li>
+<li><a class="reference" href="#OfferingPlace" title="OfferingPlace = object
+  name*, id*: Option[string]">OfferingPlace</a></li>
 <li><a class="reference" href="#OpeningTimes" title="OpeningTimes = OrderedTable[string, string]">OpeningTimes</a></li>
 <li><a class="reference" href="#Paragraph" title="Paragraph = seq[string]">Paragraph</a></li>
 <li><a class="reference" href="#Pictures" title="Pictures = object
@@ -148,12 +166,21 @@
 <div class="section" id="7">
   <h1><a class="toc-backref" href="#7">Types</a></h1>
   <dl class="item">
-    <div id="Contributor">
+    <div id="Changelog">
+  <dt><pre><a href="typedefs.html#Changelog"><span class="Identifier">Changelog</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
+  <span class="Identifier">date</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>              <span class="Comment">## Date in `yyyy-MM-dd` format</span>
+  <span class="Identifier">text</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">OrderedTable</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Heading -&gt; list</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="Contributor">
   <dt><pre><a href="typedefs.html#Contributor"><span class="Identifier">Contributor</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
-  <span class="Identifier">name</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>
-  <span class="Identifier">link</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>
-  <span class="Identifier">tasks</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span>
-</pre></dt>
+  <span class="Identifier">name</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>              <span class="Comment">## Contributor name</span>
+  <span class="Identifier">link</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>      <span class="Comment">## Optional link to social media</span>
+  <span class="Identifier">tasks</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## List of tasks (displayed using unordered list)</span></pre></dt>
   <dd>
     
     
@@ -180,8 +207,7 @@
   <dt><pre><a href="typedefs.html#Layer"><span class="Identifier">Layer</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span> <span class="Other">=</span> <span class="Keyword">object</span>
   <span class="Identifier">name</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>
   <span class="Identifier">opacity</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">float</span> <span class="Other">=</span> <span class="FloatNumber">1.0</span>
-  <span class="Identifier">shapes</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span>
-</pre></dt>
+  <span class="Identifier">shapes</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span></pre></dt>
   <dd>
     
     Inkscape layer object
@@ -191,14 +217,14 @@
 <div id="Location">
   <dt><pre><a href="typedefs.html#Location"><span class="Identifier">Location</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
   <span class="Identifier">name</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>              <span class="Comment">## Location name</span>
+  <span class="Identifier">alias</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Alias names for location (used for newsfeed substring replacements)</span>
   <span class="Identifier">link</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>      <span class="Comment">## Link to a webpage (if there is one)</span>
   <span class="Identifier">desc</span><span class="Operator">*</span><span class="Other">:</span> <a href="typedefs.html#Description"><span class="Identifier">Description</span></a>         <span class="Comment">## Description about a location</span>
   <span class="Identifier">open</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#OpeningTimes"><span class="Identifier">OpeningTimes</span></a><span class="Other">]</span> <span class="Comment">## Optional opening times</span>
   <span class="Identifier">pics</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#Pictures"><span class="Identifier">Pictures</span></a><span class="Other">]</span>    <span class="Comment">## Optional header and footer images</span>
   <span class="Identifier">coords</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#Coords"><span class="Identifier">Coords</span></a><span class="Other">]</span>    <span class="Comment">## Optional coordinates -&gt; will be inserted into the map image</span>
   <span class="Identifier">path</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>      <span class="Comment">## Optional, because needs not to be inserted into json file</span>
-  <span class="Identifier">same</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Optional similar locations</span>
-  </pre></dt>
+  <span class="Identifier">same</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Optional similar locations</span></pre></dt>
   <dd>
     
     
@@ -208,6 +234,48 @@
 <div id="LocationImageType">
   <dt><pre><a href="typedefs.html#LocationImageType"><span class="Identifier">LocationImageType</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
   <span class="Identifier">imgHeader</span> <span class="Other">=</span> <span class="StringLit">&quot;header image&quot;</span><span class="Other">,</span> <span class="Identifier">imgFooter</span> <span class="Other">=</span> <span class="StringLit">&quot;footer image&quot;</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="LocationLookup">
+  <dt><pre><a href="typedefs.html#LocationLookup"><span class="Identifier">LocationLookup</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
+  <span class="Identifier">names</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>        <span class="Comment">## List of aliases</span>
+  <span class="Identifier">path</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>              <span class="Comment">## Path to location page: `location/location_name.html`</span></pre></dt>
+  <dd>
+    
+    Look-up table for alias names, will be injected into newsfeed
+    
+  </dd>
+</div>
+<div id="Offering">
+  <dt><pre><a href="typedefs.html#Offering"><span class="Identifier">Offering</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
+  <span class="Identifier">name</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span>              <span class="Comment">## Activity name</span>
+  <span class="Identifier">desc</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## Description of the activity (joined by `&lt;br /&gt;`s)</span>
+  <span class="Identifier">time</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>      <span class="Comment">## EITHER: single time</span>
+  <span class="Identifier">times</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> <span class="Comment">## OR: multiple times</span>
+  <span class="Identifier">place</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#OfferingPlace"><span class="Identifier">OfferingPlace</span></a><span class="Other">]</span> <span class="Comment">## Activity place</span>
+  <span class="Identifier">contact</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><a href="typedefs.html#OfferingContact"><span class="Identifier">OfferingContact</span></a><span class="Other">]</span> <span class="Comment">## Contacts</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="OfferingContact">
+  <dt><pre><a href="typedefs.html#OfferingContact"><span class="Identifier">OfferingContact</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
+  <span class="Identifier">email</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">telephone</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="OfferingPlace">
+  <dt><pre><a href="typedefs.html#OfferingPlace"><span class="Identifier">OfferingPlace</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
+  <span class="Identifier">name</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">id</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span></pre></dt>
   <dd>
     
     
@@ -233,8 +301,7 @@
 <div id="Pictures">
   <dt><pre><a href="typedefs.html#Pictures"><span class="Identifier">Pictures</span></a> <span class="Other">=</span> <span class="Keyword">object</span>
   <span class="Identifier">header</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span>
-  <span class="Identifier">footer</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span>
-</pre></dt>
+  <span class="Identifier">footer</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span></pre></dt>
   <dd>
     
     
@@ -247,8 +314,7 @@
   <span class="Identifier">x</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">width</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">height</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">float</span>
   <span class="Identifier">ry</span><span class="Operator">*</span><span class="Other">,</span> <span class="Identifier">rx</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">float</span> <span class="Other">=</span> <span class="FloatNumber">0.0</span>
   <span class="Identifier">fill</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;#1a1a1aff&quot;</span>
-  <span class="Identifier">stroke</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;#1a1a1aff&quot;</span> <span class="Comment">## Does this value even do something? I do not know...</span>
-  </pre></dt>
+  <span class="Identifier">stroke</span><span class="Operator">*</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;#1a1a1aff&quot;</span> <span class="Comment">## Does this value even do something? I do not know...</span></pre></dt>
   <dd>
     
     Rectangle overlay object
@@ -352,7 +418,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-16 09:58:34 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-11-07 09:23:49 UTC</small>
       </div>
     </div>
   </div>

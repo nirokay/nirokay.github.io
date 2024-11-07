@@ -12,10 +12,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QQQEwksSS9ZWwAAAk1JREFUWMPtll2ITVEUx39nn/O7Y5qR8f05wtCUUr6ZIS++8pEnkZInPImneaCQ5METNdOkeFBKUhMPRIkHKfEuUZSUlGlKPN2TrgfncpvmnntnmlEyq1Z7t89/rf9a6+y99oZxGZf/XeIq61EdtgKXgdXA0xrYAvBjOIF1AI9zvjcC74BSpndrJPkBWDScTF8Aa4E3wDlgHbASaANmVqlcCnwHvgDvgVfAJ+AikAAvgfVZwLnSVZHZaOuKoQi3ZOMi4NkYkpe1p4J7A8BpYAD49hfIy/oqG0+hLomiKP2L5L+1ubn5115S+3OAn4EnwBlgMzCjyt6ZAnQCJ4A7wOs88iRJHvw50HoujuPBoCKwHWiosy8MdfZnAdcHk8dxXFJ3VQbQlCTJvRBCGdRbD4M6uc5glpY3eAihpN5S5w12diSEcCCEcKUO4ljdr15T76ur1FDDLIQQ3qv71EdDOe3Kxj3leRXyk+pxdWnFWod6Wt2bY3de3aSuUHcPBVimHs7mK9WrmeOF6lR1o9qnzskh2ar2qm1qizpfXaPeVGdlmGN5pb09qMxz1Xb1kLqgzn1RyH7JUXW52lr5e/Kqi9qpto7V1atuUzfnARrV7jEib1T76gG2qxdGmXyiekkt1GswPTtek0aBfJp6YySGBfWg2tPQ0FAYgf1stUfdmdcjarbYJEniKIq6gY/Aw+zWHAC+p2labGpqiorFYgGYCEzN7oQdQClN07O1/EfDyGgC0ALMBdYAi4FyK+4H3gLPsxfR1zRNi+NP7nH5J+QntnXe5B5mpfQAAAAASUVORK5CYII=">
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../nimdoc.out.css?v=2.0.2">
+<link rel="stylesheet" type="text/css" href="../nimdoc.out.css?v=2.0.8">
 
 <!-- JS -->
-<script type="text/javascript" src="../dochack.js?v=2.0.2"></script>
+<script type="text/javascript" src="../dochack.js?v=2.0.8"></script>
 </head>
 <body>
   <div class="document" id="documentId">
@@ -53,9 +53,36 @@
 </li>
 <li>
   <details open>
+    <summary><a class="reference reference-toplevel" href="#7" id="57">Types</a></summary>
+    <ul class="simple simple-toc-section">
+      <li><a class="reference" href="#ButtonHref" title="ButtonHref = tuple[text, title, href: string]">ButtonHref</a></li>
+
+    </ul>
+  </details>
+</li>
+<li>
+  <details open>
     <summary><a class="reference reference-toplevel" href="#10" id="60">Consts</a></summary>
     <ul class="simple simple-toc-section">
       <li><a class="reference" href="#defaultAuthor" title="defaultAuthor: string = &quot;Anonym&quot;">defaultAuthor</a></li>
+<li><a class="reference" href="#hrefArticles" title="hrefArticles: ButtonHref = (&quot;Artikel&quot;, &quot;Navigiere zu den Artikeln&quot;,
+                            &quot;articles.html&quot;)">hrefArticles</a></li>
+<li><a class="reference" href="#hrefChangelog" title="hrefChangelog: ButtonHref = (&quot;Veränderungen&quot;,
+                             &quot;Navigiere zu der Seite mit Veränderungen&quot;,
+                             &quot;changelog.html&quot;)">hrefChangelog</a></li>
+<li><a class="reference" href="#hrefContact" title="hrefContact: ButtonHref = (&quot;Kontakt&quot;, &quot;Navigiere zur Kontaktseite&quot;,
+                           &quot;contact.html&quot;)">hrefContact</a></li>
+<li><a class="reference" href="#hrefContributors" title="hrefContributors: ButtonHref = (&quot;Mitwirkende&quot;, &quot;Navigiere zu den Mitwirkenden&quot;,
+                                &quot;contributors.html&quot;)">hrefContributors</a></li>
+<li><a class="reference" href="#hrefIndex" title="hrefIndex: ButtonHref = (&quot;Startseite&quot;, &quot;Navigiere zur Startseite&quot;, &quot;index.html&quot;)">hrefIndex</a></li>
+<li><a class="reference" href="#hrefMap" title="hrefMap: ButtonHref = (&quot;Karte&quot;, &quot;Navigiere zur Karte&quot;, &quot;map.html&quot;)">hrefMap</a></li>
+<li><a class="reference" href="#hrefNewsfeed" title="hrefNewsfeed: ButtonHref = (&quot;Newsfeed&quot;, &quot;Navigiere zum Newsfeed&quot;,
+                            &quot;newsfeed.html&quot;)">hrefNewsfeed</a></li>
+<li><a class="reference" href="#hrefOfferings" title="hrefOfferings: ButtonHref = (&quot;Freizeitangebote&quot;,
+                             &quot;Navigiere zu den Freizeitangeboten&quot;,
+                             &quot;offerings.html&quot;)">hrefOfferings</a></li>
+<li><a class="reference" href="#hrefTour" title="hrefTour: ButtonHref = (&quot;Digitale Tour&quot;, &quot;Navigiere zur digitalen Tour&quot;,
+                        &quot;tour.html&quot;)">hrefTour</a></li>
 
     </ul>
   </details>
@@ -64,14 +91,14 @@
   <details open>
     <summary><a class="reference reference-toplevel" href="#12" id="62">Procs</a></summary>
     <ul class="simple simple-toc-section">
-      <ul class="simple nested-toc-section">authorBubble
+      <ul class="simple nested-toc-section">$%
+  <li><a class="reference" href="#%24%25%2CT" title="`$%`[T](toJson: T): string">`$%`[T](toJson: T): string</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">authorBubble
   <li><a class="reference" href="#authorBubble%2Cstring%2Carray%5B%2Cstring%5D%2Cstring" title="authorBubble(authorName: string; beforeAfterText: array[2, string] = [&quot;&quot;, &quot;&quot;];
              authorDisplayName: string = &quot;&quot;): HtmlElement">authorBubble(authorName: string; beforeAfterText: array[2, string] = [&quot;&quot;, &quot;&quot;];
              authorDisplayName: string = &quot;&quot;): HtmlElement</a></li>
-
-</ul>
-<ul class="simple nested-toc-section">backToHomeButton
-  <li><a class="reference" href="#backToHomeButton%2Cstring" title="backToHomeButton(text: string): HtmlElement">backToHomeButton(text: string): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">buttonLink
@@ -79,9 +106,9 @@
 
 </ul>
 <ul class="simple nested-toc-section">buttonList
-  <li><a class="reference" href="#buttonList" title="buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[
-    HtmlElement]">buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[
-    HtmlElement]</a></li>
+  <li><a class="reference" href="#buttonList%2C%2Cstring" title="buttonList(table: Table[string, string] | OrderedTable[string, string];
+           additionalSubUrl: string = &quot;&quot;): seq[HtmlElement]">buttonList(table: Table[string, string] | OrderedTable[string, string];
+           additionalSubUrl: string = &quot;&quot;): seq[HtmlElement]</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">buttonScript
@@ -91,6 +118,10 @@
 <ul class="simple nested-toc-section">divCenter
   <li><a class="reference" href="#divCenter%2Cseq%5BHtmlElement%5D" title="divCenter(elements: seq[HtmlElement]): HtmlElement">divCenter(elements: seq[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#divCenter%2Cvarargs%5BHtmlElement%5D" title="divCenter(elements: varargs[HtmlElement]): HtmlElement">divCenter(elements: varargs[HtmlElement]): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">formatToAscii
+  <li><a class="reference" href="#formatToAscii%2Cstring" title="formatToAscii(text: string): string">formatToAscii(text: string): string</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">fullyCenter
@@ -106,6 +137,34 @@
   <li><a class="reference" href="#getRelativeUrlPath%2Cstring" title="getRelativeUrlPath(name: string): string">getRelativeUrlPath(name: string): string</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">ih1
+  <li><a class="reference" href="#ih1%2Cstring%2Cstring" title="ih1(text: string; override: string = &quot;&quot;): HtmlElement">ih1(text: string; override: string = &quot;&quot;): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">ih2
+  <li><a class="reference" href="#ih2%2Cstring%2Cstring" title="ih2(text: string; override: string = &quot;&quot;): HtmlElement">ih2(text: string; override: string = &quot;&quot;): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">ih3
+  <li><a class="reference" href="#ih3%2Cstring%2Cstring" title="ih3(text: string; override: string = &quot;&quot;): HtmlElement">ih3(text: string; override: string = &quot;&quot;): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">ih4
+  <li><a class="reference" href="#ih4%2Cstring%2Cstring" title="ih4(text: string; override: string = &quot;&quot;): HtmlElement">ih4(text: string; override: string = &quot;&quot;): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">ih5
+  <li><a class="reference" href="#ih5%2Cstring%2Cstring" title="ih5(text: string; override: string = &quot;&quot;): HtmlElement">ih5(text: string; override: string = &quot;&quot;): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">ih6
+  <li><a class="reference" href="#ih6%2Cstring%2Cstring" title="ih6(text: string; override: string = &quot;&quot;): HtmlElement">ih6(text: string; override: string = &quot;&quot;): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">insertButtons
+  <li><a class="reference" href="#insertButtons%2Cvarargs%5BButtonHref%5D" title="insertButtons(buttons: varargs[ButtonHref]): HtmlElement">insertButtons(buttons: varargs[ButtonHref]): HtmlElement</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">isSet
   <li><a class="reference" href="#isSet%2COption%5BT%5D" title="isSet[T](item: Option[T]): bool">isSet[T](item: Option[T]): bool</a></li>
 
@@ -114,6 +173,19 @@
   <li><a class="reference" href="#pc%2Cvarargs%5BHtmlElement%5D" title="pc(elements: varargs[HtmlElement]): HtmlElement">pc(elements: varargs[HtmlElement]): HtmlElement</a></li>
 <li><a class="reference" href="#pc%2Cseq%5Bstring%5D" title="pc(lines: seq[string]): HtmlElement">pc(lines: seq[string]): HtmlElement</a></li>
 <li><a class="reference" href="#pc%2Cvarargs%5Bstring%5D" title="pc(lines: varargs[string]): HtmlElement">pc(lines: varargs[string]): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">timeReadable
+  <li><a class="reference" href="#timeReadable%2Cstring%2Cstring" title="timeReadable(date: string; dateFormat: string = &quot;yyyy-MM-dd&quot;): string">timeReadable(date: string; dateFormat: string = &quot;yyyy-MM-dd&quot;): string</a></li>
+<li><a class="reference" href="#timeReadable%2CDateTime" title="timeReadable(dateTime: DateTime): string">timeReadable(dateTime: DateTime): string</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">toHtmlElement
+  <li><a class="reference" href="#toHtmlElement%2CButtonHref" title="toHtmlElement(button: ButtonHref): HtmlElement">toHtmlElement(button: ButtonHref): HtmlElement</a></li>
+
+</ul>
+<ul class="simple nested-toc-section">toHtmlElements
+  <li><a class="reference" href="#toHtmlElements" title="toHtmlElements(buttons: varargs[ButtonHref] | seq[ButtonHref]): seq[HtmlElement]">toHtmlElements(buttons: varargs[ButtonHref] | seq[ButtonHref]): seq[HtmlElement]</a></li>
 
 </ul>
 
@@ -137,6 +209,20 @@
     <a class="reference external" href="generator.html">generator</a>, <a class="reference external" href="globals.html">globals</a>, <a class="reference external" href="styles.html">styles</a>, <a class="reference external" href="client.html">client</a>
   </dl>
 </div>
+<div class="section" id="7">
+  <h1><a class="toc-backref" href="#7">Types</a></h1>
+  <dl class="item">
+    <div id="ButtonHref">
+  <dt><pre><a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">text</span><span class="Other">,</span> <span class="Identifier">title</span><span class="Other">,</span> <span class="Identifier">href</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+
+  </dl>
+</div>
 <div class="section" id="10">
   <h1><a class="toc-backref" href="#10">Consts</a></h1>
   <dl class="item">
@@ -148,35 +234,115 @@
     
   </dd>
 </div>
+<div id="hrefArticles">
+  <dt><pre><a href="snippets.html#hrefArticles"><span class="Identifier">hrefArticles</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Artikel&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zu den Artikeln&quot;</span><span class="Other">,</span>
+                            <span class="StringLit">&quot;articles.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefChangelog">
+  <dt><pre><a href="snippets.html#hrefChangelog"><span class="Identifier">hrefChangelog</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Veränderungen&quot;</span><span class="Other">,</span>
+                             <span class="StringLit">&quot;Navigiere zu der Seite mit Veränderungen&quot;</span><span class="Other">,</span>
+                             <span class="StringLit">&quot;changelog.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefContact">
+  <dt><pre><a href="snippets.html#hrefContact"><span class="Identifier">hrefContact</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Kontakt&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zur Kontaktseite&quot;</span><span class="Other">,</span>
+                           <span class="StringLit">&quot;contact.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefContributors">
+  <dt><pre><a href="snippets.html#hrefContributors"><span class="Identifier">hrefContributors</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Mitwirkende&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zu den Mitwirkenden&quot;</span><span class="Other">,</span>
+                                <span class="StringLit">&quot;contributors.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefIndex">
+  <dt><pre><a href="snippets.html#hrefIndex"><span class="Identifier">hrefIndex</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Startseite&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zur Startseite&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;index.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefMap">
+  <dt><pre><a href="snippets.html#hrefMap"><span class="Identifier">hrefMap</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Karte&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zur Karte&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;map.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefNewsfeed">
+  <dt><pre><a href="snippets.html#hrefNewsfeed"><span class="Identifier">hrefNewsfeed</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Newsfeed&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zum Newsfeed&quot;</span><span class="Other">,</span>
+                            <span class="StringLit">&quot;newsfeed.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefOfferings">
+  <dt><pre><a href="snippets.html#hrefOfferings"><span class="Identifier">hrefOfferings</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Freizeitangebote&quot;</span><span class="Other">,</span>
+                             <span class="StringLit">&quot;Navigiere zu den Freizeitangeboten&quot;</span><span class="Other">,</span>
+                             <span class="StringLit">&quot;offerings.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="hrefTour">
+  <dt><pre><a href="snippets.html#hrefTour"><span class="Identifier">hrefTour</span></a><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;Digitale Tour&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;Navigiere zur digitalen Tour&quot;</span><span class="Other">,</span>
+                        <span class="StringLit">&quot;tour.html&quot;</span><span class="Other">)</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
 
   </dl>
 </div>
 <div class="section" id="12">
   <h1><a class="toc-backref" href="#12">Procs</a></h1>
   <dl class="item">
-    <div id="authorBubble-procs-all">
-  <div id="authorBubble,string,array[,string],string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#authorBubble%2Cstring%2Carray%5B%2Cstring%5D%2Cstring"><span class="Identifier">authorBubble</span></a><span class="Other">(</span><span class="Identifier">authorName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
-                  <span class="Identifier">beforeAfterText</span><span class="Other">:</span> <span class="Identifier">array</span><span class="Other">[</span><span class="DecNumber">2</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">[</span><span class="StringLit">&quot;&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;&quot;</span><span class="Other">]</span><span class="Other">;</span>
-                  <span class="Identifier">authorDisplayName</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+    <div id="$%-procs-all">
+  <div id="$%,T">
+  <dt><pre><span class="Keyword">proc</span> <a href="#%24%25%2CT"><span class="Identifier">`$%`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">toJson</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
   <dd>
     
-    <p>Generates an author bubble.</p>
-<p><tt class="docutils literal"><span class="pre"><span class="Identifier">beforeAfterText</span></span></tt> puts <tt class="docutils literal"><span class="pre"><span class="Identifier">array</span><span class="Punctuation">[</span><span class="DecNumber">0</span><span class="Punctuation">]</span></span></tt> before the author name and <tt class="docutils literal"><span class="pre"><span class="Identifier">array</span><span class="Punctuation">[</span><span class="DecNumber">1</span><span class="Punctuation">]</span></span></tt> after the author name</p>
-
+    Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">JsonNode</span></span></tt> and then to <tt class="docutils literal"><span class="pre"><span class="Identifier">string</span></span></tt>
     
   </dd>
 </div>
 
 </div>
-<div id="backToHomeButton-procs-all">
-  <div id="backToHomeButton,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#backToHomeButton%2Cstring"><span class="Identifier">backToHomeButton</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<div id="authorBubble-procs-all">
+  <div id="authorBubble,string,array[,string],string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#authorBubble%2Cstring%2Carray%5B%2Cstring%5D%2Cstring"><span class="Identifier">authorBubble</span></a><span class="Other">(</span><span class="Identifier">authorName</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                  <span class="Identifier">beforeAfterText</span><span class="Other">:</span> <span class="Identifier">array</span><span class="Other">[</span><span class="DecNumber">2</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">[</span><span class="StringLit">&quot;&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;&quot;</span><span class="Other">]</span><span class="Other">;</span>
+                  <span class="Identifier">authorDisplayName</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
-    Button that returns to the home page
+    <p>Generates an author bubble.</p>
+<p><tt class="docutils literal"><span class="pre"><span class="Identifier">beforeAfterText</span></span></tt> puts <tt class="docutils literal"><span class="pre"><span class="Identifier">array</span><span class="Punctuation">[</span><span class="DecNumber">0</span><span class="Punctuation">]</span></span></tt> before the author name and <tt class="docutils literal"><span class="pre"><span class="Identifier">array</span><span class="Punctuation">[</span><span class="DecNumber">1</span><span class="Punctuation">]</span></span></tt> after the author name</p>
+
     
   </dd>
 </div>
@@ -195,9 +361,9 @@
 
 </div>
 <div id="buttonList-procs-all">
-  <div id="buttonList">
-  <dt><pre><span class="Keyword">proc</span> <a href="#buttonList"><span class="Identifier">buttonList</span></a><span class="Other">(</span><span class="Identifier">table</span><span class="Other">:</span> <span class="Identifier">Table</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">OrderedTable</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span>
-    <span class="Identifier">HtmlElement</span><span class="Other">]</span></pre></dt>
+  <div id="buttonList,,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#buttonList%2C%2Cstring"><span class="Identifier">buttonList</span></a><span class="Other">(</span><span class="Identifier">table</span><span class="Other">:</span> <span class="Identifier">Table</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">OrderedTable</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">string</span><span class="Other">]</span><span class="Other">;</span>
+                <span class="Identifier">additionalSubUrl</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span></pre></dt>
   <dd>
     
     List of buttons
@@ -220,8 +386,8 @@
 </div>
 <div id="divCenter-procs-all">
   <div id="divCenter,seq[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#divCenter%2Cseq%5BHtmlElement%5D"><span class="Identifier">divCenter</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#divCenter%2Cseq%5BHtmlElement%5D"><span class="Identifier">divCenter</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Div with <tt class="docutils literal"><span class="pre"><span class="Identifier">centerClass</span></span></tt> applied
@@ -229,8 +395,8 @@
   </dd>
 </div>
 <div id="divCenter,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#divCenter%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">divCenter</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#divCenter%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">divCenter</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Div with <tt class="docutils literal"><span class="pre"><span class="Identifier">centerClass</span></span></tt> applied
@@ -239,10 +405,21 @@
 </div>
 
 </div>
+<div id="formatToAscii-procs-all">
+  <div id="formatToAscii,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#formatToAscii%2Cstring"><span class="Identifier">formatToAscii</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Formats text using <tt class="docutils literal"><span class="pre"><span class="Identifier">urlConvertChars</span></span></tt> to mainly ascii characters
+    
+  </dd>
+</div>
+
+</div>
 <div id="fullyCenter-procs-all">
   <div id="fullyCenter,seq[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#fullyCenter%2Cseq%5BHtmlElement%5D"><span class="Identifier">fullyCenter</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#fullyCenter%2Cseq%5BHtmlElement%5D"><span class="Identifier">fullyCenter</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Makes a (actually three divs) fully centered div
@@ -250,8 +427,8 @@
   </dd>
 </div>
 <div id="fullyCenter,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#fullyCenter%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">fullyCenter</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#fullyCenter%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">fullyCenter</span></a><span class="Other">(</span><span class="Identifier">html</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Makes a (actually three divs) fully centered div
@@ -283,6 +460,90 @@
 </div>
 
 </div>
+<div id="ih1-procs-all">
+  <div id="ih1,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ih1%2Cstring%2Cstring"><span class="Identifier">ih1</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">override</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element (with ascii-friendly id)
+    
+  </dd>
+</div>
+
+</div>
+<div id="ih2-procs-all">
+  <div id="ih2,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ih2%2Cstring%2Cstring"><span class="Identifier">ih2</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">override</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element (with ascii-friendly id)
+    
+  </dd>
+</div>
+
+</div>
+<div id="ih3-procs-all">
+  <div id="ih3,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ih3%2Cstring%2Cstring"><span class="Identifier">ih3</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">override</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element (with ascii-friendly id)
+    
+  </dd>
+</div>
+
+</div>
+<div id="ih4-procs-all">
+  <div id="ih4,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ih4%2Cstring%2Cstring"><span class="Identifier">ih4</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">override</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element (with ascii-friendly id)
+    
+  </dd>
+</div>
+
+</div>
+<div id="ih5-procs-all">
+  <div id="ih5,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ih5%2Cstring%2Cstring"><span class="Identifier">ih5</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">override</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element (with ascii-friendly id)
+    
+  </dd>
+</div>
+
+</div>
+<div id="ih6-procs-all">
+  <div id="ih6,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#ih6%2Cstring%2Cstring"><span class="Identifier">ih6</span></a><span class="Other">(</span><span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">override</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Header element (with ascii-friendly id)
+    
+  </dd>
+</div>
+
+</div>
+<div id="insertButtons-procs-all">
+  <div id="insertButtons,varargs[ButtonHref]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#insertButtons%2Cvarargs%5BButtonHref%5D"><span class="Identifier">insertButtons</span></a><span class="Other">(</span><span class="Identifier">buttons</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Inserts a centered div with buttons in it
+    
+  </dd>
+</div>
+
+</div>
 <div id="isSet-procs-all">
   <div id="isSet,Option[T]">
   <dt><pre><span class="Keyword">proc</span> <a href="#isSet%2COption%5BT%5D"><span class="Identifier">isSet</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">item</span><span class="Other">:</span> <span class="Identifier">Option</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
@@ -298,7 +559,7 @@
 </div>
 <div id="pc-procs-all">
   <div id="pc,varargs[HtmlElement]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#pc%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">pc</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span>
+  <dt><pre><span class="Keyword">proc</span> <a href="#pc%2Cvarargs%5BHtmlElement%5D"><span class="Identifier">pc</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">HtmlElement</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -307,7 +568,7 @@
   </dd>
 </div>
 <div id="pc,seq[string]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#pc%2Cseq%5Bstring%5D"><span class="Identifier">pc</span></a><span class="Other">(</span><span class="Identifier">lines</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+  <dt><pre><span class="Keyword">proc</span> <a href="#pc%2Cseq%5Bstring%5D"><span class="Identifier">pc</span></a><span class="Other">(</span><span class="Identifier">lines</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -316,11 +577,57 @@
   </dd>
 </div>
 <div id="pc,varargs[string]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#pc%2Cvarargs%5Bstring%5D"><span class="Identifier">pc</span></a><span class="Other">(</span><span class="Identifier">lines</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+  <dt><pre><span class="Keyword">proc</span> <a href="#pc%2Cvarargs%5Bstring%5D"><span class="Identifier">pc</span></a><span class="Other">(</span><span class="Identifier">lines</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     Returns a centered paragraph. Joins each line with a <tt class="docutils literal"><span class="pre"><span class="Operator">&lt;</span><span class="Identifier">br</span> <span class="Operator">/&gt;</span></span></tt>
+    
+  </dd>
+</div>
+
+</div>
+<div id="timeReadable-procs-all">
+  <div id="timeReadable,string,string">
+  <dt><pre><span class="Keyword">proc</span> <a href="#timeReadable%2Cstring%2Cstring"><span class="Identifier">timeReadable</span></a><span class="Other">(</span><span class="Identifier">date</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">dateFormat</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;yyyy-MM-dd&quot;</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">TimeParseError</span><span class="Other">,</span> <span class="Identifier">TimeFormatParseError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">TimeEffect</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="timeReadable,DateTime">
+  <dt><pre><span class="Keyword">proc</span> <a href="#timeReadable%2CDateTime"><span class="Identifier">timeReadable</span></a><span class="Other">(</span><span class="Identifier">dateTime</span><span class="Other">:</span> <span class="Identifier">DateTime</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+
+</div>
+<div id="toHtmlElement-procs-all">
+  <div id="toHtmlElement,ButtonHref">
+  <dt><pre><span class="Keyword">proc</span> <a href="#toHtmlElement%2CButtonHref"><span class="Identifier">toHtmlElement</span></a><span class="Other">(</span><span class="Identifier">button</span><span class="Other">:</span> <a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">HtmlElement</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Converts <tt class="docutils literal"><span class="pre"><span class="Identifier">ButtonHref</span></span></tt> to HTML button
+    
+  </dd>
+</div>
+
+</div>
+<div id="toHtmlElements-procs-all">
+  <div id="toHtmlElements">
+  <dt><pre><span class="Keyword">proc</span> <a href="#toHtmlElements"><span class="Identifier">toHtmlElements</span></a><span class="Other">(</span><span class="Identifier">buttons</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="snippets.html#ButtonHref"><span class="Identifier">ButtonHref</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span>
+    <span class="Identifier">HtmlElement</span><span class="Other">]</span></pre></dt>
+  <dd>
+    
+    Converts <tt class="docutils literal"><span class="pre"><span class="Identifier">ButtonHref</span></span></tt>s to HTML buttons
     
   </dd>
 </div>
@@ -336,7 +643,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-16 09:58:34 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-11-07 09:23:49 UTC</small>
       </div>
     </div>
   </div>

@@ -6,16 +6,39 @@ nim	divCenter	website/snippets.html#divCenter,varargs[HtmlElement]	proc divCente
 nim	pc	website/snippets.html#pc,seq[string]	proc pc(lines: seq[string]): HtmlElement		42
 nim	pc	website/snippets.html#pc,varargs[string]	proc pc(lines: varargs[string]): HtmlElement		47
 nim	pc	website/snippets.html#pc,varargs[HtmlElement]	proc pc(elements: varargs[HtmlElement]): HtmlElement		54
-nim	buttonScript	website/snippets.html#buttonScript,string,string	proc buttonScript(text, onclick: string): HtmlElement		67
-nim	buttonLink	website/snippets.html#buttonLink,string,string	proc buttonLink(content, href: string): HtmlElement		71
-nim	buttonList	website/snippets.html#buttonList	proc buttonList(table: Table[string, string] | OrderedTable[string, string]): seq[\n    HtmlElement]		73
-nim	backToHomeButton	website/snippets.html#backToHomeButton,string	proc backToHomeButton(text: string): HtmlElement		78
-nim	defaultAuthor	website/snippets.html#defaultAuthor	const defaultAuthor		85
-nim	authorBubble	website/snippets.html#authorBubble,string,array[,string],string	proc authorBubble(authorName: string; beforeAfterText: array[2, string] = ["", ""];\n             authorDisplayName: string = ""): HtmlElement		91
-nim	getRelativeUrlId	website/snippets.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		121
-nim	getRelativeUrlPath	website/snippets.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		126
-nim	isSet	website/snippets.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		136
+nim	ButtonHref	website/snippets.html#ButtonHref	tuple ButtonHref		68
+nim	hrefIndex	website/snippets.html#hrefIndex	const hrefIndex		76
+nim	hrefMap	website/snippets.html#hrefMap	const hrefMap		77
+nim	hrefArticles	website/snippets.html#hrefArticles	const hrefArticles		78
+nim	hrefNewsfeed	website/snippets.html#hrefNewsfeed	const hrefNewsfeed		79
+nim	hrefContact	website/snippets.html#hrefContact	const hrefContact		80
+nim	hrefOfferings	website/snippets.html#hrefOfferings	const hrefOfferings		81
+nim	hrefTour	website/snippets.html#hrefTour	const hrefTour		82
+nim	hrefChangelog	website/snippets.html#hrefChangelog	const hrefChangelog		83
+nim	hrefContributors	website/snippets.html#hrefContributors	const hrefContributors		84
+nim	toHtmlElement	website/snippets.html#toHtmlElement,ButtonHref	proc toHtmlElement(button: ButtonHref): HtmlElement		88
+nim	toHtmlElements	website/snippets.html#toHtmlElements	proc toHtmlElements(buttons: varargs[ButtonHref] | seq[ButtonHref]): seq[HtmlElement]		99
+nim	insertButtons	website/snippets.html#insertButtons,varargs[ButtonHref]	proc insertButtons(buttons: varargs[ButtonHref]): HtmlElement		104
+nim	buttonScript	website/snippets.html#buttonScript,string,string	proc buttonScript(text, onclick: string): HtmlElement		110
+nim	buttonLink	website/snippets.html#buttonLink,string,string	proc buttonLink(content, href: string): HtmlElement		114
+nim	buttonList	website/snippets.html#buttonList,,string	proc buttonList(table: Table[string, string] | OrderedTable[string, string];\n           additionalSubUrl: string = ""): seq[HtmlElement]		119
+nim	defaultAuthor	website/snippets.html#defaultAuthor	const defaultAuthor		129
+nim	authorBubble	website/snippets.html#authorBubble,string,array[,string],string	proc authorBubble(authorName: string; beforeAfterText: array[2, string] = ["", ""];\n             authorDisplayName: string = ""): HtmlElement		135
+nim	formatToAscii	website/snippets.html#formatToAscii,string	proc formatToAscii(text: string): string		165
+nim	getRelativeUrlId	website/snippets.html#getRelativeUrlId,string	proc getRelativeUrlId(name: string): string		172
+nim	getRelativeUrlPath	website/snippets.html#getRelativeUrlPath,string	proc getRelativeUrlPath(name: string): string		176
+nim	ih1	website/snippets.html#ih1,string,string	proc ih1(text: string; override: string = ""): HtmlElement		190
+nim	ih2	website/snippets.html#ih2,string,string	proc ih2(text: string; override: string = ""): HtmlElement		191
+nim	ih3	website/snippets.html#ih3,string,string	proc ih3(text: string; override: string = ""): HtmlElement		192
+nim	ih4	website/snippets.html#ih4,string,string	proc ih4(text: string; override: string = ""): HtmlElement		193
+nim	ih5	website/snippets.html#ih5,string,string	proc ih5(text: string; override: string = ""): HtmlElement		194
+nim	ih6	website/snippets.html#ih6,string,string	proc ih6(text: string; override: string = ""): HtmlElement		195
+nim	timeReadable	website/snippets.html#timeReadable,DateTime	proc timeReadable(dateTime: DateTime): string		197
+nim	timeReadable	website/snippets.html#timeReadable,string,string	proc timeReadable(date: string; dateFormat: string = "yyyy-MM-dd"): string		199
+nim	isSet	website/snippets.html#isSet,Option[T]	proc isSet[T](item: Option[T]): bool		207
+nim	`$%`	website/snippets.html#$%,T	proc `$%`[T](toJson: T): string		221
 nimgrp	divcenter	website/snippets.html#divCenter-procs-all	proc		30
 nimgrp	fullycenter	website/snippets.html#fullyCenter-procs-all	proc		14
 nimgrp	pc	website/snippets.html#pc-procs-all	proc		42
+nimgrp	timereadable	website/snippets.html#timeReadable-procs-all	proc		197
 heading	HTML Snippets module	website/snippets.html#html-snippets-module	 HTML Snippets module		0
