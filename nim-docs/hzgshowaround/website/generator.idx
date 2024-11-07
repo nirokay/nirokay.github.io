@@ -1,6 +1,0 @@
-nimTitle	generator	website/generator.html	module website/generator		0
-nim	target	website/generator.html#target	const target		16
-nim	addOgTags	website/generator.html#addOgTags,HtmlDocument	proc addOgTags(html: var HtmlDocument)		40
-nim	newPage	website/generator.html#newPage,string,string,string	proc newPage(name, path: string; desc: string = ""): HtmlDocument		53
-nim	generate	website/generator.html#generate,HtmlDocument	proc generate(html: var HtmlDocument)		74
-heading	Generator module	website/generator.html#generator-module	 Generator module		0

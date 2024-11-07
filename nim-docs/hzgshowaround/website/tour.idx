@@ -1,5 +1,0 @@
-nimTitle	tour	website/tour.html	module website/tour		0
-nim	rawTourJson	website/tour.html#rawTourJson	let rawTourJson		9
-nim	tourIds	website/tour.html#tourIds	var tourIds		10
-nim	html	website/tour.html#html	var html		17
-heading	Tour module	website/tour.html#tour-module	 Tour module		0
