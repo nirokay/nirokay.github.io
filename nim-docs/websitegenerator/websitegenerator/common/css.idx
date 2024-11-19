@@ -280,7 +280,7 @@ nim	rgba	websitegenerator/common/css.html#rgba,SomeInteger,SomeInteger,SomeInteg
 nim	rgba	websitegenerator/common/css.html#rgba,SomeFloat,SomeFloat,SomeFloat,SomeFloat	proc rgba(red, green, blue, alpha: SomeFloat): string		258
 nim	addLinkColour	websitegenerator/common/css.html#addLinkColour,CssStyleSheet,string,,seq[CssAttribute]	proc addLinkColour(css: var CssStyleSheet; which: string; colour: string | CssColour;\n              additionalCssAttributes: seq[CssAttribute])		265
 nim	addLinkColours	websitegenerator/common/css.html#addLinkColours,CssStyleSheet,,,,,seq[CssAttribute]	proc addLinkColours(css: var CssStyleSheet;\n               link, visited, hover, active: string | CssColour;\n               additionalCssAttributes: seq[CssAttribute] = @[])		273
-nimgrp	csscomment	websitegenerator/common/css.html#cssComment-procs-all	proc		91
 nimgrp	rgba	websitegenerator/common/css.html#rgba-procs-all	proc		250
 nimgrp	rgb	websitegenerator/common/css.html#rgb-procs-all	proc		230
+nimgrp	csscomment	websitegenerator/common/css.html#cssComment-procs-all	proc		91
 heading	Common css snippets	websitegenerator/common/css.html#common-css-snippets	 Common css snippets		0

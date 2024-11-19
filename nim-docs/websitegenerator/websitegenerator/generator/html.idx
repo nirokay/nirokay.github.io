@@ -71,24 +71,24 @@ nim	`$`	websitegenerator/generator/html.html#$,varargs[HtmlElement]	proc `$`(ele
 nim	`$`	websitegenerator/generator/html.html#$,HtmlDocument	proc `$`(document: HtmlDocument): string		329
 nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument	proc writeFile(document: HtmlDocument)		374
 nim	writeFile	websitegenerator/generator/html.html#writeFile,HtmlDocument,string	proc writeFile(document: HtmlDocument; fileName: string)		380
-nimgrp	addattributestobody	websitegenerator/generator/html.html#addAttributesToBody-procs-all	proc		231
-nimgrp	addattributetodoctype	websitegenerator/generator/html.html#addAttributeToDoctype-procs-all	proc		259
-nimgrp	$	websitegenerator/generator/html.html#$-procs-all	proc		286
-nimgrp	newhtmlelement	websitegenerator/generator/html.html#newHtmlElement-procs-all	proc		43
-nimgrp	addattributetobody	websitegenerator/generator/html.html#addAttributeToBody-procs-all	proc		221
-nimgrp	addattributestohtml	websitegenerator/generator/html.html#addAttributesToHtml-procs-all	proc		250
-nimgrp	clearmatchingattributes	websitegenerator/generator/html.html#clearMatchingAttributes-procs-all	proc		166
-nimgrp	clearallattributes	websitegenerator/generator/html.html#clearAllAttributes-procs-all	proc		146
-nimgrp	addattributestodoctype	websitegenerator/generator/html.html#addAttributesToDoctype-procs-all	proc		269
-nimgrp	forceclosingtag	websitegenerator/generator/html.html#forceClosingTag-procs-all	proc		278
-nimgrp	add	websitegenerator/generator/html.html#add-procs-all	proc		72
-nimgrp	addattributetohtml	websitegenerator/generator/html.html#addAttributeToHtml-procs-all	proc		240
-nimgrp	writefile	websitegenerator/generator/html.html#writeFile-procs-all	proc		374
-nimgrp	attr	websitegenerator/generator/html.html#attr-procs-all	proc		107
-nimgrp	addattr	websitegenerator/generator/html.html#addattr-procs-all	proc		119
 nimgrp	addtohead	websitegenerator/generator/html.html#addToHead-procs-all	proc		209
-nimgrp	newattribute	websitegenerator/generator/html.html#newAttribute-procs-all	proc		99
-nimgrp	addtobody	websitegenerator/generator/html.html#addToBody-procs-all	proc		180
-nimgrp	clearmatchingattribute	websitegenerator/generator/html.html#clearMatchingAttribute-procs-all	proc		154
+nimgrp	writefile	websitegenerator/generator/html.html#writeFile-procs-all	proc		374
+nimgrp	addattributestobody	websitegenerator/generator/html.html#addAttributesToBody-procs-all	proc		231
+nimgrp	clearallattributes	websitegenerator/generator/html.html#clearAllAttributes-procs-all	proc		146
+nimgrp	$	websitegenerator/generator/html.html#$-procs-all	proc		286
+nimgrp	clearmatchingattributes	websitegenerator/generator/html.html#clearMatchingAttributes-procs-all	proc		166
+nimgrp	newhtmlelement	websitegenerator/generator/html.html#newHtmlElement-procs-all	proc		43
 nimgrp	addtobodyend	websitegenerator/generator/html.html#addToBodyEnd-procs-all	proc		197
+nimgrp	addattributestohtml	websitegenerator/generator/html.html#addAttributesToHtml-procs-all	proc		250
+nimgrp	addattr	websitegenerator/generator/html.html#addattr-procs-all	proc		119
+nimgrp	forceclosingtag	websitegenerator/generator/html.html#forceClosingTag-procs-all	proc		278
+nimgrp	clearmatchingattribute	websitegenerator/generator/html.html#clearMatchingAttribute-procs-all	proc		154
+nimgrp	newattribute	websitegenerator/generator/html.html#newAttribute-procs-all	proc		99
+nimgrp	addattributetobody	websitegenerator/generator/html.html#addAttributeToBody-procs-all	proc		221
+nimgrp	attr	websitegenerator/generator/html.html#attr-procs-all	proc		107
+nimgrp	addattributetodoctype	websitegenerator/generator/html.html#addAttributeToDoctype-procs-all	proc		259
+nimgrp	addattributestodoctype	websitegenerator/generator/html.html#addAttributesToDoctype-procs-all	proc		269
+nimgrp	addattributetohtml	websitegenerator/generator/html.html#addAttributeToHtml-procs-all	proc		240
+nimgrp	add	websitegenerator/generator/html.html#add-procs-all	proc		72
+nimgrp	addtobody	websitegenerator/generator/html.html#addToBody-procs-all	proc		180
 heading	Html Generator	websitegenerator/generator/html.html#html-generator	 Html Generator		0

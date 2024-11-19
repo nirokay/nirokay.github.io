@@ -32,9 +32,9 @@ nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,seq[CssAttribute]_
 nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,varargs[CssAttribute]_2	proc addStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		134
 nim	attrStyle	websitegenerator/sugar.html#attrStyle,HtmlElement,seq[CssAttribute]	proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement		139
 nim	attrStyle	websitegenerator/sugar.html#attrStyle,HtmlElement,varargs[CssAttribute]	proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		140
-nimgrp	->	websitegenerator/sugar.html#->-procs-all	proc		82
-nimgrp	&=>	websitegenerator/sugar.html#&=>-procs-all	proc		52
 nimgrp	=>	websitegenerator/sugar.html#=>-procs-all	proc		16
-nimgrp	attrstyle	websitegenerator/sugar.html#attrStyle-procs-all	proc		139
+nimgrp	&=>	websitegenerator/sugar.html#&=>-procs-all	proc		52
 nimgrp	addstyle	websitegenerator/sugar.html#addStyle-procs-all	proc		120
+nimgrp	->	websitegenerator/sugar.html#->-procs-all	proc		82
+nimgrp	attrstyle	websitegenerator/sugar.html#attrStyle-procs-all	proc		139
 heading	Sugar module	websitegenerator/sugar.html#sugar-module	 Sugar module		0

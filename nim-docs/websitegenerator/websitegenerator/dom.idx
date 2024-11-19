@@ -3,12 +3,12 @@ nim	MatchStrict	websitegenerator/dom.html#MatchStrict	MatchingStyle.MatchStrict	
 nim	MatchOnlyFieldName	websitegenerator/dom.html#MatchOnlyFieldName	MatchingStyle.MatchOnlyFieldName		4
 nim	MatchSubstring	websitegenerator/dom.html#MatchSubstring	MatchingStyle.MatchSubstring		4
 nim	MatchCaseInsensitiveSubstring	websitegenerator/dom.html#MatchCaseInsensitiveSubstring	MatchingStyle.MatchCaseInsensitiveSubstring		4
-nim	MatchSpaceSeperatedContains	websitegenerator/dom.html#MatchSpaceSeperatedContains	MatchingStyle.MatchSpaceSeperatedContains		4
-nim	MatchSpaceSeperatedContainsCaseInsensitive	websitegenerator/dom.html#MatchSpaceSeperatedContainsCaseInsensitive	MatchingStyle.MatchSpaceSeperatedContainsCaseInsensitive		4
+nim	MatchSpaceSeparatedContains	websitegenerator/dom.html#MatchSpaceSeparatedContains	MatchingStyle.MatchSpaceSeparatedContains		4
+nim	MatchSpaceSeparatedContainsCaseInsensitive	websitegenerator/dom.html#MatchSpaceSeparatedContainsCaseInsensitive	MatchingStyle.MatchSpaceSeparatedContainsCaseInsensitive		4
 nim	MatchingStyle	websitegenerator/dom.html#MatchingStyle	enum MatchingStyle		4
 nim	getElementsBy	websitegenerator/dom.html#getElementsBy,HtmlDocument,string,string,MatchingStyle	proc getElementsBy(document: HtmlDocument; field, value: string;\n              matchingStyle: MatchingStyle = MatchStrict): seq[HtmlElement]		55
 nim	getElementsBy	websitegenerator/dom.html#getElementsBy,HtmlDocument,string,MatchingStyle	proc getElementsBy(document: HtmlDocument; field: string;\n              matchingStyle: MatchingStyle = MatchStrict): seq[HtmlElement]		60
 nim	getElementsById	websitegenerator/dom.html#getElementsById,HtmlDocument,string,MatchingStyle	proc getElementsById(document: HtmlDocument; id: string;\n                matchingStyle: MatchingStyle = MatchStrict): seq[HtmlElement]		65
-nim	getElementsByClass	websitegenerator/dom.html#getElementsByClass,HtmlDocument,string,MatchingStyle	proc getElementsByClass(document: HtmlDocument; class: string;\n                   matchingStyle: MatchingStyle = MatchSpaceSeperatedContains): seq[\n    HtmlElement]		68
+nim	getElementsByClass	websitegenerator/dom.html#getElementsByClass,HtmlDocument,string,MatchingStyle	proc getElementsByClass(document: HtmlDocument; class: string;\n                   matchingStyle: MatchingStyle = MatchSpaceSeparatedContains): seq[\n    HtmlElement]		68
 nim	isTag	websitegenerator/dom.html#isTag,HtmlElement,string	proc isTag(element: HtmlElement; tag: string): bool		73
 nimgrp	getelementsby	websitegenerator/dom.html#getElementsBy-procs-all	proc		55
