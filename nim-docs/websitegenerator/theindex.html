@@ -25,9 +25,11 @@
   <div class="document" id="documentId">
     <div class="container">
       <h1 class="title">Index</h1>
-      Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/attributes.html">websitegenerator/attributes</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/dom.html">websitegenerator/dom</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/properties.html">websitegenerator/properties</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
+      Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/attributes.html">websitegenerator/attributes</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/dom.html">websitegenerator/dom</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/properties.html">websitegenerator/properties</a>, <a href="websitegenerator/settings.html">websitegenerator/settings</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%24%60" href="#%60%24%60"><span>`$`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
+          data-doc-search-tag="html: proc `$`(entity: HtmlEntity): string" href="websitegenerator/common/html.html#%24%2CHtmlEntity">html: proc `$`(entity: HtmlEntity): string</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="css: proc `$`(element: CssElement): string" href="websitegenerator/generator/css.html#%24%2CCssElement">css: proc `$`(element: CssElement): string</a></li>
           <li><a class="reference external"
           data-doc-search-tag="css: proc `$`(stylesheet: CssStyleSheet): string" href="websitegenerator/generator/css.html#%24%2CCssStyleSheet">css: proc `$`(stylesheet: CssStyleSheet): string</a></li>
@@ -145,6 +147,8 @@
 <dt><a name="abbr" href="#abbr"><span>abbr:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc abbr(text: string): HtmlElement" href="websitegenerator/common/html.html#abbr%2Cstring">html: proc abbr(text: string): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc abbr(text, explanation: string): HtmlElement" href="websitegenerator/common/html.html#abbr%2Cstring%2Cstring">html: proc abbr(text, explanation: string): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="absolute" href="#absolute"><span>absolute:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -323,6 +327,10 @@
 <dt><a name="all" href="#all"><span>all:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="properties: proc all(values: varargs[string]): CssAttribute" href="websitegenerator/properties.html#all%2Cvarargs%5Bstring%5D">properties: proc all(values: varargs[string]): CssAttribute</a></li>
+          </ul></dd>
+<dt><a name="aNewTab" href="#aNewTab"><span>aNewTab:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc aNewTab(href, content: string): HtmlElement" href="websitegenerator/common/html.html#aNewTab%2Cstring%2Cstring">html: proc aNewTab(href, content: string): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="animation" href="#animation"><span>animation:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -8350,6 +8358,10 @@
 <li><a class="reference external"
           data-doc-search-tag="css: CssItemsAlignment.end" href="websitegenerator/common/css.html#end">css: CssItemsAlignment.end</a></li>
           </ul></dd>
+<dt><a name="escapeHtmlText" href="#escapeHtmlText"><span>escapeHtmlText:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc escapeHtmlText(text: string; replacementHtmlEntities: seq[HtmlEntity] = defaultReplacementHtmlEntities): string" href="websitegenerator/common/html.html#escapeHtmlText%2Cstring%2Cseq%5BHtmlEntity%5D">html: proc escapeHtmlText(text: string; replacementHtmlEntities: seq[HtmlEntity] = defaultReplacementHtmlEntities): string</a></li>
+          </ul></dd>
 <dt><a name="ex" href="#ex"><span>ex:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: proc ex(size: SomeNumber): string" href="websitegenerator/common/css.html#ex%2CSomeNumber">css: proc ex(size: SomeNumber): string</a></li>
@@ -8809,6 +8821,58 @@
 <dt><a name="HtmlElementAttribute" href="#HtmlElementAttribute"><span>HtmlElementAttribute:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: object HtmlElementAttribute" href="websitegenerator/generator/html.html#HtmlElementAttribute">html: object HtmlElementAttribute</a></li>
+          </ul></dd>
+<dt><a name="HtmlEntity" href="#HtmlEntity"><span>HtmlEntity:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: object HtmlEntity" href="websitegenerator/common/html.html#HtmlEntity">html: object HtmlEntity</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityAmpersand" href="#htmlEntityAmpersand"><span>htmlEntityAmpersand:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityAmpersand" href="websitegenerator/common/html.html#htmlEntityAmpersand">html: const htmlEntityAmpersand</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityCent" href="#htmlEntityCent"><span>htmlEntityCent:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityCent" href="websitegenerator/common/html.html#htmlEntityCent">html: const htmlEntityCent</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityCopyright" href="#htmlEntityCopyright"><span>htmlEntityCopyright:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityCopyright" href="websitegenerator/common/html.html#htmlEntityCopyright">html: const htmlEntityCopyright</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityDoubleQuote" href="#htmlEntityDoubleQuote"><span>htmlEntityDoubleQuote:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityDoubleQuote" href="websitegenerator/common/html.html#htmlEntityDoubleQuote">html: const htmlEntityDoubleQuote</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityEuro" href="#htmlEntityEuro"><span>htmlEntityEuro:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityEuro" href="websitegenerator/common/html.html#htmlEntityEuro">html: const htmlEntityEuro</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityGreaterThan" href="#htmlEntityGreaterThan"><span>htmlEntityGreaterThan:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityGreaterThan" href="websitegenerator/common/html.html#htmlEntityGreaterThan">html: const htmlEntityGreaterThan</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityLesserThan" href="#htmlEntityLesserThan"><span>htmlEntityLesserThan:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityLesserThan" href="websitegenerator/common/html.html#htmlEntityLesserThan">html: const htmlEntityLesserThan</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityNonBreakingSpace" href="#htmlEntityNonBreakingSpace"><span>htmlEntityNonBreakingSpace:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityNonBreakingSpace" href="websitegenerator/common/html.html#htmlEntityNonBreakingSpace">html: const htmlEntityNonBreakingSpace</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityPound" href="#htmlEntityPound"><span>htmlEntityPound:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityPound" href="websitegenerator/common/html.html#htmlEntityPound">html: const htmlEntityPound</a></li>
+          </ul></dd>
+<dt><a name="htmlEntitySingleQuote" href="#htmlEntitySingleQuote"><span>htmlEntitySingleQuote:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntitySingleQuote" href="websitegenerator/common/html.html#htmlEntitySingleQuote">html: const htmlEntitySingleQuote</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityTrademark" href="#htmlEntityTrademark"><span>htmlEntityTrademark:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityTrademark" href="websitegenerator/common/html.html#htmlEntityTrademark">html: const htmlEntityTrademark</a></li>
+          </ul></dd>
+<dt><a name="htmlEntityYen" href="#htmlEntityYen"><span>htmlEntityYen:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: const htmlEntityYen" href="websitegenerator/common/html.html#htmlEntityYen">html: const htmlEntityYen</a></li>
           </ul></dd>
 <dt><a name="hypenateCharacter" href="#hypenateCharacter"><span>hypenateCharacter:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9310,7 +9374,11 @@
           </ul></dd>
 <dt><a name="label" href="#label"><span>label:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
+          data-doc-search-tag="html: proc label(for: string; children: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#label%2Cstring%2Cseq%5BHtmlElement%5D">html: proc label(for: string; children: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="html: proc label(for, text: string): HtmlElement" href="websitegenerator/common/html.html#label%2Cstring%2Cstring">html: proc label(for, text: string): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc label(for: string; children: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#label%2Cstring%2Cvarargs%5BHtmlElement%5D">html: proc label(for: string; children: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="large" href="#large"><span>large:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -9340,7 +9408,11 @@
           </ul></dd>
 <dt><a name="legend" href="#legend"><span>legend:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
+          data-doc-search-tag="html: proc legend(children: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#legend%2Cseq%5BHtmlElement%5D">html: proc legend(children: seq[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
           data-doc-search-tag="html: proc legend(text: string): HtmlElement" href="websitegenerator/common/html.html#legend%2Cstring">html: proc legend(text: string): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc legend(children: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#legend%2Cvarargs%5BHtmlElement%5D">html: proc legend(children: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="LemonChiffon" href="#LemonChiffon"><span>LemonChiffon:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10323,8 +10395,6 @@
 <dt><a name="ol" href="#ol"><span>ol:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc ol(children: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ol%2Cseq%5BHtmlElement%5D">html: proc ol(children: seq[HtmlElement]): HtmlElement</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="html: proc ol(children: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ol%2Cvarargs%5BHtmlElement%5D">html: proc ol(children: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="OldLace" href="#OldLace"><span>OldLace:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15017,8 +15087,6 @@
 <dt><a name="ul" href="#ul"><span>ul:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc ul(children: seq[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ul%2Cseq%5BHtmlElement%5D">html: proc ul(children: seq[HtmlElement]): HtmlElement</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="html: proc ul(children: varargs[HtmlElement]): HtmlElement" href="websitegenerator/common/html.html#ul%2Cvarargs%5BHtmlElement%5D">html: proc ul(children: varargs[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="ultraCondensed" href="#ultraCondensed"><span>ultraCondensed:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15454,7 +15522,27 @@
           </ul></dd>
 <dt><a name="websitegeneratorGenerateSelfClosingTags" href="#websitegeneratorGenerateSelfClosingTags"><span>websitegeneratorGenerateSelfClosingTags:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: var websitegeneratorGenerateSelfClosingTags" href="websitegenerator/generator/html.html#websitegeneratorGenerateSelfClosingTags">html: var websitegeneratorGenerateSelfClosingTags</a></li>
+          data-doc-search-tag="settings: template websitegeneratorGenerateSelfClosingTags(): untyped" href="websitegenerator/settings.html#websitegeneratorGenerateSelfClosingTags.t">settings: template websitegeneratorGenerateSelfClosingTags(): untyped</a></li>
+          </ul></dd>
+<dt><a name="websitegeneratorRawTextElementIdentifier" href="#websitegeneratorRawTextElementIdentifier"><span>websitegeneratorRawTextElementIdentifier:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: template websitegeneratorRawTextElementIdentifier(): untyped" href="websitegenerator/settings.html#websitegeneratorRawTextElementIdentifier.t">settings: template websitegeneratorRawTextElementIdentifier(): untyped</a></li>
+          </ul></dd>
+<dt><a name="WebsitegeneratorSettings" href="#WebsitegeneratorSettings"><span>WebsitegeneratorSettings:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: object WebsitegeneratorSettings" href="websitegenerator/settings.html#WebsitegeneratorSettings">settings: object WebsitegeneratorSettings</a></li>
+          </ul></dd>
+<dt><a name="websitegeneratorSettings" href="#websitegeneratorSettings"><span>websitegeneratorSettings:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: var websitegeneratorSettings" href="websitegenerator/settings.html#websitegeneratorSettings_2">settings: var websitegeneratorSettings</a></li>
+          </ul></dd>
+<dt><a name="WebsitegeneratorSettingsGeneration" href="#WebsitegeneratorSettingsGeneration"><span>WebsitegeneratorSettingsGeneration:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: object WebsitegeneratorSettingsGeneration" href="websitegenerator/settings.html#WebsitegeneratorSettingsGeneration">settings: object WebsitegeneratorSettingsGeneration</a></li>
+          </ul></dd>
+<dt><a name="WebsitegeneratorSettingsInternal" href="#WebsitegeneratorSettingsInternal"><span>WebsitegeneratorSettingsInternal:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: object WebsitegeneratorSettingsInternal" href="websitegenerator/settings.html#WebsitegeneratorSettingsInternal">settings: object WebsitegeneratorSettingsInternal</a></li>
           </ul></dd>
 <dt><a name="websitegeneratorSugarAppendingRawTextSeperator" href="#websitegeneratorSugarAppendingRawTextSeperator"><span>websitegeneratorSugarAppendingRawTextSeperator:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15582,7 +15670,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-11-19 10:14:30 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-02-18 08:12:42 UTC</small>
       </div>
     </div>
   </div>
