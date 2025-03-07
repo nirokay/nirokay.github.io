@@ -128,7 +128,7 @@
 <span class="Keyword">proc</span> <span class="Identifier">x</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">:</span> <span class="Identifier">string</span><span class="Punctuation">)</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">)</span>
 <span class="Keyword">proc</span> <span class="Identifier">x</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">:</span> <span class="Identifier">string</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">:</span> <span class="Identifier">varargs</span><span class="Punctuation">[</span><span class="Identifier">XmlElement</span><span class="Punctuation">]</span><span class="Punctuation">)</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">)</span>
 
-<span class="Keyword">var</span> <span class="Identifier">document</span><span class="Punctuation">:</span> <span class="Identifier">XmlDocument</span> <span class="Operator">=</span> <span class="Identifier">newXmlDocument</span><span class="Punctuation">(</span><span class="StringLit">&quot;bookstore.xml&quot;</span><span class="Punctuation">)</span>
+<span class="Keyword">var</span> <span class="Identifier">document</span><span class="Punctuation">:</span> <span class="Identifier">XmlDocument</span> <span class="Operator">=</span> <span class="Identifier">newXmlDocument</span><span class="Punctuation">(</span><span class="StringLit">&quot;.output/bookstore.xml&quot;</span><span class="Punctuation">)</span>
 <span class="Keyword">let</span>
     <span class="Comment"># You can use this type of syntax:</span>
     <span class="Identifier">firstStore</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;bookstore&quot;</span><span class="Punctuation">,</span>
@@ -353,7 +353,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:46:01 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:46:38 UTC</small>
       </div>
     </div>
   </div>
