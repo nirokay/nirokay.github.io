@@ -26,7 +26,11 @@
     <div class="container">
       <h1 class="title">Index</h1>
       Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/attributes.html">websitegenerator/attributes</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/dom.html">websitegenerator/dom</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generator/xml.html">websitegenerator/generator/xml</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/properties.html">websitegenerator/properties</a>, <a href="websitegenerator/settings.html">websitegenerator/settings</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
-<dl><dt><a name="%60%24%60" href="#%60%24%60"><span>`$`:</span></a></dt><dd><ul class="simple">
+<dl><dt><a name="%60%24%26lt%3B%24%26gt%3B%60" href="#%60%24%26lt%3B%24%26gt%3B%60"><span>`$&lt;$&gt;`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc `$&lt;$&gt;`[T](item: T): string" href="websitegenerator/generator/html.html#%24%3C%24%3E%2CT">html: proc `$&lt;$&gt;`[T](item: T): string</a></li>
+          </ul></dd>
+<dt><a name="%60%24%60" href="#%60%24%60"><span>`$`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc `$`(entity: HtmlEntity): string" href="websitegenerator/common/html.html#%24%2CHtmlEntity">html: proc `$`(entity: HtmlEntity): string</a></li>
           <li><a class="reference external"
@@ -88,13 +92,13 @@
           </ul></dd>
 <dt><a name="%60%26lt%3B%24%26gt%3B%60" href="#%60%26lt%3B%24%26gt%3B%60"><span>`&lt;$&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: proc `&lt;$&gt;`(element: AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#%3C%24%3E%2CAnyToHtml">html: proc `&lt;$&gt;`(element: AnyToHtml): HtmlElement</a></li>
-          <li><a class="reference external"
           data-doc-search-tag="html: proc `&lt;$&gt;`(element: HtmlElement): HtmlElement" href="websitegenerator/generator/html.html#%3C%24%3E%2CHtmlElement">html: proc `&lt;$&gt;`(element: HtmlElement): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc `&lt;$&gt;`(elements: seq[AnyToHtml]): seq[HtmlElement]" href="websitegenerator/generator/html.html#%3C%24%3E%2Cseq%5BAnyToHtml%5D">html: proc `&lt;$&gt;`(elements: seq[AnyToHtml]): seq[HtmlElement]</a></li>
-          <li><a class="reference external"
           data-doc-search-tag="html: proc `&lt;$&gt;`(elements: seq[HtmlElement]): seq[HtmlElement]" href="websitegenerator/generator/html.html#%3C%24%3E%2Cseq%5BHtmlElement%5D">html: proc `&lt;$&gt;`(elements: seq[HtmlElement]): seq[HtmlElement]</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `&lt;$&gt;`[T](elements: seq[T]): seq[HtmlElement]" href="websitegenerator/generator/html.html#%3C%24%3E%2Cseq%5BT%5D">html: proc `&lt;$&gt;`[T](elements: seq[T]): seq[HtmlElement]</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `&lt;$&gt;`[T](element: T): HtmlElement" href="websitegenerator/generator/html.html#%3C%24%3E%2CT">html: proc `&lt;$&gt;`[T](element: T): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="%60%3D%26gt%3B%60" href="#%60%3D%26gt%3B%60"><span>`=&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10218,6 +10222,10 @@
 <li><a class="reference external"
           data-doc-search-tag="css: proc newCssStyleSheet(fileName: string; rules: varargs[CssElement]): CssStyleSheet" href="websitegenerator/generator/css.html#newCssStyleSheet%2Cstring%2Cvarargs%5BCssElement%5D">css: proc newCssStyleSheet(fileName: string; rules: varargs[CssElement]): CssStyleSheet</a></li>
           </ul></dd>
+<dt><a name="newElementGenerator" href="#newElementGenerator"><span>newElementGenerator:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: template newElementGenerator(NAME: untyped; RETURN_TYPE, ARGS_TYPE: type): untyped" href="websitegenerator/generator/html.html#newElementGenerator.t%2Cuntyped%2Ctype%2Ctype">html: template newElementGenerator(NAME: untyped; RETURN_TYPE, ARGS_TYPE: type): untyped</a></li>
+          </ul></dd>
 <dt><a name="newHtmlDocument" href="#newHtmlDocument"><span>newHtmlDocument:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc newHtmlDocument(fileName: string): HtmlDocument" href="websitegenerator/generator/html.html#newHtmlDocument%2Cstring">html: proc newHtmlDocument(fileName: string): HtmlDocument</a></li>
@@ -10226,25 +10234,67 @@
 <li><a class="reference external"
           data-doc-search-tag="html: proc newHtmlElement(tag: string): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring">html: proc newHtmlElement(tag: string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; child: HtmlElement | AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C">html: proc newHtmlElement(tag: string; child: HtmlElement | AnyToHtml): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym0: string; children`gensym0: seq[HtmlElement]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C">html: proc newHtmlElement(tag`gensym0: string; children`gensym0: seq[HtmlElement]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C_2">html: proc newHtmlElement(tag: string; children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               children`gensym0: seq[HtmlElement]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C%2C">html: proc newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               children`gensym0: seq[HtmlElement]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C_3">html: proc newHtmlElement(tag: string; children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               children`gensym15: seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C%2C_2">html: proc newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               children`gensym15: seq[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child`gensym15: AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C%2CAnyToHtml">html: proc newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child`gensym15: AnyToHtml): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child1`gensym15: AnyToHtml; child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C%2CAnyToHtml%2CAnyToHtml%2C">html: proc newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child1`gensym15: AnyToHtml; child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child`gensym0: HtmlElement): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C%2CHtmlElement">html: proc newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child`gensym0: HtmlElement): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child1`gensym0: HtmlElement; child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C%2CHtmlElement%2CHtmlElement%2C">html: proc newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child1`gensym0: HtmlElement; child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym15: string; children`gensym15: seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C_2">html: proc newHtmlElement(tag`gensym15: string; children`gensym15: seq[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym15: string; child`gensym15: AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2CAnyToHtml">html: proc newHtmlElement(tag`gensym15: string; child`gensym15: AnyToHtml): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym15: string; child1`gensym15: AnyToHtml;
+               child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2CAnyToHtml%2CAnyToHtml%2C">html: proc newHtmlElement(tag`gensym15: string; child1`gensym15: AnyToHtml;
+               child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym0: string; child`gensym0: HtmlElement): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2CHtmlElement">html: proc newHtmlElement(tag`gensym0: string; child`gensym0: HtmlElement): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag`gensym0: string; child1`gensym0: HtmlElement;
+               child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2CHtmlElement%2CHtmlElement%2C">html: proc newHtmlElement(tag`gensym0: string; child1`gensym0: HtmlElement;
+               child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               child: HtmlElement | AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               child: HtmlElement | AnyToHtml): HtmlElement</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="newXmlDocument" href="#newXmlDocument"><span>newXmlDocument:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -10252,27 +10302,69 @@
           </ul></dd>
 <dt><a name="newXmlElement" href="#newXmlElement"><span>newXmlElement:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring">xml: proc newXmlElement(tag: string): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag: string): HtmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring">xml: proc newXmlElement(tag: string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; child: XmlElement | string): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C">xml: proc newXmlElement(tag: string; child: XmlElement | string): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym7: string; children`gensym7: seq[XmlElement]): HtmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C">xml: proc newXmlElement(tag`gensym7: string; children`gensym7: seq[XmlElement]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C_2">xml: proc newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              children`gensym7: seq[XmlElement]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C%2C">xml: proc newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              children`gensym7: seq[XmlElement]): XmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C_3">xml: proc newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              children`gensym22: seq[AnyToHtml]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C%2C_2">xml: proc newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              children`gensym22: seq[AnyToHtml]): XmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child`gensym22: AnyToHtml): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C%2CAnyToHtml">xml: proc newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child`gensym22: AnyToHtml): XmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              child: XmlElement | string): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              child: XmlElement | string): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child1`gensym22: AnyToHtml; child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C%2CAnyToHtml%2CAnyToHtml%2C">xml: proc newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child1`gensym22: AnyToHtml; child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: seq[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: seq[XmlElement] | seq[string]): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child`gensym7: XmlElement): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C%2CHtmlElement">xml: proc newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child`gensym7: XmlElement): XmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: varargs[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: varargs[XmlElement] | seq[string]): XmlElement</a></li>
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child1`gensym7: XmlElement; child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C%2CHtmlElement%2CHtmlElement%2C">xml: proc newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child1`gensym7: XmlElement; child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym22: string; children`gensym22: seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C_2">xml: proc newXmlElement(tag`gensym22: string; children`gensym22: seq[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym22: string; child`gensym22: AnyToHtml): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2CAnyToHtml">xml: proc newXmlElement(tag`gensym22: string; child`gensym22: AnyToHtml): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym22: string; child1`gensym22: AnyToHtml;
+              child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2CAnyToHtml%2CAnyToHtml%2C">xml: proc newXmlElement(tag`gensym22: string; child1`gensym22: AnyToHtml;
+              child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym7: string; child`gensym7: XmlElement): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2CHtmlElement">xml: proc newXmlElement(tag`gensym7: string; child`gensym7: XmlElement): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag`gensym7: string; child1`gensym7: XmlElement;
+              child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2CHtmlElement%2CHtmlElement%2C">xml: proc newXmlElement(tag`gensym7: string; child1`gensym7: XmlElement;
+              child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D">xml: proc newXmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="none" href="#none"><span>none:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15764,7 +15856,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:46:41 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 18:22:09 UTC</small>
       </div>
     </div>
   </div>

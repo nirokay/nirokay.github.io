@@ -87,20 +87,56 @@
 
 </ul>
 <ul class="simple nested-toc-section">newXmlElement
-  <li><a class="reference" href="#newXmlElement%2Cstring" title="newXmlElement(tag: string): XmlElement">newXmlElement(tag: string): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D" title="newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement">newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C" title="newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              child: XmlElement | string): XmlElement">newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              child: XmlElement | string): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2" title="newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: seq[XmlElement] | seq[string]): XmlElement">newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: seq[XmlElement] | seq[string]): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3" title="newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: varargs[XmlElement] | seq[string]): XmlElement">newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
-              children: varargs[XmlElement] | seq[string]): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2C" title="newXmlElement(tag: string; child: XmlElement | string): XmlElement">newXmlElement(tag: string; child: XmlElement | string): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2C_2" title="newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement">newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement</a></li>
-<li><a class="reference" href="#newXmlElement%2Cstring%2C_3" title="newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement">newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement</a></li>
+  <li><a class="reference" href="#newXmlElement%2Cstring" title="newXmlElement(tag: string): HtmlElement">newXmlElement(tag: string): HtmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D" title="newXmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement">newXmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C%2CHtmlElement%2CHtmlElement%2C" title="newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child1`gensym7: XmlElement; child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement">newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child1`gensym7: XmlElement; child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C%2CHtmlElement" title="newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child`gensym7: XmlElement): XmlElement">newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              child`gensym7: XmlElement): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C%2C" title="newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              children`gensym7: seq[XmlElement]): XmlElement">newXmlElement(tag`gensym7: string;
+              attributes`gensym7: seq[HtmlElementAttribute];
+              children`gensym7: seq[XmlElement]): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2CHtmlElement%2CHtmlElement%2C" title="newXmlElement(tag`gensym7: string; child1`gensym7: XmlElement;
+              child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement">newXmlElement(tag`gensym7: string; child1`gensym7: XmlElement;
+              child2`gensym7: XmlElement;
+              children`gensym7: varargs[XmlElement]): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2CHtmlElement" title="newXmlElement(tag`gensym7: string; child`gensym7: XmlElement): XmlElement">newXmlElement(tag`gensym7: string; child`gensym7: XmlElement): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C" title="newXmlElement(tag`gensym7: string; children`gensym7: seq[XmlElement]): HtmlElement">newXmlElement(tag`gensym7: string; children`gensym7: seq[XmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C%2CAnyToHtml%2CAnyToHtml%2C" title="newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child1`gensym22: AnyToHtml; child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement">newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child1`gensym22: AnyToHtml; child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C%2CAnyToHtml" title="newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child`gensym22: AnyToHtml): XmlElement">newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              child`gensym22: AnyToHtml): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C%2C_2" title="newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              children`gensym22: seq[AnyToHtml]): XmlElement">newXmlElement(tag`gensym22: string;
+              attributes`gensym22: seq[HtmlElementAttribute];
+              children`gensym22: seq[AnyToHtml]): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2CAnyToHtml%2CAnyToHtml%2C" title="newXmlElement(tag`gensym22: string; child1`gensym22: AnyToHtml;
+              child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement">newXmlElement(tag`gensym22: string; child1`gensym22: AnyToHtml;
+              child2`gensym22: AnyToHtml;
+              children`gensym22: varargs[AnyToHtml]): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2CAnyToHtml" title="newXmlElement(tag`gensym22: string; child`gensym22: AnyToHtml): XmlElement">newXmlElement(tag`gensym22: string; child`gensym22: AnyToHtml): XmlElement</a></li>
+<li><a class="reference" href="#newXmlElement%2Cstring%2C_2" title="newXmlElement(tag`gensym22: string; children`gensym22: seq[AnyToHtml]): HtmlElement">newXmlElement(tag`gensym22: string; children`gensym22: seq[AnyToHtml]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">writeFile
@@ -125,16 +161,13 @@
 <pre class="listing"><span class="Keyword">import</span> <span class="Identifier">websitegenerator</span><span class="Operator">/</span><span class="Identifier">generator</span><span class="Operator">/</span><span class="Identifier">xml</span>
 <span class="Keyword">import</span> <span class="Identifier">websitegenerator</span>
 
-<span class="Keyword">proc</span> <span class="Identifier">x</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">:</span> <span class="Identifier">string</span><span class="Punctuation">)</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">)</span>
-<span class="Keyword">proc</span> <span class="Identifier">x</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">:</span> <span class="Identifier">string</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">:</span> <span class="Identifier">varargs</span><span class="Punctuation">[</span><span class="Identifier">XmlElement</span><span class="Punctuation">]</span><span class="Punctuation">)</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="Identifier">tag</span><span class="Punctuation">,</span> <span class="Identifier">content</span><span class="Punctuation">)</span>
-
 <span class="Keyword">var</span> <span class="Identifier">document</span><span class="Punctuation">:</span> <span class="Identifier">XmlDocument</span> <span class="Operator">=</span> <span class="Identifier">newXmlDocument</span><span class="Punctuation">(</span><span class="StringLit">&quot;.output/bookstore.xml&quot;</span><span class="Punctuation">)</span>
 <span class="Keyword">let</span>
     <span class="Comment"># You can use this type of syntax:</span>
-    <span class="Identifier">firstStore</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;bookstore&quot;</span><span class="Punctuation">,</span>
-        <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;book&quot;</span><span class="Punctuation">,</span>
-            <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;title&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;The Dictionary&quot;</span><span class="Punctuation">)</span><span class="Punctuation">,</span>
-            <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;desc&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;All words&quot;</span><span class="Punctuation">)</span>
+    <span class="Identifier">firstStore</span><span class="Punctuation">:</span> <span class="Identifier">XmlElement</span> <span class="Operator">=</span> <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;bookstore&quot;</span><span class="Punctuation">,</span>
+        <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;book&quot;</span><span class="Punctuation">,</span>
+            <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;title&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;The Dictionary&quot;</span><span class="Punctuation">)</span><span class="Punctuation">,</span>
+            <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;desc&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;All words&quot;</span><span class="Punctuation">)</span>
         <span class="Punctuation">)</span><span class="Operator">.</span><span class="Identifier">addattr</span><span class="Punctuation">(</span><span class="StringLit">&quot;lang&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;en&quot;</span><span class="Punctuation">)</span>
     <span class="Punctuation">)</span>
     <span class="Comment"># Or this funky thing (implemented in `sugar` module):</span>
@@ -144,9 +177,9 @@
             <span class="StringLit">&quot;desc&quot;</span> <span class="Operator">=&gt;</span> <span class="StringLit">&quot;MORE WORDS??&quot;</span>
         <span class="Punctuation">]</span><span class="Punctuation">,</span>
         <span class="Comment"># And you can mix-and-match:</span>
-        <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;book&quot;</span><span class="Punctuation">,</span>
-            <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;title&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;Katzen&quot;</span><span class="Punctuation">)</span><span class="Punctuation">,</span>
-            <span class="Identifier">x</span><span class="Punctuation">(</span><span class="StringLit">&quot;desc&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;Katzen sind toll!!!!!&quot;</span><span class="Punctuation">)</span>
+        <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;book&quot;</span><span class="Punctuation">,</span>
+            <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;title&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;Katzen&quot;</span><span class="Punctuation">)</span><span class="Punctuation">,</span>
+            <span class="Identifier">newXmlElement</span><span class="Punctuation">(</span><span class="StringLit">&quot;desc&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;Katzen sind toll!!!!!&quot;</span><span class="Punctuation">)</span>
         <span class="Punctuation">)</span><span class="Operator">.</span><span class="Identifier">add</span><span class="Punctuation">(</span>
             <span class="Identifier">attr</span><span class="Punctuation">(</span><span class="StringLit">&quot;lang&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;de&quot;</span><span class="Punctuation">)</span>
         <span class="Punctuation">)</span>
@@ -253,7 +286,7 @@
 </div>
 <div id="newXmlElement-procs-all">
   <div id="newXmlElement,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
@@ -261,7 +294,7 @@
   </dd>
 </div>
 <div id="newXmlElement,string,seq[HtmlElementAttribute]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElementAttribute"><span class="Identifier">XmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
@@ -269,27 +302,54 @@
     
   </dd>
 </div>
-<div id="newXmlElement,string,seq[HtmlElementAttribute],">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElementAttribute"><span class="Identifier">XmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                   <span class="Identifier">child</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+<div id="newXmlElement,string,,HtmlElement,HtmlElement,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C%2CHtmlElement%2CHtmlElement%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym7</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">attributes`gensym7</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                   <span class="Identifier">child1`gensym7</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">;</span> <span class="Identifier">child2`gensym7</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">;</span>
+                   <span class="Identifier">children`gensym7</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
     
   </dd>
 </div>
-<div id="newXmlElement,string,seq[HtmlElementAttribute],_2">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElementAttribute"><span class="Identifier">XmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                   <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+<div id="newXmlElement,string,,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C%2CHtmlElement"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym7</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">attributes`gensym7</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                   <span class="Identifier">child`gensym7</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
     
   </dd>
 </div>
-<div id="newXmlElement,string,seq[HtmlElementAttribute],_3">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElementAttribute"><span class="Identifier">XmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                   <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+<div id="newXmlElement,string,,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym7</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">attributes`gensym7</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                   <span class="Identifier">children`gensym7</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,HtmlElement,HtmlElement,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2CHtmlElement%2CHtmlElement%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym7</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child1`gensym7</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">;</span>
+                   <span class="Identifier">child2`gensym7</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">;</span>
+                   <span class="Identifier">children`gensym7</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2CHtmlElement"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym7</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child`gensym7</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
@@ -297,7 +357,57 @@
   </dd>
 </div>
 <div id="newXmlElement,string,">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym7</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children`gensym7</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,,AnyToHtml,AnyToHtml,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C%2CAnyToHtml%2CAnyToHtml%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym22</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">attributes`gensym22</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                   <span class="Identifier">child1`gensym22</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span> <span class="Identifier">child2`gensym22</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span>
+                   <span class="Identifier">children`gensym22</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,,AnyToHtml">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C%2CAnyToHtml"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym22</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">attributes`gensym22</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                   <span class="Identifier">child`gensym22</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,,_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C%2C_2"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym22</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">attributes`gensym22</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                   <span class="Identifier">children`gensym22</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,AnyToHtml,AnyToHtml,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2CAnyToHtml%2CAnyToHtml%2C"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym22</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child1`gensym22</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span>
+                   <span class="Identifier">child2`gensym22</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span>
+                   <span class="Identifier">children`gensym22</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newXmlElement,string,AnyToHtml">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2CAnyToHtml"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym22</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child`gensym22</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
   <dd>
     
     
@@ -305,15 +415,7 @@
   </dd>
 </div>
 <div id="newXmlElement,string,_2">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C_2"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
-  <dd>
-    
-    
-    
-  </dd>
-</div>
-<div id="newXmlElement,string,_3">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C_3"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="xml.html#XmlElement"><span class="Identifier">XmlElement</span></a></pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newXmlElement%2Cstring%2C_2"><span class="Identifier">newXmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym22</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children`gensym22</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
     
@@ -353,7 +455,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:46:38 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 18:22:06 UTC</small>
       </div>
     </div>
   </div>

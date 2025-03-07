@@ -88,11 +88,15 @@
 <li><a class="reference" href="#%24%2Cvarargs%5BHtmlElement%5D" title="`$`(elements: varargs[HtmlElement]): string">`$`(elements: varargs[HtmlElement]): string</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">$<$>
+  <li><a class="reference" href="#%24%3C%24%3E%2CT" title="`$&lt;$&gt;`[T](item: T): string">`$&lt;$&gt;`[T](item: T): string</a></li>
+
+</ul>
 <ul class="simple nested-toc-section"><$>
-  <li><a class="reference" href="#%3C%24%3E%2CAnyToHtml" title="`&lt;$&gt;`(element: AnyToHtml): HtmlElement">`&lt;$&gt;`(element: AnyToHtml): HtmlElement</a></li>
-<li><a class="reference" href="#%3C%24%3E%2CHtmlElement" title="`&lt;$&gt;`(element: HtmlElement): HtmlElement">`&lt;$&gt;`(element: HtmlElement): HtmlElement</a></li>
-<li><a class="reference" href="#%3C%24%3E%2Cseq%5BAnyToHtml%5D" title="`&lt;$&gt;`(elements: seq[AnyToHtml]): seq[HtmlElement]">`&lt;$&gt;`(elements: seq[AnyToHtml]): seq[HtmlElement]</a></li>
+  <li><a class="reference" href="#%3C%24%3E%2CHtmlElement" title="`&lt;$&gt;`(element: HtmlElement): HtmlElement">`&lt;$&gt;`(element: HtmlElement): HtmlElement</a></li>
 <li><a class="reference" href="#%3C%24%3E%2Cseq%5BHtmlElement%5D" title="`&lt;$&gt;`(elements: seq[HtmlElement]): seq[HtmlElement]">`&lt;$&gt;`(elements: seq[HtmlElement]): seq[HtmlElement]</a></li>
+<li><a class="reference" href="#%3C%24%3E%2CT" title="`&lt;$&gt;`[T](element: T): HtmlElement">`&lt;$&gt;`[T](element: T): HtmlElement</a></li>
+<li><a class="reference" href="#%3C%24%3E%2Cseq%5BT%5D" title="`&lt;$&gt;`[T](elements: seq[T]): seq[HtmlElement]">`&lt;$&gt;`[T](elements: seq[T]): seq[HtmlElement]</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">add
@@ -224,18 +228,54 @@
 <ul class="simple nested-toc-section">newHtmlElement
   <li><a class="reference" href="#newHtmlElement%2Cstring" title="newHtmlElement(tag: string): HtmlElement">newHtmlElement(tag: string): HtmlElement</a></li>
 <li><a class="reference" href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D" title="newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement">newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement</a></li>
-<li><a class="reference" href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C" title="newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               child: HtmlElement | AnyToHtml): HtmlElement">newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               child: HtmlElement | AnyToHtml): HtmlElement</a></li>
-<li><a class="reference" href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2" title="newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement">newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement</a></li>
-<li><a class="reference" href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3" title="newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement">newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
-               children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement</a></li>
-<li><a class="reference" href="#newHtmlElement%2Cstring%2C" title="newHtmlElement(tag: string; child: HtmlElement | AnyToHtml): HtmlElement">newHtmlElement(tag: string; child: HtmlElement | AnyToHtml): HtmlElement</a></li>
-<li><a class="reference" href="#newHtmlElement%2Cstring%2C_2" title="newHtmlElement(tag: string; children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement">newHtmlElement(tag: string; children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement</a></li>
-<li><a class="reference" href="#newHtmlElement%2Cstring%2C_3" title="newHtmlElement(tag: string; children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement">newHtmlElement(tag: string; children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C%2CHtmlElement%2CHtmlElement%2C" title="newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child1`gensym0: HtmlElement; child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement">newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child1`gensym0: HtmlElement; child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C%2CHtmlElement" title="newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child`gensym0: HtmlElement): HtmlElement">newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               child`gensym0: HtmlElement): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C%2C" title="newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               children`gensym0: seq[HtmlElement]): HtmlElement">newHtmlElement(tag`gensym0: string;
+               attributes`gensym0: seq[HtmlElementAttribute];
+               children`gensym0: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2CHtmlElement%2CHtmlElement%2C" title="newHtmlElement(tag`gensym0: string; child1`gensym0: HtmlElement;
+               child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement">newHtmlElement(tag`gensym0: string; child1`gensym0: HtmlElement;
+               child2`gensym0: HtmlElement;
+               children`gensym0: varargs[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2CHtmlElement" title="newHtmlElement(tag`gensym0: string; child`gensym0: HtmlElement): HtmlElement">newHtmlElement(tag`gensym0: string; child`gensym0: HtmlElement): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C" title="newHtmlElement(tag`gensym0: string; children`gensym0: seq[HtmlElement]): HtmlElement">newHtmlElement(tag`gensym0: string; children`gensym0: seq[HtmlElement]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C%2CAnyToHtml%2CAnyToHtml%2C" title="newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child1`gensym15: AnyToHtml; child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement">newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child1`gensym15: AnyToHtml; child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C%2CAnyToHtml" title="newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child`gensym15: AnyToHtml): HtmlElement">newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               child`gensym15: AnyToHtml): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C%2C_2" title="newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               children`gensym15: seq[AnyToHtml]): HtmlElement">newHtmlElement(tag`gensym15: string;
+               attributes`gensym15: seq[HtmlElementAttribute];
+               children`gensym15: seq[AnyToHtml]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2CAnyToHtml%2CAnyToHtml%2C" title="newHtmlElement(tag`gensym15: string; child1`gensym15: AnyToHtml;
+               child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement">newHtmlElement(tag`gensym15: string; child1`gensym15: AnyToHtml;
+               child2`gensym15: AnyToHtml;
+               children`gensym15: varargs[AnyToHtml]): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2CAnyToHtml" title="newHtmlElement(tag`gensym15: string; child`gensym15: AnyToHtml): HtmlElement">newHtmlElement(tag`gensym15: string; child`gensym15: AnyToHtml): HtmlElement</a></li>
+<li><a class="reference" href="#newHtmlElement%2Cstring%2C_2" title="newHtmlElement(tag`gensym15: string; children`gensym15: seq[AnyToHtml]): HtmlElement">newHtmlElement(tag`gensym15: string; children`gensym15: seq[AnyToHtml]): HtmlElement</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">rawText
@@ -257,6 +297,18 @@
     <ul class="simple simple-toc-section">
       <ul class="simple nested-toc-section">childrenOf
   <li><a class="reference" href="#childrenOf.i%2CHtmlElement" title="childrenOf(element: HtmlElement): HtmlElement">childrenOf(element: HtmlElement): HtmlElement</a></li>
+
+</ul>
+
+    </ul>
+  </details>
+</li>
+<li>
+  <details open>
+    <summary><a class="reference reference-toplevel" href="#18" id="68">Templates</a></summary>
+    <ul class="simple simple-toc-section">
+      <ul class="simple nested-toc-section">newElementGenerator
+  <li><a class="reference" href="#newElementGenerator.t%2Cuntyped%2Ctype%2Ctype" title="newElementGenerator(NAME: untyped; RETURN_TYPE, ARGS_TYPE: type): untyped">newElementGenerator(NAME: untyped; RETURN_TYPE, ARGS_TYPE: type): untyped</a></li>
 
 </ul>
 
@@ -287,7 +339,7 @@
   <dt><pre><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a> <span class="Other">=</span> <span class="Identifier">string</span> <span class="Operator">|</span> <span class="Identifier">char</span> <span class="Operator">|</span> <span class="Identifier">bool</span> <span class="Operator">|</span> <span class="Identifier">SomeNumber</span></pre></dt>
   <dd>
     
-    
+    Types valid to convert to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
     
   </dd>
 </div>
@@ -386,26 +438,21 @@
 </div>
 
 </div>
-<div id="&lt;$&gt;-procs-all">
-  <div id="<$>,AnyToHtml">
-  <dt><pre><span class="Keyword">proc</span> <a href="#%3C%24%3E%2CAnyToHtml"><span class="Identifier">`&lt;$&gt;`</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+<div id="$&lt;$&gt;-procs-all">
+  <div id="$<$>,T">
+  <dt><pre><span class="Keyword">proc</span> <a href="#%24%3C%24%3E%2CT"><span class="Identifier">`$&lt;$&gt;`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">item</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
   <dd>
     
-    Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
+    Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>, then to <tt class="docutils literal"><span class="pre"><span class="Identifier">string</span></span></tt>
     
   </dd>
 </div>
-<div id="<$>,HtmlElement">
+
+</div>
+<div id="&lt;$&gt;-procs-all">
+  <div id="<$>,HtmlElement">
   <dt><pre><span class="Keyword">proc</span> <a href="#%3C%24%3E%2CHtmlElement"><span class="Identifier">`&lt;$&gt;`</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
-  <dd>
-    
-    Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
-    
-  </dd>
-</div>
-<div id="<$>,seq[AnyToHtml]">
-  <dt><pre><span class="Keyword">proc</span> <a href="#%3C%24%3E%2Cseq%5BAnyToHtml%5D"><span class="Identifier">`&lt;$&gt;`</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span></pre></dt>
   <dd>
     
     Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
@@ -415,6 +462,22 @@
 <div id="<$>,seq[HtmlElement]">
   <dt><pre><span class="Keyword">proc</span> <a href="#%3C%24%3E%2Cseq%5BHtmlElement%5D"><span class="Identifier">`&lt;$&gt;`</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
+    
+  </dd>
+</div>
+<div id="<$>,T">
+  <dt><pre><span class="Keyword">proc</span> <a href="#%3C%24%3E%2CT"><span class="Identifier">`&lt;$&gt;`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dd>
+    
+    Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
+    
+  </dd>
+</div>
+<div id="<$>,seq[T]">
+  <dt><pre><span class="Keyword">proc</span> <a href="#%3C%24%3E%2Cseq%5BT%5D"><span class="Identifier">`&lt;$&gt;`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span></pre></dt>
   <dd>
     
     Converts to <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>
@@ -987,27 +1050,54 @@
     
   </dd>
 </div>
-<div id="newHtmlElement,string,seq[HtmlElementAttribute],">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                    <span class="Identifier">child</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> <span class="Operator">|</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+<div id="newHtmlElement,string,,HtmlElement,HtmlElement,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C%2CHtmlElement%2CHtmlElement%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym0</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                    <span class="Identifier">attributes`gensym0</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">child1`gensym0</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span> <span class="Identifier">child2`gensym0</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span>
+                    <span class="Identifier">children`gensym0</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
     
   </dd>
 </div>
-<div id="newHtmlElement,string,seq[HtmlElementAttribute],_2">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                    <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+<div id="newHtmlElement,string,,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C%2CHtmlElement"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym0</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                    <span class="Identifier">attributes`gensym0</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">child`gensym0</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
     
   </dd>
 </div>
-<div id="newHtmlElement,string,seq[HtmlElementAttribute],_3">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">attributes</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
-                    <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+<div id="newHtmlElement,string,,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym0</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                    <span class="Identifier">attributes`gensym0</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">children`gensym0</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,HtmlElement,HtmlElement,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2CHtmlElement%2CHtmlElement%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym0</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child1`gensym0</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span>
+                    <span class="Identifier">child2`gensym0</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">;</span>
+                    <span class="Identifier">children`gensym0</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2CHtmlElement"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym0</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child`gensym0</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
@@ -1015,7 +1105,57 @@
   </dd>
 </div>
 <div id="newHtmlElement,string,">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> <span class="Operator">|</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym0</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children`gensym0</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,,AnyToHtml,AnyToHtml,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C%2CAnyToHtml%2CAnyToHtml%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym15</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                    <span class="Identifier">attributes`gensym15</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">child1`gensym15</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span> <span class="Identifier">child2`gensym15</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span>
+                    <span class="Identifier">children`gensym15</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,,AnyToHtml">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C%2CAnyToHtml"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym15</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                    <span class="Identifier">attributes`gensym15</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">child`gensym15</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,,_2">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C%2C_2"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym15</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                    <span class="Identifier">attributes`gensym15</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElementAttribute"><span class="Identifier">HtmlElementAttribute</span></a><span class="Other">]</span><span class="Other">;</span>
+                    <span class="Identifier">children`gensym15</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,AnyToHtml,AnyToHtml,">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2CAnyToHtml%2CAnyToHtml%2C"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym15</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child1`gensym15</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span>
+                    <span class="Identifier">child2`gensym15</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">;</span>
+                    <span class="Identifier">children`gensym15</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+<div id="newHtmlElement,string,AnyToHtml">
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2CAnyToHtml"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym15</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">child`gensym15</span><span class="Other">:</span> <a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
     
@@ -1023,16 +1163,7 @@
   </dd>
 </div>
 <div id="newHtmlElement,string,_2">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C_2"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
-  <dd>
-    
-    
-    
-  </dd>
-</div>
-<div id="newHtmlElement,string,_3">
-  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C_3"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
-                    <span class="Identifier">children</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span> <span class="Operator">|</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#newHtmlElement%2Cstring%2C_2"><span class="Identifier">newHtmlElement</span></a><span class="Other">(</span><span class="Identifier">tag`gensym15</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">children`gensym15</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="html.html#AnyToHtml"><span class="Identifier">AnyToHtml</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
     
@@ -1094,6 +1225,23 @@
 
   </dl>
 </div>
+<div class="section" id="18">
+  <h1><a class="toc-backref" href="#18">Templates</a></h1>
+  <dl class="item">
+    <div id="newElementGenerator-templates-all">
+  <div id="newElementGenerator.t,untyped,type,type">
+  <dt><pre><span class="Keyword">template</span> <a href="#newElementGenerator.t%2Cuntyped%2Ctype%2Ctype"><span class="Identifier">newElementGenerator</span></a><span class="Other">(</span><span class="Identifier">NAME</span><span class="Other">:</span> <span class="Identifier">untyped</span><span class="Other">;</span> <span class="Identifier">RETURN_TYPE</span><span class="Other">,</span> <span class="Identifier">ARGS_TYPE</span><span class="Other">:</span> <span class="Identifier">type</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">untyped</span></pre></dt>
+  <dd>
+    
+    
+    
+  </dd>
+</div>
+
+</div>
+
+  </dl>
+</div>
 
   </div>
 </div>
@@ -1101,7 +1249,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:46:37 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 18:22:05 UTC</small>
       </div>
     </div>
   </div>

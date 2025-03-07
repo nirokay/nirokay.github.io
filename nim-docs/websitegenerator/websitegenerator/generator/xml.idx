@@ -6,17 +6,23 @@ nim	newXmlDocument	websitegenerator/generator/xml.html#newXmlDocument,string,seq
 nim	add	websitegenerator/generator/xml.html#add,XmlDocument,HtmlElement	proc add(document: var XmlDocument; element: XmlElement)		23
 nim	add	websitegenerator/generator/xml.html#add,XmlDocument,seq[HtmlElement]	proc add(document: var XmlDocument; elements: seq[XmlElement])		26
 nim	add	websitegenerator/generator/xml.html#add,XmlDocument,varargs[HtmlElement]	proc add(document: var XmlDocument; elements: varargs[XmlElement])		29
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string	proc newXmlElement(tag: string): XmlElement		33
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,	proc newXmlElement(tag: string; child: XmlElement | string): XmlElement		34
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,_2	proc newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement		36
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,_3	proc newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement		37
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute]	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement		39
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute],	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];\n              child: XmlElement | string): XmlElement		40
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute],_2	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];\n              children: seq[XmlElement] | seq[string]): XmlElement		41
-nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute],_3	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];\n              children: varargs[XmlElement] | seq[string]): XmlElement		42
-nim	`$`	websitegenerator/generator/xml.html#$,XmlDocument	proc `$`(document: XmlDocument): string		45
-nim	writeFile	websitegenerator/generator/xml.html#writeFile,XmlDocument	proc writeFile(document: XmlDocument)		59
-nim	writeFile	websitegenerator/generator/xml.html#writeFile,XmlDocument,string	proc writeFile(document: XmlDocument; fileName: string)		65
-nimgrp	writefile	websitegenerator/generator/xml.html#writeFile-procs-all	proc		59
-nimgrp	newxmlelement	websitegenerator/generator/xml.html#newXmlElement-procs-all	proc		33
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string	proc newXmlElement(tag: string): HtmlElement		46
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute]	proc newXmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement		47
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,HtmlElement	proc newXmlElement(tag`gensym7: string; child`gensym7: XmlElement): XmlElement		91
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,	proc newXmlElement(tag`gensym7: string; children`gensym7: seq[XmlElement]): HtmlElement		92
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,HtmlElement,HtmlElement,	proc newXmlElement(tag`gensym7: string; child1`gensym7: XmlElement;\n              child2`gensym7: XmlElement;\n              children`gensym7: varargs[XmlElement]): XmlElement		93
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,,HtmlElement	proc newXmlElement(tag`gensym7: string;\n              attributes`gensym7: seq[HtmlElementAttribute];\n              child`gensym7: XmlElement): XmlElement		95
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,,	proc newXmlElement(tag`gensym7: string;\n              attributes`gensym7: seq[HtmlElementAttribute];\n              children`gensym7: seq[XmlElement]): XmlElement		96
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,,HtmlElement,HtmlElement,	proc newXmlElement(tag`gensym7: string;\n              attributes`gensym7: seq[HtmlElementAttribute];\n              child1`gensym7: XmlElement; child2`gensym7: XmlElement;\n              children`gensym7: varargs[XmlElement]): XmlElement		49
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,AnyToHtml	proc newXmlElement(tag`gensym22: string; child`gensym22: AnyToHtml): XmlElement		91
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,_2	proc newXmlElement(tag`gensym22: string; children`gensym22: seq[AnyToHtml]): HtmlElement		92
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,AnyToHtml,AnyToHtml,	proc newXmlElement(tag`gensym22: string; child1`gensym22: AnyToHtml;\n              child2`gensym22: AnyToHtml;\n              children`gensym22: varargs[AnyToHtml]): XmlElement		93
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,,AnyToHtml	proc newXmlElement(tag`gensym22: string;\n              attributes`gensym22: seq[HtmlElementAttribute];\n              child`gensym22: AnyToHtml): XmlElement		95
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,,_2	proc newXmlElement(tag`gensym22: string;\n              attributes`gensym22: seq[HtmlElementAttribute];\n              children`gensym22: seq[AnyToHtml]): XmlElement		96
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,,AnyToHtml,AnyToHtml,	proc newXmlElement(tag`gensym22: string;\n              attributes`gensym22: seq[HtmlElementAttribute];\n              child1`gensym22: AnyToHtml; child2`gensym22: AnyToHtml;\n              children`gensym22: varargs[AnyToHtml]): XmlElement		50
+nim	`$`	websitegenerator/generator/xml.html#$,XmlDocument	proc `$`(document: XmlDocument): string		52
+nim	writeFile	websitegenerator/generator/xml.html#writeFile,XmlDocument	proc writeFile(document: XmlDocument)		64
+nim	writeFile	websitegenerator/generator/xml.html#writeFile,XmlDocument,string	proc writeFile(document: XmlDocument; fileName: string)		70
+nimgrp	writefile	websitegenerator/generator/xml.html#writeFile-procs-all	proc		64
+nimgrp	newxmlelement	websitegenerator/generator/xml.html#newXmlElement-procs-all	proc		46
 nimgrp	add	websitegenerator/generator/xml.html#add-procs-all	proc		23
