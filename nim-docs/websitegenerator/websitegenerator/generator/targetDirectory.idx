@@ -1,4 +1,5 @@
 nimTitle	targetDirectory	websitegenerator/generator/targetDirectory.html	module websitegenerator/generator/targetDirectory		0
 nim	setTargetDirectory	websitegenerator/generator/targetDirectory.html#setTargetDirectory,string	proc setTargetDirectory(path: string)		14
 nim	toTargetDirectory	websitegenerator/generator/targetDirectory.html#toTargetDirectory,string	proc toTargetDirectory(path: string): string		19
+nim	getTargetDirectory	websitegenerator/generator/targetDirectory.html#getTargetDirectory	proc getTargetDirectory(): string		23
 heading	Target Directory module	websitegenerator/generator/targetDirectory.html#target-directory-module	 Target Directory module		0

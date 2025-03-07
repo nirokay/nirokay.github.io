@@ -1,0 +1,22 @@
+nimTitle	xml	websitegenerator/generator/xml.html	module websitegenerator/generator/xml		0
+nim	XmlElement	websitegenerator/generator/xml.html#XmlElement	type XmlElement		5
+nim	XmlElementAttribute	websitegenerator/generator/xml.html#XmlElementAttribute	type XmlElementAttribute		6
+nim	XmlDocument	websitegenerator/generator/xml.html#XmlDocument	object XmlDocument		7
+nim	newXmlDocument	websitegenerator/generator/xml.html#newXmlDocument,string,seq[HtmlElementAttribute]	proc newXmlDocument(file: string; prolog: seq[XmlElementAttribute] = defaultXmlProlog): XmlDocument		17
+nim	add	websitegenerator/generator/xml.html#add,XmlDocument,HtmlElement	proc add(document: var XmlDocument; element: XmlElement)		23
+nim	add	websitegenerator/generator/xml.html#add,XmlDocument,seq[HtmlElement]	proc add(document: var XmlDocument; elements: seq[XmlElement])		26
+nim	add	websitegenerator/generator/xml.html#add,XmlDocument,varargs[HtmlElement]	proc add(document: var XmlDocument; elements: varargs[XmlElement])		29
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string	proc newXmlElement(tag: string): XmlElement		33
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,	proc newXmlElement(tag: string; child: XmlElement | string): XmlElement		34
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,_2	proc newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement		36
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,_3	proc newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement		37
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute]	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement		39
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute],	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];\n              child: XmlElement | string): XmlElement		40
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute],_2	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];\n              children: seq[XmlElement] | seq[string]): XmlElement		41
+nim	newXmlElement	websitegenerator/generator/xml.html#newXmlElement,string,seq[HtmlElementAttribute],_3	proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];\n              children: varargs[XmlElement] | seq[string]): XmlElement		42
+nim	`$`	websitegenerator/generator/xml.html#$,XmlDocument	proc `$`(document: XmlDocument): string		45
+nim	writeFile	websitegenerator/generator/xml.html#writeFile,XmlDocument	proc writeFile(document: XmlDocument)		59
+nim	writeFile	websitegenerator/generator/xml.html#writeFile,XmlDocument,string	proc writeFile(document: XmlDocument; fileName: string)		65
+nimgrp	writefile	websitegenerator/generator/xml.html#writeFile-procs-all	proc		59
+nimgrp	newxmlelement	websitegenerator/generator/xml.html#newXmlElement-procs-all	proc		33
+nimgrp	add	websitegenerator/generator/xml.html#add-procs-all	proc		23

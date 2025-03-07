@@ -444,7 +444,7 @@
   <li><a class="reference" href="#meter%2Cstring%2C%2C%2C%2Cstring" title="meter(id: string; min, max, value: SomeInteger | string; text: string): HtmlElement">meter(id: string; min, max, value: SomeInteger | string; text: string): HtmlElement</a></li>
 <li><a class="reference" href="#meter%2Cstring%2C%2Cstring" title="meter(id: string; value: SomeFloat | string; text: string = &quot; &quot;): HtmlElement">meter(id: string; value: SomeFloat | string; text: string = &quot; &quot;): HtmlElement</a></li>
 <li><a class="reference" href="#meter%2C%2C%2C%2Cstring" title="meter(min, max, value: SomeInteger | string; text: string = &quot; &quot;): HtmlElement">meter(min, max, value: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
-<li><a class="reference" href="#meter%2C%2C%2Cstring" title="meter(min, max: SomeInteger | string; text: string = &quot; &quot;): HtmlElement">meter(min, max: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
+<li><a class="reference" href="#meter%2C%2C%2Cstring" title="meter(min, max: SomeInteger | string; text: string = &quot;&quot;): HtmlElement">meter(min, max: SomeInteger | string; text: string = &quot;&quot;): HtmlElement</a></li>
 <li><a class="reference" href="#meter%2C%2Cstring" title="meter(value: SomeFloat | string; text: string = &quot; &quot;): HtmlElement">meter(value: SomeFloat | string; text: string = &quot; &quot;): HtmlElement</a></li>
 
 </ul>
@@ -981,7 +981,7 @@
   <dd>
     
     <p>Stringifies <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlEntity</span></span></tt> to a string</p>
-<p>Uses <tt class="docutils literal"><span class="pre"><span class="Identifier">websitegeneratorSettings</span><span class="Operator">.</span><span class="Identifier">generation</span><span class="Operator">.</span><span class="Identifier">useHtmlEntityNumbersInsteadOfName</span></span></tt> to determine if it should generate using name or number</p>
+<p>Uses <tt class="docutils literal"><span class="pre"><span class="Identifier">wgsHtmlEntitiesUseNumbersInsteadOfName</span></span></tt> to determine if it should generate using name or number</p>
 
     
   </dd>
@@ -2337,7 +2337,7 @@
   </dd>
 </div>
 <div id="meter,,,string">
-  <dt><pre><span class="Keyword">proc</span> <a href="#meter%2C%2C%2Cstring"><span class="Identifier">meter</span></a><span class="Other">(</span><span class="Identifier">min</span><span class="Other">,</span> <span class="Identifier">max</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot; &quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
+  <dt><pre><span class="Keyword">proc</span> <a href="#meter%2C%2C%2Cstring"><span class="Identifier">meter</span></a><span class="Other">(</span><span class="Identifier">min</span><span class="Other">,</span> <span class="Identifier">max</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span> <span class="Operator">|</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">)</span><span class="Other">:</span> <a href="../generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a></pre></dt>
   <dd>
     
     Empty Meter / Gauge element
@@ -3673,7 +3673,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-02-18 08:12:40 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:44:43 UTC</small>
       </div>
     </div>
   </div>

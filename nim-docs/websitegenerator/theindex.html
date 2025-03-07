@@ -25,7 +25,7 @@
   <div class="document" id="documentId">
     <div class="container">
       <h1 class="title">Index</h1>
-      Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/attributes.html">websitegenerator/attributes</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/dom.html">websitegenerator/dom</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/properties.html">websitegenerator/properties</a>, <a href="websitegenerator/settings.html">websitegenerator/settings</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
+      Modules: <a href="websitegenerator.html">websitegenerator</a>, <a href="websitegenerator/attributes.html">websitegenerator/attributes</a>, <a href="websitegenerator/common/css.html">websitegenerator/common/css</a>, <a href="websitegenerator/common/html.html">websitegenerator/common/html</a>, <a href="websitegenerator/commons.html">websitegenerator/commons</a>, <a href="websitegenerator/dom.html">websitegenerator/dom</a>, <a href="websitegenerator/generator/css.html">websitegenerator/generator/css</a>, <a href="websitegenerator/generator/html.html">websitegenerator/generator/html</a>, <a href="websitegenerator/generator/targetDirectory.html">websitegenerator/generator/targetDirectory</a>, <a href="websitegenerator/generator/xml.html">websitegenerator/generator/xml</a>, <a href="websitegenerator/generators.html">websitegenerator/generators</a>, <a href="websitegenerator/mimetypes.html">websitegenerator/mimetypes</a>, <a href="websitegenerator/properties.html">websitegenerator/properties</a>, <a href="websitegenerator/settings.html">websitegenerator/settings</a>, <a href="websitegenerator/sugar.html">websitegenerator/sugar</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%24%60" href="#%60%24%60"><span>`$`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="html: proc `$`(entity: HtmlEntity): string" href="websitegenerator/common/html.html#%24%2CHtmlEntity">html: proc `$`(entity: HtmlEntity): string</a></li>
@@ -47,24 +47,22 @@
           data-doc-search-tag="html: proc `$`(attributes: seq[HtmlElementAttribute]): string" href="websitegenerator/generator/html.html#%24%2Cseq%5BHtmlElementAttribute%5D">html: proc `$`(attributes: seq[HtmlElementAttribute]): string</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc `$`(elements: varargs[HtmlElement]): string" href="websitegenerator/generator/html.html#%24%2Cvarargs%5BHtmlElement%5D">html: proc `$`(elements: varargs[HtmlElement]): string</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc `$`(document: XmlDocument): string" href="websitegenerator/generator/xml.html#%24%2CXmlDocument">xml: proc `$`(document: XmlDocument): string</a></li>
           </ul></dd>
 <dt><a name="%60%26amp%3B%3D%26gt%3B%60" href="#%60%26amp%3B%3D%26gt%3B%60"><span>`&amp;=&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; child: HtmlElement)" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2CHtmlElement">sugar: proc `&amp;=&gt;`(element: var HtmlElement; child: HtmlElement)</a></li>
+          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; child: HtmlElement | string)" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2C">sugar: proc `&amp;=&gt;`(element: var HtmlElement; child: HtmlElement | string)</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: HtmlElement; child: HtmlElement): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2CHtmlElement_2">sugar: proc `&amp;=&gt;`(element: HtmlElement; child: HtmlElement): HtmlElement</a></li>
+          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: HtmlElement; child: HtmlElement | string): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2C_2">sugar: proc `&amp;=&gt;`(element: HtmlElement; child: HtmlElement | string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; children: seq[HtmlElement]): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2Cseq%5BHtmlElement%5D">sugar: proc `&amp;=&gt;`(element: var HtmlElement; children: seq[HtmlElement]): HtmlElement</a></li>
+          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; children: seq[HtmlElement] | seq[string])" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2C_3">sugar: proc `&amp;=&gt;`(element: var HtmlElement; children: seq[HtmlElement] | seq[string])</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; children: seq[HtmlElement])" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2Cseq%5BHtmlElement%5D_2">sugar: proc `&amp;=&gt;`(element: var HtmlElement; children: seq[HtmlElement])</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; content: seq[string])" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2Cseq%5Bstring%5D">sugar: proc `&amp;=&gt;`(element: var HtmlElement; content: seq[string])</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: HtmlElement; content: seq[string]): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2Cseq%5Bstring%5D_2">sugar: proc `&amp;=&gt;`(element: HtmlElement; content: seq[string]): HtmlElement</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: var HtmlElement; content: string)" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2Cstring">sugar: proc `&amp;=&gt;`(element: var HtmlElement; content: string)</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: HtmlElement; content: string): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2Cstring_2">sugar: proc `&amp;=&gt;`(element: HtmlElement; content: string): HtmlElement</a></li>
+          data-doc-search-tag="sugar: proc `&amp;=&gt;`(element: HtmlElement; children: seq[HtmlElement] | seq[string]): HtmlElement" href="websitegenerator/sugar.html#%26%3D%3E%2CHtmlElement%2C_4">sugar: proc `&amp;=&gt;`(element: HtmlElement; children: seq[HtmlElement] | seq[string]): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="%60-%3D%60" href="#%60-%3D%60"><span>`-=`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="sugar: proc `-=`(attribute, value: AnyToHtml): HtmlElementAttribute" href="websitegenerator/sugar.html#-%3D%2CAnyToHtml%2CAnyToHtml">sugar: proc `-=`(attribute, value: AnyToHtml): HtmlElementAttribute</a></li>
           </ul></dd>
 <dt><a name="%60-%26gt%3B%60" href="#%60-%26gt%3B%60"><span>`-&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -88,21 +86,33 @@
 <li><a class="reference external"
           data-doc-search-tag="sugar: proc `:=`(property, value: string): CssAttribute" href="websitegenerator/sugar.html#%3A%3D%2Cstring%2Cstring">sugar: proc `:=`(property, value: string): CssAttribute</a></li>
           </ul></dd>
+<dt><a name="%60%26lt%3B%24%26gt%3B%60" href="#%60%26lt%3B%24%26gt%3B%60"><span>`&lt;$&gt;`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: proc `&lt;$&gt;`(element: AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#%3C%24%3E%2CAnyToHtml">html: proc `&lt;$&gt;`(element: AnyToHtml): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `&lt;$&gt;`(element: HtmlElement): HtmlElement" href="websitegenerator/generator/html.html#%3C%24%3E%2CHtmlElement">html: proc `&lt;$&gt;`(element: HtmlElement): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `&lt;$&gt;`(elements: seq[AnyToHtml]): seq[HtmlElement]" href="websitegenerator/generator/html.html#%3C%24%3E%2Cseq%5BAnyToHtml%5D">html: proc `&lt;$&gt;`(elements: seq[AnyToHtml]): seq[HtmlElement]</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc `&lt;$&gt;`(elements: seq[HtmlElement]): seq[HtmlElement]" href="websitegenerator/generator/html.html#%3C%24%3E%2Cseq%5BHtmlElement%5D">html: proc `&lt;$&gt;`(elements: seq[HtmlElement]): seq[HtmlElement]</a></li>
+          </ul></dd>
 <dt><a name="%60%3D%26gt%3B%60" href="#%60%3D%26gt%3B%60"><span>`=&gt;`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; child: HtmlElement)" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2CHtmlElement">sugar: proc `=&gt;`(element: var HtmlElement; child: HtmlElement)</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; child: HtmlElement | string)" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2C">sugar: proc `=&gt;`(element: var HtmlElement; child: HtmlElement | string)</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: HtmlElement; child: HtmlElement): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2CHtmlElement_2">sugar: proc `=&gt;`(element: HtmlElement; child: HtmlElement): HtmlElement</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(element: HtmlElement; child: HtmlElement | string): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2C_2">sugar: proc `=&gt;`(element: HtmlElement; child: HtmlElement | string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; content: seq[string])" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2Cseq%5Bstring%5D">sugar: proc `=&gt;`(element: var HtmlElement; content: seq[string])</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; children: seq[HtmlElement] | seq[string])" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2C_3">sugar: proc `=&gt;`(element: var HtmlElement; children: seq[HtmlElement] | seq[string])</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: HtmlElement; content: seq[string]): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2Cseq%5Bstring%5D_2">sugar: proc `=&gt;`(element: HtmlElement; content: seq[string]): HtmlElement</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(element: HtmlElement; children: seq[HtmlElement] | seq[string]): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2C_4">sugar: proc `=&gt;`(element: HtmlElement; children: seq[HtmlElement] | seq[string]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: var HtmlElement; content: string)" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2Cstring">sugar: proc `=&gt;`(element: var HtmlElement; content: string)</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(tag: string; child: AnyToHtml): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2Cstring%2CAnyToHtml">sugar: proc `=&gt;`(tag: string; child: AnyToHtml): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(element: HtmlElement; content: string): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2CHtmlElement%2Cstring_2">sugar: proc `=&gt;`(element: HtmlElement; content: string): HtmlElement</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(tag: string; child: HtmlElement): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2Cstring%2CHtmlElement">sugar: proc `=&gt;`(tag: string; child: HtmlElement): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc `=&gt;`(attribute, value: string): HtmlElementAttribute" href="websitegenerator/sugar.html#%3D%3E%2Cstring%2Cstring">sugar: proc `=&gt;`(attribute, value: string): HtmlElementAttribute</a></li>
+          data-doc-search-tag="sugar: proc `=&gt;`(tag: string; children: seq[AnyToHtml]): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2Cstring%2Cseq%5BAnyToHtml%5D">sugar: proc `=&gt;`(tag: string; children: seq[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="sugar: proc `=&gt;`(tag: string; children: seq[HtmlElement]): HtmlElement" href="websitegenerator/sugar.html#%3D%3E%2Cstring%2Cseq%5BHtmlElement%5D">sugar: proc `=&gt;`(tag: string; children: seq[HtmlElement]): HtmlElement</a></li>
           </ul></dd>
 <dt><a name="%60%5B%5D%60" href="#%60%5B%5D%60"><span>`[]`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -187,6 +197,12 @@
           data-doc-search-tag="html: proc add(element: var HtmlElement; attributes: varargs[HtmlElementAttribute])" href="websitegenerator/generator/html.html#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D">html: proc add(element: var HtmlElement; attributes: varargs[HtmlElementAttribute])</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc add(element: HtmlElement; attributes: varargs[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/html.html#add%2CHtmlElement%2Cvarargs%5BHtmlElementAttribute%5D_2">html: proc add(element: HtmlElement; attributes: varargs[HtmlElementAttribute]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc add(document: var XmlDocument; element: XmlElement)" href="websitegenerator/generator/xml.html#add%2CXmlDocument%2CHtmlElement">xml: proc add(document: var XmlDocument; element: XmlElement)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc add(document: var XmlDocument; elements: seq[XmlElement])" href="websitegenerator/generator/xml.html#add%2CXmlDocument%2Cseq%5BHtmlElement%5D">xml: proc add(document: var XmlDocument; elements: seq[XmlElement])</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc add(document: var XmlDocument; elements: varargs[XmlElement])" href="websitegenerator/generator/xml.html#add%2CXmlDocument%2Cvarargs%5BHtmlElement%5D">xml: proc add(document: var XmlDocument; elements: varargs[XmlElement])</a></li>
           </ul></dd>
 <dt><a name="addattr" href="#addattr"><span>addattr:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -371,6 +387,10 @@
 <dt><a name="AntiqueWhite" href="#AntiqueWhite"><span>AntiqueWhite:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.AntiqueWhite" href="websitegenerator/common/css.html#AntiqueWhite">css: CssColour.AntiqueWhite</a></li>
+          </ul></dd>
+<dt><a name="AnyToHtml" href="#AnyToHtml"><span>AnyToHtml:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="html: type AnyToHtml" href="websitegenerator/generator/html.html#AnyToHtml">html: type AnyToHtml</a></li>
           </ul></dd>
 <dt><a name="application1dInterleavedParityfec" href="#application1dInterleavedParityfec"><span>application1dInterleavedParityfec:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -6696,9 +6716,9 @@
           </ul></dd>
 <dt><a name="attrStyle" href="#attrStyle"><span>attrStyle:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="sugar: proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement" href="websitegenerator/sugar.html#attrStyle%2CHtmlElement%2Cseq%5BCssAttribute%5D">sugar: proc attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): HtmlElement</a></li>
+          data-doc-search-tag="sugar: template attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): untyped" href="websitegenerator/sugar.html#attrStyle.t%2CHtmlElement%2Cseq%5BCssAttribute%5D">sugar: template attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): untyped</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="sugar: proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement" href="websitegenerator/sugar.html#attrStyle%2CHtmlElement%2Cvarargs%5BCssAttribute%5D">sugar: proc attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement</a></li>
+          data-doc-search-tag="sugar: template attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): untyped" href="websitegenerator/sugar.html#attrStyle.t%2CHtmlElement%2Cvarargs%5BCssAttribute%5D">sugar: template attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): untyped</a></li>
           </ul></dd>
 <dt><a name="audio" href="#audio"><span>audio:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -8628,6 +8648,10 @@
 <li><a class="reference external"
           data-doc-search-tag="html: proc getSortedAttributes(element: HtmlElement): seq[HtmlElementAttribute]" href="websitegenerator/generator/html.html#getSortedAttributes%2CHtmlElement">html: proc getSortedAttributes(element: HtmlElement): seq[HtmlElementAttribute]</a></li>
           </ul></dd>
+<dt><a name="getTargetDirectory" href="#getTargetDirectory"><span>getTargetDirectory:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="targetDirectory: proc getTargetDirectory(): string" href="websitegenerator/generator/targetDirectory.html#getTargetDirectory">targetDirectory: proc getTargetDirectory(): string</a></li>
+          </ul></dd>
 <dt><a name="GhostWhite" href="#GhostWhite"><span>GhostWhite:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssColour.GhostWhite" href="websitegenerator/common/css.html#GhostWhite">css: CssColour.GhostWhite</a></li>
@@ -9858,7 +9882,7 @@
 <li><a class="reference external"
           data-doc-search-tag="html: proc meter(min, max, value: SomeInteger | string; text: string = &quot; &quot;): HtmlElement" href="websitegenerator/common/html.html#meter%2C%2C%2C%2Cstring">html: proc meter(min, max, value: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc meter(min, max: SomeInteger | string; text: string = &quot; &quot;): HtmlElement" href="websitegenerator/common/html.html#meter%2C%2C%2Cstring">html: proc meter(min, max: SomeInteger | string; text: string = &quot; &quot;): HtmlElement</a></li>
+          data-doc-search-tag="html: proc meter(min, max: SomeInteger | string; text: string = &quot;&quot;): HtmlElement" href="websitegenerator/common/html.html#meter%2C%2C%2Cstring">html: proc meter(min, max: SomeInteger | string; text: string = &quot;&quot;): HtmlElement</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc meter(value: SomeFloat | string; text: string = &quot; &quot;): HtmlElement" href="websitegenerator/common/html.html#meter%2C%2Cstring">html: proc meter(value: SomeFloat | string; text: string = &quot; &quot;): HtmlElement</a></li>
           <li><a class="reference external"
@@ -10200,21 +10224,55 @@
           </ul></dd>
 <dt><a name="newHtmlElement" href="#newHtmlElement"><span>newHtmlElement:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; child: HtmlElement): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2CHtmlElement">html: proc newHtmlElement(tag: string; child: HtmlElement): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag: string): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring">html: proc newHtmlElement(tag: string): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; children: seq[HtmlElement]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElement%5D">html: proc newHtmlElement(tag: string; children: seq[HtmlElement]): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; child: HtmlElement | AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C">html: proc newHtmlElement(tag: string; child: HtmlElement | AnyToHtml): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
-               children: seq[HtmlElement]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2Cseq%5BHtmlElement%5D">html: proc newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
-               children: seq[HtmlElement]): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C_2">html: proc newHtmlElement(tag: string; children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
-               content: string = &quot;&quot;): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2Cstring">html: proc newHtmlElement(tag: string; tagAttributes: seq[HtmlElementAttribute];
-               content: string = &quot;&quot;): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2C_3">html: proc newHtmlElement(tag: string; children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag, content: string): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cstring">html: proc newHtmlElement(tag, content: string): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute]): HtmlElement</a></li>
           <li><a class="reference external"
-          data-doc-search-tag="html: proc newHtmlElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cvarargs%5BHtmlElementAttribute%5D">html: proc newHtmlElement(tag: string; tagAttributes: varargs[HtmlElementAttribute]): HtmlElement</a></li>
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
+               child: HtmlElement | AnyToHtml): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
+               child: HtmlElement | AnyToHtml): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
+               children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
+               children: seq[HtmlElement] | seq[AnyToHtml]): HtmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
+               children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement" href="websitegenerator/generator/html.html#newHtmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3">html: proc newHtmlElement(tag: string; attributes: seq[HtmlElementAttribute];
+               children: varargs[HtmlElement] | varargs[AnyToHtml]): HtmlElement</a></li>
+          </ul></dd>
+<dt><a name="newXmlDocument" href="#newXmlDocument"><span>newXmlDocument:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlDocument(file: string; prolog: seq[XmlElementAttribute] = defaultXmlProlog): XmlDocument" href="websitegenerator/generator/xml.html#newXmlDocument%2Cstring%2Cseq%5BHtmlElementAttribute%5D">xml: proc newXmlDocument(file: string; prolog: seq[XmlElementAttribute] = defaultXmlProlog): XmlDocument</a></li>
+          </ul></dd>
+<dt><a name="newXmlElement" href="#newXmlElement"><span>newXmlElement:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring">xml: proc newXmlElement(tag: string): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; child: XmlElement | string): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C">xml: proc newXmlElement(tag: string; child: XmlElement | string): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C_2">xml: proc newXmlElement(tag: string; children: seq[XmlElement] | seq[string]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2C_3">xml: proc newXmlElement(tag: string; children: varargs[XmlElement] | seq[string]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
+              child: XmlElement | string): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
+              child: XmlElement | string): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
+              children: seq[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_2">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
+              children: seq[XmlElement] | seq[string]): XmlElement</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
+              children: varargs[XmlElement] | seq[string]): XmlElement" href="websitegenerator/generator/xml.html#newXmlElement%2Cstring%2Cseq%5BHtmlElementAttribute%5D%2C_3">xml: proc newXmlElement(tag: string; attributes: seq[XmlElementAttribute];
+              children: varargs[XmlElement] | seq[string]): XmlElement</a></li>
           </ul></dd>
 <dt><a name="none" href="#none"><span>none:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15528,25 +15586,13 @@
 <li><a class="reference external"
           data-doc-search-tag="settings: template websitegeneratorRawTextElementIdentifier(): untyped" href="websitegenerator/settings.html#websitegeneratorRawTextElementIdentifier.t">settings: template websitegeneratorRawTextElementIdentifier(): untyped</a></li>
           </ul></dd>
-<dt><a name="WebsitegeneratorSettings" href="#WebsitegeneratorSettings"><span>WebsitegeneratorSettings:</span></a></dt><dd><ul class="simple">
+<dt><a name="websitegeneratorSugarAppendingRawTextSeparator" href="#websitegeneratorSugarAppendingRawTextSeparator"><span>websitegeneratorSugarAppendingRawTextSeparator:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="settings: object WebsitegeneratorSettings" href="websitegenerator/settings.html#WebsitegeneratorSettings">settings: object WebsitegeneratorSettings</a></li>
-          </ul></dd>
-<dt><a name="websitegeneratorSettings" href="#websitegeneratorSettings"><span>websitegeneratorSettings:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="settings: var websitegeneratorSettings" href="websitegenerator/settings.html#websitegeneratorSettings_2">settings: var websitegeneratorSettings</a></li>
-          </ul></dd>
-<dt><a name="WebsitegeneratorSettingsGeneration" href="#WebsitegeneratorSettingsGeneration"><span>WebsitegeneratorSettingsGeneration:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="settings: object WebsitegeneratorSettingsGeneration" href="websitegenerator/settings.html#WebsitegeneratorSettingsGeneration">settings: object WebsitegeneratorSettingsGeneration</a></li>
-          </ul></dd>
-<dt><a name="WebsitegeneratorSettingsInternal" href="#WebsitegeneratorSettingsInternal"><span>WebsitegeneratorSettingsInternal:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="settings: object WebsitegeneratorSettingsInternal" href="websitegenerator/settings.html#WebsitegeneratorSettingsInternal">settings: object WebsitegeneratorSettingsInternal</a></li>
+          data-doc-search-tag="settings: template websitegeneratorSugarAppendingRawTextSeparator(): untyped" href="websitegenerator/settings.html#websitegeneratorSugarAppendingRawTextSeparator.t">settings: template websitegeneratorSugarAppendingRawTextSeparator(): untyped</a></li>
           </ul></dd>
 <dt><a name="websitegeneratorSugarAppendingRawTextSeperator" href="#websitegeneratorSugarAppendingRawTextSeperator"><span>websitegeneratorSugarAppendingRawTextSeperator:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="sugar: var websitegeneratorSugarAppendingRawTextSeperator" href="websitegenerator/sugar.html#websitegeneratorSugarAppendingRawTextSeperator">sugar: var websitegeneratorSugarAppendingRawTextSeperator</a></li>
+          data-doc-search-tag="settings: template websitegeneratorSugarAppendingRawTextSeperator(): untyped" href="websitegenerator/settings.html#websitegeneratorSugarAppendingRawTextSeperator.t">settings: template websitegeneratorSugarAppendingRawTextSeperator(): untyped</a></li>
           </ul></dd>
 <dt><a name="weight100" href="#weight100"><span>weight100:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15583,6 +15629,38 @@
 <dt><a name="weight900" href="#weight900"><span>weight900:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssFontWeight.weight900" href="websitegenerator/common/css.html#weight900">css: CssFontWeight.weight900</a></li>
+          </ul></dd>
+<dt><a name="wgsHtmlEntitiesUseNumbersInsteadOfName" href="#wgsHtmlEntitiesUseNumbersInsteadOfName"><span>wgsHtmlEntitiesUseNumbersInsteadOfName:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsHtmlEntitiesUseNumbersInsteadOfName" href="websitegenerator/settings.html#wgsHtmlEntitiesUseNumbersInsteadOfName">settings: const wgsHtmlEntitiesUseNumbersInsteadOfName</a></li>
+          </ul></dd>
+<dt><a name="wgsInternalRawTextHtmlTag" href="#wgsInternalRawTextHtmlTag"><span>wgsInternalRawTextHtmlTag:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsInternalRawTextHtmlTag" href="websitegenerator/settings.html#wgsInternalRawTextHtmlTag">settings: const wgsInternalRawTextHtmlTag</a></li>
+          </ul></dd>
+<dt><a name="wgsOmitDocumentDoctype" href="#wgsOmitDocumentDoctype"><span>wgsOmitDocumentDoctype:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsOmitDocumentDoctype" href="websitegenerator/settings.html#wgsOmitDocumentDoctype">settings: const wgsOmitDocumentDoctype</a></li>
+          </ul></dd>
+<dt><a name="wgsOmitDocumentHtmlTags" href="#wgsOmitDocumentHtmlTags"><span>wgsOmitDocumentHtmlTags:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsOmitDocumentHtmlTags" href="websitegenerator/settings.html#wgsOmitDocumentHtmlTags">settings: const wgsOmitDocumentHtmlTags</a></li>
+          </ul></dd>
+<dt><a name="wgsRawTextSeparator" href="#wgsRawTextSeparator"><span>wgsRawTextSeparator:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsRawTextSeparator" href="websitegenerator/settings.html#wgsRawTextSeparator">settings: const wgsRawTextSeparator</a></li>
+          </ul></dd>
+<dt><a name="wgsSelfClosingTagsTrailingSlash" href="#wgsSelfClosingTagsTrailingSlash"><span>wgsSelfClosingTagsTrailingSlash:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsSelfClosingTagsTrailingSlash" href="websitegenerator/settings.html#wgsSelfClosingTagsTrailingSlash">settings: const wgsSelfClosingTagsTrailingSlash</a></li>
+          </ul></dd>
+<dt><a name="wgsSortCssProperties" href="#wgsSortCssProperties"><span>wgsSortCssProperties:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsSortCssProperties" href="websitegenerator/settings.html#wgsSortCssProperties">settings: const wgsSortCssProperties</a></li>
+          </ul></dd>
+<dt><a name="wgsSortHtmlAttributes" href="#wgsSortHtmlAttributes"><span>wgsSortHtmlAttributes:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="settings: const wgsSortHtmlAttributes" href="websitegenerator/settings.html#wgsSortHtmlAttributes">settings: const wgsSortHtmlAttributes</a></li>
           </ul></dd>
 <dt><a name="Wheat" href="#Wheat"><span>Wheat:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15629,6 +15707,10 @@
           data-doc-search-tag="html: proc writeFile(document: HtmlDocument)" href="websitegenerator/generator/html.html#writeFile%2CHtmlDocument">html: proc writeFile(document: HtmlDocument)</a></li>
           <li><a class="reference external"
           data-doc-search-tag="html: proc writeFile(document: HtmlDocument; fileName: string)" href="websitegenerator/generator/html.html#writeFile%2CHtmlDocument%2Cstring">html: proc writeFile(document: HtmlDocument; fileName: string)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc writeFile(document: XmlDocument)" href="websitegenerator/generator/xml.html#writeFile%2CXmlDocument">xml: proc writeFile(document: XmlDocument)</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="xml: proc writeFile(document: XmlDocument; fileName: string)" href="websitegenerator/generator/xml.html#writeFile%2CXmlDocument%2Cstring">xml: proc writeFile(document: XmlDocument; fileName: string)</a></li>
           </ul></dd>
 <dt><a name="writingMode" href="#writingMode"><span>writingMode:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15637,6 +15719,18 @@
 <dt><a name="xLarge" href="#xLarge"><span>xLarge:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="css: CssSize.xLarge" href="websitegenerator/common/css.html#xLarge">css: CssSize.xLarge</a></li>
+          </ul></dd>
+<dt><a name="XmlDocument" href="#XmlDocument"><span>XmlDocument:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="xml: object XmlDocument" href="websitegenerator/generator/xml.html#XmlDocument">xml: object XmlDocument</a></li>
+          </ul></dd>
+<dt><a name="XmlElement" href="#XmlElement"><span>XmlElement:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="xml: type XmlElement" href="websitegenerator/generator/xml.html#XmlElement">xml: type XmlElement</a></li>
+          </ul></dd>
+<dt><a name="XmlElementAttribute" href="#XmlElementAttribute"><span>XmlElementAttribute:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="xml: type XmlElementAttribute" href="websitegenerator/generator/xml.html#XmlElementAttribute">xml: type XmlElementAttribute</a></li>
           </ul></dd>
 <dt><a name="xSmall" href="#xSmall"><span>xSmall:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -15670,7 +15764,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-02-18 08:12:42 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 12:44:46 UTC</small>
       </div>
     </div>
   </div>
