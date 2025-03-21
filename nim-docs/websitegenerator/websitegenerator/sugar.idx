@@ -29,6 +29,7 @@ nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,seq[CssAttribute]_
 nim	addStyle	websitegenerator/sugar.html#addStyle,HtmlElement,varargs[CssAttribute]_2	proc addStyle(element: HtmlElement; attributes: varargs[CssAttribute]): HtmlElement		124
 nim	attrStyle	websitegenerator/sugar.html#attrStyle.t,HtmlElement,seq[CssAttribute]	template attrStyle(element: HtmlElement; attributes: seq[CssAttribute]): untyped		129
 nim	attrStyle	websitegenerator/sugar.html#attrStyle.t,HtmlElement,varargs[CssAttribute]	template attrStyle(element: HtmlElement; attributes: varargs[CssAttribute]): untyped		130
+nim	join	websitegenerator/sugar.html#join,seq[HtmlElement],HtmlElement	proc join(elements: seq[HtmlElement]; sep: HtmlElement): seq[HtmlElement]		133
 nimgrp	=>	websitegenerator/sugar.html#=>-procs-all	proc		13
 nimgrp	&=>	websitegenerator/sugar.html#&=>-procs-all	proc		55
 nimgrp	addstyle	websitegenerator/sugar.html#addStyle-procs-all	proc		110

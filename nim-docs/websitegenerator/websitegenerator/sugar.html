@@ -107,6 +107,10 @@
 <li><a class="reference" href="#addStyle%2CHtmlElement%2Cvarargs%5BCssAttribute%5D" title="addStyle(element: var HtmlElement; attributes: varargs[CssAttribute])">addStyle(element: var HtmlElement; attributes: varargs[CssAttribute])</a></li>
 
 </ul>
+<ul class="simple nested-toc-section">join
+  <li><a class="reference" href="#join%2Cseq%5BHtmlElement%5D%2CHtmlElement" title="join(elements: seq[HtmlElement]; sep: HtmlElement): seq[HtmlElement]">join(elements: seq[HtmlElement]; sep: HtmlElement): seq[HtmlElement]</a></li>
+
+</ul>
 <ul class="simple nested-toc-section">{}
   <li><a class="reference" href="#%7B%7D%2Cstring%2Cvarargs%5BCssAttribute%5D" title="`{}`(element: string; properties: varargs[CssAttribute]): CssElement">`{}`(element: string; properties: varargs[CssAttribute]): CssElement</a></li>
 
@@ -435,6 +439,18 @@
 </div>
 
 </div>
+<div id="join-procs-all">
+  <div id="join,seq[HtmlElement],HtmlElement">
+  <dt><pre><span class="Keyword">proc</span> <a href="#join%2Cseq%5BHtmlElement%5D%2CHtmlElement"><span class="Identifier">join</span></a><span class="Other">(</span><span class="Identifier">elements</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">sep</span><span class="Other">:</span> <a href="generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><a href="generator/html.html#HtmlElement"><span class="Identifier">HtmlElement</span></a><span class="Other">]</span> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+  <dd>
+    
+    Joins a list of <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt>s with a <tt class="docutils literal"><span class="pre"><span class="Identifier">HtmlElement</span></span></tt> separator
+    
+  </dd>
+</div>
+
+</div>
 <div id="{}-procs-all">
   <div id="{},string,varargs[CssAttribute]">
   <dt><pre><span class="Keyword">proc</span> <a href="#%7B%7D%2Cstring%2Cvarargs%5BCssAttribute%5D"><span class="Identifier">`{}`</span></a><span class="Other">(</span><span class="Identifier">element</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">properties</span><span class="Other">:</span> <span class="Identifier">varargs</span><span class="Other">[</span><a href="generator/css.html#CssAttribute"><span class="Identifier">CssAttribute</span></a><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <a href="generator/css.html#CssElement"><span class="Identifier">CssElement</span></a> {.
@@ -490,7 +506,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-07 18:22:08 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2025-03-21 09:40:54 UTC</small>
       </div>
     </div>
   </div>
