@@ -1,0 +1,723 @@
+nimTitle	htmlAttributes	cattag/auto/htmlAttributes.html	module cattag/auto/htmlAttributes		0
+nim	HtmlAttribute	cattag/auto/htmlAttributes.html#HtmlAttribute	type HtmlAttribute		11
+nim	accept	cattag/auto/htmlAttributes.html#accept	const accept		14
+nim	setAccept	cattag/auto/htmlAttributes.html#setAccept,HtmlElement,seq[string]	proc setAccept(element: var HtmlElement; values: seq[string])		15
+nim	setAccept	cattag/auto/htmlAttributes.html#setAccept,HtmlElement,seq[string]_2	proc setAccept(element: HtmlElement; values: seq[string]): HtmlElement		18
+nim	setAccept	cattag/auto/htmlAttributes.html#setAccept,HtmlElement,varargs[string]	proc setAccept(element: var HtmlElement; values: varargs[string])		23
+nim	setAccept	cattag/auto/htmlAttributes.html#setAccept,HtmlElement,varargs[string]_2	proc setAccept(element: HtmlElement; values: varargs[string]): HtmlElement		26
+nim	acceptCharset	cattag/auto/htmlAttributes.html#acceptCharset	const acceptCharset		31
+nim	setAcceptCharset	cattag/auto/htmlAttributes.html#setAcceptCharset,HtmlElement,seq[string]	proc setAcceptCharset(element: var HtmlElement; values: seq[string])		32
+nim	setAcceptCharset	cattag/auto/htmlAttributes.html#setAcceptCharset,HtmlElement,seq[string]_2	proc setAcceptCharset(element: HtmlElement; values: seq[string]): HtmlElement		35
+nim	setAcceptCharset	cattag/auto/htmlAttributes.html#setAcceptCharset,HtmlElement,varargs[string]	proc setAcceptCharset(element: var HtmlElement; values: varargs[string])		40
+nim	setAcceptCharset	cattag/auto/htmlAttributes.html#setAcceptCharset,HtmlElement,varargs[string]_2	proc setAcceptCharset(element: HtmlElement; values: varargs[string]): HtmlElement		43
+nim	accesskey	cattag/auto/htmlAttributes.html#accesskey	const accesskey		48
+nim	setAccesskey	cattag/auto/htmlAttributes.html#setAccesskey,HtmlElement,seq[string]	proc setAccesskey(element: var HtmlElement; values: seq[string])		49
+nim	setAccesskey	cattag/auto/htmlAttributes.html#setAccesskey,HtmlElement,seq[string]_2	proc setAccesskey(element: HtmlElement; values: seq[string]): HtmlElement		52
+nim	setAccesskey	cattag/auto/htmlAttributes.html#setAccesskey,HtmlElement,varargs[string]	proc setAccesskey(element: var HtmlElement; values: varargs[string])		57
+nim	setAccesskey	cattag/auto/htmlAttributes.html#setAccesskey,HtmlElement,varargs[string]_2	proc setAccesskey(element: HtmlElement; values: varargs[string]): HtmlElement		60
+nim	action	cattag/auto/htmlAttributes.html#action	const action		65
+nim	setAction	cattag/auto/htmlAttributes.html#setAction,HtmlElement,seq[string]	proc setAction(element: var HtmlElement; values: seq[string])		66
+nim	setAction	cattag/auto/htmlAttributes.html#setAction,HtmlElement,seq[string]_2	proc setAction(element: HtmlElement; values: seq[string]): HtmlElement		69
+nim	setAction	cattag/auto/htmlAttributes.html#setAction,HtmlElement,varargs[string]	proc setAction(element: var HtmlElement; values: varargs[string])		74
+nim	setAction	cattag/auto/htmlAttributes.html#setAction,HtmlElement,varargs[string]_2	proc setAction(element: HtmlElement; values: varargs[string]): HtmlElement		77
+nim	align	cattag/auto/htmlAttributes.html#align	const align		82
+nim	setAlign	cattag/auto/htmlAttributes.html#setAlign,HtmlElement,seq[string]	proc setAlign(element: var HtmlElement; values: seq[string])		83
+nim	setAlign	cattag/auto/htmlAttributes.html#setAlign,HtmlElement,seq[string]_2	proc setAlign(element: HtmlElement; values: seq[string]): HtmlElement		86
+nim	setAlign	cattag/auto/htmlAttributes.html#setAlign,HtmlElement,varargs[string]	proc setAlign(element: var HtmlElement; values: varargs[string])		91
+nim	setAlign	cattag/auto/htmlAttributes.html#setAlign,HtmlElement,varargs[string]_2	proc setAlign(element: HtmlElement; values: varargs[string]): HtmlElement		94
+nim	allow	cattag/auto/htmlAttributes.html#allow	const allow		99
+nim	setAllow	cattag/auto/htmlAttributes.html#setAllow,HtmlElement,seq[string]	proc setAllow(element: var HtmlElement; values: seq[string])		100
+nim	setAllow	cattag/auto/htmlAttributes.html#setAllow,HtmlElement,seq[string]_2	proc setAllow(element: HtmlElement; values: seq[string]): HtmlElement		103
+nim	setAllow	cattag/auto/htmlAttributes.html#setAllow,HtmlElement,varargs[string]	proc setAllow(element: var HtmlElement; values: varargs[string])		108
+nim	setAllow	cattag/auto/htmlAttributes.html#setAllow,HtmlElement,varargs[string]_2	proc setAllow(element: HtmlElement; values: varargs[string]): HtmlElement		111
+nim	alt	cattag/auto/htmlAttributes.html#alt	const alt		116
+nim	setAlt	cattag/auto/htmlAttributes.html#setAlt,HtmlElement,seq[string]	proc setAlt(element: var HtmlElement; values: seq[string])		117
+nim	setAlt	cattag/auto/htmlAttributes.html#setAlt,HtmlElement,seq[string]_2	proc setAlt(element: HtmlElement; values: seq[string]): HtmlElement		120
+nim	setAlt	cattag/auto/htmlAttributes.html#setAlt,HtmlElement,varargs[string]	proc setAlt(element: var HtmlElement; values: varargs[string])		125
+nim	setAlt	cattag/auto/htmlAttributes.html#setAlt,HtmlElement,varargs[string]_2	proc setAlt(element: HtmlElement; values: varargs[string]): HtmlElement		128
+nim	`as`	cattag/auto/htmlAttributes.html#as	const `as`		133
+nim	setAs	cattag/auto/htmlAttributes.html#setAs,HtmlElement,seq[string]	proc setAs(element: var HtmlElement; values: seq[string])		134
+nim	setAs	cattag/auto/htmlAttributes.html#setAs,HtmlElement,seq[string]_2	proc setAs(element: HtmlElement; values: seq[string]): HtmlElement		137
+nim	setAs	cattag/auto/htmlAttributes.html#setAs,HtmlElement,varargs[string]	proc setAs(element: var HtmlElement; values: varargs[string])		142
+nim	setAs	cattag/auto/htmlAttributes.html#setAs,HtmlElement,varargs[string]_2	proc setAs(element: HtmlElement; values: varargs[string]): HtmlElement		145
+nim	async	cattag/auto/htmlAttributes.html#async	const async		150
+nim	setAsync	cattag/auto/htmlAttributes.html#setAsync,HtmlElement,seq[string]	proc setAsync(element: var HtmlElement; values: seq[string])		151
+nim	setAsync	cattag/auto/htmlAttributes.html#setAsync,HtmlElement,seq[string]_2	proc setAsync(element: HtmlElement; values: seq[string]): HtmlElement		154
+nim	setAsync	cattag/auto/htmlAttributes.html#setAsync,HtmlElement,varargs[string]	proc setAsync(element: var HtmlElement; values: varargs[string])		159
+nim	setAsync	cattag/auto/htmlAttributes.html#setAsync,HtmlElement,varargs[string]_2	proc setAsync(element: HtmlElement; values: varargs[string]): HtmlElement		162
+nim	autocapitalize	cattag/auto/htmlAttributes.html#autocapitalize	const autocapitalize		167
+nim	setAutocapitalize	cattag/auto/htmlAttributes.html#setAutocapitalize,HtmlElement,seq[string]	proc setAutocapitalize(element: var HtmlElement; values: seq[string])		168
+nim	setAutocapitalize	cattag/auto/htmlAttributes.html#setAutocapitalize,HtmlElement,seq[string]_2	proc setAutocapitalize(element: HtmlElement; values: seq[string]): HtmlElement		171
+nim	setAutocapitalize	cattag/auto/htmlAttributes.html#setAutocapitalize,HtmlElement,varargs[string]	proc setAutocapitalize(element: var HtmlElement; values: varargs[string])		176
+nim	setAutocapitalize	cattag/auto/htmlAttributes.html#setAutocapitalize,HtmlElement,varargs[string]_2	proc setAutocapitalize(element: HtmlElement; values: varargs[string]): HtmlElement		179
+nim	autocomplete	cattag/auto/htmlAttributes.html#autocomplete	const autocomplete		184
+nim	setAutocomplete	cattag/auto/htmlAttributes.html#setAutocomplete,HtmlElement,seq[string]	proc setAutocomplete(element: var HtmlElement; values: seq[string])		185
+nim	setAutocomplete	cattag/auto/htmlAttributes.html#setAutocomplete,HtmlElement,seq[string]_2	proc setAutocomplete(element: HtmlElement; values: seq[string]): HtmlElement		188
+nim	setAutocomplete	cattag/auto/htmlAttributes.html#setAutocomplete,HtmlElement,varargs[string]	proc setAutocomplete(element: var HtmlElement; values: varargs[string])		193
+nim	setAutocomplete	cattag/auto/htmlAttributes.html#setAutocomplete,HtmlElement,varargs[string]_2	proc setAutocomplete(element: HtmlElement; values: varargs[string]): HtmlElement		196
+nim	autoplay	cattag/auto/htmlAttributes.html#autoplay	const autoplay		201
+nim	setAutoplay	cattag/auto/htmlAttributes.html#setAutoplay,HtmlElement,seq[string]	proc setAutoplay(element: var HtmlElement; values: seq[string])		202
+nim	setAutoplay	cattag/auto/htmlAttributes.html#setAutoplay,HtmlElement,seq[string]_2	proc setAutoplay(element: HtmlElement; values: seq[string]): HtmlElement		205
+nim	setAutoplay	cattag/auto/htmlAttributes.html#setAutoplay,HtmlElement,varargs[string]	proc setAutoplay(element: var HtmlElement; values: varargs[string])		210
+nim	setAutoplay	cattag/auto/htmlAttributes.html#setAutoplay,HtmlElement,varargs[string]_2	proc setAutoplay(element: HtmlElement; values: varargs[string]): HtmlElement		213
+nim	background	cattag/auto/htmlAttributes.html#background	const background		218
+nim	setBackground	cattag/auto/htmlAttributes.html#setBackground,HtmlElement,seq[string]	proc setBackground(element: var HtmlElement; values: seq[string])		219
+nim	setBackground	cattag/auto/htmlAttributes.html#setBackground,HtmlElement,seq[string]_2	proc setBackground(element: HtmlElement; values: seq[string]): HtmlElement		222
+nim	setBackground	cattag/auto/htmlAttributes.html#setBackground,HtmlElement,varargs[string]	proc setBackground(element: var HtmlElement; values: varargs[string])		227
+nim	setBackground	cattag/auto/htmlAttributes.html#setBackground,HtmlElement,varargs[string]_2	proc setBackground(element: HtmlElement; values: varargs[string]): HtmlElement		230
+nim	bgcolor	cattag/auto/htmlAttributes.html#bgcolor	const bgcolor		235
+nim	setBgcolor	cattag/auto/htmlAttributes.html#setBgcolor,HtmlElement,seq[string]	proc setBgcolor(element: var HtmlElement; values: seq[string])		236
+nim	setBgcolor	cattag/auto/htmlAttributes.html#setBgcolor,HtmlElement,seq[string]_2	proc setBgcolor(element: HtmlElement; values: seq[string]): HtmlElement		239
+nim	setBgcolor	cattag/auto/htmlAttributes.html#setBgcolor,HtmlElement,varargs[string]	proc setBgcolor(element: var HtmlElement; values: varargs[string])		244
+nim	setBgcolor	cattag/auto/htmlAttributes.html#setBgcolor,HtmlElement,varargs[string]_2	proc setBgcolor(element: HtmlElement; values: varargs[string]): HtmlElement		247
+nim	border	cattag/auto/htmlAttributes.html#border	const border		252
+nim	setBorder	cattag/auto/htmlAttributes.html#setBorder,HtmlElement,seq[string]	proc setBorder(element: var HtmlElement; values: seq[string])		253
+nim	setBorder	cattag/auto/htmlAttributes.html#setBorder,HtmlElement,seq[string]_2	proc setBorder(element: HtmlElement; values: seq[string]): HtmlElement		256
+nim	setBorder	cattag/auto/htmlAttributes.html#setBorder,HtmlElement,varargs[string]	proc setBorder(element: var HtmlElement; values: varargs[string])		261
+nim	setBorder	cattag/auto/htmlAttributes.html#setBorder,HtmlElement,varargs[string]_2	proc setBorder(element: HtmlElement; values: varargs[string]): HtmlElement		264
+nim	capture	cattag/auto/htmlAttributes.html#capture	const capture		269
+nim	setCapture	cattag/auto/htmlAttributes.html#setCapture,HtmlElement,seq[string]	proc setCapture(element: var HtmlElement; values: seq[string])		270
+nim	setCapture	cattag/auto/htmlAttributes.html#setCapture,HtmlElement,seq[string]_2	proc setCapture(element: HtmlElement; values: seq[string]): HtmlElement		273
+nim	setCapture	cattag/auto/htmlAttributes.html#setCapture,HtmlElement,varargs[string]	proc setCapture(element: var HtmlElement; values: varargs[string])		278
+nim	setCapture	cattag/auto/htmlAttributes.html#setCapture,HtmlElement,varargs[string]_2	proc setCapture(element: HtmlElement; values: varargs[string]): HtmlElement		281
+nim	charset	cattag/auto/htmlAttributes.html#charset	const charset		286
+nim	setCharset	cattag/auto/htmlAttributes.html#setCharset,HtmlElement,seq[string]	proc setCharset(element: var HtmlElement; values: seq[string])		287
+nim	setCharset	cattag/auto/htmlAttributes.html#setCharset,HtmlElement,seq[string]_2	proc setCharset(element: HtmlElement; values: seq[string]): HtmlElement		290
+nim	setCharset	cattag/auto/htmlAttributes.html#setCharset,HtmlElement,varargs[string]	proc setCharset(element: var HtmlElement; values: varargs[string])		295
+nim	setCharset	cattag/auto/htmlAttributes.html#setCharset,HtmlElement,varargs[string]_2	proc setCharset(element: HtmlElement; values: varargs[string]): HtmlElement		298
+nim	checked	cattag/auto/htmlAttributes.html#checked	const checked		303
+nim	setChecked	cattag/auto/htmlAttributes.html#setChecked,HtmlElement,seq[string]	proc setChecked(element: var HtmlElement; values: seq[string])		304
+nim	setChecked	cattag/auto/htmlAttributes.html#setChecked,HtmlElement,seq[string]_2	proc setChecked(element: HtmlElement; values: seq[string]): HtmlElement		307
+nim	setChecked	cattag/auto/htmlAttributes.html#setChecked,HtmlElement,varargs[string]	proc setChecked(element: var HtmlElement; values: varargs[string])		312
+nim	setChecked	cattag/auto/htmlAttributes.html#setChecked,HtmlElement,varargs[string]_2	proc setChecked(element: HtmlElement; values: varargs[string]): HtmlElement		315
+nim	cite	cattag/auto/htmlAttributes.html#cite	const cite		320
+nim	setCite	cattag/auto/htmlAttributes.html#setCite,HtmlElement,seq[string]	proc setCite(element: var HtmlElement; values: seq[string])		321
+nim	setCite	cattag/auto/htmlAttributes.html#setCite,HtmlElement,seq[string]_2	proc setCite(element: HtmlElement; values: seq[string]): HtmlElement		324
+nim	setCite	cattag/auto/htmlAttributes.html#setCite,HtmlElement,varargs[string]	proc setCite(element: var HtmlElement; values: varargs[string])		329
+nim	setCite	cattag/auto/htmlAttributes.html#setCite,HtmlElement,varargs[string]_2	proc setCite(element: HtmlElement; values: varargs[string]): HtmlElement		332
+nim	class	cattag/auto/htmlAttributes.html#class	const class		337
+nim	setClass	cattag/auto/htmlAttributes.html#setClass,HtmlElement,seq[string]	proc setClass(element: var HtmlElement; values: seq[string])		338
+nim	setClass	cattag/auto/htmlAttributes.html#setClass,HtmlElement,seq[string]_2	proc setClass(element: HtmlElement; values: seq[string]): HtmlElement		341
+nim	setClass	cattag/auto/htmlAttributes.html#setClass,HtmlElement,varargs[string]	proc setClass(element: var HtmlElement; values: varargs[string])		346
+nim	setClass	cattag/auto/htmlAttributes.html#setClass,HtmlElement,varargs[string]_2	proc setClass(element: HtmlElement; values: varargs[string]): HtmlElement		349
+nim	color	cattag/auto/htmlAttributes.html#color	const color		354
+nim	setColor	cattag/auto/htmlAttributes.html#setColor,HtmlElement,seq[string]	proc setColor(element: var HtmlElement; values: seq[string])		355
+nim	setColor	cattag/auto/htmlAttributes.html#setColor,HtmlElement,seq[string]_2	proc setColor(element: HtmlElement; values: seq[string]): HtmlElement		358
+nim	setColor	cattag/auto/htmlAttributes.html#setColor,HtmlElement,varargs[string]	proc setColor(element: var HtmlElement; values: varargs[string])		363
+nim	setColor	cattag/auto/htmlAttributes.html#setColor,HtmlElement,varargs[string]_2	proc setColor(element: HtmlElement; values: varargs[string]): HtmlElement		366
+nim	cols	cattag/auto/htmlAttributes.html#cols	const cols		371
+nim	setCols	cattag/auto/htmlAttributes.html#setCols,HtmlElement,seq[string]	proc setCols(element: var HtmlElement; values: seq[string])		372
+nim	setCols	cattag/auto/htmlAttributes.html#setCols,HtmlElement,seq[string]_2	proc setCols(element: HtmlElement; values: seq[string]): HtmlElement		375
+nim	setCols	cattag/auto/htmlAttributes.html#setCols,HtmlElement,varargs[string]	proc setCols(element: var HtmlElement; values: varargs[string])		380
+nim	setCols	cattag/auto/htmlAttributes.html#setCols,HtmlElement,varargs[string]_2	proc setCols(element: HtmlElement; values: varargs[string]): HtmlElement		383
+nim	colspan	cattag/auto/htmlAttributes.html#colspan	const colspan		388
+nim	setColspan	cattag/auto/htmlAttributes.html#setColspan,HtmlElement,seq[string]	proc setColspan(element: var HtmlElement; values: seq[string])		389
+nim	setColspan	cattag/auto/htmlAttributes.html#setColspan,HtmlElement,seq[string]_2	proc setColspan(element: HtmlElement; values: seq[string]): HtmlElement		392
+nim	setColspan	cattag/auto/htmlAttributes.html#setColspan,HtmlElement,varargs[string]	proc setColspan(element: var HtmlElement; values: varargs[string])		397
+nim	setColspan	cattag/auto/htmlAttributes.html#setColspan,HtmlElement,varargs[string]_2	proc setColspan(element: HtmlElement; values: varargs[string]): HtmlElement		400
+nim	content	cattag/auto/htmlAttributes.html#content	const content		405
+nim	setContent	cattag/auto/htmlAttributes.html#setContent,HtmlElement,seq[string]	proc setContent(element: var HtmlElement; values: seq[string])		406
+nim	setContent	cattag/auto/htmlAttributes.html#setContent,HtmlElement,seq[string]_2	proc setContent(element: HtmlElement; values: seq[string]): HtmlElement		409
+nim	setContent	cattag/auto/htmlAttributes.html#setContent,HtmlElement,varargs[string]	proc setContent(element: var HtmlElement; values: varargs[string])		414
+nim	setContent	cattag/auto/htmlAttributes.html#setContent,HtmlElement,varargs[string]_2	proc setContent(element: HtmlElement; values: varargs[string]): HtmlElement		417
+nim	contenteditable	cattag/auto/htmlAttributes.html#contenteditable	const contenteditable		422
+nim	setContenteditable	cattag/auto/htmlAttributes.html#setContenteditable,HtmlElement,seq[string]	proc setContenteditable(element: var HtmlElement; values: seq[string])		423
+nim	setContenteditable	cattag/auto/htmlAttributes.html#setContenteditable,HtmlElement,seq[string]_2	proc setContenteditable(element: HtmlElement; values: seq[string]): HtmlElement		426
+nim	setContenteditable	cattag/auto/htmlAttributes.html#setContenteditable,HtmlElement,varargs[string]	proc setContenteditable(element: var HtmlElement; values: varargs[string])		431
+nim	setContenteditable	cattag/auto/htmlAttributes.html#setContenteditable,HtmlElement,varargs[string]_2	proc setContenteditable(element: HtmlElement; values: varargs[string]): HtmlElement		434
+nim	controls	cattag/auto/htmlAttributes.html#controls	const controls		439
+nim	setControls	cattag/auto/htmlAttributes.html#setControls,HtmlElement,seq[string]	proc setControls(element: var HtmlElement; values: seq[string])		440
+nim	setControls	cattag/auto/htmlAttributes.html#setControls,HtmlElement,seq[string]_2	proc setControls(element: HtmlElement; values: seq[string]): HtmlElement		443
+nim	setControls	cattag/auto/htmlAttributes.html#setControls,HtmlElement,varargs[string]	proc setControls(element: var HtmlElement; values: varargs[string])		448
+nim	setControls	cattag/auto/htmlAttributes.html#setControls,HtmlElement,varargs[string]_2	proc setControls(element: HtmlElement; values: varargs[string]): HtmlElement		451
+nim	coords	cattag/auto/htmlAttributes.html#coords	const coords		456
+nim	setCoords	cattag/auto/htmlAttributes.html#setCoords,HtmlElement,seq[string]	proc setCoords(element: var HtmlElement; values: seq[string])		457
+nim	setCoords	cattag/auto/htmlAttributes.html#setCoords,HtmlElement,seq[string]_2	proc setCoords(element: HtmlElement; values: seq[string]): HtmlElement		460
+nim	setCoords	cattag/auto/htmlAttributes.html#setCoords,HtmlElement,varargs[string]	proc setCoords(element: var HtmlElement; values: varargs[string])		465
+nim	setCoords	cattag/auto/htmlAttributes.html#setCoords,HtmlElement,varargs[string]_2	proc setCoords(element: HtmlElement; values: varargs[string]): HtmlElement		468
+nim	crossorigin	cattag/auto/htmlAttributes.html#crossorigin	const crossorigin		473
+nim	setCrossorigin	cattag/auto/htmlAttributes.html#setCrossorigin,HtmlElement,seq[string]	proc setCrossorigin(element: var HtmlElement; values: seq[string])		474
+nim	setCrossorigin	cattag/auto/htmlAttributes.html#setCrossorigin,HtmlElement,seq[string]_2	proc setCrossorigin(element: HtmlElement; values: seq[string]): HtmlElement		477
+nim	setCrossorigin	cattag/auto/htmlAttributes.html#setCrossorigin,HtmlElement,varargs[string]	proc setCrossorigin(element: var HtmlElement; values: varargs[string])		482
+nim	setCrossorigin	cattag/auto/htmlAttributes.html#setCrossorigin,HtmlElement,varargs[string]_2	proc setCrossorigin(element: HtmlElement; values: varargs[string]): HtmlElement		485
+nim	csp	cattag/auto/htmlAttributes.html#csp	const csp		490
+nim	setCsp	cattag/auto/htmlAttributes.html#setCsp,HtmlElement,seq[string]	proc setCsp(element: var HtmlElement; values: seq[string])		491
+nim	setCsp	cattag/auto/htmlAttributes.html#setCsp,HtmlElement,seq[string]_2	proc setCsp(element: HtmlElement; values: seq[string]): HtmlElement		494
+nim	setCsp	cattag/auto/htmlAttributes.html#setCsp,HtmlElement,varargs[string]	proc setCsp(element: var HtmlElement; values: varargs[string])		499
+nim	setCsp	cattag/auto/htmlAttributes.html#setCsp,HtmlElement,varargs[string]_2	proc setCsp(element: HtmlElement; values: varargs[string]): HtmlElement		502
+nim	data	cattag/auto/htmlAttributes.html#data	const data		507
+nim	setData	cattag/auto/htmlAttributes.html#setData,HtmlElement,seq[string]	proc setData(element: var HtmlElement; values: seq[string])		508
+nim	setData	cattag/auto/htmlAttributes.html#setData,HtmlElement,seq[string]_2	proc setData(element: HtmlElement; values: seq[string]): HtmlElement		511
+nim	setData	cattag/auto/htmlAttributes.html#setData,HtmlElement,varargs[string]	proc setData(element: var HtmlElement; values: varargs[string])		516
+nim	setData	cattag/auto/htmlAttributes.html#setData,HtmlElement,varargs[string]_2	proc setData(element: HtmlElement; values: varargs[string]): HtmlElement		519
+nim	datetime	cattag/auto/htmlAttributes.html#datetime	const datetime		524
+nim	setDatetime	cattag/auto/htmlAttributes.html#setDatetime,HtmlElement,seq[string]	proc setDatetime(element: var HtmlElement; values: seq[string])		525
+nim	setDatetime	cattag/auto/htmlAttributes.html#setDatetime,HtmlElement,seq[string]_2	proc setDatetime(element: HtmlElement; values: seq[string]): HtmlElement		528
+nim	setDatetime	cattag/auto/htmlAttributes.html#setDatetime,HtmlElement,varargs[string]	proc setDatetime(element: var HtmlElement; values: varargs[string])		533
+nim	setDatetime	cattag/auto/htmlAttributes.html#setDatetime,HtmlElement,varargs[string]_2	proc setDatetime(element: HtmlElement; values: varargs[string]): HtmlElement		536
+nim	decoding	cattag/auto/htmlAttributes.html#decoding	const decoding		541
+nim	setDecoding	cattag/auto/htmlAttributes.html#setDecoding,HtmlElement,seq[string]	proc setDecoding(element: var HtmlElement; values: seq[string])		542
+nim	setDecoding	cattag/auto/htmlAttributes.html#setDecoding,HtmlElement,seq[string]_2	proc setDecoding(element: HtmlElement; values: seq[string]): HtmlElement		545
+nim	setDecoding	cattag/auto/htmlAttributes.html#setDecoding,HtmlElement,varargs[string]	proc setDecoding(element: var HtmlElement; values: varargs[string])		550
+nim	setDecoding	cattag/auto/htmlAttributes.html#setDecoding,HtmlElement,varargs[string]_2	proc setDecoding(element: HtmlElement; values: varargs[string]): HtmlElement		553
+nim	default	cattag/auto/htmlAttributes.html#default	const default		558
+nim	setDefault	cattag/auto/htmlAttributes.html#setDefault,HtmlElement,seq[string]	proc setDefault(element: var HtmlElement; values: seq[string])		559
+nim	setDefault	cattag/auto/htmlAttributes.html#setDefault,HtmlElement,seq[string]_2	proc setDefault(element: HtmlElement; values: seq[string]): HtmlElement		562
+nim	setDefault	cattag/auto/htmlAttributes.html#setDefault,HtmlElement,varargs[string]	proc setDefault(element: var HtmlElement; values: varargs[string])		567
+nim	setDefault	cattag/auto/htmlAttributes.html#setDefault,HtmlElement,varargs[string]_2	proc setDefault(element: HtmlElement; values: varargs[string]): HtmlElement		570
+nim	`defer`	cattag/auto/htmlAttributes.html#defer	const `defer`		575
+nim	setDefer	cattag/auto/htmlAttributes.html#setDefer,HtmlElement,seq[string]	proc setDefer(element: var HtmlElement; values: seq[string])		576
+nim	setDefer	cattag/auto/htmlAttributes.html#setDefer,HtmlElement,seq[string]_2	proc setDefer(element: HtmlElement; values: seq[string]): HtmlElement		579
+nim	setDefer	cattag/auto/htmlAttributes.html#setDefer,HtmlElement,varargs[string]	proc setDefer(element: var HtmlElement; values: varargs[string])		584
+nim	setDefer	cattag/auto/htmlAttributes.html#setDefer,HtmlElement,varargs[string]_2	proc setDefer(element: HtmlElement; values: varargs[string]): HtmlElement		587
+nim	dir	cattag/auto/htmlAttributes.html#dir	const dir		592
+nim	setDir	cattag/auto/htmlAttributes.html#setDir,HtmlElement,seq[string]	proc setDir(element: var HtmlElement; values: seq[string])		593
+nim	setDir	cattag/auto/htmlAttributes.html#setDir,HtmlElement,seq[string]_2	proc setDir(element: HtmlElement; values: seq[string]): HtmlElement		596
+nim	setDir	cattag/auto/htmlAttributes.html#setDir,HtmlElement,varargs[string]	proc setDir(element: var HtmlElement; values: varargs[string])		601
+nim	setDir	cattag/auto/htmlAttributes.html#setDir,HtmlElement,varargs[string]_2	proc setDir(element: HtmlElement; values: varargs[string]): HtmlElement		604
+nim	dirname	cattag/auto/htmlAttributes.html#dirname	const dirname		609
+nim	setDirname	cattag/auto/htmlAttributes.html#setDirname,HtmlElement,seq[string]	proc setDirname(element: var HtmlElement; values: seq[string])		610
+nim	setDirname	cattag/auto/htmlAttributes.html#setDirname,HtmlElement,seq[string]_2	proc setDirname(element: HtmlElement; values: seq[string]): HtmlElement		613
+nim	setDirname	cattag/auto/htmlAttributes.html#setDirname,HtmlElement,varargs[string]	proc setDirname(element: var HtmlElement; values: varargs[string])		618
+nim	setDirname	cattag/auto/htmlAttributes.html#setDirname,HtmlElement,varargs[string]_2	proc setDirname(element: HtmlElement; values: varargs[string]): HtmlElement		621
+nim	disabled	cattag/auto/htmlAttributes.html#disabled	const disabled		626
+nim	setDisabled	cattag/auto/htmlAttributes.html#setDisabled,HtmlElement,seq[string]	proc setDisabled(element: var HtmlElement; values: seq[string])		627
+nim	setDisabled	cattag/auto/htmlAttributes.html#setDisabled,HtmlElement,seq[string]_2	proc setDisabled(element: HtmlElement; values: seq[string]): HtmlElement		630
+nim	setDisabled	cattag/auto/htmlAttributes.html#setDisabled,HtmlElement,varargs[string]	proc setDisabled(element: var HtmlElement; values: varargs[string])		635
+nim	setDisabled	cattag/auto/htmlAttributes.html#setDisabled,HtmlElement,varargs[string]_2	proc setDisabled(element: HtmlElement; values: varargs[string]): HtmlElement		638
+nim	download	cattag/auto/htmlAttributes.html#download	const download		643
+nim	setDownload	cattag/auto/htmlAttributes.html#setDownload,HtmlElement,seq[string]	proc setDownload(element: var HtmlElement; values: seq[string])		644
+nim	setDownload	cattag/auto/htmlAttributes.html#setDownload,HtmlElement,seq[string]_2	proc setDownload(element: HtmlElement; values: seq[string]): HtmlElement		647
+nim	setDownload	cattag/auto/htmlAttributes.html#setDownload,HtmlElement,varargs[string]	proc setDownload(element: var HtmlElement; values: varargs[string])		652
+nim	setDownload	cattag/auto/htmlAttributes.html#setDownload,HtmlElement,varargs[string]_2	proc setDownload(element: HtmlElement; values: varargs[string]): HtmlElement		655
+nim	draggable	cattag/auto/htmlAttributes.html#draggable	const draggable		660
+nim	setDraggable	cattag/auto/htmlAttributes.html#setDraggable,HtmlElement,seq[string]	proc setDraggable(element: var HtmlElement; values: seq[string])		661
+nim	setDraggable	cattag/auto/htmlAttributes.html#setDraggable,HtmlElement,seq[string]_2	proc setDraggable(element: HtmlElement; values: seq[string]): HtmlElement		664
+nim	setDraggable	cattag/auto/htmlAttributes.html#setDraggable,HtmlElement,varargs[string]	proc setDraggable(element: var HtmlElement; values: varargs[string])		669
+nim	setDraggable	cattag/auto/htmlAttributes.html#setDraggable,HtmlElement,varargs[string]_2	proc setDraggable(element: HtmlElement; values: varargs[string]): HtmlElement		672
+nim	enctype	cattag/auto/htmlAttributes.html#enctype	const enctype		677
+nim	setEnctype	cattag/auto/htmlAttributes.html#setEnctype,HtmlElement,seq[string]	proc setEnctype(element: var HtmlElement; values: seq[string])		678
+nim	setEnctype	cattag/auto/htmlAttributes.html#setEnctype,HtmlElement,seq[string]_2	proc setEnctype(element: HtmlElement; values: seq[string]): HtmlElement		681
+nim	setEnctype	cattag/auto/htmlAttributes.html#setEnctype,HtmlElement,varargs[string]	proc setEnctype(element: var HtmlElement; values: varargs[string])		686
+nim	setEnctype	cattag/auto/htmlAttributes.html#setEnctype,HtmlElement,varargs[string]_2	proc setEnctype(element: HtmlElement; values: varargs[string]): HtmlElement		689
+nim	enterkeyhint	cattag/auto/htmlAttributes.html#enterkeyhint	const enterkeyhint		694
+nim	setEnterkeyhint	cattag/auto/htmlAttributes.html#setEnterkeyhint,HtmlElement,seq[string]	proc setEnterkeyhint(element: var HtmlElement; values: seq[string])		695
+nim	setEnterkeyhint	cattag/auto/htmlAttributes.html#setEnterkeyhint,HtmlElement,seq[string]_2	proc setEnterkeyhint(element: HtmlElement; values: seq[string]): HtmlElement		698
+nim	setEnterkeyhint	cattag/auto/htmlAttributes.html#setEnterkeyhint,HtmlElement,varargs[string]	proc setEnterkeyhint(element: var HtmlElement; values: varargs[string])		703
+nim	setEnterkeyhint	cattag/auto/htmlAttributes.html#setEnterkeyhint,HtmlElement,varargs[string]_2	proc setEnterkeyhint(element: HtmlElement; values: varargs[string]): HtmlElement		706
+nim	elementtiming	cattag/auto/htmlAttributes.html#elementtiming	const elementtiming		711
+nim	setElementtiming	cattag/auto/htmlAttributes.html#setElementtiming,HtmlElement,seq[string]	proc setElementtiming(element: var HtmlElement; values: seq[string])		712
+nim	setElementtiming	cattag/auto/htmlAttributes.html#setElementtiming,HtmlElement,seq[string]_2	proc setElementtiming(element: HtmlElement; values: seq[string]): HtmlElement		715
+nim	setElementtiming	cattag/auto/htmlAttributes.html#setElementtiming,HtmlElement,varargs[string]	proc setElementtiming(element: var HtmlElement; values: varargs[string])		720
+nim	setElementtiming	cattag/auto/htmlAttributes.html#setElementtiming,HtmlElement,varargs[string]_2	proc setElementtiming(element: HtmlElement; values: varargs[string]): HtmlElement		723
+nim	`for`	cattag/auto/htmlAttributes.html#for	const `for`		728
+nim	setFor	cattag/auto/htmlAttributes.html#setFor,HtmlElement,seq[string]	proc setFor(element: var HtmlElement; values: seq[string])		729
+nim	setFor	cattag/auto/htmlAttributes.html#setFor,HtmlElement,seq[string]_2	proc setFor(element: HtmlElement; values: seq[string]): HtmlElement		732
+nim	setFor	cattag/auto/htmlAttributes.html#setFor,HtmlElement,varargs[string]	proc setFor(element: var HtmlElement; values: varargs[string])		737
+nim	setFor	cattag/auto/htmlAttributes.html#setFor,HtmlElement,varargs[string]_2	proc setFor(element: HtmlElement; values: varargs[string]): HtmlElement		740
+nim	form	cattag/auto/htmlAttributes.html#form	const form		745
+nim	setForm	cattag/auto/htmlAttributes.html#setForm,HtmlElement,seq[string]	proc setForm(element: var HtmlElement; values: seq[string])		746
+nim	setForm	cattag/auto/htmlAttributes.html#setForm,HtmlElement,seq[string]_2	proc setForm(element: HtmlElement; values: seq[string]): HtmlElement		749
+nim	setForm	cattag/auto/htmlAttributes.html#setForm,HtmlElement,varargs[string]	proc setForm(element: var HtmlElement; values: varargs[string])		754
+nim	setForm	cattag/auto/htmlAttributes.html#setForm,HtmlElement,varargs[string]_2	proc setForm(element: HtmlElement; values: varargs[string]): HtmlElement		757
+nim	formaction	cattag/auto/htmlAttributes.html#formaction	const formaction		762
+nim	setFormaction	cattag/auto/htmlAttributes.html#setFormaction,HtmlElement,seq[string]	proc setFormaction(element: var HtmlElement; values: seq[string])		763
+nim	setFormaction	cattag/auto/htmlAttributes.html#setFormaction,HtmlElement,seq[string]_2	proc setFormaction(element: HtmlElement; values: seq[string]): HtmlElement		766
+nim	setFormaction	cattag/auto/htmlAttributes.html#setFormaction,HtmlElement,varargs[string]	proc setFormaction(element: var HtmlElement; values: varargs[string])		771
+nim	setFormaction	cattag/auto/htmlAttributes.html#setFormaction,HtmlElement,varargs[string]_2	proc setFormaction(element: HtmlElement; values: varargs[string]): HtmlElement		774
+nim	formenctype	cattag/auto/htmlAttributes.html#formenctype	const formenctype		779
+nim	setFormenctype	cattag/auto/htmlAttributes.html#setFormenctype,HtmlElement,seq[string]	proc setFormenctype(element: var HtmlElement; values: seq[string])		780
+nim	setFormenctype	cattag/auto/htmlAttributes.html#setFormenctype,HtmlElement,seq[string]_2	proc setFormenctype(element: HtmlElement; values: seq[string]): HtmlElement		783
+nim	setFormenctype	cattag/auto/htmlAttributes.html#setFormenctype,HtmlElement,varargs[string]	proc setFormenctype(element: var HtmlElement; values: varargs[string])		788
+nim	setFormenctype	cattag/auto/htmlAttributes.html#setFormenctype,HtmlElement,varargs[string]_2	proc setFormenctype(element: HtmlElement; values: varargs[string]): HtmlElement		791
+nim	formmethod	cattag/auto/htmlAttributes.html#formmethod	const formmethod		796
+nim	setFormmethod	cattag/auto/htmlAttributes.html#setFormmethod,HtmlElement,seq[string]	proc setFormmethod(element: var HtmlElement; values: seq[string])		797
+nim	setFormmethod	cattag/auto/htmlAttributes.html#setFormmethod,HtmlElement,seq[string]_2	proc setFormmethod(element: HtmlElement; values: seq[string]): HtmlElement		800
+nim	setFormmethod	cattag/auto/htmlAttributes.html#setFormmethod,HtmlElement,varargs[string]	proc setFormmethod(element: var HtmlElement; values: varargs[string])		805
+nim	setFormmethod	cattag/auto/htmlAttributes.html#setFormmethod,HtmlElement,varargs[string]_2	proc setFormmethod(element: HtmlElement; values: varargs[string]): HtmlElement		808
+nim	formnovalidate	cattag/auto/htmlAttributes.html#formnovalidate	const formnovalidate		813
+nim	setFormnovalidate	cattag/auto/htmlAttributes.html#setFormnovalidate,HtmlElement,seq[string]	proc setFormnovalidate(element: var HtmlElement; values: seq[string])		814
+nim	setFormnovalidate	cattag/auto/htmlAttributes.html#setFormnovalidate,HtmlElement,seq[string]_2	proc setFormnovalidate(element: HtmlElement; values: seq[string]): HtmlElement		817
+nim	setFormnovalidate	cattag/auto/htmlAttributes.html#setFormnovalidate,HtmlElement,varargs[string]	proc setFormnovalidate(element: var HtmlElement; values: varargs[string])		822
+nim	setFormnovalidate	cattag/auto/htmlAttributes.html#setFormnovalidate,HtmlElement,varargs[string]_2	proc setFormnovalidate(element: HtmlElement; values: varargs[string]): HtmlElement		825
+nim	formtarget	cattag/auto/htmlAttributes.html#formtarget	const formtarget		830
+nim	setFormtarget	cattag/auto/htmlAttributes.html#setFormtarget,HtmlElement,seq[string]	proc setFormtarget(element: var HtmlElement; values: seq[string])		831
+nim	setFormtarget	cattag/auto/htmlAttributes.html#setFormtarget,HtmlElement,seq[string]_2	proc setFormtarget(element: HtmlElement; values: seq[string]): HtmlElement		834
+nim	setFormtarget	cattag/auto/htmlAttributes.html#setFormtarget,HtmlElement,varargs[string]	proc setFormtarget(element: var HtmlElement; values: varargs[string])		839
+nim	setFormtarget	cattag/auto/htmlAttributes.html#setFormtarget,HtmlElement,varargs[string]_2	proc setFormtarget(element: HtmlElement; values: varargs[string]): HtmlElement		842
+nim	headers	cattag/auto/htmlAttributes.html#headers	const headers		847
+nim	setHeaders	cattag/auto/htmlAttributes.html#setHeaders,HtmlElement,seq[string]	proc setHeaders(element: var HtmlElement; values: seq[string])		848
+nim	setHeaders	cattag/auto/htmlAttributes.html#setHeaders,HtmlElement,seq[string]_2	proc setHeaders(element: HtmlElement; values: seq[string]): HtmlElement		851
+nim	setHeaders	cattag/auto/htmlAttributes.html#setHeaders,HtmlElement,varargs[string]	proc setHeaders(element: var HtmlElement; values: varargs[string])		856
+nim	setHeaders	cattag/auto/htmlAttributes.html#setHeaders,HtmlElement,varargs[string]_2	proc setHeaders(element: HtmlElement; values: varargs[string]): HtmlElement		859
+nim	height	cattag/auto/htmlAttributes.html#height	const height		864
+nim	setHeight	cattag/auto/htmlAttributes.html#setHeight,HtmlElement,seq[string]	proc setHeight(element: var HtmlElement; values: seq[string])		865
+nim	setHeight	cattag/auto/htmlAttributes.html#setHeight,HtmlElement,seq[string]_2	proc setHeight(element: HtmlElement; values: seq[string]): HtmlElement		868
+nim	setHeight	cattag/auto/htmlAttributes.html#setHeight,HtmlElement,varargs[string]	proc setHeight(element: var HtmlElement; values: varargs[string])		873
+nim	setHeight	cattag/auto/htmlAttributes.html#setHeight,HtmlElement,varargs[string]_2	proc setHeight(element: HtmlElement; values: varargs[string]): HtmlElement		876
+nim	hidden	cattag/auto/htmlAttributes.html#hidden	const hidden		881
+nim	setHidden	cattag/auto/htmlAttributes.html#setHidden,HtmlElement,seq[string]	proc setHidden(element: var HtmlElement; values: seq[string])		882
+nim	setHidden	cattag/auto/htmlAttributes.html#setHidden,HtmlElement,seq[string]_2	proc setHidden(element: HtmlElement; values: seq[string]): HtmlElement		885
+nim	setHidden	cattag/auto/htmlAttributes.html#setHidden,HtmlElement,varargs[string]	proc setHidden(element: var HtmlElement; values: varargs[string])		890
+nim	setHidden	cattag/auto/htmlAttributes.html#setHidden,HtmlElement,varargs[string]_2	proc setHidden(element: HtmlElement; values: varargs[string]): HtmlElement		893
+nim	high	cattag/auto/htmlAttributes.html#high	const high		898
+nim	setHigh	cattag/auto/htmlAttributes.html#setHigh,HtmlElement,seq[string]	proc setHigh(element: var HtmlElement; values: seq[string])		899
+nim	setHigh	cattag/auto/htmlAttributes.html#setHigh,HtmlElement,seq[string]_2	proc setHigh(element: HtmlElement; values: seq[string]): HtmlElement		902
+nim	setHigh	cattag/auto/htmlAttributes.html#setHigh,HtmlElement,varargs[string]	proc setHigh(element: var HtmlElement; values: varargs[string])		907
+nim	setHigh	cattag/auto/htmlAttributes.html#setHigh,HtmlElement,varargs[string]_2	proc setHigh(element: HtmlElement; values: varargs[string]): HtmlElement		910
+nim	href	cattag/auto/htmlAttributes.html#href	const href		915
+nim	setHref	cattag/auto/htmlAttributes.html#setHref,HtmlElement,seq[string]	proc setHref(element: var HtmlElement; values: seq[string])		916
+nim	setHref	cattag/auto/htmlAttributes.html#setHref,HtmlElement,seq[string]_2	proc setHref(element: HtmlElement; values: seq[string]): HtmlElement		919
+nim	setHref	cattag/auto/htmlAttributes.html#setHref,HtmlElement,varargs[string]	proc setHref(element: var HtmlElement; values: varargs[string])		924
+nim	setHref	cattag/auto/htmlAttributes.html#setHref,HtmlElement,varargs[string]_2	proc setHref(element: HtmlElement; values: varargs[string]): HtmlElement		927
+nim	hreflang	cattag/auto/htmlAttributes.html#hreflang	const hreflang		932
+nim	setHreflang	cattag/auto/htmlAttributes.html#setHreflang,HtmlElement,seq[string]	proc setHreflang(element: var HtmlElement; values: seq[string])		933
+nim	setHreflang	cattag/auto/htmlAttributes.html#setHreflang,HtmlElement,seq[string]_2	proc setHreflang(element: HtmlElement; values: seq[string]): HtmlElement		936
+nim	setHreflang	cattag/auto/htmlAttributes.html#setHreflang,HtmlElement,varargs[string]	proc setHreflang(element: var HtmlElement; values: varargs[string])		941
+nim	setHreflang	cattag/auto/htmlAttributes.html#setHreflang,HtmlElement,varargs[string]_2	proc setHreflang(element: HtmlElement; values: varargs[string]): HtmlElement		944
+nim	httpEquiv	cattag/auto/htmlAttributes.html#httpEquiv	const httpEquiv		949
+nim	setHttpEquiv	cattag/auto/htmlAttributes.html#setHttpEquiv,HtmlElement,seq[string]	proc setHttpEquiv(element: var HtmlElement; values: seq[string])		950
+nim	setHttpEquiv	cattag/auto/htmlAttributes.html#setHttpEquiv,HtmlElement,seq[string]_2	proc setHttpEquiv(element: HtmlElement; values: seq[string]): HtmlElement		953
+nim	setHttpEquiv	cattag/auto/htmlAttributes.html#setHttpEquiv,HtmlElement,varargs[string]	proc setHttpEquiv(element: var HtmlElement; values: varargs[string])		958
+nim	setHttpEquiv	cattag/auto/htmlAttributes.html#setHttpEquiv,HtmlElement,varargs[string]_2	proc setHttpEquiv(element: HtmlElement; values: varargs[string]): HtmlElement		961
+nim	id	cattag/auto/htmlAttributes.html#id	const id		966
+nim	setId	cattag/auto/htmlAttributes.html#setId,HtmlElement,seq[string]	proc setId(element: var HtmlElement; values: seq[string])		967
+nim	setId	cattag/auto/htmlAttributes.html#setId,HtmlElement,seq[string]_2	proc setId(element: HtmlElement; values: seq[string]): HtmlElement		970
+nim	setId	cattag/auto/htmlAttributes.html#setId,HtmlElement,varargs[string]	proc setId(element: var HtmlElement; values: varargs[string])		975
+nim	setId	cattag/auto/htmlAttributes.html#setId,HtmlElement,varargs[string]_2	proc setId(element: HtmlElement; values: varargs[string]): HtmlElement		978
+nim	integrity	cattag/auto/htmlAttributes.html#integrity	const integrity		983
+nim	setIntegrity	cattag/auto/htmlAttributes.html#setIntegrity,HtmlElement,seq[string]	proc setIntegrity(element: var HtmlElement; values: seq[string])		984
+nim	setIntegrity	cattag/auto/htmlAttributes.html#setIntegrity,HtmlElement,seq[string]_2	proc setIntegrity(element: HtmlElement; values: seq[string]): HtmlElement		987
+nim	setIntegrity	cattag/auto/htmlAttributes.html#setIntegrity,HtmlElement,varargs[string]	proc setIntegrity(element: var HtmlElement; values: varargs[string])		992
+nim	setIntegrity	cattag/auto/htmlAttributes.html#setIntegrity,HtmlElement,varargs[string]_2	proc setIntegrity(element: HtmlElement; values: varargs[string]): HtmlElement		995
+nim	inputmode	cattag/auto/htmlAttributes.html#inputmode	const inputmode		1000
+nim	setInputmode	cattag/auto/htmlAttributes.html#setInputmode,HtmlElement,seq[string]	proc setInputmode(element: var HtmlElement; values: seq[string])		1001
+nim	setInputmode	cattag/auto/htmlAttributes.html#setInputmode,HtmlElement,seq[string]_2	proc setInputmode(element: HtmlElement; values: seq[string]): HtmlElement		1004
+nim	setInputmode	cattag/auto/htmlAttributes.html#setInputmode,HtmlElement,varargs[string]	proc setInputmode(element: var HtmlElement; values: varargs[string])		1009
+nim	setInputmode	cattag/auto/htmlAttributes.html#setInputmode,HtmlElement,varargs[string]_2	proc setInputmode(element: HtmlElement; values: varargs[string]): HtmlElement		1012
+nim	ismap	cattag/auto/htmlAttributes.html#ismap	const ismap		1017
+nim	setIsmap	cattag/auto/htmlAttributes.html#setIsmap,HtmlElement,seq[string]	proc setIsmap(element: var HtmlElement; values: seq[string])		1018
+nim	setIsmap	cattag/auto/htmlAttributes.html#setIsmap,HtmlElement,seq[string]_2	proc setIsmap(element: HtmlElement; values: seq[string]): HtmlElement		1021
+nim	setIsmap	cattag/auto/htmlAttributes.html#setIsmap,HtmlElement,varargs[string]	proc setIsmap(element: var HtmlElement; values: varargs[string])		1026
+nim	setIsmap	cattag/auto/htmlAttributes.html#setIsmap,HtmlElement,varargs[string]_2	proc setIsmap(element: HtmlElement; values: varargs[string]): HtmlElement		1029
+nim	itemprop	cattag/auto/htmlAttributes.html#itemprop	const itemprop		1034
+nim	setItemprop	cattag/auto/htmlAttributes.html#setItemprop,HtmlElement,seq[string]	proc setItemprop(element: var HtmlElement; values: seq[string])		1035
+nim	setItemprop	cattag/auto/htmlAttributes.html#setItemprop,HtmlElement,seq[string]_2	proc setItemprop(element: HtmlElement; values: seq[string]): HtmlElement		1038
+nim	setItemprop	cattag/auto/htmlAttributes.html#setItemprop,HtmlElement,varargs[string]	proc setItemprop(element: var HtmlElement; values: varargs[string])		1043
+nim	setItemprop	cattag/auto/htmlAttributes.html#setItemprop,HtmlElement,varargs[string]_2	proc setItemprop(element: HtmlElement; values: varargs[string]): HtmlElement		1046
+nim	kind	cattag/auto/htmlAttributes.html#kind	const kind		1051
+nim	setKind	cattag/auto/htmlAttributes.html#setKind,HtmlElement,seq[string]	proc setKind(element: var HtmlElement; values: seq[string])		1052
+nim	setKind	cattag/auto/htmlAttributes.html#setKind,HtmlElement,seq[string]_2	proc setKind(element: HtmlElement; values: seq[string]): HtmlElement		1055
+nim	setKind	cattag/auto/htmlAttributes.html#setKind,HtmlElement,varargs[string]	proc setKind(element: var HtmlElement; values: varargs[string])		1060
+nim	setKind	cattag/auto/htmlAttributes.html#setKind,HtmlElement,varargs[string]_2	proc setKind(element: HtmlElement; values: varargs[string]): HtmlElement		1063
+nim	label	cattag/auto/htmlAttributes.html#label	const label		1068
+nim	setLabel	cattag/auto/htmlAttributes.html#setLabel,HtmlElement,seq[string]	proc setLabel(element: var HtmlElement; values: seq[string])		1069
+nim	setLabel	cattag/auto/htmlAttributes.html#setLabel,HtmlElement,seq[string]_2	proc setLabel(element: HtmlElement; values: seq[string]): HtmlElement		1072
+nim	setLabel	cattag/auto/htmlAttributes.html#setLabel,HtmlElement,varargs[string]	proc setLabel(element: var HtmlElement; values: varargs[string])		1077
+nim	setLabel	cattag/auto/htmlAttributes.html#setLabel,HtmlElement,varargs[string]_2	proc setLabel(element: HtmlElement; values: varargs[string]): HtmlElement		1080
+nim	lang	cattag/auto/htmlAttributes.html#lang	const lang		1085
+nim	setLang	cattag/auto/htmlAttributes.html#setLang,HtmlElement,seq[string]	proc setLang(element: var HtmlElement; values: seq[string])		1086
+nim	setLang	cattag/auto/htmlAttributes.html#setLang,HtmlElement,seq[string]_2	proc setLang(element: HtmlElement; values: seq[string]): HtmlElement		1089
+nim	setLang	cattag/auto/htmlAttributes.html#setLang,HtmlElement,varargs[string]	proc setLang(element: var HtmlElement; values: varargs[string])		1094
+nim	setLang	cattag/auto/htmlAttributes.html#setLang,HtmlElement,varargs[string]_2	proc setLang(element: HtmlElement; values: varargs[string]): HtmlElement		1097
+nim	language	cattag/auto/htmlAttributes.html#language	const language		1102
+nim	setLanguage	cattag/auto/htmlAttributes.html#setLanguage,HtmlElement,seq[string]	proc setLanguage(element: var HtmlElement; values: seq[string])		1103
+nim	setLanguage	cattag/auto/htmlAttributes.html#setLanguage,HtmlElement,seq[string]_2	proc setLanguage(element: HtmlElement; values: seq[string]): HtmlElement		1106
+nim	setLanguage	cattag/auto/htmlAttributes.html#setLanguage,HtmlElement,varargs[string]	proc setLanguage(element: var HtmlElement; values: varargs[string])		1111
+nim	setLanguage	cattag/auto/htmlAttributes.html#setLanguage,HtmlElement,varargs[string]_2	proc setLanguage(element: HtmlElement; values: varargs[string]): HtmlElement		1114
+nim	loading	cattag/auto/htmlAttributes.html#loading	const loading		1119
+nim	setLoading	cattag/auto/htmlAttributes.html#setLoading,HtmlElement,seq[string]	proc setLoading(element: var HtmlElement; values: seq[string])		1120
+nim	setLoading	cattag/auto/htmlAttributes.html#setLoading,HtmlElement,seq[string]_2	proc setLoading(element: HtmlElement; values: seq[string]): HtmlElement		1123
+nim	setLoading	cattag/auto/htmlAttributes.html#setLoading,HtmlElement,varargs[string]	proc setLoading(element: var HtmlElement; values: varargs[string])		1128
+nim	setLoading	cattag/auto/htmlAttributes.html#setLoading,HtmlElement,varargs[string]_2	proc setLoading(element: HtmlElement; values: varargs[string]): HtmlElement		1131
+nim	list	cattag/auto/htmlAttributes.html#list	const list		1136
+nim	setList	cattag/auto/htmlAttributes.html#setList,HtmlElement,seq[string]	proc setList(element: var HtmlElement; values: seq[string])		1137
+nim	setList	cattag/auto/htmlAttributes.html#setList,HtmlElement,seq[string]_2	proc setList(element: HtmlElement; values: seq[string]): HtmlElement		1140
+nim	setList	cattag/auto/htmlAttributes.html#setList,HtmlElement,varargs[string]	proc setList(element: var HtmlElement; values: varargs[string])		1145
+nim	setList	cattag/auto/htmlAttributes.html#setList,HtmlElement,varargs[string]_2	proc setList(element: HtmlElement; values: varargs[string]): HtmlElement		1148
+nim	loop	cattag/auto/htmlAttributes.html#loop	const loop		1153
+nim	setLoop	cattag/auto/htmlAttributes.html#setLoop,HtmlElement,seq[string]	proc setLoop(element: var HtmlElement; values: seq[string])		1154
+nim	setLoop	cattag/auto/htmlAttributes.html#setLoop,HtmlElement,seq[string]_2	proc setLoop(element: HtmlElement; values: seq[string]): HtmlElement		1157
+nim	setLoop	cattag/auto/htmlAttributes.html#setLoop,HtmlElement,varargs[string]	proc setLoop(element: var HtmlElement; values: varargs[string])		1162
+nim	setLoop	cattag/auto/htmlAttributes.html#setLoop,HtmlElement,varargs[string]_2	proc setLoop(element: HtmlElement; values: varargs[string]): HtmlElement		1165
+nim	low	cattag/auto/htmlAttributes.html#low	const low		1170
+nim	setLow	cattag/auto/htmlAttributes.html#setLow,HtmlElement,seq[string]	proc setLow(element: var HtmlElement; values: seq[string])		1171
+nim	setLow	cattag/auto/htmlAttributes.html#setLow,HtmlElement,seq[string]_2	proc setLow(element: HtmlElement; values: seq[string]): HtmlElement		1174
+nim	setLow	cattag/auto/htmlAttributes.html#setLow,HtmlElement,varargs[string]	proc setLow(element: var HtmlElement; values: varargs[string])		1179
+nim	setLow	cattag/auto/htmlAttributes.html#setLow,HtmlElement,varargs[string]_2	proc setLow(element: HtmlElement; values: varargs[string]): HtmlElement		1182
+nim	max	cattag/auto/htmlAttributes.html#max	const max		1187
+nim	setMax	cattag/auto/htmlAttributes.html#setMax,HtmlElement,seq[string]	proc setMax(element: var HtmlElement; values: seq[string])		1188
+nim	setMax	cattag/auto/htmlAttributes.html#setMax,HtmlElement,seq[string]_2	proc setMax(element: HtmlElement; values: seq[string]): HtmlElement		1191
+nim	setMax	cattag/auto/htmlAttributes.html#setMax,HtmlElement,varargs[string]	proc setMax(element: var HtmlElement; values: varargs[string])		1196
+nim	setMax	cattag/auto/htmlAttributes.html#setMax,HtmlElement,varargs[string]_2	proc setMax(element: HtmlElement; values: varargs[string]): HtmlElement		1199
+nim	maxlength	cattag/auto/htmlAttributes.html#maxlength	const maxlength		1204
+nim	setMaxlength	cattag/auto/htmlAttributes.html#setMaxlength,HtmlElement,seq[string]	proc setMaxlength(element: var HtmlElement; values: seq[string])		1205
+nim	setMaxlength	cattag/auto/htmlAttributes.html#setMaxlength,HtmlElement,seq[string]_2	proc setMaxlength(element: HtmlElement; values: seq[string]): HtmlElement		1208
+nim	setMaxlength	cattag/auto/htmlAttributes.html#setMaxlength,HtmlElement,varargs[string]	proc setMaxlength(element: var HtmlElement; values: varargs[string])		1213
+nim	setMaxlength	cattag/auto/htmlAttributes.html#setMaxlength,HtmlElement,varargs[string]_2	proc setMaxlength(element: HtmlElement; values: varargs[string]): HtmlElement		1216
+nim	minlength	cattag/auto/htmlAttributes.html#minlength	const minlength		1221
+nim	setMinlength	cattag/auto/htmlAttributes.html#setMinlength,HtmlElement,seq[string]	proc setMinlength(element: var HtmlElement; values: seq[string])		1222
+nim	setMinlength	cattag/auto/htmlAttributes.html#setMinlength,HtmlElement,seq[string]_2	proc setMinlength(element: HtmlElement; values: seq[string]): HtmlElement		1225
+nim	setMinlength	cattag/auto/htmlAttributes.html#setMinlength,HtmlElement,varargs[string]	proc setMinlength(element: var HtmlElement; values: varargs[string])		1230
+nim	setMinlength	cattag/auto/htmlAttributes.html#setMinlength,HtmlElement,varargs[string]_2	proc setMinlength(element: HtmlElement; values: varargs[string]): HtmlElement		1233
+nim	media	cattag/auto/htmlAttributes.html#media	const media		1238
+nim	setMedia	cattag/auto/htmlAttributes.html#setMedia,HtmlElement,seq[string]	proc setMedia(element: var HtmlElement; values: seq[string])		1239
+nim	setMedia	cattag/auto/htmlAttributes.html#setMedia,HtmlElement,seq[string]_2	proc setMedia(element: HtmlElement; values: seq[string]): HtmlElement		1242
+nim	setMedia	cattag/auto/htmlAttributes.html#setMedia,HtmlElement,varargs[string]	proc setMedia(element: var HtmlElement; values: varargs[string])		1247
+nim	setMedia	cattag/auto/htmlAttributes.html#setMedia,HtmlElement,varargs[string]_2	proc setMedia(element: HtmlElement; values: varargs[string]): HtmlElement		1250
+nim	`method`	cattag/auto/htmlAttributes.html#method	const `method`		1255
+nim	setMethod	cattag/auto/htmlAttributes.html#setMethod,HtmlElement,seq[string]	proc setMethod(element: var HtmlElement; values: seq[string])		1256
+nim	setMethod	cattag/auto/htmlAttributes.html#setMethod,HtmlElement,seq[string]_2	proc setMethod(element: HtmlElement; values: seq[string]): HtmlElement		1259
+nim	setMethod	cattag/auto/htmlAttributes.html#setMethod,HtmlElement,varargs[string]	proc setMethod(element: var HtmlElement; values: varargs[string])		1264
+nim	setMethod	cattag/auto/htmlAttributes.html#setMethod,HtmlElement,varargs[string]_2	proc setMethod(element: HtmlElement; values: varargs[string]): HtmlElement		1267
+nim	min	cattag/auto/htmlAttributes.html#min	const min		1272
+nim	setMin	cattag/auto/htmlAttributes.html#setMin,HtmlElement,seq[string]	proc setMin(element: var HtmlElement; values: seq[string])		1273
+nim	setMin	cattag/auto/htmlAttributes.html#setMin,HtmlElement,seq[string]_2	proc setMin(element: HtmlElement; values: seq[string]): HtmlElement		1276
+nim	setMin	cattag/auto/htmlAttributes.html#setMin,HtmlElement,varargs[string]	proc setMin(element: var HtmlElement; values: varargs[string])		1281
+nim	setMin	cattag/auto/htmlAttributes.html#setMin,HtmlElement,varargs[string]_2	proc setMin(element: HtmlElement; values: varargs[string]): HtmlElement		1284
+nim	multiple	cattag/auto/htmlAttributes.html#multiple	const multiple		1289
+nim	setMultiple	cattag/auto/htmlAttributes.html#setMultiple,HtmlElement,seq[string]	proc setMultiple(element: var HtmlElement; values: seq[string])		1290
+nim	setMultiple	cattag/auto/htmlAttributes.html#setMultiple,HtmlElement,seq[string]_2	proc setMultiple(element: HtmlElement; values: seq[string]): HtmlElement		1293
+nim	setMultiple	cattag/auto/htmlAttributes.html#setMultiple,HtmlElement,varargs[string]	proc setMultiple(element: var HtmlElement; values: varargs[string])		1298
+nim	setMultiple	cattag/auto/htmlAttributes.html#setMultiple,HtmlElement,varargs[string]_2	proc setMultiple(element: HtmlElement; values: varargs[string]): HtmlElement		1301
+nim	muted	cattag/auto/htmlAttributes.html#muted	const muted		1306
+nim	setMuted	cattag/auto/htmlAttributes.html#setMuted,HtmlElement,seq[string]	proc setMuted(element: var HtmlElement; values: seq[string])		1307
+nim	setMuted	cattag/auto/htmlAttributes.html#setMuted,HtmlElement,seq[string]_2	proc setMuted(element: HtmlElement; values: seq[string]): HtmlElement		1310
+nim	setMuted	cattag/auto/htmlAttributes.html#setMuted,HtmlElement,varargs[string]	proc setMuted(element: var HtmlElement; values: varargs[string])		1315
+nim	setMuted	cattag/auto/htmlAttributes.html#setMuted,HtmlElement,varargs[string]_2	proc setMuted(element: HtmlElement; values: varargs[string]): HtmlElement		1318
+nim	name	cattag/auto/htmlAttributes.html#name	const name		1323
+nim	setName	cattag/auto/htmlAttributes.html#setName,HtmlElement,seq[string]	proc setName(element: var HtmlElement; values: seq[string])		1324
+nim	setName	cattag/auto/htmlAttributes.html#setName,HtmlElement,seq[string]_2	proc setName(element: HtmlElement; values: seq[string]): HtmlElement		1327
+nim	setName	cattag/auto/htmlAttributes.html#setName,HtmlElement,varargs[string]	proc setName(element: var HtmlElement; values: varargs[string])		1332
+nim	setName	cattag/auto/htmlAttributes.html#setName,HtmlElement,varargs[string]_2	proc setName(element: HtmlElement; values: varargs[string]): HtmlElement		1335
+nim	novalidate	cattag/auto/htmlAttributes.html#novalidate	const novalidate		1340
+nim	setNovalidate	cattag/auto/htmlAttributes.html#setNovalidate,HtmlElement,seq[string]	proc setNovalidate(element: var HtmlElement; values: seq[string])		1341
+nim	setNovalidate	cattag/auto/htmlAttributes.html#setNovalidate,HtmlElement,seq[string]_2	proc setNovalidate(element: HtmlElement; values: seq[string]): HtmlElement		1344
+nim	setNovalidate	cattag/auto/htmlAttributes.html#setNovalidate,HtmlElement,varargs[string]	proc setNovalidate(element: var HtmlElement; values: varargs[string])		1349
+nim	setNovalidate	cattag/auto/htmlAttributes.html#setNovalidate,HtmlElement,varargs[string]_2	proc setNovalidate(element: HtmlElement; values: varargs[string]): HtmlElement		1352
+nim	open	cattag/auto/htmlAttributes.html#open	const open		1357
+nim	setOpen	cattag/auto/htmlAttributes.html#setOpen,HtmlElement,seq[string]	proc setOpen(element: var HtmlElement; values: seq[string])		1358
+nim	setOpen	cattag/auto/htmlAttributes.html#setOpen,HtmlElement,seq[string]_2	proc setOpen(element: HtmlElement; values: seq[string]): HtmlElement		1361
+nim	setOpen	cattag/auto/htmlAttributes.html#setOpen,HtmlElement,varargs[string]	proc setOpen(element: var HtmlElement; values: varargs[string])		1366
+nim	setOpen	cattag/auto/htmlAttributes.html#setOpen,HtmlElement,varargs[string]_2	proc setOpen(element: HtmlElement; values: varargs[string]): HtmlElement		1369
+nim	optimum	cattag/auto/htmlAttributes.html#optimum	const optimum		1374
+nim	setOptimum	cattag/auto/htmlAttributes.html#setOptimum,HtmlElement,seq[string]	proc setOptimum(element: var HtmlElement; values: seq[string])		1375
+nim	setOptimum	cattag/auto/htmlAttributes.html#setOptimum,HtmlElement,seq[string]_2	proc setOptimum(element: HtmlElement; values: seq[string]): HtmlElement		1378
+nim	setOptimum	cattag/auto/htmlAttributes.html#setOptimum,HtmlElement,varargs[string]	proc setOptimum(element: var HtmlElement; values: varargs[string])		1383
+nim	setOptimum	cattag/auto/htmlAttributes.html#setOptimum,HtmlElement,varargs[string]_2	proc setOptimum(element: HtmlElement; values: varargs[string]): HtmlElement		1386
+nim	pattern	cattag/auto/htmlAttributes.html#pattern	const pattern		1391
+nim	setPattern	cattag/auto/htmlAttributes.html#setPattern,HtmlElement,seq[string]	proc setPattern(element: var HtmlElement; values: seq[string])		1392
+nim	setPattern	cattag/auto/htmlAttributes.html#setPattern,HtmlElement,seq[string]_2	proc setPattern(element: HtmlElement; values: seq[string]): HtmlElement		1395
+nim	setPattern	cattag/auto/htmlAttributes.html#setPattern,HtmlElement,varargs[string]	proc setPattern(element: var HtmlElement; values: varargs[string])		1400
+nim	setPattern	cattag/auto/htmlAttributes.html#setPattern,HtmlElement,varargs[string]_2	proc setPattern(element: HtmlElement; values: varargs[string]): HtmlElement		1403
+nim	ping	cattag/auto/htmlAttributes.html#ping	const ping		1408
+nim	setPing	cattag/auto/htmlAttributes.html#setPing,HtmlElement,seq[string]	proc setPing(element: var HtmlElement; values: seq[string])		1409
+nim	setPing	cattag/auto/htmlAttributes.html#setPing,HtmlElement,seq[string]_2	proc setPing(element: HtmlElement; values: seq[string]): HtmlElement		1412
+nim	setPing	cattag/auto/htmlAttributes.html#setPing,HtmlElement,varargs[string]	proc setPing(element: var HtmlElement; values: varargs[string])		1417
+nim	setPing	cattag/auto/htmlAttributes.html#setPing,HtmlElement,varargs[string]_2	proc setPing(element: HtmlElement; values: varargs[string]): HtmlElement		1420
+nim	placeholder	cattag/auto/htmlAttributes.html#placeholder	const placeholder		1425
+nim	setPlaceholder	cattag/auto/htmlAttributes.html#setPlaceholder,HtmlElement,seq[string]	proc setPlaceholder(element: var HtmlElement; values: seq[string])		1426
+nim	setPlaceholder	cattag/auto/htmlAttributes.html#setPlaceholder,HtmlElement,seq[string]_2	proc setPlaceholder(element: HtmlElement; values: seq[string]): HtmlElement		1429
+nim	setPlaceholder	cattag/auto/htmlAttributes.html#setPlaceholder,HtmlElement,varargs[string]	proc setPlaceholder(element: var HtmlElement; values: varargs[string])		1434
+nim	setPlaceholder	cattag/auto/htmlAttributes.html#setPlaceholder,HtmlElement,varargs[string]_2	proc setPlaceholder(element: HtmlElement; values: varargs[string]): HtmlElement		1437
+nim	playsinline	cattag/auto/htmlAttributes.html#playsinline	const playsinline		1442
+nim	setPlaysinline	cattag/auto/htmlAttributes.html#setPlaysinline,HtmlElement,seq[string]	proc setPlaysinline(element: var HtmlElement; values: seq[string])		1443
+nim	setPlaysinline	cattag/auto/htmlAttributes.html#setPlaysinline,HtmlElement,seq[string]_2	proc setPlaysinline(element: HtmlElement; values: seq[string]): HtmlElement		1446
+nim	setPlaysinline	cattag/auto/htmlAttributes.html#setPlaysinline,HtmlElement,varargs[string]	proc setPlaysinline(element: var HtmlElement; values: varargs[string])		1451
+nim	setPlaysinline	cattag/auto/htmlAttributes.html#setPlaysinline,HtmlElement,varargs[string]_2	proc setPlaysinline(element: HtmlElement; values: varargs[string]): HtmlElement		1454
+nim	poster	cattag/auto/htmlAttributes.html#poster	const poster		1459
+nim	setPoster	cattag/auto/htmlAttributes.html#setPoster,HtmlElement,seq[string]	proc setPoster(element: var HtmlElement; values: seq[string])		1460
+nim	setPoster	cattag/auto/htmlAttributes.html#setPoster,HtmlElement,seq[string]_2	proc setPoster(element: HtmlElement; values: seq[string]): HtmlElement		1463
+nim	setPoster	cattag/auto/htmlAttributes.html#setPoster,HtmlElement,varargs[string]	proc setPoster(element: var HtmlElement; values: varargs[string])		1468
+nim	setPoster	cattag/auto/htmlAttributes.html#setPoster,HtmlElement,varargs[string]_2	proc setPoster(element: HtmlElement; values: varargs[string]): HtmlElement		1471
+nim	preload	cattag/auto/htmlAttributes.html#preload	const preload		1476
+nim	setPreload	cattag/auto/htmlAttributes.html#setPreload,HtmlElement,seq[string]	proc setPreload(element: var HtmlElement; values: seq[string])		1477
+nim	setPreload	cattag/auto/htmlAttributes.html#setPreload,HtmlElement,seq[string]_2	proc setPreload(element: HtmlElement; values: seq[string]): HtmlElement		1480
+nim	setPreload	cattag/auto/htmlAttributes.html#setPreload,HtmlElement,varargs[string]	proc setPreload(element: var HtmlElement; values: varargs[string])		1485
+nim	setPreload	cattag/auto/htmlAttributes.html#setPreload,HtmlElement,varargs[string]_2	proc setPreload(element: HtmlElement; values: varargs[string]): HtmlElement		1488
+nim	readonly	cattag/auto/htmlAttributes.html#readonly	const readonly		1493
+nim	setReadonly	cattag/auto/htmlAttributes.html#setReadonly,HtmlElement,seq[string]	proc setReadonly(element: var HtmlElement; values: seq[string])		1494
+nim	setReadonly	cattag/auto/htmlAttributes.html#setReadonly,HtmlElement,seq[string]_2	proc setReadonly(element: HtmlElement; values: seq[string]): HtmlElement		1497
+nim	setReadonly	cattag/auto/htmlAttributes.html#setReadonly,HtmlElement,varargs[string]	proc setReadonly(element: var HtmlElement; values: varargs[string])		1502
+nim	setReadonly	cattag/auto/htmlAttributes.html#setReadonly,HtmlElement,varargs[string]_2	proc setReadonly(element: HtmlElement; values: varargs[string]): HtmlElement		1505
+nim	referrerpolicy	cattag/auto/htmlAttributes.html#referrerpolicy	const referrerpolicy		1510
+nim	setReferrerpolicy	cattag/auto/htmlAttributes.html#setReferrerpolicy,HtmlElement,seq[string]	proc setReferrerpolicy(element: var HtmlElement; values: seq[string])		1511
+nim	setReferrerpolicy	cattag/auto/htmlAttributes.html#setReferrerpolicy,HtmlElement,seq[string]_2	proc setReferrerpolicy(element: HtmlElement; values: seq[string]): HtmlElement		1514
+nim	setReferrerpolicy	cattag/auto/htmlAttributes.html#setReferrerpolicy,HtmlElement,varargs[string]	proc setReferrerpolicy(element: var HtmlElement; values: varargs[string])		1519
+nim	setReferrerpolicy	cattag/auto/htmlAttributes.html#setReferrerpolicy,HtmlElement,varargs[string]_2	proc setReferrerpolicy(element: HtmlElement; values: varargs[string]): HtmlElement		1522
+nim	rel	cattag/auto/htmlAttributes.html#rel	const rel		1527
+nim	setRel	cattag/auto/htmlAttributes.html#setRel,HtmlElement,seq[string]	proc setRel(element: var HtmlElement; values: seq[string])		1528
+nim	setRel	cattag/auto/htmlAttributes.html#setRel,HtmlElement,seq[string]_2	proc setRel(element: HtmlElement; values: seq[string]): HtmlElement		1531
+nim	setRel	cattag/auto/htmlAttributes.html#setRel,HtmlElement,varargs[string]	proc setRel(element: var HtmlElement; values: varargs[string])		1536
+nim	setRel	cattag/auto/htmlAttributes.html#setRel,HtmlElement,varargs[string]_2	proc setRel(element: HtmlElement; values: varargs[string]): HtmlElement		1539
+nim	required	cattag/auto/htmlAttributes.html#required	const required		1544
+nim	setRequired	cattag/auto/htmlAttributes.html#setRequired,HtmlElement,seq[string]	proc setRequired(element: var HtmlElement; values: seq[string])		1545
+nim	setRequired	cattag/auto/htmlAttributes.html#setRequired,HtmlElement,seq[string]_2	proc setRequired(element: HtmlElement; values: seq[string]): HtmlElement		1548
+nim	setRequired	cattag/auto/htmlAttributes.html#setRequired,HtmlElement,varargs[string]	proc setRequired(element: var HtmlElement; values: varargs[string])		1553
+nim	setRequired	cattag/auto/htmlAttributes.html#setRequired,HtmlElement,varargs[string]_2	proc setRequired(element: HtmlElement; values: varargs[string]): HtmlElement		1556
+nim	reversed	cattag/auto/htmlAttributes.html#reversed	const reversed		1561
+nim	setReversed	cattag/auto/htmlAttributes.html#setReversed,HtmlElement,seq[string]	proc setReversed(element: var HtmlElement; values: seq[string])		1562
+nim	setReversed	cattag/auto/htmlAttributes.html#setReversed,HtmlElement,seq[string]_2	proc setReversed(element: HtmlElement; values: seq[string]): HtmlElement		1565
+nim	setReversed	cattag/auto/htmlAttributes.html#setReversed,HtmlElement,varargs[string]	proc setReversed(element: var HtmlElement; values: varargs[string])		1570
+nim	setReversed	cattag/auto/htmlAttributes.html#setReversed,HtmlElement,varargs[string]_2	proc setReversed(element: HtmlElement; values: varargs[string]): HtmlElement		1573
+nim	role	cattag/auto/htmlAttributes.html#role	const role		1578
+nim	setRole	cattag/auto/htmlAttributes.html#setRole,HtmlElement,seq[string]	proc setRole(element: var HtmlElement; values: seq[string])		1579
+nim	setRole	cattag/auto/htmlAttributes.html#setRole,HtmlElement,seq[string]_2	proc setRole(element: HtmlElement; values: seq[string]): HtmlElement		1582
+nim	setRole	cattag/auto/htmlAttributes.html#setRole,HtmlElement,varargs[string]	proc setRole(element: var HtmlElement; values: varargs[string])		1587
+nim	setRole	cattag/auto/htmlAttributes.html#setRole,HtmlElement,varargs[string]_2	proc setRole(element: HtmlElement; values: varargs[string]): HtmlElement		1590
+nim	rows	cattag/auto/htmlAttributes.html#rows	const rows		1595
+nim	setRows	cattag/auto/htmlAttributes.html#setRows,HtmlElement,seq[string]	proc setRows(element: var HtmlElement; values: seq[string])		1596
+nim	setRows	cattag/auto/htmlAttributes.html#setRows,HtmlElement,seq[string]_2	proc setRows(element: HtmlElement; values: seq[string]): HtmlElement		1599
+nim	setRows	cattag/auto/htmlAttributes.html#setRows,HtmlElement,varargs[string]	proc setRows(element: var HtmlElement; values: varargs[string])		1604
+nim	setRows	cattag/auto/htmlAttributes.html#setRows,HtmlElement,varargs[string]_2	proc setRows(element: HtmlElement; values: varargs[string]): HtmlElement		1607
+nim	rowspan	cattag/auto/htmlAttributes.html#rowspan	const rowspan		1612
+nim	setRowspan	cattag/auto/htmlAttributes.html#setRowspan,HtmlElement,seq[string]	proc setRowspan(element: var HtmlElement; values: seq[string])		1613
+nim	setRowspan	cattag/auto/htmlAttributes.html#setRowspan,HtmlElement,seq[string]_2	proc setRowspan(element: HtmlElement; values: seq[string]): HtmlElement		1616
+nim	setRowspan	cattag/auto/htmlAttributes.html#setRowspan,HtmlElement,varargs[string]	proc setRowspan(element: var HtmlElement; values: varargs[string])		1621
+nim	setRowspan	cattag/auto/htmlAttributes.html#setRowspan,HtmlElement,varargs[string]_2	proc setRowspan(element: HtmlElement; values: varargs[string]): HtmlElement		1624
+nim	sandbox	cattag/auto/htmlAttributes.html#sandbox	const sandbox		1629
+nim	setSandbox	cattag/auto/htmlAttributes.html#setSandbox,HtmlElement,seq[string]	proc setSandbox(element: var HtmlElement; values: seq[string])		1630
+nim	setSandbox	cattag/auto/htmlAttributes.html#setSandbox,HtmlElement,seq[string]_2	proc setSandbox(element: HtmlElement; values: seq[string]): HtmlElement		1633
+nim	setSandbox	cattag/auto/htmlAttributes.html#setSandbox,HtmlElement,varargs[string]	proc setSandbox(element: var HtmlElement; values: varargs[string])		1638
+nim	setSandbox	cattag/auto/htmlAttributes.html#setSandbox,HtmlElement,varargs[string]_2	proc setSandbox(element: HtmlElement; values: varargs[string]): HtmlElement		1641
+nim	scope	cattag/auto/htmlAttributes.html#scope	const scope		1646
+nim	setScope	cattag/auto/htmlAttributes.html#setScope,HtmlElement,seq[string]	proc setScope(element: var HtmlElement; values: seq[string])		1647
+nim	setScope	cattag/auto/htmlAttributes.html#setScope,HtmlElement,seq[string]_2	proc setScope(element: HtmlElement; values: seq[string]): HtmlElement		1650
+nim	setScope	cattag/auto/htmlAttributes.html#setScope,HtmlElement,varargs[string]	proc setScope(element: var HtmlElement; values: varargs[string])		1655
+nim	setScope	cattag/auto/htmlAttributes.html#setScope,HtmlElement,varargs[string]_2	proc setScope(element: HtmlElement; values: varargs[string]): HtmlElement		1658
+nim	selected	cattag/auto/htmlAttributes.html#selected	const selected		1663
+nim	setSelected	cattag/auto/htmlAttributes.html#setSelected,HtmlElement,seq[string]	proc setSelected(element: var HtmlElement; values: seq[string])		1664
+nim	setSelected	cattag/auto/htmlAttributes.html#setSelected,HtmlElement,seq[string]_2	proc setSelected(element: HtmlElement; values: seq[string]): HtmlElement		1667
+nim	setSelected	cattag/auto/htmlAttributes.html#setSelected,HtmlElement,varargs[string]	proc setSelected(element: var HtmlElement; values: varargs[string])		1672
+nim	setSelected	cattag/auto/htmlAttributes.html#setSelected,HtmlElement,varargs[string]_2	proc setSelected(element: HtmlElement; values: varargs[string]): HtmlElement		1675
+nim	shape	cattag/auto/htmlAttributes.html#shape	const shape		1680
+nim	setShape	cattag/auto/htmlAttributes.html#setShape,HtmlElement,seq[string]	proc setShape(element: var HtmlElement; values: seq[string])		1681
+nim	setShape	cattag/auto/htmlAttributes.html#setShape,HtmlElement,seq[string]_2	proc setShape(element: HtmlElement; values: seq[string]): HtmlElement		1684
+nim	setShape	cattag/auto/htmlAttributes.html#setShape,HtmlElement,varargs[string]	proc setShape(element: var HtmlElement; values: varargs[string])		1689
+nim	setShape	cattag/auto/htmlAttributes.html#setShape,HtmlElement,varargs[string]_2	proc setShape(element: HtmlElement; values: varargs[string]): HtmlElement		1692
+nim	size	cattag/auto/htmlAttributes.html#size	const size		1697
+nim	setSize	cattag/auto/htmlAttributes.html#setSize,HtmlElement,seq[string]	proc setSize(element: var HtmlElement; values: seq[string])		1698
+nim	setSize	cattag/auto/htmlAttributes.html#setSize,HtmlElement,seq[string]_2	proc setSize(element: HtmlElement; values: seq[string]): HtmlElement		1701
+nim	setSize	cattag/auto/htmlAttributes.html#setSize,HtmlElement,varargs[string]	proc setSize(element: var HtmlElement; values: varargs[string])		1706
+nim	setSize	cattag/auto/htmlAttributes.html#setSize,HtmlElement,varargs[string]_2	proc setSize(element: HtmlElement; values: varargs[string]): HtmlElement		1709
+nim	sizes	cattag/auto/htmlAttributes.html#sizes	const sizes		1714
+nim	setSizes	cattag/auto/htmlAttributes.html#setSizes,HtmlElement,seq[string]	proc setSizes(element: var HtmlElement; values: seq[string])		1715
+nim	setSizes	cattag/auto/htmlAttributes.html#setSizes,HtmlElement,seq[string]_2	proc setSizes(element: HtmlElement; values: seq[string]): HtmlElement		1718
+nim	setSizes	cattag/auto/htmlAttributes.html#setSizes,HtmlElement,varargs[string]	proc setSizes(element: var HtmlElement; values: varargs[string])		1723
+nim	setSizes	cattag/auto/htmlAttributes.html#setSizes,HtmlElement,varargs[string]_2	proc setSizes(element: HtmlElement; values: varargs[string]): HtmlElement		1726
+nim	slot	cattag/auto/htmlAttributes.html#slot	const slot		1731
+nim	setSlot	cattag/auto/htmlAttributes.html#setSlot,HtmlElement,seq[string]	proc setSlot(element: var HtmlElement; values: seq[string])		1732
+nim	setSlot	cattag/auto/htmlAttributes.html#setSlot,HtmlElement,seq[string]_2	proc setSlot(element: HtmlElement; values: seq[string]): HtmlElement		1735
+nim	setSlot	cattag/auto/htmlAttributes.html#setSlot,HtmlElement,varargs[string]	proc setSlot(element: var HtmlElement; values: varargs[string])		1740
+nim	setSlot	cattag/auto/htmlAttributes.html#setSlot,HtmlElement,varargs[string]_2	proc setSlot(element: HtmlElement; values: varargs[string]): HtmlElement		1743
+nim	span	cattag/auto/htmlAttributes.html#span	const span		1748
+nim	setSpan	cattag/auto/htmlAttributes.html#setSpan,HtmlElement,seq[string]	proc setSpan(element: var HtmlElement; values: seq[string])		1749
+nim	setSpan	cattag/auto/htmlAttributes.html#setSpan,HtmlElement,seq[string]_2	proc setSpan(element: HtmlElement; values: seq[string]): HtmlElement		1752
+nim	setSpan	cattag/auto/htmlAttributes.html#setSpan,HtmlElement,varargs[string]	proc setSpan(element: var HtmlElement; values: varargs[string])		1757
+nim	setSpan	cattag/auto/htmlAttributes.html#setSpan,HtmlElement,varargs[string]_2	proc setSpan(element: HtmlElement; values: varargs[string]): HtmlElement		1760
+nim	spellcheck	cattag/auto/htmlAttributes.html#spellcheck	const spellcheck		1765
+nim	setSpellcheck	cattag/auto/htmlAttributes.html#setSpellcheck,HtmlElement,seq[string]	proc setSpellcheck(element: var HtmlElement; values: seq[string])		1766
+nim	setSpellcheck	cattag/auto/htmlAttributes.html#setSpellcheck,HtmlElement,seq[string]_2	proc setSpellcheck(element: HtmlElement; values: seq[string]): HtmlElement		1769
+nim	setSpellcheck	cattag/auto/htmlAttributes.html#setSpellcheck,HtmlElement,varargs[string]	proc setSpellcheck(element: var HtmlElement; values: varargs[string])		1774
+nim	setSpellcheck	cattag/auto/htmlAttributes.html#setSpellcheck,HtmlElement,varargs[string]_2	proc setSpellcheck(element: HtmlElement; values: varargs[string]): HtmlElement		1777
+nim	src	cattag/auto/htmlAttributes.html#src	const src		1782
+nim	setSrc	cattag/auto/htmlAttributes.html#setSrc,HtmlElement,seq[string]	proc setSrc(element: var HtmlElement; values: seq[string])		1783
+nim	setSrc	cattag/auto/htmlAttributes.html#setSrc,HtmlElement,seq[string]_2	proc setSrc(element: HtmlElement; values: seq[string]): HtmlElement		1786
+nim	setSrc	cattag/auto/htmlAttributes.html#setSrc,HtmlElement,varargs[string]	proc setSrc(element: var HtmlElement; values: varargs[string])		1791
+nim	setSrc	cattag/auto/htmlAttributes.html#setSrc,HtmlElement,varargs[string]_2	proc setSrc(element: HtmlElement; values: varargs[string]): HtmlElement		1794
+nim	srcdoc	cattag/auto/htmlAttributes.html#srcdoc	const srcdoc		1799
+nim	setSrcdoc	cattag/auto/htmlAttributes.html#setSrcdoc,HtmlElement,seq[string]	proc setSrcdoc(element: var HtmlElement; values: seq[string])		1800
+nim	setSrcdoc	cattag/auto/htmlAttributes.html#setSrcdoc,HtmlElement,seq[string]_2	proc setSrcdoc(element: HtmlElement; values: seq[string]): HtmlElement		1803
+nim	setSrcdoc	cattag/auto/htmlAttributes.html#setSrcdoc,HtmlElement,varargs[string]	proc setSrcdoc(element: var HtmlElement; values: varargs[string])		1808
+nim	setSrcdoc	cattag/auto/htmlAttributes.html#setSrcdoc,HtmlElement,varargs[string]_2	proc setSrcdoc(element: HtmlElement; values: varargs[string]): HtmlElement		1811
+nim	srclang	cattag/auto/htmlAttributes.html#srclang	const srclang		1816
+nim	setSrclang	cattag/auto/htmlAttributes.html#setSrclang,HtmlElement,seq[string]	proc setSrclang(element: var HtmlElement; values: seq[string])		1817
+nim	setSrclang	cattag/auto/htmlAttributes.html#setSrclang,HtmlElement,seq[string]_2	proc setSrclang(element: HtmlElement; values: seq[string]): HtmlElement		1820
+nim	setSrclang	cattag/auto/htmlAttributes.html#setSrclang,HtmlElement,varargs[string]	proc setSrclang(element: var HtmlElement; values: varargs[string])		1825
+nim	setSrclang	cattag/auto/htmlAttributes.html#setSrclang,HtmlElement,varargs[string]_2	proc setSrclang(element: HtmlElement; values: varargs[string]): HtmlElement		1828
+nim	srcset	cattag/auto/htmlAttributes.html#srcset	const srcset		1833
+nim	setSrcset	cattag/auto/htmlAttributes.html#setSrcset,HtmlElement,seq[string]	proc setSrcset(element: var HtmlElement; values: seq[string])		1834
+nim	setSrcset	cattag/auto/htmlAttributes.html#setSrcset,HtmlElement,seq[string]_2	proc setSrcset(element: HtmlElement; values: seq[string]): HtmlElement		1837
+nim	setSrcset	cattag/auto/htmlAttributes.html#setSrcset,HtmlElement,varargs[string]	proc setSrcset(element: var HtmlElement; values: varargs[string])		1842
+nim	setSrcset	cattag/auto/htmlAttributes.html#setSrcset,HtmlElement,varargs[string]_2	proc setSrcset(element: HtmlElement; values: varargs[string]): HtmlElement		1845
+nim	start	cattag/auto/htmlAttributes.html#start	const start		1850
+nim	setStart	cattag/auto/htmlAttributes.html#setStart,HtmlElement,seq[string]	proc setStart(element: var HtmlElement; values: seq[string])		1851
+nim	setStart	cattag/auto/htmlAttributes.html#setStart,HtmlElement,seq[string]_2	proc setStart(element: HtmlElement; values: seq[string]): HtmlElement		1854
+nim	setStart	cattag/auto/htmlAttributes.html#setStart,HtmlElement,varargs[string]	proc setStart(element: var HtmlElement; values: varargs[string])		1859
+nim	setStart	cattag/auto/htmlAttributes.html#setStart,HtmlElement,varargs[string]_2	proc setStart(element: HtmlElement; values: varargs[string]): HtmlElement		1862
+nim	step	cattag/auto/htmlAttributes.html#step	const step		1867
+nim	setStep	cattag/auto/htmlAttributes.html#setStep,HtmlElement,seq[string]	proc setStep(element: var HtmlElement; values: seq[string])		1868
+nim	setStep	cattag/auto/htmlAttributes.html#setStep,HtmlElement,seq[string]_2	proc setStep(element: HtmlElement; values: seq[string]): HtmlElement		1871
+nim	setStep	cattag/auto/htmlAttributes.html#setStep,HtmlElement,varargs[string]	proc setStep(element: var HtmlElement; values: varargs[string])		1876
+nim	setStep	cattag/auto/htmlAttributes.html#setStep,HtmlElement,varargs[string]_2	proc setStep(element: HtmlElement; values: varargs[string]): HtmlElement		1879
+nim	summary	cattag/auto/htmlAttributes.html#summary	const summary		1884
+nim	setSummary	cattag/auto/htmlAttributes.html#setSummary,HtmlElement,seq[string]	proc setSummary(element: var HtmlElement; values: seq[string])		1885
+nim	setSummary	cattag/auto/htmlAttributes.html#setSummary,HtmlElement,seq[string]_2	proc setSummary(element: HtmlElement; values: seq[string]): HtmlElement		1888
+nim	setSummary	cattag/auto/htmlAttributes.html#setSummary,HtmlElement,varargs[string]	proc setSummary(element: var HtmlElement; values: varargs[string])		1893
+nim	setSummary	cattag/auto/htmlAttributes.html#setSummary,HtmlElement,varargs[string]_2	proc setSummary(element: HtmlElement; values: varargs[string]): HtmlElement		1896
+nim	tabindex	cattag/auto/htmlAttributes.html#tabindex	const tabindex		1901
+nim	setTabindex	cattag/auto/htmlAttributes.html#setTabindex,HtmlElement,seq[string]	proc setTabindex(element: var HtmlElement; values: seq[string])		1902
+nim	setTabindex	cattag/auto/htmlAttributes.html#setTabindex,HtmlElement,seq[string]_2	proc setTabindex(element: HtmlElement; values: seq[string]): HtmlElement		1905
+nim	setTabindex	cattag/auto/htmlAttributes.html#setTabindex,HtmlElement,varargs[string]	proc setTabindex(element: var HtmlElement; values: varargs[string])		1910
+nim	setTabindex	cattag/auto/htmlAttributes.html#setTabindex,HtmlElement,varargs[string]_2	proc setTabindex(element: HtmlElement; values: varargs[string]): HtmlElement		1913
+nim	target	cattag/auto/htmlAttributes.html#target	const target		1918
+nim	setTarget	cattag/auto/htmlAttributes.html#setTarget,HtmlElement,seq[string]	proc setTarget(element: var HtmlElement; values: seq[string])		1919
+nim	setTarget	cattag/auto/htmlAttributes.html#setTarget,HtmlElement,seq[string]_2	proc setTarget(element: HtmlElement; values: seq[string]): HtmlElement		1922
+nim	setTarget	cattag/auto/htmlAttributes.html#setTarget,HtmlElement,varargs[string]	proc setTarget(element: var HtmlElement; values: varargs[string])		1927
+nim	setTarget	cattag/auto/htmlAttributes.html#setTarget,HtmlElement,varargs[string]_2	proc setTarget(element: HtmlElement; values: varargs[string]): HtmlElement		1930
+nim	title	cattag/auto/htmlAttributes.html#title	const title		1935
+nim	setTitle	cattag/auto/htmlAttributes.html#setTitle,HtmlElement,seq[string]	proc setTitle(element: var HtmlElement; values: seq[string])		1936
+nim	setTitle	cattag/auto/htmlAttributes.html#setTitle,HtmlElement,seq[string]_2	proc setTitle(element: HtmlElement; values: seq[string]): HtmlElement		1939
+nim	setTitle	cattag/auto/htmlAttributes.html#setTitle,HtmlElement,varargs[string]	proc setTitle(element: var HtmlElement; values: varargs[string])		1944
+nim	setTitle	cattag/auto/htmlAttributes.html#setTitle,HtmlElement,varargs[string]_2	proc setTitle(element: HtmlElement; values: varargs[string]): HtmlElement		1947
+nim	translate	cattag/auto/htmlAttributes.html#translate	const translate		1952
+nim	setTranslate	cattag/auto/htmlAttributes.html#setTranslate,HtmlElement,seq[string]	proc setTranslate(element: var HtmlElement; values: seq[string])		1953
+nim	setTranslate	cattag/auto/htmlAttributes.html#setTranslate,HtmlElement,seq[string]_2	proc setTranslate(element: HtmlElement; values: seq[string]): HtmlElement		1956
+nim	setTranslate	cattag/auto/htmlAttributes.html#setTranslate,HtmlElement,varargs[string]	proc setTranslate(element: var HtmlElement; values: varargs[string])		1961
+nim	setTranslate	cattag/auto/htmlAttributes.html#setTranslate,HtmlElement,varargs[string]_2	proc setTranslate(element: HtmlElement; values: varargs[string]): HtmlElement		1964
+nim	`type`	cattag/auto/htmlAttributes.html#type	const `type`		1969
+nim	setType	cattag/auto/htmlAttributes.html#setType,HtmlElement,seq[string]	proc setType(element: var HtmlElement; values: seq[string])		1970
+nim	setType	cattag/auto/htmlAttributes.html#setType,HtmlElement,seq[string]_2	proc setType(element: HtmlElement; values: seq[string]): HtmlElement		1973
+nim	setType	cattag/auto/htmlAttributes.html#setType,HtmlElement,varargs[string]	proc setType(element: var HtmlElement; values: varargs[string])		1978
+nim	setType	cattag/auto/htmlAttributes.html#setType,HtmlElement,varargs[string]_2	proc setType(element: HtmlElement; values: varargs[string]): HtmlElement		1981
+nim	usemap	cattag/auto/htmlAttributes.html#usemap	const usemap		1986
+nim	setUsemap	cattag/auto/htmlAttributes.html#setUsemap,HtmlElement,seq[string]	proc setUsemap(element: var HtmlElement; values: seq[string])		1987
+nim	setUsemap	cattag/auto/htmlAttributes.html#setUsemap,HtmlElement,seq[string]_2	proc setUsemap(element: HtmlElement; values: seq[string]): HtmlElement		1990
+nim	setUsemap	cattag/auto/htmlAttributes.html#setUsemap,HtmlElement,varargs[string]	proc setUsemap(element: var HtmlElement; values: varargs[string])		1995
+nim	setUsemap	cattag/auto/htmlAttributes.html#setUsemap,HtmlElement,varargs[string]_2	proc setUsemap(element: HtmlElement; values: varargs[string]): HtmlElement		1998
+nim	value	cattag/auto/htmlAttributes.html#value	const value		2003
+nim	setValue	cattag/auto/htmlAttributes.html#setValue,HtmlElement,seq[string]	proc setValue(element: var HtmlElement; values: seq[string])		2004
+nim	setValue	cattag/auto/htmlAttributes.html#setValue,HtmlElement,seq[string]_2	proc setValue(element: HtmlElement; values: seq[string]): HtmlElement		2007
+nim	setValue	cattag/auto/htmlAttributes.html#setValue,HtmlElement,varargs[string]	proc setValue(element: var HtmlElement; values: varargs[string])		2012
+nim	setValue	cattag/auto/htmlAttributes.html#setValue,HtmlElement,varargs[string]_2	proc setValue(element: HtmlElement; values: varargs[string]): HtmlElement		2015
+nim	width	cattag/auto/htmlAttributes.html#width	const width		2020
+nim	setWidth	cattag/auto/htmlAttributes.html#setWidth,HtmlElement,seq[string]	proc setWidth(element: var HtmlElement; values: seq[string])		2021
+nim	setWidth	cattag/auto/htmlAttributes.html#setWidth,HtmlElement,seq[string]_2	proc setWidth(element: HtmlElement; values: seq[string]): HtmlElement		2024
+nim	setWidth	cattag/auto/htmlAttributes.html#setWidth,HtmlElement,varargs[string]	proc setWidth(element: var HtmlElement; values: varargs[string])		2029
+nim	setWidth	cattag/auto/htmlAttributes.html#setWidth,HtmlElement,varargs[string]_2	proc setWidth(element: HtmlElement; values: varargs[string]): HtmlElement		2032
+nim	wrap	cattag/auto/htmlAttributes.html#wrap	const wrap		2037
+nim	setWrap	cattag/auto/htmlAttributes.html#setWrap,HtmlElement,seq[string]	proc setWrap(element: var HtmlElement; values: seq[string])		2038
+nim	setWrap	cattag/auto/htmlAttributes.html#setWrap,HtmlElement,seq[string]_2	proc setWrap(element: HtmlElement; values: seq[string]): HtmlElement		2041
+nim	setWrap	cattag/auto/htmlAttributes.html#setWrap,HtmlElement,varargs[string]	proc setWrap(element: var HtmlElement; values: varargs[string])		2046
+nim	setWrap	cattag/auto/htmlAttributes.html#setWrap,HtmlElement,varargs[string]_2	proc setWrap(element: HtmlElement; values: varargs[string]): HtmlElement		2049
+nimgrp	setbackground	cattag/auto/htmlAttributes.html#setBackground-procs-all	proc		219
+nimgrp	setcrossorigin	cattag/auto/htmlAttributes.html#setCrossorigin-procs-all	proc		474
+nimgrp	setheaders	cattag/auto/htmlAttributes.html#setHeaders-procs-all	proc		848
+nimgrp	setrowspan	cattag/auto/htmlAttributes.html#setRowspan-procs-all	proc		1613
+nimgrp	setdecoding	cattag/auto/htmlAttributes.html#setDecoding-procs-all	proc		542
+nimgrp	setsize	cattag/auto/htmlAttributes.html#setSize-procs-all	proc		1698
+nimgrp	setchecked	cattag/auto/htmlAttributes.html#setChecked-procs-all	proc		304
+nimgrp	setscope	cattag/auto/htmlAttributes.html#setScope-procs-all	proc		1647
+nimgrp	settabindex	cattag/auto/htmlAttributes.html#setTabindex-procs-all	proc		1902
+nimgrp	sethigh	cattag/auto/htmlAttributes.html#setHigh-procs-all	proc		899
+nimgrp	setautocomplete	cattag/auto/htmlAttributes.html#setAutocomplete-procs-all	proc		185
+nimgrp	setrows	cattag/auto/htmlAttributes.html#setRows-procs-all	proc		1596
+nimgrp	setpreload	cattag/auto/htmlAttributes.html#setPreload-procs-all	proc		1477
+nimgrp	setcapture	cattag/auto/htmlAttributes.html#setCapture-procs-all	proc		270
+nimgrp	setfor	cattag/auto/htmlAttributes.html#setFor-procs-all	proc		729
+nimgrp	setborder	cattag/auto/htmlAttributes.html#setBorder-procs-all	proc		253
+nimgrp	setformtarget	cattag/auto/htmlAttributes.html#setFormtarget-procs-all	proc		831
+nimgrp	setsandbox	cattag/auto/htmlAttributes.html#setSandbox-procs-all	proc		1630
+nimgrp	setsrc	cattag/auto/htmlAttributes.html#setSrc-procs-all	proc		1783
+nimgrp	setshape	cattag/auto/htmlAttributes.html#setShape-procs-all	proc		1681
+nimgrp	setsrcdoc	cattag/auto/htmlAttributes.html#setSrcdoc-procs-all	proc		1800
+nimgrp	setreadonly	cattag/auto/htmlAttributes.html#setReadonly-procs-all	proc		1494
+nimgrp	settype	cattag/auto/htmlAttributes.html#setType-procs-all	proc		1970
+nimgrp	setlang	cattag/auto/htmlAttributes.html#setLang-procs-all	proc		1086
+nimgrp	setaccept	cattag/auto/htmlAttributes.html#setAccept-procs-all	proc		15
+nimgrp	setaction	cattag/auto/htmlAttributes.html#setAction-procs-all	proc		66
+nimgrp	setrel	cattag/auto/htmlAttributes.html#setRel-procs-all	proc		1528
+nimgrp	setpattern	cattag/auto/htmlAttributes.html#setPattern-procs-all	proc		1392
+nimgrp	setsrclang	cattag/auto/htmlAttributes.html#setSrclang-procs-all	proc		1817
+nimgrp	setautocapitalize	cattag/auto/htmlAttributes.html#setAutocapitalize-procs-all	proc		168
+nimgrp	setloading	cattag/auto/htmlAttributes.html#setLoading-procs-all	proc		1120
+nimgrp	setmaxlength	cattag/auto/htmlAttributes.html#setMaxlength-procs-all	proc		1205
+nimgrp	setoptimum	cattag/auto/htmlAttributes.html#setOptimum-procs-all	proc		1375
+nimgrp	setsizes	cattag/auto/htmlAttributes.html#setSizes-procs-all	proc		1715
+nimgrp	setautoplay	cattag/auto/htmlAttributes.html#setAutoplay-procs-all	proc		202
+nimgrp	setdir	cattag/auto/htmlAttributes.html#setDir-procs-all	proc		593
+nimgrp	setcolspan	cattag/auto/htmlAttributes.html#setColspan-procs-all	proc		389
+nimgrp	setreversed	cattag/auto/htmlAttributes.html#setReversed-procs-all	proc		1562
+nimgrp	setasync	cattag/auto/htmlAttributes.html#setAsync-procs-all	proc		151
+nimgrp	setformmethod	cattag/auto/htmlAttributes.html#setFormmethod-procs-all	proc		797
+nimgrp	setspellcheck	cattag/auto/htmlAttributes.html#setSpellcheck-procs-all	proc		1766
+nimgrp	setdirname	cattag/auto/htmlAttributes.html#setDirname-procs-all	proc		610
+nimgrp	sethreflang	cattag/auto/htmlAttributes.html#setHreflang-procs-all	proc		933
+nimgrp	setopen	cattag/auto/htmlAttributes.html#setOpen-procs-all	proc		1358
+nimgrp	setinputmode	cattag/auto/htmlAttributes.html#setInputmode-procs-all	proc		1001
+nimgrp	setlabel	cattag/auto/htmlAttributes.html#setLabel-procs-all	proc		1069
+nimgrp	setstart	cattag/auto/htmlAttributes.html#setStart-procs-all	proc		1851
+nimgrp	settarget	cattag/auto/htmlAttributes.html#setTarget-procs-all	proc		1919
+nimgrp	setdata	cattag/auto/htmlAttributes.html#setData-procs-all	proc		508
+nimgrp	setelementtiming	cattag/auto/htmlAttributes.html#setElementtiming-procs-all	proc		712
+nimgrp	setcsp	cattag/auto/htmlAttributes.html#setCsp-procs-all	proc		491
+nimgrp	setlist	cattag/auto/htmlAttributes.html#setList-procs-all	proc		1137
+nimgrp	setstep	cattag/auto/htmlAttributes.html#setStep-procs-all	proc		1868
+nimgrp	setclass	cattag/auto/htmlAttributes.html#setClass-procs-all	proc		338
+nimgrp	setnovalidate	cattag/auto/htmlAttributes.html#setNovalidate-procs-all	proc		1341
+nimgrp	setdisabled	cattag/auto/htmlAttributes.html#setDisabled-procs-all	proc		627
+nimgrp	setismap	cattag/auto/htmlAttributes.html#setIsmap-procs-all	proc		1018
+nimgrp	setlow	cattag/auto/htmlAttributes.html#setLow-procs-all	proc		1171
+nimgrp	settitle	cattag/auto/htmlAttributes.html#setTitle-procs-all	proc		1936
+nimgrp	setname	cattag/auto/htmlAttributes.html#setName-procs-all	proc		1324
+nimgrp	setenctype	cattag/auto/htmlAttributes.html#setEnctype-procs-all	proc		678
+nimgrp	setwidth	cattag/auto/htmlAttributes.html#setWidth-procs-all	proc		2021
+nimgrp	setmin	cattag/auto/htmlAttributes.html#setMin-procs-all	proc		1273
+nimgrp	setdefault	cattag/auto/htmlAttributes.html#setDefault-procs-all	proc		559
+nimgrp	setmethod	cattag/auto/htmlAttributes.html#setMethod-procs-all	proc		1256
+nimgrp	setcite	cattag/auto/htmlAttributes.html#setCite-procs-all	proc		321
+nimgrp	setvalue	cattag/auto/htmlAttributes.html#setValue-procs-all	proc		2004
+nimgrp	setcontenteditable	cattag/auto/htmlAttributes.html#setContenteditable-procs-all	proc		423
+nimgrp	setas	cattag/auto/htmlAttributes.html#setAs-procs-all	proc		134
+nimgrp	setkind	cattag/auto/htmlAttributes.html#setKind-procs-all	proc		1052
+nimgrp	setsummary	cattag/auto/htmlAttributes.html#setSummary-procs-all	proc		1885
+nimgrp	setmedia	cattag/auto/htmlAttributes.html#setMedia-procs-all	proc		1239
+nimgrp	setcharset	cattag/auto/htmlAttributes.html#setCharset-procs-all	proc		287
+nimgrp	sethttpequiv	cattag/auto/htmlAttributes.html#setHttpEquiv-procs-all	proc		950
+nimgrp	setloop	cattag/auto/htmlAttributes.html#setLoop-procs-all	proc		1154
+nimgrp	setdefer	cattag/auto/htmlAttributes.html#setDefer-procs-all	proc		576
+nimgrp	sethidden	cattag/auto/htmlAttributes.html#setHidden-procs-all	proc		882
+nimgrp	setplaceholder	cattag/auto/htmlAttributes.html#setPlaceholder-procs-all	proc		1426
+nimgrp	setalt	cattag/auto/htmlAttributes.html#setAlt-procs-all	proc		117
+nimgrp	setallow	cattag/auto/htmlAttributes.html#setAllow-procs-all	proc		100
+nimgrp	setslot	cattag/auto/htmlAttributes.html#setSlot-procs-all	proc		1732
+nimgrp	setposter	cattag/auto/htmlAttributes.html#setPoster-procs-all	proc		1460
+nimgrp	setenterkeyhint	cattag/auto/htmlAttributes.html#setEnterkeyhint-procs-all	proc		695
+nimgrp	setdraggable	cattag/auto/htmlAttributes.html#setDraggable-procs-all	proc		661
+nimgrp	setheight	cattag/auto/htmlAttributes.html#setHeight-procs-all	proc		865
+nimgrp	setmax	cattag/auto/htmlAttributes.html#setMax-procs-all	proc		1188
+nimgrp	setmuted	cattag/auto/htmlAttributes.html#setMuted-procs-all	proc		1307
+nimgrp	setcols	cattag/auto/htmlAttributes.html#setCols-procs-all	proc		372
+nimgrp	setmultiple	cattag/auto/htmlAttributes.html#setMultiple-procs-all	proc		1290
+nimgrp	setaccesskey	cattag/auto/htmlAttributes.html#setAccesskey-procs-all	proc		49
+nimgrp	setrole	cattag/auto/htmlAttributes.html#setRole-procs-all	proc		1579
+nimgrp	setformnovalidate	cattag/auto/htmlAttributes.html#setFormnovalidate-procs-all	proc		814
+nimgrp	setintegrity	cattag/auto/htmlAttributes.html#setIntegrity-procs-all	proc		984
+nimgrp	setminlength	cattag/auto/htmlAttributes.html#setMinlength-procs-all	proc		1222
+nimgrp	setspan	cattag/auto/htmlAttributes.html#setSpan-procs-all	proc		1749
+nimgrp	setsrcset	cattag/auto/htmlAttributes.html#setSrcset-procs-all	proc		1834
+nimgrp	setcolor	cattag/auto/htmlAttributes.html#setColor-procs-all	proc		355
+nimgrp	setwrap	cattag/auto/htmlAttributes.html#setWrap-procs-all	proc		2038
+nimgrp	setcontrols	cattag/auto/htmlAttributes.html#setControls-procs-all	proc		440
+nimgrp	setalign	cattag/auto/htmlAttributes.html#setAlign-procs-all	proc		83
+nimgrp	setplaysinline	cattag/auto/htmlAttributes.html#setPlaysinline-procs-all	proc		1443
+nimgrp	setdownload	cattag/auto/htmlAttributes.html#setDownload-procs-all	proc		644
+nimgrp	setusemap	cattag/auto/htmlAttributes.html#setUsemap-procs-all	proc		1987
+nimgrp	setselected	cattag/auto/htmlAttributes.html#setSelected-procs-all	proc		1664
+nimgrp	setcontent	cattag/auto/htmlAttributes.html#setContent-procs-all	proc		406
+nimgrp	settranslate	cattag/auto/htmlAttributes.html#setTranslate-procs-all	proc		1953
+nimgrp	setformenctype	cattag/auto/htmlAttributes.html#setFormenctype-procs-all	proc		780
+nimgrp	setformaction	cattag/auto/htmlAttributes.html#setFormaction-procs-all	proc		763
+nimgrp	setreferrerpolicy	cattag/auto/htmlAttributes.html#setReferrerpolicy-procs-all	proc		1511
+nimgrp	setacceptcharset	cattag/auto/htmlAttributes.html#setAcceptCharset-procs-all	proc		32
+nimgrp	setbgcolor	cattag/auto/htmlAttributes.html#setBgcolor-procs-all	proc		236
+nimgrp	sethref	cattag/auto/htmlAttributes.html#setHref-procs-all	proc		916
+nimgrp	setcoords	cattag/auto/htmlAttributes.html#setCoords-procs-all	proc		457
+nimgrp	setform	cattag/auto/htmlAttributes.html#setForm-procs-all	proc		746
+nimgrp	setid	cattag/auto/htmlAttributes.html#setId-procs-all	proc		967
+nimgrp	setping	cattag/auto/htmlAttributes.html#setPing-procs-all	proc		1409
+nimgrp	setdatetime	cattag/auto/htmlAttributes.html#setDatetime-procs-all	proc		525
+nimgrp	setrequired	cattag/auto/htmlAttributes.html#setRequired-procs-all	proc		1545
+nimgrp	setlanguage	cattag/auto/htmlAttributes.html#setLanguage-procs-all	proc		1103
+nimgrp	setitemprop	cattag/auto/htmlAttributes.html#setItemprop-procs-all	proc		1035
+heading	HTML Attributes	cattag/auto/htmlAttributes.html#html-attributes	 HTML Attributes		0

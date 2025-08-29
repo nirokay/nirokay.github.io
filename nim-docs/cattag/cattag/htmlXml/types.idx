@@ -1,0 +1,11 @@
+nimTitle	types	cattag/htmlXml/types.html	module cattag/htmlXml/types		0
+nim	Attribute	cattag/htmlXml/types.html#Attribute	object Attribute		5
+nim	typeElement	cattag/htmlXml/types.html#typeElement	DocumentElementType.typeElement		10
+nim	typeComment	cattag/htmlXml/types.html#typeComment	DocumentElementType.typeComment		10
+nim	typeRawText	cattag/htmlXml/types.html#typeRawText	DocumentElementType.typeRawText		10
+nim	DocumentElementType	cattag/htmlXml/types.html#DocumentElementType	enum DocumentElementType		10
+nim	HtmlElement	cattag/htmlXml/types.html#HtmlElement	object HtmlElement		13
+nim	XmlElement	cattag/htmlXml/types.html#XmlElement	object XmlElement		24
+nim	XmlProlog	cattag/htmlXml/types.html#XmlProlog	type XmlProlog		36
+nim	HtmlDocument	cattag/htmlXml/types.html#HtmlDocument	object HtmlDocument		41
+nim	XmlDocument	cattag/htmlXml/types.html#XmlDocument	object XmlDocument		44

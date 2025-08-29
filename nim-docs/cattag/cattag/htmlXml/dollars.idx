@@ -1,0 +1,15 @@
+nimTitle	dollars	cattag/htmlXml/dollars.html	module cattag/htmlXml/dollars		0
+nim	`$`	cattag/htmlXml/dollars.html#$,Attribute,bool	proc `$`(attribute: Attribute; generateEmptyValue: bool = false): string		31
+nim	`$`	cattag/htmlXml/dollars.html#$,seq[Attribute],bool	proc `$`(attributes: seq[Attribute]; generateEmptyValue: bool = false): string		37
+nim	`$`	cattag/htmlXml/dollars.html#$,HtmlElement	proc `$`(element: HtmlElement): string		113
+nim	`$`	cattag/htmlXml/dollars.html#$,XmlElement	proc `$`(element: XmlElement): string		116
+nim	`$`	cattag/htmlXml/dollars.html#$,seq[HtmlElement]	proc `$`(elements: seq[HtmlElement]): string		120
+nim	`$`	cattag/htmlXml/dollars.html#$,seq[XmlElement]	proc `$`(elements: seq[XmlElement]): string		123
+nim	`$`	cattag/htmlXml/dollars.html#$,HtmlDocument	proc `$`(document: HtmlDocument): string		128
+nim	`$`	cattag/htmlXml/dollars.html#$,XmlDocument	proc `$`(document: XmlDocument): string		144
+nim	writeFile	cattag/htmlXml/dollars.html#writeFile,HtmlDocument,string	proc writeFile(document`gensym68: HtmlDocument; filename`gensym68: string)		156
+nim	writeFile	cattag/htmlXml/dollars.html#writeFile,HtmlDocument	proc writeFile(document`gensym68: HtmlDocument)		168
+nim	writeFile	cattag/htmlXml/dollars.html#writeFile,XmlDocument,string	proc writeFile(document`gensym71: XmlDocument; filename`gensym71: string)		156
+nim	writeFile	cattag/htmlXml/dollars.html#writeFile,XmlDocument	proc writeFile(document`gensym71: XmlDocument)		169
+nimgrp	writefile	cattag/htmlXml/dollars.html#writeFile-procs-all	proc		156
+nimgrp	$	cattag/htmlXml/dollars.html#$-procs-all	proc		31

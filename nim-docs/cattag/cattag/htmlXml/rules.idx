@@ -1,0 +1,2 @@
+nimTitle	rules	cattag/htmlXml/rules.html	module cattag/htmlXml/rules		0
+nim	htmlVoidElementTags	cattag/htmlXml/rules.html#htmlVoidElementTags	const htmlVoidElementTags		2

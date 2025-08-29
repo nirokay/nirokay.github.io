@@ -1,0 +1,134 @@
+nimTitle	functions	cattag/css/manual/functions.html	module cattag/css/manual/functions		0
+nim	cssAbs	cattag/css/manual/functions.html#cssAbs,varargs[string]	proc cssAbs(args: varargs[string]): CssPropertyValue		11
+nim	cssAcos	cattag/css/manual/functions.html#cssAcos,varargs[string]	proc cssAcos(args: varargs[string]): CssPropertyValue		13
+nim	cssAnchorSize	cattag/css/manual/functions.html#cssAnchorSize,varargs[string]	proc cssAnchorSize(args: varargs[string]): CssPropertyValue		15
+nim	cssAnchor	cattag/css/manual/functions.html#cssAnchor,varargs[string]	proc cssAnchor(args: varargs[string]): CssPropertyValue		17
+nim	cssAsin	cattag/css/manual/functions.html#cssAsin,varargs[string]	proc cssAsin(args: varargs[string]): CssPropertyValue		19
+nim	cssAtan	cattag/css/manual/functions.html#cssAtan,varargs[string]	proc cssAtan(args: varargs[string]): CssPropertyValue		21
+nim	cssAtan2	cattag/css/manual/functions.html#cssAtan2,varargs[string]	proc cssAtan2(args: varargs[string]): CssPropertyValue		23
+nim	cssAttr	cattag/css/manual/functions.html#cssAttr,varargs[string]	proc cssAttr(args: varargs[string]): CssPropertyValue		25
+nim	cssBlur	cattag/css/manual/functions.html#cssBlur	proc cssBlur(radius: string | CssLength): CssFilterFunction		27
+nim	cssBrightness	cattag/css/manual/functions.html#cssBrightness	proc cssBrightness(amount: float | percent): CssFilterFunction		30
+nim	cssCalcSize	cattag/css/manual/functions.html#cssCalcSize,varargs[string]	proc cssCalcSize(args: varargs[string]): CssPropertyValue		32
+nim	cssCalc	cattag/css/manual/functions.html#cssCalc,varargs[string]	proc cssCalc(args: varargs[string]): CssPropertyValue		34
+nim	cssCircle	cattag/css/manual/functions.html#cssCircle,varargs[string]	proc cssCircle(args: varargs[string]): CssPropertyValue		36
+nim	cssClamp	cattag/css/manual/functions.html#cssClamp,varargs[string]	proc cssClamp(args: varargs[string]): CssPropertyValue		38
+nim	cssColorMix	cattag/css/manual/functions.html#cssColorMix,varargs[string]	proc cssColorMix(args: varargs[string]): CssPropertyValue		40
+nim	cssColor	cattag/css/manual/functions.html#cssColor,CssColorSpace,,,	proc cssColor(colorSpace: CssColorSpace; a: float | percent; b: float | percent;\n         c: float | percent): CssColor		42
+nim	cssColor	cattag/css/manual/functions.html#cssColor,CssColorSpace,,,,	proc cssColor(colorSpace: CssColorSpace; a: float | percent; b: float | percent;\n         c: float | percent; A: float | percent): CssColor		43
+nim	cssConicGradient	cattag/css/manual/functions.html#cssConicGradient,varargs[string]	proc cssConicGradient(args: varargs[string]): CssGradient		45
+nim	cssContrast	cattag/css/manual/functions.html#cssContrast	proc cssContrast(amount: float | percent): CssFilterFunction		48
+nim	cssCos	cattag/css/manual/functions.html#cssCos	proc cssCos(number: float | percent | string): CssPropertyValue		50
+nim	cssCounter	cattag/css/manual/functions.html#cssCounter,varargs[string]	proc cssCounter(args: varargs[string]): CssPropertyValue		52
+nim	cssCounters	cattag/css/manual/functions.html#cssCounters,varargs[string]	proc cssCounters(args: varargs[string]): CssPropertyValue		54
+nim	cssCrossFade	cattag/css/manual/functions.html#cssCrossFade,varargs[string]	proc cssCrossFade(args: varargs[string]): CssPropertyValue		56
+nim	cssCubicBezier	cattag/css/manual/functions.html#cssCubicBezier,float,float,float,float	proc cssCubicBezier(x1, y1, x2, y2: float): CssCubicBezierEasingFunction		58
+nim	cssDeviceCmyk	cattag/css/manual/functions.html#cssDeviceCmyk,,,,	proc cssDeviceCmyk(c: float | percent | string; m: float | percent | string;\n              y: float | percent | string; k: float | percent | string): CssPropertyValue		60
+nim	cssDeviceCmyk	cattag/css/manual/functions.html#cssDeviceCmyk,,,,,	proc cssDeviceCmyk(c: float | percent | string; m: float | percent | string;\n              y: float | percent | string; k: float | percent | string;\n              a: float | percent): CssPropertyValue		61
+nim	cssDeviceCmyk	cattag/css/manual/functions.html#cssDeviceCmyk,,,,,string	proc cssDeviceCmyk(c: float | percent | string; m: float | percent | string;\n              y: float | percent | string; k: float | percent | string;\n              fallback: string): CssPropertyValue		62
+nim	cssDeviceCmyk	cattag/css/manual/functions.html#cssDeviceCmyk,,,,,,string	proc cssDeviceCmyk(c: float | percent | string; m: float | percent | string;\n              y: float | percent | string; k: float | percent | string;\n              a: float | percent; fallback: string): CssPropertyValue		63
+nim	cssDropShadow	cattag/css/manual/functions.html#cssDropShadow,varargs[string]	proc cssDropShadow(args: varargs[string]): CssFilterFunction		65
+nim	cssElement	cattag/css/manual/functions.html#cssElement,string	proc cssElement(id: string): CssPropertyValue		67
+nim	cssEllipse	cattag/css/manual/functions.html#cssEllipse,varargs[string]	proc cssEllipse(args: varargs[string]): CssPropertyValue		69
+nim	cssEnv	cattag/css/manual/functions.html#cssEnv,string	proc cssEnv(value: string): CssPropertyValue		71
+nim	cssEnv	cattag/css/manual/functions.html#cssEnv,string,string	proc cssEnv(value, fallback: string): CssPropertyValue		72
+nim	cssExp	cattag/css/manual/functions.html#cssExp,SomeNumber	proc cssExp(number: SomeNumber): CssPropertyValue		74
+nim	cssFitContent	cattag/css/manual/functions.html#cssFitContent,string	proc cssFitContent(size: string): CssPropertyValue		76
+nim	cssGrayscale	cattag/css/manual/functions.html#cssGrayscale	proc cssGrayscale(value: float | percent): CssFilterFunction		79
+nim	cssGreyscale	cattag/css/manual/functions.html#cssGreyscale	proc cssGreyscale(value: float | percent): CssFilterFunction		80
+nim	cssHsl	cattag/css/manual/functions.html#cssHsl,,,	proc cssHsl(h: float | percent | string; s: float | percent | string;\n       l: float | percent | string): CssPropertyValue		82
+nim	cssHsl	cattag/css/manual/functions.html#cssHsl,,,,	proc cssHsl(h: float | percent | string; s: float | percent | string;\n       l: float | percent | string; a: float | percent | string): CssPropertyValue		83
+nim	cssHueRotate	cattag/css/manual/functions.html#cssHueRotate	proc cssHueRotate(angle: string | CssAnglePercentage): CssFilterFunction		85
+nim	cssHwb	cattag/css/manual/functions.html#cssHwb,,,	proc cssHwb(h: float | percent | string; w: float | percent | string;\n       b: float | percent | string): CssPropertyValue		87
+nim	cssHwb	cattag/css/manual/functions.html#cssHwb,,,,	proc cssHwb(h: float | percent | string; w: float | percent | string;\n       b: float | percent | string; a: float | percent | string): CssPropertyValue		88
+nim	cssHypot	cattag/css/manual/functions.html#cssHypot,varargs[string]	proc cssHypot(args: varargs[string]): CssPropertyValue		90
+nim	cssImageSet	cattag/css/manual/functions.html#cssImageSet,varargs[string]	proc cssImageSet(args: varargs[string]): CssPropertyValue		92
+nim	cssImage	cattag/css/manual/functions.html#cssImage,varargs[string]	proc cssImage(args: varargs[string]): CssPropertyValue		94
+nim	cssInset	cattag/css/manual/functions.html#cssInset,varargs[string]	proc cssInset(args: varargs[string]): CssPropertyValue		96
+nim	cssInvert	cattag/css/manual/functions.html#cssInvert	proc cssInvert(value: float | percent): CssFilterFunction		99
+nim	cssLab	cattag/css/manual/functions.html#cssLab,,,	proc cssLab(L: float | percent | string; a: float | percent | string;\n       b: float | percent | string): CssPropertyValue		102
+nim	cssLab	cattag/css/manual/functions.html#cssLab,,,,	proc cssLab(L: float | percent | string; a: float | percent | string;\n       b: float | percent | string; A: float | percent | string): CssPropertyValue		103
+nim	cssLayer	cattag/css/manual/functions.html#cssLayer,string	proc cssLayer(name: string): CssPropertyValue		105
+nim	cssLch	cattag/css/manual/functions.html#cssLch,,,	proc cssLch(l: float | percent | string; c: float | percent | string;\n       h: float | percent | string): CssPropertyValue		107
+nim	cssLch	cattag/css/manual/functions.html#cssLch,,,,	proc cssLch(l: float | percent | string; c: float | percent | string;\n       h: float | percent | string; a: float | percent | string): CssPropertyValue		108
+nim	cssLightDark	cattag/css/manual/functions.html#cssLightDark,string,string	proc cssLightDark(light, dark: string): CssPropertyValue		110
+nim	cssLinearGradient	cattag/css/manual/functions.html#cssLinearGradient,CssAngle,varargs[CssColor]	proc cssLinearGradient(angle: CssAngle; colors: varargs[CssColor]): CssGradient		112
+nim	cssLinear	cattag/css/manual/functions.html#cssLinear,varargs[T]	proc cssLinear[T: SomeNumber](args: varargs[T]): CssLinearEasingFunction		114
+nim	cssLog	cattag/css/manual/functions.html#cssLog,SomeNumber	proc cssLog(value: SomeNumber): CssPropertyValue		116
+nim	cssLog	cattag/css/manual/functions.html#cssLog,SomeNumber,SomeNumber	proc cssLog(value, base: SomeNumber): CssPropertyValue		117
+nim	cssMatrix	cattag/css/manual/functions.html#cssMatrix,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc cssMatrix(a, b, c, d, tx, ty: SomeNumber): CssPropertyValue		119
+nim	cssMatrix3d	cattag/css/manual/functions.html#cssMatrix3d,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc cssMatrix3d(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4: SomeNumber): CssPropertyValue		121
+nim	cssMax	cattag/css/manual/functions.html#cssMax,,	proc cssMax(x, y: string | SomeNumber): CssPropertyValue		123
+nim	cssMin	cattag/css/manual/functions.html#cssMin,,	proc cssMin(x, y: string | SomeNumber): CssPropertyValue		125
+nim	cssMinmax	cattag/css/manual/functions.html#cssMinmax,,	proc cssMinmax(x, y: string | SomeNumber): CssPropertyValue		127
+nim	cssMod	cattag/css/manual/functions.html#cssMod,,	proc cssMod(dividend: string | SomeNumber; divisor: string | SomeNumber): CssPropertyValue		129
+nim	cssOklab	cattag/css/manual/functions.html#cssOklab,,,	proc cssOklab(L: float | string | percent; a: float | string | percent;\n         b: float | string | percent): CssPropertyValue		131
+nim	cssOklab	cattag/css/manual/functions.html#cssOklab,,,,	proc cssOklab(L: float | string | percent; a: float | string | percent;\n         b: float | string | percent; A: float | string | percent): CssPropertyValue		132
+nim	cssOklch	cattag/css/manual/functions.html#cssOklch,,,	proc cssOklch(l: float | string | percent; c: float | string | percent;\n         h: float | string | percent): CssPropertyValue		134
+nim	cssOklch	cattag/css/manual/functions.html#cssOklch,,,,	proc cssOklch(l: float | string | percent; c: float | string | percent;\n         h: float | string | percent; a: float | string | percent): CssPropertyValue		135
+nim	cssOpacity	cattag/css/manual/functions.html#cssOpacity	proc cssOpacity(value: float | percent): CssFilterFunction		137
+nim	cssPaint	cattag/css/manual/functions.html#cssPaint,string,varargs[string]	proc cssPaint(worklet: string; args: varargs[string]): CssPropertyValue		139
+nim	cssPaletteMix	cattag/css/manual/functions.html#cssPaletteMix,varargs[string]	proc cssPaletteMix(args: varargs[string]): CssPropertyValue		141
+nim	cssPath	cattag/css/manual/functions.html#cssPath,varargs[string]	proc cssPath(args: varargs[string]): CssPropertyValue		143
+nim	cssPerspective	cattag/css/manual/functions.html#cssPerspective	proc cssPerspective(value: string | SomeNumber): CssPropertyValue		145
+nim	cssPolygon	cattag/css/manual/functions.html#cssPolygon,varargs[array[,]]	proc cssPolygon[T: SomeNumber](args: varargs[array[2, string | T]]): CssPropertyValue		147
+nim	cssPow	cattag/css/manual/functions.html#cssPow,,	proc cssPow(base: string | SomeNumber; exponent: string | SomeNumber): CssPropertyValue		153
+nim	cssRadialGradient	cattag/css/manual/functions.html#cssRadialGradient,varargs[string]	proc cssRadialGradient(args: varargs[string]): CssGradient		155
+nim	cssRay	cattag/css/manual/functions.html#cssRay,varargs[string]	proc cssRay(args: varargs[string]): CssPropertyValue		157
+nim	cssRect	cattag/css/manual/functions.html#cssRect,varargs[string]	proc cssRect(args: varargs[string]): CssPropertyValue		159
+nim	cssRem	cattag/css/manual/functions.html#cssRem,,	proc cssRem(dividend: string | SomeNumber; divisor: string | SomeNumber): CssPropertyValue		161
+nim	cssRepeat	cattag/css/manual/functions.html#cssRepeat,int,varargs[string]	proc cssRepeat(amount: int; args: varargs[string]): CssPropertyValue		163
+nim	cssRepeatingConicGradient	cattag/css/manual/functions.html#cssRepeatingConicGradient,varargs[string]	proc cssRepeatingConicGradient(args: varargs[string]): CssGradient		165
+nim	cssRepeatingLinearGradient	cattag/css/manual/functions.html#cssRepeatingLinearGradient,varargs[string]	proc cssRepeatingLinearGradient(args: varargs[string]): CssGradient		167
+nim	cssRepeatingRadialGradient	cattag/css/manual/functions.html#cssRepeatingRadialGradient,varargs[string]	proc cssRepeatingRadialGradient(args: varargs[string]): CssGradient		169
+nim	cssRgb	cattag/css/manual/functions.html#cssRgb,,,	proc cssRgb(r: int | float | string | percent; g: int | float | string | percent;\n       b: int | float | string | percent): CssColor		171
+nim	cssRgb	cattag/css/manual/functions.html#cssRgb,,,,	proc cssRgb(r: int | float | string | percent; g: int | float | string | percent;\n       b: int | float | string | percent; a: float | string | percent): CssColor		172
+nim	cssRotate	cattag/css/manual/functions.html#cssRotate	proc cssRotate(value: string | CssAngle): CssTransformFunction		174
+nim	cssRotate3d	cattag/css/manual/functions.html#cssRotate3d,,,,	proc cssRotate3d(x: string | CssAngle; y: string | CssAngle; z: string | CssAngle;\n            a: string | CssAngle): CssTransformFunction		176
+nim	cssRotateX	cattag/css/manual/functions.html#cssRotateX	proc cssRotateX(value: string | CssAngle): CssTransformFunction		178
+nim	cssRotateY	cattag/css/manual/functions.html#cssRotateY	proc cssRotateY(value: string | CssAngle): CssTransformFunction		180
+nim	cssRotateZ	cattag/css/manual/functions.html#cssRotateZ	proc cssRotateZ(value: string | CssAngle): CssTransformFunction		182
+nim	cssRound	cattag/css/manual/functions.html#cssRound,varargs[string]	proc cssRound(args: varargs[string]): CssPropertyValue		184
+nim	cssSaturate	cattag/css/manual/functions.html#cssSaturate	proc cssSaturate(value: string | SomeNumber | percent): CssFilterFunction		186
+nim	cssScale	cattag/css/manual/functions.html#cssScale,SomeNumber	proc cssScale(value: SomeNumber): CssPropertyValue		188
+nim	cssScale	cattag/css/manual/functions.html#cssScale,SomeNumber,SomeNumber	proc cssScale(x, y: SomeNumber): CssPropertyValue		189
+nim	cssScale3d	cattag/css/manual/functions.html#cssScale3d,SomeNumber,SomeNumber,SomeNumber	proc cssScale3d(x, y, z: SomeNumber): CssPropertyValue		191
+nim	cssScaleX	cattag/css/manual/functions.html#cssScaleX,SomeNumber	proc cssScaleX(value: SomeNumber): CssPropertyValue		193
+nim	cssScaleY	cattag/css/manual/functions.html#cssScaleY,SomeNumber	proc cssScaleY(value: SomeNumber): CssPropertyValue		195
+nim	cssScaleZ	cattag/css/manual/functions.html#cssScaleZ,SomeNumber	proc cssScaleZ(value: SomeNumber): CssPropertyValue		197
+nim	cssScroll	cattag/css/manual/functions.html#cssScroll,varargs[string]	proc cssScroll(args: varargs[string]): CssPropertyValue		199
+nim	cssSepia	cattag/css/manual/functions.html#cssSepia	proc cssSepia(value: float | percent): CssFilterFunction		201
+nim	cssShape	cattag/css/manual/functions.html#cssShape,varargs[string]	proc cssShape(args: varargs[string]): CssPropertyValue		203
+nim	cssSign	cattag/css/manual/functions.html#cssSign	proc cssSign(number: string | SomeNumber): CssPropertyValue		205
+nim	cssSin	cattag/css/manual/functions.html#cssSin	proc cssSin(value: string | SomeNumber | CssAngle): CssPropertyValue		207
+nim	cssSkew	cattag/css/manual/functions.html#cssSkew	proc cssSkew(value: string | CssAngle): CssPropertyValue		209
+nim	cssSkew	cattag/css/manual/functions.html#cssSkew,,	proc cssSkew(x: string | CssAngle; y: string | CssAngle): CssPropertyValue		210
+nim	cssSkewX	cattag/css/manual/functions.html#cssSkewX	proc cssSkewX(value: string | CssAngle): CssPropertyValue		212
+nim	cssSkewY	cattag/css/manual/functions.html#cssSkewY	proc cssSkewY(value: string | CssAngle): CssPropertyValue		214
+nim	cssSrc	cattag/css/manual/functions.html#cssSrc,string	proc cssSrc(src: string): CssSrc		216
+nim	cssSqrt	cattag/css/manual/functions.html#cssSqrt	proc cssSqrt(value: string | SomeNumber): CssPropertyValue		218
+nim	cssSteps	cattag/css/manual/functions.html#cssSteps,int,string	proc cssSteps(amount: int; position: string): CssStepEasingFunction		220
+nim	cssSymbols	cattag/css/manual/functions.html#cssSymbols,string,varargs[string]	proc cssSymbols(symbolsType: string; args: varargs[string]): CssPropertyValue		222
+nim	cssTan	cattag/css/manual/functions.html#cssTan	proc cssTan(angle: string | SomeNumber | CssAngle): CssPropertyValue		228
+nim	cssTranslate	cattag/css/manual/functions.html#cssTranslate	proc cssTranslate(value: string | SomeNumber | CssAngle): CssTransformFunction		230
+nim	cssTranslate3d	cattag/css/manual/functions.html#cssTranslate3d,,,	proc cssTranslate3d(x: string | SomeNumber | CssAngle;\n               y: string | SomeNumber | CssAngle;\n               z: string | SomeNumber | CssAngle): CssTransformFunction		232
+nim	cssTranslateX	cattag/css/manual/functions.html#cssTranslateX	proc cssTranslateX(value: string | SomeNumber | CssAngle): CssTransformFunction		234
+nim	cssTranslateY	cattag/css/manual/functions.html#cssTranslateY	proc cssTranslateY(value: string | SomeNumber | CssAngle): CssTransformFunction		236
+nim	cssTranslateZ	cattag/css/manual/functions.html#cssTranslateZ	proc cssTranslateZ(value: string | SomeNumber | CssAngle): CssTransformFunction		238
+nim	cssUrl	cattag/css/manual/functions.html#cssUrl,string	proc cssUrl(path: string): CssUrl		240
+nim	cssVar	cattag/css/manual/functions.html#cssVar,string	proc cssVar(variable: string): CssPropertyValue		242
+nim	cssView	cattag/css/manual/functions.html#cssView,varargs[string]	proc cssView(args: varargs[string]): CssPropertyValue		247
+nim	cssXywh	cattag/css/manual/functions.html#cssXywh,varargs[string]	proc cssXywh(args: varargs[string]): CssPropertyValue		249
+nimgrp	cssoklch	cattag/css/manual/functions.html#cssOklch-procs-all	proc		134
+nimgrp	csshwb	cattag/css/manual/functions.html#cssHwb-procs-all	proc		87
+nimgrp	csshsl	cattag/css/manual/functions.html#cssHsl-procs-all	proc		82
+nimgrp	csslch	cattag/css/manual/functions.html#cssLch-procs-all	proc		107
+nimgrp	csslog	cattag/css/manual/functions.html#cssLog-procs-all	proc		116
+nimgrp	cssskew	cattag/css/manual/functions.html#cssSkew-procs-all	proc		209
+nimgrp	csslab	cattag/css/manual/functions.html#cssLab-procs-all	proc		102
+nimgrp	cssdevicecmyk	cattag/css/manual/functions.html#cssDeviceCmyk-procs-all	proc		60
+nimgrp	cssscale	cattag/css/manual/functions.html#cssScale-procs-all	proc		188
+nimgrp	csscolor	cattag/css/manual/functions.html#cssColor-procs-all	proc		42
+nimgrp	cssoklab	cattag/css/manual/functions.html#cssOklab-procs-all	proc		131
+nimgrp	cssenv	cattag/css/manual/functions.html#cssEnv-procs-all	proc		71
+nimgrp	cssrgb	cattag/css/manual/functions.html#cssRgb-procs-all	proc		171

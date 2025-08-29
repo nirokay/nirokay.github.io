@@ -1,0 +1,9 @@
+nimTitle	logger	cattag/logger.html	module cattag/logger		0
+nim	cattagLogToConsole	cattag/logger.html#cattagLogToConsole	const cattagLogToConsole		4
+nim	cattagLogToFile	cattag/logger.html#cattagLogToFile	const cattagLogToFile		5
+nim	cattagLogFileDirectory	cattag/logger.html#cattagLogFileDirectory	const cattagLogFileDirectory		7
+nim	cattagLogFileName	cattag/logger.html#cattagLogFileName	const cattagLogFileName		8
+nim	logFatal	cattag/logger.html#logFatal,varargs[string]	proc logFatal(msg: varargs[string])		38
+nim	logError	cattag/logger.html#logError,varargs[string]	proc logError(msg: varargs[string])		42
+nim	logWarning	cattag/logger.html#logWarning,varargs[string]	proc logWarning(msg: varargs[string])		45
+nim	logInfo	cattag/logger.html#logInfo,varargs[string]	proc logInfo(msg: varargs[string])		48

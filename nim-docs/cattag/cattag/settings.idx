@@ -1,0 +1,9 @@
+nimTitle	settings	cattag/settings.html	module cattag/settings		0
+nim	cattagOutputDirectory	cattag/settings.html#cattagOutputDirectory	const cattagOutputDirectory		3
+nim	cattagHtmlXmlAttributeQuote	cattag/settings.html#cattagHtmlXmlAttributeQuote	const cattagHtmlXmlAttributeQuote		6
+nim	cattagHtmlXmlSortAttributes	cattag/settings.html#cattagHtmlXmlSortAttributes	const cattagHtmlXmlSortAttributes		7
+nim	cattagHtmlXmlIndent	cattag/settings.html#cattagHtmlXmlIndent	const cattagHtmlXmlIndent		8
+nim	cattagHtmlTrailingSlash	cattag/settings.html#cattagHtmlTrailingSlash	const cattagHtmlTrailingSlash		9
+nim	cattagXmlSelfCloseOnEmptyChildren	cattag/settings.html#cattagXmlSelfCloseOnEmptyChildren	const cattagXmlSelfCloseOnEmptyChildren		10
+nim	cattagHtmlGenerateEmptyAttributeValue	cattag/settings.html#cattagHtmlGenerateEmptyAttributeValue	const cattagHtmlGenerateEmptyAttributeValue		11
+nim	cattagCssIndent	cattag/settings.html#cattagCssIndent	const cattagCssIndent		14

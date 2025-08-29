@@ -1,0 +1,10 @@
+nimTitle	dollars	cattag/css/dollars.html	module cattag/css/dollars		0
+nim	`$`	cattag/css/dollars.html#$,CssElement,bool	proc `$`(element: CssElement; condensed: bool = false): string		6
+nim	`$`	cattag/css/dollars.html#$,seq[CssElement],bool	proc `$`(elements: seq[CssElement]; condensed: bool = false): string		7
+nim	`$`	cattag/css/dollars.html#$,CssElementProperty,bool	proc `$`(property: CssElementProperty; condensed: bool = false): string		10
+nim	`$`	cattag/css/dollars.html#$,seq[CssElementProperty],bool	proc `$`(properties: seq[CssElementProperty]; condensed: bool = false): string		19
+nim	`$`	cattag/css/dollars.html#$,CssStylesheet	proc `$`(stylesheet: CssStylesheet): string		74
+nim	writeFile	cattag/css/dollars.html#writeFile,CssStylesheet,string	proc writeFile(stylesheet: CssStylesheet; filename: string)		79
+nim	writeFile	cattag/css/dollars.html#writeFile,CssStylesheet	proc writeFile(stylesheet: CssStylesheet)		84
+nimgrp	writefile	cattag/css/dollars.html#writeFile-procs-all	proc		79
+nimgrp	$	cattag/css/dollars.html#$-procs-all	proc		6

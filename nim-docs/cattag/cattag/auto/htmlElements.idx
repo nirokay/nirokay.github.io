@@ -1,0 +1,1319 @@
+nimTitle	htmlElements	cattag/auto/htmlElements.html	module cattag/auto/htmlElements		0
+nim	a	cattag/auto/htmlElements.html#a	proc a(): HtmlElement		11
+nim	a	cattag/auto/htmlElements.html#a,seq[Attribute]	proc a(attributes: seq[Attribute]): HtmlElement		15
+nim	a	cattag/auto/htmlElements.html#a,seq[Attribute],seq[HtmlElement]	proc a(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		21
+nim	a	cattag/auto/htmlElements.html#a,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc a(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		25
+nim	a	cattag/auto/htmlElements.html#a,seq[HtmlElement]	proc a(children: seq[HtmlElement]): HtmlElement		30
+nim	a	cattag/auto/htmlElements.html#a,HtmlElement,varargs[HtmlElement]	proc a(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		34
+nim	a	cattag/auto/htmlElements.html#a,seq[Attribute],seq[string]	proc a(attributes: seq[Attribute]; content: seq[string]): HtmlElement		39
+nim	a	cattag/auto/htmlElements.html#a,seq[Attribute],string,varargs[string]	proc a(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		43
+nim	a	cattag/auto/htmlElements.html#a,string	proc a(href: string): HtmlElement		49
+nim	a	cattag/auto/htmlElements.html#a,string,seq[HtmlElement]	proc a(href: string; children: seq[HtmlElement]): HtmlElement		55
+nim	a	cattag/auto/htmlElements.html#a,string,HtmlElement,varargs[HtmlElement]	proc a(href: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		59
+nim	a	cattag/auto/htmlElements.html#a,string,seq[string]	proc a(href: string; content: seq[string]): HtmlElement		65
+nim	a	cattag/auto/htmlElements.html#a,string,string,varargs[string]	proc a(href: string; content: string; contents: varargs[string]): HtmlElement		69
+nim	abbr	cattag/auto/htmlElements.html#abbr	proc abbr(): HtmlElement		77
+nim	abbr	cattag/auto/htmlElements.html#abbr,seq[Attribute]	proc abbr(attributes: seq[Attribute]): HtmlElement		81
+nim	abbr	cattag/auto/htmlElements.html#abbr,seq[Attribute],seq[HtmlElement]	proc abbr(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		87
+nim	abbr	cattag/auto/htmlElements.html#abbr,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc abbr(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		91
+nim	abbr	cattag/auto/htmlElements.html#abbr,seq[HtmlElement]	proc abbr(children: seq[HtmlElement]): HtmlElement		96
+nim	abbr	cattag/auto/htmlElements.html#abbr,HtmlElement,varargs[HtmlElement]	proc abbr(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		100
+nim	abbr	cattag/auto/htmlElements.html#abbr,seq[Attribute],seq[string]	proc abbr(attributes: seq[Attribute]; content: seq[string]): HtmlElement		105
+nim	abbr	cattag/auto/htmlElements.html#abbr,seq[Attribute],string,varargs[string]	proc abbr(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		109
+nim	abbr	cattag/auto/htmlElements.html#abbr,string	proc abbr(title: string): HtmlElement		115
+nim	abbr	cattag/auto/htmlElements.html#abbr,string,seq[HtmlElement]	proc abbr(title: string; children: seq[HtmlElement]): HtmlElement		121
+nim	abbr	cattag/auto/htmlElements.html#abbr,string,HtmlElement,varargs[HtmlElement]	proc abbr(title: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		125
+nim	abbr	cattag/auto/htmlElements.html#abbr,string,seq[string]	proc abbr(title: string; content: seq[string]): HtmlElement		131
+nim	abbr	cattag/auto/htmlElements.html#abbr,string,string,varargs[string]	proc abbr(title: string; content: string; contents: varargs[string]): HtmlElement		135
+nim	acronym	cattag/auto/htmlElements.html#acronym	proc acronym(): HtmlElement		143
+nim	acronym	cattag/auto/htmlElements.html#acronym,seq[Attribute]	proc acronym(attributes: seq[Attribute]): HtmlElement		147
+nim	acronym	cattag/auto/htmlElements.html#acronym,seq[Attribute],seq[HtmlElement]	proc acronym(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		153
+nim	acronym	cattag/auto/htmlElements.html#acronym,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc acronym(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		157
+nim	acronym	cattag/auto/htmlElements.html#acronym,seq[HtmlElement]	proc acronym(children: seq[HtmlElement]): HtmlElement		162
+nim	acronym	cattag/auto/htmlElements.html#acronym,HtmlElement,varargs[HtmlElement]	proc acronym(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		166
+nim	acronym	cattag/auto/htmlElements.html#acronym,seq[Attribute],seq[string]	proc acronym(attributes: seq[Attribute]; content: seq[string]): HtmlElement		171
+nim	acronym	cattag/auto/htmlElements.html#acronym,seq[Attribute],string,varargs[string]	proc acronym(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		175
+nim	address	cattag/auto/htmlElements.html#address	proc address(): HtmlElement		183
+nim	address	cattag/auto/htmlElements.html#address,seq[Attribute]	proc address(attributes: seq[Attribute]): HtmlElement		187
+nim	address	cattag/auto/htmlElements.html#address,seq[Attribute],seq[HtmlElement]	proc address(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		193
+nim	address	cattag/auto/htmlElements.html#address,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc address(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		197
+nim	address	cattag/auto/htmlElements.html#address,seq[HtmlElement]	proc address(children: seq[HtmlElement]): HtmlElement		202
+nim	address	cattag/auto/htmlElements.html#address,HtmlElement,varargs[HtmlElement]	proc address(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		206
+nim	address	cattag/auto/htmlElements.html#address,seq[Attribute],seq[string]	proc address(attributes: seq[Attribute]; content: seq[string]): HtmlElement		211
+nim	address	cattag/auto/htmlElements.html#address,seq[Attribute],string,varargs[string]	proc address(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		215
+nim	area	cattag/auto/htmlElements.html#area	proc area(): HtmlElement		223
+nim	area	cattag/auto/htmlElements.html#area,seq[Attribute]	proc area(attributes: seq[Attribute]): HtmlElement		227
+nim	article	cattag/auto/htmlElements.html#article	proc article(): HtmlElement		235
+nim	article	cattag/auto/htmlElements.html#article,seq[Attribute]	proc article(attributes: seq[Attribute]): HtmlElement		239
+nim	article	cattag/auto/htmlElements.html#article,seq[Attribute],seq[HtmlElement]	proc article(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		245
+nim	article	cattag/auto/htmlElements.html#article,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc article(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		249
+nim	article	cattag/auto/htmlElements.html#article,seq[HtmlElement]	proc article(children: seq[HtmlElement]): HtmlElement		254
+nim	article	cattag/auto/htmlElements.html#article,HtmlElement,varargs[HtmlElement]	proc article(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		258
+nim	article	cattag/auto/htmlElements.html#article,seq[Attribute],seq[string]	proc article(attributes: seq[Attribute]; content: seq[string]): HtmlElement		263
+nim	article	cattag/auto/htmlElements.html#article,seq[Attribute],string,varargs[string]	proc article(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		267
+nim	aside	cattag/auto/htmlElements.html#aside	proc aside(): HtmlElement		275
+nim	aside	cattag/auto/htmlElements.html#aside,seq[Attribute]	proc aside(attributes: seq[Attribute]): HtmlElement		279
+nim	aside	cattag/auto/htmlElements.html#aside,seq[Attribute],seq[HtmlElement]	proc aside(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		285
+nim	aside	cattag/auto/htmlElements.html#aside,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc aside(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		289
+nim	aside	cattag/auto/htmlElements.html#aside,seq[HtmlElement]	proc aside(children: seq[HtmlElement]): HtmlElement		294
+nim	aside	cattag/auto/htmlElements.html#aside,HtmlElement,varargs[HtmlElement]	proc aside(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		298
+nim	aside	cattag/auto/htmlElements.html#aside,seq[Attribute],seq[string]	proc aside(attributes: seq[Attribute]; content: seq[string]): HtmlElement		303
+nim	aside	cattag/auto/htmlElements.html#aside,seq[Attribute],string,varargs[string]	proc aside(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		307
+nim	audio	cattag/auto/htmlElements.html#audio	proc audio(): HtmlElement		315
+nim	audio	cattag/auto/htmlElements.html#audio,seq[Attribute]	proc audio(attributes: seq[Attribute]): HtmlElement		319
+nim	audio	cattag/auto/htmlElements.html#audio,seq[Attribute],seq[HtmlElement]	proc audio(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		325
+nim	audio	cattag/auto/htmlElements.html#audio,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc audio(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		329
+nim	audio	cattag/auto/htmlElements.html#audio,seq[HtmlElement]	proc audio(children: seq[HtmlElement]): HtmlElement		334
+nim	audio	cattag/auto/htmlElements.html#audio,HtmlElement,varargs[HtmlElement]	proc audio(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		338
+nim	audio	cattag/auto/htmlElements.html#audio,seq[Attribute],seq[string]	proc audio(attributes: seq[Attribute]; content: seq[string]): HtmlElement		343
+nim	audio	cattag/auto/htmlElements.html#audio,seq[Attribute],string,varargs[string]	proc audio(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		347
+nim	audio	cattag/auto/htmlElements.html#audio,string,bool,bool,bool,bool	proc audio(src: string; autoplay: bool; controls: bool = true; loop: bool = false;\n      muted: bool = false): HtmlElement		353
+nim	audio	cattag/auto/htmlElements.html#audio,string,bool,bool,bool,bool,seq[HtmlElement]	proc audio(src: string; autoplay: bool; controls: bool = true; loop: bool = false;\n      muted: bool = false; children: seq[HtmlElement]): HtmlElement		359
+nim	audio	cattag/auto/htmlElements.html#audio,string,bool,bool,bool,bool,HtmlElement,varargs[HtmlElement]	proc audio(src: string; autoplay: bool; controls: bool = true; loop: bool = false;\n      muted: bool = false; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		363
+nim	b	cattag/auto/htmlElements.html#b	proc b(): HtmlElement		371
+nim	b	cattag/auto/htmlElements.html#b,seq[Attribute]	proc b(attributes: seq[Attribute]): HtmlElement		375
+nim	b	cattag/auto/htmlElements.html#b,seq[Attribute],seq[HtmlElement]	proc b(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		381
+nim	b	cattag/auto/htmlElements.html#b,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc b(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		385
+nim	b	cattag/auto/htmlElements.html#b,seq[HtmlElement]	proc b(children: seq[HtmlElement]): HtmlElement		390
+nim	b	cattag/auto/htmlElements.html#b,HtmlElement,varargs[HtmlElement]	proc b(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		394
+nim	b	cattag/auto/htmlElements.html#b,seq[Attribute],seq[string]	proc b(attributes: seq[Attribute]; content: seq[string]): HtmlElement		399
+nim	b	cattag/auto/htmlElements.html#b,seq[Attribute],string,varargs[string]	proc b(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		403
+nim	base	cattag/auto/htmlElements.html#base	proc base(): HtmlElement		411
+nim	base	cattag/auto/htmlElements.html#base,seq[Attribute]	proc base(attributes: seq[Attribute]): HtmlElement		415
+nim	base	cattag/auto/htmlElements.html#base,string	proc base(src: string): HtmlElement		421
+nim	bdi	cattag/auto/htmlElements.html#bdi	proc bdi(): HtmlElement		429
+nim	bdi	cattag/auto/htmlElements.html#bdi,seq[Attribute]	proc bdi(attributes: seq[Attribute]): HtmlElement		433
+nim	bdi	cattag/auto/htmlElements.html#bdi,seq[Attribute],seq[HtmlElement]	proc bdi(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		439
+nim	bdi	cattag/auto/htmlElements.html#bdi,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc bdi(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		443
+nim	bdi	cattag/auto/htmlElements.html#bdi,seq[HtmlElement]	proc bdi(children: seq[HtmlElement]): HtmlElement		448
+nim	bdi	cattag/auto/htmlElements.html#bdi,HtmlElement,varargs[HtmlElement]	proc bdi(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		452
+nim	bdi	cattag/auto/htmlElements.html#bdi,seq[Attribute],seq[string]	proc bdi(attributes: seq[Attribute]; content: seq[string]): HtmlElement		457
+nim	bdi	cattag/auto/htmlElements.html#bdi,seq[Attribute],string,varargs[string]	proc bdi(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		461
+nim	bdo	cattag/auto/htmlElements.html#bdo	proc bdo(): HtmlElement		469
+nim	bdo	cattag/auto/htmlElements.html#bdo,seq[Attribute]	proc bdo(attributes: seq[Attribute]): HtmlElement		473
+nim	bdo	cattag/auto/htmlElements.html#bdo,seq[Attribute],seq[HtmlElement]	proc bdo(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		479
+nim	bdo	cattag/auto/htmlElements.html#bdo,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc bdo(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		483
+nim	bdo	cattag/auto/htmlElements.html#bdo,seq[HtmlElement]	proc bdo(children: seq[HtmlElement]): HtmlElement		488
+nim	bdo	cattag/auto/htmlElements.html#bdo,HtmlElement,varargs[HtmlElement]	proc bdo(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		492
+nim	bdo	cattag/auto/htmlElements.html#bdo,seq[Attribute],seq[string]	proc bdo(attributes: seq[Attribute]; content: seq[string]): HtmlElement		497
+nim	bdo	cattag/auto/htmlElements.html#bdo,seq[Attribute],string,varargs[string]	proc bdo(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		501
+nim	bdo	cattag/auto/htmlElements.html#bdo,string	proc bdo(dir: string): HtmlElement		507
+nim	bdo	cattag/auto/htmlElements.html#bdo,string,seq[HtmlElement]	proc bdo(dir: string; children: seq[HtmlElement]): HtmlElement		513
+nim	bdo	cattag/auto/htmlElements.html#bdo,string,HtmlElement,varargs[HtmlElement]	proc bdo(dir: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		517
+nim	bdo	cattag/auto/htmlElements.html#bdo,string,seq[string]	proc bdo(dir: string; content: seq[string]): HtmlElement		523
+nim	bdo	cattag/auto/htmlElements.html#bdo,string,string,varargs[string]	proc bdo(dir: string; content: string; contents: varargs[string]): HtmlElement		527
+nim	big	cattag/auto/htmlElements.html#big	proc big(): HtmlElement		535
+nim	big	cattag/auto/htmlElements.html#big,seq[Attribute]	proc big(attributes: seq[Attribute]): HtmlElement		539
+nim	big	cattag/auto/htmlElements.html#big,seq[Attribute],seq[HtmlElement]	proc big(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		545
+nim	big	cattag/auto/htmlElements.html#big,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc big(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		549
+nim	big	cattag/auto/htmlElements.html#big,seq[HtmlElement]	proc big(children: seq[HtmlElement]): HtmlElement		554
+nim	big	cattag/auto/htmlElements.html#big,HtmlElement,varargs[HtmlElement]	proc big(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		558
+nim	big	cattag/auto/htmlElements.html#big,seq[Attribute],seq[string]	proc big(attributes: seq[Attribute]; content: seq[string]): HtmlElement		563
+nim	big	cattag/auto/htmlElements.html#big,seq[Attribute],string,varargs[string]	proc big(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		567
+nim	blockquote	cattag/auto/htmlElements.html#blockquote	proc blockquote(): HtmlElement		575
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,seq[Attribute]	proc blockquote(attributes: seq[Attribute]): HtmlElement		579
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,seq[Attribute],seq[HtmlElement]	proc blockquote(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		585
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc blockquote(attributes: seq[Attribute]; child: HtmlElement;\n           children: varargs[HtmlElement]): HtmlElement		589
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,seq[HtmlElement]	proc blockquote(children: seq[HtmlElement]): HtmlElement		594
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,HtmlElement,varargs[HtmlElement]	proc blockquote(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		598
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,seq[Attribute],seq[string]	proc blockquote(attributes: seq[Attribute]; content: seq[string]): HtmlElement		603
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,seq[Attribute],string,varargs[string]	proc blockquote(attributes: seq[Attribute]; content: string;\n           moreContent: varargs[string]): HtmlElement		607
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,string	proc blockquote(cite: string): HtmlElement		613
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,string,seq[HtmlElement]	proc blockquote(cite: string; children: seq[HtmlElement]): HtmlElement		619
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,string,HtmlElement,varargs[HtmlElement]	proc blockquote(cite: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		623
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,string,seq[string]	proc blockquote(cite: string; content: seq[string]): HtmlElement		629
+nim	blockquote	cattag/auto/htmlElements.html#blockquote,string,string,varargs[string]	proc blockquote(cite: string; content: string; contents: varargs[string]): HtmlElement		633
+nim	body	cattag/auto/htmlElements.html#body	proc body(): HtmlElement		641
+nim	body	cattag/auto/htmlElements.html#body,seq[Attribute]	proc body(attributes: seq[Attribute]): HtmlElement		645
+nim	body	cattag/auto/htmlElements.html#body,seq[Attribute],seq[HtmlElement]	proc body(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		651
+nim	body	cattag/auto/htmlElements.html#body,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc body(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		655
+nim	body	cattag/auto/htmlElements.html#body,seq[HtmlElement]	proc body(children: seq[HtmlElement]): HtmlElement		660
+nim	body	cattag/auto/htmlElements.html#body,HtmlElement,varargs[HtmlElement]	proc body(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		664
+nim	body	cattag/auto/htmlElements.html#body,seq[Attribute],seq[string]	proc body(attributes: seq[Attribute]; content: seq[string]): HtmlElement		669
+nim	body	cattag/auto/htmlElements.html#body,seq[Attribute],string,varargs[string]	proc body(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		673
+nim	br	cattag/auto/htmlElements.html#br	proc br(): HtmlElement		681
+nim	br	cattag/auto/htmlElements.html#br,seq[Attribute]	proc br(attributes: seq[Attribute]): HtmlElement		685
+nim	button	cattag/auto/htmlElements.html#button	proc button(): HtmlElement		693
+nim	button	cattag/auto/htmlElements.html#button,seq[Attribute]	proc button(attributes: seq[Attribute]): HtmlElement		697
+nim	button	cattag/auto/htmlElements.html#button,seq[Attribute],seq[HtmlElement]	proc button(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		703
+nim	button	cattag/auto/htmlElements.html#button,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc button(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		707
+nim	button	cattag/auto/htmlElements.html#button,seq[HtmlElement]	proc button(children: seq[HtmlElement]): HtmlElement		712
+nim	button	cattag/auto/htmlElements.html#button,HtmlElement,varargs[HtmlElement]	proc button(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		716
+nim	button	cattag/auto/htmlElements.html#button,seq[Attribute],seq[string]	proc button(attributes: seq[Attribute]; content: seq[string]): HtmlElement		721
+nim	button	cattag/auto/htmlElements.html#button,seq[Attribute],string,varargs[string]	proc button(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		725
+nim	button	cattag/auto/htmlElements.html#button,string	proc button(type: string): HtmlElement		731
+nim	button	cattag/auto/htmlElements.html#button,string,seq[HtmlElement]	proc button(type: string; children: seq[HtmlElement]): HtmlElement		737
+nim	button	cattag/auto/htmlElements.html#button,string,HtmlElement,varargs[HtmlElement]	proc button(type: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		741
+nim	button	cattag/auto/htmlElements.html#button,string,seq[string]	proc button(type: string; content: seq[string]): HtmlElement		747
+nim	button	cattag/auto/htmlElements.html#button,string,string,varargs[string]	proc button(type: string; content: string; contents: varargs[string]): HtmlElement		751
+nim	button	cattag/auto/htmlElements.html#button,string,string	proc button(type: string; onclick: string): HtmlElement		757
+nim	button	cattag/auto/htmlElements.html#button,string,string,seq[HtmlElement]	proc button(type: string; onclick: string; children: seq[HtmlElement]): HtmlElement		763
+nim	button	cattag/auto/htmlElements.html#button,string,string,HtmlElement,varargs[HtmlElement]	proc button(type: string; onclick: string; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		767
+nim	button	cattag/auto/htmlElements.html#button,string,string,seq[string]	proc button(type: string; onclick: string; content: seq[string]): HtmlElement		773
+nim	button	cattag/auto/htmlElements.html#button,string,string,string,varargs[string]	proc button(type: string; onclick: string; content: string; contents: varargs[string]): HtmlElement		777
+nim	canvas	cattag/auto/htmlElements.html#canvas	proc canvas(): HtmlElement		785
+nim	canvas	cattag/auto/htmlElements.html#canvas,seq[Attribute]	proc canvas(attributes: seq[Attribute]): HtmlElement		789
+nim	canvas	cattag/auto/htmlElements.html#canvas,seq[Attribute],seq[HtmlElement]	proc canvas(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		795
+nim	canvas	cattag/auto/htmlElements.html#canvas,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc canvas(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		799
+nim	canvas	cattag/auto/htmlElements.html#canvas,seq[HtmlElement]	proc canvas(children: seq[HtmlElement]): HtmlElement		804
+nim	canvas	cattag/auto/htmlElements.html#canvas,HtmlElement,varargs[HtmlElement]	proc canvas(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		808
+nim	canvas	cattag/auto/htmlElements.html#canvas,seq[Attribute],seq[string]	proc canvas(attributes: seq[Attribute]; content: seq[string]): HtmlElement		813
+nim	canvas	cattag/auto/htmlElements.html#canvas,seq[Attribute],string,varargs[string]	proc canvas(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		817
+nim	canvas	cattag/auto/htmlElements.html#canvas,string,int,int	proc canvas(id: string; width: int = 300; height: int = 150): HtmlElement		823
+nim	canvas	cattag/auto/htmlElements.html#canvas,string,int,int,seq[HtmlElement]	proc canvas(id: string; width: int = 300; height: int = 150;\n       children: seq[HtmlElement]): HtmlElement		829
+nim	canvas	cattag/auto/htmlElements.html#canvas,string,int,int,HtmlElement,varargs[HtmlElement]	proc canvas(id: string; width: int = 300; height: int = 150; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		833
+nim	canvas	cattag/auto/htmlElements.html#canvas,string,int,int,seq[string]	proc canvas(id: string; width: int = 300; height: int = 150; content: seq[string]): HtmlElement		839
+nim	canvas	cattag/auto/htmlElements.html#canvas,string,int,int,string,varargs[string]	proc canvas(id: string; width: int = 300; height: int = 150; content: string;\n       contents: varargs[string]): HtmlElement		843
+nim	caption	cattag/auto/htmlElements.html#caption	proc caption(): HtmlElement		851
+nim	caption	cattag/auto/htmlElements.html#caption,seq[Attribute]	proc caption(attributes: seq[Attribute]): HtmlElement		855
+nim	caption	cattag/auto/htmlElements.html#caption,seq[Attribute],seq[HtmlElement]	proc caption(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		861
+nim	caption	cattag/auto/htmlElements.html#caption,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc caption(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		865
+nim	caption	cattag/auto/htmlElements.html#caption,seq[HtmlElement]	proc caption(children: seq[HtmlElement]): HtmlElement		870
+nim	caption	cattag/auto/htmlElements.html#caption,HtmlElement,varargs[HtmlElement]	proc caption(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		874
+nim	caption	cattag/auto/htmlElements.html#caption,seq[Attribute],seq[string]	proc caption(attributes: seq[Attribute]; content: seq[string]): HtmlElement		879
+nim	caption	cattag/auto/htmlElements.html#caption,seq[Attribute],string,varargs[string]	proc caption(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		883
+nim	center	cattag/auto/htmlElements.html#center	proc center(): HtmlElement		891
+nim	center	cattag/auto/htmlElements.html#center,seq[Attribute]	proc center(attributes: seq[Attribute]): HtmlElement		895
+nim	center	cattag/auto/htmlElements.html#center,seq[Attribute],seq[HtmlElement]	proc center(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		901
+nim	center	cattag/auto/htmlElements.html#center,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc center(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		905
+nim	center	cattag/auto/htmlElements.html#center,seq[HtmlElement]	proc center(children: seq[HtmlElement]): HtmlElement		910
+nim	center	cattag/auto/htmlElements.html#center,HtmlElement,varargs[HtmlElement]	proc center(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		914
+nim	center	cattag/auto/htmlElements.html#center,seq[Attribute],seq[string]	proc center(attributes: seq[Attribute]; content: seq[string]): HtmlElement		919
+nim	center	cattag/auto/htmlElements.html#center,seq[Attribute],string,varargs[string]	proc center(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		923
+nim	cite	cattag/auto/htmlElements.html#cite	proc cite(): HtmlElement		931
+nim	cite	cattag/auto/htmlElements.html#cite,seq[Attribute]	proc cite(attributes: seq[Attribute]): HtmlElement		935
+nim	cite	cattag/auto/htmlElements.html#cite,seq[Attribute],seq[HtmlElement]	proc cite(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		941
+nim	cite	cattag/auto/htmlElements.html#cite,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc cite(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		945
+nim	cite	cattag/auto/htmlElements.html#cite,seq[HtmlElement]	proc cite(children: seq[HtmlElement]): HtmlElement		950
+nim	cite	cattag/auto/htmlElements.html#cite,HtmlElement,varargs[HtmlElement]	proc cite(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		954
+nim	cite	cattag/auto/htmlElements.html#cite,seq[Attribute],seq[string]	proc cite(attributes: seq[Attribute]; content: seq[string]): HtmlElement		959
+nim	cite	cattag/auto/htmlElements.html#cite,seq[Attribute],string,varargs[string]	proc cite(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		963
+nim	code	cattag/auto/htmlElements.html#code	proc code(): HtmlElement		971
+nim	code	cattag/auto/htmlElements.html#code,seq[Attribute]	proc code(attributes: seq[Attribute]): HtmlElement		975
+nim	code	cattag/auto/htmlElements.html#code,seq[Attribute],seq[HtmlElement]	proc code(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		981
+nim	code	cattag/auto/htmlElements.html#code,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc code(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		985
+nim	code	cattag/auto/htmlElements.html#code,seq[HtmlElement]	proc code(children: seq[HtmlElement]): HtmlElement		990
+nim	code	cattag/auto/htmlElements.html#code,HtmlElement,varargs[HtmlElement]	proc code(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		994
+nim	code	cattag/auto/htmlElements.html#code,seq[Attribute],seq[string]	proc code(attributes: seq[Attribute]; content: seq[string]): HtmlElement		999
+nim	code	cattag/auto/htmlElements.html#code,seq[Attribute],string,varargs[string]	proc code(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1003
+nim	col	cattag/auto/htmlElements.html#col	proc col(): HtmlElement		1011
+nim	col	cattag/auto/htmlElements.html#col,seq[Attribute]	proc col(attributes: seq[Attribute]): HtmlElement		1015
+nim	col	cattag/auto/htmlElements.html#col,int	proc col(span: int): HtmlElement		1021
+nim	colgroup	cattag/auto/htmlElements.html#colgroup	proc colgroup(): HtmlElement		1029
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,seq[Attribute]	proc colgroup(attributes: seq[Attribute]): HtmlElement		1033
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,seq[Attribute],seq[HtmlElement]	proc colgroup(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1039
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc colgroup(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		1043
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,seq[HtmlElement]	proc colgroup(children: seq[HtmlElement]): HtmlElement		1048
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,HtmlElement,varargs[HtmlElement]	proc colgroup(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1052
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,seq[Attribute],seq[string]	proc colgroup(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1057
+nim	colgroup	cattag/auto/htmlElements.html#colgroup,seq[Attribute],string,varargs[string]	proc colgroup(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		1061
+nim	data	cattag/auto/htmlElements.html#data	proc data(): HtmlElement		1069
+nim	data	cattag/auto/htmlElements.html#data,seq[Attribute]	proc data(attributes: seq[Attribute]): HtmlElement		1073
+nim	data	cattag/auto/htmlElements.html#data,seq[Attribute],seq[HtmlElement]	proc data(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1079
+nim	data	cattag/auto/htmlElements.html#data,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc data(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		1083
+nim	data	cattag/auto/htmlElements.html#data,seq[HtmlElement]	proc data(children: seq[HtmlElement]): HtmlElement		1088
+nim	data	cattag/auto/htmlElements.html#data,HtmlElement,varargs[HtmlElement]	proc data(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1092
+nim	data	cattag/auto/htmlElements.html#data,seq[Attribute],seq[string]	proc data(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1097
+nim	data	cattag/auto/htmlElements.html#data,seq[Attribute],string,varargs[string]	proc data(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1101
+nim	data	cattag/auto/htmlElements.html#data_2	proc data(value: string | int): HtmlElement		1107
+nim	data	cattag/auto/htmlElements.html#data,,seq[HtmlElement]	proc data(value: string | int; children: seq[HtmlElement]): HtmlElement		1113
+nim	data	cattag/auto/htmlElements.html#data,,HtmlElement,varargs[HtmlElement]	proc data(value: string | int; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1117
+nim	data	cattag/auto/htmlElements.html#data,,seq[string]	proc data(value: string | int; content: seq[string]): HtmlElement		1123
+nim	data	cattag/auto/htmlElements.html#data,,string,varargs[string]	proc data(value: string | int; content: string; contents: varargs[string]): HtmlElement		1127
+nim	datalist	cattag/auto/htmlElements.html#datalist	proc datalist(): HtmlElement		1135
+nim	datalist	cattag/auto/htmlElements.html#datalist,seq[Attribute]	proc datalist(attributes: seq[Attribute]): HtmlElement		1139
+nim	datalist	cattag/auto/htmlElements.html#datalist,seq[Attribute],seq[HtmlElement]	proc datalist(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1145
+nim	datalist	cattag/auto/htmlElements.html#datalist,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc datalist(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		1149
+nim	datalist	cattag/auto/htmlElements.html#datalist,seq[HtmlElement]	proc datalist(children: seq[HtmlElement]): HtmlElement		1154
+nim	datalist	cattag/auto/htmlElements.html#datalist,HtmlElement,varargs[HtmlElement]	proc datalist(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1158
+nim	datalist	cattag/auto/htmlElements.html#datalist,seq[Attribute],seq[string]	proc datalist(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1163
+nim	datalist	cattag/auto/htmlElements.html#datalist,seq[Attribute],string,varargs[string]	proc datalist(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		1167
+nim	datalist	cattag/auto/htmlElements.html#datalist,string	proc datalist(id: string): HtmlElement		1173
+nim	datalist	cattag/auto/htmlElements.html#datalist,string,seq[HtmlElement]	proc datalist(id: string; children: seq[HtmlElement]): HtmlElement		1179
+nim	datalist	cattag/auto/htmlElements.html#datalist,string,HtmlElement,varargs[HtmlElement]	proc datalist(id: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1183
+nim	dd	cattag/auto/htmlElements.html#dd	proc dd(): HtmlElement		1191
+nim	dd	cattag/auto/htmlElements.html#dd,seq[Attribute]	proc dd(attributes: seq[Attribute]): HtmlElement		1195
+nim	dd	cattag/auto/htmlElements.html#dd,seq[Attribute],seq[HtmlElement]	proc dd(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1201
+nim	dd	cattag/auto/htmlElements.html#dd,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc dd(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		1205
+nim	dd	cattag/auto/htmlElements.html#dd,seq[HtmlElement]	proc dd(children: seq[HtmlElement]): HtmlElement		1210
+nim	dd	cattag/auto/htmlElements.html#dd,HtmlElement,varargs[HtmlElement]	proc dd(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1214
+nim	dd	cattag/auto/htmlElements.html#dd,seq[Attribute],seq[string]	proc dd(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1219
+nim	dd	cattag/auto/htmlElements.html#dd,seq[Attribute],string,varargs[string]	proc dd(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1223
+nim	del	cattag/auto/htmlElements.html#del	proc del(): HtmlElement		1231
+nim	del	cattag/auto/htmlElements.html#del,seq[Attribute]	proc del(attributes: seq[Attribute]): HtmlElement		1235
+nim	del	cattag/auto/htmlElements.html#del,seq[Attribute],seq[HtmlElement]	proc del(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1241
+nim	del	cattag/auto/htmlElements.html#del,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc del(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		1245
+nim	del	cattag/auto/htmlElements.html#del,seq[HtmlElement]	proc del(children: seq[HtmlElement]): HtmlElement		1250
+nim	del	cattag/auto/htmlElements.html#del,HtmlElement,varargs[HtmlElement]	proc del(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1254
+nim	del	cattag/auto/htmlElements.html#del,seq[Attribute],seq[string]	proc del(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1259
+nim	del	cattag/auto/htmlElements.html#del,seq[Attribute],string,varargs[string]	proc del(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1263
+nim	del	cattag/auto/htmlElements.html#del,string	proc del(datetime: string): HtmlElement		1269
+nim	del	cattag/auto/htmlElements.html#del,string,seq[HtmlElement]	proc del(datetime: string; children: seq[HtmlElement]): HtmlElement		1275
+nim	del	cattag/auto/htmlElements.html#del,string,HtmlElement,varargs[HtmlElement]	proc del(datetime: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1279
+nim	del	cattag/auto/htmlElements.html#del,string,seq[string]	proc del(datetime: string; content: seq[string]): HtmlElement		1285
+nim	del	cattag/auto/htmlElements.html#del,string,string,varargs[string]	proc del(datetime: string; content: string; contents: varargs[string]): HtmlElement		1289
+nim	del	cattag/auto/htmlElements.html#del,string,string	proc del(datetime: string; cite: string): HtmlElement		1295
+nim	del	cattag/auto/htmlElements.html#del,string,string,seq[HtmlElement]	proc del(datetime: string; cite: string; children: seq[HtmlElement]): HtmlElement		1301
+nim	del	cattag/auto/htmlElements.html#del,string,string,HtmlElement,varargs[HtmlElement]	proc del(datetime: string; cite: string; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		1305
+nim	del	cattag/auto/htmlElements.html#del,string,string,seq[string]	proc del(datetime: string; cite: string; content: seq[string]): HtmlElement		1311
+nim	del	cattag/auto/htmlElements.html#del,string,string,string,varargs[string]	proc del(datetime: string; cite: string; content: string; contents: varargs[string]): HtmlElement		1315
+nim	details	cattag/auto/htmlElements.html#details	proc details(): HtmlElement		1323
+nim	details	cattag/auto/htmlElements.html#details,seq[Attribute]	proc details(attributes: seq[Attribute]): HtmlElement		1327
+nim	details	cattag/auto/htmlElements.html#details,seq[Attribute],seq[HtmlElement]	proc details(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1333
+nim	details	cattag/auto/htmlElements.html#details,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc details(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		1337
+nim	details	cattag/auto/htmlElements.html#details,seq[HtmlElement]	proc details(children: seq[HtmlElement]): HtmlElement		1342
+nim	details	cattag/auto/htmlElements.html#details,HtmlElement,varargs[HtmlElement]	proc details(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1346
+nim	details	cattag/auto/htmlElements.html#details,seq[Attribute],seq[string]	proc details(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1351
+nim	details	cattag/auto/htmlElements.html#details,seq[Attribute],string,varargs[string]	proc details(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		1355
+nim	details	cattag/auto/htmlElements.html#details,bool	proc details(open: bool): HtmlElement		1361
+nim	details	cattag/auto/htmlElements.html#details,bool,seq[HtmlElement]	proc details(open: bool; children: seq[HtmlElement]): HtmlElement		1367
+nim	details	cattag/auto/htmlElements.html#details,bool,HtmlElement,varargs[HtmlElement]	proc details(open: bool; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1371
+nim	dfn	cattag/auto/htmlElements.html#dfn	proc dfn(): HtmlElement		1379
+nim	dfn	cattag/auto/htmlElements.html#dfn,seq[Attribute]	proc dfn(attributes: seq[Attribute]): HtmlElement		1383
+nim	dfn	cattag/auto/htmlElements.html#dfn,seq[Attribute],seq[HtmlElement]	proc dfn(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1389
+nim	dfn	cattag/auto/htmlElements.html#dfn,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc dfn(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		1393
+nim	dfn	cattag/auto/htmlElements.html#dfn,seq[HtmlElement]	proc dfn(children: seq[HtmlElement]): HtmlElement		1398
+nim	dfn	cattag/auto/htmlElements.html#dfn,HtmlElement,varargs[HtmlElement]	proc dfn(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1402
+nim	dfn	cattag/auto/htmlElements.html#dfn,seq[Attribute],seq[string]	proc dfn(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1407
+nim	dfn	cattag/auto/htmlElements.html#dfn,seq[Attribute],string,varargs[string]	proc dfn(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1411
+nim	dfn	cattag/auto/htmlElements.html#dfn,string	proc dfn(title: string): HtmlElement		1417
+nim	dfn	cattag/auto/htmlElements.html#dfn,string,seq[HtmlElement]	proc dfn(title: string; children: seq[HtmlElement]): HtmlElement		1423
+nim	dfn	cattag/auto/htmlElements.html#dfn,string,HtmlElement,varargs[HtmlElement]	proc dfn(title: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1427
+nim	dfn	cattag/auto/htmlElements.html#dfn,string,seq[string]	proc dfn(title: string; content: seq[string]): HtmlElement		1433
+nim	dfn	cattag/auto/htmlElements.html#dfn,string,string,varargs[string]	proc dfn(title: string; content: string; contents: varargs[string]): HtmlElement		1437
+nim	dialog	cattag/auto/htmlElements.html#dialog	proc dialog(): HtmlElement		1445
+nim	dialog	cattag/auto/htmlElements.html#dialog,seq[Attribute]	proc dialog(attributes: seq[Attribute]): HtmlElement		1449
+nim	dialog	cattag/auto/htmlElements.html#dialog,seq[Attribute],seq[HtmlElement]	proc dialog(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1455
+nim	dialog	cattag/auto/htmlElements.html#dialog,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc dialog(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		1459
+nim	dialog	cattag/auto/htmlElements.html#dialog,seq[HtmlElement]	proc dialog(children: seq[HtmlElement]): HtmlElement		1464
+nim	dialog	cattag/auto/htmlElements.html#dialog,HtmlElement,varargs[HtmlElement]	proc dialog(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1468
+nim	dialog	cattag/auto/htmlElements.html#dialog,seq[Attribute],seq[string]	proc dialog(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1473
+nim	dialog	cattag/auto/htmlElements.html#dialog,seq[Attribute],string,varargs[string]	proc dialog(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1477
+nim	dialog	cattag/auto/htmlElements.html#dialog,bool	proc dialog(open: bool): HtmlElement		1483
+nim	dialog	cattag/auto/htmlElements.html#dialog,bool,seq[HtmlElement]	proc dialog(open: bool; children: seq[HtmlElement]): HtmlElement		1489
+nim	dialog	cattag/auto/htmlElements.html#dialog,bool,HtmlElement,varargs[HtmlElement]	proc dialog(open: bool; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1493
+nim	dialog	cattag/auto/htmlElements.html#dialog,bool,seq[string]	proc dialog(open: bool; content: seq[string]): HtmlElement		1499
+nim	dialog	cattag/auto/htmlElements.html#dialog,bool,string,varargs[string]	proc dialog(open: bool; content: string; contents: varargs[string]): HtmlElement		1503
+nim	dir	cattag/auto/htmlElements.html#dir	proc dir(): HtmlElement		1511
+nim	dir	cattag/auto/htmlElements.html#dir,seq[Attribute]	proc dir(attributes: seq[Attribute]): HtmlElement		1515
+nim	dir	cattag/auto/htmlElements.html#dir,seq[Attribute],seq[HtmlElement]	proc dir(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1521
+nim	dir	cattag/auto/htmlElements.html#dir,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc dir(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		1525
+nim	dir	cattag/auto/htmlElements.html#dir,seq[HtmlElement]	proc dir(children: seq[HtmlElement]): HtmlElement		1530
+nim	dir	cattag/auto/htmlElements.html#dir,HtmlElement,varargs[HtmlElement]	proc dir(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1534
+nim	dir	cattag/auto/htmlElements.html#dir,seq[Attribute],seq[string]	proc dir(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1539
+nim	dir	cattag/auto/htmlElements.html#dir,seq[Attribute],string,varargs[string]	proc dir(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1543
+nim	`div`	cattag/auto/htmlElements.html#div	proc `div`(): HtmlElement		1551
+nim	`div`	cattag/auto/htmlElements.html#div,seq[Attribute]	proc `div`(attributes: seq[Attribute]): HtmlElement		1555
+nim	`div`	cattag/auto/htmlElements.html#div,seq[Attribute],seq[HtmlElement]	proc `div`(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1561
+nim	`div`	cattag/auto/htmlElements.html#div,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc `div`(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		1565
+nim	`div`	cattag/auto/htmlElements.html#div,seq[HtmlElement]	proc `div`(children: seq[HtmlElement]): HtmlElement		1570
+nim	`div`	cattag/auto/htmlElements.html#div,HtmlElement,varargs[HtmlElement]	proc `div`(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1574
+nim	`div`	cattag/auto/htmlElements.html#div,seq[Attribute],seq[string]	proc `div`(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1579
+nim	`div`	cattag/auto/htmlElements.html#div,seq[Attribute],string,varargs[string]	proc `div`(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1583
+nim	dl	cattag/auto/htmlElements.html#dl	proc dl(): HtmlElement		1591
+nim	dl	cattag/auto/htmlElements.html#dl,seq[Attribute]	proc dl(attributes: seq[Attribute]): HtmlElement		1595
+nim	dl	cattag/auto/htmlElements.html#dl,seq[Attribute],seq[HtmlElement]	proc dl(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1601
+nim	dl	cattag/auto/htmlElements.html#dl,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc dl(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		1605
+nim	dl	cattag/auto/htmlElements.html#dl,seq[HtmlElement]	proc dl(children: seq[HtmlElement]): HtmlElement		1610
+nim	dl	cattag/auto/htmlElements.html#dl,HtmlElement,varargs[HtmlElement]	proc dl(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1614
+nim	dl	cattag/auto/htmlElements.html#dl,seq[Attribute],seq[string]	proc dl(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1619
+nim	dl	cattag/auto/htmlElements.html#dl,seq[Attribute],string,varargs[string]	proc dl(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1623
+nim	dt	cattag/auto/htmlElements.html#dt	proc dt(): HtmlElement		1631
+nim	dt	cattag/auto/htmlElements.html#dt,seq[Attribute]	proc dt(attributes: seq[Attribute]): HtmlElement		1635
+nim	dt	cattag/auto/htmlElements.html#dt,seq[Attribute],seq[HtmlElement]	proc dt(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1641
+nim	dt	cattag/auto/htmlElements.html#dt,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc dt(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		1645
+nim	dt	cattag/auto/htmlElements.html#dt,seq[HtmlElement]	proc dt(children: seq[HtmlElement]): HtmlElement		1650
+nim	dt	cattag/auto/htmlElements.html#dt,HtmlElement,varargs[HtmlElement]	proc dt(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1654
+nim	dt	cattag/auto/htmlElements.html#dt,seq[Attribute],seq[string]	proc dt(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1659
+nim	dt	cattag/auto/htmlElements.html#dt,seq[Attribute],string,varargs[string]	proc dt(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1663
+nim	em	cattag/auto/htmlElements.html#em	proc em(): HtmlElement		1671
+nim	em	cattag/auto/htmlElements.html#em,seq[Attribute]	proc em(attributes: seq[Attribute]): HtmlElement		1675
+nim	em	cattag/auto/htmlElements.html#em,seq[Attribute],seq[HtmlElement]	proc em(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1681
+nim	em	cattag/auto/htmlElements.html#em,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc em(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		1685
+nim	em	cattag/auto/htmlElements.html#em,seq[HtmlElement]	proc em(children: seq[HtmlElement]): HtmlElement		1690
+nim	em	cattag/auto/htmlElements.html#em,HtmlElement,varargs[HtmlElement]	proc em(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1694
+nim	em	cattag/auto/htmlElements.html#em,seq[Attribute],seq[string]	proc em(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1699
+nim	em	cattag/auto/htmlElements.html#em,seq[Attribute],string,varargs[string]	proc em(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1703
+nim	embed	cattag/auto/htmlElements.html#embed	proc embed(): HtmlElement		1711
+nim	embed	cattag/auto/htmlElements.html#embed,seq[Attribute]	proc embed(attributes: seq[Attribute]): HtmlElement		1715
+nim	embed	cattag/auto/htmlElements.html#embed,string,string,int,int	proc embed(type: string; src: string; width: int; height: int): HtmlElement		1721
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe	proc fencedframe(): HtmlElement		1729
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,seq[Attribute]	proc fencedframe(attributes: seq[Attribute]): HtmlElement		1733
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,seq[Attribute],seq[HtmlElement]	proc fencedframe(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1739
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc fencedframe(attributes: seq[Attribute]; child: HtmlElement;\n            children: varargs[HtmlElement]): HtmlElement		1743
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,seq[HtmlElement]	proc fencedframe(children: seq[HtmlElement]): HtmlElement		1748
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,HtmlElement,varargs[HtmlElement]	proc fencedframe(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1752
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,seq[Attribute],seq[string]	proc fencedframe(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1757
+nim	fencedframe	cattag/auto/htmlElements.html#fencedframe,seq[Attribute],string,varargs[string]	proc fencedframe(attributes: seq[Attribute]; content: string;\n            moreContent: varargs[string]): HtmlElement		1761
+nim	fieldset	cattag/auto/htmlElements.html#fieldset	proc fieldset(): HtmlElement		1769
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,seq[Attribute]	proc fieldset(attributes: seq[Attribute]): HtmlElement		1773
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,seq[Attribute],seq[HtmlElement]	proc fieldset(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1779
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc fieldset(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		1783
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,seq[HtmlElement]	proc fieldset(children: seq[HtmlElement]): HtmlElement		1788
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,HtmlElement,varargs[HtmlElement]	proc fieldset(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1792
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,seq[Attribute],seq[string]	proc fieldset(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1797
+nim	fieldset	cattag/auto/htmlElements.html#fieldset,seq[Attribute],string,varargs[string]	proc fieldset(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		1801
+nim	figcaption	cattag/auto/htmlElements.html#figcaption	proc figcaption(): HtmlElement		1809
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,seq[Attribute]	proc figcaption(attributes: seq[Attribute]): HtmlElement		1813
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,seq[Attribute],seq[HtmlElement]	proc figcaption(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1819
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc figcaption(attributes: seq[Attribute]; child: HtmlElement;\n           children: varargs[HtmlElement]): HtmlElement		1823
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,seq[HtmlElement]	proc figcaption(children: seq[HtmlElement]): HtmlElement		1828
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,HtmlElement,varargs[HtmlElement]	proc figcaption(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1832
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,seq[Attribute],seq[string]	proc figcaption(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1837
+nim	figcaption	cattag/auto/htmlElements.html#figcaption,seq[Attribute],string,varargs[string]	proc figcaption(attributes: seq[Attribute]; content: string;\n           moreContent: varargs[string]): HtmlElement		1841
+nim	figure	cattag/auto/htmlElements.html#figure	proc figure(): HtmlElement		1849
+nim	figure	cattag/auto/htmlElements.html#figure,seq[Attribute]	proc figure(attributes: seq[Attribute]): HtmlElement		1853
+nim	figure	cattag/auto/htmlElements.html#figure,seq[Attribute],seq[HtmlElement]	proc figure(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1859
+nim	figure	cattag/auto/htmlElements.html#figure,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc figure(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		1863
+nim	figure	cattag/auto/htmlElements.html#figure,seq[HtmlElement]	proc figure(children: seq[HtmlElement]): HtmlElement		1868
+nim	figure	cattag/auto/htmlElements.html#figure,HtmlElement,varargs[HtmlElement]	proc figure(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1872
+nim	figure	cattag/auto/htmlElements.html#figure,seq[Attribute],seq[string]	proc figure(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1877
+nim	figure	cattag/auto/htmlElements.html#figure,seq[Attribute],string,varargs[string]	proc figure(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1881
+nim	font	cattag/auto/htmlElements.html#font	proc font(): HtmlElement		1889
+nim	font	cattag/auto/htmlElements.html#font,seq[Attribute]	proc font(attributes: seq[Attribute]): HtmlElement		1893
+nim	font	cattag/auto/htmlElements.html#font,seq[Attribute],seq[HtmlElement]	proc font(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1899
+nim	font	cattag/auto/htmlElements.html#font,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc font(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		1903
+nim	font	cattag/auto/htmlElements.html#font,seq[HtmlElement]	proc font(children: seq[HtmlElement]): HtmlElement		1908
+nim	font	cattag/auto/htmlElements.html#font,HtmlElement,varargs[HtmlElement]	proc font(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1912
+nim	font	cattag/auto/htmlElements.html#font,seq[Attribute],seq[string]	proc font(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1917
+nim	font	cattag/auto/htmlElements.html#font,seq[Attribute],string,varargs[string]	proc font(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1921
+nim	footer	cattag/auto/htmlElements.html#footer	proc footer(): HtmlElement		1929
+nim	footer	cattag/auto/htmlElements.html#footer,seq[Attribute]	proc footer(attributes: seq[Attribute]): HtmlElement		1933
+nim	footer	cattag/auto/htmlElements.html#footer,seq[Attribute],seq[HtmlElement]	proc footer(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1939
+nim	footer	cattag/auto/htmlElements.html#footer,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc footer(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		1943
+nim	footer	cattag/auto/htmlElements.html#footer,seq[HtmlElement]	proc footer(children: seq[HtmlElement]): HtmlElement		1948
+nim	footer	cattag/auto/htmlElements.html#footer,HtmlElement,varargs[HtmlElement]	proc footer(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1952
+nim	footer	cattag/auto/htmlElements.html#footer,seq[Attribute],seq[string]	proc footer(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1957
+nim	footer	cattag/auto/htmlElements.html#footer,seq[Attribute],string,varargs[string]	proc footer(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		1961
+nim	form	cattag/auto/htmlElements.html#form	proc form(): HtmlElement		1969
+nim	form	cattag/auto/htmlElements.html#form,seq[Attribute]	proc form(attributes: seq[Attribute]): HtmlElement		1973
+nim	form	cattag/auto/htmlElements.html#form,seq[Attribute],seq[HtmlElement]	proc form(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		1979
+nim	form	cattag/auto/htmlElements.html#form,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc form(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		1983
+nim	form	cattag/auto/htmlElements.html#form,seq[HtmlElement]	proc form(children: seq[HtmlElement]): HtmlElement		1988
+nim	form	cattag/auto/htmlElements.html#form,HtmlElement,varargs[HtmlElement]	proc form(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		1992
+nim	form	cattag/auto/htmlElements.html#form,seq[Attribute],seq[string]	proc form(attributes: seq[Attribute]; content: seq[string]): HtmlElement		1997
+nim	form	cattag/auto/htmlElements.html#form,seq[Attribute],string,varargs[string]	proc form(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2001
+nim	form	cattag/auto/htmlElements.html#form,string,string	proc form(action: string; method: string = "get"): HtmlElement		2007
+nim	form	cattag/auto/htmlElements.html#form,string,string,seq[HtmlElement]	proc form(action: string; method: string = "get"; children: seq[HtmlElement]): HtmlElement		2013
+nim	form	cattag/auto/htmlElements.html#form,string,string,HtmlElement,varargs[HtmlElement]	proc form(action: string; method: string = "get"; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		2017
+nim	frame	cattag/auto/htmlElements.html#frame	proc frame(): HtmlElement		2025
+nim	frame	cattag/auto/htmlElements.html#frame,seq[Attribute]	proc frame(attributes: seq[Attribute]): HtmlElement		2029
+nim	frameset	cattag/auto/htmlElements.html#frameset	proc frameset(): HtmlElement		2037
+nim	frameset	cattag/auto/htmlElements.html#frameset,seq[Attribute]	proc frameset(attributes: seq[Attribute]): HtmlElement		2041
+nim	frameset	cattag/auto/htmlElements.html#frameset,seq[Attribute],seq[HtmlElement]	proc frameset(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2047
+nim	frameset	cattag/auto/htmlElements.html#frameset,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc frameset(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		2051
+nim	frameset	cattag/auto/htmlElements.html#frameset,seq[HtmlElement]	proc frameset(children: seq[HtmlElement]): HtmlElement		2056
+nim	frameset	cattag/auto/htmlElements.html#frameset,HtmlElement,varargs[HtmlElement]	proc frameset(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2060
+nim	frameset	cattag/auto/htmlElements.html#frameset,seq[Attribute],seq[string]	proc frameset(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2065
+nim	frameset	cattag/auto/htmlElements.html#frameset,seq[Attribute],string,varargs[string]	proc frameset(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		2069
+nim	h1	cattag/auto/htmlElements.html#h1	proc h1(): HtmlElement		2077
+nim	h1	cattag/auto/htmlElements.html#h1,seq[Attribute]	proc h1(attributes: seq[Attribute]): HtmlElement		2081
+nim	h1	cattag/auto/htmlElements.html#h1,seq[Attribute],seq[HtmlElement]	proc h1(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2087
+nim	h1	cattag/auto/htmlElements.html#h1,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc h1(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2091
+nim	h1	cattag/auto/htmlElements.html#h1,seq[HtmlElement]	proc h1(children: seq[HtmlElement]): HtmlElement		2096
+nim	h1	cattag/auto/htmlElements.html#h1,HtmlElement,varargs[HtmlElement]	proc h1(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2100
+nim	h1	cattag/auto/htmlElements.html#h1,seq[Attribute],seq[string]	proc h1(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2105
+nim	h1	cattag/auto/htmlElements.html#h1,seq[Attribute],string,varargs[string]	proc h1(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2109
+nim	h2	cattag/auto/htmlElements.html#h2	proc h2(): HtmlElement		2116
+nim	h2	cattag/auto/htmlElements.html#h2,seq[Attribute]	proc h2(attributes: seq[Attribute]): HtmlElement		2120
+nim	h2	cattag/auto/htmlElements.html#h2,seq[Attribute],seq[HtmlElement]	proc h2(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2126
+nim	h2	cattag/auto/htmlElements.html#h2,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc h2(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2130
+nim	h2	cattag/auto/htmlElements.html#h2,seq[HtmlElement]	proc h2(children: seq[HtmlElement]): HtmlElement		2135
+nim	h2	cattag/auto/htmlElements.html#h2,HtmlElement,varargs[HtmlElement]	proc h2(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2139
+nim	h2	cattag/auto/htmlElements.html#h2,seq[Attribute],seq[string]	proc h2(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2144
+nim	h2	cattag/auto/htmlElements.html#h2,seq[Attribute],string,varargs[string]	proc h2(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2148
+nim	h3	cattag/auto/htmlElements.html#h3	proc h3(): HtmlElement		2155
+nim	h3	cattag/auto/htmlElements.html#h3,seq[Attribute]	proc h3(attributes: seq[Attribute]): HtmlElement		2159
+nim	h3	cattag/auto/htmlElements.html#h3,seq[Attribute],seq[HtmlElement]	proc h3(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2165
+nim	h3	cattag/auto/htmlElements.html#h3,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc h3(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2169
+nim	h3	cattag/auto/htmlElements.html#h3,seq[HtmlElement]	proc h3(children: seq[HtmlElement]): HtmlElement		2174
+nim	h3	cattag/auto/htmlElements.html#h3,HtmlElement,varargs[HtmlElement]	proc h3(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2178
+nim	h3	cattag/auto/htmlElements.html#h3,seq[Attribute],seq[string]	proc h3(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2183
+nim	h3	cattag/auto/htmlElements.html#h3,seq[Attribute],string,varargs[string]	proc h3(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2187
+nim	h4	cattag/auto/htmlElements.html#h4	proc h4(): HtmlElement		2194
+nim	h4	cattag/auto/htmlElements.html#h4,seq[Attribute]	proc h4(attributes: seq[Attribute]): HtmlElement		2198
+nim	h4	cattag/auto/htmlElements.html#h4,seq[Attribute],seq[HtmlElement]	proc h4(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2204
+nim	h4	cattag/auto/htmlElements.html#h4,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc h4(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2208
+nim	h4	cattag/auto/htmlElements.html#h4,seq[HtmlElement]	proc h4(children: seq[HtmlElement]): HtmlElement		2213
+nim	h4	cattag/auto/htmlElements.html#h4,HtmlElement,varargs[HtmlElement]	proc h4(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2217
+nim	h4	cattag/auto/htmlElements.html#h4,seq[Attribute],seq[string]	proc h4(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2222
+nim	h4	cattag/auto/htmlElements.html#h4,seq[Attribute],string,varargs[string]	proc h4(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2226
+nim	h5	cattag/auto/htmlElements.html#h5	proc h5(): HtmlElement		2233
+nim	h5	cattag/auto/htmlElements.html#h5,seq[Attribute]	proc h5(attributes: seq[Attribute]): HtmlElement		2237
+nim	h5	cattag/auto/htmlElements.html#h5,seq[Attribute],seq[HtmlElement]	proc h5(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2243
+nim	h5	cattag/auto/htmlElements.html#h5,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc h5(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2247
+nim	h5	cattag/auto/htmlElements.html#h5,seq[HtmlElement]	proc h5(children: seq[HtmlElement]): HtmlElement		2252
+nim	h5	cattag/auto/htmlElements.html#h5,HtmlElement,varargs[HtmlElement]	proc h5(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2256
+nim	h5	cattag/auto/htmlElements.html#h5,seq[Attribute],seq[string]	proc h5(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2261
+nim	h5	cattag/auto/htmlElements.html#h5,seq[Attribute],string,varargs[string]	proc h5(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2265
+nim	h6	cattag/auto/htmlElements.html#h6	proc h6(): HtmlElement		2272
+nim	h6	cattag/auto/htmlElements.html#h6,seq[Attribute]	proc h6(attributes: seq[Attribute]): HtmlElement		2276
+nim	h6	cattag/auto/htmlElements.html#h6,seq[Attribute],seq[HtmlElement]	proc h6(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2282
+nim	h6	cattag/auto/htmlElements.html#h6,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc h6(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2286
+nim	h6	cattag/auto/htmlElements.html#h6,seq[HtmlElement]	proc h6(children: seq[HtmlElement]): HtmlElement		2291
+nim	h6	cattag/auto/htmlElements.html#h6,HtmlElement,varargs[HtmlElement]	proc h6(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2295
+nim	h6	cattag/auto/htmlElements.html#h6,seq[Attribute],seq[string]	proc h6(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2300
+nim	h6	cattag/auto/htmlElements.html#h6,seq[Attribute],string,varargs[string]	proc h6(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2304
+nim	head	cattag/auto/htmlElements.html#head	proc head(): HtmlElement		2312
+nim	head	cattag/auto/htmlElements.html#head,seq[Attribute]	proc head(attributes: seq[Attribute]): HtmlElement		2316
+nim	head	cattag/auto/htmlElements.html#head,seq[Attribute],seq[HtmlElement]	proc head(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2322
+nim	head	cattag/auto/htmlElements.html#head,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc head(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		2326
+nim	head	cattag/auto/htmlElements.html#head,seq[HtmlElement]	proc head(children: seq[HtmlElement]): HtmlElement		2331
+nim	head	cattag/auto/htmlElements.html#head,HtmlElement,varargs[HtmlElement]	proc head(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2335
+nim	head	cattag/auto/htmlElements.html#head,seq[Attribute],seq[string]	proc head(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2340
+nim	head	cattag/auto/htmlElements.html#head,seq[Attribute],string,varargs[string]	proc head(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2344
+nim	header	cattag/auto/htmlElements.html#header	proc header(): HtmlElement		2352
+nim	header	cattag/auto/htmlElements.html#header,seq[Attribute]	proc header(attributes: seq[Attribute]): HtmlElement		2356
+nim	header	cattag/auto/htmlElements.html#header,seq[Attribute],seq[HtmlElement]	proc header(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2362
+nim	header	cattag/auto/htmlElements.html#header,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc header(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		2366
+nim	header	cattag/auto/htmlElements.html#header,seq[HtmlElement]	proc header(children: seq[HtmlElement]): HtmlElement		2371
+nim	header	cattag/auto/htmlElements.html#header,HtmlElement,varargs[HtmlElement]	proc header(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2375
+nim	header	cattag/auto/htmlElements.html#header,seq[Attribute],seq[string]	proc header(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2380
+nim	header	cattag/auto/htmlElements.html#header,seq[Attribute],string,varargs[string]	proc header(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2384
+nim	hgroup	cattag/auto/htmlElements.html#hgroup	proc hgroup(): HtmlElement		2392
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,seq[Attribute]	proc hgroup(attributes: seq[Attribute]): HtmlElement		2396
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,seq[Attribute],seq[HtmlElement]	proc hgroup(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2402
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc hgroup(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		2406
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,seq[HtmlElement]	proc hgroup(children: seq[HtmlElement]): HtmlElement		2411
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,HtmlElement,varargs[HtmlElement]	proc hgroup(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2415
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,seq[Attribute],seq[string]	proc hgroup(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2420
+nim	hgroup	cattag/auto/htmlElements.html#hgroup,seq[Attribute],string,varargs[string]	proc hgroup(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2424
+nim	hr	cattag/auto/htmlElements.html#hr	proc hr(): HtmlElement		2432
+nim	hr	cattag/auto/htmlElements.html#hr,seq[Attribute]	proc hr(attributes: seq[Attribute]): HtmlElement		2436
+nim	html	cattag/auto/htmlElements.html#html	proc html(): HtmlElement		2444
+nim	html	cattag/auto/htmlElements.html#html,seq[Attribute]	proc html(attributes: seq[Attribute]): HtmlElement		2448
+nim	html	cattag/auto/htmlElements.html#html,seq[Attribute],seq[HtmlElement]	proc html(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2454
+nim	html	cattag/auto/htmlElements.html#html,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc html(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		2458
+nim	html	cattag/auto/htmlElements.html#html,seq[HtmlElement]	proc html(children: seq[HtmlElement]): HtmlElement		2463
+nim	html	cattag/auto/htmlElements.html#html,HtmlElement,varargs[HtmlElement]	proc html(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2467
+nim	html	cattag/auto/htmlElements.html#html,seq[Attribute],seq[string]	proc html(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2472
+nim	html	cattag/auto/htmlElements.html#html,seq[Attribute],string,varargs[string]	proc html(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2476
+nim	i	cattag/auto/htmlElements.html#i	proc i(): HtmlElement		2484
+nim	i	cattag/auto/htmlElements.html#i,seq[Attribute]	proc i(attributes: seq[Attribute]): HtmlElement		2488
+nim	i	cattag/auto/htmlElements.html#i,seq[Attribute],seq[HtmlElement]	proc i(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2494
+nim	i	cattag/auto/htmlElements.html#i,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc i(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2498
+nim	i	cattag/auto/htmlElements.html#i,seq[HtmlElement]	proc i(children: seq[HtmlElement]): HtmlElement		2503
+nim	i	cattag/auto/htmlElements.html#i,HtmlElement,varargs[HtmlElement]	proc i(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2507
+nim	i	cattag/auto/htmlElements.html#i,seq[Attribute],seq[string]	proc i(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2512
+nim	i	cattag/auto/htmlElements.html#i,seq[Attribute],string,varargs[string]	proc i(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2516
+nim	iframe	cattag/auto/htmlElements.html#iframe	proc iframe(): HtmlElement		2524
+nim	iframe	cattag/auto/htmlElements.html#iframe,seq[Attribute]	proc iframe(attributes: seq[Attribute]): HtmlElement		2528
+nim	iframe	cattag/auto/htmlElements.html#iframe,seq[Attribute],seq[HtmlElement]	proc iframe(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2534
+nim	iframe	cattag/auto/htmlElements.html#iframe,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc iframe(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		2538
+nim	iframe	cattag/auto/htmlElements.html#iframe,seq[HtmlElement]	proc iframe(children: seq[HtmlElement]): HtmlElement		2543
+nim	iframe	cattag/auto/htmlElements.html#iframe,HtmlElement,varargs[HtmlElement]	proc iframe(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2547
+nim	iframe	cattag/auto/htmlElements.html#iframe,seq[Attribute],seq[string]	proc iframe(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2552
+nim	iframe	cattag/auto/htmlElements.html#iframe,seq[Attribute],string,varargs[string]	proc iframe(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2556
+nim	iframe	cattag/auto/htmlElements.html#iframe,string	proc iframe(src: string): HtmlElement		2562
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,seq[HtmlElement]	proc iframe(src: string; children: seq[HtmlElement]): HtmlElement		2568
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,HtmlElement,varargs[HtmlElement]	proc iframe(src: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2572
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,seq[string]	proc iframe(src: string; content: seq[string]): HtmlElement		2578
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,string,varargs[string]	proc iframe(src: string; content: string; contents: varargs[string]): HtmlElement		2582
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,int,int	proc iframe(src: string; width: int; height: int): HtmlElement		2588
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,int,int,seq[HtmlElement]	proc iframe(src: string; width: int; height: int; children: seq[HtmlElement]): HtmlElement		2594
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,int,int,HtmlElement,varargs[HtmlElement]	proc iframe(src: string; width: int; height: int; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		2598
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,int,int,seq[string]	proc iframe(src: string; width: int; height: int; content: seq[string]): HtmlElement		2604
+nim	iframe	cattag/auto/htmlElements.html#iframe,string,int,int,string,varargs[string]	proc iframe(src: string; width: int; height: int; content: string;\n       contents: varargs[string]): HtmlElement		2608
+nim	img	cattag/auto/htmlElements.html#img	proc img(): HtmlElement		2616
+nim	img	cattag/auto/htmlElements.html#img,seq[Attribute]	proc img(attributes: seq[Attribute]): HtmlElement		2620
+nim	img	cattag/auto/htmlElements.html#img,string,string	proc img(src: string; alt: string): HtmlElement		2626
+nim	img	cattag/auto/htmlElements.html#img,string,string,int,int	proc img(src: string; alt: string; width: int; height: int): HtmlElement		2632
+nim	input	cattag/auto/htmlElements.html#input	proc input(): HtmlElement		2640
+nim	input	cattag/auto/htmlElements.html#input,seq[Attribute]	proc input(attributes: seq[Attribute]): HtmlElement		2644
+nim	input	cattag/auto/htmlElements.html#input,string,string	proc input(type: string; id: string): HtmlElement		2650
+nim	input	cattag/auto/htmlElements.html#input,string,string,string	proc input(type: string; id: string; form: string): HtmlElement		2656
+nim	ins	cattag/auto/htmlElements.html#ins	proc ins(): HtmlElement		2664
+nim	ins	cattag/auto/htmlElements.html#ins,seq[Attribute]	proc ins(attributes: seq[Attribute]): HtmlElement		2668
+nim	ins	cattag/auto/htmlElements.html#ins,seq[Attribute],seq[HtmlElement]	proc ins(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2674
+nim	ins	cattag/auto/htmlElements.html#ins,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc ins(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		2678
+nim	ins	cattag/auto/htmlElements.html#ins,seq[HtmlElement]	proc ins(children: seq[HtmlElement]): HtmlElement		2683
+nim	ins	cattag/auto/htmlElements.html#ins,HtmlElement,varargs[HtmlElement]	proc ins(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2687
+nim	ins	cattag/auto/htmlElements.html#ins,seq[Attribute],seq[string]	proc ins(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2692
+nim	ins	cattag/auto/htmlElements.html#ins,seq[Attribute],string,varargs[string]	proc ins(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2696
+nim	ins	cattag/auto/htmlElements.html#ins,string	proc ins(datetime: string): HtmlElement		2702
+nim	ins	cattag/auto/htmlElements.html#ins,string,seq[HtmlElement]	proc ins(datetime: string; children: seq[HtmlElement]): HtmlElement		2708
+nim	ins	cattag/auto/htmlElements.html#ins,string,HtmlElement,varargs[HtmlElement]	proc ins(datetime: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2712
+nim	ins	cattag/auto/htmlElements.html#ins,string,seq[string]	proc ins(datetime: string; content: seq[string]): HtmlElement		2718
+nim	ins	cattag/auto/htmlElements.html#ins,string,string,varargs[string]	proc ins(datetime: string; content: string; contents: varargs[string]): HtmlElement		2722
+nim	ins	cattag/auto/htmlElements.html#ins,string,string	proc ins(datetime: string; cite: string): HtmlElement		2728
+nim	ins	cattag/auto/htmlElements.html#ins,string,string,seq[HtmlElement]	proc ins(datetime: string; cite: string; children: seq[HtmlElement]): HtmlElement		2734
+nim	ins	cattag/auto/htmlElements.html#ins,string,string,HtmlElement,varargs[HtmlElement]	proc ins(datetime: string; cite: string; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		2738
+nim	ins	cattag/auto/htmlElements.html#ins,string,string,seq[string]	proc ins(datetime: string; cite: string; content: seq[string]): HtmlElement		2744
+nim	ins	cattag/auto/htmlElements.html#ins,string,string,string,varargs[string]	proc ins(datetime: string; cite: string; content: string; contents: varargs[string]): HtmlElement		2748
+nim	kbd	cattag/auto/htmlElements.html#kbd	proc kbd(): HtmlElement		2756
+nim	kbd	cattag/auto/htmlElements.html#kbd,seq[Attribute]	proc kbd(attributes: seq[Attribute]): HtmlElement		2760
+nim	kbd	cattag/auto/htmlElements.html#kbd,seq[Attribute],seq[HtmlElement]	proc kbd(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2766
+nim	kbd	cattag/auto/htmlElements.html#kbd,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc kbd(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		2770
+nim	kbd	cattag/auto/htmlElements.html#kbd,seq[HtmlElement]	proc kbd(children: seq[HtmlElement]): HtmlElement		2775
+nim	kbd	cattag/auto/htmlElements.html#kbd,HtmlElement,varargs[HtmlElement]	proc kbd(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2779
+nim	kbd	cattag/auto/htmlElements.html#kbd,seq[Attribute],seq[string]	proc kbd(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2784
+nim	kbd	cattag/auto/htmlElements.html#kbd,seq[Attribute],string,varargs[string]	proc kbd(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2788
+nim	label	cattag/auto/htmlElements.html#label	proc label(): HtmlElement		2796
+nim	label	cattag/auto/htmlElements.html#label,seq[Attribute]	proc label(attributes: seq[Attribute]): HtmlElement		2800
+nim	label	cattag/auto/htmlElements.html#label,seq[Attribute],seq[HtmlElement]	proc label(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2806
+nim	label	cattag/auto/htmlElements.html#label,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc label(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		2810
+nim	label	cattag/auto/htmlElements.html#label,seq[HtmlElement]	proc label(children: seq[HtmlElement]): HtmlElement		2815
+nim	label	cattag/auto/htmlElements.html#label,HtmlElement,varargs[HtmlElement]	proc label(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2819
+nim	label	cattag/auto/htmlElements.html#label,seq[Attribute],seq[string]	proc label(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2824
+nim	label	cattag/auto/htmlElements.html#label,seq[Attribute],string,varargs[string]	proc label(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2828
+nim	label	cattag/auto/htmlElements.html#label,string,string	proc label(type: string; for: string): HtmlElement		2834
+nim	label	cattag/auto/htmlElements.html#label,string,string,string	proc label(type: string; for: string; form: string): HtmlElement		2840
+nim	legend	cattag/auto/htmlElements.html#legend	proc legend(): HtmlElement		2848
+nim	legend	cattag/auto/htmlElements.html#legend,seq[Attribute]	proc legend(attributes: seq[Attribute]): HtmlElement		2852
+nim	legend	cattag/auto/htmlElements.html#legend,seq[Attribute],seq[HtmlElement]	proc legend(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2858
+nim	legend	cattag/auto/htmlElements.html#legend,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc legend(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		2862
+nim	legend	cattag/auto/htmlElements.html#legend,seq[HtmlElement]	proc legend(children: seq[HtmlElement]): HtmlElement		2867
+nim	legend	cattag/auto/htmlElements.html#legend,HtmlElement,varargs[HtmlElement]	proc legend(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2871
+nim	legend	cattag/auto/htmlElements.html#legend,seq[Attribute],seq[string]	proc legend(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2876
+nim	legend	cattag/auto/htmlElements.html#legend,seq[Attribute],string,varargs[string]	proc legend(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2880
+nim	li	cattag/auto/htmlElements.html#li	proc li(): HtmlElement		2888
+nim	li	cattag/auto/htmlElements.html#li,seq[Attribute]	proc li(attributes: seq[Attribute]): HtmlElement		2892
+nim	li	cattag/auto/htmlElements.html#li,seq[Attribute],seq[HtmlElement]	proc li(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2898
+nim	li	cattag/auto/htmlElements.html#li,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc li(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		2902
+nim	li	cattag/auto/htmlElements.html#li,seq[HtmlElement]	proc li(children: seq[HtmlElement]): HtmlElement		2907
+nim	li	cattag/auto/htmlElements.html#li,HtmlElement,varargs[HtmlElement]	proc li(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2911
+nim	li	cattag/auto/htmlElements.html#li,seq[Attribute],seq[string]	proc li(attributes: seq[Attribute]; content: seq[string]): HtmlElement		2916
+nim	li	cattag/auto/htmlElements.html#li,seq[Attribute],string,varargs[string]	proc li(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		2920
+nim	li	cattag/auto/htmlElements.html#li,SomeNumber	proc li(value: SomeNumber): HtmlElement		2926
+nim	li	cattag/auto/htmlElements.html#li,SomeNumber,seq[HtmlElement]	proc li(value: SomeNumber; children: seq[HtmlElement]): HtmlElement		2932
+nim	li	cattag/auto/htmlElements.html#li,SomeNumber,HtmlElement,varargs[HtmlElement]	proc li(value: SomeNumber; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2936
+nim	li	cattag/auto/htmlElements.html#li,SomeNumber,seq[string]	proc li(value: SomeNumber; content: seq[string]): HtmlElement		2942
+nim	li	cattag/auto/htmlElements.html#li,SomeNumber,string,varargs[string]	proc li(value: SomeNumber; content: string; contents: varargs[string]): HtmlElement		2946
+nim	link	cattag/auto/htmlElements.html#link	proc link(): HtmlElement		2954
+nim	link	cattag/auto/htmlElements.html#link,seq[Attribute]	proc link(attributes: seq[Attribute]): HtmlElement		2958
+nim	link	cattag/auto/htmlElements.html#link,string,string	proc link(rel: string; href: string): HtmlElement		2964
+nim	main	cattag/auto/htmlElements.html#main	proc main(): HtmlElement		2972
+nim	main	cattag/auto/htmlElements.html#main,seq[Attribute]	proc main(attributes: seq[Attribute]): HtmlElement		2976
+nim	main	cattag/auto/htmlElements.html#main,seq[Attribute],seq[HtmlElement]	proc main(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		2982
+nim	main	cattag/auto/htmlElements.html#main,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc main(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		2986
+nim	main	cattag/auto/htmlElements.html#main,seq[HtmlElement]	proc main(children: seq[HtmlElement]): HtmlElement		2991
+nim	main	cattag/auto/htmlElements.html#main,HtmlElement,varargs[HtmlElement]	proc main(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		2995
+nim	main	cattag/auto/htmlElements.html#main,seq[Attribute],seq[string]	proc main(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3000
+nim	main	cattag/auto/htmlElements.html#main,seq[Attribute],string,varargs[string]	proc main(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3004
+nim	map	cattag/auto/htmlElements.html#map	proc map(): HtmlElement		3012
+nim	map	cattag/auto/htmlElements.html#map,seq[Attribute]	proc map(attributes: seq[Attribute]): HtmlElement		3016
+nim	map	cattag/auto/htmlElements.html#map,seq[Attribute],seq[HtmlElement]	proc map(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3022
+nim	map	cattag/auto/htmlElements.html#map,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc map(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		3026
+nim	map	cattag/auto/htmlElements.html#map,seq[HtmlElement]	proc map(children: seq[HtmlElement]): HtmlElement		3031
+nim	map	cattag/auto/htmlElements.html#map,HtmlElement,varargs[HtmlElement]	proc map(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3035
+nim	map	cattag/auto/htmlElements.html#map,seq[Attribute],seq[string]	proc map(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3040
+nim	map	cattag/auto/htmlElements.html#map,seq[Attribute],string,varargs[string]	proc map(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3044
+nim	map	cattag/auto/htmlElements.html#map,string	proc map(name: string): HtmlElement		3050
+nim	map	cattag/auto/htmlElements.html#map,string,seq[HtmlElement]	proc map(name: string; children: seq[HtmlElement]): HtmlElement		3056
+nim	map	cattag/auto/htmlElements.html#map,string,HtmlElement,varargs[HtmlElement]	proc map(name: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3060
+nim	mark	cattag/auto/htmlElements.html#mark	proc mark(): HtmlElement		3068
+nim	mark	cattag/auto/htmlElements.html#mark,seq[Attribute]	proc mark(attributes: seq[Attribute]): HtmlElement		3072
+nim	mark	cattag/auto/htmlElements.html#mark,seq[Attribute],seq[HtmlElement]	proc mark(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3078
+nim	mark	cattag/auto/htmlElements.html#mark,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc mark(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		3082
+nim	mark	cattag/auto/htmlElements.html#mark,seq[HtmlElement]	proc mark(children: seq[HtmlElement]): HtmlElement		3087
+nim	mark	cattag/auto/htmlElements.html#mark,HtmlElement,varargs[HtmlElement]	proc mark(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3091
+nim	mark	cattag/auto/htmlElements.html#mark,seq[Attribute],seq[string]	proc mark(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3096
+nim	mark	cattag/auto/htmlElements.html#mark,seq[Attribute],string,varargs[string]	proc mark(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3100
+nim	marquee	cattag/auto/htmlElements.html#marquee	proc marquee(): HtmlElement		3108
+nim	marquee	cattag/auto/htmlElements.html#marquee,seq[Attribute]	proc marquee(attributes: seq[Attribute]): HtmlElement		3112
+nim	marquee	cattag/auto/htmlElements.html#marquee,seq[Attribute],seq[HtmlElement]	proc marquee(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3118
+nim	marquee	cattag/auto/htmlElements.html#marquee,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc marquee(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		3122
+nim	marquee	cattag/auto/htmlElements.html#marquee,seq[HtmlElement]	proc marquee(children: seq[HtmlElement]): HtmlElement		3127
+nim	marquee	cattag/auto/htmlElements.html#marquee,HtmlElement,varargs[HtmlElement]	proc marquee(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3131
+nim	marquee	cattag/auto/htmlElements.html#marquee,seq[Attribute],seq[string]	proc marquee(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3136
+nim	marquee	cattag/auto/htmlElements.html#marquee,seq[Attribute],string,varargs[string]	proc marquee(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		3140
+nim	menu	cattag/auto/htmlElements.html#menu	proc menu(): HtmlElement		3148
+nim	menu	cattag/auto/htmlElements.html#menu,seq[Attribute]	proc menu(attributes: seq[Attribute]): HtmlElement		3152
+nim	menu	cattag/auto/htmlElements.html#menu,seq[Attribute],seq[HtmlElement]	proc menu(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3158
+nim	menu	cattag/auto/htmlElements.html#menu,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc menu(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		3162
+nim	menu	cattag/auto/htmlElements.html#menu,seq[HtmlElement]	proc menu(children: seq[HtmlElement]): HtmlElement		3167
+nim	menu	cattag/auto/htmlElements.html#menu,HtmlElement,varargs[HtmlElement]	proc menu(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3171
+nim	menu	cattag/auto/htmlElements.html#menu,seq[Attribute],seq[string]	proc menu(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3176
+nim	menu	cattag/auto/htmlElements.html#menu,seq[Attribute],string,varargs[string]	proc menu(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3180
+nim	meta	cattag/auto/htmlElements.html#meta	proc meta(): HtmlElement		3188
+nim	meta	cattag/auto/htmlElements.html#meta,seq[Attribute]	proc meta(attributes: seq[Attribute]): HtmlElement		3192
+nim	meta	cattag/auto/htmlElements.html#meta,string	proc meta(charset: string): HtmlElement		3198
+nim	meta	cattag/auto/htmlElements.html#meta,string,string	proc meta(name: string; content: string): HtmlElement		3204
+nim	meter	cattag/auto/htmlElements.html#meter	proc meter(): HtmlElement		3212
+nim	meter	cattag/auto/htmlElements.html#meter,seq[Attribute]	proc meter(attributes: seq[Attribute]): HtmlElement		3216
+nim	meter	cattag/auto/htmlElements.html#meter,seq[Attribute],seq[HtmlElement]	proc meter(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3222
+nim	meter	cattag/auto/htmlElements.html#meter,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc meter(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		3226
+nim	meter	cattag/auto/htmlElements.html#meter,seq[HtmlElement]	proc meter(children: seq[HtmlElement]): HtmlElement		3231
+nim	meter	cattag/auto/htmlElements.html#meter,HtmlElement,varargs[HtmlElement]	proc meter(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3235
+nim	meter	cattag/auto/htmlElements.html#meter,seq[Attribute],seq[string]	proc meter(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3240
+nim	meter	cattag/auto/htmlElements.html#meter,seq[Attribute],string,varargs[string]	proc meter(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3244
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber): HtmlElement		3250
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,seq[HtmlElement]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      children: seq[HtmlElement]): HtmlElement		3256
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,HtmlElement,varargs[HtmlElement]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		3260
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,seq[string]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; content: seq[string]): HtmlElement		3266
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,string,varargs[string]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; content: string;\n      contents: varargs[string]): HtmlElement		3270
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; low: SomeNumber;\n      optimum: SomeNumber; high: SomeNumber): HtmlElement		3276
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,seq[HtmlElement]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; low: SomeNumber;\n      optimum: SomeNumber; high: SomeNumber; children: seq[HtmlElement]): HtmlElement		3282
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,HtmlElement,varargs[HtmlElement]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; low: SomeNumber;\n      optimum: SomeNumber; high: SomeNumber; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		3286
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,seq[string]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; low: SomeNumber;\n      optimum: SomeNumber; high: SomeNumber; content: seq[string]): HtmlElement		3292
+nim	meter	cattag/auto/htmlElements.html#meter,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,string,varargs[string]	proc meter(value: SomeNumber; min: SomeNumber; max: SomeNumber; low: SomeNumber;\n      optimum: SomeNumber; high: SomeNumber; content: string;\n      contents: varargs[string]): HtmlElement		3296
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber): HtmlElement		3302
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,seq[HtmlElement]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      children: seq[HtmlElement]): HtmlElement		3308
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,HtmlElement,varargs[HtmlElement]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3312
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,seq[string]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      content: seq[string]): HtmlElement		3318
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,string,varargs[string]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      content: string; contents: varargs[string]): HtmlElement		3322
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      low: SomeNumber; optimum: SomeNumber; high: SomeNumber): HtmlElement		3328
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,seq[HtmlElement]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      low: SomeNumber; optimum: SomeNumber; high: SomeNumber;\n      children: seq[HtmlElement]): HtmlElement		3334
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,HtmlElement,varargs[HtmlElement]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      low: SomeNumber; optimum: SomeNumber; high: SomeNumber;\n      child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3338
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,seq[string]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      low: SomeNumber; optimum: SomeNumber; high: SomeNumber;\n      content: seq[string]): HtmlElement		3344
+nim	meter	cattag/auto/htmlElements.html#meter,string,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber,string,varargs[string]	proc meter(id: string; value: SomeNumber; min: SomeNumber; max: SomeNumber;\n      low: SomeNumber; optimum: SomeNumber; high: SomeNumber; content: string;\n      contents: varargs[string]): HtmlElement		3348
+nim	nav	cattag/auto/htmlElements.html#nav	proc nav(): HtmlElement		3356
+nim	nav	cattag/auto/htmlElements.html#nav,seq[Attribute]	proc nav(attributes: seq[Attribute]): HtmlElement		3360
+nim	nav	cattag/auto/htmlElements.html#nav,seq[Attribute],seq[HtmlElement]	proc nav(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3366
+nim	nav	cattag/auto/htmlElements.html#nav,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc nav(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		3370
+nim	nav	cattag/auto/htmlElements.html#nav,seq[HtmlElement]	proc nav(children: seq[HtmlElement]): HtmlElement		3375
+nim	nav	cattag/auto/htmlElements.html#nav,HtmlElement,varargs[HtmlElement]	proc nav(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3379
+nim	nav	cattag/auto/htmlElements.html#nav,seq[Attribute],seq[string]	proc nav(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3384
+nim	nav	cattag/auto/htmlElements.html#nav,seq[Attribute],string,varargs[string]	proc nav(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3388
+nim	nobr	cattag/auto/htmlElements.html#nobr	proc nobr(): HtmlElement		3396
+nim	nobr	cattag/auto/htmlElements.html#nobr,seq[Attribute]	proc nobr(attributes: seq[Attribute]): HtmlElement		3400
+nim	nobr	cattag/auto/htmlElements.html#nobr,seq[Attribute],seq[HtmlElement]	proc nobr(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3406
+nim	nobr	cattag/auto/htmlElements.html#nobr,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc nobr(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		3410
+nim	nobr	cattag/auto/htmlElements.html#nobr,seq[HtmlElement]	proc nobr(children: seq[HtmlElement]): HtmlElement		3415
+nim	nobr	cattag/auto/htmlElements.html#nobr,HtmlElement,varargs[HtmlElement]	proc nobr(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3419
+nim	nobr	cattag/auto/htmlElements.html#nobr,seq[Attribute],seq[string]	proc nobr(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3424
+nim	nobr	cattag/auto/htmlElements.html#nobr,seq[Attribute],string,varargs[string]	proc nobr(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3428
+nim	noembed	cattag/auto/htmlElements.html#noembed	proc noembed(): HtmlElement		3436
+nim	noembed	cattag/auto/htmlElements.html#noembed,seq[Attribute]	proc noembed(attributes: seq[Attribute]): HtmlElement		3440
+nim	noembed	cattag/auto/htmlElements.html#noembed,seq[Attribute],seq[HtmlElement]	proc noembed(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3446
+nim	noembed	cattag/auto/htmlElements.html#noembed,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc noembed(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		3450
+nim	noembed	cattag/auto/htmlElements.html#noembed,seq[HtmlElement]	proc noembed(children: seq[HtmlElement]): HtmlElement		3455
+nim	noembed	cattag/auto/htmlElements.html#noembed,HtmlElement,varargs[HtmlElement]	proc noembed(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3459
+nim	noembed	cattag/auto/htmlElements.html#noembed,seq[Attribute],seq[string]	proc noembed(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3464
+nim	noembed	cattag/auto/htmlElements.html#noembed,seq[Attribute],string,varargs[string]	proc noembed(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		3468
+nim	noframes	cattag/auto/htmlElements.html#noframes	proc noframes(): HtmlElement		3476
+nim	noframes	cattag/auto/htmlElements.html#noframes,seq[Attribute]	proc noframes(attributes: seq[Attribute]): HtmlElement		3480
+nim	noframes	cattag/auto/htmlElements.html#noframes,seq[Attribute],seq[HtmlElement]	proc noframes(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3486
+nim	noframes	cattag/auto/htmlElements.html#noframes,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc noframes(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		3490
+nim	noframes	cattag/auto/htmlElements.html#noframes,seq[HtmlElement]	proc noframes(children: seq[HtmlElement]): HtmlElement		3495
+nim	noframes	cattag/auto/htmlElements.html#noframes,HtmlElement,varargs[HtmlElement]	proc noframes(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3499
+nim	noframes	cattag/auto/htmlElements.html#noframes,seq[Attribute],seq[string]	proc noframes(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3504
+nim	noframes	cattag/auto/htmlElements.html#noframes,seq[Attribute],string,varargs[string]	proc noframes(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		3508
+nim	noscript	cattag/auto/htmlElements.html#noscript	proc noscript(): HtmlElement		3516
+nim	noscript	cattag/auto/htmlElements.html#noscript,seq[Attribute]	proc noscript(attributes: seq[Attribute]): HtmlElement		3520
+nim	noscript	cattag/auto/htmlElements.html#noscript,seq[Attribute],seq[HtmlElement]	proc noscript(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3526
+nim	noscript	cattag/auto/htmlElements.html#noscript,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc noscript(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		3530
+nim	noscript	cattag/auto/htmlElements.html#noscript,seq[HtmlElement]	proc noscript(children: seq[HtmlElement]): HtmlElement		3535
+nim	noscript	cattag/auto/htmlElements.html#noscript,HtmlElement,varargs[HtmlElement]	proc noscript(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3539
+nim	noscript	cattag/auto/htmlElements.html#noscript,seq[Attribute],seq[string]	proc noscript(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3544
+nim	noscript	cattag/auto/htmlElements.html#noscript,seq[Attribute],string,varargs[string]	proc noscript(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		3548
+nim	`object`	cattag/auto/htmlElements.html#object	proc `object`(): HtmlElement		3556
+nim	`object`	cattag/auto/htmlElements.html#object,seq[Attribute]	proc `object`(attributes: seq[Attribute]): HtmlElement		3560
+nim	`object`	cattag/auto/htmlElements.html#object,seq[Attribute],seq[HtmlElement]	proc `object`(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3566
+nim	`object`	cattag/auto/htmlElements.html#object,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc `object`(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		3570
+nim	`object`	cattag/auto/htmlElements.html#object,seq[HtmlElement]	proc `object`(children: seq[HtmlElement]): HtmlElement		3575
+nim	`object`	cattag/auto/htmlElements.html#object,HtmlElement,varargs[HtmlElement]	proc `object`(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3579
+nim	`object`	cattag/auto/htmlElements.html#object,seq[Attribute],seq[string]	proc `object`(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3584
+nim	`object`	cattag/auto/htmlElements.html#object,seq[Attribute],string,varargs[string]	proc `object`(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		3588
+nim	`object`	cattag/auto/htmlElements.html#object,string	proc `object`(data: string): HtmlElement		3594
+nim	`object`	cattag/auto/htmlElements.html#object,string,seq[HtmlElement]	proc `object`(data: string; children: seq[HtmlElement]): HtmlElement		3600
+nim	`object`	cattag/auto/htmlElements.html#object,string,HtmlElement,varargs[HtmlElement]	proc `object`(data: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3604
+nim	`object`	cattag/auto/htmlElements.html#object,string,int,int	proc `object`(data: string; width: int; height: int): HtmlElement		3610
+nim	`object`	cattag/auto/htmlElements.html#object,string,int,int,seq[HtmlElement]	proc `object`(data: string; width: int; height: int; children: seq[HtmlElement]): HtmlElement		3616
+nim	`object`	cattag/auto/htmlElements.html#object,string,int,int,HtmlElement,varargs[HtmlElement]	proc `object`(data: string; width: int; height: int; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		3620
+nim	ol	cattag/auto/htmlElements.html#ol	proc ol(): HtmlElement		3628
+nim	ol	cattag/auto/htmlElements.html#ol,seq[Attribute]	proc ol(attributes: seq[Attribute]): HtmlElement		3632
+nim	ol	cattag/auto/htmlElements.html#ol,seq[Attribute],seq[HtmlElement]	proc ol(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3638
+nim	ol	cattag/auto/htmlElements.html#ol,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc ol(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		3642
+nim	ol	cattag/auto/htmlElements.html#ol,seq[HtmlElement]	proc ol(children: seq[HtmlElement]): HtmlElement		3647
+nim	ol	cattag/auto/htmlElements.html#ol,HtmlElement,varargs[HtmlElement]	proc ol(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3651
+nim	ol	cattag/auto/htmlElements.html#ol,seq[Attribute],seq[string]	proc ol(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3656
+nim	ol	cattag/auto/htmlElements.html#ol,seq[Attribute],string,varargs[string]	proc ol(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3660
+nim	ol	cattag/auto/htmlElements.html#ol,,	proc ol(type: string | int; start: string | int): HtmlElement		3666
+nim	ol	cattag/auto/htmlElements.html#ol,,,seq[HtmlElement]	proc ol(type: string | int; start: string | int; children: seq[HtmlElement]): HtmlElement		3672
+nim	ol	cattag/auto/htmlElements.html#ol,,,HtmlElement,varargs[HtmlElement]	proc ol(type: string | int; start: string | int; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		3676
+nim	ol	cattag/auto/htmlElements.html#ol,,,bool	proc ol(type: string | int; start: string | int; reversed: bool): HtmlElement		3682
+nim	ol	cattag/auto/htmlElements.html#ol,,,bool,seq[HtmlElement]	proc ol(type: string | int; start: string | int; reversed: bool;\n   children: seq[HtmlElement]): HtmlElement		3688
+nim	ol	cattag/auto/htmlElements.html#ol,,,bool,HtmlElement,varargs[HtmlElement]	proc ol(type: string | int; start: string | int; reversed: bool; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		3692
+nim	optgroup	cattag/auto/htmlElements.html#optgroup	proc optgroup(): HtmlElement		3700
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,seq[Attribute]	proc optgroup(attributes: seq[Attribute]): HtmlElement		3704
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,seq[Attribute],seq[HtmlElement]	proc optgroup(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3710
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc optgroup(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		3714
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,seq[HtmlElement]	proc optgroup(children: seq[HtmlElement]): HtmlElement		3719
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,HtmlElement,varargs[HtmlElement]	proc optgroup(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3723
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,seq[Attribute],seq[string]	proc optgroup(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3728
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,seq[Attribute],string,varargs[string]	proc optgroup(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		3732
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,string	proc optgroup(label: string): HtmlElement		3738
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,string,seq[HtmlElement]	proc optgroup(label: string; children: seq[HtmlElement]): HtmlElement		3744
+nim	optgroup	cattag/auto/htmlElements.html#optgroup,string,HtmlElement,varargs[HtmlElement]	proc optgroup(label: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3748
+nim	option	cattag/auto/htmlElements.html#option	proc option(): HtmlElement		3756
+nim	option	cattag/auto/htmlElements.html#option,seq[Attribute]	proc option(attributes: seq[Attribute]): HtmlElement		3760
+nim	option	cattag/auto/htmlElements.html#option,seq[Attribute],seq[HtmlElement]	proc option(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3766
+nim	option	cattag/auto/htmlElements.html#option,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc option(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		3770
+nim	option	cattag/auto/htmlElements.html#option,seq[HtmlElement]	proc option(children: seq[HtmlElement]): HtmlElement		3775
+nim	option	cattag/auto/htmlElements.html#option,HtmlElement,varargs[HtmlElement]	proc option(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3779
+nim	option	cattag/auto/htmlElements.html#option,seq[Attribute],seq[string]	proc option(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3784
+nim	option	cattag/auto/htmlElements.html#option,seq[Attribute],string,varargs[string]	proc option(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3788
+nim	option	cattag/auto/htmlElements.html#option,string	proc option(value: string): HtmlElement		3794
+nim	option	cattag/auto/htmlElements.html#option,string,seq[HtmlElement]	proc option(value: string; children: seq[HtmlElement]): HtmlElement		3800
+nim	option	cattag/auto/htmlElements.html#option,string,HtmlElement,varargs[HtmlElement]	proc option(value: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3804
+nim	option	cattag/auto/htmlElements.html#option,string,seq[string]	proc option(value: string; content: seq[string]): HtmlElement		3810
+nim	option	cattag/auto/htmlElements.html#option,string,string,varargs[string]	proc option(value: string; content: string; contents: varargs[string]): HtmlElement		3814
+nim	option	cattag/auto/htmlElements.html#option,string,bool	proc option(value: string; selected: bool): HtmlElement		3820
+nim	option	cattag/auto/htmlElements.html#option,string,bool,seq[HtmlElement]	proc option(value: string; selected: bool; children: seq[HtmlElement]): HtmlElement		3826
+nim	option	cattag/auto/htmlElements.html#option,string,bool,HtmlElement,varargs[HtmlElement]	proc option(value: string; selected: bool; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		3830
+nim	option	cattag/auto/htmlElements.html#option,string,bool,seq[string]	proc option(value: string; selected: bool; content: seq[string]): HtmlElement		3836
+nim	option	cattag/auto/htmlElements.html#option,string,bool,string,varargs[string]	proc option(value: string; selected: bool; content: string; contents: varargs[string]): HtmlElement		3840
+nim	output	cattag/auto/htmlElements.html#output	proc output(): HtmlElement		3848
+nim	output	cattag/auto/htmlElements.html#output,seq[Attribute]	proc output(attributes: seq[Attribute]): HtmlElement		3852
+nim	output	cattag/auto/htmlElements.html#output,seq[Attribute],seq[HtmlElement]	proc output(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3858
+nim	output	cattag/auto/htmlElements.html#output,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc output(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		3862
+nim	output	cattag/auto/htmlElements.html#output,seq[HtmlElement]	proc output(children: seq[HtmlElement]): HtmlElement		3867
+nim	output	cattag/auto/htmlElements.html#output,HtmlElement,varargs[HtmlElement]	proc output(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3871
+nim	output	cattag/auto/htmlElements.html#output,seq[Attribute],seq[string]	proc output(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3876
+nim	output	cattag/auto/htmlElements.html#output,seq[Attribute],string,varargs[string]	proc output(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3880
+nim	output	cattag/auto/htmlElements.html#output,string	proc output(for: string): HtmlElement		3886
+nim	output	cattag/auto/htmlElements.html#output,string,seq[HtmlElement]	proc output(for: string; children: seq[HtmlElement]): HtmlElement		3892
+nim	output	cattag/auto/htmlElements.html#output,string,HtmlElement,varargs[HtmlElement]	proc output(for: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3896
+nim	output	cattag/auto/htmlElements.html#output,string,seq[string]	proc output(for: string; content: seq[string]): HtmlElement		3902
+nim	output	cattag/auto/htmlElements.html#output,string,string,varargs[string]	proc output(for: string; content: string; contents: varargs[string]): HtmlElement		3906
+nim	p	cattag/auto/htmlElements.html#p	proc p(): HtmlElement		3914
+nim	p	cattag/auto/htmlElements.html#p,seq[Attribute]	proc p(attributes: seq[Attribute]): HtmlElement		3918
+nim	p	cattag/auto/htmlElements.html#p,seq[Attribute],seq[HtmlElement]	proc p(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3924
+nim	p	cattag/auto/htmlElements.html#p,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc p(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3928
+nim	p	cattag/auto/htmlElements.html#p,seq[HtmlElement]	proc p(children: seq[HtmlElement]): HtmlElement		3933
+nim	p	cattag/auto/htmlElements.html#p,HtmlElement,varargs[HtmlElement]	proc p(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3937
+nim	p	cattag/auto/htmlElements.html#p,seq[Attribute],seq[string]	proc p(attributes: seq[Attribute]; content: seq[string]): HtmlElement		3942
+nim	p	cattag/auto/htmlElements.html#p,seq[Attribute],string,varargs[string]	proc p(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		3946
+nim	param	cattag/auto/htmlElements.html#param	proc param(): HtmlElement		3954
+nim	param	cattag/auto/htmlElements.html#param,seq[Attribute]	proc param(attributes: seq[Attribute]): HtmlElement		3958
+nim	param	cattag/auto/htmlElements.html#param,string,	proc param(name: string; value: string | SomeNumber): HtmlElement		3964
+nim	picture	cattag/auto/htmlElements.html#picture	proc picture(): HtmlElement		3972
+nim	picture	cattag/auto/htmlElements.html#picture,seq[Attribute]	proc picture(attributes: seq[Attribute]): HtmlElement		3976
+nim	picture	cattag/auto/htmlElements.html#picture,seq[Attribute],seq[HtmlElement]	proc picture(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		3982
+nim	picture	cattag/auto/htmlElements.html#picture,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc picture(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		3986
+nim	picture	cattag/auto/htmlElements.html#picture,seq[HtmlElement]	proc picture(children: seq[HtmlElement]): HtmlElement		3991
+nim	picture	cattag/auto/htmlElements.html#picture,HtmlElement,varargs[HtmlElement]	proc picture(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		3995
+nim	picture	cattag/auto/htmlElements.html#picture,seq[Attribute],seq[string]	proc picture(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4000
+nim	picture	cattag/auto/htmlElements.html#picture,seq[Attribute],string,varargs[string]	proc picture(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		4004
+nim	plaintext	cattag/auto/htmlElements.html#plaintext	proc plaintext(): HtmlElement		4012
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,seq[Attribute]	proc plaintext(attributes: seq[Attribute]): HtmlElement		4016
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,seq[Attribute],seq[HtmlElement]	proc plaintext(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4022
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc plaintext(attributes: seq[Attribute]; child: HtmlElement;\n          children: varargs[HtmlElement]): HtmlElement		4026
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,seq[HtmlElement]	proc plaintext(children: seq[HtmlElement]): HtmlElement		4031
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,HtmlElement,varargs[HtmlElement]	proc plaintext(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4035
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,seq[Attribute],seq[string]	proc plaintext(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4040
+nim	plaintext	cattag/auto/htmlElements.html#plaintext,seq[Attribute],string,varargs[string]	proc plaintext(attributes: seq[Attribute]; content: string;\n          moreContent: varargs[string]): HtmlElement		4044
+nim	pre	cattag/auto/htmlElements.html#pre	proc pre(): HtmlElement		4052
+nim	pre	cattag/auto/htmlElements.html#pre,seq[Attribute]	proc pre(attributes: seq[Attribute]): HtmlElement		4056
+nim	pre	cattag/auto/htmlElements.html#pre,seq[Attribute],seq[HtmlElement]	proc pre(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4062
+nim	pre	cattag/auto/htmlElements.html#pre,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc pre(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		4066
+nim	pre	cattag/auto/htmlElements.html#pre,seq[HtmlElement]	proc pre(children: seq[HtmlElement]): HtmlElement		4071
+nim	pre	cattag/auto/htmlElements.html#pre,HtmlElement,varargs[HtmlElement]	proc pre(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4075
+nim	pre	cattag/auto/htmlElements.html#pre,seq[Attribute],seq[string]	proc pre(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4080
+nim	pre	cattag/auto/htmlElements.html#pre,seq[Attribute],string,varargs[string]	proc pre(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4084
+nim	progress	cattag/auto/htmlElements.html#progress	proc progress(): HtmlElement		4092
+nim	progress	cattag/auto/htmlElements.html#progress,seq[Attribute]	proc progress(attributes: seq[Attribute]): HtmlElement		4096
+nim	progress	cattag/auto/htmlElements.html#progress,seq[Attribute],seq[HtmlElement]	proc progress(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4102
+nim	progress	cattag/auto/htmlElements.html#progress,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc progress(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		4106
+nim	progress	cattag/auto/htmlElements.html#progress,seq[HtmlElement]	proc progress(children: seq[HtmlElement]): HtmlElement		4111
+nim	progress	cattag/auto/htmlElements.html#progress,HtmlElement,varargs[HtmlElement]	proc progress(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4115
+nim	progress	cattag/auto/htmlElements.html#progress,seq[Attribute],seq[string]	proc progress(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4120
+nim	progress	cattag/auto/htmlElements.html#progress,seq[Attribute],string,varargs[string]	proc progress(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		4124
+nim	progress	cattag/auto/htmlElements.html#progress,SomeNumber,SomeNumber	proc progress(value: SomeNumber; max: SomeNumber): HtmlElement		4130
+nim	progress	cattag/auto/htmlElements.html#progress,SomeNumber,SomeNumber,seq[HtmlElement]	proc progress(value: SomeNumber; max: SomeNumber; children: seq[HtmlElement]): HtmlElement		4136
+nim	progress	cattag/auto/htmlElements.html#progress,SomeNumber,SomeNumber,HtmlElement,varargs[HtmlElement]	proc progress(value: SomeNumber; max: SomeNumber; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		4140
+nim	progress	cattag/auto/htmlElements.html#progress,SomeNumber,SomeNumber,seq[string]	proc progress(value: SomeNumber; max: SomeNumber; content: seq[string]): HtmlElement		4146
+nim	progress	cattag/auto/htmlElements.html#progress,SomeNumber,SomeNumber,string,varargs[string]	proc progress(value: SomeNumber; max: SomeNumber; content: string;\n         contents: varargs[string]): HtmlElement		4150
+nim	q	cattag/auto/htmlElements.html#q	proc q(): HtmlElement		4158
+nim	q	cattag/auto/htmlElements.html#q,seq[Attribute]	proc q(attributes: seq[Attribute]): HtmlElement		4162
+nim	q	cattag/auto/htmlElements.html#q,seq[Attribute],seq[HtmlElement]	proc q(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4168
+nim	q	cattag/auto/htmlElements.html#q,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc q(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4172
+nim	q	cattag/auto/htmlElements.html#q,seq[HtmlElement]	proc q(children: seq[HtmlElement]): HtmlElement		4177
+nim	q	cattag/auto/htmlElements.html#q,HtmlElement,varargs[HtmlElement]	proc q(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4181
+nim	q	cattag/auto/htmlElements.html#q,seq[Attribute],seq[string]	proc q(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4186
+nim	q	cattag/auto/htmlElements.html#q,seq[Attribute],string,varargs[string]	proc q(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4190
+nim	q	cattag/auto/htmlElements.html#q,string	proc q(cite: string): HtmlElement		4196
+nim	q	cattag/auto/htmlElements.html#q,string,seq[HtmlElement]	proc q(cite: string; children: seq[HtmlElement]): HtmlElement		4202
+nim	q	cattag/auto/htmlElements.html#q,string,HtmlElement,varargs[HtmlElement]	proc q(cite: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4206
+nim	q	cattag/auto/htmlElements.html#q,string,seq[string]	proc q(cite: string; content: seq[string]): HtmlElement		4212
+nim	q	cattag/auto/htmlElements.html#q,string,string,varargs[string]	proc q(cite: string; content: string; contents: varargs[string]): HtmlElement		4216
+nim	rb	cattag/auto/htmlElements.html#rb	proc rb(): HtmlElement		4224
+nim	rb	cattag/auto/htmlElements.html#rb,seq[Attribute]	proc rb(attributes: seq[Attribute]): HtmlElement		4228
+nim	rb	cattag/auto/htmlElements.html#rb,seq[Attribute],seq[HtmlElement]	proc rb(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4234
+nim	rb	cattag/auto/htmlElements.html#rb,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc rb(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		4238
+nim	rb	cattag/auto/htmlElements.html#rb,seq[HtmlElement]	proc rb(children: seq[HtmlElement]): HtmlElement		4243
+nim	rb	cattag/auto/htmlElements.html#rb,HtmlElement,varargs[HtmlElement]	proc rb(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4247
+nim	rb	cattag/auto/htmlElements.html#rb,seq[Attribute],seq[string]	proc rb(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4252
+nim	rb	cattag/auto/htmlElements.html#rb,seq[Attribute],string,varargs[string]	proc rb(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4256
+nim	rp	cattag/auto/htmlElements.html#rp	proc rp(): HtmlElement		4264
+nim	rp	cattag/auto/htmlElements.html#rp,seq[Attribute]	proc rp(attributes: seq[Attribute]): HtmlElement		4268
+nim	rp	cattag/auto/htmlElements.html#rp,seq[Attribute],seq[HtmlElement]	proc rp(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4274
+nim	rp	cattag/auto/htmlElements.html#rp,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc rp(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		4278
+nim	rp	cattag/auto/htmlElements.html#rp,seq[HtmlElement]	proc rp(children: seq[HtmlElement]): HtmlElement		4283
+nim	rp	cattag/auto/htmlElements.html#rp,HtmlElement,varargs[HtmlElement]	proc rp(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4287
+nim	rp	cattag/auto/htmlElements.html#rp,seq[Attribute],seq[string]	proc rp(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4292
+nim	rp	cattag/auto/htmlElements.html#rp,seq[Attribute],string,varargs[string]	proc rp(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4296
+nim	rt	cattag/auto/htmlElements.html#rt	proc rt(): HtmlElement		4304
+nim	rt	cattag/auto/htmlElements.html#rt,seq[Attribute]	proc rt(attributes: seq[Attribute]): HtmlElement		4308
+nim	rt	cattag/auto/htmlElements.html#rt,seq[Attribute],seq[HtmlElement]	proc rt(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4314
+nim	rt	cattag/auto/htmlElements.html#rt,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc rt(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		4318
+nim	rt	cattag/auto/htmlElements.html#rt,seq[HtmlElement]	proc rt(children: seq[HtmlElement]): HtmlElement		4323
+nim	rt	cattag/auto/htmlElements.html#rt,HtmlElement,varargs[HtmlElement]	proc rt(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4327
+nim	rt	cattag/auto/htmlElements.html#rt,seq[Attribute],seq[string]	proc rt(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4332
+nim	rt	cattag/auto/htmlElements.html#rt,seq[Attribute],string,varargs[string]	proc rt(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4336
+nim	rtc	cattag/auto/htmlElements.html#rtc	proc rtc(): HtmlElement		4344
+nim	rtc	cattag/auto/htmlElements.html#rtc,seq[Attribute]	proc rtc(attributes: seq[Attribute]): HtmlElement		4348
+nim	rtc	cattag/auto/htmlElements.html#rtc,seq[Attribute],seq[HtmlElement]	proc rtc(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4354
+nim	rtc	cattag/auto/htmlElements.html#rtc,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc rtc(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		4358
+nim	rtc	cattag/auto/htmlElements.html#rtc,seq[HtmlElement]	proc rtc(children: seq[HtmlElement]): HtmlElement		4363
+nim	rtc	cattag/auto/htmlElements.html#rtc,HtmlElement,varargs[HtmlElement]	proc rtc(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4367
+nim	rtc	cattag/auto/htmlElements.html#rtc,seq[Attribute],seq[string]	proc rtc(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4372
+nim	rtc	cattag/auto/htmlElements.html#rtc,seq[Attribute],string,varargs[string]	proc rtc(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4376
+nim	ruby	cattag/auto/htmlElements.html#ruby	proc ruby(): HtmlElement		4384
+nim	ruby	cattag/auto/htmlElements.html#ruby,seq[Attribute]	proc ruby(attributes: seq[Attribute]): HtmlElement		4388
+nim	ruby	cattag/auto/htmlElements.html#ruby,seq[Attribute],seq[HtmlElement]	proc ruby(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4394
+nim	ruby	cattag/auto/htmlElements.html#ruby,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc ruby(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		4398
+nim	ruby	cattag/auto/htmlElements.html#ruby,seq[HtmlElement]	proc ruby(children: seq[HtmlElement]): HtmlElement		4403
+nim	ruby	cattag/auto/htmlElements.html#ruby,HtmlElement,varargs[HtmlElement]	proc ruby(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4407
+nim	ruby	cattag/auto/htmlElements.html#ruby,seq[Attribute],seq[string]	proc ruby(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4412
+nim	ruby	cattag/auto/htmlElements.html#ruby,seq[Attribute],string,varargs[string]	proc ruby(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4416
+nim	s	cattag/auto/htmlElements.html#s	proc s(): HtmlElement		4424
+nim	s	cattag/auto/htmlElements.html#s,seq[Attribute]	proc s(attributes: seq[Attribute]): HtmlElement		4428
+nim	s	cattag/auto/htmlElements.html#s,seq[Attribute],seq[HtmlElement]	proc s(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4434
+nim	s	cattag/auto/htmlElements.html#s,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc s(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4438
+nim	s	cattag/auto/htmlElements.html#s,seq[HtmlElement]	proc s(children: seq[HtmlElement]): HtmlElement		4443
+nim	s	cattag/auto/htmlElements.html#s,HtmlElement,varargs[HtmlElement]	proc s(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4447
+nim	s	cattag/auto/htmlElements.html#s,seq[Attribute],seq[string]	proc s(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4452
+nim	s	cattag/auto/htmlElements.html#s,seq[Attribute],string,varargs[string]	proc s(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4456
+nim	samp	cattag/auto/htmlElements.html#samp	proc samp(): HtmlElement		4464
+nim	samp	cattag/auto/htmlElements.html#samp,seq[Attribute]	proc samp(attributes: seq[Attribute]): HtmlElement		4468
+nim	samp	cattag/auto/htmlElements.html#samp,seq[Attribute],seq[HtmlElement]	proc samp(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4474
+nim	samp	cattag/auto/htmlElements.html#samp,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc samp(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		4478
+nim	samp	cattag/auto/htmlElements.html#samp,seq[HtmlElement]	proc samp(children: seq[HtmlElement]): HtmlElement		4483
+nim	samp	cattag/auto/htmlElements.html#samp,HtmlElement,varargs[HtmlElement]	proc samp(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4487
+nim	samp	cattag/auto/htmlElements.html#samp,seq[Attribute],seq[string]	proc samp(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4492
+nim	samp	cattag/auto/htmlElements.html#samp,seq[Attribute],string,varargs[string]	proc samp(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4496
+nim	script	cattag/auto/htmlElements.html#script	proc script(): HtmlElement		4504
+nim	script	cattag/auto/htmlElements.html#script,seq[Attribute]	proc script(attributes: seq[Attribute]): HtmlElement		4508
+nim	script	cattag/auto/htmlElements.html#script,seq[Attribute],seq[HtmlElement]	proc script(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4514
+nim	script	cattag/auto/htmlElements.html#script,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc script(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4518
+nim	script	cattag/auto/htmlElements.html#script,seq[HtmlElement]	proc script(children: seq[HtmlElement]): HtmlElement		4523
+nim	script	cattag/auto/htmlElements.html#script,HtmlElement,varargs[HtmlElement]	proc script(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4527
+nim	script	cattag/auto/htmlElements.html#script,seq[Attribute],seq[string]	proc script(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4532
+nim	script	cattag/auto/htmlElements.html#script,seq[Attribute],string,varargs[string]	proc script(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4536
+nim	script	cattag/auto/htmlElements.html#script,bool	proc script(defer: bool = false): HtmlElement		4542
+nim	script	cattag/auto/htmlElements.html#script,bool,seq[HtmlElement]	proc script(defer: bool = false; children: seq[HtmlElement]): HtmlElement		4548
+nim	script	cattag/auto/htmlElements.html#script,bool,HtmlElement,varargs[HtmlElement]	proc script(defer: bool = false; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4552
+nim	script	cattag/auto/htmlElements.html#script,bool,seq[string]	proc script(defer: bool = false; content: seq[string]): HtmlElement		4558
+nim	script	cattag/auto/htmlElements.html#script,bool,string,varargs[string]	proc script(defer: bool = false; content: string; contents: varargs[string]): HtmlElement		4562
+nim	script	cattag/auto/htmlElements.html#script,string,bool	proc script(src: string; defer: bool = false): HtmlElement		4568
+nim	script	cattag/auto/htmlElements.html#script,string,bool,seq[HtmlElement]	proc script(src: string; defer: bool = false; children: seq[HtmlElement]): HtmlElement		4574
+nim	script	cattag/auto/htmlElements.html#script,string,bool,HtmlElement,varargs[HtmlElement]	proc script(src: string; defer: bool = false; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4578
+nim	script	cattag/auto/htmlElements.html#script,string,bool,seq[string]	proc script(src: string; defer: bool = false; content: seq[string]): HtmlElement		4584
+nim	script	cattag/auto/htmlElements.html#script,string,bool,string,varargs[string]	proc script(src: string; defer: bool = false; content: string;\n       contents: varargs[string]): HtmlElement		4588
+nim	search	cattag/auto/htmlElements.html#search	proc search(): HtmlElement		4596
+nim	search	cattag/auto/htmlElements.html#search,seq[Attribute]	proc search(attributes: seq[Attribute]): HtmlElement		4600
+nim	search	cattag/auto/htmlElements.html#search,seq[Attribute],seq[HtmlElement]	proc search(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4606
+nim	search	cattag/auto/htmlElements.html#search,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc search(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4610
+nim	search	cattag/auto/htmlElements.html#search,seq[HtmlElement]	proc search(children: seq[HtmlElement]): HtmlElement		4615
+nim	search	cattag/auto/htmlElements.html#search,HtmlElement,varargs[HtmlElement]	proc search(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4619
+nim	search	cattag/auto/htmlElements.html#search,seq[Attribute],seq[string]	proc search(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4624
+nim	search	cattag/auto/htmlElements.html#search,seq[Attribute],string,varargs[string]	proc search(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4628
+nim	section	cattag/auto/htmlElements.html#section	proc section(): HtmlElement		4636
+nim	section	cattag/auto/htmlElements.html#section,seq[Attribute]	proc section(attributes: seq[Attribute]): HtmlElement		4640
+nim	section	cattag/auto/htmlElements.html#section,seq[Attribute],seq[HtmlElement]	proc section(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4646
+nim	section	cattag/auto/htmlElements.html#section,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc section(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		4650
+nim	section	cattag/auto/htmlElements.html#section,seq[HtmlElement]	proc section(children: seq[HtmlElement]): HtmlElement		4655
+nim	section	cattag/auto/htmlElements.html#section,HtmlElement,varargs[HtmlElement]	proc section(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4659
+nim	section	cattag/auto/htmlElements.html#section,seq[Attribute],seq[string]	proc section(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4664
+nim	section	cattag/auto/htmlElements.html#section,seq[Attribute],string,varargs[string]	proc section(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		4668
+nim	select	cattag/auto/htmlElements.html#select	proc select(): HtmlElement		4676
+nim	select	cattag/auto/htmlElements.html#select,seq[Attribute]	proc select(attributes: seq[Attribute]): HtmlElement		4680
+nim	select	cattag/auto/htmlElements.html#select,seq[Attribute],seq[HtmlElement]	proc select(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4686
+nim	select	cattag/auto/htmlElements.html#select,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc select(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4690
+nim	select	cattag/auto/htmlElements.html#select,seq[HtmlElement]	proc select(children: seq[HtmlElement]): HtmlElement		4695
+nim	select	cattag/auto/htmlElements.html#select,HtmlElement,varargs[HtmlElement]	proc select(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4699
+nim	select	cattag/auto/htmlElements.html#select,seq[Attribute],seq[string]	proc select(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4704
+nim	select	cattag/auto/htmlElements.html#select,seq[Attribute],string,varargs[string]	proc select(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4708
+nim	select	cattag/auto/htmlElements.html#select,string	proc select(id: string): HtmlElement		4714
+nim	select	cattag/auto/htmlElements.html#select,string,seq[HtmlElement]	proc select(id: string; children: seq[HtmlElement]): HtmlElement		4720
+nim	select	cattag/auto/htmlElements.html#select,string,HtmlElement,varargs[HtmlElement]	proc select(id: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4724
+nim	select	cattag/auto/htmlElements.html#select,string,bool	proc select(id: string; multiple: bool): HtmlElement		4730
+nim	select	cattag/auto/htmlElements.html#select,string,bool,seq[HtmlElement]	proc select(id: string; multiple: bool; children: seq[HtmlElement]): HtmlElement		4736
+nim	select	cattag/auto/htmlElements.html#select,string,bool,HtmlElement,varargs[HtmlElement]	proc select(id: string; multiple: bool; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4740
+nim	select	cattag/auto/htmlElements.html#select,string,bool,bool	proc select(id: string; multiple: bool; required: bool): HtmlElement		4746
+nim	select	cattag/auto/htmlElements.html#select,string,bool,bool,seq[HtmlElement]	proc select(id: string; multiple: bool; required: bool; children: seq[HtmlElement]): HtmlElement		4752
+nim	select	cattag/auto/htmlElements.html#select,string,bool,bool,HtmlElement,varargs[HtmlElement]	proc select(id: string; multiple: bool; required: bool; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4756
+nim	slot	cattag/auto/htmlElements.html#slot	proc slot(): HtmlElement		4764
+nim	slot	cattag/auto/htmlElements.html#slot,seq[Attribute]	proc slot(attributes: seq[Attribute]): HtmlElement		4768
+nim	slot	cattag/auto/htmlElements.html#slot,seq[Attribute],seq[HtmlElement]	proc slot(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4774
+nim	slot	cattag/auto/htmlElements.html#slot,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc slot(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		4778
+nim	slot	cattag/auto/htmlElements.html#slot,seq[HtmlElement]	proc slot(children: seq[HtmlElement]): HtmlElement		4783
+nim	slot	cattag/auto/htmlElements.html#slot,HtmlElement,varargs[HtmlElement]	proc slot(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4787
+nim	slot	cattag/auto/htmlElements.html#slot,seq[Attribute],seq[string]	proc slot(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4792
+nim	slot	cattag/auto/htmlElements.html#slot,seq[Attribute],string,varargs[string]	proc slot(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4796
+nim	small	cattag/auto/htmlElements.html#small	proc small(): HtmlElement		4804
+nim	small	cattag/auto/htmlElements.html#small,seq[Attribute]	proc small(attributes: seq[Attribute]): HtmlElement		4808
+nim	small	cattag/auto/htmlElements.html#small,seq[Attribute],seq[HtmlElement]	proc small(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4814
+nim	small	cattag/auto/htmlElements.html#small,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc small(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		4818
+nim	small	cattag/auto/htmlElements.html#small,seq[HtmlElement]	proc small(children: seq[HtmlElement]): HtmlElement		4823
+nim	small	cattag/auto/htmlElements.html#small,HtmlElement,varargs[HtmlElement]	proc small(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4827
+nim	small	cattag/auto/htmlElements.html#small,seq[Attribute],seq[string]	proc small(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4832
+nim	small	cattag/auto/htmlElements.html#small,seq[Attribute],string,varargs[string]	proc small(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4836
+nim	source	cattag/auto/htmlElements.html#source	proc source(): HtmlElement		4844
+nim	source	cattag/auto/htmlElements.html#source,seq[Attribute]	proc source(attributes: seq[Attribute]): HtmlElement		4848
+nim	source	cattag/auto/htmlElements.html#source,string,string	proc source(type: string; src: string): HtmlElement		4854
+nim	span	cattag/auto/htmlElements.html#span	proc span(): HtmlElement		4862
+nim	span	cattag/auto/htmlElements.html#span,seq[Attribute]	proc span(attributes: seq[Attribute]): HtmlElement		4866
+nim	span	cattag/auto/htmlElements.html#span,seq[Attribute],seq[HtmlElement]	proc span(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4872
+nim	span	cattag/auto/htmlElements.html#span,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc span(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		4876
+nim	span	cattag/auto/htmlElements.html#span,seq[HtmlElement]	proc span(children: seq[HtmlElement]): HtmlElement		4881
+nim	span	cattag/auto/htmlElements.html#span,HtmlElement,varargs[HtmlElement]	proc span(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4885
+nim	span	cattag/auto/htmlElements.html#span,seq[Attribute],seq[string]	proc span(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4890
+nim	span	cattag/auto/htmlElements.html#span,seq[Attribute],string,varargs[string]	proc span(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4894
+nim	strike	cattag/auto/htmlElements.html#strike	proc strike(): HtmlElement		4902
+nim	strike	cattag/auto/htmlElements.html#strike,seq[Attribute]	proc strike(attributes: seq[Attribute]): HtmlElement		4906
+nim	strike	cattag/auto/htmlElements.html#strike,seq[Attribute],seq[HtmlElement]	proc strike(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4912
+nim	strike	cattag/auto/htmlElements.html#strike,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc strike(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4916
+nim	strike	cattag/auto/htmlElements.html#strike,seq[HtmlElement]	proc strike(children: seq[HtmlElement]): HtmlElement		4921
+nim	strike	cattag/auto/htmlElements.html#strike,HtmlElement,varargs[HtmlElement]	proc strike(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4925
+nim	strike	cattag/auto/htmlElements.html#strike,seq[Attribute],seq[string]	proc strike(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4930
+nim	strike	cattag/auto/htmlElements.html#strike,seq[Attribute],string,varargs[string]	proc strike(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4934
+nim	strong	cattag/auto/htmlElements.html#strong	proc strong(): HtmlElement		4942
+nim	strong	cattag/auto/htmlElements.html#strong,seq[Attribute]	proc strong(attributes: seq[Attribute]): HtmlElement		4946
+nim	strong	cattag/auto/htmlElements.html#strong,seq[Attribute],seq[HtmlElement]	proc strong(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4952
+nim	strong	cattag/auto/htmlElements.html#strong,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc strong(attributes: seq[Attribute]; child: HtmlElement;\n       children: varargs[HtmlElement]): HtmlElement		4956
+nim	strong	cattag/auto/htmlElements.html#strong,seq[HtmlElement]	proc strong(children: seq[HtmlElement]): HtmlElement		4961
+nim	strong	cattag/auto/htmlElements.html#strong,HtmlElement,varargs[HtmlElement]	proc strong(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		4965
+nim	strong	cattag/auto/htmlElements.html#strong,seq[Attribute],seq[string]	proc strong(attributes: seq[Attribute]; content: seq[string]): HtmlElement		4970
+nim	strong	cattag/auto/htmlElements.html#strong,seq[Attribute],string,varargs[string]	proc strong(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		4974
+nim	style	cattag/auto/htmlElements.html#style	proc style(): HtmlElement		4982
+nim	style	cattag/auto/htmlElements.html#style,seq[Attribute]	proc style(attributes: seq[Attribute]): HtmlElement		4986
+nim	style	cattag/auto/htmlElements.html#style,seq[Attribute],seq[HtmlElement]	proc style(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		4992
+nim	style	cattag/auto/htmlElements.html#style,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc style(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		4996
+nim	style	cattag/auto/htmlElements.html#style,seq[HtmlElement]	proc style(children: seq[HtmlElement]): HtmlElement		5001
+nim	style	cattag/auto/htmlElements.html#style,HtmlElement,varargs[HtmlElement]	proc style(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5005
+nim	style	cattag/auto/htmlElements.html#style,seq[Attribute],seq[string]	proc style(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5010
+nim	style	cattag/auto/htmlElements.html#style,seq[Attribute],string,varargs[string]	proc style(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5014
+nim	sub	cattag/auto/htmlElements.html#sub	proc sub(): HtmlElement		5022
+nim	sub	cattag/auto/htmlElements.html#sub,seq[Attribute]	proc sub(attributes: seq[Attribute]): HtmlElement		5026
+nim	sub	cattag/auto/htmlElements.html#sub,seq[Attribute],seq[HtmlElement]	proc sub(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5032
+nim	sub	cattag/auto/htmlElements.html#sub,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc sub(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		5036
+nim	sub	cattag/auto/htmlElements.html#sub,seq[HtmlElement]	proc sub(children: seq[HtmlElement]): HtmlElement		5041
+nim	sub	cattag/auto/htmlElements.html#sub,HtmlElement,varargs[HtmlElement]	proc sub(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5045
+nim	sub	cattag/auto/htmlElements.html#sub,seq[Attribute],seq[string]	proc sub(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5050
+nim	sub	cattag/auto/htmlElements.html#sub,seq[Attribute],string,varargs[string]	proc sub(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5054
+nim	summary	cattag/auto/htmlElements.html#summary	proc summary(): HtmlElement		5062
+nim	summary	cattag/auto/htmlElements.html#summary,seq[Attribute]	proc summary(attributes: seq[Attribute]): HtmlElement		5066
+nim	summary	cattag/auto/htmlElements.html#summary,seq[Attribute],seq[HtmlElement]	proc summary(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5072
+nim	summary	cattag/auto/htmlElements.html#summary,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc summary(attributes: seq[Attribute]; child: HtmlElement;\n        children: varargs[HtmlElement]): HtmlElement		5076
+nim	summary	cattag/auto/htmlElements.html#summary,seq[HtmlElement]	proc summary(children: seq[HtmlElement]): HtmlElement		5081
+nim	summary	cattag/auto/htmlElements.html#summary,HtmlElement,varargs[HtmlElement]	proc summary(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5085
+nim	summary	cattag/auto/htmlElements.html#summary,seq[Attribute],seq[string]	proc summary(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5090
+nim	summary	cattag/auto/htmlElements.html#summary,seq[Attribute],string,varargs[string]	proc summary(attributes: seq[Attribute]; content: string;\n        moreContent: varargs[string]): HtmlElement		5094
+nim	sup	cattag/auto/htmlElements.html#sup	proc sup(): HtmlElement		5102
+nim	sup	cattag/auto/htmlElements.html#sup,seq[Attribute]	proc sup(attributes: seq[Attribute]): HtmlElement		5106
+nim	sup	cattag/auto/htmlElements.html#sup,seq[Attribute],seq[HtmlElement]	proc sup(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5112
+nim	sup	cattag/auto/htmlElements.html#sup,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc sup(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		5116
+nim	sup	cattag/auto/htmlElements.html#sup,seq[HtmlElement]	proc sup(children: seq[HtmlElement]): HtmlElement		5121
+nim	sup	cattag/auto/htmlElements.html#sup,HtmlElement,varargs[HtmlElement]	proc sup(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5125
+nim	sup	cattag/auto/htmlElements.html#sup,seq[Attribute],seq[string]	proc sup(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5130
+nim	sup	cattag/auto/htmlElements.html#sup,seq[Attribute],string,varargs[string]	proc sup(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5134
+nim	table	cattag/auto/htmlElements.html#table	proc table(): HtmlElement		5142
+nim	table	cattag/auto/htmlElements.html#table,seq[Attribute]	proc table(attributes: seq[Attribute]): HtmlElement		5146
+nim	table	cattag/auto/htmlElements.html#table,seq[Attribute],seq[HtmlElement]	proc table(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5152
+nim	table	cattag/auto/htmlElements.html#table,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc table(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5156
+nim	table	cattag/auto/htmlElements.html#table,seq[HtmlElement]	proc table(children: seq[HtmlElement]): HtmlElement		5161
+nim	table	cattag/auto/htmlElements.html#table,HtmlElement,varargs[HtmlElement]	proc table(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5165
+nim	table	cattag/auto/htmlElements.html#table,seq[Attribute],seq[string]	proc table(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5170
+nim	table	cattag/auto/htmlElements.html#table,seq[Attribute],string,varargs[string]	proc table(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5174
+nim	tbody	cattag/auto/htmlElements.html#tbody	proc tbody(): HtmlElement		5182
+nim	tbody	cattag/auto/htmlElements.html#tbody,seq[Attribute]	proc tbody(attributes: seq[Attribute]): HtmlElement		5186
+nim	tbody	cattag/auto/htmlElements.html#tbody,seq[Attribute],seq[HtmlElement]	proc tbody(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5192
+nim	tbody	cattag/auto/htmlElements.html#tbody,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc tbody(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5196
+nim	tbody	cattag/auto/htmlElements.html#tbody,seq[HtmlElement]	proc tbody(children: seq[HtmlElement]): HtmlElement		5201
+nim	tbody	cattag/auto/htmlElements.html#tbody,HtmlElement,varargs[HtmlElement]	proc tbody(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5205
+nim	tbody	cattag/auto/htmlElements.html#tbody,seq[Attribute],seq[string]	proc tbody(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5210
+nim	tbody	cattag/auto/htmlElements.html#tbody,seq[Attribute],string,varargs[string]	proc tbody(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5214
+nim	td	cattag/auto/htmlElements.html#td	proc td(): HtmlElement		5222
+nim	td	cattag/auto/htmlElements.html#td,seq[Attribute]	proc td(attributes: seq[Attribute]): HtmlElement		5226
+nim	td	cattag/auto/htmlElements.html#td,seq[Attribute],seq[HtmlElement]	proc td(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5232
+nim	td	cattag/auto/htmlElements.html#td,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc td(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5236
+nim	td	cattag/auto/htmlElements.html#td,seq[HtmlElement]	proc td(children: seq[HtmlElement]): HtmlElement		5241
+nim	td	cattag/auto/htmlElements.html#td,HtmlElement,varargs[HtmlElement]	proc td(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5245
+nim	td	cattag/auto/htmlElements.html#td,seq[Attribute],seq[string]	proc td(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5250
+nim	td	cattag/auto/htmlElements.html#td,seq[Attribute],string,varargs[string]	proc td(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5254
+nim	td	cattag/auto/htmlElements.html#td,int,int	proc td(rowspan: int; colspan: int): HtmlElement		5260
+nim	td	cattag/auto/htmlElements.html#td,int,int,seq[HtmlElement]	proc td(rowspan: int; colspan: int; children: seq[HtmlElement]): HtmlElement		5266
+nim	td	cattag/auto/htmlElements.html#td,int,int,HtmlElement,varargs[HtmlElement]	proc td(rowspan: int; colspan: int; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5270
+nim	td	cattag/auto/htmlElements.html#td,int,int,seq[string]	proc td(rowspan: int; colspan: int; content: seq[string]): HtmlElement		5276
+nim	td	cattag/auto/htmlElements.html#td,int,int,string,varargs[string]	proc td(rowspan: int; colspan: int; content: string; contents: varargs[string]): HtmlElement		5280
+nim	`template`	cattag/auto/htmlElements.html#template	proc `template`(): HtmlElement		5288
+nim	`template`	cattag/auto/htmlElements.html#template,seq[Attribute]	proc `template`(attributes: seq[Attribute]): HtmlElement		5292
+nim	`template`	cattag/auto/htmlElements.html#template,seq[Attribute],seq[HtmlElement]	proc `template`(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5298
+nim	`template`	cattag/auto/htmlElements.html#template,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc `template`(attributes: seq[Attribute]; child: HtmlElement;\n           children: varargs[HtmlElement]): HtmlElement		5302
+nim	`template`	cattag/auto/htmlElements.html#template,seq[HtmlElement]	proc `template`(children: seq[HtmlElement]): HtmlElement		5307
+nim	`template`	cattag/auto/htmlElements.html#template,HtmlElement,varargs[HtmlElement]	proc `template`(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5311
+nim	`template`	cattag/auto/htmlElements.html#template,seq[Attribute],seq[string]	proc `template`(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5316
+nim	`template`	cattag/auto/htmlElements.html#template,seq[Attribute],string,varargs[string]	proc `template`(attributes: seq[Attribute]; content: string;\n           moreContent: varargs[string]): HtmlElement		5320
+nim	textarea	cattag/auto/htmlElements.html#textarea	proc textarea(): HtmlElement		5328
+nim	textarea	cattag/auto/htmlElements.html#textarea,seq[Attribute]	proc textarea(attributes: seq[Attribute]): HtmlElement		5332
+nim	textarea	cattag/auto/htmlElements.html#textarea,seq[Attribute],seq[HtmlElement]	proc textarea(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5338
+nim	textarea	cattag/auto/htmlElements.html#textarea,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc textarea(attributes: seq[Attribute]; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		5342
+nim	textarea	cattag/auto/htmlElements.html#textarea,seq[HtmlElement]	proc textarea(children: seq[HtmlElement]): HtmlElement		5347
+nim	textarea	cattag/auto/htmlElements.html#textarea,HtmlElement,varargs[HtmlElement]	proc textarea(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5351
+nim	textarea	cattag/auto/htmlElements.html#textarea,seq[Attribute],seq[string]	proc textarea(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5356
+nim	textarea	cattag/auto/htmlElements.html#textarea,seq[Attribute],string,varargs[string]	proc textarea(attributes: seq[Attribute]; content: string;\n         moreContent: varargs[string]): HtmlElement		5360
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,int,int	proc textarea(id: string; rows: int; cols: int): HtmlElement		5366
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,int,int,seq[HtmlElement]	proc textarea(id: string; rows: int; cols: int; children: seq[HtmlElement]): HtmlElement		5372
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,int,int,HtmlElement,varargs[HtmlElement]	proc textarea(id: string; rows: int; cols: int; child: HtmlElement;\n         children: varargs[HtmlElement]): HtmlElement		5376
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,int,int,seq[string]	proc textarea(id: string; rows: int; cols: int; content: seq[string]): HtmlElement		5382
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,int,int,string,varargs[string]	proc textarea(id: string; rows: int; cols: int; content: string;\n         contents: varargs[string]): HtmlElement		5386
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int	proc textarea(id: string; placeholder: string; rows: int; cols: int): HtmlElement		5392
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,seq[HtmlElement]	proc textarea(id: string; placeholder: string; rows: int; cols: int;\n         children: seq[HtmlElement]): HtmlElement		5398
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,HtmlElement,varargs[HtmlElement]	proc textarea(id: string; placeholder: string; rows: int; cols: int;\n         child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5402
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,seq[string]	proc textarea(id: string; placeholder: string; rows: int; cols: int;\n         content: seq[string]): HtmlElement		5408
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,string,varargs[string]	proc textarea(id: string; placeholder: string; rows: int; cols: int; content: string;\n         contents: varargs[string]): HtmlElement		5412
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,bool	proc textarea(id: string; placeholder: string; rows: int; cols: int; required: bool): HtmlElement		5418
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,bool,seq[HtmlElement]	proc textarea(id: string; placeholder: string; rows: int; cols: int; required: bool;\n         children: seq[HtmlElement]): HtmlElement		5424
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,bool,HtmlElement,varargs[HtmlElement]	proc textarea(id: string; placeholder: string; rows: int; cols: int; required: bool;\n         child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5428
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,bool,seq[string]	proc textarea(id: string; placeholder: string; rows: int; cols: int; required: bool;\n         content: seq[string]): HtmlElement		5434
+nim	textarea	cattag/auto/htmlElements.html#textarea,string,string,int,int,bool,string,varargs[string]	proc textarea(id: string; placeholder: string; rows: int; cols: int; required: bool;\n         content: string; contents: varargs[string]): HtmlElement		5438
+nim	tfoot	cattag/auto/htmlElements.html#tfoot	proc tfoot(): HtmlElement		5446
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,seq[Attribute]	proc tfoot(attributes: seq[Attribute]): HtmlElement		5450
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,seq[Attribute],seq[HtmlElement]	proc tfoot(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5456
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc tfoot(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5460
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,seq[HtmlElement]	proc tfoot(children: seq[HtmlElement]): HtmlElement		5465
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,HtmlElement,varargs[HtmlElement]	proc tfoot(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5469
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,seq[Attribute],seq[string]	proc tfoot(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5474
+nim	tfoot	cattag/auto/htmlElements.html#tfoot,seq[Attribute],string,varargs[string]	proc tfoot(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5478
+nim	th	cattag/auto/htmlElements.html#th	proc th(): HtmlElement		5486
+nim	th	cattag/auto/htmlElements.html#th,seq[Attribute]	proc th(attributes: seq[Attribute]): HtmlElement		5490
+nim	th	cattag/auto/htmlElements.html#th,seq[Attribute],seq[HtmlElement]	proc th(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5496
+nim	th	cattag/auto/htmlElements.html#th,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc th(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5500
+nim	th	cattag/auto/htmlElements.html#th,seq[HtmlElement]	proc th(children: seq[HtmlElement]): HtmlElement		5505
+nim	th	cattag/auto/htmlElements.html#th,HtmlElement,varargs[HtmlElement]	proc th(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5509
+nim	th	cattag/auto/htmlElements.html#th,seq[Attribute],seq[string]	proc th(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5514
+nim	th	cattag/auto/htmlElements.html#th,seq[Attribute],string,varargs[string]	proc th(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5518
+nim	th	cattag/auto/htmlElements.html#th,int,int	proc th(rowspan: int; colspan: int): HtmlElement		5524
+nim	th	cattag/auto/htmlElements.html#th,int,int,seq[HtmlElement]	proc th(rowspan: int; colspan: int; children: seq[HtmlElement]): HtmlElement		5530
+nim	th	cattag/auto/htmlElements.html#th,int,int,HtmlElement,varargs[HtmlElement]	proc th(rowspan: int; colspan: int; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5534
+nim	th	cattag/auto/htmlElements.html#th,int,int,seq[string]	proc th(rowspan: int; colspan: int; content: seq[string]): HtmlElement		5540
+nim	th	cattag/auto/htmlElements.html#th,int,int,string,varargs[string]	proc th(rowspan: int; colspan: int; content: string; contents: varargs[string]): HtmlElement		5544
+nim	thead	cattag/auto/htmlElements.html#thead	proc thead(): HtmlElement		5552
+nim	thead	cattag/auto/htmlElements.html#thead,seq[Attribute]	proc thead(attributes: seq[Attribute]): HtmlElement		5556
+nim	thead	cattag/auto/htmlElements.html#thead,seq[Attribute],seq[HtmlElement]	proc thead(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5562
+nim	thead	cattag/auto/htmlElements.html#thead,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc thead(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5566
+nim	thead	cattag/auto/htmlElements.html#thead,seq[HtmlElement]	proc thead(children: seq[HtmlElement]): HtmlElement		5571
+nim	thead	cattag/auto/htmlElements.html#thead,HtmlElement,varargs[HtmlElement]	proc thead(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5575
+nim	thead	cattag/auto/htmlElements.html#thead,seq[Attribute],seq[string]	proc thead(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5580
+nim	thead	cattag/auto/htmlElements.html#thead,seq[Attribute],string,varargs[string]	proc thead(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5584
+nim	time	cattag/auto/htmlElements.html#time	proc time(): HtmlElement		5592
+nim	time	cattag/auto/htmlElements.html#time,seq[Attribute]	proc time(attributes: seq[Attribute]): HtmlElement		5596
+nim	time	cattag/auto/htmlElements.html#time,seq[Attribute],seq[HtmlElement]	proc time(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5602
+nim	time	cattag/auto/htmlElements.html#time,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc time(attributes: seq[Attribute]; child: HtmlElement;\n     children: varargs[HtmlElement]): HtmlElement		5606
+nim	time	cattag/auto/htmlElements.html#time,seq[HtmlElement]	proc time(children: seq[HtmlElement]): HtmlElement		5611
+nim	time	cattag/auto/htmlElements.html#time,HtmlElement,varargs[HtmlElement]	proc time(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5615
+nim	time	cattag/auto/htmlElements.html#time,seq[Attribute],seq[string]	proc time(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5620
+nim	time	cattag/auto/htmlElements.html#time,seq[Attribute],string,varargs[string]	proc time(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5624
+nim	time	cattag/auto/htmlElements.html#time,string	proc time(datetime: string): HtmlElement		5630
+nim	time	cattag/auto/htmlElements.html#time,string,seq[HtmlElement]	proc time(datetime: string; children: seq[HtmlElement]): HtmlElement		5636
+nim	time	cattag/auto/htmlElements.html#time,string,HtmlElement,varargs[HtmlElement]	proc time(datetime: string; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5640
+nim	time	cattag/auto/htmlElements.html#time,string,seq[string]	proc time(datetime: string; content: seq[string]): HtmlElement		5646
+nim	time	cattag/auto/htmlElements.html#time,string,string,varargs[string]	proc time(datetime: string; content: string; contents: varargs[string]): HtmlElement		5650
+nim	title	cattag/auto/htmlElements.html#title	proc title(): HtmlElement		5658
+nim	title	cattag/auto/htmlElements.html#title,seq[Attribute]	proc title(attributes: seq[Attribute]): HtmlElement		5662
+nim	title	cattag/auto/htmlElements.html#title,seq[Attribute],seq[HtmlElement]	proc title(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5668
+nim	title	cattag/auto/htmlElements.html#title,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc title(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5672
+nim	title	cattag/auto/htmlElements.html#title,seq[HtmlElement]	proc title(children: seq[HtmlElement]): HtmlElement		5677
+nim	title	cattag/auto/htmlElements.html#title,HtmlElement,varargs[HtmlElement]	proc title(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5681
+nim	title	cattag/auto/htmlElements.html#title,seq[Attribute],seq[string]	proc title(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5686
+nim	title	cattag/auto/htmlElements.html#title,seq[Attribute],string,varargs[string]	proc title(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5690
+nim	tr	cattag/auto/htmlElements.html#tr	proc tr(): HtmlElement		5698
+nim	tr	cattag/auto/htmlElements.html#tr,seq[Attribute]	proc tr(attributes: seq[Attribute]): HtmlElement		5702
+nim	tr	cattag/auto/htmlElements.html#tr,seq[Attribute],seq[HtmlElement]	proc tr(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5708
+nim	tr	cattag/auto/htmlElements.html#tr,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc tr(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5712
+nim	tr	cattag/auto/htmlElements.html#tr,seq[HtmlElement]	proc tr(children: seq[HtmlElement]): HtmlElement		5717
+nim	tr	cattag/auto/htmlElements.html#tr,HtmlElement,varargs[HtmlElement]	proc tr(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5721
+nim	tr	cattag/auto/htmlElements.html#tr,seq[Attribute],seq[string]	proc tr(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5726
+nim	tr	cattag/auto/htmlElements.html#tr,seq[Attribute],string,varargs[string]	proc tr(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5730
+nim	track	cattag/auto/htmlElements.html#track	proc track(): HtmlElement		5738
+nim	track	cattag/auto/htmlElements.html#track,seq[Attribute]	proc track(attributes: seq[Attribute]): HtmlElement		5742
+nim	track	cattag/auto/htmlElements.html#track,string,string	proc track(kind: string; src: string): HtmlElement		5748
+nim	track	cattag/auto/htmlElements.html#track,string,string,string,string	proc track(kind: string; src: string; srclang: string; label: string): HtmlElement		5754
+nim	tt	cattag/auto/htmlElements.html#tt	proc tt(): HtmlElement		5762
+nim	tt	cattag/auto/htmlElements.html#tt,seq[Attribute]	proc tt(attributes: seq[Attribute]): HtmlElement		5766
+nim	tt	cattag/auto/htmlElements.html#tt,seq[Attribute],seq[HtmlElement]	proc tt(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5772
+nim	tt	cattag/auto/htmlElements.html#tt,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc tt(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5776
+nim	tt	cattag/auto/htmlElements.html#tt,seq[HtmlElement]	proc tt(children: seq[HtmlElement]): HtmlElement		5781
+nim	tt	cattag/auto/htmlElements.html#tt,HtmlElement,varargs[HtmlElement]	proc tt(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5785
+nim	tt	cattag/auto/htmlElements.html#tt,seq[Attribute],seq[string]	proc tt(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5790
+nim	tt	cattag/auto/htmlElements.html#tt,seq[Attribute],string,varargs[string]	proc tt(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5794
+nim	u	cattag/auto/htmlElements.html#u	proc u(): HtmlElement		5802
+nim	u	cattag/auto/htmlElements.html#u,seq[Attribute]	proc u(attributes: seq[Attribute]): HtmlElement		5806
+nim	u	cattag/auto/htmlElements.html#u,seq[Attribute],seq[HtmlElement]	proc u(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5812
+nim	u	cattag/auto/htmlElements.html#u,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc u(attributes: seq[Attribute]; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5816
+nim	u	cattag/auto/htmlElements.html#u,seq[HtmlElement]	proc u(children: seq[HtmlElement]): HtmlElement		5821
+nim	u	cattag/auto/htmlElements.html#u,HtmlElement,varargs[HtmlElement]	proc u(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5825
+nim	u	cattag/auto/htmlElements.html#u,seq[Attribute],seq[string]	proc u(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5830
+nim	u	cattag/auto/htmlElements.html#u,seq[Attribute],string,varargs[string]	proc u(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5834
+nim	ul	cattag/auto/htmlElements.html#ul	proc ul(): HtmlElement		5842
+nim	ul	cattag/auto/htmlElements.html#ul,seq[Attribute]	proc ul(attributes: seq[Attribute]): HtmlElement		5846
+nim	ul	cattag/auto/htmlElements.html#ul,seq[Attribute],seq[HtmlElement]	proc ul(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5852
+nim	ul	cattag/auto/htmlElements.html#ul,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc ul(attributes: seq[Attribute]; child: HtmlElement;\n   children: varargs[HtmlElement]): HtmlElement		5856
+nim	ul	cattag/auto/htmlElements.html#ul,seq[HtmlElement]	proc ul(children: seq[HtmlElement]): HtmlElement		5861
+nim	ul	cattag/auto/htmlElements.html#ul,HtmlElement,varargs[HtmlElement]	proc ul(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5865
+nim	ul	cattag/auto/htmlElements.html#ul,seq[Attribute],seq[string]	proc ul(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5870
+nim	ul	cattag/auto/htmlElements.html#ul,seq[Attribute],string,varargs[string]	proc ul(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5874
+nim	`var`	cattag/auto/htmlElements.html#var	proc `var`(): HtmlElement		5882
+nim	`var`	cattag/auto/htmlElements.html#var,seq[Attribute]	proc `var`(attributes: seq[Attribute]): HtmlElement		5886
+nim	`var`	cattag/auto/htmlElements.html#var,seq[Attribute],seq[HtmlElement]	proc `var`(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5892
+nim	`var`	cattag/auto/htmlElements.html#var,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc `var`(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5896
+nim	`var`	cattag/auto/htmlElements.html#var,seq[HtmlElement]	proc `var`(children: seq[HtmlElement]): HtmlElement		5901
+nim	`var`	cattag/auto/htmlElements.html#var,HtmlElement,varargs[HtmlElement]	proc `var`(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5905
+nim	`var`	cattag/auto/htmlElements.html#var,seq[Attribute],seq[string]	proc `var`(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5910
+nim	`var`	cattag/auto/htmlElements.html#var,seq[Attribute],string,varargs[string]	proc `var`(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5914
+nim	video	cattag/auto/htmlElements.html#video	proc video(): HtmlElement		5922
+nim	video	cattag/auto/htmlElements.html#video,seq[Attribute]	proc video(attributes: seq[Attribute]): HtmlElement		5926
+nim	video	cattag/auto/htmlElements.html#video,seq[Attribute],seq[HtmlElement]	proc video(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		5932
+nim	video	cattag/auto/htmlElements.html#video,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc video(attributes: seq[Attribute]; child: HtmlElement;\n      children: varargs[HtmlElement]): HtmlElement		5936
+nim	video	cattag/auto/htmlElements.html#video,seq[HtmlElement]	proc video(children: seq[HtmlElement]): HtmlElement		5941
+nim	video	cattag/auto/htmlElements.html#video,HtmlElement,varargs[HtmlElement]	proc video(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5945
+nim	video	cattag/auto/htmlElements.html#video,seq[Attribute],seq[string]	proc video(attributes: seq[Attribute]; content: seq[string]): HtmlElement		5950
+nim	video	cattag/auto/htmlElements.html#video,seq[Attribute],string,varargs[string]	proc video(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		5954
+nim	video	cattag/auto/htmlElements.html#video,string,bool,bool,bool,bool	proc video(src: string; autoplay: bool; controls: bool = true; loop: bool = false;\n      muted: bool = false): HtmlElement		5960
+nim	video	cattag/auto/htmlElements.html#video,string,bool,bool,bool,bool,seq[HtmlElement]	proc video(src: string; autoplay: bool; controls: bool = true; loop: bool = false;\n      muted: bool = false; children: seq[HtmlElement]): HtmlElement		5966
+nim	video	cattag/auto/htmlElements.html#video,string,bool,bool,bool,bool,HtmlElement,varargs[HtmlElement]	proc video(src: string; autoplay: bool; controls: bool = true; loop: bool = false;\n      muted: bool = false; child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		5970
+nim	wbr	cattag/auto/htmlElements.html#wbr	proc wbr(): HtmlElement		5978
+nim	wbr	cattag/auto/htmlElements.html#wbr,seq[Attribute]	proc wbr(attributes: seq[Attribute]): HtmlElement		5982
+nim	xmp	cattag/auto/htmlElements.html#xmp	proc xmp(): HtmlElement		5990
+nim	xmp	cattag/auto/htmlElements.html#xmp,seq[Attribute]	proc xmp(attributes: seq[Attribute]): HtmlElement		5994
+nim	xmp	cattag/auto/htmlElements.html#xmp,seq[Attribute],seq[HtmlElement]	proc xmp(attributes: seq[Attribute]; children: seq[HtmlElement]): HtmlElement		6000
+nim	xmp	cattag/auto/htmlElements.html#xmp,seq[Attribute],HtmlElement,varargs[HtmlElement]	proc xmp(attributes: seq[Attribute]; child: HtmlElement;\n    children: varargs[HtmlElement]): HtmlElement		6004
+nim	xmp	cattag/auto/htmlElements.html#xmp,seq[HtmlElement]	proc xmp(children: seq[HtmlElement]): HtmlElement		6009
+nim	xmp	cattag/auto/htmlElements.html#xmp,HtmlElement,varargs[HtmlElement]	proc xmp(child: HtmlElement; children: varargs[HtmlElement]): HtmlElement		6013
+nim	xmp	cattag/auto/htmlElements.html#xmp,seq[Attribute],seq[string]	proc xmp(attributes: seq[Attribute]; content: seq[string]): HtmlElement		6018
+nim	xmp	cattag/auto/htmlElements.html#xmp,seq[Attribute],string,varargs[string]	proc xmp(attributes: seq[Attribute]; content: string; moreContent: varargs[string]): HtmlElement		6022
+nimgrp	bdi	cattag/auto/htmlElements.html#bdi-procs-all	proc		429
+nimgrp	object	cattag/auto/htmlElements.html#object-procs-all	proc		3556
+nimgrp	data	cattag/auto/htmlElements.html#data-procs-all	proc		1069
+nimgrp	pre	cattag/auto/htmlElements.html#pre-procs-all	proc		4052
+nimgrp	xmp	cattag/auto/htmlElements.html#xmp-procs-all	proc		5990
+nimgrp	optgroup	cattag/auto/htmlElements.html#optgroup-procs-all	proc		3700
+nimgrp	template	cattag/auto/htmlElements.html#template-procs-all	proc		5288
+nimgrp	section	cattag/auto/htmlElements.html#section-procs-all	proc		4636
+nimgrp	form	cattag/auto/htmlElements.html#form-procs-all	proc		1969
+nimgrp	meta	cattag/auto/htmlElements.html#meta-procs-all	proc		3188
+nimgrp	link	cattag/auto/htmlElements.html#link-procs-all	proc		2954
+nimgrp	colgroup	cattag/auto/htmlElements.html#colgroup-procs-all	proc		1029
+nimgrp	label	cattag/auto/htmlElements.html#label-procs-all	proc		2796
+nimgrp	span	cattag/auto/htmlElements.html#span-procs-all	proc		4862
+nimgrp	tbody	cattag/auto/htmlElements.html#tbody-procs-all	proc		5182
+nimgrp	marquee	cattag/auto/htmlElements.html#marquee-procs-all	proc		3108
+nimgrp	b	cattag/auto/htmlElements.html#b-procs-all	proc		371
+nimgrp	article	cattag/auto/htmlElements.html#article-procs-all	proc		235
+nimgrp	menu	cattag/auto/htmlElements.html#menu-procs-all	proc		3148
+nimgrp	select	cattag/auto/htmlElements.html#select-procs-all	proc		4676
+nimgrp	details	cattag/auto/htmlElements.html#details-procs-all	proc		1323
+nimgrp	figure	cattag/auto/htmlElements.html#figure-procs-all	proc		1849
+nimgrp	br	cattag/auto/htmlElements.html#br-procs-all	proc		681
+nimgrp	ol	cattag/auto/htmlElements.html#ol-procs-all	proc		3628
+nimgrp	dl	cattag/auto/htmlElements.html#dl-procs-all	proc		1591
+nimgrp	mark	cattag/auto/htmlElements.html#mark-procs-all	proc		3068
+nimgrp	dir	cattag/auto/htmlElements.html#dir-procs-all	proc		1511
+nimgrp	frameset	cattag/auto/htmlElements.html#frameset-procs-all	proc		2037
+nimgrp	meter	cattag/auto/htmlElements.html#meter-procs-all	proc		3212
+nimgrp	caption	cattag/auto/htmlElements.html#caption-procs-all	proc		851
+nimgrp	code	cattag/auto/htmlElements.html#code-procs-all	proc		971
+nimgrp	em	cattag/auto/htmlElements.html#em-procs-all	proc		1671
+nimgrp	tfoot	cattag/auto/htmlElements.html#tfoot-procs-all	proc		5446
+nimgrp	center	cattag/auto/htmlElements.html#center-procs-all	proc		891
+nimgrp	iframe	cattag/auto/htmlElements.html#iframe-procs-all	proc		2524
+nimgrp	sup	cattag/auto/htmlElements.html#sup-procs-all	proc		5102
+nimgrp	nobr	cattag/auto/htmlElements.html#nobr-procs-all	proc		3396
+nimgrp	rt	cattag/auto/htmlElements.html#rt-procs-all	proc		4304
+nimgrp	ul	cattag/auto/htmlElements.html#ul-procs-all	proc		5842
+nimgrp	body	cattag/auto/htmlElements.html#body-procs-all	proc		641
+nimgrp	font	cattag/auto/htmlElements.html#font-procs-all	proc		1889
+nimgrp	h3	cattag/auto/htmlElements.html#h3-procs-all	proc		2155
+nimgrp	map	cattag/auto/htmlElements.html#map-procs-all	proc		3012
+nimgrp	textarea	cattag/auto/htmlElements.html#textarea-procs-all	proc		5328
+nimgrp	bdo	cattag/auto/htmlElements.html#bdo-procs-all	proc		469
+nimgrp	embed	cattag/auto/htmlElements.html#embed-procs-all	proc		1711
+nimgrp	dd	cattag/auto/htmlElements.html#dd-procs-all	proc		1191
+nimgrp	q	cattag/auto/htmlElements.html#q-procs-all	proc		4158
+nimgrp	picture	cattag/auto/htmlElements.html#picture-procs-all	proc		3972
+nimgrp	s	cattag/auto/htmlElements.html#s-procs-all	proc		4424
+nimgrp	header	cattag/auto/htmlElements.html#header-procs-all	proc		2352
+nimgrp	h1	cattag/auto/htmlElements.html#h1-procs-all	proc		2077
+nimgrp	samp	cattag/auto/htmlElements.html#samp-procs-all	proc		4464
+nimgrp	dfn	cattag/auto/htmlElements.html#dfn-procs-all	proc		1379
+nimgrp	dialog	cattag/auto/htmlElements.html#dialog-procs-all	proc		1445
+nimgrp	p	cattag/auto/htmlElements.html#p-procs-all	proc		3914
+nimgrp	area	cattag/auto/htmlElements.html#area-procs-all	proc		223
+nimgrp	ruby	cattag/auto/htmlElements.html#ruby-procs-all	proc		4384
+nimgrp	plaintext	cattag/auto/htmlElements.html#plaintext-procs-all	proc		4012
+nimgrp	small	cattag/auto/htmlElements.html#small-procs-all	proc		4804
+nimgrp	address	cattag/auto/htmlElements.html#address-procs-all	proc		183
+nimgrp	strong	cattag/auto/htmlElements.html#strong-procs-all	proc		4942
+nimgrp	cite	cattag/auto/htmlElements.html#cite-procs-all	proc		931
+nimgrp	tt	cattag/auto/htmlElements.html#tt-procs-all	proc		5762
+nimgrp	script	cattag/auto/htmlElements.html#script-procs-all	proc		4504
+nimgrp	head	cattag/auto/htmlElements.html#head-procs-all	proc		2312
+nimgrp	progress	cattag/auto/htmlElements.html#progress-procs-all	proc		4092
+nimgrp	base	cattag/auto/htmlElements.html#base-procs-all	proc		411
+nimgrp	frame	cattag/auto/htmlElements.html#frame-procs-all	proc		2025
+nimgrp	input	cattag/auto/htmlElements.html#input-procs-all	proc		2640
+nimgrp	rb	cattag/auto/htmlElements.html#rb-procs-all	proc		4224
+nimgrp	h6	cattag/auto/htmlElements.html#h6-procs-all	proc		2272
+nimgrp	tr	cattag/auto/htmlElements.html#tr-procs-all	proc		5698
+nimgrp	button	cattag/auto/htmlElements.html#button-procs-all	proc		693
+nimgrp	source	cattag/auto/htmlElements.html#source-procs-all	proc		4844
+nimgrp	time	cattag/auto/htmlElements.html#time-procs-all	proc		5592
+nimgrp	hgroup	cattag/auto/htmlElements.html#hgroup-procs-all	proc		2392
+nimgrp	del	cattag/auto/htmlElements.html#del-procs-all	proc		1231
+nimgrp	big	cattag/auto/htmlElements.html#big-procs-all	proc		535
+nimgrp	ins	cattag/auto/htmlElements.html#ins-procs-all	proc		2664
+nimgrp	wbr	cattag/auto/htmlElements.html#wbr-procs-all	proc		5978
+nimgrp	blockquote	cattag/auto/htmlElements.html#blockquote-procs-all	proc		575
+nimgrp	footer	cattag/auto/htmlElements.html#footer-procs-all	proc		1929
+nimgrp	h2	cattag/auto/htmlElements.html#h2-procs-all	proc		2116
+nimgrp	h5	cattag/auto/htmlElements.html#h5-procs-all	proc		2233
+nimgrp	slot	cattag/auto/htmlElements.html#slot-procs-all	proc		4764
+nimgrp	figcaption	cattag/auto/htmlElements.html#figcaption-procs-all	proc		1809
+nimgrp	datalist	cattag/auto/htmlElements.html#datalist-procs-all	proc		1135
+nimgrp	video	cattag/auto/htmlElements.html#video-procs-all	proc		5922
+nimgrp	title	cattag/auto/htmlElements.html#title-procs-all	proc		5658
+nimgrp	main	cattag/auto/htmlElements.html#main-procs-all	proc		2972
+nimgrp	rtc	cattag/auto/htmlElements.html#rtc-procs-all	proc		4344
+nimgrp	li	cattag/auto/htmlElements.html#li-procs-all	proc		2888
+nimgrp	kbd	cattag/auto/htmlElements.html#kbd-procs-all	proc		2756
+nimgrp	i	cattag/auto/htmlElements.html#i-procs-all	proc		2484
+nimgrp	thead	cattag/auto/htmlElements.html#thead-procs-all	proc		5552
+nimgrp	fieldset	cattag/auto/htmlElements.html#fieldset-procs-all	proc		1769
+nimgrp	search	cattag/auto/htmlElements.html#search-procs-all	proc		4596
+nimgrp	fencedframe	cattag/auto/htmlElements.html#fencedframe-procs-all	proc		1729
+nimgrp	param	cattag/auto/htmlElements.html#param-procs-all	proc		3954
+nimgrp	html	cattag/auto/htmlElements.html#html-procs-all	proc		2444
+nimgrp	noframes	cattag/auto/htmlElements.html#noframes-procs-all	proc		3476
+nimgrp	abbr	cattag/auto/htmlElements.html#abbr-procs-all	proc		77
+nimgrp	output	cattag/auto/htmlElements.html#output-procs-all	proc		3848
+nimgrp	audio	cattag/auto/htmlElements.html#audio-procs-all	proc		315
+nimgrp	noscript	cattag/auto/htmlElements.html#noscript-procs-all	proc		3516
+nimgrp	aside	cattag/auto/htmlElements.html#aside-procs-all	proc		275
+nimgrp	u	cattag/auto/htmlElements.html#u-procs-all	proc		5802
+nimgrp	noembed	cattag/auto/htmlElements.html#noembed-procs-all	proc		3436
+nimgrp	sub	cattag/auto/htmlElements.html#sub-procs-all	proc		5022
+nimgrp	var	cattag/auto/htmlElements.html#var-procs-all	proc		5882
+nimgrp	style	cattag/auto/htmlElements.html#style-procs-all	proc		4982
+nimgrp	rp	cattag/auto/htmlElements.html#rp-procs-all	proc		4264
+nimgrp	track	cattag/auto/htmlElements.html#track-procs-all	proc		5738
+nimgrp	dt	cattag/auto/htmlElements.html#dt-procs-all	proc		1631
+nimgrp	img	cattag/auto/htmlElements.html#img-procs-all	proc		2616
+nimgrp	a	cattag/auto/htmlElements.html#a-procs-all	proc		11
+nimgrp	hr	cattag/auto/htmlElements.html#hr-procs-all	proc		2432
+nimgrp	div	cattag/auto/htmlElements.html#div-procs-all	proc		1551
+nimgrp	strike	cattag/auto/htmlElements.html#strike-procs-all	proc		4902
+nimgrp	th	cattag/auto/htmlElements.html#th-procs-all	proc		5486
+nimgrp	summary	cattag/auto/htmlElements.html#summary-procs-all	proc		5062
+nimgrp	h4	cattag/auto/htmlElements.html#h4-procs-all	proc		2194
+nimgrp	option	cattag/auto/htmlElements.html#option-procs-all	proc		3756
+nimgrp	acronym	cattag/auto/htmlElements.html#acronym-procs-all	proc		143
+nimgrp	td	cattag/auto/htmlElements.html#td-procs-all	proc		5222
+nimgrp	canvas	cattag/auto/htmlElements.html#canvas-procs-all	proc		785
+nimgrp	col	cattag/auto/htmlElements.html#col-procs-all	proc		1011
+nimgrp	legend	cattag/auto/htmlElements.html#legend-procs-all	proc		2848
+nimgrp	table	cattag/auto/htmlElements.html#table-procs-all	proc		5142
+nimgrp	nav	cattag/auto/htmlElements.html#nav-procs-all	proc		3356
+heading	HTML Elements	cattag/auto/htmlElements.html#html-elements	 HTML Elements		0

@@ -1,0 +1,24 @@
+nimTitle	sugar	cattag/htmlXml/sugar.html	module cattag/htmlXml/sugar		0
+nim	`<=>`	cattag/htmlXml/sugar.html#<=>,string,seq[string]	proc `<=>`(attribute: string; values: seq[string]): Attribute		5
+nim	`<=>`	cattag/htmlXml/sugar.html#<=>,string,varargs[string]	proc `<=>`(attribute: string; values: varargs[string]): Attribute		8
+nim	addattr	cattag/htmlXml/sugar.html#addattr,HtmlElement,string,	proc addattr[T](element`gensym7: var HtmlElement; attribute`gensym7: string;\n           values`gensym7: seq[T])		14
+nim	addattr	cattag/htmlXml/sugar.html#addattr,HtmlElement,string,_2	proc addattr[T](element`gensym7: HtmlElement; attribute`gensym7: string;\n           values`gensym7: seq[T]): HtmlElement		17
+nim	addattr	cattag/htmlXml/sugar.html#addattr,HtmlElement,string,_3	proc addattr[T](element`gensym7: var HtmlElement; attribute`gensym7: string;\n           values`gensym7: varargs[T])		21
+nim	addattr	cattag/htmlXml/sugar.html#addattr,HtmlElement,string,_4	proc addattr[T](element`gensym7: HtmlElement; attribute`gensym7: string;\n           values`gensym7: varargs[T]): HtmlElement		29
+nim	addattr	cattag/htmlXml/sugar.html#addattr,XmlElement,string,	proc addattr[T](element`gensym8: var XmlElement; attribute`gensym8: string;\n           values`gensym8: seq[T])		14
+nim	addattr	cattag/htmlXml/sugar.html#addattr,XmlElement,string,_2	proc addattr[T](element`gensym8: XmlElement; attribute`gensym8: string;\n           values`gensym8: seq[T]): XmlElement		17
+nim	addattr	cattag/htmlXml/sugar.html#addattr,XmlElement,string,_3	proc addattr[T](element`gensym8: var XmlElement; attribute`gensym8: string;\n           values`gensym8: varargs[T])		21
+nim	addattr	cattag/htmlXml/sugar.html#addattr,XmlElement,string,_4	proc addattr[T](element`gensym8: XmlElement; attribute`gensym8: string;\n           values`gensym8: varargs[T]): XmlElement		30
+nim	`[]`	cattag/htmlXml/sugar.html#[],string,HtmlElement,	proc `[]`(tag`gensym9: string; child`gensym9: HtmlElement;\n     children`gensym9: varargs[HtmlElement]): HtmlElement		34
+nim	`[]`	cattag/htmlXml/sugar.html#[],HtmlElement,HtmlElement,	proc `[]`(element`gensym9: var HtmlElement; child`gensym9: HtmlElement;\n     children`gensym9: varargs[HtmlElement])		37
+nim	`[]`	cattag/htmlXml/sugar.html#[],HtmlElement,Attribute,	proc `[]`(element`gensym9: var HtmlElement; attribute`gensym9: Attribute;\n     attributes`gensym9: varargs[Attribute])		40
+nim	`[]`	cattag/htmlXml/sugar.html#[],HtmlElement,HtmlElement,_2	proc `[]`(element`gensym9: HtmlElement; child`gensym9: HtmlElement;\n     children`gensym9: varargs[HtmlElement]): HtmlElement		43
+nim	`[]`	cattag/htmlXml/sugar.html#[],HtmlElement,Attribute,_2	proc `[]`(element`gensym9: HtmlElement; attribute`gensym9: Attribute;\n     attributes`gensym9: varargs[Attribute]): HtmlElement		52
+nim	`[]`	cattag/htmlXml/sugar.html#[],string,XmlElement,	proc `[]`(tag`gensym45: string; child`gensym45: XmlElement;\n     children`gensym45: varargs[XmlElement]): XmlElement		34
+nim	`[]`	cattag/htmlXml/sugar.html#[],XmlElement,XmlElement,	proc `[]`(element`gensym45: var XmlElement; child`gensym45: XmlElement;\n     children`gensym45: varargs[XmlElement])		37
+nim	`[]`	cattag/htmlXml/sugar.html#[],XmlElement,Attribute,	proc `[]`(element`gensym45: var XmlElement; attribute`gensym45: Attribute;\n     attributes`gensym45: varargs[Attribute])		40
+nim	`[]`	cattag/htmlXml/sugar.html#[],XmlElement,XmlElement,_2	proc `[]`(element`gensym45: XmlElement; child`gensym45: XmlElement;\n     children`gensym45: varargs[XmlElement]): XmlElement		43
+nim	`[]`	cattag/htmlXml/sugar.html#[],XmlElement,Attribute,_2	proc `[]`(element`gensym45: XmlElement; attribute`gensym45: Attribute;\n     attributes`gensym45: varargs[Attribute]): XmlElement		53
+nimgrp	addattr	cattag/htmlXml/sugar.html#addattr-procs-all	proc		14
+nimgrp	[]	cattag/htmlXml/sugar.html#[]-procs-all	proc		34
+nimgrp	<=>	cattag/htmlXml/sugar.html#<=>-procs-all	proc		5

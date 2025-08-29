@@ -1,0 +1,36 @@
+nimTitle	domprocs	cattag/htmlXml/domprocs.html	module cattag/htmlXml/domprocs		0
+nim	getChildrenIfHasAttribute	cattag/htmlXml/domprocs.html#getChildrenIfHasAttribute,HtmlElement,string	proc getChildrenIfHasAttribute(element: HtmlElement; searchAttribute: string): seq[\n    HtmlElement]		8
+nim	getChildrenIfHasAttribute	cattag/htmlXml/domprocs.html#getChildrenIfHasAttribute,seq[HtmlElement],string	proc getChildrenIfHasAttribute(elements: seq[HtmlElement]; searchAttribute: string): seq[\n    HtmlElement]		18
+nim	getChildrenIfHasAttribute	cattag/htmlXml/domprocs.html#getChildrenIfHasAttribute,HtmlDocument,string	proc getChildrenIfHasAttribute(document: HtmlDocument; searchAttribute: string): seq[\n    HtmlElement]		23
+nim	getChildrenIfHasAttributeAndOneOfValues	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndOneOfValues,HtmlElement,string,seq[string]	proc getChildrenIfHasAttributeAndOneOfValues(element: HtmlElement;\n                                        searchAttribute: string;\n                                        values: seq[string]): seq[HtmlElement]		30
+nim	getChildrenIfHasAttributeAndValue	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndValue,HtmlElement,string,string	proc getChildrenIfHasAttributeAndValue(element: HtmlElement; searchAttribute: string;\n                                  value: string): seq[HtmlElement]		43
+nim	getChildrenIfHasAttributeAndOneOfValues	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndOneOfValues,seq[HtmlElement],string,seq[string]	proc getChildrenIfHasAttributeAndOneOfValues(elements: seq[HtmlElement];\n                                        searchAttribute: string;\n                                        values: seq[string]): seq[HtmlElement]		47
+nim	getChildrenIfHasAttributeAndValue	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndValue,seq[HtmlElement],string,string	proc getChildrenIfHasAttributeAndValue(elements: seq[HtmlElement];\n                                  searchAttribute: string; value: string): seq[\n    HtmlElement]		51
+nim	getChildrenIfHasAttributeAndOneOfValues	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndOneOfValues,HtmlDocument,string,seq[string]	proc getChildrenIfHasAttributeAndOneOfValues(document: HtmlDocument;\n                                        searchAttribute: string;\n                                        values: seq[string]): seq[HtmlElement]		56
+nim	getChildrenIfHasAttributeAndValue	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndValue,HtmlDocument,string,string	proc getChildrenIfHasAttributeAndValue(document: HtmlDocument;\n                                  searchAttribute: string; value: string): seq[\n    HtmlElement]		59
+nim	getChildrenWithTag	cattag/htmlXml/domprocs.html#getChildrenWithTag,HtmlElement,string	proc getChildrenWithTag(element: HtmlElement; searchTag: string): seq[HtmlElement]		66
+nim	getChildrenWithTag	cattag/htmlXml/domprocs.html#getChildrenWithTag,seq[HtmlElement],string	proc getChildrenWithTag(elements: seq[HtmlElement]; searchTag: string): seq[\n    HtmlElement]		74
+nim	getChildrenWithTag	cattag/htmlXml/domprocs.html#getChildrenWithTag,HtmlDocument,string	proc getChildrenWithTag(document: HtmlDocument; searchTag: string): seq[HtmlElement]		79
+nim	getChildrenWithText	cattag/htmlXml/domprocs.html#getChildrenWithText,HtmlElement,seq[string],bool	proc getChildrenWithText(element: HtmlElement; searchStrings: seq[string];\n                    caseInsensitive: bool = true): seq[HtmlElement]		86
+nim	getChildrenWithText	cattag/htmlXml/domprocs.html#getChildrenWithText,HtmlElement,string,bool	proc getChildrenWithText(element: HtmlElement; searchString: string;\n                    caseInsensitive: bool = true): seq[HtmlElement]		104
+nim	getChildrenWithText	cattag/htmlXml/domprocs.html#getChildrenWithText,seq[HtmlElement],seq[string],bool	proc getChildrenWithText(elements: seq[HtmlElement]; searchStrings: seq[string];\n                    caseInsensitive: bool = true): seq[HtmlElement]		108
+nim	getChildrenWithText	cattag/htmlXml/domprocs.html#getChildrenWithText,seq[HtmlElement],string,bool	proc getChildrenWithText(elements: seq[HtmlElement]; searchString: string;\n                    caseInsensitive: bool = true): seq[HtmlElement]		112
+nim	getChildrenWithText	cattag/htmlXml/domprocs.html#getChildrenWithText,HtmlDocument,seq[string],bool	proc getChildrenWithText(document: HtmlDocument; searchStrings: seq[string];\n                    caseInsensitive: bool = true): seq[HtmlElement]		116
+nim	getChildrenWithText	cattag/htmlXml/domprocs.html#getChildrenWithText,HtmlDocument,string,bool	proc getChildrenWithText(document: HtmlDocument; searchString: string;\n                    caseInsensitive: bool = true): seq[HtmlElement]		119
+nim	getElementsById	cattag/htmlXml/domprocs.html#getElementsById,HtmlElement,string	proc getElementsById(element: HtmlElement; id: string): seq[HtmlElement]		128
+nim	getElementsById	cattag/htmlXml/domprocs.html#getElementsById,seq[HtmlElement],string	proc getElementsById(elements: seq[HtmlElement]; id: string): seq[HtmlElement]		132
+nim	getElementsById	cattag/htmlXml/domprocs.html#getElementsById,HtmlDocument,string	proc getElementsById(document: HtmlDocument; id: string): seq[HtmlElement]		137
+nim	getElementsByName	cattag/htmlXml/domprocs.html#getElementsByName,HtmlElement,string	proc getElementsByName(element: HtmlElement; name: string): seq[HtmlElement]		144
+nim	getElementsByName	cattag/htmlXml/domprocs.html#getElementsByName,seq[HtmlElement],string	proc getElementsByName(elements: seq[HtmlElement]; name: string): seq[HtmlElement]		148
+nim	getElementsByName	cattag/htmlXml/domprocs.html#getElementsByName,HtmlDocument,string	proc getElementsByName(document: HtmlDocument; name: string): seq[HtmlElement]		153
+nim	getElementsByClass	cattag/htmlXml/domprocs.html#getElementsByClass,HtmlElement,string	proc getElementsByClass(element: HtmlElement; class: string): seq[HtmlElement]		160
+nim	getElementsByClass	cattag/htmlXml/domprocs.html#getElementsByClass,seq[HtmlElement],string	proc getElementsByClass(elements: seq[HtmlElement]; class: string): seq[HtmlElement]		164
+nim	getElementsByClass	cattag/htmlXml/domprocs.html#getElementsByClass,HtmlDocument,string	proc getElementsByClass(document: HtmlDocument; class: string): seq[HtmlElement]		169
+nimgrp	getchildrenifhasattributeandvalue	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndValue-procs-all	proc		43
+nimgrp	getelementsbyname	cattag/htmlXml/domprocs.html#getElementsByName-procs-all	proc		144
+nimgrp	getchildrenwithtag	cattag/htmlXml/domprocs.html#getChildrenWithTag-procs-all	proc		66
+nimgrp	getchildrenifhasattributeandoneofvalues	cattag/htmlXml/domprocs.html#getChildrenIfHasAttributeAndOneOfValues-procs-all	proc		30
+nimgrp	getelementsbyclass	cattag/htmlXml/domprocs.html#getElementsByClass-procs-all	proc		160
+nimgrp	getchildrenifhasattribute	cattag/htmlXml/domprocs.html#getChildrenIfHasAttribute-procs-all	proc		8
+nimgrp	getelementsbyid	cattag/htmlXml/domprocs.html#getElementsById-procs-all	proc		128
+nimgrp	getchildrenwithtext	cattag/htmlXml/domprocs.html#getChildrenWithText-procs-all	proc		86

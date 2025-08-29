@@ -1,0 +1,16 @@
+nimTitle	all	cattag/auto/all.html	module cattag/auto/all		0
+nim	style	cattag/auto/all.html#style_2	const style		19
+nim	setStyle	cattag/auto/all.html#setStyle,HtmlElement,seq[]	proc setStyle(element: var HtmlElement; values: seq[CssElementProperty | CssElement])		20
+nim	setStyle	cattag/auto/all.html#setStyle,HtmlElement,seq[]_2	proc setStyle(element: HtmlElement; values: seq[CssElementProperty | CssElement]): HtmlElement		26
+nim	setStyle	cattag/auto/all.html#setStyle,HtmlElement,varargs[CssElementProperty]	proc setStyle(element: var HtmlElement; values: varargs[CssElementProperty])		31
+nim	setStyle	cattag/auto/all.html#setStyle,HtmlElement,varargs[CssElementProperty]_2	proc setStyle(element: HtmlElement; values: varargs[CssElementProperty]): HtmlElement		34
+nim	setStyle	cattag/auto/all.html#setStyle,HtmlElement,varargs[CssElement]	proc setStyle(element: var HtmlElement; values: varargs[CssElement])		38
+nim	setStyle	cattag/auto/all.html#setStyle,HtmlElement,varargs[CssElement]_2	proc setStyle(element: HtmlElement; values: varargs[CssElement]): HtmlElement		41
+nim	setClass	cattag/auto/all.html#setClass,HtmlElement,CssElement	proc setClass(element: var HtmlElement; class: CssElement)		46
+nim	setClass	cattag/auto/all.html#setClass,HtmlElement,CssElement_2	proc setClass(element: HtmlElement; class: CssElement): HtmlElement		49
+nim	setClass	cattag/auto/all.html#setClass,HtmlElement,seq[CssElement]	proc setClass(element: var HtmlElement; classes: seq[CssElement])		54
+nim	setClass	cattag/auto/all.html#setClass,HtmlElement,seq[CssElement]_2	proc setClass(element: HtmlElement; classes: seq[CssElement]): HtmlElement		58
+nim	setClass	cattag/auto/all.html#setClass,HtmlElement,varargs[CssElement]	proc setClass(element: var HtmlElement; classes: varargs[CssElement])		63
+nim	setClass	cattag/auto/all.html#setClass,HtmlElement,varargs[CssElement]_2	proc setClass(element: HtmlElement; classes: varargs[CssElement]): HtmlElement		66
+nimgrp	setstyle	cattag/auto/all.html#setStyle-procs-all	proc		20
+nimgrp	setclass	cattag/auto/all.html#setClass-procs-all	proc		46

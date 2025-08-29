@@ -1,0 +1,125 @@
+nimTitle	procs	cattag/htmlXml/procs.html	module cattag/htmlXml/procs		0
+nim	newAttribute	cattag/htmlXml/procs.html#newAttribute,string	proc newAttribute(attribute`gensym0: string): Attribute		12
+nim	newAttribute	cattag/htmlXml/procs.html#newAttribute,string,bool	proc newAttribute(attribute`gensym0: string; value`gensym0: bool): Attribute		15
+nim	newAttribute	cattag/htmlXml/procs.html#newAttribute,string,	proc newAttribute[T: not bool](attribute`gensym0: string; values`gensym0: seq[T]): Attribute		18
+nim	newAttribute	cattag/htmlXml/procs.html#newAttribute,string,T,	proc newAttribute[T: not bool](attribute`gensym0: string; value`gensym0: T;\n                          values`gensym0: varargs[T]): Attribute		25
+nim	attr	cattag/htmlXml/procs.html#attr,string	proc attr(attribute`gensym1: string): Attribute		12
+nim	attr	cattag/htmlXml/procs.html#attr,string,bool	proc attr(attribute`gensym1: string; value`gensym1: bool): Attribute		15
+nim	attr	cattag/htmlXml/procs.html#attr,string,	proc attr[T: not bool](attribute`gensym1: string; values`gensym1: seq[T]): Attribute		18
+nim	attr	cattag/htmlXml/procs.html#attr,string,T,	proc attr[T: not bool](attribute`gensym1: string; value`gensym1: T;\n                  values`gensym1: varargs[T]): Attribute		26
+nim	rawHtmlText	cattag/htmlXml/procs.html#rawHtmlText,string	proc rawHtmlText(content`gensym2: string): HtmlElement		32
+nim	rawHtmlText	cattag/htmlXml/procs.html#rawHtmlText	proc rawHtmlText(content`gensym2: seq[string]): HtmlElement		35
+nim	rawHtmlText	cattag/htmlXml/procs.html#rawHtmlText_2	proc rawHtmlText(content`gensym2: varargs[string]): HtmlElement		42
+nim	html	cattag/htmlXml/procs.html#html,string	proc html(content`gensym10: string): HtmlElement		32
+nim	html	cattag/htmlXml/procs.html#html	proc html(content`gensym10: seq[string]): HtmlElement		35
+nim	html	cattag/htmlXml/procs.html#html_2	proc html(content`gensym10: varargs[string]): HtmlElement		43
+nim	rawXmlText	cattag/htmlXml/procs.html#rawXmlText,string	proc rawXmlText(content`gensym18: string): XmlElement		32
+nim	rawXmlText	cattag/htmlXml/procs.html#rawXmlText	proc rawXmlText(content`gensym18: seq[string]): XmlElement		35
+nim	rawXmlText	cattag/htmlXml/procs.html#rawXmlText_2	proc rawXmlText(content`gensym18: varargs[string]): XmlElement		44
+nim	xml	cattag/htmlXml/procs.html#xml,string	proc xml(content`gensym26: string): XmlElement		32
+nim	xml	cattag/htmlXml/procs.html#xml	proc xml(content`gensym26: seq[string]): XmlElement		35
+nim	xml	cattag/htmlXml/procs.html#xml_2	proc xml(content`gensym26: varargs[string]): XmlElement		45
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string	proc newHtmlElement(tag`gensym34: string): HtmlElement		50
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,	proc newHtmlElement(tag`gensym34: string; attributes`gensym34: seq[Attribute]): HtmlElement		53
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,,	proc newHtmlElement(tag`gensym34: string; attributes`gensym34: seq[Attribute];\n               children`gensym34: seq[HtmlElement]): HtmlElement		57
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,,HtmlElement,	proc newHtmlElement(tag`gensym34: string; attributes`gensym34: seq[Attribute];\n               child`gensym34: HtmlElement;\n               children`gensym34: varargs[HtmlElement]): HtmlElement		61
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,_2	proc newHtmlElement(tag`gensym34: string; children`gensym34: seq[HtmlElement]): HtmlElement		64
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,HtmlElement,	proc newHtmlElement(tag`gensym34: string; child`gensym34: HtmlElement;\n               children`gensym34: varargs[HtmlElement]): HtmlElement		67
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,,_2	proc newHtmlElement(tag`gensym34: string; attributes`gensym34: seq[Attribute];\n               content`gensym34: seq[string]): HtmlElement		71
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,,string,	proc newHtmlElement(tag`gensym34: string; attributes`gensym34: seq[Attribute];\n               content`gensym34: string;\n               moreContent`gensym34: varargs[string]): HtmlElement		74
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,_3	proc newHtmlElement(tag`gensym34: string; content`gensym34: seq[string]): HtmlElement		78
+nim	newHtmlElement	cattag/htmlXml/procs.html#newHtmlElement,string,string,	proc newHtmlElement(tag`gensym34: string; content`gensym34: string;\n               moreContent`gensym34: varargs[string]): HtmlElement		85
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string	proc newXmlElement(tag`gensym63: string): XmlElement		50
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,	proc newXmlElement(tag`gensym63: string; attributes`gensym63: seq[Attribute]): XmlElement		53
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,,	proc newXmlElement(tag`gensym63: string; attributes`gensym63: seq[Attribute];\n              children`gensym63: seq[XmlElement]): XmlElement		57
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,,XmlElement,	proc newXmlElement(tag`gensym63: string; attributes`gensym63: seq[Attribute];\n              child`gensym63: XmlElement;\n              children`gensym63: varargs[XmlElement]): XmlElement		61
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,_2	proc newXmlElement(tag`gensym63: string; children`gensym63: seq[XmlElement]): XmlElement		64
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,XmlElement,	proc newXmlElement(tag`gensym63: string; child`gensym63: XmlElement;\n              children`gensym63: varargs[XmlElement]): XmlElement		67
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,,_2	proc newXmlElement(tag`gensym63: string; attributes`gensym63: seq[Attribute];\n              content`gensym63: seq[string]): XmlElement		71
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,,string,	proc newXmlElement(tag`gensym63: string; attributes`gensym63: seq[Attribute];\n              content`gensym63: string;\n              moreContent`gensym63: varargs[string]): XmlElement		74
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,_3	proc newXmlElement(tag`gensym63: string; content`gensym63: seq[string]): XmlElement		78
+nim	newXmlElement	cattag/htmlXml/procs.html#newXmlElement,string,string,	proc newXmlElement(tag`gensym63: string; content`gensym63: string;\n              moreContent`gensym63: varargs[string]): XmlElement		86
+nim	newHtmlComment	cattag/htmlXml/procs.html#newHtmlComment	proc newHtmlComment(comment`gensym92: seq[string]): HtmlElement		90
+nim	newHtmlComment	cattag/htmlXml/procs.html#newHtmlComment_2	proc newHtmlComment(comment`gensym92: varargs[string]): HtmlElement		97
+nim	newXmlComment	cattag/htmlXml/procs.html#newXmlComment	proc newXmlComment(comment`gensym100: seq[string]): XmlElement		90
+nim	newXmlComment	cattag/htmlXml/procs.html#newXmlComment_2	proc newXmlComment(comment`gensym100: varargs[string]): XmlElement		98
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,	proc add(element`gensym108: var HtmlElement; children`gensym108: seq[HtmlElement])		102
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,_2	proc add(element`gensym108: HtmlElement; children`gensym108: seq[HtmlElement]): HtmlElement		105
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,HtmlElement,	proc add(element`gensym108: var HtmlElement; child`gensym108: HtmlElement;\n    children`gensym108: varargs[HtmlElement])		109
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,HtmlElement,_2	proc add(element`gensym108: HtmlElement; child`gensym108: HtmlElement;\n    children`gensym108: varargs[HtmlElement]): HtmlElement		117
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,	proc `&=`(element`gensym127: var HtmlElement;\n     children`gensym127: seq[HtmlElement])		102
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,_2	proc `&=`(element`gensym127: HtmlElement; children`gensym127: seq[HtmlElement]): HtmlElement		105
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,HtmlElement,	proc `&=`(element`gensym127: var HtmlElement; child`gensym127: HtmlElement;\n     children`gensym127: varargs[HtmlElement])		109
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,HtmlElement,_2	proc `&=`(element`gensym127: HtmlElement; child`gensym127: HtmlElement;\n     children`gensym127: varargs[HtmlElement]): HtmlElement		118
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,	proc add(element`gensym146: var XmlElement; children`gensym146: seq[XmlElement])		102
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,_2	proc add(element`gensym146: XmlElement; children`gensym146: seq[XmlElement]): XmlElement		105
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,XmlElement,	proc add(element`gensym146: var XmlElement; child`gensym146: XmlElement;\n    children`gensym146: varargs[XmlElement])		109
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,XmlElement,_2	proc add(element`gensym146: XmlElement; child`gensym146: XmlElement;\n    children`gensym146: varargs[XmlElement]): XmlElement		119
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,	proc `&=`(element`gensym165: var XmlElement; children`gensym165: seq[XmlElement])		102
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,_2	proc `&=`(element`gensym165: XmlElement; children`gensym165: seq[XmlElement]): XmlElement		105
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,XmlElement,	proc `&=`(element`gensym165: var XmlElement; child`gensym165: XmlElement;\n     children`gensym165: varargs[XmlElement])		109
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,XmlElement,_2	proc `&=`(element`gensym165: XmlElement; child`gensym165: XmlElement;\n     children`gensym165: varargs[XmlElement]): XmlElement		120
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,_3	proc add(element`gensym184: var HtmlElement; attributes`gensym184: seq[Attribute])		123
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,_4	proc add(element`gensym184: HtmlElement; attributes`gensym184: seq[Attribute]): HtmlElement		126
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,Attribute,	proc add(element`gensym184: var HtmlElement; attribute`gensym184: Attribute;\n    attributes`gensym184: varargs[Attribute])		130
+nim	add	cattag/htmlXml/procs.html#add,HtmlElement,Attribute,_2	proc add(element`gensym184: HtmlElement; attribute`gensym184: Attribute;\n    attributes`gensym184: varargs[Attribute]): HtmlElement		138
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,_3	proc `&=`(element`gensym203: var HtmlElement;\n     attributes`gensym203: seq[Attribute])		123
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,_4	proc `&=`(element`gensym203: HtmlElement; attributes`gensym203: seq[Attribute]): HtmlElement		126
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,Attribute,	proc `&=`(element`gensym203: var HtmlElement; attribute`gensym203: Attribute;\n     attributes`gensym203: varargs[Attribute])		130
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlElement,Attribute,_2	proc `&=`(element`gensym203: HtmlElement; attribute`gensym203: Attribute;\n     attributes`gensym203: varargs[Attribute]): HtmlElement		139
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,_3	proc add(element`gensym222: var XmlElement; attributes`gensym222: seq[Attribute])		123
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,_4	proc add(element`gensym222: XmlElement; attributes`gensym222: seq[Attribute]): XmlElement		126
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,Attribute,	proc add(element`gensym222: var XmlElement; attribute`gensym222: Attribute;\n    attributes`gensym222: varargs[Attribute])		130
+nim	add	cattag/htmlXml/procs.html#add,XmlElement,Attribute,_2	proc add(element`gensym222: XmlElement; attribute`gensym222: Attribute;\n    attributes`gensym222: varargs[Attribute]): XmlElement		140
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,_3	proc `&=`(element`gensym241: var XmlElement; attributes`gensym241: seq[Attribute])		123
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,_4	proc `&=`(element`gensym241: XmlElement; attributes`gensym241: seq[Attribute]): XmlElement		126
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,Attribute,	proc `&=`(element`gensym241: var XmlElement; attribute`gensym241: Attribute;\n     attributes`gensym241: varargs[Attribute])		130
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlElement,Attribute,_2	proc `&=`(element`gensym241: XmlElement; attribute`gensym241: Attribute;\n     attributes`gensym241: varargs[Attribute]): XmlElement		141
+nim	newHtmlDocument	cattag/htmlXml/procs.html#newHtmlDocument,string	proc newHtmlDocument(filename`gensym260: string): HtmlDocument		147
+nim	newHtmlDocument	cattag/htmlXml/procs.html#newHtmlDocument	proc newHtmlDocument(): HtmlDocument		156
+nim	newXmlDocument	cattag/htmlXml/procs.html#newXmlDocument,string	proc newXmlDocument(filename`gensym261: string): XmlDocument		147
+nim	newXmlDocument	cattag/htmlXml/procs.html#newXmlDocument	proc newXmlDocument(): XmlDocument		157
+nim	addToHead	cattag/htmlXml/procs.html#addToHead,HtmlDocument,	proc addToHead(document`gensym262: var HtmlDocument;\n          children`gensym262: seq[HtmlElement])		161
+nim	addToHead	cattag/htmlXml/procs.html#addToHead,HtmlDocument,HtmlElement,	proc addToHead(document`gensym262: HtmlDocument; child`gensym262: HtmlElement;\n          children`gensym262: seq[HtmlElement]): HtmlDocument		163
+nim	addToHead	cattag/htmlXml/procs.html#addToHead,HtmlDocument,HtmlElement,_2	proc addToHead(document`gensym262: var HtmlDocument; child`gensym262: HtmlElement;\n          children`gensym262: varargs[HtmlElement])		166
+nim	addToHead	cattag/htmlXml/procs.html#addToHead,HtmlDocument,HtmlElement,_3	proc addToHead(document`gensym262: HtmlDocument; child`gensym262: HtmlElement;\n          children`gensym262: varargs[HtmlElement]): HtmlDocument		172
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,HtmlDocument,	proc addToBody(document`gensym280: var HtmlDocument;\n          children`gensym280: seq[HtmlElement])		161
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,HtmlDocument,HtmlElement,	proc addToBody(document`gensym280: HtmlDocument; child`gensym280: HtmlElement;\n          children`gensym280: seq[HtmlElement]): HtmlDocument		163
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,HtmlDocument,HtmlElement,_2	proc addToBody(document`gensym280: var HtmlDocument; child`gensym280: HtmlElement;\n          children`gensym280: varargs[HtmlElement])		166
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,HtmlDocument,HtmlElement,_3	proc addToBody(document`gensym280: HtmlDocument; child`gensym280: HtmlElement;\n          children`gensym280: varargs[HtmlElement]): HtmlDocument		173
+nim	add	cattag/htmlXml/procs.html#add,HtmlDocument,	proc add(document`gensym298: var HtmlDocument;\n    children`gensym298: seq[HtmlElement])		161
+nim	add	cattag/htmlXml/procs.html#add,HtmlDocument,HtmlElement,	proc add(document`gensym298: HtmlDocument; child`gensym298: HtmlElement;\n    children`gensym298: seq[HtmlElement]): HtmlDocument		163
+nim	add	cattag/htmlXml/procs.html#add,HtmlDocument,HtmlElement,_2	proc add(document`gensym298: var HtmlDocument; child`gensym298: HtmlElement;\n    children`gensym298: varargs[HtmlElement])		166
+nim	add	cattag/htmlXml/procs.html#add,HtmlDocument,HtmlElement,_3	proc add(document`gensym298: HtmlDocument; child`gensym298: HtmlElement;\n    children`gensym298: varargs[HtmlElement]): HtmlDocument		174
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlDocument,	proc `&=`(document`gensym316: var HtmlDocument;\n     children`gensym316: seq[HtmlElement])		161
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlDocument,HtmlElement,	proc `&=`(document`gensym316: HtmlDocument; child`gensym316: HtmlElement;\n     children`gensym316: seq[HtmlElement]): HtmlDocument		163
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlDocument,HtmlElement,_2	proc `&=`(document`gensym316: var HtmlDocument; child`gensym316: HtmlElement;\n     children`gensym316: varargs[HtmlElement])		166
+nim	`&=`	cattag/htmlXml/procs.html#&=,HtmlDocument,HtmlElement,_3	proc `&=`(document`gensym316: HtmlDocument; child`gensym316: HtmlElement;\n     children`gensym316: varargs[HtmlElement]): HtmlDocument		175
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,XmlDocument,	proc addToBody(document`gensym334: var XmlDocument;\n          children`gensym334: seq[XmlElement])		161
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,XmlDocument,XmlElement,	proc addToBody(document`gensym334: XmlDocument; child`gensym334: XmlElement;\n          children`gensym334: seq[XmlElement]): XmlDocument		163
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,XmlDocument,XmlElement,_2	proc addToBody(document`gensym334: var XmlDocument; child`gensym334: XmlElement;\n          children`gensym334: varargs[XmlElement])		166
+nim	addToBody	cattag/htmlXml/procs.html#addToBody,XmlDocument,XmlElement,_3	proc addToBody(document`gensym334: XmlDocument; child`gensym334: XmlElement;\n          children`gensym334: varargs[XmlElement]): XmlDocument		177
+nim	add	cattag/htmlXml/procs.html#add,XmlDocument,	proc add(document`gensym352: var XmlDocument; children`gensym352: seq[XmlElement])		161
+nim	add	cattag/htmlXml/procs.html#add,XmlDocument,XmlElement,	proc add(document`gensym352: XmlDocument; child`gensym352: XmlElement;\n    children`gensym352: seq[XmlElement]): XmlDocument		163
+nim	add	cattag/htmlXml/procs.html#add,XmlDocument,XmlElement,_2	proc add(document`gensym352: var XmlDocument; child`gensym352: XmlElement;\n    children`gensym352: varargs[XmlElement])		166
+nim	add	cattag/htmlXml/procs.html#add,XmlDocument,XmlElement,_3	proc add(document`gensym352: XmlDocument; child`gensym352: XmlElement;\n    children`gensym352: varargs[XmlElement]): XmlDocument		178
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlDocument,	proc `&=`(document`gensym370: var XmlDocument;\n     children`gensym370: seq[XmlElement])		161
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlDocument,XmlElement,	proc `&=`(document`gensym370: XmlDocument; child`gensym370: XmlElement;\n     children`gensym370: seq[XmlElement]): XmlDocument		163
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlDocument,XmlElement,_2	proc `&=`(document`gensym370: var XmlDocument; child`gensym370: XmlElement;\n     children`gensym370: varargs[XmlElement])		166
+nim	`&=`	cattag/htmlXml/procs.html#&=,XmlDocument,XmlElement,_3	proc `&=`(document`gensym370: XmlDocument; child`gensym370: XmlElement;\n     children`gensym370: varargs[XmlElement]): XmlDocument		179
+nimgrp	newxmlcomment	cattag/htmlXml/procs.html#newXmlComment-procs-all	proc		98
+nimgrp	html	cattag/htmlXml/procs.html#html-procs-all	proc		43
+nimgrp	newxmldocument	cattag/htmlXml/procs.html#newXmlDocument-procs-all	proc		157
+nimgrp	newhtmlcomment	cattag/htmlXml/procs.html#newHtmlComment-procs-all	proc		97
+nimgrp	addtohead	cattag/htmlXml/procs.html#addToHead-procs-all	proc		172
+nimgrp	&=	cattag/htmlXml/procs.html#&=-procs-all	proc		118
+nimgrp	rawhtmltext	cattag/htmlXml/procs.html#rawHtmlText-procs-all	proc		42
+nimgrp	newhtmlelement	cattag/htmlXml/procs.html#newHtmlElement-procs-all	proc		85
+nimgrp	newattribute	cattag/htmlXml/procs.html#newAttribute-procs-all	proc		25
+nimgrp	rawxmltext	cattag/htmlXml/procs.html#rawXmlText-procs-all	proc		44
+nimgrp	attr	cattag/htmlXml/procs.html#attr-procs-all	proc		26
+nimgrp	newxmlelement	cattag/htmlXml/procs.html#newXmlElement-procs-all	proc		86
+nimgrp	add	cattag/htmlXml/procs.html#add-procs-all	proc		117
+nimgrp	newhtmldocument	cattag/htmlXml/procs.html#newHtmlDocument-procs-all	proc		156
+nimgrp	addtobody	cattag/htmlXml/procs.html#addToBody-procs-all	proc		173
+nimgrp	xml	cattag/htmlXml/procs.html#xml-procs-all	proc		45

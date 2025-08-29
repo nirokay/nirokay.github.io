@@ -1,0 +1,11 @@
+nimTitle	sugar	cattag/css/sugar.html	module cattag/css/sugar		0
+nim	`:=`	cattag/css/sugar.html#:=,,seq[string]	proc `:=`(property: string | CssProperty; values: seq[string]): CssElementProperty		10
+nim	`:=`	cattag/css/sugar.html#:=,,varargs[string]	proc `:=`(property: string | CssProperty; values: varargs[string]): CssElementProperty		13
+nim	`:=`	cattag/css/sugar.html#:=,,	proc `:=`(property: string | CssProperty; values: tuple): CssElementProperty		17
+nim	`:=`	cattag/css/sugar.html#:=.t,,varargs[untyped,]	template `:=`(property: string | CssProperty; values: varargs[untyped, `$`]): untyped		27
+nim	`{}`	cattag/css/sugar.html#{},string,seq[CssElementProperty]	proc `{}`(selector: string; properties: seq[CssElementProperty]): CssElement		32
+nim	`{}`	cattag/css/sugar.html#{},string,varargs[CssElementProperty]	proc `{}`(selector: string; properties: varargs[CssElementProperty]): CssElement		39
+nim	`{}`	cattag/css/sugar.html#{},string,seq[CssElement]	proc `{}`(selector: string; elements: seq[CssElement]): CssElement		43
+nim	`{}`	cattag/css/sugar.html#{},string,varargs[CssElement]	proc `{}`(selector: string; elements: varargs[CssElement]): CssElement		50
+nimgrp	:=	cattag/css/sugar.html#:=-procs-all	proc		10
+nimgrp	{}	cattag/css/sugar.html#{}-procs-all	proc		32

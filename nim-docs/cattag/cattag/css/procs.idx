@@ -1,0 +1,45 @@
+nimTitle	procs	cattag/css/procs.html	module cattag/css/procs		0
+nim	getSelectorType	cattag/css/procs.html#getSelectorType,string	proc getSelectorType(selector: string): CssSelectorType		4
+nim	newCssAll	cattag/css/procs.html#newCssAll,seq[CssElementProperty]	proc newCssAll(properties: seq[CssElementProperty]): CssElement		14
+nim	newCssAll	cattag/css/procs.html#newCssAll,varargs[CssElementProperty]	proc newCssAll(properties: varargs[CssElementProperty]): CssElement		22
+nim	newCssAll	cattag/css/procs.html#newCssAll,seq[CssElement]	proc newCssAll(children: seq[CssElement]): CssElement		26
+nim	newCssAll	cattag/css/procs.html#newCssAll,varargs[CssElement]	proc newCssAll(children: varargs[CssElement]): CssElement		34
+nim	newCssElement	cattag/css/procs.html#newCssElement,string,	proc newCssElement(selector`gensym14: string;\n              properties`gensym14: seq[CssElementProperty]): CssElement		39
+nim	newCssElement	cattag/css/procs.html#newCssElement,string,_2	proc newCssElement(selector`gensym14: string;\n              properties`gensym14: varargs[CssElementProperty]): CssElement		47
+nim	newCssElement	cattag/css/procs.html#newCssElement,string,_3	proc newCssElement(selector`gensym14: string; children`gensym14: seq[CssElement]): CssElement		51
+nim	newCssElement	cattag/css/procs.html#newCssElement,string,_4	proc newCssElement(selector`gensym14: string;\n              children`gensym14: varargs[CssElement]): CssElement		63
+nim	newCssClass	cattag/css/procs.html#newCssClass,string,	proc newCssClass(selector`gensym29: string;\n            properties`gensym29: seq[CssElementProperty]): CssElement		39
+nim	newCssClass	cattag/css/procs.html#newCssClass,string,_2	proc newCssClass(selector`gensym29: string;\n            properties`gensym29: varargs[CssElementProperty]): CssElement		47
+nim	newCssClass	cattag/css/procs.html#newCssClass,string,_3	proc newCssClass(selector`gensym29: string; children`gensym29: seq[CssElement]): CssElement		51
+nim	newCssClass	cattag/css/procs.html#newCssClass,string,_4	proc newCssClass(selector`gensym29: string;\n            children`gensym29: varargs[CssElement]): CssElement		64
+nim	newCssAll	cattag/css/procs.html#newCssAll,string,	proc newCssAll(selector`gensym44: string;\n          properties`gensym44: seq[CssElementProperty]): CssElement		39
+nim	newCssAll	cattag/css/procs.html#newCssAll,string,_2	proc newCssAll(selector`gensym44: string;\n          properties`gensym44: varargs[CssElementProperty]): CssElement		47
+nim	newCssAll	cattag/css/procs.html#newCssAll,string,_3	proc newCssAll(selector`gensym44: string; children`gensym44: seq[CssElement]): CssElement		51
+nim	newCssAll	cattag/css/procs.html#newCssAll,string,_4	proc newCssAll(selector`gensym44: string; children`gensym44: varargs[CssElement]): CssElement		65
+nim	newCssId	cattag/css/procs.html#newCssId,string,	proc newCssId(selector`gensym59: string;\n         properties`gensym59: seq[CssElementProperty]): CssElement		39
+nim	newCssId	cattag/css/procs.html#newCssId,string,_2	proc newCssId(selector`gensym59: string;\n         properties`gensym59: varargs[CssElementProperty]): CssElement		47
+nim	newCssId	cattag/css/procs.html#newCssId,string,_3	proc newCssId(selector`gensym59: string; children`gensym59: seq[CssElement]): CssElement		51
+nim	newCssId	cattag/css/procs.html#newCssId,string,_4	proc newCssId(selector`gensym59: string; children`gensym59: varargs[CssElement]): CssElement		66
+nim	newCssComment	cattag/css/procs.html#newCssComment,seq[string]	proc newCssComment(lines: seq[string]): CssElement		69
+nim	newCssComment	cattag/css/procs.html#newCssComment,varargs[string]	proc newCssComment(lines: varargs[string]): CssElement		75
+nim	newCssProperty	cattag/css/procs.html#newCssProperty,string,seq[string]	proc newCssProperty(property: string; values: seq[string]): CssElementProperty		80
+nim	newCssProperty	cattag/css/procs.html#newCssProperty,string,varargs[string]	proc newCssProperty(property: string; values: varargs[string]): CssElementProperty		83
+nim	newCssStylesheet	cattag/css/procs.html#newCssStylesheet,string	proc newCssStylesheet(filename: string): CssStylesheet		88
+nim	newCssStylesheet	cattag/css/procs.html#newCssStylesheet	proc newCssStylesheet(): CssStylesheet		91
+nim	add	cattag/css/procs.html#add,CssStylesheet,	proc add(stylesheet`gensym88: var CssStylesheet;\n    children`gensym88: seq[CssElement])		99
+nim	add	cattag/css/procs.html#add,CssStylesheet,_2	proc add(stylesheet`gensym88: CssStylesheet; children`gensym88: seq[CssElement]): CssStylesheet		102
+nim	add	cattag/css/procs.html#add,CssStylesheet,CssElement,	proc add(stylesheet`gensym88: var CssStylesheet; child`gensym88: CssElement;\n    children`gensym88: varargs[CssElement])		106
+nim	add	cattag/css/procs.html#add,CssStylesheet,CssElement,_2	proc add(stylesheet`gensym88: CssStylesheet; child`gensym88: CssElement;\n    children`gensym88: varargs[CssElement]): CssStylesheet		114
+nim	`&=`	cattag/css/procs.html#&=,CssStylesheet,	proc `&=`(stylesheet`gensym107: var CssStylesheet;\n     children`gensym107: seq[CssElement])		99
+nim	`&=`	cattag/css/procs.html#&=,CssStylesheet,_2	proc `&=`(stylesheet`gensym107: CssStylesheet;\n     children`gensym107: seq[CssElement]): CssStylesheet		102
+nim	`&=`	cattag/css/procs.html#&=,CssStylesheet,CssElement,	proc `&=`(stylesheet`gensym107: var CssStylesheet; child`gensym107: CssElement;\n     children`gensym107: varargs[CssElement])		106
+nim	`&=`	cattag/css/procs.html#&=,CssStylesheet,CssElement,_2	proc `&=`(stylesheet`gensym107: CssStylesheet; child`gensym107: CssElement;\n     children`gensym107: varargs[CssElement]): CssStylesheet		115
+nimgrp	newcssall	cattag/css/procs.html#newCssAll-procs-all	proc		14
+nimgrp	newcssid	cattag/css/procs.html#newCssId-procs-all	proc		66
+nimgrp	newcssstylesheet	cattag/css/procs.html#newCssStylesheet-procs-all	proc		88
+nimgrp	&=	cattag/css/procs.html#&=-procs-all	proc		115
+nimgrp	newcssproperty	cattag/css/procs.html#newCssProperty-procs-all	proc		80
+nimgrp	newcsscomment	cattag/css/procs.html#newCssComment-procs-all	proc		69
+nimgrp	newcssclass	cattag/css/procs.html#newCssClass-procs-all	proc		64
+nimgrp	add	cattag/css/procs.html#add-procs-all	proc		114
+nimgrp	newcsselement	cattag/css/procs.html#newCssElement-procs-all	proc		63
